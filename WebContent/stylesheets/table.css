@@ -1,0 +1,23 @@
+.outline {
+  border: 1px solid black;
+  border-spacing: 0px;
+  color: black;
+}
+
+.border {
+  outline: 1px solid black;
+  outline-offset: -1px;
+}	
+
+.small {
+  height: 13px;
+}
+
+.fill {
+  background-color: lightgrey;
+}
+
+table .time {
+  text-align: center; /*right*/
+  /*vertical-align: text-top;*/
+}
