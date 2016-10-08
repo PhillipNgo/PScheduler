@@ -1,10 +1,9 @@
 package scheduler;
 
 /**
- * Timetable represents a time block of X amount of days split into 5 minute intervals from 8am - 7pm
+ * Timetable represents a time block of 5 days split into 5 minute intervals from 12:00am to 11:59pm
  * 
  * @author Phillip Ngo
- * @version 1.0
  */
 public class Timetable {
     
@@ -91,11 +90,11 @@ public class Timetable {
      */
     public void addEvent(String[] days, TimeSlot time) {
         if (days == null || time == null) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("null arguments when adding an event");
         }
         for (int i = 0; i < days.length; i++) {
             if (dayToNum(days[i]) < 0) {
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException("invalid days when adding event");
             }
         }
         for (int d = 0; d < days.length; d++) {
@@ -113,32 +112,16 @@ public class Timetable {
      */
     public void clearEvents(String[] days, TimeSlot time) {
         if (days == null || time == null) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("null arguments when adding an event");
         }
         for (int i = 0; i < days.length; i++) {
             if (dayToNum(days[i]) < 0) {
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException("invalid days when clearing events");
             }
         }
         for (int d = 0; d < days.length; d++) {
             for (int t = time.getStartNum()/5; t < time.getEndNum()/5; t++) {
                 timetable[dayToNum(days[d])][t] = false;
-            }
-        }
-    }
-    
-    /**
-     * Clears all events on the entire schedule with the specified time
-     * 
-     * @param time to clear
-     */
-    public void clearEvents(TimeSlot time) {
-        if (time == null) {
-            throw new IllegalArgumentException();
-        }
-        for (int i = 0; i < timetable.length; i++) {
-            for (int j = time.getStartNum()/5; j < time.getEndNum()/5; j++) {
-                timetable[i][j] = false;
             }
         }
     }
@@ -214,7 +197,7 @@ public class Timetable {
     }
     
     /**
-     * Checks is a time and day is busy
+     * Checks if a time and day is busy
      * 
      * @param day the day to be checked
      * @param time the time to be checked

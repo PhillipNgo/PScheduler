@@ -156,59 +156,6 @@ public class Schedule {
     }
     
     /**
-     * The Class with the earliest starting time
-     * 
-     * @return Class that starts first
-     */
-    public Class getEarliestClass() {
-        Class c = classes.get(0);
-        if (c == null) {
-            return null;
-        }
-        int min = classes.get(0).getTimeSlot().getStartNum();
-        for (int i = 1; i < classes.size(); i++) {
-            if (classes.get(i).getTimeSlot().getStartNum() < min) {
-                min = classes.get(i).getTimeSlot().getStartNum();
-                c = classes.get(i);
-            }
-            if (c.getAdditionalDays() != null && c.getAdditionalTime() != null && c.getAdditionalLocation() != null) {
-                if (classes.get(i).getAdditionalTime().getStartNum() < min) {
-                    min = classes.get(i).getTimeSlot().getStartNum();
-                    c = classes.get(i);
-                }
-            }
-        }
-        
-        return c;
-    }
-    
-    /**
-     * The Class with the latest ending time
-     * 
-     * @return Class that ends last
-     */
-    public Class getLatestClass() {
-        Class c = classes.get(0);
-        if (c == null) {
-            return null;
-        }
-        int max = classes.get(0).getTimeSlot().getEndNum();
-        for (int i = 1; i < classes.size(); i++) {
-            if (classes.get(i).getTimeSlot().getEndNum() > max) {
-                max = classes.get(i).getTimeSlot().getEndNum();
-                c = classes.get(i);
-            }
-            if (c.getAdditionalDays() != null && c.getAdditionalTime() != null && c.getAdditionalLocation() != null) {
-                if (classes.get(i).getAdditionalTime().getEndNum() > max) {
-                    max = classes.get(i).getTimeSlot().getEndNum();
-                    c = classes.get(i);
-                }
-            }
-        }
-        return c;
-    }
-
-    /**
      * Total amount of credits in the Schedule
      * 
      * @return sum of all credits in class list

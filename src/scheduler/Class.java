@@ -287,6 +287,7 @@ public class Class {
         if (other == null) {
             return false;
         }
+        
         String[] otherDays = other.getDays();
         for (int i = 0; i < otherDays.length; i++) {
             for (int j = 0; j < days.length; j++) {

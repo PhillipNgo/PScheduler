@@ -130,7 +130,7 @@ public class ScheduleForm extends HttpServlet {
         html.append("</div>");
 		
 		html.append("<footer>");
-		html.append("<p class=\"view\">Phillip Ngo | <a href=\"https://github.com/PhillipNgo/Scheduler-Site\">View the Project on GitHub</a></p>");
+		html.append("<p class=\"view\">Phillip Ngo | <a href=\"https://github.com/PhillipNgo/Scheduler-Website\">View the Project on GitHub</a></p>");
 		html.append("</footer>");
 		html.append("</body>");
 		html.append("</html>");

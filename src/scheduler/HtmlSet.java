@@ -50,10 +50,10 @@ public class HtmlSet {
             try (Writer writer = new BufferedWriter(new OutputStreamWriter(
                     new FileOutputStream("WebContent/SelectOptions/NumberOptions.txt"), "utf-8"))) {
                 for (int i = 1; i < terms.length; i++) {
-                    html = new HtmlGet("https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_ProcRequest", "ttform");
+                    //html = new HtmlGet("https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_ProcRequest", "ttform");
                     html.fillSelectField("TERMYEAR", terms[i]);
                     subjects = html.getSelectOptionValues("subj_code");
-                    for (int j = 1; j < subjects.length; j++) {   
+                    for (int j = 2; j < subjects.length; j++) {   
                         html.fillSelectField("subj_code", subjects[j]);
                         listings = html.getPrinterFriendly();
                         classes = parser.parseClasses(listings);
