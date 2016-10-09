@@ -29,17 +29,23 @@ function addClass() {
 		if (i != 0) {
 			types += " + ";
 		}
-		if (type == "L") {
-			types += "Lecture";
-		}
-		else if (type == "B") {
-			types += "Lab";
-		}
-		else if (type == "C") {
-			types += "Recitation";
-		}
-		else {
-			types += "bug";
+		switch (type) {
+			case "L": types += "Lecture";
+					  break;
+			case "B": types += "Lab";
+				      break;
+			case "C": types += "Recitation";
+					  break;
+			case "H": types += "Hybrid";
+					  break;
+			case "E": types += "Empo";
+					  break;
+			case "O": types += "Online";
+					  break;
+			case "I": types += "Independent Study";
+				      break;
+			default:  types += "bug"
+					  break;
 		}
 	}
 	row.insertCell(3).innerHTML = types + space;
