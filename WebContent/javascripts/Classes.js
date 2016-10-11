@@ -1,13 +1,19 @@
 
 function addClass() {
 	var table = document.getElementById("scheduledisplay");
-	var subj = document.getElementById("subject");
+	var subj = document.getElementById("subjects");
 	var cName = document.getElementById("number");
 	cName = cName.options[cName.selectedIndex].getAttribute("name");
 	cName = cName.split("--");
 	subj = subj.options[subj.selectedIndex].value;
 	var num = document.getElementById("number").value;
-	num = num.substring(num.length-4, num.length);
+	if (num.endsWith("H")){
+		num = num.substring(num.length-5, num.length);
+	}
+	else {
+		num = num.substring(num.length-4, num.length);
+	}
+	
 	var name = subj + num;
 	if (num == "none" || table.rows.length == 10) {
 		return;
@@ -82,18 +88,34 @@ function displayNums(reset) {
 		if (confirm("Changing Terms Will Clear the Current Schedule")) {
 			document.getElementById("scheduledisplay").innerHTML = "";
 		}
+		displaySubj();
 	}
 	var term = document.getElementById("term");
 	term = term.options[term.selectedIndex].value;
-	var subj = document.getElementById("subject");
-	subj = subj.options[subject.selectedIndex].value;
+	var subj = document.getElementById("subjects");
+	subj = subj.options[subj.selectedIndex].value;
 	var list = document.getElementById("number");
 	list.id = "";
 	list.style.display = "none";
 	list = document.getElementsByName(term + subj)[0];
 	list.id = "number";
 	list.style.display = "inline";
-	list.selectedIndex = 0;
+	list.selectedIndex = 0;	
+}
+
+function displaySubj() {
+	var term = document.getElementById("term");
+	term = term.options[term.selectedIndex].value;
+	
+	var subj = document.getElementById("subjects");
+	
+	subj.id = "";
+	subj.style.display = "none";
+	
+	subj = document.getElementsByName(term + "subjects")[0];
+	subj.id = "subjects";
+	subj.style.display = "inline";
+	subj.selectedIndex = 0;
 }
 
 function sendSchedule() {
