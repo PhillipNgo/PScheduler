@@ -28,8 +28,8 @@ public final class ScheduleMaker {
      * @return the LinkedList of all the schedules
      * @throws Exception
      */
-    public static LinkedList<Schedule> generateSchedule(String term, String[] subjects, String[] numbers, String[] types, boolean[] onlineAllowed,  
-                                                        String start, String end, String freeDay, String[] crns) throws Exception {
+    public static LinkedList<Schedule> generateSchedule(String term, LinkedList<String> subjects, LinkedList<String> numbers, LinkedList<String> types,   
+                                                        LinkedList<Boolean> onlineAllowed, String start, String end, String freeDay, LinkedList<String> crns) throws Exception {
         LinkedList<Schedule> schedules = new LinkedList<>();
         LinkedList<LinkedList<VTCourse>> classes = new LinkedList<>();
         HashMap<String, HashMap<String, LinkedList<VTCourse>>> map = null; 
@@ -41,18 +41,18 @@ public final class ScheduleMaker {
         catch (FileNotFoundException e) {
             parser = new VTParser(term);
         }
-        for (int i = 0; i < subjects.length; i++) {
+        for (int i = 0; i < subjects.size(); i++) {
             LinkedList<VTCourse> curr;
             if (map != null) {
-                curr = map.get(subjects[i]).get(numbers[i]);
+                curr = map.get(subjects.get(i)).get(numbers.get(i));
             }
             else {
-                curr = parser.parseCourse(subjects[i], numbers[i]);
+                curr = parser.parseCourse(subjects.get(i), numbers.get(i));
             }
             
             Iterator<VTCourse> iter = curr.iterator();
             while (iter.hasNext()) {
-                if (!checkRestrictions(iter.next(), start, end, types[i], onlineAllowed[i], freeDay)) {
+                if (!checkRestrictions(iter.next(), start, end, types.get(i), onlineAllowed.get(i), freeDay)) {
                     iter.remove();
                 }
             }
@@ -62,7 +62,7 @@ public final class ScheduleMaker {
             classes.add(curr);
         }
         
-        if (crns.length != 0) {
+        if (crns.size() != 0) {
             parser = new VTParser(term);
             for (String crn : crns) {
                 LinkedList<VTCourse> curr = new LinkedList<>();
@@ -168,7 +168,7 @@ public final class ScheduleMaker {
         String[] subjects = new String[]{"AHRM", "AHRM", "MKTG", "FIN", "MUS", "BIT"};
         String[] numbers = new String[]{"2644", "2674", "3104H", "3074", "2056", "2406"};
         String[] types = new String[]{"O", "L", "L", "L", "L", "L"};
-        boolean[] onlineAllowed = new boolean[]{true, true, true, true, true, true};
+        Boolean[] onlineAllowed = new Boolean[]{true, true, true, true, true, true};
         String[] crns = new String[]{"10061"};
         //String[] subjects = new String[]{"MATH"};
         //String[] numbers = new String[]{"1014"};
@@ -179,7 +179,8 @@ public final class ScheduleMaker {
         String end = "8:00PM";
         String freeDay = "";
         //long startTime = System.currentTimeMillis();
-        LinkedList<Schedule> schedules = ScheduleMaker.generateSchedule(term, subjects, numbers, types, onlineAllowed, start, end, freeDay, crns);
+        LinkedList<Schedule> schedules = ScheduleMaker.generateSchedule(term, new LinkedList<>(subjects), new LinkedList<>(numbers), 
+                                                                        new LinkedList<>(types), new LinkedList<>(onlineAllowed), start, end, freeDay, new LinkedList<>(crns));
         //System.out.println(schedules + "\n" + schedules.size());
         //long endTime = System.currentTimeMillis();
         //System.out.println(endTime - startTime);

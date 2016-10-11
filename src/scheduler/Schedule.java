@@ -117,6 +117,36 @@ public class Schedule extends LinkedList<VTCourse> {
     }
     
     /**
+     * Checks if the schedule is busy at a minute time
+     * @param day the day number
+     * @param time the minute time of the day
+     * @return true if its busy
+     */
+    public boolean isBusy(int day, int time) {
+        for (VTCourse c : this) {
+            if (c.getTimeSlot() != null) {
+                for (String d : c.getDays()) {
+                    if (day == DAYS.indexOf(d)) {
+                        if (time >= c.getTimeSlot().getStartNum() && time <= c.getTimeSlot().getEndNum()) {
+                            return true;
+                        }
+                    }
+                }
+            }
+            if (c.getAdditionalTime() != null) {
+                for (String d : c.getAdditionalDays()) {
+                    if (day == DAYS.indexOf(d)) {
+                        if (time >= c.getAdditionalTime().getStartNum() && time <= c.getAdditionalTime().getEndNum()) {
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    }
+    
+    /**
      * Creates a copy schedule
      * 
      * @return a copy of the schedule

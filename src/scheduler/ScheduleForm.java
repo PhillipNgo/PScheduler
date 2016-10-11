@@ -50,7 +50,7 @@ public class ScheduleForm extends HttpServlet {
         html.append("<input name=\"table\" onclick=\"switchView(this.name)\" id=\"view1\" type=\"button\" value=\"Text View\"/>");
         html.append("<input type=\"button\" value=\"Previous Schedule\"/ onclick=\"changeSchedule(-1)\">");
         html.append("<input type=\"button\" value=\"Next Schedule\"/ onclick=\"changeSchedule(1)\"><br>");
-        html.append("<a href=\"excelsheets/ExcelSchedules.xls\" download=\"ExcelSchedules.xls\">Download as Excel</a>");
+        //html.append("<a href=\"WebContent/excelsheets/schedules.xls\" download=\"schedules.xls\">Download as Excel</a>"); // not working
         html.append("</div>");
         
         
@@ -59,40 +59,47 @@ public class ScheduleForm extends HttpServlet {
         //MIDDLE--------------------------------------------------------------------------------------
         
         try {
-            ScheduleMaker gen = new ScheduleMaker();
-            
             String startTime = request.getParameter("hour1")+ ":";
             if ((Integer.parseInt(request.getParameter("minute1"))-1)*5 == 0 || (Integer.parseInt(request.getParameter("minute1"))-1)*5 == 5) {
                 startTime += "0";
             }
-            startTime += ((Integer.parseInt(request.getParameter("minute1"))-1)*5);
-            gen.setStart(startTime + request.getParameter("start"));
+            startTime += ((Integer.parseInt(request.getParameter("minute1"))-1)*5) + request.getParameter("start");
             
             String endTime = request.getParameter("hour2")+ ":";
             if ((Integer.parseInt(request.getParameter("minute2"))-1)*5 == 0 || (Integer.parseInt(request.getParameter("minute2"))-1)*5 == 5) {
                 endTime += "0";
             }
-            endTime += ((Integer.parseInt(request.getParameter("minute2"))-1)*5);
-            gen.setEnd(endTime + request.getParameter("end"));
+            endTime += ((Integer.parseInt(request.getParameter("minute2"))-1)*5) + request.getParameter("end");
             
             String freeDay = request.getParameter("freeday");
-            if (Timetable.isDay(freeDay)) {
-                gen.setFreeDay(freeDay);
-            }
             
-            gen.setTerm(request.getParameter("term"));
+            String term = request.getParameter("term");
+            
             String[] classes = request.getParameter("schedule").split("xx");
+            //String[] subjects = new String[classes.length];
+            //String[] numbers = new String[classes.length];
+            //String[] types = new String[classes.length];
+            //boolean[] onlineAllowed = new boolean[classes.length];
+            LinkedList<String> subjects = new LinkedList<>();
+            LinkedList<String> numbers = new LinkedList<>();
+            LinkedList<String> types = new LinkedList<>();
+            LinkedList<Boolean> onlineAllowed = new LinkedList<>();
+            LinkedList<String> crns = new LinkedList<>();
             if (classes[0].length() != 0) {
                 for (int i = 0; i < classes.length; i++) {
                     if (classes[i].length() == 5) {
-                        gen.addCRN(classes[i]);
+                        crns.add(classes[i]);
                     }
                     else {
-                        gen.addClass(classes[i].substring(0, classes[i].length()-4), classes[i].substring(classes[i].length()-4, classes[i].length()));
+                        subjects.add(classes[i].substring(0, classes[i].length()-4));
+                        numbers.add(classes[i].substring(classes[i].length()-4, classes[i].length()));
+                        types.add("L");
+                        onlineAllowed.add(true);
                     }
                 }
             }
-            LinkedList<Schedule> schedules = gen.generateSchedules();
+            LinkedList<Schedule> schedules = ScheduleMaker.generateSchedule(term, subjects, numbers, types, onlineAllowed, startTime, endTime, freeDay, crns);
+            
             if (schedules.size() == 0) {
                 html.append("No Schedules Matched Your Parameters");
             }
@@ -104,13 +111,11 @@ public class ScheduleForm extends HttpServlet {
                 html.append("<ul id=\"tableschedules\" name=\"0\">");
                 appendTableSchedules(html, schedules);
                 html.append("</ul>");
+                
+                ExcelSchedule.outputFile(schedules);
             }
             else if (schedules.size() > 999) {
                 html.append("There were over 999 Schedules, please narrow your parameters");
-            }
-            else {
-                ExcelSchedule excelGen = new ExcelSchedule(schedules.toArray());
-                excelGen.getExcelFile("WebContent/excelsheets/ExcelSchedules.xls");
             }
         }
         catch (Exception e) {
@@ -151,20 +156,19 @@ public class ScheduleForm extends HttpServlet {
     
     private void appendTextSchedules(StringBuilder html, LinkedList<Schedule> schedules) {
         String spaces = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-        for (int i = 0; i < schedules.size(); i++) {
+        int i = 0;
+        for (Schedule schedule : schedules) {
             if (i != 0) {
-                html.append("<table id=\"" + i + "\" style=\"display: none;\">");
+                html.append("<table id=\"" + (i++) + "\" style=\"display: none;\">");
             }
             else {
-                html.append("<table id=\"" + i + "\">");
+                html.append("<table id=\"" + (i++) + "\">");
             }
-            html.append("<tr><td colspan=\"9\" class=\"center\">" + (i+1) + " of " + schedules.size() + "</td></tr>");
-            LinkedList<Class> classList = schedules.get(i).getClasses();
-            for (int j = 0; j < classList.size(); j++) {
+            html.append("<tr><td colspan=\"9\" class=\"center\">" + i + " of " + schedules.size() + "</td></tr>");
+            for (VTCourse c : schedule) {
                 html.append("<tr class=\"left\">");
-                Class c = classList.get(j);
                 html.append("<td>" + c.getCRN() + spaces + "</td>");
-                html.append("<td>" + c.getCollege() + " " + classList.get(j).getNum() + spaces + "</td>");
+                html.append("<td>" + c.getSubject() + " " + c.getNum() + spaces + "</td>");
                 html.append("<td>" + c.getName() + spaces + "</td>");
                 html.append("<td>" + c.getClassType() + spaces + "</td>");
                 html.append("<td>" + c.getCredits() + "C" + spaces + "</td>");
@@ -174,39 +178,42 @@ public class ScheduleForm extends HttpServlet {
                 for (int k = 0; k < days.length; k++) {
                     day += days[k];
                 }
-                html.append("<td>" + day + spaces + "</td>");
-                html.append("<td>" + c.getStartTime() + " - " + c.getEndTime() + spaces + "</td>");
-                html.append("<td>" + c.getLocation() + "</td>");
-                html.append("</tr>");
-                if (c.getAdditionalDays() != null && c.getAdditionalTime() != null && c.getAdditionalLocation() != null) {
-                    html.append("<tr><td></td><td></td><td></td><td></td><td></td><td></td>");
-                    days = c.getAdditionalDays();
-                    String addedDays = "";
-                    for (int k = 0; k < days.length; k++) {
-                        addedDays += days[k];
-                    }
-                    html.append("<td>" + addedDays + spaces + "</td>");
-                    html.append("<td>" + c.getAdditionalTime().getStart() + " - " + c.getAdditionalTime().getEnd() + spaces + "</td>");
-                    html.append("<td>" + c.getAdditionalLocation() + "</td>");
+                Time t = c.getTimeSlot();
+                if (t != null) {
+                    html.append("<td>" + day + spaces + "</td>");
+                    html.append("<td>" + t.getStart() + " - " + t.getEnd() + spaces + "</td>");
+                    html.append("<td>" + c.getLocation() + "</td>");
                     html.append("</tr>");
+                    if (c.getAdditionalDays() != null && c.getAdditionalTime() != null && c.getAdditionalLocation() != null) {
+                        html.append("<tr><td></td><td></td><td></td><td></td><td></td><td></td>");
+                        days = c.getAdditionalDays();
+                        String addedDays = "";
+                        for (int k = 0; k < days.length; k++) {
+                            addedDays += days[k];
+                        }
+                        html.append("<td>" + addedDays + spaces + "</td>");
+                        html.append("<td>" + c.getAdditionalTime().getStart() + " - " + c.getAdditionalTime().getEnd() + spaces + "</td>");
+                        html.append("<td>" + c.getAdditionalLocation() + "</td>");
+                        html.append("</tr>");
+                    }
                 }
             }
             html.append("</table>");
         }      
     }
     
-    private void appendTableSchedules(StringBuilder html, LinkedList<Schedule> schedules) {
-        for (int i = 0; i < schedules.size(); i++) {
-            Schedule currSchedule = schedules.get(i);
+    private void appendTableSchedules(StringBuilder html, LinkedList<Schedule> schedules) throws TimeException {
+        int i = 0;
+        for (Schedule schedule : schedules) {
             if (i != 0) {
-                html.append("<table class=\"border\" id=\"" + i + "\" style=\"display: none;\">");
+                html.append("<table class=\"border\" id=\"" + (i++) + "\" style=\"display: none;\">");
             }
             else {
-                html.append("<table class=\"border\" id=\"" + i + "\">");
+                html.append("<table class=\"border\" id=\"" + (i++) + "\">");
             }
             
             html.append("<tr>");
-            html.append("<td class=\"center\" style=\"width:103pt; height:35pt;\">" + (i+1) + " of " + schedules.size() + "</td>");
+            html.append("<td class=\"center\" style=\"width:103pt; height:35pt;\">" + i + " of " + schedules.size() + "</td>");
             html.append("<td class=\"outline center\" style=\"width:174pt; height:35pt;\">Monday</td>");
             html.append("<td class=\"outline center\" style=\"width:174pt; height:35pt;\">Tuesday</td>");
             html.append("<td class=\"outline center\" style=\"width:174pt; height:35pt;\">Wednesday</td>");
@@ -214,26 +221,25 @@ public class ScheduleForm extends HttpServlet {
             html.append("<td class=\"outline center\" style=\"width:174pt; height:35pt;\">Friday</td>");
             html.append("</tr>");
             
-            Timetable timetable = currSchedule.getTimetable();
-            int early = TimeSlot.parseTime(timetable.earliestTime())/60;
-            int late = TimeSlot.parseTime(timetable.latestTime())/60;
+            int early = schedule.earliestTime()/60;
+            int late = schedule.lastestTime()/60;
             for (int time = 0; time < late - early + 1; time++) {
                 for (int row = 0; row < 12; row++) {
                     if (row == 0) {
-                        html.append("<tr class=\"small\"><td class=\"outline time\" rowspan=\"12\">" + TimeSlot.num2Time(early*60 + time*60) + "</td>");
+                        html.append("<tr class=\"small\"><td class=\"outline time\" rowspan=\"12\">" + Time.timeString(early*60 + time*60) + "</td>");
                     }
                     else {
                         html.append("<tr class=\"small\">");
                     }
                     for (int col = 0; col < 5; col++) {
-                        String c = currSchedule.getHTMLSchedule(col, TimeSlot.num2Time(early*60 + time*60 + row*5));
+                        String c = getHTMLSchedule(schedule, col, Time.timeString(early*60 + time*60 + row*5));
                         if (c != null) {
                             String[] s = c.split("--");
                             html.append("<td " + "class=\"outline fill center\" rowspan=\"" + s[1] + "\">");
                             html.append(s[0]);
                             html.append("</td>");
                         }
-                        else if (!timetable.isBusy(col, (early*60 + time*60 + row*5)/5)) {
+                        else if (!schedule.isBusy(col, (early*60 + time*60 + row*5))) {
                             html.append("<td></td>");
                         }
                     }
@@ -242,5 +248,59 @@ public class ScheduleForm extends HttpServlet {
             }
             html.append("</table>");
         }
+    }
+    
+    /**
+     * The corresponding class that has the given day and start time
+     * 
+     * @param day the day specified
+     * @param startTime the time specified
+     * @return the class if it exists
+     */
+    private String getHTMLSchedule(Schedule schedule, int day, String startTime) {
+        StringBuilder html = new StringBuilder();
+        for (VTCourse c : schedule) {
+            String[] days = c.getDays();
+            if (days != null) {
+                for (String d : days) {
+                    if (Schedule.DAYS.indexOf(d) == day) {
+                        Time t = c.getTimeSlot();
+                        if (t.getStart().equals(startTime)) {
+                            html.append(c.getSubject() + " " + c.getNum() + "<br>");
+                            html.append("CRN: " + c.getCRN() + "<br>");
+                            html.append(t.getStart() + " - " + t.getEnd() + "<br>");
+                            html.append(c.getLocation() + "<br>");
+                            html.append("Prof: " + c.getProf());
+                            int start = Time.timeNumber(t.getStart())/5;
+                            int end = Time.timeNumber(t.getEnd())/5;
+                            html.append("--" + (end-start));
+                            return html.toString();
+                        }
+                        break;
+                    }
+                }
+            }
+            if (c.getAdditionalDays() != null) {
+                days = c.getAdditionalDays();
+                for (String d : days) {
+                    if (Schedule.DAYS.indexOf(d) == day) {
+                        Time t = c.getAdditionalTime();
+                        if (c.getAdditionalTime().getStart().equals(startTime)) {
+                            html.append(c.getSubject() + " " + c.getNum() + "<br>");
+                            html.append("CRN: " + c.getCRN() + "<br>");
+                            html.append(t.getStart() + " - " + t.getEnd() + "<br>");
+                            html.append(c.getAdditionalLocation() + "<br>");
+                            html.append("Prof: " + c.getProf());
+                            int start = Time.timeNumber(t.getStart())/5;
+                            int end = Time.timeNumber(t.getEnd())/5;
+                            html.append("--" + (end-start));
+                            return html.toString();
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+        return null;
     }
 }

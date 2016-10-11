@@ -182,7 +182,7 @@ public class VTParser {
         this.resetFields();
         HashMap<String, HashMap<String, LinkedList<VTCourse>>> list = new HashMap<>();
         for (int i = 1; i < subjects.length; i++) {
-            System.out.println(i); //debugging
+            //System.out.println(i); //debugging
             vtForm.fillSelectField("subj_code", subjects[i]);
             list.put(subjects[i], parseCourseListing());
         }
@@ -269,7 +269,7 @@ public class VTParser {
                     case 2: String[] split = currString.split("-");
                             subject = split[0];
                             num = split[1];
-                            System.out.println(subject + " " + crn); //debugging
+                            //System.out.println(subject + " " + crn); //debugging
                             break;                            
                     case 3: name = currString;
                             break;
@@ -417,7 +417,7 @@ public class VTParser {
         String[] subjects = parser.getSubjectValues();
         
         try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-                new FileOutputStream(termYear + ".txt"), "utf-8"))) {
+                new FileOutputStream("Database/" + termYear + ".txt"), "utf-8"))) {
             for (String subject : subjects) {
                 HashMap<String, LinkedList<VTCourse>> list = map.get(subject);
                 if (list != null) {
@@ -449,7 +449,7 @@ public class VTParser {
      */
     public static HashMap<String, HashMap<String, LinkedList<VTCourse>>> parseTermFile(String termYear) throws Exception {
         HashMap<String, HashMap<String, LinkedList<VTCourse>>> map = new HashMap<>();
-        File file = new File(termYear + ".txt");
+        File file = new File("Database/" + termYear + ".txt");
         Scanner scan = new Scanner(file);
         while (scan.hasNextLine()) {
             String[] data = scan.nextLine().split("\t");

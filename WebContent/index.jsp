@@ -23,7 +23,7 @@
         <h3>Term:</h3><br>
         <select name="term" id="term" onchange="displayNums(true)">
         	 <%
-        	     Scanner scan = new Scanner(new File("WebContent/SelectOptions/TermOptions.txt"));
+        	     Scanner scan = new Scanner(new File("webapps/ROOT/SelectOptions/TermOptions.txt"));
         	     while (scan.hasNextLine()) {
         	         out.print(scan.nextLine());
         	     }
@@ -113,7 +113,7 @@
         <div id="add" class="addclass">
           Add Class:<br> 
             <%
-          		scan = new Scanner(new File("WebContent/SelectOptions/SubjectOptions.txt"));
+          		scan = new Scanner(new File("webapps/ROOT/SelectOptions/SubjectOptions.txt"));
 			    while (scan.hasNextLine()) {
 			        out.print(scan.nextLine());
 			    }
@@ -121,7 +121,7 @@
           	%>
          
           	<%
-          		scan = new Scanner(new File("WebContent/SelectOptions/NumberOptions.txt"));
+          		scan = new Scanner(new File("webapps/ROOT/SelectOptions/NumberOptions.txt"));
 			    while (scan.hasNextLine()) {
 			        out.print(scan.nextLine());
 			    }

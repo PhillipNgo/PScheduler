@@ -76,7 +76,7 @@ public class ExcelSchedule {
             createScheduleSheet(s, "Schedule " + (i++));
         }
         
-        FileOutputStream fileOut = new FileOutputStream("schedules.xls");
+        FileOutputStream fileOut = new FileOutputStream("WebContent/excelsheets/schedules.xls");
         workbook.write(fileOut);
         fileOut.close();
     }

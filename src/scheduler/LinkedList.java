@@ -24,6 +24,19 @@ public class LinkedList<T> implements Iterable<T> {
         clear();
     }
 
+    /**
+     * fills the list with the given array
+     * 
+     * @param arr the array to input
+     * @throws Exception 
+     */
+    public LinkedList(T[] arr) throws Exception {
+        clear();
+        for (T a : arr) {
+            this.add(a);
+        }
+    }
+    
     //Getter Methods 
     
     /**
