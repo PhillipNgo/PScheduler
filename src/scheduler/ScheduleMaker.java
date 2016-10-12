@@ -29,7 +29,7 @@ public final class ScheduleMaker {
      * @throws Exception
      */
     public static LinkedList<Schedule> generateSchedule(String term, LinkedList<String> subjects, LinkedList<String> numbers, LinkedList<String> types,   
-                                                        LinkedList<Boolean> onlineAllowed, String start, String end, String freeDay, LinkedList<String> crns) throws Exception {
+                                                        String start, String end, String freeDay, LinkedList<String> crns) throws Exception {
         LinkedList<Schedule> schedules = new LinkedList<>();
         LinkedList<LinkedList<VTCourse>> classes = new LinkedList<>();
         HashMap<String, HashMap<String, LinkedList<VTCourse>>> map = null; 
@@ -52,7 +52,7 @@ public final class ScheduleMaker {
             
             Iterator<VTCourse> iter = curr.iterator();
             while (iter.hasNext()) {
-                if (!checkRestrictions(iter.next(), start, end, types.get(i), onlineAllowed.get(i), freeDay)) {
+                if (!checkRestrictions(iter.next(), start, end, types.get(i), freeDay)) {
                     iter.remove();
                 }
             }
@@ -120,13 +120,10 @@ public final class ScheduleMaker {
      * @return true if the course meets the restrictions
      * @throws TimeException
      */
-    private static boolean checkRestrictions(VTCourse course, String start, String end, String type, boolean online, String freeDay) throws TimeException {
+    private static boolean checkRestrictions(VTCourse course, String start, String end, String type, String freeDay) throws TimeException {
         Time time = course.getTimeSlot();
          
-        if (online && (course.getClassType().equals("E") || course.getClassType().equals("O"))) {
-            return true;
-        }
-        else if (!type.equals(course.getClassType()) || (!online && (course.getClassType().equals("E") || course.getClassType().equals("O")))) {
+        if (type != "A" && type != course.getClassType()) {
             return false;
         }
         
@@ -163,24 +160,21 @@ public final class ScheduleMaker {
         String[] subjects = new String[]{"CS", "CS", "ECE", "ECE", "ECE", "ECE", "ECE"};
         String[] numbers = new String[]{"3114", "2506", "2014", "2524", "2704", "2204", "2274"};
         String[] types = new String[]{"L", "L", "L", "L", "L", "L", "B"};
-        Boolean[] onlineAllowed = new Boolean[]{true, true, true, true, true, true, true};
         String[] crns = new String[]{};
         //String[] subjects = new String[]{"AHRM", "AHRM", "MKTG", "FIN", "MUS", "BIT"};
         //String[] numbers = new String[]{"2644", "2674", "3104H", "3074", "2056", "2406"};
         //String[] types = new String[]{"O", "L", "L", "L", "L", "L"};
-        //Boolean[] onlineAllowed = new Boolean[]{true, true, true, true, true, true};
         //String[] crns = new String[]{"10061"};
         //String[] subjects = new String[]{"MATH"};
         //String[] numbers = new String[]{"1014"};
         //String[] types = new String[]{"L"};
-        //boolean[] onlineAllowed = new boolean[]{true};
         //String[] crns = new String[]{};
         String start = "8:00AM";
         String end = "8:00PM";
         String freeDay = "";
         //long startTime = System.currentTimeMillis();
         LinkedList<Schedule> schedules = ScheduleMaker.generateSchedule(term, new LinkedList<>(subjects), new LinkedList<>(numbers), 
-                                                                        new LinkedList<>(types), new LinkedList<>(onlineAllowed), start, end, freeDay, new LinkedList<>(crns));
+                                                                        new LinkedList<>(types), start, end, freeDay, new LinkedList<>(crns));
         //System.out.println(schedules + "\n" + schedules.size());
         //long endTime = System.currentTimeMillis();
         //System.out.println(endTime - startTime);

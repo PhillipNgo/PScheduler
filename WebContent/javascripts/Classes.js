@@ -26,35 +26,36 @@ function addClass() {
 	row.cells[0].id = name;
 	row.insertCell(1).innerHTML = subj + " " + num + space;
 	row.insertCell(2).innerHTML = cName[0] + space;
-	var types = "";
+	var select = document.createElement("select");
+	var optionA = document.createElement("option");
+	option.value = "A";
+	option.innerHTML = "Any";
 	for (var i = 0; i < cName[2].length; i++) {
 		var type = cName[2].substring(i, i+1);
-		if (document.getElementById(name + type) != null) {
-			continue;
-		}
-		if (i != 0) {
-			types += " + ";
-		}
+		var option = document.createElement("option");
+		option.value = type;
+		
 		switch (type) {
-			case "L": types += "Lecture";
+			case "L": option.innerHTML = "Lecture";
 					  break;
-			case "B": types += "Lab";
+			case "B": option.innerHTML = "Lab";
 				      break;
-			case "C": types += "Recitation";
+			case "C": option.innerHTML = "Recitation";
 					  break;
-			case "H": types += "Hybrid";
+			case "H": option.innerHTML = "Hybrid";
 					  break;
-			case "E": types += "Empo";
+			case "E": option.innerHTML = "Emporium";
 					  break;
-			case "O": types += "Online";
+			case "O": option.innerHTML = "Online";
 					  break;
-			case "I": types += "Independent Study";
+			case "I": option.innerHTML = "Independent Study";
 				      break;
-			default:  types += "bug"
+			default:  option.innerHTML = "bug";
 					  break;
 		}
+		select.add(option);
 	}
-	row.insertCell(3).innerHTML = types + space;
+	row.insertCell(3).innerHTML = select.outerHTML + space;
 	row.insertCell(4).innerHTML = cName[1] + "C";	
 }
 

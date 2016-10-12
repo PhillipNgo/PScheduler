@@ -84,7 +84,6 @@ public class ScheduleForm extends HttpServlet {
             LinkedList<String> subjects = new LinkedList<>();
             LinkedList<String> numbers = new LinkedList<>();
             LinkedList<String> types = new LinkedList<>();
-            LinkedList<Boolean> onlineAllowed = new LinkedList<>();
             LinkedList<String> crns = new LinkedList<>();
             if (classes[0].length() != 0) {
                 for (int i = 0; i < classes.length; i++) {
@@ -95,11 +94,10 @@ public class ScheduleForm extends HttpServlet {
                         subjects.add(classes[i].substring(0, classes[i].length()-4));
                         numbers.add(classes[i].substring(classes[i].length()-4, classes[i].length()));
                         types.add("L");
-                        onlineAllowed.add(true);
                     }
                 }
             }
-            LinkedList<Schedule> schedules = ScheduleMaker.generateSchedule(term, subjects, numbers, types, onlineAllowed, startTime, endTime, freeDay, crns);
+            LinkedList<Schedule> schedules = ScheduleMaker.generateSchedule(term, subjects, numbers, types, startTime, endTime, freeDay, crns);
             
             if (schedules.size() == 0) {
                 html.append("No Schedules Matched Your Parameters");
