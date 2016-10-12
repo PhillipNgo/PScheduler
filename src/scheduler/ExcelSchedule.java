@@ -72,11 +72,17 @@ public class ExcelSchedule {
         classStyle.setFillForegroundColor(new HSSFColor.GREY_25_PERCENT().getIndex());
         
         int i = 1;
+        FileOutputStream fileOut;
         for (Schedule s : schedules) {
             createScheduleSheet(s, "Schedule " + (i++));
         }
-        
-        FileOutputStream fileOut = new FileOutputStream("WebContent/excelsheets/schedules.xls");
+        if (new File("WebContent").exists()) {
+            fileOut = new FileOutputStream("WebContent/excelsheets/schedules.xls");
+        }
+        else { 
+            fileOut = new FileOutputStream("webapps/ROOT/excelsheets/schedules.xls");
+        }
+         
         workbook.write(fileOut);
         fileOut.close();
     }

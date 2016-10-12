@@ -127,7 +127,7 @@ public class Schedule extends LinkedList<VTCourse> {
             if (c.getTimeSlot() != null) {
                 for (String d : c.getDays()) {
                     if (day == DAYS.indexOf(d)) {
-                        if (time >= c.getTimeSlot().getStartNum() && time <= c.getTimeSlot().getEndNum()) {
+                        if (time >= c.getTimeSlot().getStartNum() && time <= c.getTimeSlot().getEndNum()-5) {
                             return true;
                         }
                     }
@@ -136,7 +136,7 @@ public class Schedule extends LinkedList<VTCourse> {
             if (c.getAdditionalTime() != null) {
                 for (String d : c.getAdditionalDays()) {
                     if (day == DAYS.indexOf(d)) {
-                        if (time >= c.getAdditionalTime().getStartNum() && time <= c.getAdditionalTime().getEndNum()) {
+                        if (time >= c.getAdditionalTime().getStartNum() && time <= c.getAdditionalTime().getEndNum()-5) {
                             return true;
                         }
                     }

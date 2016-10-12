@@ -417,7 +417,7 @@ public class VTParser {
         String[] subjects = parser.getSubjectValues();
         
         try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-                new FileOutputStream("Database/" + termYear + ".txt"), "utf-8"))) {
+                new FileOutputStream("WebContent/Database/" + termYear + ".txt"), "utf-8"))) {
             for (String subject : subjects) {
                 HashMap<String, LinkedList<VTCourse>> list = map.get(subject);
                 if (list != null) {
@@ -449,7 +449,13 @@ public class VTParser {
      */
     public static HashMap<String, HashMap<String, LinkedList<VTCourse>>> parseTermFile(String termYear) throws Exception {
         HashMap<String, HashMap<String, LinkedList<VTCourse>>> map = new HashMap<>();
-        File file = new File("Database/" + termYear + ".txt");
+        File file;
+        if (new File("WebContent").exists()) { 
+            file = new File("WebContent/Database/" + termYear + ".txt");
+        }
+        else {
+            file = new File("webapps/ROOT/Database/" + termYear + ".txt");
+        }
         Scanner scan = new Scanner(file);
         while (scan.hasNextLine()) {
             String[] data = scan.nextLine().split("\t");

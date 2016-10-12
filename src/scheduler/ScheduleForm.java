@@ -27,6 +27,7 @@ public class ScheduleForm extends HttpServlet {
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html");
         PrintWriter printer = response.getWriter();
         StringBuilder html = new StringBuilder();
         
@@ -233,6 +234,9 @@ public class ScheduleForm extends HttpServlet {
                     }
                     for (int col = 0; col < 5; col++) {
                         String c = getHTMLSchedule(schedule, col, Time.timeString(early*60 + time*60 + row*5));
+                        if (time == 2) {
+                            System.out.println();
+                        }
                         if (c != null) {
                             String[] s = c.split("--");
                             html.append("<td " + "class=\"outline fill center\" rowspan=\"" + s[1] + "\">");

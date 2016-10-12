@@ -160,16 +160,16 @@ public final class ScheduleMaker {
     
     public static void main(String[] args) throws Exception {
         String term = "201701";
-        //String[] subjects = new String[]{"CS", "CS", "ECE", "ECE", "ECE", "ECE", "ECE"};
-        //String[] numbers = new String[]{"3114", "2506", "2014", "2524", "2704", "2204", "2274"};
-        //String[] types = new String[]{"L", "L", "L", "L", "L", "L", "B"};
-        //boolean[] onlineAllowed = new boolean[]{true, true, true, true, true, true, true};
-        //String[] crns = new String[]{};
-        String[] subjects = new String[]{"AHRM", "AHRM", "MKTG", "FIN", "MUS", "BIT"};
-        String[] numbers = new String[]{"2644", "2674", "3104H", "3074", "2056", "2406"};
-        String[] types = new String[]{"O", "L", "L", "L", "L", "L"};
-        Boolean[] onlineAllowed = new Boolean[]{true, true, true, true, true, true};
-        String[] crns = new String[]{"10061"};
+        String[] subjects = new String[]{"CS", "CS", "ECE", "ECE", "ECE", "ECE", "ECE"};
+        String[] numbers = new String[]{"3114", "2506", "2014", "2524", "2704", "2204", "2274"};
+        String[] types = new String[]{"L", "L", "L", "L", "L", "L", "B"};
+        Boolean[] onlineAllowed = new Boolean[]{true, true, true, true, true, true, true};
+        String[] crns = new String[]{};
+        //String[] subjects = new String[]{"AHRM", "AHRM", "MKTG", "FIN", "MUS", "BIT"};
+        //String[] numbers = new String[]{"2644", "2674", "3104H", "3074", "2056", "2406"};
+        //String[] types = new String[]{"O", "L", "L", "L", "L", "L"};
+        //Boolean[] onlineAllowed = new Boolean[]{true, true, true, true, true, true};
+        //String[] crns = new String[]{"10061"};
         //String[] subjects = new String[]{"MATH"};
         //String[] numbers = new String[]{"1014"};
         //String[] types = new String[]{"L"};
