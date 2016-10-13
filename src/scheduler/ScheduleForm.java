@@ -91,9 +91,13 @@ public class ScheduleForm extends HttpServlet {
                         crns.add(classes[i]);
                     }
                     else {
+                        int index = 0;
+                        if (classes[i].charAt(classes[i].length()-1) == 'H') {
+                            index = 1;
+                        }
                         types.add(classes[i].substring(0, 1));
-                        subjects.add(classes[i].substring(1, classes[i].length()-4));
-                        numbers.add(classes[i].substring(classes[i].length()-4, classes[i].length()));
+                        subjects.add(classes[i].substring(1, classes[i].length()-4-index));
+                        numbers.add(classes[i].substring(classes[i].length()-4-index, classes[i].length()));
                     }
                 }
             }
@@ -118,7 +122,7 @@ public class ScheduleForm extends HttpServlet {
             }
         }
         catch (Exception e) {
-            html.append("Error in Making Schedules<br>");
+            html.append("Error in Making Schedules<br>Please submit a bug below in the footer using this url<br>");
             html.append(e.getMessage());
         }
         
