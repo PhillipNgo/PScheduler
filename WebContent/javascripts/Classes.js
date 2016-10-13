@@ -27,9 +27,6 @@ function addClass() {
 	row.insertCell(1).innerHTML = subj + " " + num + space;
 	row.insertCell(2).innerHTML = cName[0] + space;
 	var select = document.createElement("select");
-	var optionA = document.createElement("option");
-	option.value = "A";
-	option.innerHTML = "Any";
 	for (var i = 0; i < cName[2].length; i++) {
 		var type = cName[2].substring(i, i+1);
 		var option = document.createElement("option");
@@ -55,6 +52,10 @@ function addClass() {
 		}
 		select.add(option);
 	}
+	var optionA = document.createElement("option");
+	optionA.value = "A";
+	optionA.innerHTML = "Any";
+	select.add(optionA);
 	row.insertCell(3).innerHTML = select.outerHTML + space;
 	row.insertCell(4).innerHTML = cName[1] + "C";	
 }
@@ -129,7 +130,8 @@ function sendSchedule() {
 
 	var values = "";
 	for (var i = 0, row; row = table.rows[i]; i++) {
-		values = values + row.cells[0].id;
+		var type = row.cells[3].getElementsByTagName("select");
+		values = values + type.options[type.selectedIndex].value + row.cells[0].id;
 		if (i != table.rows.length-1) {
 			values = values + "xx";
 		}
