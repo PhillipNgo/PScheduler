@@ -1,4 +1,4 @@
-<select id="subjects" name="201609subjects" class="optionfont" onchange="displayNums(false)">
+<select id="" class="optionfont" name="201609subjects" style="display: none;" onchange="displayNums(false)">
 <option value="AAEC">AAEC - Agricultural and Applied Economics</option>
 <option value="ACIS">ACIS - Accounting and Information Systems</option>
 <option value="AFST">AFST - Africana Studies</option>
@@ -134,7 +134,7 @@
 <option value="UNIV">UNIV - University Course Series</option>
 <option value="VM">VM - Veterinary Medicine</option>
 <option value="WGS">WGS - Women's and Gender Studies</option>
-</select><select id="" class="optionfont" name="201701subjects" style="display: none;" onchange="displayNums(false)">
+</select><select id="subjects" name="201701subjects" class="optionfont" onchange="displayNums(false)">
 <option value="AAEC">AAEC - Agricultural and Applied Economics</option>
 <option value="ACIS">ACIS - Accounting and Information Systems</option>
 <option value="AFST">AFST - Africana Studies</option>

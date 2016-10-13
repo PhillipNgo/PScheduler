@@ -64,7 +64,7 @@ public class HtmlSet {
                 html.setTerm(term);
                 String[] subjectValues = html.getSubjectValues();
                 String[] subjectNames = html.getSubjects();
-                if (term.equals(terms.get(0))) {
+                if (term.equals(terms.get(terms.size()-1))) {
                     writer.write("<select id=\"subjects\" name=\"" + term + "subjects\" class=\"optionfont\" onchange=\"displayNums(false)\">\r\n");
                 }
                 else {
@@ -110,7 +110,7 @@ public class HtmlSet {
                     HashMap<String, LinkedList<VTCourse>> classes = list.get(subject);
                     String[] nums = filterClasses(classes);
                     Arrays.sort(nums);
-                    if (term.equals("201609") && subject.equals("AAEC")) {
+                    if (term.equals(terms.get(terms.size()-1)) && subject.equals(subjects[1])) {
                         writer.write("<select name=\"" + term + subject + "\" id=\"number\">\r\n");
                     }
                     else {

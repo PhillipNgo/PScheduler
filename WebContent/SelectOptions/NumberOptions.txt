@@ -1,4 +1,4 @@
-<select name="201701AAEC" style="display: none;">
+<select name="201701AAEC" id="number">
 <option value="none" disabled selected value>----</option>
 <option name="Econ Food Fiber Sys--3--L" value="201701AAEC1005">1005</option>
 <option name="Econ Food Fiber Syst--3--L" value="201701AAEC1006">1006</option>
