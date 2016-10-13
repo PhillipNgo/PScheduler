@@ -516,6 +516,7 @@ public class VTParser {
     
     public static void main(String[] args) throws Exception {
         VTParser.outputFile("201609");
+        VTParser.outputFile("201701");
         //System.out.println(VTParser.parseTermFile("201609"));
     }
 }

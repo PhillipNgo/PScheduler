@@ -39,7 +39,7 @@ public class HtmlSet {
         String[] optionValues = html.getTermValues();
         try (Writer writer = new BufferedWriter(new OutputStreamWriter(
                 new FileOutputStream("WebContent/SelectOptions/TermOptions.txt"), "utf-8"))) {
-            for (int i = optionNames.length - 2; i > 0; i--) {
+            for (int i = 1; i < optionNames.length-1; i++) {
                 if (!optionNames[i].contains("Summer") && !optionNames[i].contains("Winter")) {
                     writer.write("<option value=\"");
                     writer.write(optionValues[i-1]);
@@ -87,7 +87,13 @@ public class HtmlSet {
     private static void numOptions() throws Exception {
         try (Writer writer = new BufferedWriter(new OutputStreamWriter(
                 new FileOutputStream("WebContent/SelectOptions/NumberOptions.txt"), "utf-8"))) {
+            String[] optionNames = html.getTerms();
+            int i = optionNames.length;
             for (String term : terms) {
+                i--;
+                if (optionNames[i].contains("Summer") || optionNames[i].contains("Winter")) {
+                    continue;
+                }
                 html.setTerm(term);
                 String[] subjects = html.getSubjectValues();
                 HashMap<String, HashMap<String, LinkedList<VTCourse>>> list;

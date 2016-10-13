@@ -1402,6 +1402,17 @@ Independent Study	BMES	5974	Staff	81318	1	I
 Stochastic Signals and Systems	BMES	5525	AM Abdel Hadi	81315	3	O
 Seminar	BMES	5944	M Van Dyke	81317	1	L	TBA	T R	11:00AM	12:15PM
 Seminar	BMES	5944	M Van Dyke	81316	1	L	TBA	R	11:00AM	12:15PM	MCB 328	T	11:00AM	12:15PM
+Human Anatomy & Physiology	BMSP	2135	TL Gillian	81383	3	L	MCB 100	T R	2:00PM	3:15PM
+Human Anatomy & Physiology Lab	BMSP	2146	Staff	88633	1	B
+Human Anatomy & Physiology Lab	BMSP	2145	TL Gillian	88693	1	B	TBA	W	11:15AM	1:05PM
+Human Anatomy & Physiology Lab	BMSP	2145	TL Gillian	81390	1	B	TORG 1010	W	1:25PM	3:15PM
+Human Anatomy & Physiology Lab	BMSP	2145	TL Gillian	81389	1	B	TORG 1010	R	8:50AM	10:45AM
+Human Anatomy & Physiology Lab	BMSP	2145	TL Gillian	81388	1	B	TORG 1010	R	6:00PM	7:50PM
+Human Anatomy & Physiology Lab	BMSP	2145	TL Gillian	81387	1	B	TORG 1010	W	5:30PM	7:20PM
+Human Anatomy & Physiology Lab	BMSP	2145	TL Gillian	81386	1	B	TORG 1010	R	8:00PM	9:50PM
+Human Anatomy & Physiology Lab	BMSP	2145	TL Gillian	81385	1	B	TORG 1080	W	11:15AM	1:05PM
+Human Anatomy & Physiology Lab	BMSP	2145	TL Gillian	81384	1	B	TORG 1010	R	3:30PM	5:20PM
+Independent Study	BMSP	4974	Staff	89322	1	L
 Cellular Pathology	BMVS	5284	KL Zimmerman	81402	3	L	TBA	T R	10:00AM	11:50AM
 Veterinary Immunology	BMVS	5044	SA Ahmed	81398	2	L
 Vet Clin Sci Resid	BMVS	6014	RJ Avery	81419	0	L
@@ -3262,7 +3273,7 @@ College Teaching	EDEP	6644	DL Lusk	88164	3	L	GYM 234	M	7:00PM	9:50PM
 Field Studies in Education	EDEP	7964	Staff	83338	1	L
 Field Studies in Education	EDEP	5964	Staff	83334	1	L
 Professional Seminar	EDEP	6944	BD Jones	83337	1	L	GYM 220L	W	10:00AM	11:50AM
-Higher Education Law	EDHE	6274	SM Janosik	83348	3	L	GYM 220G	R	1:00PM	3:50PM
+Higher Education Law	EDHE	6274	SM Janosik	83348	3	L	GYM 220L	R	1:00PM	3:50PM
 Higher Educ in US	EDHE	6064	GR Serna	83347	3	L	TBA	W	9:00AM	11:50AM
 Research and Dissertation	EDHE	7994	Staff	83354	1	R
 Theories Edu Org	EDHE	6304	JB Hirt	83349	3	L	TBA	M	9:00AM	11:50AM
@@ -4149,6 +4160,86 @@ Undergraduate Research	GEOG	4994	MM Deisinger	84204	1	R
 SS:Elemnts of Geog Inf Systems	GEOG	5984	LW Carstensen	88855	3	L	GOODW 190	T R	2:00PM	3:15PM
 Independent Study	GEOG	4974	MM Deisinger	84203	1	I
 Survey of Meteorology	GEOG	1504	DF Carroll	84178	1	L	MCB 136	F	11:15AM	12:05PM
+Adv Environmental Geochemistry	GEOS	5634G	BC Gill	84279	3	L	DER 3076	M W F	10:10AM	11:00AM
+Exploration Seismology	GEOS	4174	JA Hole	88555	4	L	DER 4069	T R	9:30AM	10:45AM	DER 2068	F	11:15AM	2:05PM
+Prof Develop & Ethics Geosci	GEOS	5024	KA Eriksson	89465	1	L	DER 4069	F	2:30PM	3:45PM
+Advanced Groundwater Hydrology	GEOS	5804G	ME Schreiber	84283	3	L	DER 4069	M W	11:15AM	12:05PM	DER 2052	R	11:00AM	1:50PM
+Advanced Groundwater Hydrology	GEOS	5804G	ME Schreiber	84282	3	L	DER 4069	M W	11:15AM	12:05PM	DER 2052	R	2:00PM	4:50PM
+Introduction to Remote Sensing	GEOS	4354	JB Campbell	84265	3	L	TORG 3100	M W	8:00AM	8:50AM	TORG 1010	M F	12:20PM	1:35PM
+Introduction to Remote Sensing	GEOS	4354	JB Campbell	84264	3	L	TORG 3100	M W	8:00AM	8:50AM	TORG 1010	M F	2:00PM	3:15PM
+Groundwater Hydrology	GEOS	4804	ME Schreiber	84269	3	L	DER 4069	M W	11:15AM	12:05PM	DER 2052	R	2:00PM	4:50PM
+Groundwater Hydrology	GEOS	4804	ME Schreiber	84268	3	L	DER 4069	M W	11:15AM	12:05PM	DER 2052	R	11:00AM	1:50PM
+Soils	GEOS	3614	WL Daniels	84254	3	L	ENGEL 223	T R	12:30PM	1:45PM
+Field Study	GEOS	2964	NL Ross	84244	1	L
+Elements of Geology	GEOS	2104	R Weiss	84242	3	L	LITRV 1670	M W F	2:30PM	3:20PM	DER 2068	R	11:00AM	1:50PM
+Elements of Geology	GEOS	2104	R Weiss	84241	3	L	LITRV 1670	M W F	2:30PM	3:20PM	DER 2068	T	5:00PM	7:50PM
+Elements of Geology	GEOS	2104	R Weiss	84240	3	L	LITRV 1670	M W F	2:30PM	3:20PM	DER 2068	R	5:00PM	7:50PM
+Elements of Geology	GEOS	2104	R Weiss	84238	3	L	LITRV 1670	M W F	2:30PM	3:20PM	DER 2068	W	11:15AM	2:05PM
+Elements of Geology	GEOS	2104	R Weiss	84237	3	L	LITRV 1670	M W F	2:30PM	3:20PM	DER 2068	R	2:00PM	4:50PM
+Earth's Natural Hazards	GEOS	1034	NE Johnson	89121	3	L	NCB 360	T R	8:00AM	9:15AM
+Earth's Natural Hazards	GEOS	1034	Y Zhou	84224	3	O
+Earth's Dynamic Systems	GEOS	2024	SJ Nesbitt	88695	8	L	DER 3076	M W	12:45PM	2:15PM	DER 2060	T R	2:00PM	4:50PM
+Environmental Geosciences	GEOS	3014	NE Johnson	88550	3	L	DER 4069	T R	12:30PM	1:45PM
+Adv Topics Paleont	GEOS	6304	BC Gill	84288	1	L	DER 4052	R	5:00PM	6:00PM
+SS: Sedimentary Basins	GEOS	4984	BW Romans	88252	3	L	DER 4045	M W	11:15AM	12:05PM	DER 4045	F	9:00AM	11:50AM
+Independent Study	GEOS	5974	NL Ross	84284	1	I
+X-Ray Crystallography	GEOS	5535	C Slebodnick	89307	3	L	ILSB 2031	T R	9:30AM	10:45AM
+TS: Earth Material Analysis	GEOS	6504	FM Michel	88557	3	L	DER 4045	F	12:15PM	2:15PM
+TS: Tectonic Geodesy	GEOS	6404	DS Stamps	88873	3	L	DER 4052	W F	8:00AM	9:15AM
+TS: Advanced Geomorphology	GEOS	6404	JA Spotila	88556	3	L	DER 4052	T	9:00AM	12:00PM
+Undergraduate Research	GEOS	4994H	NL Ross	89038	1	R
+Undergraduate Research	GEOS	4994H	NL Ross	89037	1	R
+Undergraduate Research	GEOS	4994H	NL Ross	84273	1	R
+Research and Dissertation	GEOS	7994	NL Ross	84291	1	R
+Dynamics Planet Interiors	GEOS	5134	SD King	88627	3	L	DER 4052	M W	10:00AM	11:15AM
+Advanced Volcanic Processes	GEOS	5714G	RJ Tracy	84280	3	L	DER 4069	T R	3:30PM	4:45PM
+TS:Seismic Data Analysis	GEOS	6104	Y Zhou	88990	3	L	DER 4052	R	11:00AM	12:15PM	DER 3040	F	8:30AM	11:00AM
+Research and Thesis	GEOS	5994	NL Ross	84285	1	R
+Advanced Remote Sensing	GEOS	5354G	JB Campbell	84278	3	L	TORG 3100	M W	8:00AM	8:50AM	TORG 1010	M F	12:20PM	1:35PM
+Advanced Remote Sensing	GEOS	5354G	JB Campbell	84277	3	L	TORG 3100	M W	8:00AM	8:50AM	TORG 1010	M F	2:00PM	3:15PM
+Mineralogy	GEOS	3504	NL Ross	88811	3	L
+Mineralogy	GEOS	3504	FM Michel	84253	3	L	DER 4069	M W	10:10AM	11:00AM	DER 4045	R	5:30PM	8:20PM
+Mineralogy	GEOS	3504	FM Michel	84251	3	L	DER 4069	M W	10:10AM	11:00AM	DER 4045	M	2:30PM	5:20PM
+Elements of Structural Geology	GEOS	3404	RD Law	88810	3	L
+Elements of Structural Geology	GEOS	3404	RD Law	84249	3	L	DER 4069	T R	11:00AM	11:50AM	DER 3045	W	2:30PM	5:20PM
+Elements of Structural Geology	GEOS	3404	RD Law	84248	3	L	DER 4069	T R	11:00AM	11:50AM	DER 3045	F	11:15AM	2:05PM
+Soils Laboratory	GEOS	3624	WL Daniels	84261	1	B	SMYTH 246B	T	9:30AM	12:15PM
+Soils Laboratory	GEOS	3624	WL Daniels	84260	1	B	SMYTH 246B	F	11:15AM	2:00PM
+Soils Laboratory	GEOS	3624	WL Daniels	84259	1	B	SMYTH 246B	R	2:00PM	4:45PM
+Soils Laboratory	GEOS	3624	WL Daniels	84258	1	B	SMYTH 246B	W	1:25PM	4:10PM
+Soils Laboratory	GEOS	3624	WL Daniels	84257	1	B	SMYTH 246B	T	2:00PM	4:45PM
+Soils Laboratory	GEOS	3624	WL Daniels	84256	1	B	SMYTH 246B	R	9:30AM	12:15PM
+Soils Laboratory	GEOS	3624	WL Daniels	84255	1	B	SMYTH 246B	W	8:00AM	10:45AM
+Physical Geology Laboratory	GEOS	1104	JA Chermak	84231	1	B	DER 2060	M	11:15AM	2:05PM
+Physical Geology Laboratory	GEOS	1104	JA Chermak	84230	1	B	DER 2060	W	11:15AM	2:05PM
+Physical Geology Laboratory	GEOS	1104	JA Chermak	84229	1	B	DER 2060	W	2:30PM	5:20PM
+Physical Geology Laboratory	GEOS	1104	JA Chermak	84228	1	B	DER 2060	W	8:00AM	10:50AM
+Physical Geology Laboratory	GEOS	1104	JA Chermak	84227	1	B	DER 2060	T	11:00AM	1:50PM
+Physical Geology Laboratory	GEOS	1104	JA Chermak	84226	1	B	DER 2060	M	2:30PM	5:20PM
+Physical Geology Laboratory	GEOS	1104	JA Chermak	84225	1	B	DER 2060	R	8:00AM	10:50AM
+Physical Geology	GEOS	1004	L Fedele	84219	3	O
+Physical Geology	GEOS	1004	NE Johnson	84218	3	L	DER 4069	M W	2:30PM	3:45PM
+Physical Geology	GEOS	1004	JA Spotila	84217	3	L	HAN 100	M W F	1:25PM	2:15PM
+Sedimentology-Stratigraphy	GEOS	3204	KA Eriksson	88809	3	L
+Sedimentology-Stratigraphy	GEOS	3204	BW Romans	84247	3	L	DER 4069	M W	9:05AM	9:55AM	DER 4045	W	12:20PM	3:10PM
+Sedimentology-Stratigraphy	GEOS	3204	BW Romans	84246	3	L	DER 4069	M W	9:05AM	9:55AM	DER 4045	R	12:30PM	3:20PM
+Resources Geol Lab	GEOS	1124	JA Chermak	84235	1	B	DER 2052	M	5:30PM	7:20PM
+Resources Geol Lab	GEOS	1124	JA Chermak	84234	1	B	DER 2052	M	1:25PM	3:15PM
+Resources Geol Lab	GEOS	1124	JA Chermak	84233	1	B	DER 2052	W	2:30PM	4:20PM
+Resources Geol Lab	GEOS	1124	JA Chermak	84232	1	B	DER 2052	T	5:00PM	6:50PM
+Resources Geology	GEOS	1024	L Fedele	88926	3	O
+Resources Geology	GEOS	1024	L Fedele	84222	3	L	MCB 100	M W F	1:25PM	2:15PM
+Resources Geology	GEOS	1024	JA Chermak	84221	3	L	NCB 320	T R	11:00AM	12:15PM
+Resources Geology	GEOS	1024	JA Chermak	84220	3	L	NCB 260	T R	12:30PM	1:45PM
+Mission to the Planets	GEOS	2014	SD King	84236	3	O
+Undergraduate Research	GEOS	4994	NL Ross	88813	1	R
+Undergraduate Research	GEOS	4994	NL Ross	84272	1	R
+Undergraduate Research	GEOS	4994	NL Ross	84271	1	R
+SS: Sedimentary Basins	GEOS	5984	BW Romans	88251	3	L	DER 4045	M W	11:15AM	12:05PM	DER 4045	F	9:00AM	11:50AM
+Independent Study	GEOS	4974	NL Ross	84270	1	I
+Environmental Geochemistry	GEOS	4634	BC Gill	84266	3	L	DER 3076	M W F	10:10AM	11:00AM
+Volcanic Processes	GEOS	4714	E Gazel	88812	3	L
+Volcanic Processes	GEOS	4714	RJ Tracy	84267	3	L	DER 4069	T R	3:30PM	4:45PM
 Adv Comp and Style	GER	4154	DL Stoudt	84306	3	L	WAL 244	M W	5:30PM	6:45PM
 Senior Tutorial	GER	4794	Staff	84308	1	L
 Research and Thesis	GER	5994	Staff	84317	1	R
@@ -4236,6 +4327,74 @@ Field Study-Human Cntr Design	GRAD	5964	JE Vaughn	89681	3	L
 Field Study/Practicum	GRAD	5964	KP DePauw	84386	1	L
 Study Abroad	GRAD	5954	KP DePauw	84385	1	L
 Molec Plant Sci Lab Rotation	GRAD	5515	EA Grabau	84381	3	B
+Theory Construction in Hum Dev	HD	6014	MJ Benson	88302	3	L	MCB 658	W	9:00AM	11:50AM
+Social Emotional Dev	HD	5224	C Shivers	88300	3	L	WAL 407	T	9:00AM	11:50AM
+Appalachian Communities	HD	3464	AM Puckett	84427	3	L	WLH 335	T R	12:30PM	1:45PM
+Family Relationships	HD	2304	JL Stephen Premo	84410	3	O
+Family Relationships	HD	2304	EL Grafsky	84409	3	L	NCB 260	M W	2:30PM	3:45PM
+SS: Helping Skills Development	HD	2984	MF Komelski	89917	1	O
+Human Development II	HD	2004	AM Ogletree	84408	3	O
+Human Development II	HD	2004	MF Komelski	84407	3	L	NCB 360	T R	2:00PM	3:15PM
+Infancy and Early Childhood	HD	3214	SL Molloy	89294	3	L	SEITZ 207	M W	2:30PM	3:45PM
+Infancy and Early Childhood	HD	3214	AF Gardner	84424	3	L	WAL 244	T R	2:00PM	3:15PM
+Issues in Aging	HD	3114	R Weaver	84423	3	L	NCB 250	M W	4:00PM	5:15PM
+Research Methods in Human Dev	HD	3014	Staff	88360	3	L	SMYTH 331	T R	11:00AM	12:15PM
+Research Methods in Human Dev	HD	3014	Staff	84422	3	O
+Research Methods in Human Dev	HD	3014	Staff	84421	3	L	WAL 234	T R	9:30AM	10:45AM
+Advanced Family Relationships	HD	4324	JA Arditti	84429	3	L	LITRV 1860	T R	3:30PM	4:45PM
+Advanced Family Relationships	HD	4324	V Blanchard	84428	3	L	NCB 230	T R	11:00AM	12:15PM
+Internship	HD	5754	J Case Pease	84450	1	L
+IS: Teaching Apprenticeship	HD	5974	ED McNair	89772	1	I
+Independent Study	HD	5974	Staff	89341	1	I
+Teaching Seminar	HD	5974	KR Allen	88941	1	I	WAL 407	F	9:05AM	11:00AM
+Field Study	HD	4964	SL Molloy	89581	1	L
+Field Study	HD	4964	ME Verdu	88972	1	L
+Field Study	HD	4964	ES Stachelski	84436	1	L	HUTCH 207	M	1:25PM	2:15PM
+Field Study	HD	4964	ME Verdu	84435	1	L
+Research Methods	HD	5514	MF Komelski	88305	3	L	WAL 407	M W	5:30PM	6:45PM
+Human Dev Theory & Application	HD	5614	AL Few-Demo	84444	3	L	WAL 407	W	9:00AM	11:50AM
+Social Epi & Health Inequal	HD	5254	C Kaestle	88973	3	L	WAL 407	T	5:30PM	8:20PM
+Research And Dissertation	HD	7994	Staff	84468	1	R
+Research And Thesis	HD	5994	Staff	84462	1	R
+Prof Development Seminar	HD	6004	CL Smith	84465	1	L	WAL 407	F	1:00PM	2:50PM
+Adv Contemporary MFT	HD	6444	FP Piercy	88304	3	L	WAL 407	R	4:00PM	6:50PM
+Human Sexuality	HD	2314	Staff	88088	3	L	SURGE 118B	T R	11:00AM	12:15PM
+Human Sexuality	HD	2314	VQ Glass	84416	3	O
+Human Sexuality	HD	2314	MM Murray	84415	3	O
+Human Sexuality	HD	2314	MR Nedela	84414	3	O
+Human Sexuality	HD	2314	AL Few-Demo	84413	3	L	LITRV 1670	T R	2:00PM	3:15PM
+Human Sexuality	HD	2314	C Kaestle	84412	3	L	LITRV 1870	T R	3:30PM	4:45PM
+Human Sexuality	HD	2314	V Blanchard	84411	3	L	ENGEL 223	M W F	1:25PM	2:15PM
+Principles of Human Services	HD	2336	EA Gary	89110	3	L	WAL 244	T R	3:30PM	4:45PM
+Principles of Human Services	HD	2336	V Blanchard	84419	3	L	NCB 250	M W	2:30PM	3:45PM
+Principles of Human Services	HD	2336	ML Dolbin-MacNab	84418	3	L	LITRV 1860	T R	11:00AM	12:15PM
+Advanced Helping Skills	HD	3304	J Case Pease	84426	3	L	NCB 230	M W	2:30PM	3:45PM
+Human Development I	HD	1004	EC Potter	88087	3	O
+Human Development I	HD	1004	K Krizova	84406	3	O
+Human Development I	HD	1004	L Tan	84405	3	O
+Human Development I	HD	1004	V Diaz	84404	3	L	LITRV 1870	M W	2:30PM	3:45PM
+Human Development I	HD	1004	KJ Kim	84403	3	L	ENGEL 223	T R	3:30PM	4:45PM
+Human Development I	HD	1004	KJ Kim	84402	3	L	WAL 340	T R	11:00AM	12:15PM
+Human Development I	HD	1004	C Shivers	84400	3	L	ENGEL 223	T R	2:00PM	3:15PM
+Principles of Human Services	HD	2335	MF Komelski	84417	3	L	SURGE 104C	T R	9:30AM	10:45AM
+Middle Child & Adolescence	HD	3224	V Diaz	84425	3	L	WAL 234	M W	5:30PM	6:45PM
+UR: Transcribing LGBQ Stories	HD	4994	EL Grafsky	89847	3	R
+UR:Ethics&Values of Oldr Adlts	HD	4994	PB Teaster	89829	3	R
+UR: Emerging Adult Sexuality	HD	4994	AL Few-Demo	89805	1	R
+UR: Child Social/Emo Dev	HD	4994	CL Smith	89582	2	R
+Mar Fam Relationships	HD	5324	KR Allen	88301	3	L	WAL 407	R	9:00AM	11:50AM
+Adv Trad Family Therapy	HD	6414	EL Grafsky	88303	3	L	WAL 407	M	9:00AM	11:50AM
+Program Evaluation	HD	5644	IS Bradburn	84445	3	L	LITRV 1770	M	5:30PM	8:20PM
+SS:Prep Crse Stdy Abrd Jordan	HD	3984	KJ Kim	89606	1	L	WAL 407	R	7:00PM	7:45PM
+IS: JMFT Editorial Intern	HD	4974	FP Piercy	89843	3	I
+IS:Arts and Reminiscience	HD	4974	ES Stachelski	89762	1	I
+Independent Study	HD	4974	Staff	84438	1	I
+Independent Study	HD	4974	Staff	84437	1	I
+TS: HD Research Team	HD	5964	Staff	84453	1	L
+TS: MFT Supervision	HD	5964	J Case Pease	84452	1	L	WAL 407	T	1:00PM	3:50PM
+Senior Capstone Seminar	HD	4714	ME Verdu	84434	3	L	WAL 234	T R	12:30PM	1:45PM
+Senior Capstone Seminar	HD	4714	MJ Benson	84433	3	L	LITRV 1760	M W	4:00PM	5:15PM
+Senior Capstone Seminar	HD	4714	ME Verdu	84432	3	L	LITRV 1760	T R	9:30AM	10:45AM
 Independent Study	HEB	4974H	Staff	84472	1	I
 Hebrew I	HEB	1104	EF Hallerman	89500	3	L	MAJWM 327	T R	2:00PM	3:15PM
 Undergraduate Research	HEB	4994H	Staff	84473	1	R
