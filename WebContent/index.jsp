@@ -15,6 +15,7 @@
   <header>
     <h1>Scheduler</h1>
     <p class="view">VT Schedule Creation</p>
+    
   </header>
   <div class="parent">
     <div class="child box1">
@@ -162,7 +163,7 @@
     
   </div>
   <footer>
-    <p class="view">Phillip Ngo | <a href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a></p>
+    <p class="view">Phillip Ngo | <a href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a> | <a href="https://goo.gl/forms/CIeZtR1XndZCFdUH2">Submit a Bug or Suggestion</a></p>
   </footer>
 </body>
 
