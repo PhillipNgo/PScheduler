@@ -42,12 +42,13 @@ public class ScheduleForm extends HttpServlet {
         
         html.append("<body class=\"Site\">");
         html.append("<header>");
-        html.append("<h1>Scheduler</h1>");
+        html.append("<h1><a href=\"http://pscheduler.us-west-2.elasticbeanstalk.com\">Scheduler</a></h1>");
         html.append("<p class=\"view\">VT Schedule Creation</p>");
         html.append("</header>");
         
         html.append("<div class=\"buttongroup\">");
-        html.append("<input type=\"button\" value=\"Modify Search\"/>");
+        html.append("modify search not implemented yet, it's coming!!");
+        html.append("<br><input type=\"button\" value=\"Modify Search\"/>");
         html.append("<input name=\"table\" onclick=\"switchView(this.name)\" id=\"view1\" type=\"button\" value=\"Text View\"/>");
         html.append("<input type=\"button\" value=\"Previous Schedule\"/ onclick=\"changeSchedule(-1)\">");
         html.append("<input type=\"button\" value=\"Next Schedule\"/ onclick=\"changeSchedule(1)\"><br>");
