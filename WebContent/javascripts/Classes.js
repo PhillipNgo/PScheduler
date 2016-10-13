@@ -8,6 +8,11 @@ function selectClass(subj, num) {
 	addClass();
 }
 
+function selectCRN(crn) {
+	var crntext = document.getElementById("crn");
+	crntext.value = crn;
+	addCRN();
+}
 
 function addClass() {
 	var table = document.getElementById("scheduledisplay");
@@ -147,8 +152,12 @@ function sendSchedule() {
 
 	var values = "";
 	for (var i = 0, row; row = table.rows[i]; i++) {
-		var type = row.cells[3].getElementsByTagName("select")[0];
-		values = values + type.options[type.selectedIndex].value + row.cells[0].id;
+		try {
+			var type = row.cells[3].getElementsByTagName("select")[0];
+			values = values + type.options[type.selectedIndex].value;
+		}
+		catch (err) {}
+		values = values + row.cells[0].id;
 		if (i != table.rows.length-1) {
 			values = values + "xx";
 		}

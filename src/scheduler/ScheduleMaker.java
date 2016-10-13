@@ -63,10 +63,20 @@ public final class ScheduleMaker {
         }
         
         if (crns.size() != 0) {
-            parser = new VTParser(term);
             for (String crn : crns) {
                 LinkedList<VTCourse> curr = new LinkedList<>();
-                curr.add(parser.parseCRN(crn));
+                outerloop:
+                for (String subj : map.keySet()) {
+                    HashMap<String, LinkedList<VTCourse>> subject = map.get(subj);
+                    for (String num : subject.keySet()) {
+                        for (VTCourse c : subject.get(num)) {
+                            if (crn.equals(c.getCRN())) {
+                                curr.add(c);
+                                break outerloop;
+                            }
+                        }
+                    }
+                }
                 classes.add(curr);
             }
         }

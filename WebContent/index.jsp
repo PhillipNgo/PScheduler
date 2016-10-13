@@ -197,8 +197,13 @@
 				if (str.charAt(str.length-1) == 'H') {
                     index = 1;
                 }
-				selectClass(str.substring(1, str.length-4-index), str.substring(str.length-4-index, str.length));
-				document.getElementById("row" + i).value = str.substring(0, 1);
+				if (str.length == 5 && !isNaN(parseInt(str, 10))) {
+					selectCRN(str);
+				}
+				else {
+					selectClass(str.substring(1, str.length-4-index), str.substring(str.length-4-index, str.length));
+					document.getElementById("row" + i).value = str.substring(0, 1);
+				}			
 			}
 		}
 	}
