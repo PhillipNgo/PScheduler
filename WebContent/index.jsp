@@ -13,7 +13,7 @@
 
 <body class="Site">
   <header>
-    <h1>Scheduler</h1>
+    <h1><a href="http://pscheduler.us-west-2.elasticbeanstalk.com">Scheduler</a></h1>
     <p class="view">VT Schedule Creation</p>
     
   </header>

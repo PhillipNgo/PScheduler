@@ -47,7 +47,7 @@ public class ScheduleForm extends HttpServlet {
         html.append("</header>");
         
         html.append("<div class=\"buttongroup\">");
-        html.append("modify search not implemented yet, it's coming!!<br><form action=\"ModifyForm.do\">");
+        html.append("modify search should work now! also, you can save the url above to come back to these results<br><form action=\"ModifyForm.do\">");
         html.append("<input type=\"submit\" value=\"Modify Search\"/>");
         
         html.append("<select style=\"display: none;\" name=\"classes\"><option value=\"" + request.getParameter("schedule") + "\"></option></select>");
