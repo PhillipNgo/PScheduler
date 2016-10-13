@@ -21,8 +21,8 @@ function addClass() {
 	var space = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 	
 	var row = table.insertRow(table.rows.length);
-	row.id = name + type;
-	row.insertCell(0).innerHTML = "<input name=\"" + name + type + "\"type=\"button\" value=\" X \" onclick=\"removeClass(this.name)\" class=\"xbutton\"></input>"
+	row.id = name;
+	row.insertCell(0).innerHTML = "<input name=\"" + name + "\"type=\"button\" value=\" X \" onclick=\"removeClass(this.name)\" class=\"xbutton\"></input>"
 	row.cells[0].id = name;
 	row.insertCell(1).innerHTML = subj + " " + num + space;
 	row.insertCell(2).innerHTML = cName[0] + space;
