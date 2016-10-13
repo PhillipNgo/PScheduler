@@ -130,7 +130,7 @@ function sendSchedule() {
 
 	var values = "";
 	for (var i = 0, row; row = table.rows[i]; i++) {
-		var type = row.cells[3].getElementsByTagName("select");
+		var type = row.cells[3].getElementsByTagName("select")[0];
 		values = values + type.options[type.selectedIndex].value + row.cells[0].id;
 		if (i != table.rows.length-1) {
 			values = values + "xx";

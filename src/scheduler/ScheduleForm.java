@@ -91,9 +91,9 @@ public class ScheduleForm extends HttpServlet {
                         crns.add(classes[i]);
                     }
                     else {
-                        subjects.add(classes[i].substring(0, classes[i].length()-4));
+                        types.add(classes[i].substring(0, 1));
+                        subjects.add(classes[i].substring(1, classes[i].length()-4));
                         numbers.add(classes[i].substring(classes[i].length()-4, classes[i].length()));
-                        types.add("L");
                     }
                 }
             }

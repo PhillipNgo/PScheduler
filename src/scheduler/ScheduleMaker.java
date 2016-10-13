@@ -123,7 +123,7 @@ public final class ScheduleMaker {
     private static boolean checkRestrictions(VTCourse course, String start, String end, String type, String freeDay) throws TimeException {
         Time time = course.getTimeSlot();
          
-        if (type != "A" && type != course.getClassType()) {
+        if (!type.equals("A") && !type.equals(course.getClassType())) {
             return false;
         }
         
