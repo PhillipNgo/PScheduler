@@ -146,7 +146,7 @@
 			    scan.close();
           	%>
 
-	      <input type="button" name="addClassButton" value="Add" onclick="addClass()"/>
+	      <input type="button" name="addClassButton" value="Add" onclick="addClass('Z')"/>
 		  <div style="padding-top:10px;">Add CRN:<br><input type="text" id="crn" class="optionfont short"/>
           <input type="button" name="addCRNButton" value="Add" onclick="addCRN()"/>
           </div><br>
@@ -166,5 +166,42 @@
     <p class="view">Phillip Ngo | <a href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a> | <a href="https://goo.gl/forms/CIeZtR1XndZCFdUH2">Submit a Bug or Suggestion</a></p>
   </footer>
 </body>
-
+<script type="text/javascript">
+	function codeAddress() {
+		var qs = (function(a) {
+		    if (a == "") return {};
+		    var b = {};
+		    for (var i = 0; i < a.length; ++i)
+		    {
+		        var p=a[i].split('=', 2);
+		        if (p.length == 1)
+		            b[p[0]] = "";
+		        else
+		            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+		    }
+		    return b;
+		})(window.location.search.substr(1).split('&'));
+		
+		if (qs["term"] != undefined) {
+			var list = ["term", "hour1", "minute1", "start", "hour2", "minute2", "end", "freeday"];
+			for (var i = 0; i < list.length; i++) {
+				var option = document.getElementsByName(list[i])[0];
+				option.value = qs[list[i]];
+			}
+			displayNums(false);
+			displaySubj();
+			var classList = qs["classes"].split("xx");
+			for (var i = 0; i < classList.length; i++) {
+				var str = classList[i];
+				var index = 0;
+				if (str.charAt(str.length-1) == 'H') {
+                    index = 1;
+                }
+				selectClass(str.substring(1, str.length-4-index), str.substring(str.length-4-index, str.length));
+				document.getElementById("row" + i).value = str.substring(0, 1);
+			}
+		}
+	}
+	window.onload = codeAddress;
+</script>
 </html>

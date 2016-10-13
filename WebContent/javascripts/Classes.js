@@ -1,4 +1,14 @@
 
+function selectClass(subj, num) {
+	var subjList = document.getElementById("subjects");
+	subjList.value = subj;
+	displayNums(false);
+	var numList = document.getElementById("number");
+	numList.value = num;
+	addClass();
+}
+
+
 function addClass() {
 	var table = document.getElementById("scheduledisplay");
 	var subj = document.getElementById("subjects");
@@ -27,6 +37,7 @@ function addClass() {
 	row.insertCell(1).innerHTML = subj + " " + num + space;
 	row.insertCell(2).innerHTML = cName[0] + space;
 	var select = document.createElement("select");
+	select.id = "row" + (table.rows.length-1);
 	for (var i = 0; i < cName[2].length; i++) {
 		var type = cName[2].substring(i, i+1);
 		var option = document.createElement("option");
@@ -51,11 +62,13 @@ function addClass() {
 					  break;
 		}
 		select.add(option);
+	}	
+	if (cName[2].length > 1) {
+		var optionA = document.createElement("option");
+		optionA.value = "A";
+		optionA.innerHTML = "Any";
+		select.add(optionA);
 	}
-	var optionA = document.createElement("option");
-	optionA.value = "A";
-	optionA.innerHTML = "Any";
-	select.add(optionA);
 	row.insertCell(3).innerHTML = select.outerHTML + space;
 	row.insertCell(4).innerHTML = cName[1] + "C";	
 }
@@ -122,11 +135,15 @@ function displaySubj() {
 
 function sendSchedule() {
 	var send = document.getElementById("form");
+	var table = document.getElementById("scheduledisplay");
+	if (table.rows.length == 0) {
+		alert("No classes have been inputted");
+		return;
+	}
+	
 	var select = document.createElement("select");
 	select.name = "schedule";
 	var option = document.createElement("option");
-	
-	var table = document.getElementById("scheduledisplay");
 
 	var values = "";
 	for (var i = 0, row; row = table.rows[i]; i++) {

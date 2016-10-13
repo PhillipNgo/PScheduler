@@ -87,13 +87,7 @@ public class HtmlSet {
     private static void numOptions() throws Exception {
         try (Writer writer = new BufferedWriter(new OutputStreamWriter(
                 new FileOutputStream("WebContent/SelectOptions/NumberOptions.txt"), "utf-8"))) {
-            String[] optionNames = html.getTerms();
-            int i = optionNames.length;
             for (String term : terms) {
-                i--;
-                if (optionNames[i].contains("Summer") || optionNames[i].contains("Winter")) {
-                    continue;
-                }
                 html.setTerm(term);
                 String[] subjects = html.getSubjectValues();
                 HashMap<String, HashMap<String, LinkedList<VTCourse>>> list;
@@ -126,8 +120,6 @@ public class HtmlSet {
                         writer.write("--");
                         writer.write(split[3]);
                         writer.write("\" value=\"");
-                        writer.write(term);
-                        writer.write(subject);
                         writer.write(split[0]);
                         writer.write("\">");
                         writer.write(split[0]);

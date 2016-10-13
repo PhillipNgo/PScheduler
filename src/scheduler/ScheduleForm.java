@@ -47,11 +47,23 @@ public class ScheduleForm extends HttpServlet {
         html.append("</header>");
         
         html.append("<div class=\"buttongroup\">");
-        html.append("modify search not implemented yet, it's coming!!");
-        html.append("<br><input type=\"button\" value=\"Modify Search\"/>");
+        html.append("modify search not implemented yet, it's coming!!<br><form action=\"ModifyForm.do\">");
+        html.append("<input type=\"submit\" value=\"Modify Search\"/>");
+        
+        html.append("<select style=\"display: none;\" name=\"classes\"><option value=\"" + request.getParameter("schedule") + "\"></option></select>");
+        html.append("<select style=\"display: none;\" name=\"term\"><option value=\"" + request.getParameter("term") + "\"></option></select>");
+        html.append("<select style=\"display: none;\" name=\"hour1\"><option value=\"" + request.getParameter("hour1") + "\"></option></select>");
+        html.append("<select style=\"display: none;\" name=\"minute1\"><option value=\"" + request.getParameter("minute1") + "\"></option></select>");
+        html.append("<select style=\"display: none;\" name=\"start\"><option value=\"" + request.getParameter("start") + "\"></option></select>");
+        html.append("<select style=\"display: none;\" name=\"hour2\"><option value=\"" + request.getParameter("hour2") + "\"></option></select>");
+        html.append("<select style=\"display: none;\" name=\"minute2\"><option value=\"" + request.getParameter("minute2") + "\"></option></select>");
+        html.append("<select style=\"display: none;\" name=\"end\"><option value=\"" + request.getParameter("end") + "\"></option></select>");
+        html.append("<select style=\"display: none;\" name=\"freeday\"><option value=\"" + request.getParameter("freeday") + "\"></option></select>");
+        
         html.append("<input name=\"table\" onclick=\"switchView(this.name)\" id=\"view1\" type=\"button\" value=\"Text View\"/>");
         html.append("<input type=\"button\" value=\"Previous Schedule\"/ onclick=\"changeSchedule(-1)\">");
-        html.append("<input type=\"button\" value=\"Next Schedule\"/ onclick=\"changeSchedule(1)\"><br>");
+        html.append("<input type=\"button\" value=\"Next Schedule\"/ onclick=\"changeSchedule(1)\">");
+        html.append("</form>");
         //html.append("<a href=\"WebContent/excelsheets/schedules.xls\" download=\"schedules.xls\">Download as Excel</a>"); // not working
         html.append("</div>");
         
@@ -176,14 +188,14 @@ public class ScheduleForm extends HttpServlet {
                 html.append("<td>" + c.getName() + spaces + "</td>");
                 html.append("<td>" + c.getClassType() + spaces + "</td>");
                 html.append("<td>" + c.getCredits() + "C" + spaces + "</td>");
-                html.append("<td>" + c.getProf() + spaces + "</td>");
-                String[] days = c.getDays();
-                String day = "";
-                for (int k = 0; k < days.length; k++) {
-                    day += days[k];
-                }
+                html.append("<td>" + c.getProf() + spaces + "</td>");             
                 Time t = c.getTimeSlot();
                 if (t != null) {
+                    String[] days = c.getDays();
+                    String day = "";
+                    for (int k = 0; k < days.length; k++) {
+                        day += days[k];
+                    }
                     html.append("<td>" + day + spaces + "</td>");
                     html.append("<td>" + t.getStart() + " - " + t.getEnd() + spaces + "</td>");
                     html.append("<td>" + c.getLocation() + "</td>");

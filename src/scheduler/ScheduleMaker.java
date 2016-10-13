@@ -44,7 +44,7 @@ public final class ScheduleMaker {
         for (int i = 0; i < subjects.size(); i++) {
             LinkedList<VTCourse> curr;
             if (map != null) {
-                curr = map.get(subjects.get(i)).get(numbers.get(i));
+                curr = map.get(subjects.get(i)).get(numbers.get(i)).createCopy();
             }
             else {
                 curr = parser.parseCourse(subjects.get(i), numbers.get(i));
