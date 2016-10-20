@@ -47,7 +47,7 @@ public class ScheduleForm extends HttpServlet {
         html.append("</header>");
         
         html.append("<div class=\"buttongroup\">");
-        html.append("modify search should work now! also, you can save the url above to come back to these results<br><form action=\"ModifyForm.do\">");
+        html.append("<form action=\"ModifyForm.do\">");
         html.append("<input type=\"submit\" value=\"Modify Search\"/>");
         
         html.append("<select style=\"display: none;\" name=\"classes\"><option value=\"" + request.getParameter("schedule") + "\"></option></select>");
@@ -151,7 +151,9 @@ public class ScheduleForm extends HttpServlet {
         html.append("</div>");
         
         html.append("<footer>");
-        html.append("<p class=\"view\">Phillip Ngo | <a href=\"https://github.com/PhillipNgo/Scheduler-Website\">View the Project on GitHub</a> | <a href=\"https://goo.gl/forms/CIeZtR1XndZCFdUH2\">Submit a Bug or Suggestion</a></p>");
+        html.append("<p class=\"view\">Phillip Ngo | <a href=\"https://github.com/PhillipNgo/Scheduler-Website\">View the Project on GitHub</a> ");
+        html.append("| <a href=\"https://goo.gl/forms/CIeZtR1XndZCFdUH2\">Submit a Bug or Suggestion</a>");
+        html.append(" | <a href=\"changelog.html\">Recent Changes</a></p>");
         html.append("</footer>");
         html.append("</body>");
         html.append("</html>");

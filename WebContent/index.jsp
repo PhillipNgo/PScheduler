@@ -163,7 +163,8 @@
     
   </div>
   <footer>
-    <p class="view">Phillip Ngo | <a href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a> | <a href="https://goo.gl/forms/CIeZtR1XndZCFdUH2">Submit a Bug or Suggestion</a></p>
+    <p class="view">Phillip Ngo | <a href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a> | 
+    <a href="https://goo.gl/forms/CIeZtR1XndZCFdUH2">Submit a Bug or Suggestion</a> | <a href="changes.html">Recent Changes</a></p>
   </footer>
 </body>
 <script type="text/javascript">
