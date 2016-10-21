@@ -60,7 +60,7 @@ Mgt Of Info Systems	ACIS	5514	F Belanger	80183	3	L	NCB 130B	T R	9:30AM	10:45AM
 Mgt Of Info Systems	ACIS	5514	F Belanger	80182	3	L	NCB 130B	T R	8:00AM	9:15AM
 Acct Application Development	ACIS	4504	W Fan	80168	3	L	TORG 1010	T R	11:00AM	12:15PM
 Acct Application Development	ACIS	4504	W Fan	80167	3	L	TORG 1010	T R	12:30PM	1:45PM
-Research And Dissertation	ACIS	7994	JJ Maher	80195	1	R
+Research And Dissertation	ACIS	7994	R Barkhi	80195	1	R
 Governmental Acctg	ACIS	4124	DP Garner	80155	3	L	MCB 322	T R	2:00PM	3:15PM
 Tax for Financial Planners	ACIS	4344	DA Salbador	80161	3	L	NCB 210	T R	9:30AM	10:45AM
 Research And Thesis	ACIS	5994	LG Wallace	80193	1	R
@@ -859,7 +859,7 @@ Advanced Vis Com Design	ART	4575	MA Dee	88496	3	L	HEND 203	T R	12:30PM	3:15PM
 Senior Studio	ART	4894	SW Paterson	80920	3	L	BRNCH A	M W	9:20AM	12:05PM
 New Media Art Theory	ART	4804	SW Paterson	88499	3	L
 Independent Study	ART	4974H	Staff	89786	1	I
-Ceramics I	ART	2544	DF Crane	80881	3	L	ART C 100	M W	9:20AM	12:05PM
+Ceramics I	ART	2544	JA Manning	80881	3	L	ART C 100	M W	9:20AM	12:05PM
 SS: Gateway to Art & Design	ART	2984	JL Hand	89078	1	L	ARMRY 101	M	6:30PM	7:30PM
 Digital Photography	ART	2664	M Borowski	80886	3	L	HEND 208	M W	12:20PM	3:05PM
 TS:Intermediate Sculpture	ART	3554	SP Blanchard	80893	3	L	ART C 108	T R	12:30PM	3:15PM
@@ -891,7 +891,7 @@ Introduction To Sculpture	ART	2554	SP Blanchard	80882	3	L	ART C 108	T R	3:30PM	6
 TS: History of Interiors I	ART	3004	MD Casto	80888	3	L	BUR 224A	T R	9:30AM	10:45AM
 Intermediate Graphic Design I	ART	3565	K Meaney	80895	3	L	HEND 203	T R	3:30PM	6:15PM
 TS:Intermediate Photography	ART	3564	M Borowski	89001	3	L	HEND 208	M W	3:20PM	6:15PM
-TS:Utilitarian Ceramics	ART	4534	DF Crane	80914	3	L	ART C 100	M W	12:20PM	3:05PM
+TS:Utilitarian Ceramics	ART	4534	JA Manning	80914	3	L	ART C 100	M W	12:20PM	3:05PM
 Independent Study	ART	4974	Staff	80925	1	I
 Independent Study	ART	4974	Staff	80923	1	I
 Topics in Computer Animation	ART	5704	Staff	89742	3	L
@@ -899,7 +899,7 @@ TS: 3D Visual Heritage	ART	5704	TJ Tucker	88523	3	L	LIBR 120	M W	10:10AM	12:05PM
 TS:Advanced Character Modeling	ART	5704	TJ Tucker	80937	3	L	LIBR 120	M W	2:30PM	4:25PM
 Renaissance Art	ART	3384	MY Moseley Christian	88957	3	L	HEND 353	T R	11:00AM	12:15PM
 Introduction To Painting	ART	2524	DH Bannan	88470	3	L	ART C 112	M W	9:20AM	12:15PM
-Ceramics II	ART	2644	DF Crane	88476	3	L	ART C 100	M W	12:20PM	3:05PM
+Ceramics II	ART	2644	JA Manning	88476	3	L	ART C 100	M W	12:20PM	3:05PM
 Typography II	ART	2566	JM Joiner	80883	3	L	HEND 203	M W	3:20PM	6:15PM
 Modern Graphic Design	ART	3774	JB Mahoney	80903	3	O
 TS:Advanced Creative Coding	ART	4544	D Webster	89246	3	L	HEND 208	T R	10:20AM	12:15PM
@@ -924,7 +924,7 @@ Principles of Art & Design I	ART	1204	EJ Standley	80869	3	L	ARMRY 101	T R	9:30AM
 TS:Digital Photography	ART	1004	J Rosenthal	80868	3	O
 TS:Digital Photography	ART	1004	J Rosenthal	80867	3	O
 TS:Painting for Non Majors	ART	1004	AR Salisbury	80866	3	L	ART C 112	T R	3:30PM	6:15PM
-Topics In Ceramics	ART	3544	DF Crane	88477	3	L	ART C 100	M W	12:20PM	3:05PM
+Topics In Ceramics	ART	3544	JA Manning	88477	3	L	ART C 100	M W	12:20PM	3:05PM
 Intro to Graphic Design I	ART	2575	K Meaney	80884	3	L	HEND 203	M W	9:20AM	12:05PM
 Euro & American Art Since 1900	ART	3784	LB Van Hook	80904	3	L	HEND 204	T R	11:00AM	12:15PM
 TS:Advanced Sculpture	ART	4554	SP Blanchard	80917	3	L	ART C 108	T R	12:30PM	3:15PM
@@ -1050,8 +1050,8 @@ Project and Report	BC	5904	G Reichard	81033	1	R
 Project and Report	BC	5904	Staff	81032	1	R
 Project and Report	BC	5904	TH Mills	81031	1	R
 Why Buildings Stand Up	BC	2214	RL Clark	81003	3	L	BFH 210	M W	8:30AM	9:45AM
-IT in Design and Construction	BC	2114	WY Thabet	89262	3	L	BFH 210	F	10:10AM	12:05PM	BFH 230	R	2:00PM	3:15PM
-IT in Design and Construction	BC	2114	MT Turkaslan Bulbul	81002	3	L	BFH 210	F	8:00AM	9:55AM	BFH 230	W	11:15AM	12:05PM
+IT in Design and Construction	BC	2114	Staff	89262	3	L	BFH 210	F	10:10AM	12:05PM	BFH 230	R	2:00PM	3:15PM
+IT in Design and Construction	BC	2114	Staff	81002	3	L	BFH 210	F	8:00AM	9:55AM	BFH 230	W	11:15AM	12:05PM
 Construction Principles I	BC	2014	AP McCoy	89417	3	L	BFH 132	M W	8:00AM	9:55AM
 Construction Principles I	BC	2014	DS Goldsmith	80996	3	L	BFH 230	T R	3:30PM	4:45PM	BFH 230	T	5:00PM	7:45PM
 BIM in Design & Construction	BC	4114	MT Turkaslan Bulbul	81009	3	L	BFH 132	M W	12:20PM	2:15PM
@@ -2388,14 +2388,14 @@ Communication Ethics	COMM	4334	JB Mackay	82387	3	L	TORG 1040	T R	12:30PM	1:45PM
 Undergraduate Research	COMM	4994	MM Preston	82392	1	R
 Independent Study	COMM	4974	MM Preston	82391	1	I
 Independent Study	COMM	4974	MM Preston	82390	1	I
-Field Study	COS	2964	Staff	82410	1	L
+Field Study	COS	2964	GL Long	82410	1	L
 Scieneering Capstone	COS	4064	JC Sible	82412	3	L
-Independent Study	COS	2974	Staff	82411	1	I
+Independent Study	COS	2974	GL Long	82411	1	I
 Successful Starts in Science	COS	1015	LA Blanc	82408	1	L	NCB 120	W	5:30PM	6:45PM
 Successful Starts in Science	COS	1015	SN Lewis	82407	1	L	NCB 220	R	5:15PM	6:30PM
 SS: Curie&Da Vinci LLC Ldrshp	COS	2984	LA Blanc	89015	1	L	NCB 210	T	7:00PM	8:30PM
-Undergraduate Research	COS	4994	Staff	82414	1	R
-Undergraduate Research	COS	4994	Staff	82413	1	R
+Undergraduate Research	COS	4994	TE Long	82414	1	R
+Undergraduate Research	COS	4994	GL Long	82413	1	R
 Introduction to Scieneering	COS	2164	BA Watford	82409	1	L	HAN 209	F	1:25PM	2:15PM
 Field Work/Practicum	CRIM	2964	Staff	89923	1	L
 Internship	CRIM	2754	Staff	89924	1	L
@@ -3963,7 +3963,7 @@ Fin Planning for Professionals	FIN	3124	RS Billingsley	80070	3	L	ROB 122	M W	2:3
 Fin Plan Technology & Modeling	FIN	4114	DD Klock	83992	3	L	HUTCH 302	M W	4:00PM	5:15PM
 Financial Modeling in Excel	FIN	4214	CA Spicer	89069	3	L	GBJ 104	T R	2:00PM	3:15PM
 Financial Modeling in Excel	FIN	4214	CA Spicer	89068	3	L	GBJ 104	T R	12:30PM	1:45PM
-Independent Study	FIN	4974	Staff	89826	1	I
+Independent Study	FIN	4974	RS Billingsley	89826	1	I
 Research and Dissertation	FIW	7994	Staff	84050	1	R
 Human Dimensions F&W	FIW	4464	AA Dayer	84033	3	L	JCH 317BC	M W F	1:25PM	2:15PM
 Final Examination	FIW	5894	Staff	84045	3	L
@@ -4185,7 +4185,7 @@ SS: Sedimentary Basins	GEOS	4984	BW Romans	88252	3	L	DER 4045	M W	11:15AM	12:05P
 Independent Study	GEOS	5974	NL Ross	84284	1	I
 X-Ray Crystallography	GEOS	5535	C Slebodnick	89307	3	L	ILSB 2031	T R	9:30AM	10:45AM
 TS: Earth Material Analysis	GEOS	6504	FM Michel	88557	3	L	DER 4045	F	12:15PM	2:15PM
-TS: Tectonic Geodesy	GEOS	6404	DS Stamps	88873	3	L	DER 4052	W F	8:00AM	9:15AM
+TS: Tectonic Geodesy	GEOS	6404	DS Glesener	88873	3	L	DER 4052	W F	8:00AM	9:15AM
 TS: Advanced Geomorphology	GEOS	6404	JA Spotila	88556	3	L	DER 4052	T	9:00AM	12:00PM
 Undergraduate Research	GEOS	4994H	NL Ross	89038	1	R
 Undergraduate Research	GEOS	4994H	NL Ross	89037	1	R
@@ -4706,7 +4706,7 @@ Independent Study	IS	4974H	Staff	84799	1	I
 Selected World Problems	IS	3116	G Blouin-Genest	88370	3	L	SEITZ 300	T R	11:00AM	12:15PM
 Res & Writing in Intl Studies	IS	2004	N Berrada	88778	3	L	LITRV 1860	M W	2:30PM	3:45PM
 Selected World Problems	IS	3115	I Stivachtis	88779	3	L	SURGE 104C	M W	5:30PM	6:45PM
-Strategies for Modern Warfare	IS	3136	E Jardine	88463	3	L	MCB 230	T R	3:30PM	4:45PM
+Strategies for Modern Warfare	IS	3136	EH Jardine	88463	3	L	MCB 230	T R	3:30PM	4:45PM
 Intro to Int'l Studies & PSCI	IS	1034	JA Hanratty	88906	3	O
 Intro to Int'l Studies & PSCI	IS	1034	CI Thomas	84772	3	L	TORG 2150	M W F	9:05AM	9:55AM
 SS: Diplomacy Lab	IS	4984	CS Price	89846	3	L
@@ -6260,7 +6260,7 @@ Neuroscience Laboratory	NEUR	2035	I Kimbrough	88580	1	B	NCB 350	W	1:25PM	4:10PM
 Neuroscience Laboratory	NEUR	2035	I Kimbrough	88579	1	B	NCB 350	W	8:00AM	10:45AM
 Neuroscience Laboratory	NEUR	2035	I Kimbrough	88578	1	B	NCB 350	M	2:30PM	5:15PM
 Neuroscience Laboratory	NEUR	2035	I Kimbrough	88576	1	B	NCB 350	M	10:10AM	12:55PM
-Undergraduate Research	NEUR	4994	Staff	89709	1	R
+Undergraduate Research	NEUR	4994	I Kimbrough	89709	1	R
 Undergraduate Research	NEUR	4994	G Valdez	89708	1	R
 Undergraduate Research	NEUR	4994	JM Bowers	89707	1	R
 Undergraduate Research	NEUR	4994	MA Cline	89706	1	R
@@ -6978,7 +6978,7 @@ Field Study	PSCI	2964	Staff	87075	1	L
 Political Theory	PSCI	3016	CG Alphin	88361	3	L	MCB 224	T R	3:30PM	4:45PM
 Political Theory	PSCI	3016	SE Ward	87077	3	L	MCB 134	M W	2:30PM	3:45PM
 Political Theory	PSCI	3015	JM Paul	88358	3	L	MCB 218	T R	5:00PM	6:15PM
-Strategies of Modern Warfare	PSCI	3136	E Jardine	88462	3	L	MCB 230	T R	3:30PM	4:45PM
+Strategies of Modern Warfare	PSCI	3136	EH Jardine	88462	3	L	MCB 230	T R	3:30PM	4:45PM
 Intro to Int'l Studies & PSCI	PSCI	1034	JA Hanratty	88907	3	O
 Intro to Int'l Studies & PSCI	PSCI	1034	CI Thomas	87060	3	L	TORG 2150	M W F	9:05AM	9:55AM
 Research Methods	PSCI	5115	RC Rich	87123	3	O
@@ -7365,7 +7365,7 @@ Statistical Methods	STAT	3005	J Robertson Evia	87460	3	L	HUTCH 409	T R	12:30PM	1
 Statistical Methods	STAT	3005	HC Tavera	87459	3	L	SURGE 117A	T R	9:30AM	10:45AM
 Prob Distrib Theory	STAT	5104	LL House	87492	3	L	HUTCH 409	M W F	1:25PM	2:15PM
 Spatial Statistics	STAT	5544	MA Ferreira	87502	3	L	SAUND 408	T R	9:30AM	10:45AM
-Adv Stat for Educ	STAT	6634	Staff	87514	3	L	GYM 220G	W	1:00PM	3:50PM
+Adv Stat for Educ	STAT	6634	JM Cohen	87514	3	L	GYM 220G	W	1:00PM	3:50PM
 Methods of Regression Analysis	STAT	4214	CK Gaylord	87478	3	L	HUTCH 204	T R	12:30PM	1:45PM
 Independent Study	STAT	4974	Staff	87487	1	I
 Multivariate Methods	STAT	5504	X Deng	87499	3	L	PAT 305	M W	5:30PM	6:45PM
@@ -7843,6 +7843,7 @@ Self-Init Elec Clkshp	VM	9774	VE Ragan	87941	4	L
 Medical Biochemistry	VM	8044	LA Eng	87867	2	L
 Prod Med Elec Clkshp	VM	9574	JM Pelzer	87919	4	L
 Prod Med Elec Clkshp	VM	9574	JM Pelzer	87918	4	L
+Infectious Disease Epidemiolog	VM	7314	Staff	89927	3	L	VMIA 220	W	5:30PM	8:20PM
 Prod Man Med Clkshp	VM	9534	SG Clark-Deener	87912	4	L
 Prod Man Med Clkshp	VM	9534	SG Clark-Deener	87911	4	L
 The Normal Animal	VM	8164	KK Lahmers	89439	1	L

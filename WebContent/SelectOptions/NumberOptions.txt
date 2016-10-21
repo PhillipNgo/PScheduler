@@ -3858,6 +3858,7 @@
 <select name="201609VM" style="display: none;">
 <option value="none" disabled selected value>----</option>
 <option name="Fundamentals Public Health--3--L" value="5004">5004</option>
+<option name="Infectious Disease Epidemiolog--3--L" value="7314">7314</option>
 <option name="Veterinary Anatomy I--4--L" value="8014">8014</option>
 <option name="Descriptive Embryology--1--L" value="8024">8024</option>
 <option name="Veterinary Physiology I--3--L" value="8034">8034</option>
@@ -3983,7 +3984,6 @@
 <option name="Research Project Plan--1--L" value="5104">5104</option>
 <option name="Applied Microeconomic Theory--3--L" value="5114">5114</option>
 <option name="Empirical Economics--3--L" value="5126">5126</option>
-<option name="Agricultural Marketing--3--L" value="5134">5134</option>
 <option name="Res and Environ Econ--3--L" value="5144">5144</option>
 <option name="Fundamentals of Econometrics--3--L" value="5804G">5804G</option>
 <option name="Adv Food & Health Economics--3--L" value="5814G">5814G</option>
@@ -4038,7 +4038,6 @@
 <option value="none" disabled selected value>----</option>
 <option name="Intro African American Studies--3--LO" value="1714">1714</option>
 <option name="Intro to African Studies--3--L" value="1814">1814</option>
-<option name="African Religions--3--L" value="2144">2144</option>
 <option name="The Black Woman in the U.S.--3--O" value="2734">2734</option>
 <option name="Independent Study--1--I" value="2974">2974</option>
 <option name="Afro-American History--3--O" value="3176">3176</option>
@@ -4157,9 +4156,10 @@
 <option name="Adv Ruminant Nutr Colloquium--1--L" value="5084">5084</option>
 <option name="Effective Grant Writing Biomed--1--L" value="5094">5094</option>
 <option name="Nutrition--3--L" value="5116">5116</option>
+<option name="Info Sys/Rsrch in Life Sci--3--O" value="5214">5214</option>
 <option name="Prof Comm Ag & Life Sciences--1--L" value="5334">5334</option>
 <option name="Project and Report--1--RO" value="5904">5904</option>
-<option name="Study Abroad--1--LO" value="5954">5954</option>
+<option name="Study Abroad--1--L" value="5954">5954</option>
 <option name="Field Study--1--L" value="5964">5964</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
 <option name="Endocrinology--3--L" value="6314">6314</option>
@@ -4193,28 +4193,31 @@
 <option name="Applied Numerical Methods--3--LO" value="4404">4404</option>
 <option name="Independent Study--3--I" value="4974">4974</option>
 <option name="SS: Electronics for AOE--3--L" value="4984">4984</option>
+<option name="SS: Ethics in Autonomous Syst--3--L" value="4984">4984</option>
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
 <option name="Undergraduate Research--1--R" value="4994H">4994H</option>
 <option name="Mechanical & Struct Dynamics--3--LO" value="5034">5034</option>
 <option name="Elastic Stability--3--L" value="5054">5054</option>
+<option name="Structural Optimization--3--LO" value="5064">5064</option>
+<option name="Adv Ship Structural Analysis--3--OL" value="5074">5074</option>
 <option name="High Speed Aerodynamics--3--LO" value="5114">5114</option>
 <option name="Boundary-Layer Theory--3--O" value="5144">5144</option>
 <option name="Orbital Mechanics--3--LO" value="5234">5234</option>
 <option name="Naval Ship Design--3--OL" value="5316">5316</option>
-<option name="Advanced Ship Dynamics--3--O" value="5334">5334</option>
 <option name="Combustion Chem & Diag--3--L" value="5464">5464</option>
+<option name="Modeling Composites Damage--3--L" value="5604">5604</option>
 <option name="Convex Optimization--3--L" value="5734">5734</option>
 <option name="Applied Linear Control--3--L" value="5764">5764</option>
 <option name="Project and Report--1--RO" value="5904">5904</option>
 <option name="Autonomous Systems Seminar--1--L" value="5914">5914</option>
 <option name="Seminar--1--L" value="5944">5944</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
+<option name="SS: Cyb-Phys Systems & Control--3--L" value="5984">5984</option>
+<option name="SS: Data Analysis in Fluid Dyn--3--L" value="5984">5984</option>
 <option name="Research and Thesis--1--RO" value="5994">5994</option>
-<option name="Transonic Aerodynamics--3--O" value="6114">6114</option>
-<option name="Computational Fluid Dynamics--3--L" value="6145">6145</option>
+<option name="Computational Fluid Dynamics--3--LO" value="6145">6145</option>
 <option name="Computational Plasma Dynamics--3--L" value="6174">6174</option>
-<option name="Verificat Validat Sci Comput--3--O" value="6444">6444</option>
-<option name="Linear Control Theory--3--L" value="6744">6744</option>
+<option name="Linear Control Theory--3--LO" value="6744">6744</option>
 <option name="Adaptive Control Systems--3--L" value="6774">6774</option>
 <option name="Research and Dissertation--1--RO" value="7994">7994</option>
 </select>
@@ -4223,6 +4226,7 @@
 <option name="Intro to Appalachian Studies--3--L" value="1704">1704</option>
 <option name="Independent Study--1--I" value="2974">2974</option>
 <option name="Independent Study--1--I" value="2974H">2974H</option>
+<option name="Appalachian Lang & Cultures--3--L" value="4034">4034</option>
 <option name="Field Study--1--L" value="4964">4964</option>
 <option name="Independent Study--1--I" value="4974">4974</option>
 <option name="Independent Study--1--I" value="4974H">4974H</option>
@@ -4261,6 +4265,7 @@
 <option name="APSC Capstone Experience--1--L" value="4954">4954</option>
 <option name="Field Study--2--L" value="4964">4964</option>
 <option name="Independent Study--2--I" value="4974">4974</option>
+<option name="SS: Foal Practicum--1--L" value="4984">4984</option>
 <option name="Undergraduate Research--2--R" value="4994">4994</option>
 <option name="Graduate Seminar--1--L" value="5004">5004</option>
 <option name="Final Examination--3--L" value="5894">5894</option>
@@ -4394,18 +4399,18 @@
 <option name="Topics in New Media Sound--3--L" value="3604">3604</option>
 <option name="TS: Character Animation--3--L" value="3704">3704</option>
 <option name="TS:Video Game Design--3--L" value="3704">3704</option>
-<option name="Art Since 1960--3--L" value="4384">4384</option>
 <option name="Japanese Prints--3--L" value="4384">4384</option>
 <option name="Presrvation Historic Interiors--3--L" value="4384">4384</option>
+<option name="TS: Contemporary Art--3--L" value="4384">4384</option>
 <option name="Digital Video--0--L" value="4504">4504</option>
 <option name="Topics in Multimedia Studio--0--L" value="4504">4504</option>
 <option name="TS:Laser Cutting and Engraving--3--L" value="4514">4514</option>
 <option name="TS:2D Studio Practices--3--L" value="4524">4524</option>
 <option name="TS:Aspects of Utilitarian Form--3--L" value="4534">4534</option>
 <option name="Advanced Character Animation--0--L" value="4544">4544</option>
-<option name="Computer Animation Studio--0--L" value="4544">4544</option>
 <option name="Lighting/Projection Mapping--0--L" value="4544">4544</option>
 <option name="TS: Adv Video Game Design--0--L" value="4544">4544</option>
+<option name="TS: Advance Rendering--0--L" value="4544">4544</option>
 <option name="Exhibition Design And Display--3--H" value="4564">4564</option>
 <option name="Advanced Vis Com Design--3--L" value="4576">4576</option>
 <option name="Advanced Typography--3--L" value="4584">4584</option>
@@ -4558,6 +4563,7 @@
 <option name="Field Study--1--L" value="2964">2964</option>
 <option name="Independent Study--1--I" value="2974">2974</option>
 <option name="Independent Study--1--I" value="2974H">2974H</option>
+<option name="SS: UTA-Principles of Biology--2--L" value="2984">2984</option>
 <option name="Undergraduate Research--1--R" value="2994">2994</option>
 <option name="Undergraduate Research--1--R" value="2994H">2994H</option>
 <option name="Cell Molecular Biol Laboratory--1--B" value="3104">3104</option>
@@ -4586,6 +4592,7 @@
 <option name="Field Study--1--R" value="4964">4964</option>
 <option name="Independent Study--1--I" value="4974">4974</option>
 <option name="Independent Study--1--I" value="4974H">4974H</option>
+<option name="SS: Adv. UTA-Principles of Bio--3--L" value="4984">4984</option>
 <option name="SS: Biological Clocks & Health--3--L" value="4984">4984</option>
 <option name="SS: Biological Research Ethics--1--L" value="4984">4984</option>
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
@@ -4662,7 +4669,6 @@
 <option name="Research and Thesis--1--R" value="5994">5994</option>
 <option name="Clinical Rotation--2--B" value="6064">6064</option>
 <option name="Comp Mod Impact Biomechanics--3--L" value="6164">6164</option>
-<option name="Medical Imaging II--3--L" value="6514">6514</option>
 <option name="Research and Dissertation--1--R" value="7994">7994</option>
 </select>
 <select name="201701BMSP" style="display: none;">
@@ -4728,14 +4734,12 @@
 <option name="Unit Operations in BSE--3--L" value="3524">3524</option>
 <option name="Bioprocess Engineering--3--L" value="3534">3534</option>
 <option name="Comprehensive Design Project--3--H" value="4126">4126</option>
-<option name="NPS Modeling & Mgmt--3--L" value="4304">4304</option>
 <option name="GIS for Engineers--3--L" value="4344">4344</option>
 <option name="Water & Sanitation--3--L" value="4394">4394</option>
 <option name="Metabolic Engineering--3--L" value="4564">4564</option>
 <option name="Independent Study--1--I" value="4974">4974</option>
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
 <option name="Applied GIS--3--L" value="5344G">5344G</option>
-<option name="NPS Poll Models--3--L" value="5354">5354</option>
 <option name="Advanced Metabolic Engineering--3--L" value="5564G">5564G</option>
 <option name="Final Examination--3--R" value="5894">5894</option>
 <option name="Project and Report--1--RO" value="5904">5904</option>
@@ -4825,7 +4829,6 @@
 <option name="SS: Adv Structural Eng--3--L" value="5984">5984</option>
 <option name="SS: Biofilms Science & Tech--3--L" value="5984">5984</option>
 <option name="SS: Env Sustain-A Syst Apprch--3--L" value="5984">5984</option>
-<option name="SS: Membrane Tech for WW Trtmt--3--L" value="5984">5984</option>
 <option name="SS: Steel Bridge Design--3--L" value="5984">5984</option>
 <option name="SS: Stormwater Treatment--3--L" value="5984">5984</option>
 <option name="SS:Environmental Biotechnology--3--LO" value="5984">5984</option>
@@ -4840,6 +4843,7 @@
 <option name="Construction Health and Safety--3--L" value="3164">3164</option>
 <option name="Independent Study--1--I" value="4974">4974</option>
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
+<option name="SS: STEM Workforce Development--3--L" value="5984">5984</option>
 </select>
 <select name="201701CHE" style="display: none;">
 <option value="none" disabled selected value>----</option>
@@ -4901,6 +4905,7 @@
 <option name="Inorganic Chemistry Lab--2--B" value="4414">4414</option>
 <option name="Polysaccharide Chemistry--3--L" value="4424">4424</option>
 <option name="Organometallic Chemistry--3--L" value="4434">4434</option>
+<option name="Green Chemistry--3--L" value="4514">4514</option>
 <option name="Drug Chemistry--3--L" value="4554">4554</option>
 <option name="Phys Chem Life Sci--3--L" value="4616">4616</option>
 <option name="Polymer and Surface Chemistry--3--L" value="4634">4634</option>
@@ -4916,6 +4921,7 @@
 <option name="Methods Molecular Biophysics--3--L" value="5154">5154</option>
 <option name="Polymer Viscoelasticity--3--L" value="5174">5174</option>
 <option name="Adv Polysaccharide Chemistry--3--L" value="5424G">5424G</option>
+<option name="X-RAY CRYSTALLOGRAPHY--3--L" value="5526">5526</option>
 <option name="Synthetic Organic Chemistry--3--L" value="5535">5535</option>
 <option name="Final Examination--1--L" value="5894">5894</option>
 <option name="Project and Report--1--R" value="5904">5904</option>
@@ -5045,6 +5051,8 @@
 </select>
 <select name="201701COS" style="display: none;">
 <option value="none" disabled selected value>----</option>
+<option name="Successful Starts in Science--1--L" value="1016">1016</option>
+<option name="Leadership in Science--1--L" value="2016">2016</option>
 <option name="Independent Study--1--I" value="2974">2974</option>
 <option name="Scieneering Capstone--3--L" value="4064">4064</option>
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
@@ -5083,9 +5091,11 @@
 <option name="Mobile Software Development--3--L" value="3714">3714</option>
 <option name="Human-Computr Intrctn--3--L" value="3724">3724</option>
 <option name="Intro GUI Programming/Graphics--3--L" value="3744">3744</option>
+<option name="SS: Cloud Software Development--3--L" value="3984">3984</option>
 <option name="Data and Algorithm Analysis--3--L" value="4104">4104</option>
 <option name="Formal Languages--3--L" value="4114">4114</option>
 <option name="Computer Graphics--3--L" value="4204">4204</option>
+<option name="Principles Computer Security--3--L" value="4264">4264</option>
 <option name="Systems & Networking Capstone--3--L" value="4284">4284</option>
 <option name="Compiler Design--3--L" value="4304">4304</option>
 <option name="Int Data Base Mgt Sys--3--L" value="4604">4604</option>
@@ -5110,6 +5120,7 @@
 <option name="Finite Element Meth--3--L" value="5484">5484</option>
 <option name="Numer Analy and Softw--3--L" value="5486">5486</option>
 <option name="Computer Architecture--3--L" value="5504">5504</option>
+<option name="Data Analytics--3--L" value="5525">5525</option>
 <option name="Data Analytics--3--L" value="5526">5526</option>
 <option name="Network Arch and Protocols--3--L" value="5566">5566</option>
 <option name="System and Software Security--3--L" value="5590">5590</option>
@@ -5125,15 +5136,12 @@
 <option name="Graduate Seminar--1--L" value="5944">5944</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
 <option name="Research and Thesis--1--R" value="5994">5994</option>
-<option name="TS:Cloud Computing--3--L" value="6204">6204</option>
+<option name="TS:Geometric Optimization--3--L" value="6104">6104</option>
 <option name="Adv Topics Math S/W--3--L" value="6404">6404</option>
 <option name="PGMs and Structured Prediction--3--L" value="6424">6424</option>
-<option name="Verificat Validat Sci Comput--3--O" value="6444">6444</option>
-<option name="TS: Data & Info Event Mdlg--3--L" value="6604">6604</option>
 <option name="TS:Digital Libraries--3--L" value="6604">6604</option>
-<option name="TS:Software Refactoring--3--L" value="6704">6704</option>
-<option name="TS:Desig Change to Pow/Auth--3--L" value="6724">6724</option>
-<option name="TS:User Interfc for Built Envs--3--L" value="6724">6724</option>
+<option name="TS:Software Engineering Rsrch--3--L" value="6704">6704</option>
+<option name="TS:Technology on the Trail--3--L" value="6724">6724</option>
 <option name="Adv Topics Comp Biol & Bioinf--3--L" value="6824">6824</option>
 <option name="Research and Dissertation--1--R" value="7994">7994</option>
 </select>
@@ -5154,6 +5162,7 @@
 <option name="Soil Evaluation and Sampling--3--L" value="4174">4174</option>
 <option name="Water Quality--3--L" value="4314">4314</option>
 <option name="Crop Physiology and Ecology--3--L" value="4344">4344</option>
+<option name="Advanced Agronomic Crops--3--L" value="4354">4354</option>
 <option name="Managed Ecosystems Serv & Sust--3--L" value="4444">4444</option>
 <option name="Forage Crop Ecology--3--L" value="4544">4544</option>
 <option name="Environmental Soil Chemistry--3--L" value="4734">4734</option>
@@ -5161,8 +5170,10 @@
 <option name="Independent Study--1--I" value="4974">4974</option>
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
 <option name="Graduate Seminar--1--L" value="5004">5004</option>
+<option name="Turfgrass Science Seminar--2--L" value="5064">5064</option>
 <option name="Soils for Professionals--3--O" value="5114">5114</option>
 <option name="Advanced Crop Physiology--3--L" value="5344">5344</option>
+<option name="Grasslands Science--3--L" value="5544">5544</option>
 <option name="Soil Chemistry--4--L" value="5634">5634</option>
 <option name="Adv Managed Ecosys Serv & Sust--3--L" value="5744G">5744G</option>
 <option name="Project and Report--1--RO" value="5904">5904</option>
@@ -5222,8 +5233,11 @@
 <option name="Antennas--3--L" value="4114">4114</option>
 <option name="Radio Wave Propagation--3--LO" value="4124">4124</option>
 <option name="Optical Info Process--3--L" value="4144">4144</option>
+<option name="Introduction to Space Weather--3--L" value="4154">4154</option>
 <option name="Electronic Circuit Design--3--L" value="4206">4206</option>
 <option name="Semiconductor Device Fund--3--L" value="4214">4214</option>
+<option name="Analog IC Design--3--L" value="4220">4220</option>
+<option name="Power Electronics Laboratory--1--B" value="4284">4284</option>
 <option name="Design in Power Engineering--3--L" value="4304">4304</option>
 <option name="Power Quality for Digital Econ--3--L" value="4344">4344</option>
 <option name="Power System Protection--3--L" value="4354">4354</option>
@@ -5245,12 +5259,16 @@
 <option name="Senior Design Project--3--L" value="4806">4806</option>
 <option name="Cybersecurity Seminar--1--L" value="4944">4944</option>
 <option name="Independent Study--1--I" value="4974">4974</option>
+<option name="SS: Certified Programming--3--L" value="4984">4984</option>
+<option name="SS: Linux Kernel Programming--3--L" value="4984">4984</option>
 <option name="SS: Robot Motion Planning--3--L" value="4984">4984</option>
+<option name="SS: Transactional Programming--3--L" value="4984">4984</option>
 <option name="Undergraduate Research--1--RL" value="4994">4994</option>
 <option name="Electromagnetic Waves--3--LO" value="5106">5106</option>
 <option name="Power Semiconductor Devices--3--L" value="5204">5204</option>
 <option name="Basic Semiconductor Devices--3--LO" value="5205">5205</option>
 <option name="RFIC Design--3--L" value="5220">5220</option>
+<option name="Advanced Power Conversion Tech--3--L" value="5244">5244</option>
 <option name="Mod & Cont 3-PH PWM Converters--3--L" value="5274">5274</option>
 <option name="Adv Alternate Energy Systems--3--O" value="5374G">5374G</option>
 <option name="Optimization Techniques - ECE--3--O" value="5454">5454</option>
@@ -5275,14 +5293,20 @@
 <option name="Telecommuncations--3--O" value="5666">5666</option>
 <option name="Error Control Coding--3--LO" value="5684">5684</option>
 <option name="Robust Estimation & Filtering--3--O" value="5714">5714</option>
+<option name="Convex Optimization--3--L" value="5734">5734</option>
 <option name="Applied Linear Control--3--L" value="5764">5764</option>
 <option name="Final Examination--3--L" value="5894">5894</option>
 <option name="Project and Report--1--R" value="5904">5904</option>
 <option name="Autonomous Systems Seminar--1--L" value="5914">5914</option>
 <option name="Seminar--1--LO" value="5944">5944</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
+<option name="SS: Adv Linus Kernel Program--3--L" value="5984">5984</option>
 <option name="SS: Adv Robot Motion Planning--3--L" value="5984">5984</option>
+<option name="SS: Adv Transactional Program--3--LO" value="5984">5984</option>
+<option name="SS: Adv. Certified Programming--3--L" value="5984">5984</option>
 <option name="SS: GNSS Receiver Design--3--L" value="5984">5984</option>
+<option name="SS:Adv Certified Programming--3--O" value="5984">5984</option>
+<option name="SS:Adv Linus Kernal Program--3--O" value="5984">5984</option>
 <option name="Research and Thesis--1--R" value="5994">5994</option>
 <option name="TS: Nanophotonics--3--L" value="6104">6104</option>
 <option name="Antenna Theory and Design I,II--3--O" value="6115">6115</option>
@@ -5307,8 +5331,11 @@
 <option name="Macroeconomic Theory--3--L" value="3204">3204</option>
 <option name="Money and Banking--3--L" value="3214">3214</option>
 <option name="Analysis of Economic Data--3--L" value="3254">3254</option>
+<option name="Public Economics--3--L" value="4044">4044</option>
+<option name="Public Finance--3--L" value="4054">4054</option>
 <option name="Labor Economics--3--L" value="4074">4074</option>
 <option name="Industry Structure--3--L" value="4084">4084</option>
+<option name="Growth and Development--3--L" value="4124">4124</option>
 <option name="Economics of China--3--L" value="4144">4144</option>
 <option name="Econometric Methods--3--L" value="4304">4304</option>
 <option name="Economics of Organizations--3--L" value="4404">4404</option>
@@ -5358,11 +5385,10 @@
 <option name="PR:Readings in Technology Educ--3--O" value="5774">5774</option>
 <option name="GS: Gaps in Educ Conversation--3--L" value="5784">5784</option>
 <option name="GS:Develop Profes Dispositions--3--L" value="5784">5784</option>
-<option name="GS:Elementary STEM Education--3--L" value="5784">5784</option>
 <option name="GS:Math Educ Ldrship II--3--L" value="5784">5784</option>
 <option name="GS:Res Asses/Diagno Math Clsrm--3--L" value="5784">5784</option>
 <option name="STEM Education Trends & Issues--3--LO" value="5824">5824</option>
-<option name="Biotechnology Lit By Design--3--L" value="5854">5854</option>
+<option name="Biotechnology Lit By Design--3--LO" value="5854">5854</option>
 <option name="Final Examination--3--L" value="5894">5894</option>
 <option name="Project and Report--1--L" value="5904">5904</option>
 <option name="Field Studies in Education--3--LO" value="5964">5964</option>
@@ -5482,11 +5508,9 @@
 </select>
 <select name="201701EDRE" style="display: none;">
 <option value="none" disabled selected value>----</option>
-<option name="Found of Ed Res Eval--3--O" value="5404">5404</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
 <option name="Qualitative Res I--3--L" value="6504">6504</option>
 <option name="Qual Res II--3--L" value="6524">6524</option>
-<option name="Quan Res Methods in Educ I--3--L" value="6605">6605</option>
 <option name="Quan Res Methods in Educ II--3--L" value="6606">6606</option>
 <option name="Adv Stat for Educ--3--L" value="6634">6634</option>
 <option name="Structural Equation Modelling--3--L" value="6664">6664</option>
@@ -5494,6 +5518,7 @@
 <option name="Mxd Method Research Dsgn--3--L" value="6744">6744</option>
 <option name="Advanced Item Response Theory--3--L" value="6754">6754</option>
 <option name="Adv Issues in Qual Research--3--L" value="6784">6784</option>
+<option name="TS: Assessment--3--L" value="6794">6794</option>
 <option name="TS: Longitudinal Data Analysis--3--L" value="6794">6794</option>
 <option name="Independent Study--1--I" value="6974">6974</option>
 <option name="Internship in Education--1--L" value="7714">7714</option>
@@ -5649,7 +5674,7 @@
 <option name="Bees and Beekeeping Laboratory--1--B" value="2264">2264</option>
 <option name="Independent Study--1--I" value="2974">2974</option>
 <option name="Med & Vet Entomology--3--L" value="3254">3254</option>
-<option name="Med & Entomology Lab--1--B" value="3264">3264</option>
+<option name="Med & Vet Entomology Lab--1--B" value="3264">3264</option>
 <option name="Insect Pest Management--3--L" value="4254">4254</option>
 <option name="Pesticide Usage--3--L" value="4264">4264</option>
 <option name="Aquatic Entomology--4--L" value="4354">4354</option>
@@ -5685,6 +5710,7 @@
 <option name="Engr Design Optimiz--3--L" value="4084">4084</option>
 <option name="Eng Analy Physiol Sys--3--L" value="4106">4106</option>
 <option name="Nonlinear Dynamics and Chaos--3--L" value="4114">4114</option>
+<option name="Sustainable Energy Solutions--3--L" value="4194">4194</option>
 <option name="Mechanics of Animal Locomotion--3--L" value="4246">4246</option>
 <option name="Hemodynamics--3--L" value="4304">4304</option>
 <option name="Fund of Prof Engr--2--O" value="4404">4404</option>
@@ -5707,6 +5733,7 @@
 <option name="Independent Study--1--I" value="5974">5974</option>
 <option name="SS: Comm in Eng Mechanics--2--L" value="5984">5984</option>
 <option name="SS: Intrfcl&Phase-Change Phnom--3--L" value="5984">5984</option>
+<option name="SS: Intro to Fluid Mechanics--3--L" value="5984">5984</option>
 <option name="SS: Intro to Solid Mechanics--3--L" value="5984">5984</option>
 <option name="SS: Vibr Fluid-Loaded Cont Sys--3--L" value="5984">5984</option>
 <option name="Research and Thesis--1--R" value="5994">5994</option>
@@ -5718,7 +5745,7 @@
 </select>
 <select name="201701FA" style="display: none;">
 <option value="none" disabled selected value>----</option>
-<option name="Creativity & Aesth Exper--1--L" value="2004">2004</option>
+<option name="Creativity & the Aesthetic Exp--1--L" value="2004">2004</option>
 </select>
 <select name="201701FIN" style="display: none;">
 <option value="none" disabled selected value>----</option>
@@ -5734,7 +5761,6 @@
 <option name="Finance Career Strategies--1--L" value="3174">3174</option>
 <option name="Study Abroad--1--L" value="3954">3954</option>
 <option name="Wills, Trusts, and Estates--3--L" value="4004">4004</option>
-<option name="Retirement Planning--3--L" value="4104">4104</option>
 <option name="Fin Plan Technology & Modeling--3--L" value="4114">4114</option>
 <option name="Client Relationship Management--3--L" value="4124">4124</option>
 <option name="Fin Planning Applications--3--L" value="4134">4134</option>
@@ -5783,7 +5809,6 @@
 <option name="Final Examination--3--L" value="5894">5894</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
 <option name="Research and Thesis--1--R" value="5994">5994</option>
-<option name="Applied Conservation Genetics--3--L" value="6114">6114</option>
 <option name="Research and Dissertation--1--R" value="7994">7994</option>
 </select>
 <select name="201701FL" style="display: none;">
@@ -5826,7 +5851,6 @@
 <select name="201701FREC" style="display: none;">
 <option value="none" disabled selected value>----</option>
 <option name="Digital Planet--3--L" value="1004">1004</option>
-<option name="Forest Ecosystems--3--L" value="2004">2004</option>
 <option name="Ecology of Appalachian Forests--3--L" value="2114">2114</option>
 <option name="Forest, Society & Climate--3--L" value="2124">2124</option>
 <option name="Plants & Greenspaces Urban Com--3--L" value="2134">2134</option>
@@ -5850,12 +5874,13 @@
 <option name="Study Abroad--1--L" value="3954">3954</option>
 <option name="Internship--1--B" value="3964">3964</option>
 <option name="Info Tech for Natl Resrce Mgt--3--L" value="4114">4114</option>
-<option name="Forest Photogrammetry--0--L" value="4214">4214</option>
+<option name="Forest Photogrammetry--3--L" value="4214">4214</option>
 <option name="Genetics of Nat & Mngd Popns--3--L" value="4324">4324</option>
 <option name="Advanced Wildland Fire Mgmt--3--L" value="4414">4414</option>
 <option name="Forest Resource Policy--3--L" value="4434">4434</option>
 <option name="Int For Mgt Practicum--3--L" value="4444">4444</option>
 <option name="Urban For Mgt and Pol--3--L" value="4454">4454</option>
+<option name="Harvesting Systems Evaluation--3--L" value="4714">4714</option>
 <option name="Wetland Hydro/Biogeochemistry--3--L" value="4784">4784</option>
 <option name="Field Study--1--L" value="4964">4964</option>
 <option name="Independent Study--1--I" value="4974">4974</option>
@@ -5865,16 +5890,16 @@
 <option name="Adv Info Tech for Natl Res Mgt--3--L" value="5114G">5114G</option>
 <option name="Hyperspectral Remote Sensing--3--B" value="5154">5154</option>
 <option name="Population Genomics--3--L" value="5164">5164</option>
-<option name="Forest Biometry--3--L" value="5224">5224</option>
 <option name="Rem Sensing Nat Res--3--L" value="5254">5254</option>
-<option name="Advanced Forest Soils--3--L" value="5354">5354</option>
 <option name="Adv For Mgt & Econ--3--L" value="5416">5416</option>
 <option name="Adv Urban Forest Mgt & Policy--3--L" value="5454G">5454G</option>
 <option name="Adv Stud in Urban For Ecosys--3--O" value="5474">5474</option>
 <option name="Nat Res Research Proc--2--L" value="5494">5494</option>
+<option name="Adv Harvesting Systems Eval--3--L" value="5714G">5714G</option>
 <option name="Final Examination--3--L" value="5894">5894</option>
 <option name="Project and Report--1--L" value="5904">5904</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
+<option name="SS: Adv Natural Resource Econ--3--L" value="5984">5984</option>
 <option name="SS:Wetland Hydro & Biogeochem--3--L" value="5984">5984</option>
 <option name="Research and Thesis--1--R" value="5994">5994</option>
 <option name="Research and Dissertation--1--R" value="7994">7994</option>
@@ -5893,8 +5918,8 @@
 <option name="Independent Study--1--I" value="4974">4974</option>
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
 <option name="Graduate Seminar--1--L" value="5004">5004</option>
-<option name="Sensory Evaluation of Food--3--L" value="5014">5014</option>
-<option name="Good Agricul and Mfg Practices--3--O" value="5034">5034</option>
+<option name="Food Safety and Security--3--O" value="5614">5614</option>
+<option name="Flavor Chemistry--3--L" value="5664">5664</option>
 <option name="Project and Report--1--O" value="5904">5904</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
 <option name="Research and Thesis--1--R" value="5994">5994</option>
@@ -5939,6 +5964,7 @@
 <option name="Remote Sensing of Atmosphere--1--L" value="4554">4554</option>
 <option name="Field Study--1--R" value="4964">4964</option>
 <option name="Independent Study--1--I" value="4974">4974</option>
+<option name="SS: Geography of Virginia--3--L" value="4984">4984</option>
 <option name="SS: Tropical Meteorology--3--L" value="4984">4984</option>
 <option name="SS:Africa Together--3--L" value="4984">4984</option>
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
@@ -5981,6 +6007,7 @@
 <option name="Groundwater Hydrology--3--L" value="4804">4804</option>
 <option name="Independent Study--1--I" value="4974">4974</option>
 <option name="SS: Tectonics--3--L" value="4984">4984</option>
+<option name="SS:Quantitative Mthds in GEOS--3--L" value="4984">4984</option>
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
 <option name="Undergraduate Research--1--R" value="4994H">4994H</option>
 <option name="Advanced Vertebrate Evolution--4--L" value="5234G">5234G</option>
@@ -5990,9 +6017,9 @@
 <option name="Advanced Groundwater Hydrology--3--L" value="5804G">5804G</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
 <option name="SS: Adv Tectonics--3--L" value="5984">5984</option>
+<option name="SS: Radiogenic Iso Geochem/Chr--1--L" value="5984">5984</option>
 <option name="Research and Thesis--1--R" value="5994">5994</option>
-<option name="TS: Quantitative Geosciences--1--L" value="6104">6104</option>
-<option name="Adv Topics Sediment--2--L" value="6204">6204</option>
+<option name="TS: Quantitative Geosciences--3--L" value="6104">6104</option>
 <option name="TS:Curr Dev Geobiol Sed/Strat--1--L" value="6304">6304</option>
 <option name="TS:Geochemical Kinetics--3--L" value="6604">6604</option>
 <option name="Advanced Topics in Petrology--2--L" value="6704">6704</option>
@@ -6027,16 +6054,19 @@
 <option name="Research Methods I--3--L" value="5116">5116</option>
 <option name="Research Methods II--3--O" value="5116">5116</option>
 <option name="Perspectives Pol Theo--3--L" value="5224">5224</option>
+<option name="Topics in Political Geography--3--O" value="5404">5404</option>
 <option name="Industrial Democracies--3--O" value="5414">5414</option>
 <option name="International Politics--3--L" value="5444">5444</option>
 <option name="Adv Info Tech Policy--3--O" value="5454">5454</option>
 <option name="Global Governance--3--L" value="5474">5474</option>
 <option name="Contem American Foreign Policy--3--O" value="5484">5484</option>
+<option name="Internat Development--3--O" value="5524">5524</option>
 <option name="Environmental Politics/Policy--3--O" value="5584">5584</option>
 <option name="Project and Report--3--LO" value="5904">5904</option>
 <option name="Peace Corps Service Credits--6--L" value="5914">5914</option>
 <option name="Field Work/Practicum--1--L" value="5964">5964</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
+<option name="SS: Global Social Policy--3--L" value="5984">5984</option>
 <option name="Research and Thesis--1--R" value="5994">5994</option>
 <option name="Theories in Globalization--3--L" value="6204">6204</option>
 <option name="Research and Dissertation--1--R" value="7994">7994</option>
@@ -6096,8 +6126,11 @@
 <option name="Sexual Health and Human Rights--3--L" value="5244">5244</option>
 <option name="Professional Practices in HD--3--L" value="5624">5624</option>
 <option name="Internship in HD--1--L" value="5664">5664</option>
-<option name="Practicum--1--L" value="5964">5964</option>
+<option name="MFT Supervision--1--L" value="5964">5964</option>
+<option name="TS: HD Research Team--1--L" value="5964">5964</option>
+<option name="IS: Teaching Seminar--1--I" value="5974">5974</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
+<option name="SS: Cognitive Development--3--L" value="5984">5984</option>
 <option name="Research And Thesis--1--L" value="5994">5994</option>
 <option name="Prof Development Seminar--1--L" value="6004">6004</option>
 <option name="Process In Relationships--3--L" value="6324">6324</option>
@@ -6105,7 +6138,7 @@
 <option name="Marriage & Family Therapy Rsch--3--L" value="6484">6484</option>
 <option name="Adv Research Methods--3--L" value="6514">6514</option>
 <option name="Topics in Adv Research Methods--1--L" value="6524">6524</option>
-<option name="Research And Dissertation--1--LR" value="7994">7994</option>
+<option name="Research And Dissertation--1--R" value="7994">7994</option>
 </select>
 <select name="201701HEB" style="display: none;">
 <option value="none" disabled selected value>----</option>
@@ -6138,6 +6171,7 @@
 <option name="SS: New Media Storytelling--3--L" value="2984">2984</option>
 <option name="The American Revolution--3--L" value="3014">3014</option>
 <option name="The American Civil War--3--L" value="3054">3054</option>
+<option name="United States Social History--3--L" value="3104">3104</option>
 <option name="Women in U S History--3--L" value="3106">3106</option>
 <option name="American Environmental History--3--L" value="3144">3144</option>
 <option name="History of American Cities--3--L" value="3156">3156</option>
@@ -6161,7 +6195,6 @@
 <option name="Oral History--3--L" value="3764">3764</option>
 <option name="Crit Reading/Analysis in Hist--3--L" value="3914">3914</option>
 <option name="Study Abroad--3--L" value="3954">3954</option>
-<option name="Sociocultural Topics--3--L" value="4004">4004</option>
 <option name="History Research Seminar--3--LO" value="4914">4914</option>
 <option name="Field Study--1--L" value="4964">4964</option>
 <option name="Independent Study--1--I" value="4974">4974</option>
@@ -6195,10 +6228,10 @@
 <option name="Medical Terminology--3--O" value="2204">2204</option>
 <option name="Exer Ldrship- Personal Trainer--3--H" value="2264">2264</option>
 <option name="Intro to Integrative Health--3--L" value="2334">2334</option>
-<option name="TS: Alternative Transportation--3--L" value="2774">2774</option>
 <option name="Exercise and Health--3--L" value="2804">2804</option>
 <option name="Athletic Injuries--2--L" value="2824">2824</option>
 <option name="Independent Study--1--I" value="2974">2974</option>
+<option name="SS:Act Trans/Hlthy&Sus Planet--3--L" value="2984">2984</option>
 <option name="Science of Food Prep Lab--2--B" value="3024">3024</option>
 <option name="Metabolic Nutrition--3--L" value="3026">3026</option>
 <option name="Methods Human Hlth Assessment--2--LH" value="3034">3034</option>
@@ -6243,6 +6276,7 @@
 <option name="Plant Biology--3--L" value="2304">2304</option>
 <option name="Arboriculture Field Skills--1--B" value="2554">2554</option>
 <option name="Sustainable Ag Practicum--3--L" value="2834">2834</option>
+<option name="SS: Floral Design II--3--L" value="2984">2984</option>
 <option name="Woody Landscape Plants--3--LB" value="3326">3326</option>
 <option name="Herbaceous Landscape Plants--0--L" value="3346">3346</option>
 <option name="World Crops and Systems--3--L" value="3444">3444</option>
@@ -6252,7 +6286,6 @@
 <option name="Ornamental Plant Prod & Market--3--L" value="4614">4614</option>
 <option name="Vegetable Crops--3--O" value="4764">4764</option>
 <option name="Vegetable Seed Production--2--O" value="4784">4784</option>
-<option name="UG:Physiolgy-Transformd Roots--2--R" value="4994">4994</option>
 <option name="Undergraduate Research--2--R" value="4994">4994</option>
 <option name="GS:Horticulture Seminar--1--L" value="5004">5004</option>
 <option name="Adv Stud in Urban For Ecosys--3--O" value="5474">5474</option>
@@ -6327,16 +6360,15 @@
 <option name="Industrial Design Lab III--6--L" value="3015">3015</option>
 <option name="Industrial Design Lab III--6--L" value="3016">3016</option>
 <option name="Materials and Processes--3--L" value="3124">3124</option>
+<option name="TS: Fusion for Iteration (1+2)--2--L" value="3204">3204</option>
 <option name="TS:Empty Bowls (1+2 )--2--L" value="3204">3204</option>
-<option name="TS:Portfolio (1)--1--L" value="3204">3204</option>
-<option name="TS:Portfolio (2)--1--L" value="3204">3204</option>
-<option name="TS: Welcome to the Machine--2--L" value="3224">3224</option>
-<option name="TS:Fusion/Dbop ( 1+2 )--3--L" value="3224">3224</option>
-<option name="TS:History of Jewelry (2)--1--L" value="3234">3234</option>
+<option name="TS: Portfolio (2)--1--L" value="3224">3224</option>
+<option name="TS: Typography (1)--1--L" value="3224">3224</option>
+<option name="ID Europe Study Abroad--3--L" value="3234">3234</option>
+<option name="TS:History of Tableware (2)--1--L" value="3234">3234</option>
 <option name="TS:Studio Collective--1--L" value="3234">3234</option>
 <option name="Industrial Design Lab IV--6--L" value="4015">4015</option>
 <option name="Industrial Design Lab IV--6--L" value="4016">4016</option>
-<option name="Managing Tech Commercializatn--3--L" value="4094">4094</option>
 <option name="Independent Study--1--I" value="4974">4974</option>
 </select>
 <select name="201701IS" style="display: none;">
@@ -6368,7 +6400,6 @@
 <option name="Foreign Policy and Diplomacy--3--L" value="3624">3624</option>
 <option name="US-Russia Foreign Policies--3--L" value="3626">3626</option>
 <option name="Human Rights: Global Issues--3--L" value="3634">3634</option>
-<option name="National Security--3--L" value="3734">3734</option>
 <option name="National Security Policies--3--L" value="3736">3736</option>
 <option name="International Enrollment--0--R" value="3944">3944</option>
 <option name="Study Abroad--1--L" value="3954">3954</option>
@@ -6382,6 +6413,7 @@
 <option name="Field Study--1--R" value="4964">4964</option>
 <option name="Independent Study--1--I" value="4974">4974</option>
 <option name="Independent Study--1--I" value="4974H">4974H</option>
+<option name="SS: Diplomacy Lab--3--L" value="4984">4984</option>
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
 <option name="Undergraduate Research--1--R" value="4994H">4994H</option>
 </select>
@@ -6416,7 +6448,6 @@
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
 <option name="Mgt Orgl Sys--3--L" value="5016">5016</option>
 <option name="Production Systems Analysis--3--L" value="5044">5044</option>
-<option name="Ind Engr Case Studies--3--O" value="5114">5114</option>
 <option name="Management Information Systems--3--LO" value="5134">5134</option>
 <option name="Engr Program Project Mgt--3--LO" value="5174">5174</option>
 <option name="Optimization--3--L" value="5406">5406</option>
@@ -6434,10 +6465,8 @@
 <option name="SS: Sply Chain & Oper Eng--3--L" value="5984">5984</option>
 <option name="SS:Occupational Neuromechanics--3--L" value="5984">5984</option>
 <option name="Research and Thesis--1--R" value="5994">5994</option>
-<option name="Adv Topics in Mgt Systems Engr--3--L" value="6024">6024</option>
 <option name="Graph Theory and Network Flows--3--L" value="6404">6404</option>
 <option name="Inventory and Operations Mgmt--3--L" value="6444">6444</option>
-<option name="Queueing Networks--3--L" value="6464">6464</option>
 <option name="Human Computer Systems--3--L" value="6614">6614</option>
 <option name="Research and Dissertation--1--R" value="7994">7994</option>
 </select>
@@ -6480,6 +6509,7 @@
 <option name="Independent Study--1--I" value="2974">2974</option>
 <option name="Independent Study--1--I" value="2974H">2974H</option>
 <option name="Advanced Japanese--3--L" value="3106">3106</option>
+<option name="SS:Oral Practice--3--L" value="3984">3984</option>
 <option name="Field Study--1--L" value="4964">4964</option>
 <option name="Independent Study--1--I" value="4974">4974</option>
 <option name="Independent Study--1--I" value="4974H">4974H</option>
@@ -6558,7 +6588,7 @@
 <option name="Independent Study--1--I" value="4974">4974</option>
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
 <option name="Leadership in a Global Society--3--LO" value="5464">5464</option>
-<option name="Leading Teams through Change--3--L" value="5544">5544</option>
+<option name="Leading Teams through Change--3--O" value="5544">5544</option>
 <option name="Leading Social Change--3--L" value="5554">5554</option>
 <option name="Project and Report--1--O" value="5904">5904</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
@@ -6599,6 +6629,7 @@
 <option name="Independent Study--1--I" value="2974">2974</option>
 <option name="Independent Study--1--I" value="2974H">2974H</option>
 <option name="SS: Discovering Mathematics II--2--L" value="2984">2984</option>
+<option name="SS: Series & Polar Coordinates--2--O" value="2984">2984</option>
 <option name="Undergraduate Research--1--L" value="2994">2994</option>
 <option name="Introduction to Proofs--3--L" value="3034">3034</option>
 <option name="Programming for Math--3--L" value="3054">3054</option>
@@ -6635,7 +6666,7 @@
 <option name="Real Analysis--3--L" value="5226">5226</option>
 <option name="Complex Analysis--3--L" value="5236">5236</option>
 <option name="Differential Eqns--3--L" value="5246">5246</option>
-<option name="TS:--3--L" value="5414">5414</option>
+<option name="TS:Approx of Dynamical Systems--3--L" value="5414">5414</option>
 <option name="Ap Par Dif Equa--3--L" value="5426">5426</option>
 <option name="Combinatorics--3--L" value="5464">5464</option>
 <option name="Numerical Analysis--3--L" value="5466">5466</option>
@@ -6672,6 +6703,7 @@
 <option name="Bio-Inspired Technology--3--L" value="4034">4034</option>
 <option name="Industrial Energy Systems--3--L" value="4154">4154</option>
 <option name="Spacecraft Propulsion--3--L" value="4174">4174</option>
+<option name="Sustainable Energy Solutions--3--L" value="4194">4194</option>
 <option name="Internal Combustion Engines--3--L" value="4204">4204</option>
 <option name="Marine Engineering--3--L" value="4244">4244</option>
 <option name="Energy Systems--3--L" value="4324">4324</option>
@@ -6695,6 +6727,7 @@
 <option name="Turbomachinery--3--LO" value="5424">5424</option>
 <option name="Bayesian Robotics--3--L" value="5524">5524</option>
 <option name="Applied Linear Control--3--LO" value="5564">5564</option>
+<option name="Convex Optimization--3--L" value="5584">5584</option>
 <option name="Rapid Prototyping--3--L" value="5644">5644</option>
 <option name="Tire Mechanics--3--L" value="5674">5674</option>
 <option name="Advanced Design Project--1--L" value="5694">5694</option>
@@ -6712,7 +6745,6 @@
 <option name="Research and Thesis--1--O" value="5994">5994</option>
 <option name="Adv Topics in Thermodynamics--3--OL" value="6104">6104</option>
 <option name="Comp Fluid Dyn Heat Trans--3--OL" value="6434">6434</option>
-<option name="Verificat Validat Sci Comput--3--O" value="6444">6444</option>
 <option name="Linear Control Theory--3--L" value="6544">6544</option>
 <option name="Adaptive Contol Systems--3--L" value="6574">6574</option>
 <option name="Research and Dissertation--1--O" value="7994">7994</option>
@@ -6753,13 +6785,14 @@
 <option name="Executive Ldrshp for Cadets--1--L" value="4946">4946</option>
 <option name="Field Study--3--L" value="4964">4964</option>
 <option name="Independent Study--1--I" value="4974">4974</option>
+<option name="SS. Design Thinking--3--L" value="4984">4984</option>
 <option name="Undergraduate Research--3--R" value="4994">4994</option>
 <option name="Undergraduate Research--4--R" value="4994H">4994H</option>
 <option name="Organization Behavior--3--L" value="5314">5314</option>
 <option name="Leader Tech-Based Org--3--O" value="5804">5804</option>
 <option name="Business Analytics Capstone--3--L" value="5905">5905</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
-<option name="Strat Mgmt and Org Theory Sem--3--L" value="6704">6704</option>
+<option name="Org Behav Theory Seminar--3--L" value="6714">6714</option>
 <option name="Research and Dissertation--1--R" value="7994">7994</option>
 </select>
 <select name="201701MINE" style="display: none;">
@@ -6858,9 +6891,12 @@
 <option name="Advanced Metal Casting Lab--2--L" value="4324">4324</option>
 <option name="Laboratory In Polymer Science--2--B" value="4544">4544</option>
 <option name="Polymer Engineering--3--L" value="4554">4554</option>
-<option name="Biomaterials--3--L" value="4574">4574</option>
 <option name="Composite Materials--3--L" value="4604">4604</option>
 <option name="Materials Design Experiments--3--L" value="4644">4644</option>
+<option name="SS: Adv Lab-Ceramic & Glass--1--B" value="4984">4984</option>
+<option name="SS: Adv Lab-Corrosion & Degrad--1--B" value="4984">4984</option>
+<option name="SS: Adv Lab-Elec, Mag, & Optic--1--B" value="4984">4984</option>
+<option name="SS: Intro Molec Dynamics Sim--3--L" value="4984">4984</option>
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
 <option name="Undergraduate Research--1--R" value="4994H">4994H</option>
 <option name="MSE Seminar--1--L" value="5016">5016</option>
@@ -6871,7 +6907,6 @@
 <option name="Deformation & Fracture of Mtls--3--L" value="5144">5144</option>
 <option name="Advanced Physical Ceramics--3--L" value="5174">5174</option>
 <option name="Mater Sci Surfaces Interfaces--3--LO" value="5234">5234</option>
-<option name="Biomaterials--3--L" value="5574G">5574G</option>
 <option name="Project and Report--1--R" value="5904">5904</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
 <option name="Research And Thesis--1--R" value="5994">5994</option>
@@ -6949,7 +6984,7 @@
 <option name="TS:Instrmntl Ensmble Mus L20RK--1--L" value="3314">3314</option>
 <option name="Choral Ensemble Music--1--L" value="3414">3414</option>
 <option name="Advanced Jazz Improvisation--2--L" value="3815">3815</option>
-<option name="Topics Adv Electroacoustic Res--3--L" value="4014">4014</option>
+<option name="Topics Adv Electroacoustic Res--3--L" value="4014H">4014H</option>
 <option name="Music Tech Senior Sem--1--L" value="4056">4056</option>
 <option name="Adv Ind App Voice--1--L" value="4514">4514</option>
 <option name="Adv Ind App Keyboard--1--L" value="4524">4524</option>
@@ -7005,8 +7040,11 @@
 <option name="Undergraduate Research--1--R" value="2994">2994</option>
 <option name="Cognitive Neuroscience--3--L" value="3084">3084</option>
 <option name="Neuroscience and Society--3--L" value="3464">3464</option>
+<option name="SS: Human Physiology for Neur--4--L" value="3984">3984</option>
 <option name="Diseases of the Nervous System--3--L" value="4034">4034</option>
 <option name="Neuroscience Senior Seminar--3--L" value="4044">4044</option>
+<option name="SS: Neuroimmunology--3--L" value="4984">4984</option>
+<option name="SS: Neuroscience of Addiction--3--L" value="4984">4984</option>
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
 </select>
 <select name="201701NR" style="display: none;">
@@ -7039,6 +7077,7 @@
 <option value="none" disabled selected value>----</option>
 <option name="Fundamental of Nuclear Engr--3--L" value="3146">3146</option>
 <option name="Nuclear Fuel Cycle--3--L" value="4204">4204</option>
+<option name="Reactor Thermal Hydraulics--3--L" value="4424">4424</option>
 <option name="Independent Study--1--I" value="4974">4974</option>
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
 <option name="Undergraduate Research--1--R" value="4994H">4994H</option>
@@ -7048,6 +7087,7 @@
 <option name="Independent Study--1--O" value="5974">5974</option>
 <option name="Research and Thesis--1--O" value="5994">5994</option>
 <option name="Adv Nuclear Reactor Analysis--3--L" value="6124">6124</option>
+<option name="Nuclear Reactor Safety--3--L" value="6334">6334</option>
 <option name="Research and Thesis--1--O" value="7994">7994</option>
 </select>
 <select name="201701PAPA" style="display: none;">
@@ -7121,7 +7161,6 @@
 <option name="Public Health Administration--3--LO" value="5044">5044</option>
 <option name="Prin Community Health Ed--3--L" value="5204">5204</option>
 <option name="Prog Dev in Health Ed--3--O" value="5214">5214</option>
-<option name="Zoonoses & Infectious Disease--3--L" value="5304">5304</option>
 <option name="Infectious Disease Epidemiol--3--L" value="5314">5314</option>
 <option name="Health of the Elderly--3--O" value="5714">5714</option>
 <option name="Public Health Seminar--1--L" value="5834">5834</option>
@@ -7202,6 +7241,7 @@
 <option name="Independent Study--1--I" value="4974">4974</option>
 <option name="Undergraduate Research--1--R" value="4994">4994</option>
 <option name="Seminar--1--L" value="5004">5004</option>
+<option name="Plant Pathogenic Agents--3--L" value="5054">5054</option>
 <option name="Sem Mol Cell Biotech--1--L" value="5064">5064</option>
 <option name="Diseases of Crop Plants--1--O" value="5214">5214</option>
 <option name="Molec Biol Life Sci--3--L" value="5344">5344</option>
@@ -7262,7 +7302,6 @@
 <option name="US-Russia Foreign Policies--3--L" value="3626">3626</option>
 <option name="Human Rights: Global Issues--3--L" value="3634">3634</option>
 <option name="Poverty and Welfare Policy--3--L" value="3724">3724</option>
-<option name="National Security--3--L" value="3734">3734</option>
 <option name="National Security Policies--3--L" value="3736">3736</option>
 <option name="Public Policy Analysis--3--L" value="3744">3744</option>
 <option name="American Political Theory--3--L" value="3754">3754</option>
@@ -7285,7 +7324,7 @@
 <option name="Undergraduate Research--1--R" value="4994H">4994H</option>
 <option name="Research Methods--3--LO" value="5116">5116</option>
 <option name="Perspectives Pol Theo--3--L" value="5224">5224</option>
-<option name="Global Conflicts--3--O" value="5254">5254</option>
+<option name="Legislative Branch--3--O" value="5314">5314</option>
 <option name="Political Behavior--3--L" value="5344">5344</option>
 <option name="Industrial Democracies--3--O" value="5414">5414</option>
 <option name="International Politics--3--L" value="5444">5444</option>
@@ -7354,7 +7393,7 @@
 <option name="TS: Clinical Assessment--3--L" value="6254">6254</option>
 <option name="Child Psychopathology--3--L" value="6264">6264</option>
 <option name="Advanced Topics in Org Psyc--3--L" value="6934">6934</option>
-<option name="Adv Top Dev Psyc--3--L" value="6944">6944</option>
+<option name="TS:Lrng in Typcl&Atypcl Chldrn--3--L" value="6944">6944</option>
 <option name="Clinical Practicum--1--L" value="6966">6966</option>
 <option name="Clinical Internship--1--L" value="7964">7964</option>
 <option name="Research and Dissertation--1--L" value="7994">7994</option>
@@ -7362,9 +7401,9 @@
 <select name="201701REAL" style="display: none;">
 <option value="none" disabled selected value>----</option>
 <option name="Discovering Real Estate--2--L" value="1004">1004</option>
+<option name="Principles of Real Estate--3--L" value="2004">2004</option>
 <option name="Careers in Real Estate--1--L" value="2014">2014</option>
 <option name="Real Estate Data Analysis--2--L" value="2034">2034</option>
-<option name="Prof Develop in Real Estate--1--L" value="3014">3014</option>
 <option name="Applied Real Estate Develop--3--L" value="3024">3024</option>
 <option name="Real Estate Studio--3--L" value="4076">4076</option>
 <option name="Field Study--1--L" value="4964">4964</option>
@@ -7380,7 +7419,6 @@
 <option name="Case Studies in Rel & Culture--3--L" value="2004">2004</option>
 <option name="Ethnography: Studying Culture--3--L" value="2054">2054</option>
 <option name="Religion in American Life--3--L" value="2124">2124</option>
-<option name="African Religions--3--L" value="2144">2144</option>
 <option name="New Testament--3--L" value="2424">2424</option>
 <option name="Greek and Roman Mythology--3--L" value="2444">2444</option>
 <option name="Religion and Science--3--L" value="2464">2464</option>
@@ -7401,6 +7439,7 @@
 <option name="Mat Cult & Pub Hum Theory--3--L" value="5104">5104</option>
 <option name="Topics in Public Humanities--3--L" value="5584">5584</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
+<option name="SS: Foundtns of Rel Frdm in US--3--O" value="5984">5984</option>
 </select>
 <select name="201701RTM" style="display: none;">
 <option value="none" disabled selected value>----</option>
@@ -7483,10 +7522,11 @@
 <option name="Population Trends and Issues--3--O" value="3504">3504</option>
 <option name="Sociology of Aging--3--O" value="3714">3714</option>
 <option name="Study Abroad--1--L" value="3954">3954</option>
+<option name="Appalachian Lang & Cultures--3--L" value="4054">4054</option>
 <option name="Senior Seminar--3--L" value="4194">4194</option>
 <option name="Sociology of Law--3--O" value="4404">4404</option>
 <option name="Drugs and Society--3--L" value="4414">4414</option>
-<option name="Advanced Topics in Criminology--3--O" value="4434">4434</option>
+<option name="Advanced Topics in Criminology--3--OL" value="4434">4434</option>
 <option name="Sociology of Mental Illness--3--L" value="4714">4714</option>
 <option name="Internship--1--L" value="4754">4754</option>
 <option name="Field Study--1--L" value="4964">4964</option>
@@ -7532,6 +7572,7 @@
 <option name="Independent Study--1--I" value="4974H">4974H</option>
 <option name="Undergraduate Research--1--RL" value="4994">4994</option>
 <option name="Undergraduate Research--1--R" value="4994H">4994H</option>
+<option name="Top Early Mod Hisp Lit & Cult--3--LO" value="5304">5304</option>
 <option name="Span-Amer Literature & History--3--LO" value="5344">5344</option>
 <option name="Independent Study--1--I" value="5974">5974</option>
 <option name="Research and Thesis--1--LO" value="5994">5994</option>
@@ -7541,6 +7582,7 @@
 <option name="NGOS in Internat Development--3--L" value="5514">5514</option>
 <option name="Nonprofit Law and Ethics--3--O" value="5564">5564</option>
 <option name="Nonprofit Org & Mgmt--3--L" value="5574">5574</option>
+<option name="SS: Ethics in Autonomous Syst--3--L" value="5984">5984</option>
 <option name="Sem Env Plan--3--L" value="6006">6006</option>
 <option name="Knowledge Theory & Planning--3--L" value="6104">6104</option>
 </select>
@@ -7588,7 +7630,7 @@
 <option name="Time Series Analysis I--3--L" value="5414">5414</option>
 <option name="Applied Stochastic Processes--3--L" value="5434">5434</option>
 <option name="Adv Applied Bayesian Stat--3--L" value="5444G">5444G</option>
-<option name="Adv Appl Multivariate Analysis--3--L" value="5504G">5504G</option>
+<option name="Data Analytics--3--L" value="5525">5525</option>
 <option name="Data Analytics--3--L" value="5526">5526</option>
 <option name="Topics in Biostatistics--3--L" value="5594">5594</option>
 <option name="Biometry--3--L" value="5606">5606</option>
@@ -7684,7 +7726,8 @@
 <option name="TS:Musical Theatre--3--L" value="3154">3154</option>
 <option name="TS:Scene Stdy,American Realism--3--L" value="3154">3154</option>
 <option name="TS: Experiential Voice--3--L" value="3164">3164</option>
-<option name="TS: Stage Combat:Rapierâ€¡--0--L" value="3174">3174</option>
+<option name="TS: Improvisation--3--L" value="3174">3174</option>
+<option name="TS: Stage Combat:Rapierâ€¡--3--L" value="3174">3174</option>
 <option name="Playwriting--3--L" value="3316">3316</option>
 <option name="Arts Management--3--L" value="3604">3604</option>
 <option name="Stage Management--3--L" value="3624">3624</option>
@@ -7728,7 +7771,8 @@
 <option value="none" disabled selected value>----</option>
 <option name="Urban Public Issues--3--L" value="1024">1024</option>
 <option name="Principles of Real Estate--3--L" value="2004">2004</option>
-<option name="Urbanization and Development--3--O" value="2014">2014</option>
+<option name="Urbanization and Development--3--L" value="2014">2014</option>
+<option name="SS: Act Tran Hlthy Sust Plan--3--L" value="2984">2984</option>
 <option name="Urban Policy and Planning--3--L" value="3014">3014</option>
 <option name="Policy Implementation--3--L" value="3224">3224</option>
 <option name="Global Environ Issues--3--L" value="3344">3344</option>
@@ -7740,7 +7784,6 @@
 <option name="Environmental Ethics--3--L" value="4264">4264</option>
 <option name="Renewable Energy Syst--3--L" value="4394">4394</option>
 <option name="Legal Foundations of Planning--3--L" value="4754">4754</option>
-<option name="Urban Infrastructure--3--L" value="4854">4854</option>
 <option name="Public & Urban Seminar--3--L" value="4914">4914</option>
 <option name="Field Study--1--L" value="4964">4964</option>
 <option name="Independent Study--1--I" value="4974">4974</option>
@@ -7753,11 +7796,9 @@
 <option name="Planning Studio--3--L" value="5124">5124</option>
 <option name="Urban Econ and Policy--3--L" value="5234">5234</option>
 <option name="Adv Environ Ethics & Policy--3--L" value="5264G">5264G</option>
-<option name="TS: Water Supply & Sanitation--1--L" value="5324">5324</option>
-<option name="TS:Water Sup & San Dev Country--1--L" value="5324">5324</option>
-<option name="Charity and Philanthropy--3--L" value="5354">5354</option>
+<option name="TS: Water Supply & Sanitation--3--L" value="5324">5324</option>
 <option name="NGOS in Development--3--L" value="5364">5364</option>
-<option name="Natural Res Planning Topics--3--OL" value="5414">5414</option>
+<option name="Natural Res Planning Topics--1--L" value="5414">5414</option>
 <option name="TS:Residntl Energy Evaluation--1--L" value="5424">5424</option>
 <option name="Urb Dev Proj Review--3--L" value="5434">5434</option>
 <option name="Adv Research Methods--3--L" value="5484">5484</option>
@@ -7803,7 +7844,7 @@
 <select name="201701VM" style="display: none;">
 <option value="none" disabled selected value>----</option>
 <option name="Environmental Health--3--L" value="7014">7014</option>
-<option name="Zoonoses & Infectious Disease--3--L" value="7304">7304</option>
+<option name="Infectious Disease Epidemiolog--3--L" value="7314">7314</option>
 <option name="Veterinary Epidemiology--2--L" value="8084">8084</option>
 <option name="Clinical Perspectives--1--L" value="8094">8094</option>
 <option name="Veterinary Neurobiology--2--L" value="8104">8104</option>
@@ -7837,6 +7878,24 @@
 <option name="Vet Derm & Endocrinol--3--L" value="8764">8764</option>
 <option name="Vet Clinical Pharmacol--2--L" value="8784">8784</option>
 <option name="Complementary Medicine--1--L" value="8804">8804</option>
+<option name="SS: Beef Cow-Calf Institute--2--L" value="8984">8984</option>
+<option name="SS: CVM Externship Clk--4--L" value="8984">8984</option>
+<option name="SS: Cardiology Clk--4--L" value="8984">8984</option>
+<option name="SS: Dermatology Clk--4--L" value="8984">8984</option>
+<option name="SS: Equine Field Services Clk--4--L" value="8984">8984</option>
+<option name="SS: Equine Podiatry--3--L" value="8984">8984</option>
+<option name="SS: Neurology Clk--4--L" value="8984">8984</option>
+<option name="SS: Oncology Clk--4--L" value="8984">8984</option>
+<option name="SS: Parasitol of Grazing Anmls--1--L" value="8984">8984</option>
+<option name="SS: Prof Foundations III--1--L" value="8984">8984</option>
+<option name="SS: Prof Foundations V--2--L" value="8984">8984</option>
+<option name="SS: Public Corp Prob Solv--2--L" value="8984">8984</option>
+<option name="SS: Public Corporate Clerkship--4--L" value="8984">8984</option>
+<option name="SS: SA Behavioral Medicine--1--L" value="8984">8984</option>
+<option name="SS: Theriogenology Clk--4--L" value="8984">8984</option>
+<option name="SS: Veterinarians in Glob Comm--1--L" value="8984">8984</option>
+<option name="SS: Veterinary Oncology--1--L" value="8984">8984</option>
+<option name="SS:Veterinarians & Public Pol.--2--L" value="8984">8984</option>
 <option name="Avian Medicine and Surgery--1--L" value="9004">9004</option>
 <option name="Advanced Diagnostic Imaging--1--L" value="9014">9014</option>
 <option name="Advanced Small Animal Surgery--2--L" value="9034">9034</option>

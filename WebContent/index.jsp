@@ -10,7 +10,15 @@
   <%@ page import="java.util.Scanner"%>
   <%@ page import="java.io.File"%>
 </head>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-86032292-1', 'auto');
+  ga('send', 'pageview');
+</script>
 <body class="Site">
   <header>
     <h1><a href="http://pscheduler.us-west-2.elasticbeanstalk.com">Scheduler</a></h1>
@@ -163,8 +171,8 @@
     
   </div>
   <footer>
-    <p class="view">Phillip Ngo | <a href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a> | 
-    <a href="https://goo.gl/forms/CIeZtR1XndZCFdUH2">Submit a Bug or Suggestion</a> | <a href="changes.html">Recent Changes</a></p>
+    <p class="view">Phillip Ngo - ngophill@vt.edu | <a href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a> | 
+    <a href="https://goo.gl/forms/CIeZtR1XndZCFdUH2">Submit a Bug or Suggestion</a> | <a href="changelog.html">Recent Changes</a></p>
   </footer>
 </body>
 <script type="text/javascript">

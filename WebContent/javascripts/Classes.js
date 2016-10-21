@@ -63,6 +63,8 @@ function addClass() {
 					  break;
 			case "I": option.innerHTML = "Independent Study";
 				      break;
+			case "R": option.innerHTML = "Research";
+					  break;
 			default:  option.innerHTML = "bug";
 					  break;
 		}

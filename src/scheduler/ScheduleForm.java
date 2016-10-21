@@ -33,6 +33,16 @@ public class ScheduleForm extends HttpServlet {
         
         html.append("<!doctype html>");
         html.append("<html>");
+        
+        html.append("<script>");
+        html.append("(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){");
+        html.append("(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),");
+        html.append("m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)");
+        html.append("})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');");
+        html.append("ga('create', 'UA-86032292-1', 'auto');");
+        html.append("ga('send', 'pageview');");
+        html.append("</script>");
+        
         html.append("<head>");
         html.append("<title>Scheduler</title>");
         html.append("<link rel=\"stylesheet\" href=\"stylesheets/styles.css\">");
@@ -64,7 +74,7 @@ public class ScheduleForm extends HttpServlet {
         html.append("<input type=\"button\" value=\"Previous Schedule\"/ onclick=\"changeSchedule(-1)\">");
         html.append("<input type=\"button\" value=\"Next Schedule\"/ onclick=\"changeSchedule(1)\">");
         html.append("</form>");
-        //html.append("<a href=\"WebContent/excelsheets/schedules.xls\" download=\"schedules.xls\">Download as Excel</a>"); // not working
+        //html.append("<a href=\"excelsheets/schedules.xls\" download=\"schedules.xls\">Download as Excel</a>"); // not working
         html.append("</div>");
         
         
@@ -173,7 +183,6 @@ public class ScheduleForm extends HttpServlet {
     // Private Helper Methods -------------------------------------------------
     
     private void appendTextSchedules(StringBuilder html, LinkedList<Schedule> schedules) {
-        String spaces = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         int i = 0;
         for (Schedule schedule : schedules) {
             if (i != 0) {
@@ -183,14 +192,38 @@ public class ScheduleForm extends HttpServlet {
                 html.append("<table id=\"" + (i++) + "\">");
             }
             html.append("<tr><td colspan=\"9\" class=\"center\">" + i + " of " + schedules.size() + "</td></tr>");
+            html.append("<tr style=\"font-weight:bold\"><td class=\"text\">CRN</td> <td  class=\"text\">Course</td> <td  class=\"text\">Title</td>"
+                    + "<td class=\"text\">Type</td><td  class=\"text\">Credits</td><td  class=\"text\">Instructor</td>"
+                    + "<td class=\"text\">Days</td> <td  class=\"text\">Time</td> <td  class=\"text\">Location</td></tr>");
             for (VTCourse c : schedule) {
                 html.append("<tr class=\"left\">");
-                html.append("<td>" + c.getCRN() + spaces + "</td>");
-                html.append("<td>" + c.getSubject() + " " + c.getNum() + spaces + "</td>");
-                html.append("<td>" + c.getName() + spaces + "</td>");
-                html.append("<td>" + c.getClassType() + spaces + "</td>");
-                html.append("<td>" + c.getCredits() + "C" + spaces + "</td>");
-                html.append("<td>" + c.getProf() + spaces + "</td>");             
+                html.append("<td class=\"text\">" + c.getCRN() + "</td>");
+                html.append("<td class=\"text\">" + c.getSubject() + " " + c.getNum() + "</td>");
+                html.append("<td class=\"pad\">" + c.getName() + "</td>");
+                String classType = c.getClassType();
+                switch (classType) {
+                    case "L": classType = "Lecture";
+                              break;
+                    case "B": classType = "Lab";
+                              break;
+                    case "C": classType = "Recitation";
+                              break;
+                    case "H": classType = "Hybrid";
+                              break;
+                    case "E": classType = "Emporium";
+                              break;
+                    case "O": classType = "Online";
+                              break;
+                    case "I": classType = "Independent Study";
+                              break;
+                    case "R": classType = "Research";
+                              break;
+                    default:  classType = "bug";
+                              break;
+                }
+                html.append("<td class=\"text\">" + classType + "</td>");
+                html.append("<td class=\"text\">" + c.getCredits() + "</td>");
+                html.append("<td class=\"text\">" + c.getProf() + "</td>");             
                 Time t = c.getTimeSlot();
                 if (t != null) {
                     String[] days = c.getDays();
@@ -198,9 +231,9 @@ public class ScheduleForm extends HttpServlet {
                     for (int k = 0; k < days.length; k++) {
                         day += days[k];
                     }
-                    html.append("<td>" + day + spaces + "</td>");
-                    html.append("<td>" + t.getStart() + " - " + t.getEnd() + spaces + "</td>");
-                    html.append("<td>" + c.getLocation() + "</td>");
+                    html.append("<td  class=\"text\">" + day + "</td>");
+                    html.append("<td  class=\"text\">" + t.getStart() + " - " + t.getEnd() + "</td>");
+                    html.append("<td  class=\"pad\">" + c.getLocation() + "</td>");
                     html.append("</tr>");
                     if (c.getAdditionalDays() != null && c.getAdditionalTime() != null && c.getAdditionalLocation() != null) {
                         html.append("<tr><td></td><td></td><td></td><td></td><td></td><td></td>");
@@ -209,13 +242,14 @@ public class ScheduleForm extends HttpServlet {
                         for (int k = 0; k < days.length; k++) {
                             addedDays += days[k];
                         }
-                        html.append("<td>" + addedDays + spaces + "</td>");
-                        html.append("<td>" + c.getAdditionalTime().getStart() + " - " + c.getAdditionalTime().getEnd() + spaces + "</td>");
+                        html.append("<td>" + addedDays + "</td>");
+                        html.append("<td>" + c.getAdditionalTime().getStart() + " - " + c.getAdditionalTime().getEnd() + "</td>");
                         html.append("<td>" + c.getAdditionalLocation() + "</td>");
                         html.append("</tr>");
                     }
                 }
             }
+            html.append("<tr><td></td><td></td><td></td><td></td><td class=\"text credits\">" + schedule.totalCredits() + "</td></tr>");
             html.append("</table>");
         }      
     }
