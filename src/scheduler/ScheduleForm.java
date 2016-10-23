@@ -138,7 +138,7 @@ public class ScheduleForm extends HttpServlet {
                 appendTableSchedules(html, schedules);
                 html.append("</ul>");
                 
-                ExcelSchedule.outputFile(schedules);
+                //ExcelSchedule.outputFile(schedules);
             }
             else if (schedules.size() > 999) {
                 html.append("There were over 999 Schedules, please narrow your parameters");
@@ -161,7 +161,7 @@ public class ScheduleForm extends HttpServlet {
         html.append("</div>");
         
         html.append("<footer>");
-        html.append("<p class=\"view\">Phillip Ngo | <a href=\"https://github.com/PhillipNgo/Scheduler-Website\">View the Project on GitHub</a> ");
+        html.append("<p class=\"view\">ngophill@vt.edu | <a href=\"https://github.com/PhillipNgo/Scheduler-Website\">View the Project on GitHub</a> ");
         html.append("| <a href=\"https://goo.gl/forms/CIeZtR1XndZCFdUH2\">Submit a Bug or Suggestion</a>");
         html.append(" | <a href=\"changelog.html\">Recent Changes</a></p>");
         html.append("</footer>");
@@ -285,9 +285,6 @@ public class ScheduleForm extends HttpServlet {
                     }
                     for (int col = 0; col < 5; col++) {
                         String c = getHTMLSchedule(schedule, col, Time.timeString(early*60 + time*60 + row*5));
-                        if (time == 2) {
-                            System.out.println();
-                        }
                         if (c != null) {
                             String[] s = c.split("--");
                             html.append("<td " + "class=\"outline fill center\" rowspan=\"" + s[1] + "\">");

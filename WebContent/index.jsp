@@ -171,7 +171,7 @@
     
   </div>
   <footer>
-    <p class="view">Phillip Ngo - ngophill@vt.edu | <a href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a> | 
+    <p class="view">ngophill@vt.edu | <a href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a> | 
     <a href="https://goo.gl/forms/CIeZtR1XndZCFdUH2">Submit a Bug or Suggestion</a> | <a href="changelog.html">Recent Changes</a></p>
   </footer>
 </body>
@@ -214,6 +214,9 @@
 					document.getElementById("row" + i).value = str.substring(0, 1);
 				}			
 			}
+		}
+		else {
+			displayNums(false);
 		}
 	}
 	window.onload = codeAddress;

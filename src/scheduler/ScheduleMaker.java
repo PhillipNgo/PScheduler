@@ -42,14 +42,18 @@ public final class ScheduleMaker {
             parser = new VTParser(term);
         }
         for (int i = 0; i < subjects.size(); i++) {
-            LinkedList<VTCourse> curr;
-            if (map != null) {
-                curr = map.get(subjects.get(i)).get(numbers.get(i)).createCopy();
+            LinkedList<VTCourse> curr = null;
+            try {
+                if (map != null) {
+                    curr = map.get(subjects.get(i)).get(numbers.get(i)).createCopy();
+                }
+                else {
+                    curr = parser.parseCourse(subjects.get(i), numbers.get(i));
+                }
             }
-            else {
-                curr = parser.parseCourse(subjects.get(i), numbers.get(i));
+            catch (Exception e) {
+                throw new Exception(subjects.get(i) + " " + numbers.get(i) + " does not exist on the timetable");
             }
-            
             Iterator<VTCourse> iter = curr.iterator();
             while (iter.hasNext()) {
                 if (!checkRestrictions(iter.next(), start, end, types.get(i), freeDay)) {
