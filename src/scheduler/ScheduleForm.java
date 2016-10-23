@@ -242,9 +242,9 @@ public class ScheduleForm extends HttpServlet {
                         for (int k = 0; k < days.length; k++) {
                             addedDays += days[k];
                         }
-                        html.append("<td>" + addedDays + "</td>");
-                        html.append("<td>" + c.getAdditionalTime().getStart() + " - " + c.getAdditionalTime().getEnd() + "</td>");
-                        html.append("<td>" + c.getAdditionalLocation() + "</td>");
+                        html.append("<td  class=\"text\">" + addedDays + "</td>");
+                        html.append("<td  class=\"text\">" + c.getAdditionalTime().getStart() + " - " + c.getAdditionalTime().getEnd() + "</td>");
+                        html.append("<td  class=\"pad\">" + c.getAdditionalLocation() + "</td>");
                         html.append("</tr>");
                     }
                 }
