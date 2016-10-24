@@ -4,20 +4,15 @@
 <title>Bootstrap Scheduler</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
 </head>
 <body>
 
-	<div style="background-color: maroon;" class="jumbotron">
+	<div style="background-color: DarkSlateGray;" class="jumbotron">
 		<div class="container">
 			<h1>
 				<span style="color: orange">P</span><span style="color: white">Scheduler</span>
@@ -86,16 +81,21 @@
 						</select>
 					</div>
 					<div style="padding-bottom:5px">
-						<button class="btn btn-default form-control" type="button">Create Schedules</button>
+						<button class="btn btn-default btn-lg form-control" type="button">Create Schedules</button>
 					</div>
 				</div>
 			</div>
 			<div style="text-align: center;" class="col-sm-9">
-				<input type="text" class="form-control" placeholder="ECE 2014, PHYS 2305, 85316, 12768">
+				<select data-size="5" class="selectpicker form-control" data-show-subtext="true" data-live-search="true">
+					<option data-icon="glyphicon-search" data-tokens="">Search a Course or CRN (CS 3114, 85149, etc.)</option>
+					<option data-tokens="ece 2014" data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> ECE 2014" disabled/>
+					<option data-tokens="math 2214" data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> MATH 2214" disabled/>
+					<option data-tokens="cs 2505" data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> CS 2505" disabled/>
+				</select>
 				<h2>Current Schedule</h2>
 				<table class="table">
 					<thead class="thead-inverse">
-						<tr style="font-weight:bold;">
+						<tr style="font-weight: bold;">
 							<td>#</td>
 							<td>Course</td>
 							<td>Title</td>
