@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Scheduler</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+</head>
+<body>
+
+	<div style="background-color: maroon;" class="jumbotron">
+		<div class="container">
+			<h1>
+				<span style="color: orange">P</span><span style="color: white">Scheduler</span>
+				<small style="color: white"><i>VT Schedule Creation</i></small>
+			</h1>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div style="padding-left: 50px" class="row">
+			<div class="col-sm-3 panel panel-default">
+				<div class="panel-heading">
+					<h2>Parameters</h2>
+				</div>
+				<div class="panel-body">
+					<div style="padding-bottom: 10px">
+						<h4>Term</h4>
+						<select class="selectpicker">
+							<option>Spring 2017</option>
+							<option>Fall 2016</option>
+						</select>
+					</div>
+					<h4>Start Time</h4>
+					<div style="padding-bottom: 10px" class="row">
+						<div style="padding-right: 1px;" class="col-sm-4">
+							<select class="selectpicker form-control">
+								<option>10</option>
+							</select>
+						</div>
+						<div style="padding-left: 1px;" class="col-sm-4">
+							<select class="selectpicker form-control">
+								<option>05</option>
+							</select>
+						</div>
+						<div style="padding-left: 5px;" class="col-sm-4">
+							<select class="selectpicker form-control">
+								<option>am</option>
+							</select>
+						</div>
+					</div>
+					<h4>End Time</h4>
+					<div style="padding-bottom:10px" class="row">
+						<div style="padding-right:1px;" class="col-sm-4">
+							<select class="selectpicker form-control">
+								<option>10</option>
+							</select>
+						</div>
+						<div style="padding-left:1px;" class="col-sm-4">
+							<select class="selectpicker form-control">
+								<option>05</option>
+							</select>
+						</div>
+						<div style="padding-left:5px;" class="col-sm-4">
+							<select class="selectpicker form-control">
+								<option>am</option>
+							</select>
+						</div>
+					</div>
+					<div style="padding-bottom:20px">
+						<h4>Free Days</h4>
+						<select class="selectpicker" multiple>
+						  <option>Monday</option>
+						  <option>Tuesday</option>
+						  <option>Wednesday</option>
+						  <option>Thursday</option>
+						  <option>Friday</option>
+						</select>
+					</div>
+					<div style="padding-bottom:5px">
+						<button class="btn btn-default form-control" type="button">Create Schedules</button>
+					</div>
+				</div>
+			</div>
+			<div style="text-align: center;" class="col-sm-9">
+				<input type="text" class="form-control" placeholder="ECE 2014, PHYS 2305, 85316, 12768">
+				<h2>Current Schedule</h2>
+				<table class="table">
+					<thead class="thead-inverse">
+						<tr style="font-weight:bold;">
+							<td>#</td>
+							<td>Course</td>
+							<td>Title</td>
+							<td>Class Type</td>
+							<td>Credits</td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td scope="row">1</td>
+							<td>ECE 2014</td>
+							<td>ECE Professionalism</td>
+							<td>Lecture</td>
+							<td>2</td>
+							<td><button class="btn btn-default" type="button">Remove</button></td>
+						</tr>
+						<tr>
+							<td scope="row">2</td>
+							<td>MATH 2214</td>
+							<td>Differential Equations</td>
+							<td>Lecture</td>
+							<td>3</td>
+							<td><button class="btn btn-default" type="button">Remove</button></td>
+						</tr>
+						<tr>
+							<td scope="row">3</td>
+							<td>CS 2505</td>
+							<td>Intro to Computer Organization</td>
+							<td>Lecture</td>
+							<td>3</td>
+							<td><button class="btn btn-default" type="button">Remove</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
