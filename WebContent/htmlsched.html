@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PScheduler</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+<style>
+.outline {
+	border: 1px solid black;
+	border-spacing: 0px;
+	color: black;
+}
+
+.border {
+	outline: 1px solid black;
+	outline-offset: -1px;
+}
+
+.small {
+	height: 9px;
+}
+
+.fill {
+	background-color: lightgrey;
+}
+
+table .time {
+	text-align: center; /*right*/
+	/*vertical-align: text-top;*/
+}
+
+.text {
+	text-align: center;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+.pad {
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+.credits {
+	border-top: 1px solid black;
+}
+
+.center {
+	text-align: center;
+}
+
+.text {
+	font-size: 99%;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
+
+<style>
+body {
+	font-family: 'Georgia Italic';
+	font-size: 150%;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin-bottom: 70px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 65px;
+	background-color: DarkSlateGray;
+	border-top: 1px solid darkorange;
+}
+</style>
+</head>
+<body>
+	<div
+		style="background-color: DarkSlateGray; border-bottom: 1px solid darkorange;">
+		<div class="container-fluid">
+			<h1>
+				<span style="color: darkorange">P</span><span style="color: white">Scheduler</span>
+				<small style="color: darkorange"><i>VT Schedule Creation</i></small>
+			</h1>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div style="padding-top:10px;"class="row">
+			<div style="padding-right: 0; padding-left: 12.5px" class="col-sm-6">
+				<div class=" panel panel-default">
+					<div style="color: darkorange" class="panel-heading center">
+						<h2>Current Schedule</h2>
+					</div>
+					<table class="text" id="0">
+						<tr>
+							<td colspan="9" class="center">1 of 2</td>
+						</tr>
+						<tr style="font-weight: bold">
+							<td class="text">CRN</td>
+							<td class="text">Course</td>
+							<td class="text">Title</td>
+							<td class="text">Type</td>
+							<td class="text">Credits</td>
+							<td class="text">Instructor</td>
+							<td class="text">Days</td>
+							<td class="text">Time</td>
+							<td class="text">Location</td>
+						</tr>
+						<tr class="left">
+							<td class="text">12774</td>
+							<td class="text">ECE 2524</td>
+							<td class="pad">Intro to Unix for Engineers</td>
+							<td class="text">Lecture</td>
+							<td class="text">2</td>
+							<td class="text">Staff</td>
+							<td class="text">TR</td>
+							<td class="text">11:00AM - 11:50AM</td>
+							<td class="pad">SURGE 104B</td>
+						</tr>
+						<tr class="left">
+							<td class="text">12750</td>
+							<td class="text">ECE 2014</td>
+							<td class="pad">Engr Professionalism ECE</td>
+							<td class="text">Lecture</td>
+							<td class="text">2</td>
+							<td class="text">Staff</td>
+							<td class="text">TR</td>
+							<td class="text">9:30AM - 10:20AM</td>
+							<td class="pad">SURGE 104C</td>
+						</tr>
+						<tr class="left">
+							<td class="text">12757</td>
+							<td class="text">ECE 2204</td>
+							<td class="pad">Electronics</td>
+							<td class="text">Lecture</td>
+							<td class="text">3</td>
+							<td class="text">Staff</td>
+							<td class="text">MWF</td>
+							<td class="text">10:10AM - 11:00AM</td>
+							<td class="pad">MCB 113</td>
+						</tr>
+						<tr class="left">
+							<td class="text">12765</td>
+							<td class="text">ECE 2274</td>
+							<td class="pad">Elctrnc Netwks Lab I</td>
+							<td class="text">Lab</td>
+							<td class="text">1</td>
+							<td class="text">RF Cooper</td>
+							<td class="text">M</td>
+							<td class="text">2:30PM - 5:20PM</td>
+							<td class="pad">WHIT 251</td>
+						</tr>
+						<tr class="left">
+							<td class="text">12782</td>
+							<td class="text">ECE 2704</td>
+							<td class="pad">Signals and Systems</td>
+							<td class="text">Lecture</td>
+							<td class="text">3</td>
+							<td class="text">Staff</td>
+							<td class="text">MWF</td>
+							<td class="text">1:25PM - 2:15PM</td>
+							<td class="pad">WHIT 300</td>
+						</tr>
+						<tr class="left">
+							<td class="text">12602</td>
+							<td class="text">CS 3114</td>
+							<td class="pad">Data Structures and Algorithms</td>
+							<td class="text">Lecture</td>
+							<td class="text">3</td>
+							<td class="text">WD McQuain</td>
+							<td class="text">TR</td>
+							<td class="text">2:00PM - 3:15PM</td>
+							<td class="pad">TORG 3100</td>
+						</tr>
+						<tr class="left">
+							<td class="text">12598</td>
+							<td class="text">CS 2506</td>
+							<td class="pad">Intro to Computer Organization</td>
+							<td class="text">Lecture</td>
+							<td class="text">3</td>
+							<td class="text">Staff</td>
+							<td class="text">MWF</td>
+							<td class="text">12:20PM - 1:10PM</td>
+							<td class="pad">TORG 3100</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="text credits">17</td>
+						</tr>
+					</table>
+				</div>
+				<div class=" panel panel-default">
+					<div style="color: darkorange" class="panel-heading center">
+						<h2>Showing Results For</h2>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-4">
+								<div style="padding-bottom: 10px">
+									<h4>Term</h4>
+									<select class="selectpicker">
+										<option>Spring 2017</option>
+										<option>Fall 2016</option>
+									</select>
+								</div>
+								<div style="padding-bottom: 10px">
+									<h4>Free Days</h4>
+									<select class="selectpicker" multiple>
+										<option>Monday</option>
+										<option>Tuesday</option>
+										<option>Wednesday</option>
+										<option>Thursday</option>
+										<option>Friday</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-8">
+								<h4>Start Time</h4>
+								<div style="padding-bottom: 10px" class="row">
+									<div style="padding-right: 1px;" class="col-sm-4">
+										<select class="selectpicker form-control">
+											<option>10</option>
+										</select>
+									</div>
+									<div style="padding-left: 1px;" class="col-sm-4">
+										<select class="selectpicker form-control">
+											<option>05</option>
+										</select>
+									</div>
+									<div style="padding-left: 5px;" class="col-sm-4">
+										<select class="selectpicker form-control">
+											<option>am</option>
+										</select>
+									</div>
+								</div>
+								<h4>End Time</h4>
+								<div style="padding-bottom: 10px" class="row">
+									<div style="padding-right: 1px;" class="col-sm-4">
+										<select class="selectpicker form-control">
+											<option>10</option>
+										</select>
+									</div>
+									<div style="padding-left: 1px;" class="col-sm-4">
+										<select class="selectpicker form-control">
+											<option>05</option>
+										</select>
+									</div>
+									<div style="padding-left: 5px;" class="col-sm-4">
+										<select class="selectpicker form-control">
+											<option>am</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="background-color: white; padding-bottom: 10px"
+						class="panel-footer">
+						<select data-size="5" class="selectpicker form-control"
+							data-show-subtext="true" data-live-search="true">
+							<option style="font-style: italic" data-icon="glyphicon-search">Search
+								a Course or CRN (AHRM, 2014, CS 3114, 85149, etc.)</option>
+							<option data-tokens="ece 2014"
+								data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> ECE 2014"
+								disabled />
+							<option data-tokens="math 2214"
+								data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> MATH 2214"
+								disabled />
+							<option data-tokens="cs 2505"
+								data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> CS 2505"
+								disabled />
+						</select>
+						<h2 style="color:darkorange">Courses</h2>
+						<table class="table">
+							<thead class="thead-inverse">
+								<tr style="font-weight: bold;">
+									<td>#</td>
+									<td>Course</td>
+									<td>Title</td>
+									<td>Class Type</td>
+									<td>Credits</td>
+									<td>Professor</td>
+									<td></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td scope="row">1</td>
+									<td>ECE 2014</td>
+									<td>ECE Professionalism</td>
+									<td>Lecture</td>
+									<td>2</td>
+									<td>Ball</td>
+									<td><button class="btn btn-default" type="button">Remove</button></td>
+								</tr>
+								<tr>
+									<td scope="row">2</td>
+									<td>MATH 2214</td>
+									<td>Differential Equations</td>
+									<td>Lecture</td>
+									<td>3</td>
+									<td>Jong</td>
+									<td><button class="btn btn-default" type="button">Remove</button></td>
+								</tr>
+								<tr>
+									<td scope="row">3</td>
+									<td>CS 2505</td>
+									<td>Intro to Computer Organization</td>
+									<td>Lecture</td>
+									<td>3</td>
+									<td>Jong</td>
+									<td><button class="btn btn-default" type="button">Remove</button></td>
+								</tr>
+								<tr>
+									<td scope="row">3</td>
+									<td>CS 2505</td>
+									<td>Intro to Computer Organization</td>
+									<td>Lecture</td>
+									<td>3</td>
+									<td>Jong</td>
+									<td><button class="btn btn-default" type="button">Remove</button></td>
+								</tr>
+							</tbody>
+						</table>
+						<button style="color:darkorange;width:100%" class="btn btn-default btn-lg" type="button"><b>Recreate Schedules</b></button>
+					</div>
+				</div>
+			</div>
+			<div style="padding-left: 12.5px;padding-right:12.5px;" class="col-sm-6">
+				<table style="text-align: center;" class="border"
+					id="0">
+					<tr>
+						<td class="center" style="width: 75pt; height: 35pt;">1 of 2</td>
+						<td class="outline center" style="width: 125pt; height: 35pt;">Monday</td>
+						<td class="outline center" style="width: 125pt; height: 35pt;">Tuesday</td>
+						<td class="outline center" style="width: 125pt; height: 35pt;">Wednesday</td>
+						<td class="outline center" style="width: 125pt; height: 35pt;">Thursday</td>
+						<td class="outline center" style="width: 125pt; height: 35pt;">Friday</td>
+					</tr>
+					<tr class="small">
+						<td class="outline time" rowspan="12">9:00AM</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td class="outline fill center" rowspan="10">ECE 2014<br>CRN:
+							12750<br>9:30AM - 10:20AM<br>SURGE 104C<br>Prof:
+							Staff
+						</td>
+						<td></td>
+						<td class="outline fill center" rowspan="10">ECE 2014<br>CRN:
+							12750<br>9:30AM - 10:20AM<br>SURGE 104C<br>Prof:
+							Staff
+						</td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td class="outline time" rowspan="12">10:00AM</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td class="outline fill center" rowspan="10">ECE 2204<br>CRN:
+							12757<br>10:10AM - 11:00AM<br>MCB 113<br>Prof:
+							Staff
+						</td>
+						<td class="outline fill center" rowspan="10">ECE 2204<br>CRN:
+							12757<br>10:10AM - 11:00AM<br>MCB 113<br>Prof:
+							Staff
+						</td>
+						<td class="outline fill center" rowspan="10">ECE 2204<br>CRN:
+							12757<br>10:10AM - 11:00AM<br>MCB 113<br>Prof:
+							Staff
+						</td>
+					</tr>
+					<tr class="small"></tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td class="outline time" rowspan="12">11:00AM</td>
+						<td></td>
+						<td class="outline fill center" rowspan="10">ECE 2524<br>CRN:
+							12774<br>11:00AM - 11:50AM<br>SURGE 104B<br>Prof:
+							Staff
+						</td>
+						<td></td>
+						<td class="outline fill center" rowspan="10">ECE 2524<br>CRN:
+							12774<br>11:00AM - 11:50AM<br>SURGE 104B<br>Prof:
+							Staff
+						</td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td class="outline time" rowspan="12">12:00PM</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td class="outline fill center" rowspan="10">CS 2506<br>CRN:
+							12598<br>12:20PM - 1:10PM<br>TORG 3100<br>Prof:
+							Staff
+						</td>
+						<td></td>
+						<td class="outline fill center" rowspan="10">CS 2506<br>CRN:
+							12598<br>12:20PM - 1:10PM<br>TORG 3100<br>Prof:
+							Staff
+						</td>
+						<td></td>
+						<td class="outline fill center" rowspan="10">CS 2506<br>CRN:
+							12598<br>12:20PM - 1:10PM<br>TORG 3100<br>Prof:
+							Staff
+						</td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td class="outline time" rowspan="12">1:00PM</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td class="outline fill center" rowspan="10">ECE 2704<br>CRN:
+							12782<br>1:25PM - 2:15PM<br>WHIT 300<br>Prof:
+							Staff
+						</td>
+						<td></td>
+						<td class="outline fill center" rowspan="10">ECE 2704<br>CRN:
+							12782<br>1:25PM - 2:15PM<br>WHIT 300<br>Prof:
+							Staff
+						</td>
+						<td></td>
+						<td class="outline fill center" rowspan="10">ECE 2704<br>CRN:
+							12782<br>1:25PM - 2:15PM<br>WHIT 300<br>Prof:
+							Staff
+						</td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td class="outline time" rowspan="12">2:00PM</td>
+						<td class="outline fill center" rowspan="15">CS 3114<br>CRN:
+							12602<br>2:00PM - 3:15PM<br>TORG 3100<br>Prof: WD
+							McQuain
+						</td>
+						<td class="outline fill center" rowspan="15">CS 3114<br>CRN:
+							12602<br>2:00PM - 3:15PM<br>TORG 3100<br>Prof: WD
+							McQuain
+						</td>
+					</tr>
+					<tr class="small"></tr>
+					<tr class="small"></tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td class="outline fill center" rowspan="34">ECE 2274<br>CRN:
+							12765<br>2:30PM - 5:20PM<br>WHIT 251<br>Prof: RF
+							Cooper
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td class="outline time" rowspan="12">3:00PM</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td class="outline time" rowspan="12">4:00PM</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td class="outline time" rowspan="12">5:00PM</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="small">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div style="padding: 2vh 15vw 2vh 15vw;" class="container-fluid">
+			<div style="color: darkorange;" class="row">
+				<div class="col-sm-3 text-right">ngophill@vt.edu</div>
+				<div class="col-sm-2 text-center">
+					<a style="color: white;"
+						href="https://github.com/PhillipNgo/Scheduler-Website">View
+						the Project on GitHub</a>
+				</div>
+				<div class="col-sm-2 text-center">
+					<a style="color: darkorange;"
+						href="https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_DispRequest">Virginia
+						Tech Class Time Table</a>
+				</div>
+				<div class="col-sm-2 text-center">
+					<a style="color: white;"
+						href="https://goo.gl/forms/CIeZtR1XndZCFdUH2">Submit a Bug or
+						Suggestion</a>
+				</div>
+				<div class="col-sm-3 text-left">
+					<a style="color: darkorange;" href="changelog.html">Recent
+						Changes</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
