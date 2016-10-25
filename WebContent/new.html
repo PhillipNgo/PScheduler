@@ -13,14 +13,21 @@
 	body {
 		font-family: 'Georgia', serif;
 	}
+	#footer {
+	    width: 100%;
+	    height: 60px;
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	}
 </style>
 </head>
 <body>
 	<div style="background-color: DarkSlateGray;" class="jumbotron">
 		<div class="container">
 			<h1>
-				<span style="color: orange">P</span><span style="color: white">Scheduler</span>
-				<small style="color: white"><i>VT Schedule Creation</i></small>
+				<span style="color: darkorange">P</span><span style="color: white">Scheduler</span>
+				<small style="color: darkorange"><i>VT Schedule Creation</i></small>
 			</h1>
 		</div>
 	</div>
@@ -28,7 +35,7 @@
 		<div style="padding-left: 50px" class="row">
 			<div class="col-sm-3 panel panel-default">
 				<div style="background-color: white" class="panel-heading">
-					<h2>Restrictions</h2>
+					<h2 style="color:darkorange">Restrictions</h2>
 				</div>
 				<div class="panel-body">
 					<div style="padding-bottom: 10px">
@@ -87,7 +94,7 @@
 					
 				</div>
 				<div style="background-color:white;padding-bottom:10px" class="panel-footer">
-						<button style="width:100%" class="btn btn-default btn-lg" type="button"><b>Create Schedules</b></button>
+						<button style="color:darkorange;width:100%" class="btn btn-default btn-lg" type="button"><b>Create Schedules</b></button>
 				</div>
 			</div>
 			<div style="text-align: center;" class="col-sm-9">
@@ -97,7 +104,7 @@
 					<option data-tokens="math 2214" data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> MATH 2214" disabled/>
 					<option data-tokens="cs 2505" data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> CS 2505" disabled/>
 				</select>
-				<h2>Current Schedule</h2>
+				<h2 style="color:darkorange">Current Schedule</h2>
 				<table class="table">
 					<thead class="thead-inverse">
 						<tr style="font-weight: bold;">
@@ -136,12 +143,13 @@
 						</tr>
 					</tbody>
 				</table>
+				*Class Data Last Updated: 10/21/2016
 			</div>
 		</div>
 	</div>
-	<footer style="background-color:DarkSlateGray" class="footer footer-bg">
+	<footer style="background-color:DarkSlateGray" id="footer">
 		<div style="padding: 2vh 15vw 2vh 15vw;" class="container-fluid">
-			<div style="color:white;" class="row">
+			<div style="color:darkorange;" class="row">
 				<div class="col-sm-3 text-right">
 					ngophill@vt.edu
 				</div>
@@ -149,13 +157,13 @@
 					<a style="color:white;" href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a>
 				</div>
 				<div class="col-sm-2 text-center">
-					<a style="color:white;" href="https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_DispRequest">Virginia Tech Class Time Table</a>
+					<a style="color:darkorange;" href="https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_DispRequest">Virginia Tech Class Time Table</a>
 				</div>
 				<div class="col-sm-2 text-center">
 					<a style="color:white;" href="https://goo.gl/forms/CIeZtR1XndZCFdUH2">Submit a Bug or Suggestion</a>
 				</div>
 				<div class="col-sm-3 text-left">
-					<a style="color:white;" href="changelog.html">Recent Changes</a>
+					<a style="color:darkorange;" href="changelog.html">Recent Changes</a>
 				</div>
 			</div>
 		</div>
