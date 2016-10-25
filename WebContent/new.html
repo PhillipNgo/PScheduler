@@ -9,22 +9,34 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+
 <style>
 	body {
-		font-family: 'Georgia', serif;
+		font-family: 'Georgia Italic';
+		font-size: 150%;
 	}
-	#footer {
-	    width: 100%;
-	    height: 50px;
-	    line-height:.5;
-	    position: absolute;
-	    bottom: 0;
-	    left: 0;
+	
+	html {
+		position: relative;
+		min-height: 100%;
+	}
+	
+	body {
+		margin-bottom: 70px;
+	}
+	
+	.footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 65px;
+		background-color:DarkSlateGray;
+		border-top: 1px solid darkorange;
 	}
 </style>
 </head>
 <body>
-	<div style="background-color: DarkSlateGray;" class="jumbotron">
+	<div style="background-color: DarkSlateGray;border-bottom: 1px solid darkorange;" class="jumbotron">
 		<div class="container">
 			<h1>
 				<span style="color: darkorange">P</span><span style="color: white">Scheduler</span>
@@ -33,8 +45,8 @@
 		</div>
 	</div>
 	<div class="container-fluid">
-		<div style="padding-left: 50px" class="row">
-			<div class="col-sm-3 panel panel-default">
+		<div style="padding-left: 25px;padding-right: 25px" class="row">
+			<form class="col-sm-3 panel panel-default">
 				<div style="background-color: white" class="panel-heading">
 					<h2 style="color:darkorange">Restrictions</h2>
 				</div>
@@ -92,15 +104,14 @@
 						  <option>Friday</option>
 						</select>
 					</div>
-					
 				</div>
 				<div style="background-color:white;padding-bottom:10px" class="panel-footer">
 						<button style="color:darkorange;width:100%" class="btn btn-default btn-lg" type="button"><b>Create Schedules</b></button>
 				</div>
-			</div>
+			</form>
 			<div style="text-align: center;" class="col-sm-9">
 				<select data-size="5" class="selectpicker form-control" data-show-subtext="true" data-live-search="true">
-					<option data-icon="glyphicon-search" data-tokens="">Search a Course or CRN (CS 3114, 85149, etc.)</option>
+					<option style="font-style:italic" data-icon="glyphicon-search">Search a Course or CRN (AHRM, 2014, CS 3114, 85149, etc.)</option>
 					<option data-tokens="ece 2014" data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> ECE 2014" disabled/>
 					<option data-tokens="math 2214" data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> MATH 2214" disabled/>
 					<option data-tokens="cs 2505" data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> CS 2505" disabled/>
@@ -114,6 +125,7 @@
 							<td>Title</td>
 							<td>Class Type</td>
 							<td>Credits</td>
+							<td>Professor</td>
 							<td></td>
 						</tr>
 					</thead>
@@ -124,6 +136,7 @@
 							<td>ECE Professionalism</td>
 							<td>Lecture</td>
 							<td>2</td>
+							<td>Ball</td>
 							<td><button class="btn btn-default" type="button">Remove</button></td>
 						</tr>
 						<tr>
@@ -132,6 +145,7 @@
 							<td>Differential Equations</td>
 							<td>Lecture</td>
 							<td>3</td>
+							<td>Jong</td>
 							<td><button class="btn btn-default" type="button">Remove</button></td>
 						</tr>
 						<tr>
@@ -140,15 +154,62 @@
 							<td>Intro to Computer Organization</td>
 							<td>Lecture</td>
 							<td>3</td>
+							<td>Jong</td>
 							<td><button class="btn btn-default" type="button">Remove</button></td>
 						</tr>
+						<tr>
+							<td scope="row">3</td>
+							<td>CS 2505</td>
+							<td>Intro to Computer Organization</td>
+							<td>Lecture</td>
+							<td>3</td>
+							<td>Jong</td>
+							<td><button class="btn btn-default" type="button">Remove</button></td>
+						</tr>
+						<tr>
+							<td scope="row">3</td>
+							<td>CS 2505</td>
+							<td>Intro to Computer Organization</td>
+							<td>Lecture</td>
+							<td>3</td>
+							<td>Jong</td>
+							<td><button class="btn btn-default" type="button">Remove</button></td>
+						</tr>
+						<tr>
+							<td scope="row">3</td>
+							<td>CS 2505</td>
+							<td>Intro to Computer Organization</td>
+							<td>Lecture</td>
+							<td>3</td>
+							<td>Jong</td>
+							<td><button class="btn btn-default" type="button">Remove</button></td>
+						</tr>
+						<tr>
+							<td scope="row">3</td>
+							<td>CS 2505</td>
+							<td>Intro to Computer Organization</td>
+							<td>Lecture</td>
+							<td>3</td>
+							<td>Jong</td>
+							<td><button class="btn btn-default" type="button">Remove</button></td>
+						</tr>
+						<tr>
+							<td scope="row">3</td>
+							<td>CS 2505</td>
+							<td>Intro to Computer Organization</td>
+							<td>Lecture</td>
+							<td>3</td>
+							<td>Jong</td>
+							<td><button class="btn btn-default" type="button">Remove</button></td>
+						</tr>		
 					</tbody>
 				</table>
+				*Added CRNs Ignore Time and Day Restrictions<br>
 				*Class Data Last Updated: 10/21/2016
 			</div>
 		</div>
 	</div>
-	<footer style="background-color:DarkSlateGray" id="footer">
+	<div class="footer">
 		<div style="padding: 2vh 15vw 2vh 15vw;" class="container-fluid">
 			<div style="color:darkorange;" class="row">
 				<div class="col-sm-3 text-right">
@@ -168,6 +229,10 @@
 				</div>
 			</div>
 		</div>
-  	</footer>
+  	</div>
 </body>
+<script>
+
+  
+ </script>
 </html>
