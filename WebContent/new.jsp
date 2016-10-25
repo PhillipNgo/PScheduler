@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,33 +11,12 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+<link rel="stylesheet" href="stylesheets/styles.css">
+<%@ page import="java.util.Scanner"%>
+<%@ page import="java.io.File"%>
 
-<style>
-	body {
-		font-family: 'Georgia Italic';
-		font-size: 150%;
-	}
-	
-	html {
-		position: relative;
-		min-height: 100%;
-	}
-	
-	body {
-		margin-bottom: 70px;
-	}
-	
-	.footer {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		height: 65px;
-		background-color:DarkSlateGray;
-		border-top: 1px solid darkorange;
-	}
-</style>
 </head>
-<body>
+<body style="background-color: #eceeef">
 	<div style="background-color: DarkSlateGray;border-bottom: 1px solid darkorange;" class="jumbotron">
 		<div class="container">
 			<h1>
@@ -46,62 +27,119 @@
 	</div>
 	<div class="container-fluid">
 		<div style="padding-left: 25px;padding-right: 25px" class="row">
-			<form class="col-sm-3 panel panel-default">
+			<form class="col-sm-3 panel panel-default outline">
 				<div style="background-color: white" class="panel-heading">
 					<h2 style="color:darkorange">Restrictions</h2>
 				</div>
 				<div class="panel-body">
 					<div style="padding-bottom: 10px">
 						<h4>Term</h4>
-						<select class="selectpicker">
-							<option>Spring 2017</option>
-							<option>Fall 2016</option>
+						<select name="term" id="term" class="selectpicker">
+							<%
+        	 	 				Scanner scan;
+        	     				try {
+        	         				scan = new Scanner(new File("webapps/ROOT/SelectOptions/TermOptions.txt"));
+        	     				}
+        	     				catch (Exception e) {
+        	         				scan = new Scanner(new File("WebContent/SelectOptions/TermOptions.txt"));
+        	     				}
+        	     				while (scan.hasNextLine()) {
+        	         				out.print(scan.nextLine());
+        	     				}
+        	     				scan.close();
+        	 				%>
 						</select>
 					</div>
 					<h4>Start Time</h4>
 					<div style="padding-bottom: 10px" class="row">
 						<div style="padding-right: 1px;" class="col-sm-4">
-							<select class="selectpicker form-control">
-								<option>10</option>
+							<select name="h1" class="selectpicker form-control">
+								<option value="1">01</option>
+					      		<option value="2">02</option>
+					      		<option value="3">03</option>
+					      		<option value="4">04</option>
+					      		<option value="5">05</option>
+					      		<option value="6">06</option>
+					      		<option value="7">07</option>
+					      		<option value="8" selected="selected">08</option>
+					      		<option value="9">09</option>
+					      		<option value="10">10</option>
+					      		<option value="11">11</option>
+					      		<option value="12">12</option>
 							</select>
 						</div>
 						<div style="padding-left: 1px;" class="col-sm-4">
-							<select class="selectpicker form-control">
-								<option>05</option>
+							<select name="m1" class="selectpicker form-control">
+								<option value="1">00</option>
+					      		<option value="2">05</option>
+					      		<option value="3">10</option>
+					      		<option value="4">15</option>
+					      		<option value="5">20</option>
+					      		<option value="6">25</option>
+					      		<option value="7">30</option>
+					      		<option value="8">35</option>
+					      		<option value="9">40</option>
+					      		<option value="10">45</option>
+					      		<option value="11">50</option>
+					      		<option value="12">55</option>
 							</select>
 						</div>
 						<div style="padding-left: 5px;" class="col-sm-4">
-							<select class="selectpicker form-control">
-								<option>am</option>
+							<select name="start" class="selectpicker form-control">
+								<option value="am">AM</option>
+      							<option value="pm">PM</option>
 							</select>
 						</div>
 					</div>
 					<h4>End Time</h4>
 					<div style="padding-bottom:10px" class="row">
 						<div style="padding-right:1px;" class="col-sm-4">
-							<select class="selectpicker form-control">
-								<option>10</option>
+							<select name="h2" class="selectpicker form-control">
+								<option value="1">01</option>
+					      		<option value="2">02</option>
+					      		<option value="3">03</option>
+					      		<option value="4">04</option>
+					      		<option value="5">05</option>
+					      		<option value="6">06</option>
+					      		<option value="7">07</option>
+					      		<option value="8" selected="selected">08</option>
+					      		<option value="9">09</option>
+					      		<option value="10">10</option>
+					      		<option value="11">11</option>
+					      		<option value="12">12</option>
 							</select>
 						</div>
 						<div style="padding-left:1px;" class="col-sm-4">
-							<select class="selectpicker form-control">
-								<option>05</option>
+							<select name="m2" class="selectpicker form-control">
+								<option value="1">00</option>
+					      		<option value="2">05</option>
+					      		<option value="3">10</option>
+					      		<option value="4">15</option>
+					      		<option value="5">20</option>
+					      		<option value="6">25</option>
+					      		<option value="7">30</option>
+					      		<option value="8">35</option>
+					      		<option value="9">40</option>
+					      		<option value="10">45</option>
+					      		<option value="11">50</option>
+					      		<option value="12">55</option>
 							</select>
 						</div>
 						<div style="padding-left:5px;" class="col-sm-4">
-							<select class="selectpicker form-control">
-								<option>am</option>
+							<select name="end" class="selectpicker form-control">
+								<option value="am">AM</option>
+      							<option value="pm" selected="selected">PM</option>
 							</select>
 						</div>
 					</div>
 					<div style="padding-bottom:10px">
 						<h4>Free Days</h4>
-						<select class="selectpicker" multiple>
-						  <option>Monday</option>
-						  <option>Tuesday</option>
-						  <option>Wednesday</option>
-						  <option>Thursday</option>
-						  <option>Friday</option>
+						<select name="free" class="selectpicker" multiple>
+							<option value="M">Monday</option>
+      						<option value="T">Tuesday</option>
+				      		<option value="W">Wednesday</option>
+				      		<option value="E">Thursday</option>
+				      		<option value="F">Friday</option>
 						</select>
 					</div>
 				</div>
@@ -176,32 +214,7 @@
 							<td><button class="btn btn-default" type="button">Remove</button></td>
 						</tr>
 						<tr>
-							<td scope="row">3</td>
-							<td>CS 2505</td>
-							<td>Intro to Computer Organization</td>
-							<td>Lecture</td>
-							<td>3</td>
-							<td>Jong</td>
-							<td><button class="btn btn-default" type="button">Remove</button></td>
-						</tr>
-						<tr>
-							<td scope="row">3</td>
-							<td>CS 2505</td>
-							<td>Intro to Computer Organization</td>
-							<td>Lecture</td>
-							<td>3</td>
-							<td>Jong</td>
-							<td><button class="btn btn-default" type="button">Remove</button></td>
-						</tr>
-						<tr>
-							<td scope="row">3</td>
-							<td>CS 2505</td>
-							<td>Intro to Computer Organization</td>
-							<td>Lecture</td>
-							<td>3</td>
-							<td>Jong</td>
-							<td><button class="btn btn-default" type="button">Remove</button></td>
-						</tr>		
+						
 					</tbody>
 				</table>
 				*Added CRNs Ignore Time and Day Restrictions<br>
@@ -211,21 +224,15 @@
 	</div>
 	<div class="footer">
 		<div style="padding: 2vh 15vw 2vh 15vw;" class="container-fluid">
-			<div style="color:darkorange;" class="row">
-				<div class="col-sm-3 text-right">
+			<div style="color:white;" class="row">
+				<div class="col-sm-4 text-right">
 					ngophill@vt.edu
 				</div>
-				<div class="col-sm-2 text-center">
-					<a style="color:white;" href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a>
-				</div>
-				<div class="col-sm-2 text-center">
+				<div class="col-sm-4 text-center">
 					<a style="color:darkorange;" href="https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_DispRequest">Virginia Tech Class Time Table</a>
 				</div>
-				<div class="col-sm-2 text-center">
-					<a style="color:white;" href="https://goo.gl/forms/CIeZtR1XndZCFdUH2">Submit a Bug or Suggestion</a>
-				</div>
-				<div class="col-sm-3 text-left">
-					<a style="color:darkorange;" href="changelog.html">Recent Changes</a>
+				<div class="col-sm-4 text-left">
+					<a style="color:white;" href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a>
 				</div>
 			</div>
 		</div>

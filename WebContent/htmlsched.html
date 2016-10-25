@@ -15,6 +15,30 @@
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
 <style>
+	body {
+		font-family: 'Georgia Italic';
+		font-size: 150%;
+	}
+	
+	html {
+		position: relative;
+		min-height: 100%;
+	}
+	
+	body {
+		margin-bottom: 70px;
+	}
+	
+	.footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 65px;
+		background-color:DarkSlateGray;
+		border-top: 1px solid darkorange;
+	}
+</style>
+<style>
 .outline {
 	border: 1px solid lightslategray;
 	border-spacing: 0px;
@@ -46,6 +70,7 @@ table .time {
 	text-align: center;
 	padding-right: 12px;
 	padding-left: 12px;
+	font-size: 99%;
 }
 
 .pad {
@@ -61,38 +86,9 @@ table .time {
 	text-align: center;
 }
 
-.text {
-	font-size: 99%;
-}
-
 table {
 	margin-left: auto;
 	margin-right: auto;
-}
-</style>
-
-<style>
-body {
-	font-family: 'Georgia Italic';
-	font-size: 150%;
-}
-
-html {
-	position: relative;
-	min-height: 100%;
-}
-
-body {
-	margin-bottom: 70px;
-}
-
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 65px;
-	background-color: DarkSlateGray;
-	border-top: 1px solid darkorange;
 }
 </style>
 </head>
@@ -189,76 +185,60 @@ body {
 						<table style="text-align: center" class="table">
 							<thead class="thead-inverse">
 								<tr style="font-weight: bold;">
-									<td>#</td>
 									<td>Course</td>
 									<td>Title</td>
 									<td>Type</td>
-									<td>Credits</td>
 									<td>Professor</td>
 									<td></td>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td scope="row">1</td>
 									<td>ECE 2014</td>
 									<td>ECE Professionalism</td>
 									<td>Lecture</td>
-									<td>2</td>
 									<td>Ball</td>
 									<td><button class="btn btn-default" type="button">Remove</button></td>
 								</tr>
 								<tr>
-									<td scope="row">2</td>
 									<td>MATH 2214</td>
 									<td>Differential Equations</td>
 									<td>Lecture</td>
-									<td>3</td>
 									<td>Jong</td>
 									<td><button class="btn btn-default" type="button">Remove</button></td>
 								</tr>
 								<tr>
-									<td scope="row">3</td>
 									<td>CS 2505</td>
 									<td>Intro to Computer Organization</td>
 									<td>Lecture</td>
-									<td>3</td>
 									<td>Jong</td>
 									<td><button class="btn btn-default" type="button">Remove</button></td>
 								</tr>
 								<tr>
-									<td scope="row">3</td>
 									<td>CS 2505</td>
 									<td>Intro to Computer Organization</td>
 									<td>Lecture</td>
-									<td>3</td>
 									<td>Jong</td>
 									<td><button class="btn btn-default" type="button">Remove</button></td>
 								</tr>
 								<tr>
-									<td scope="row">3</td>
 									<td>CS 2505</td>
 									<td>Intro to Computer Organization</td>
 									<td>Lecture</td>
-									<td>3</td>
 									<td>Jong</td>
 									<td><button class="btn btn-default" type="button">Remove</button></td>
 								</tr>
 								<tr>
-									<td scope="row">3</td>
 									<td>CS 2505</td>
 									<td>Intro to Computer Organization</td>
 									<td>Lecture</td>
-									<td>3</td>
 									<td>Jong</td>
 									<td><button class="btn btn-default" type="button">Remove</button></td>
 								</tr>
 								<tr>
-									<td scope="row">3</td>
 									<td>CS 2505</td>
 									<td>Intro to Computer Organization</td>
 									<td>Lecture</td>
-									<td>3</td>
 									<td>Jong</td>
 									<td><button class="btn btn-default" type="button">Remove</button></td>
 								</tr>
@@ -295,7 +275,7 @@ body {
 										 <div style="padding:1px 0 0 0;" class="col-sm-4">
 										 	<input class="form-control" type="text" value="1"> 
 										 </div>
-										 <div style="padding:0 5px 0 0;" class="col-sm-4">
+										 <div style="padding:0 3px 0 2px;" class="col-sm-4">
 										 	<span class="input-group-btn">
 												<button type="button" class="btn btn-default glyphicon glyphicon-chevron-right form-control"></button>
 											</span>
@@ -304,7 +284,7 @@ body {
 								</div>
 							</div>
 							<div style="vertical-align:middle;text-align:left" class="col-sm-10">
-								<h4>of 2</h4>
+								<h4>1 of 2</h4>
 							</div>
 						</div>
 						<table class="text table" id="0">
@@ -322,89 +302,89 @@ body {
 							<tr class="left">
 								<td class="text">12774</td>
 								<td class="text">ECE 2524</td>
-								<td class="pad">Intro to Unix for Engineers</td>
+								<td class="text pad">Intro to Unix for Engineers</td>
 								<td class="text">Lecture</td>
 								<td class="text">2</td>
 								<td class="text">Staff</td>
 								<td class="text">TR</td>
 								<td class="text">11:00AM - 11:50AM</td>
-								<td class="pad">SURGE 104B</td>
+								<td class="text pad">SURGE 104B</td>
 							</tr>
 							<tr class="left">
 								<td class="text">12750</td>
 								<td class="text">ECE 2014</td>
-								<td class="pad">Engr Professionalism ECE</td>
+								<td class="text pad">Engr Professionalism ECE</td>
 								<td class="text">Lecture</td>
 								<td class="text">2</td>
 								<td class="text">Staff</td>
 								<td class="text">TR</td>
 								<td class="text">9:30AM - 10:20AM</td>
-								<td class="pad">SURGE 104C</td>
+								<td class="text pad">SURGE 104C</td>
 							</tr>
 							<tr class="left">
 								<td class="text">12757</td>
 								<td class="text">ECE 2204</td>
-								<td class="pad">Electronics</td>
+								<td class="text pad">Electronics</td>
 								<td class="text">Lecture</td>
 								<td class="text">3</td>
 								<td class="text">Staff</td>
 								<td class="text">MWF</td>
 								<td class="text">10:10AM - 11:00AM</td>
-								<td class="pad">MCB 113</td>
+								<td class="text pad">MCB 113</td>
 							</tr>
 							<tr class="left">
 								<td class="text">12765</td>
 								<td class="text">ECE 2274</td>
-								<td class="pad">Elctrnc Netwks Lab I</td>
+								<td class="text pad">Elctrnc Netwks Lab I</td>
 								<td class="text">Lab</td>
 								<td class="text">1</td>
 								<td class="text">RF Cooper</td>
 								<td class="text">M</td>
 								<td class="text">2:30PM - 5:20PM</td>
-								<td class="pad">WHIT 251</td>
+								<td class="text pad">WHIT 251</td>
 							</tr>
 							<tr class="left">
 								<td class="text">12782</td>
 								<td class="text">ECE 2704</td>
-								<td class="pad">Signals and Systems</td>
+								<td class="text pad">Signals and Systems</td>
 								<td class="text">Lecture</td>
 								<td class="text">3</td>
 								<td class="text">Staff</td>
 								<td class="text">MWF</td>
 								<td class="text">1:25PM - 2:15PM</td>
-								<td class="pad">WHIT 300</td>
+								<td class="text pad">WHIT 300</td>
 							</tr>
 							<tr class="left">
 								<td class="text">12602</td>
 								<td class="text">CS 3114</td>
-								<td class="pad">Data Structures and Algorithms</td>
+								<td class="text pad">Data Structures and Algorithms</td>
 								<td class="text">Lecture</td>
 								<td class="text">3</td>
 								<td class="text">WD McQuain</td>
 								<td class="text">TR</td>
 								<td class="text">2:00PM - 3:15PM</td>
-								<td class="pad">TORG 3100</td>
+								<td class="text pad">TORG 3100</td>
 							</tr>
 							<tr class="left">
 								<td class="text">12598</td>
 								<td class="text">CS 2506</td>
-								<td class="pad">Intro to Computer Organization</td>
+								<td class="text pad">Intro to Computer Organization</td>
 								<td class="text">Lecture</td>
 								<td class="text">3</td>
 								<td class="text">Staff</td>
 								<td class="text">MWF</td>
 								<td class="text">12:20PM - 1:10PM</td>
-								<td class="pad">TORG 3100</td>
+								<td class="text pad">TORG 3100</td>
 							</tr>
 						</table>
 						<table class="outline" style="text-align: center;" id="0">
 							<tr>
 								<td class="center" style="width: 75pt; height: 35pt;"></td>
-								<td class="outline center" style="width: 175pt; height: 35pt;">Monday</td>
-								<td class="outline center" style="width: 175pt; height: 35pt;">Tuesday</td>
-								<td class="outline center" style="width: 175pt; height: 35pt;">Wednesday</td>
-								<td class="outline center" style="width: 175pt; height: 35pt;">Thursday</td>
-								<td class="outline center" style="width: 175pt; height: 35pt;">Friday</td>
+								<td class="outline center" style="width: 125pt; height: 35pt;">Monday</td>
+								<td class="outline center" style="width: 125pt; height: 35pt;">Tuesday</td>
+								<td class="outline center" style="width: 125pt; height: 35pt;">Wednesday</td>
+								<td class="outline center" style="width: 125pt; height: 35pt;">Thursday</td>
+								<td class="outline center" style="width: 125pt; height: 35pt;">Friday</td>
 							</tr>
 							<tr class="small">
 								<td class="time" rowspan="12">9:00AM</td>
@@ -1046,29 +1026,18 @@ body {
 	</div>
 	<div class="footer">
 		<div style="padding: 2vh 15vw 2vh 15vw;" class="container-fluid">
-			<div style="color: darkorange;" class="row">
-				<div class="col-sm-3 text-right">ngophill@vt.edu</div>
-				<div class="col-sm-2 text-center">
-					<a style="color: white;"
-						href="https://github.com/PhillipNgo/Scheduler-Website">View
-						the Project on GitHub</a>
+			<div style="color:white;" class="row">
+				<div class="col-sm-4 text-right">
+					ngophill@vt.edu
 				</div>
-				<div class="col-sm-2 text-center">
-					<a style="color: darkorange;"
-						href="https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_DispRequest">Virginia
-						Tech Class Time Table</a>
+				<div class="col-sm-4 text-center">
+					<a style="color:darkorange;" href="https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_DispRequest">Virginia Tech Class Time Table</a>
 				</div>
-				<div class="col-sm-2 text-center">
-					<a style="color: white;"
-						href="https://goo.gl/forms/CIeZtR1XndZCFdUH2">Submit a Bug or
-						Suggestion</a>
-				</div>
-				<div class="col-sm-3 text-left">
-					<a style="color: darkorange;" href="changelog.html">Recent
-						Changes</a>
+				<div class="col-sm-4 text-left">
+					<a style="color:white;" href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a>
 				</div>
 			</div>
 		</div>
-	</div>
+  	</div>
 </body>
 </html>
