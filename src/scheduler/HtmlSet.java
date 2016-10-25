@@ -26,8 +26,8 @@ public class HtmlSet {
         terms = new LinkedList<>();
         
         termOptions();
-        numOptions();
-        subjOptions();
+        //numOptions();
+        //subjOptions();
     }
     
     /**
@@ -51,6 +51,58 @@ public class HtmlSet {
                 }
             }
         }
+    }
+    
+    /**
+     * Creates the number options
+     * @throws Exception
+     */
+    private static void searchOptions() throws Exception {
+        try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+                new FileOutputStream("WebContent/SelectOptions/SearchOptions.txt"), "utf-8"))) {
+            for (String term : terms) {
+                html.setTerm(term);
+                String[] subjects = html.getSubjectValues();
+                HashMap<String, HashMap<String, LinkedList<VTCourse>>> list;
+                try {
+                    list = VTParser.parseTermFile(term);
+                }
+                catch(Exception e) {
+                    list = html.parseTerm();
+                }
+                for (String subject : subjects) {
+                    if (subject.equals("%")) {
+                        continue;
+                    }
+                    HashMap<String, LinkedList<VTCourse>> classes = list.get(subject);
+                    String[] nums = filterClasses(classes);
+                    Arrays.sort(nums);
+                    if (term.equals(terms.get(terms.size()-1)) && subject.equals(subjects[1])) {
+                        writer.write("<select name=\"" + term + subject + "\" id=\"number\">\r\n");
+                    }
+                    else {
+                        writer.write("<select name=\"" + term + subject + "\" style=\"display: none;\">\r\n");
+                    }
+                    writer.write("<option value=\"none\" disabled selected value>----</option>\r\n");
+                    for (int k = 0; k < nums.length; k++) {
+                        String[] split = nums[k].split("--");
+                        writer.write("<option name=\"");
+                        writer.write(split[1]);
+                        writer.write("--");
+                        writer.write(split[2]);
+                        writer.write("--");
+                        writer.write(split[3]);
+                        writer.write("\" value=\"");
+                        writer.write(split[0]);
+                        writer.write("\">");
+                        writer.write(split[0]);
+                        writer.write("</option>");
+                        writer.write("\r\n");
+                    }
+                    writer.write("</select>\r\n");
+                }
+            }
+        } 
     }
     
     /**
