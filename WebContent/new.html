@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Bootstrap Scheduler</title>
+<title>PScheduler</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -9,9 +9,13 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+<style>
+	body {
+		font-family: 'Georgia', serif;
+	}
+</style>
 </head>
 <body>
-
 	<div style="background-color: DarkSlateGray;" class="jumbotron">
 		<div class="container">
 			<h1>
@@ -23,8 +27,8 @@
 	<div class="container-fluid">
 		<div style="padding-left: 50px" class="row">
 			<div class="col-sm-3 panel panel-default">
-				<div class="panel-heading">
-					<h2>Parameters</h2>
+				<div style="background-color: white" class="panel-heading">
+					<h2>Restrictions</h2>
 				</div>
 				<div class="panel-body">
 					<div style="padding-bottom: 10px">
@@ -70,7 +74,7 @@
 							</select>
 						</div>
 					</div>
-					<div style="padding-bottom:20px">
+					<div style="padding-bottom:10px">
 						<h4>Free Days</h4>
 						<select class="selectpicker" multiple>
 						  <option>Monday</option>
@@ -80,9 +84,10 @@
 						  <option>Friday</option>
 						</select>
 					</div>
-					<div style="padding-bottom:5px">
-						<button class="btn btn-default btn-lg form-control" type="button">Create Schedules</button>
-					</div>
+					
+				</div>
+				<div style="background-color:white;padding-bottom:10px" class="panel-footer">
+						<button style="width:100%" class="btn btn-default btn-lg" type="button"><b>Create Schedules</b></button>
 				</div>
 			</div>
 			<div style="text-align: center;" class="col-sm-9">
@@ -134,5 +139,26 @@
 			</div>
 		</div>
 	</div>
+	<footer style="background-color:DarkSlateGray" class="footer footer-bg">
+		<div style="padding: 2vh 15vw 2vh 15vw;" class="container-fluid">
+			<div style="color:white;" class="row">
+				<div class="col-sm-3 text-right">
+					ngophill@vt.edu
+				</div>
+				<div class="col-sm-2 text-center">
+					<a style="color:white;" href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a>
+				</div>
+				<div class="col-sm-2 text-center">
+					<a style="color:white;" href="https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_DispRequest">Virginia Tech Class Time Table</a>
+				</div>
+				<div class="col-sm-2 text-center">
+					<a style="color:white;" href="https://goo.gl/forms/CIeZtR1XndZCFdUH2">Submit a Bug or Suggestion</a>
+				</div>
+				<div class="col-sm-3 text-left">
+					<a style="color:white;" href="changelog.html">Recent Changes</a>
+				</div>
+			</div>
+		</div>
+  	</footer>
 </body>
 </html>
