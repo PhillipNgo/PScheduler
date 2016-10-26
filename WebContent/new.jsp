@@ -50,7 +50,6 @@
         	 				%>
 						</select>
 					</div>
-					<div id="moldifying"></div>
 					<h4>Start Time</h4>
 					<div style="padding-bottom: 10px" class="row">
 						<div style="padding-right: 1px;" class="col-sm-4">
@@ -78,7 +77,6 @@
 					      		<option value="5">20</option>
 					      		<option value="6">25</option>
 					      		<option value="7">30</option>
-					      		<option value="modify code elsewhere"></option>
 					      		<option value="8">35</option>
 					      		<option value="9">40</option>
 					      		<option value="10">45</option>
