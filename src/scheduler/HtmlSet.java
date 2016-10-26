@@ -26,6 +26,7 @@ public class HtmlSet {
         terms = new LinkedList<>();
         
         termOptions();
+        searchOptions();
         //numOptions();
         //subjOptions();
     }
@@ -60,86 +61,15 @@ public class HtmlSet {
     private static void searchOptions() throws Exception {
         try (Writer writer = new BufferedWriter(new OutputStreamWriter(
                 new FileOutputStream("WebContent/SelectOptions/SearchOptions.txt"), "utf-8"))) {
+            
             for (String term : terms) {
-                html.setTerm(term);
-                String[] subjects = html.getSubjectValues();
-                HashMap<String, HashMap<String, LinkedList<VTCourse>>> list;
-                try {
-                    list = VTParser.parseTermFile(term);
-                }
-                catch(Exception e) {
-                    list = html.parseTerm();
-                }
-                for (String subject : subjects) {
-                    if (subject.equals("%")) {
-                        continue;
-                    }
-                    HashMap<String, LinkedList<VTCourse>> classes = list.get(subject);
-                    String[] nums = filterClasses(classes);
-                    Arrays.sort(nums);
-                    if (term.equals(terms.get(terms.size()-1)) && subject.equals(subjects[1])) {
-                        writer.write("<select name=\"" + term + subject + "\" id=\"number\">\r\n");
-                    }
-                    else {
-                        writer.write("<select name=\"" + term + subject + "\" style=\"display: none;\">\r\n");
-                    }
-                    writer.write("<option value=\"none\" disabled selected value>----</option>\r\n");
-                    for (int k = 0; k < nums.length; k++) {
-                        String[] split = nums[k].split("--");
-                        writer.write("<option name=\"");
-                        writer.write(split[1]);
-                        writer.write("--");
-                        writer.write(split[2]);
-                        writer.write("--");
-                        writer.write(split[3]);
-                        writer.write("\" value=\"");
-                        writer.write(split[0]);
-                        writer.write("\">");
-                        writer.write(split[0]);
-                        writer.write("</option>");
-                        writer.write("\r\n");
-                    }
-                    writer.write("</select>\r\n");
-                }
-            }
-        } 
-    }
-    
-    /**
-     * Creates the subject options
-     * @throws Exception
-     */
-    private static void subjOptions() throws Exception {
-        try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-                new FileOutputStream("WebContent/SelectOptions/SubjectOptions.txt"), "utf-8"))) {
-            for (String term : terms) {
-                html.setTerm(term);
-                String[] subjectValues = html.getSubjectValues();
-                String[] subjectNames = html.getSubjects();
-                if (term.equals(terms.get(terms.size()-1))) {
-                    writer.write("<select id=\"subjects\" name=\"" + term + "subjects\" class=\"optionfont\" onchange=\"displayNums(false)\">\r\n");
+                if (term.equals(terms.get(0))) {
+                    writer.write("<select id='" + term + "search' data-size='5' class='selectpicker form-control' data-live-search='true'>\r\n");
                 }
                 else {
-                    writer.write("<select id=\"\" class=\"optionfont\" name=\"" + term + "subjects\""
-                                + " style=\"display: none;\" onchange=\"displayNums(false)\">\r\n");
+                    writer.write("<select id='" + term + "search' data-size='5' class='selectpicker form-control hide' data-live-search='true'>\r\n");
                 }
-                
-                for (int i = 1; i < subjectNames.length; i++) {
-                    writer.write("<option value=\"" + subjectValues[i] + "\">" + subjectNames[i] + "</option>\r\n");
-                }
-                writer.write("</select>");
-            }
-        }
-    }
-    
-    /**
-     * Creates the number options
-     * @throws Exception
-     */
-    private static void numOptions() throws Exception {
-        try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-                new FileOutputStream("WebContent/SelectOptions/NumberOptions.txt"), "utf-8"))) {
-            for (String term : terms) {
+                writer.write("<option style='font-style:italic' data-icon='glyphicon-search'>Search a Course or CRN (AHRM, 2014, CS 3114, 85149, etc.)</option>\r\n");
                 html.setTerm(term);
                 String[] subjects = html.getSubjectValues();
                 HashMap<String, HashMap<String, LinkedList<VTCourse>>> list;
@@ -154,32 +84,20 @@ public class HtmlSet {
                         continue;
                     }
                     HashMap<String, LinkedList<VTCourse>> classes = list.get(subject);
-                    String[] nums = filterClasses(classes);
-                    Arrays.sort(nums);
-                    if (term.equals(terms.get(terms.size()-1)) && subject.equals(subjects[1])) {
-                        writer.write("<select name=\"" + term + subject + "\" id=\"number\">\r\n");
+                    //String[] courses = filterClasses(classes);
+                    if (classes == null) {
+                        continue;
                     }
-                    else {
-                        writer.write("<select name=\"" + term + subject + "\" style=\"display: none;\">\r\n");
+                    for (String s : classes.keySet()) {
+                        for (VTCourse c : classes.get(s)) {
+                            writer.write("<option data-tokens='" + c.getCRN() + "' "
+                                       + "data-content=\"<button class='btn btn-default btn-sm' type='button'>Add</button> "
+                                       + c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " / " + c.getClassType() + " / " + "<i>" + c.getName() + "</i> / " + c.getProf() + "\""
+                                       + " disabled/>\r\n");
+                        }
                     }
-                    writer.write("<option value=\"none\" disabled selected value>----</option>\r\n");
-                    for (int k = 0; k < nums.length; k++) {
-                        String[] split = nums[k].split("--");
-                        writer.write("<option name=\"");
-                        writer.write(split[1]);
-                        writer.write("--");
-                        writer.write(split[2]);
-                        writer.write("--");
-                        writer.write(split[3]);
-                        writer.write("\" value=\"");
-                        writer.write(split[0]);
-                        writer.write("\">");
-                        writer.write(split[0]);
-                        writer.write("</option>");
-                        writer.write("\r\n");
-                    }
-                    writer.write("</select>\r\n");
                 }
+                writer.write("</select>");
             }
         } 
     }

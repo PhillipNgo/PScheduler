@@ -18,7 +18,7 @@
 </head>
 <body style="background-color: #eceeef">
 	<div style="background-color: DarkSlateGray;border-bottom: 1px solid darkorange;" class="jumbotron">
-		<div class="container">
+		<div class="container-fluid">
 			<h1>
 				<span style="color: darkorange">P</span><span style="color: white">Scheduler</span>
 				<small style="color: darkorange"><i>VT Schedule Creation</i></small>
@@ -148,12 +148,19 @@
 				</div>
 			</form>
 			<div style="text-align: center;" class="col-sm-9">
-				<select data-size="5" class="selectpicker form-control" data-show-subtext="true" data-live-search="true">
-					<option style="font-style:italic" data-icon="glyphicon-search">Search a Course or CRN (AHRM, 2014, CS 3114, 85149, etc.)</option>
-					<option data-tokens="ece 2014" data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> ECE 2014" disabled/>
-					<option data-tokens="math 2214" data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> MATH 2214" disabled/>
-					<option data-tokens="cs 2505" data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> CS 2505" disabled/>
-				</select>
+				<%
+	            	try {
+	                	scan = new Scanner(new File("webapps/ROOT/SelectOptions/SearchOptions.txt"));
+	      			}
+	      			catch (Exception e) {
+	      		 		scan = new Scanner(new File("WebContent/SelectOptions/SearchOptions.txt"));
+	      			}
+	            	
+				    while (scan.hasNextLine()) {
+				        out.print(scan.nextLine());
+				    }
+				    scan.close();
+          		%>
 				<h2 style="color:darkorange">Current Schedule</h2>
 				<table class="table">
 					<thead class="thead-inverse">
