@@ -63,6 +63,7 @@ public class HtmlSet {
                 new FileOutputStream("WebContent/SelectOptions/SearchOptions.txt"), "utf-8"))) {
             
             for (String term : terms) {
+                /*
                 if (term.equals(terms.get(0))) {
                     writer.write("<select id='" + term + "search' data-size='5' class='selectpicker form-control' data-live-search='true'>\r\n");
                 }
@@ -70,6 +71,8 @@ public class HtmlSet {
                     writer.write("<select id='" + term + "search' data-size='5' class='selectpicker form-control hide' data-live-search='true'>\r\n");
                 }
                 writer.write("<option style='font-style:italic' data-icon='glyphicon-search'>Search a Course or CRN (AHRM, 2014, CS 3114, 85149, etc.)</option>\r\n");
+                */
+                
                 html.setTerm(term);
                 String[] subjects = html.getSubjectValues();
                 HashMap<String, HashMap<String, LinkedList<VTCourse>>> list;
@@ -90,14 +93,19 @@ public class HtmlSet {
                     }
                     for (String s : classes.keySet()) {
                         for (VTCourse c : classes.get(s)) {
+                            /*
                             writer.write("<option data-tokens='" + c.getCRN() + "' "
                                        + "data-content=\"<button class='btn btn-default btn-sm' type='button'>Add</button> "
                                        + c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " / " + c.getClassType() + " / " + "<i>" + c.getName() + "</i> / " + c.getProf() + "\""
                                        + " disabled/>\r\n");
+                                       */
+                            writer.write("<li style='display:none;'> <button class='btn btn-default btn-sm' type='button'>Add</button> "
+                                    + c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " / " + c.getClassType() + " / " + "<i>" + c.getName() + "</i> / " + c.getProf() + "\""
+                                    + " </li>\r\n");
                         }
                     }
                 }
-                writer.write("</select>");
+                //writer.write("</select>");
             }
         } 
     }
