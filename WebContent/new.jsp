@@ -15,18 +15,6 @@
 <%@ page import="java.util.Scanner"%>
 <%@ page import="java.io.File"%>
 
-
-<script> window.jQuery || document.write('<script src="javascripts/jquery-1.9.1.min.js"><\/script>')</script>
-<script type="text/javascript" src="javascripts/jquery.hideseek.min.js"></script>
-<script type="text/javascript" src="javascripts/rainbow-custom.min.js"></script>
-<script type="text/javascript" src="javascripts/jquery.anchor.js"></script>
-<script src="javascripts/initializers.js"></script>
-<script type="text/javascript" src="javascripts/modernizr.custom.js"></script>
-<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/skeleton.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/styless.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/github.css">
-
 </head>
 <body style="background-color: #eceeef">
 	<div style="background-color: DarkSlateGray;border-bottom: 1px solid darkorange;" class="jumbotron">
@@ -161,13 +149,8 @@
 			</form>
       
 			<div style="text-align: center;" class="col-sm-9">
-				<article>
-					<input id="search-hidden-mode" name="search"
-						placeholder="Start typing here" type="text"
-						data-list=".ignore_accents_list" data-nodata="No results found"
-						autocomplete="off">
-					<ul class="vertical ignore_accents_list">
-						<%
+				
+						<%/*
 						    try {
 						        scan = new Scanner(new File(
 						                "webapps/ROOT/SelectOptions/SearchOptions.txt"));
@@ -181,9 +164,9 @@
 						        out.print(scan.nextLine());
 						    }
 						    scan.close();
+						    */
 						%>
-					</ul>
-				</article>
+					
 				
 				<h2 style="color:darkorange">Current Schedule</h2>
 				<table class="table">

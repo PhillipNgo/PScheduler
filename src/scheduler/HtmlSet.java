@@ -99,7 +99,7 @@ public class HtmlSet {
                                        + c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " / " + c.getClassType() + " / " + "<i>" + c.getName() + "</i> / " + c.getProf() + "\""
                                        + " disabled/>\r\n");
                                        */
-                            writer.write("<li style='display:none;'> <button class='btn btn-default btn-sm' type='button'>Add</button> "
+                            writer.write("<li data-name='" + c.getCRN() + "' style='display:none;'> <button class='btn btn-default btn-sm' type='button'>Add</button> "
                                     + c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " / " + c.getClassType() + " / " + "<i>" + c.getName() + "</i> / " + c.getProf() + "\""
                                     + " </li>\r\n");
                         }
