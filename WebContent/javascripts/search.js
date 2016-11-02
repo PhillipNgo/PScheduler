@@ -6,7 +6,7 @@ jQuery(document).ready(function($){
 
 	$('.live-search-box').on('keyup', function(){
 		var searchTerm = $(this).val().toLowerCase();
-		if (searchTerm.length > 0) {
+		if (searchTerm.length > 1) {
 			var count = 0;
 			$('.live-search-list li').each(function(){
 				if (($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) && count < 10) {

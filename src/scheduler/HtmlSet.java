@@ -4,10 +4,7 @@ import java.io.BufferedWriter;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
-import java.util.Arrays;
 import java.util.HashMap;
-
-import jdk.internal.org.objectweb.asm.Type;
 
 /**
  * Outputs select options files
@@ -41,7 +38,7 @@ public class HtmlSet {
         String[] optionNames = html.getTerms();
         String[] optionValues = html.getTermValues();
         try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-                new FileOutputStream("WebContent/SelectOptions/TermOptions.txt"), "utf-8"))) {
+                new FileOutputStream("WebContent/SelectOptions/TermOptions.html"), "utf-8"))) {
             for (int i = 1; i < optionNames.length-1; i++) {
                 if (!optionNames[i].contains("Summer") && !optionNames[i].contains("Winter")) {
                     writer.write("<option value=\"");
@@ -63,7 +60,7 @@ public class HtmlSet {
     private static void searchOptions() throws Exception {
         for (String term : terms) {
             try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-                    new FileOutputStream("WebContent/SelectOptions/" + term + "options.txt"), "utf-8"))) {
+                    new FileOutputStream("WebContent/SelectOptions/" + term + "options.html"), "utf-8"))) {
                 html.setTerm(term);
                 String[] subjects = html.getSubjectValues();
                 HashMap<String, HashMap<String, LinkedList<VTCourse>>> list;

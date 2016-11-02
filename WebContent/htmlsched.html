@@ -17,8 +17,7 @@
 <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 <body style="background-color: #eceeef">
-	<div
-		style="background-color: DarkSlateGray; border-bottom: 1px solid darkorange;">
+	<div style="background-color: DarkSlateGray; border-bottom: 1px solid darkorange;">
 		<div class="container-fluid">
 			<h1>
 				<span style="color: darkorange">P</span><span style="color: white">Scheduler</span>
@@ -28,165 +27,9 @@
 	</div>
 	<div class="container-fluid">
 		<div style="padding-top: 10px;" class="row">
-			<div style="padding-right: 0; padding-left: 12.5px" class="col-sm-4">
-				<div class="panel panel-default outline">
-					<div style="background-color: white; color: darkorange"
-						class="panel-heading center">
-						<h2>Restrictions</h2>
-					</div>
-					<div class="panel-body">
-						<div style="padding-bottom: 10px">
-							<h4>Term</h4>
-							<select class="selectpicker">
-								<option>Spring 2017</option>
-								<option>Fall 2016</option>
-							</select>
-						</div>
-						<h4>Start Time</h4>
-						<div style="padding-bottom: 10px" class="row">
-							<div style="padding-right: 1px;" class="col-sm-4">
-								<select class="selectpicker form-control">
-									<option>10</option>
-								</select>
-							</div>
-							<div style="padding-left: 1px;" class="col-sm-4">
-								<select class="selectpicker form-control">
-									<option>05</option>
-								</select>
-							</div>
-							<div style="padding-left: 5px;" class="col-sm-4">
-								<select class="selectpicker form-control">
-									<option>am</option>
-								</select>
-							</div>
-						</div>
-						<h4>End Time</h4>
-						<div style="padding-bottom: 10px" class="row">
-							<div style="padding-right: 1px;" class="col-sm-4">
-								<select class="selectpicker form-control">
-									<option>10</option>
-								</select>
-							</div>
-							<div style="padding-left: 1px;" class="col-sm-4">
-								<select class="selectpicker form-control">
-									<option>05</option>
-								</select>
-							</div>
-							<div style="padding-left: 5px;" class="col-sm-4">
-								<select class="selectpicker form-control">
-									<option>am</option>
-								</select>
-							</div>
-						</div>
-						<div style="padding-bottom: 10px">
-							<h4>Free Days</h4>
-							<select class="selectpicker" multiple>
-								<option>Monday</option>
-								<option>Tuesday</option>
-								<option>Wednesday</option>
-								<option>Thursday</option>
-								<option>Friday</option>
-							</select>
-						</div>
-					</div>
-					<div style="background-color: white; padding-bottom: 10px"
-						class="panel-footer">
-						<select data-size="5" class="selectpicker form-control"
-							data-show-subtext="true" data-live-search="true">
-							<option style="font-style: italic" data-icon="glyphicon-search">Search
-								a Course or CRN (AHRM, 2014, CS 3114, 85149, etc.)</option>
-							<option data-tokens="ece 2014"
-								data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> ECE 2014"
-								disabled />
-							<option data-tokens="math 2214"
-								data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> MATH 2214"
-								disabled />
-							<option data-tokens="cs 2505"
-								data-content="<button class='btn btn-default btn-sm' type='button'>Add</button> CS 2505"
-								disabled />
-						</select>
-						<h2 style="color: darkorange">Courses</h2>
-						<table style="text-align: center" class="table">
-							<thead class="thead-inverse">
-								<tr style="font-weight: bold;">
-									<td>Course</td>
-									<td>Title</td>
-									<td>Type</td>
-									<td>Professor</td>
-									<td></td>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>ECE 2014</td>
-									<td>ECE Professionalism</td>
-									<td>Lecture</td>
-									<td>Ball</td>
-									<td><button class="btn btn-default" type="button">Remove</button></td>
-								</tr>
-								<tr>
-									<td>MATH 2214</td>
-									<td>Differential Equations</td>
-									<td>Lecture</td>
-									<td>Jong</td>
-									<td><button class="btn btn-default" type="button">Remove</button></td>
-								</tr>
-								<tr>
-									<td>CS 2505</td>
-									<td>Intro to Computer Organization</td>
-									<td>Lecture</td>
-									<td>Jong</td>
-									<td><button class="btn btn-default" type="button">Remove</button></td>
-								</tr>
-								<tr>
-									<td>CS 2505</td>
-									<td>Intro to Computer Organization</td>
-									<td>Lecture</td>
-									<td>Jong</td>
-									<td><button class="btn btn-default" type="button">Remove</button></td>
-								</tr>
-								<tr>
-									<td>CS 2505</td>
-									<td>Intro to Computer Organization</td>
-									<td>Lecture</td>
-									<td>Jong</td>
-									<td><button class="btn btn-default" type="button">Remove</button></td>
-								</tr>
-								<tr>
-									<td>CS 2505</td>
-									<td>Intro to Computer Organization</td>
-									<td>Lecture</td>
-									<td>Jong</td>
-									<td><button class="btn btn-default" type="button">Remove</button></td>
-								</tr>
-								<tr>
-									<td>CS 2505</td>
-									<td>Intro to Computer Organization</td>
-									<td>Lecture</td>
-									<td>Jong</td>
-									<td><button class="btn btn-default" type="button">Remove</button></td>
-								</tr>
-							</tbody>
-						</table>
-						<button style="color: darkorange; width: 100%"
-							class="btn btn-default btn-lg" type="button">
-							<b>Recreate Schedules</b>
-						</button>
-					</div>
-				</div>
-				<p>
-					*Added CRNs Ignore Time and Day Restrictions<br> *Class Data
-					Last Updated: 10/21/2016
-				</p>
-			</div>
-			<div style="padding-left: 12.5px; padding-right: 12.5px;"
-				class="col-sm-8">
+			<div style="padding-left: 12.5px; padding-right: 12.5px;" class="col-sm-12">
 				<div class=" panel panel-default outline">
-					<div style="background-color: white; color: darkorange"
-						class="panel-heading center">
-						<h2>Current Schedule</h2>
-					</div>
-					<div style="padding-top:0px" class="panel-body">
+					<div style="background-color: white;" class="panel-heading center">
 						<div class="row">
 							<div class="col-sm-2">
 								<div class="input-group">
@@ -207,10 +50,18 @@
 									</div>
 								</div>
 							</div>
-							<div style="vertical-align:middle;text-align:left" class="col-sm-10">
-								<h4>1 of 2</h4>
+							<div class="col-sm-8">
+								<h4><b>2 Schedules | 17 credit hours</b></h4>
+							</div>
+							<div style="text-align:right" class="col-sm-1">
+								<button type="button" class="btn btn-default">Modify Search</button>
+							</div>
+							<div style="text-ling:right" class="col-sm-1">
+								<button type="button" class="btn btn-default">Hide Table</button>
 							</div>
 						</div>
+					</div>
+					<div style="padding-top:0px" class="panel-body">
 						<table class="text table" id="0">
 							<tr style="font-weight: bold">
 								<td class="text">CRN</td>
@@ -223,7 +74,7 @@
 								<td class="text">Time</td>
 								<td class="text">Location</td>
 							</tr>
-							<tr class="left">
+							<tr style="background-color:orange" class="left">
 								<td class="text">12774</td>
 								<td class="text">ECE 2524</td>
 								<td class="text pad">Intro to Unix for Engineers</td>
@@ -304,11 +155,11 @@
 						<table class="outline" style="text-align: center;" id="0">
 							<tr>
 								<td class="center" style="width: 75pt; height: 35pt;"></td>
-								<td class="outline center" style="width: 175pt; height: 35pt;">Monday</td>
-								<td class="outline center" style="width: 175pt; height: 35pt;">Tuesday</td>
-								<td class="outline center" style="width: 175pt; height: 35pt;">Wednesday</td>
-								<td class="outline center" style="width: 175pt; height: 35pt;">Thursday</td>
-								<td class="outline center" style="width: 175pt; height: 35pt;">Friday</td>
+								<td class="outline center" style="width: 200pt; height: 35pt;">Monday</td>
+								<td class="outline center" style="width: 200pt; height: 35pt;">Tuesday</td>
+								<td class="outline center" style="width: 200pt; height: 35pt;">Wednesday</td>
+								<td class="outline center" style="width: 200pt; height: 35pt;">Thursday</td>
+								<td class="outline center" style="width: 200pt; height: 35pt;">Friday</td>
 							</tr>
 							<tr class="small">
 								<td class="time" rowspan="12">9:00AM</td>

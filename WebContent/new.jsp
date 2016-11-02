@@ -18,7 +18,7 @@
 
 </head>
 <body style="background-color: #eceeef">
-	<div style="background-color: DarkSlateGray;border-bottom: 1px solid darkorange;" class="jumbotron">
+	<div class="header">
 		<div class="container-fluid">
 			<h1>
 				<span style="color: darkorange">P</span><span style="color: white">Scheduler</span>
@@ -27,8 +27,9 @@
 		</div>
 	</div>
 	<div class="container-fluid">
-		<div style="padding-left: 25px;padding-right: 25px" class="row">
-			<form class="col-sm-3 panel panel-default outline">
+		<div style="padding-left: 5px;padding-right: 25px" class="row">
+			<div class="col-sm-3">
+			<form class="panel panel-default outline">
 				<div style="background-color: white" class="panel-heading">
 					<h2 style="color:darkorange">Restrictions</h2>
 				</div>
@@ -148,18 +149,21 @@
 						<button style="color:darkorange;width:100%" class="btn btn-default btn-lg" type="button"><b>Create Schedules</b></button>
 				</div>
 			</form>
-      
+			*Added CRNs Ignore Time and Day Restrictions<br>
+			*Class Data Last Updated: 10/21/2016
+			</div>
+      		
 			<div style="text-align: center;" class="col-sm-9">
-				<input type="text" class="form-control live-search-box" placeholder="Search">
-				<ul class="list-group live-search-list" style="position:absolute;text-align:left;">
+				<input type="text" class="form-control live-search-box" placeholder="Search A Course">
+				<ul id="search" class="list-group live-search-list" style="position:fixed;text-align:left;">
 					<%
 					    try {
 					        scan = new Scanner(new File(
-					                "webapps/ROOT/SelectOptions/201701options.txt"));
+					                "webapps/ROOT/SelectOptions/201701options.html"));
 					    }
 					    catch (Exception e) {
 					        scan = new Scanner(
-					                new File("WebContent/SelectOptions/201701options.txt"));
+					                new File("WebContent/SelectOptions/201701options.html"));
 					    }
 
 					    while (scan.hasNextLine()) {
@@ -167,11 +171,11 @@
 					    }
 					    try {
 					        scan = new Scanner(new File(
-					                "webapps/ROOT/SelectOptions/201609options.txt"));
+					                "webapps/ROOT/SelectOptions/201609options.html"));
 					    }
 					    catch (Exception e) {
 					        scan = new Scanner(
-					                new File("WebContent/SelectOptions/201609options.txt"));
+					                new File("WebContent/SelectOptions/201609options.html"));
 					    }
 
 					    while (scan.hasNextLine()) {
@@ -186,66 +190,43 @@
 					<thead class="thead-inverse">
 						<tr style="font-weight: bold;">
 							<td>#</td>
+							<td>CRN</td>
 							<td>Course</td>
 							<td>Title</td>
 							<td>Class Type</td>
-							<td>Credits</td>
 							<td>Professor</td>
 							<td></td>
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td scope="row">1</td>
-							<td>ECE 2014</td>
-							<td>ECE Professionalism</td>
-							<td>Lecture</td>
-							<td>2</td>
-							<td>Ball</td>
+						<tr style="text-align:center">
+							<td style="vertical-align:middle" scope="row">1</td>
+							<td>
+								<select class="selectpicker" data-width="auto">
+									<option>Any</option>
+									<option>11111</option>
+								</select>
+							</td>
+							<td style="vertical-align:middle">ECE 2014</td>
+							<td style="vertical-align:middle">ECE Professionalism</td>
+							<td>
+								<select class="selectpicker" data-width="auto">
+									<option>Lecture</option>
+									<option>Independent Study</option>
+								</select>
+							</td>
+							<td>
+								<select class="selectpicker" data-width="auto">
+									<option>Ball</option>
+									<option>Super Long Name</option>
+								</select>
+							</td>
 							<td><button class="btn btn-default" type="button">Remove</button></td>
 						</tr>
-						<tr>
-							<td scope="row">2</td>
-							<td>MATH 2214</td>
-							<td>Differential Equations</td>
-							<td>Lecture</td>
-							<td>3</td>
-							<td>Jong</td>
-							<td><button class="btn btn-default" type="button">Remove</button></td>
-						</tr>
-						<tr>
-							<td scope="row">3</td>
-							<td>CS 2505</td>
-							<td>Intro to Computer Organization</td>
-							<td>Lecture</td>
-							<td>3</td>
-							<td>Jong</td>
-							<td><button class="btn btn-default" type="button">Remove</button></td>
-						</tr>
-						<tr>
-							<td scope="row">3</td>
-							<td>CS 2505</td>
-							<td>Intro to Computer Organization</td>
-							<td>Lecture</td>
-							<td>3</td>
-							<td>Jong</td>
-							<td><button class="btn btn-default" type="button">Remove</button></td>
-						</tr>
-						<tr>
-							<td scope="row">3</td>
-							<td>CS 2505</td>
-							<td>Intro to Computer Organization</td>
-							<td>Lecture</td>
-							<td>3</td>
-							<td>Jong</td>
-							<td><button class="btn btn-default" type="button">Remove</button></td>
-						</tr>
-						<tr>
+						
 						
 					</tbody>
 				</table>
-				*Added CRNs Ignore Time and Day Restrictions<br>
-				*Class Data Last Updated: 10/21/2016
 			</div>
 		</div>
 	</div>
