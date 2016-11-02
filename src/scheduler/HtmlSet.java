@@ -7,6 +7,8 @@ import java.io.Writer;
 import java.util.Arrays;
 import java.util.HashMap;
 
+import jdk.internal.org.objectweb.asm.Type;
+
 /**
  * Outputs select options files
  * @author Phillip Ngo
@@ -59,20 +61,9 @@ public class HtmlSet {
      * @throws Exception
      */
     private static void searchOptions() throws Exception {
-        try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-                new FileOutputStream("WebContent/SelectOptions/SearchOptions.txt"), "utf-8"))) {
-            
-            for (String term : terms) {
-                /*
-                if (term.equals(terms.get(0))) {
-                    writer.write("<select id='" + term + "search' data-size='5' class='selectpicker form-control' data-live-search='true'>\r\n");
-                }
-                else {
-                    writer.write("<select id='" + term + "search' data-size='5' class='selectpicker form-control hide' data-live-search='true'>\r\n");
-                }
-                writer.write("<option style='font-style:italic' data-icon='glyphicon-search'>Search a Course or CRN (AHRM, 2014, CS 3114, 85149, etc.)</option>\r\n");
-                */
-                
+        for (String term : terms) {
+            try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+                    new FileOutputStream("WebContent/SelectOptions/" + term + "options.txt"), "utf-8"))) {
                 html.setTerm(term);
                 String[] subjects = html.getSubjectValues();
                 HashMap<String, HashMap<String, LinkedList<VTCourse>>> list;
@@ -87,27 +78,70 @@ public class HtmlSet {
                         continue;
                     }
                     HashMap<String, LinkedList<VTCourse>> classes = list.get(subject);
-                    //String[] courses = filterClasses(classes);
                     if (classes == null) {
                         continue;
                     }
                     for (String s : classes.keySet()) {
+                        LinkedList<String> types = new LinkedList<>();
+                        LinkedList<String> profs = new LinkedList<>();
+                        String name = null;
                         for (VTCourse c : classes.get(s)) {
-                            /*
-                            writer.write("<option data-tokens='" + c.getCRN() + "' "
-                                       + "data-content=\"<button class='btn btn-default btn-sm' type='button'>Add</button> "
-                                       + c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " / " + c.getClassType() + " / " + "<i>" + c.getName() + "</i> / " + c.getProf() + "\""
-                                       + " disabled/>\r\n");
-                                       */
-                            writer.write("<li data-name='" + c.getCRN() + "' style='display:none;'> <button class='btn btn-default btn-sm' type='button'>Add</button> "
-                                    + c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " / " + c.getClassType() + " / " + "<i>" + c.getName() + "</i> / " + c.getProf() + "\""
-                                    + " </li>\r\n");
+                            if (types.indexOf(c.getClassType()) < 0) {
+                                types.add(c.getClassType());
+                            }
+                            if (profs.indexOf(c.getProf()) < 0) {
+                                profs.add(c.getProf());
+                            }
+                            if (name == null) {
+                                name = c.getName();
+                            }
+                            writer.write("<li class='list-group-item' style='display:none'>"
+                                    + "<button class='btn btn-default btn-sm' type='button'>Add</button> " 
+                                    + c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " - " + c.getName() + " / "
+                                    + longClassType(c.getClassType()) + " / " + c.getProf());
+                            Time t = c.getTimeSlot();
+                            if (t != null) {
+                                writer.write(" / " + t.getStart() + " - " + t.getEnd());
+                                t = c.getAdditionalTime();
+                                if (t != null) {
+                                    writer.write(" / " + t.getStart() + " - " + t.getEnd());
+                                }
+                            }
+                            writer.write("</li>\r\n");
                         }
+                        writer.write("<li class='list-group-item' style='display:none'><button class='btn btn-default btn-sm' type='button'>Add</button> " 
+                                      + subject + " " + s + " - " + name + " / " + longClassType(types.get(0)));
+                        for (int i = 1; i < types.size(); i++) {
+                            writer.write(", " + longClassType(types.get(i)));
+                        }
+                        writer.write(" / " + profs.get(0));
+                        for (int i = 1; i < profs.size(); i++) {
+                            writer.write(", " + profs.get(i));
+                        }
+                        writer.write("</li>\r\n");
                     }
                 }
-                //writer.write("</select>");
-            }
-        } 
+            } 
+        }
+    }
+    
+    /**
+     * Converts a class type letter into its long for
+     * @param type the class type
+     * @return the long form
+     */
+    private static String longClassType(String type) {
+        switch (type) {
+            case "L": return "Lecture";
+            case "B": return "Lab";
+            case "C": return "Recitation";
+            case "H": return "Hybrid";
+            case "E": return "Emporium";
+            case "O": return "Online";
+            case "I": return "Independent Study";
+            case "R": return "Research";
+            default:  return "bug";
+        }
     }
     
     /**

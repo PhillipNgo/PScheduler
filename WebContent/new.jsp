@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
 <link rel="stylesheet" href="stylesheets/styles.css">
+<script type="text/javascript" src="javascripts/search.js"></script>
 <%@ page import="java.util.Scanner"%>
 <%@ page import="java.io.File"%>
 
@@ -149,27 +150,39 @@
 			</form>
       
 			<div style="text-align: center;" class="col-sm-9">
-				
-						<%/*
-						    try {
-						        scan = new Scanner(new File(
-						                "webapps/ROOT/SelectOptions/SearchOptions.txt"));
-						    }
-						    catch (Exception e) {
-						        scan = new Scanner(
-						                new File("WebContent/SelectOptions/SearchOptions.txt"));
-						    }
+				<input type="text" class="form-control live-search-box" placeholder="Search">
+				<ul class="list-group live-search-list" style="position:absolute;text-align:left;">
+					<%
+					    try {
+					        scan = new Scanner(new File(
+					                "webapps/ROOT/SelectOptions/201701options.txt"));
+					    }
+					    catch (Exception e) {
+					        scan = new Scanner(
+					                new File("WebContent/SelectOptions/201701options.txt"));
+					    }
 
-						    while (scan.hasNextLine()) {
-						        out.print(scan.nextLine());
-						    }
-						    scan.close();
-						    */
-						%>
-					
+					    while (scan.hasNextLine()) {
+					        out.print(scan.nextLine());
+					    }
+					    try {
+					        scan = new Scanner(new File(
+					                "webapps/ROOT/SelectOptions/201609options.txt"));
+					    }
+					    catch (Exception e) {
+					        scan = new Scanner(
+					                new File("WebContent/SelectOptions/201609options.txt"));
+					    }
+
+					    while (scan.hasNextLine()) {
+					        out.print(scan.nextLine());
+					    }
+					    scan.close();
+					%>
+				</ul>
 				
 				<h2 style="color:darkorange">Current Schedule</h2>
-				<table class="table">
+				<table class="table border" style="background-color:white;">
 					<thead class="thead-inverse">
 						<tr style="font-weight: bold;">
 							<td>#</td>
