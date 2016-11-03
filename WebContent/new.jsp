@@ -13,6 +13,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
 <link rel="stylesheet" href="stylesheets/styles.css">
 <script type="text/javascript" src="javascripts/search.js"></script>
+<script type="text/javascript" src="javascripts/Classes.js"></script>
 <%@ page import="java.util.Scanner"%>
 <%@ page import="scheduler.HtmlSet"%>
 <%@ page import="java.io.File"%>
@@ -30,7 +31,7 @@
 	<div class="container-fluid">
 		<div style="padding-left: 5px;padding-right: 25px" class="row">
 			<div class="col-sm-3">
-			<form class="panel panel-default outline">
+			<form id="form" class="panel panel-default outline" action="">
 				<div style="background-color: white" class="panel-heading">
 					<h2 style="color:darkorange">Restrictions</h2>
 				</div>
@@ -138,7 +139,7 @@
 					</div>
 				</div>
 				<div style="background-color:white;padding-bottom:10px" class="panel-footer">
-						<button style="color:darkorange;width:100%" class="btn btn-default btn-lg" type="button"><b>Create Schedules</b></button>
+						<button style="color:darkorange;width:100%" class="btn btn-default btn-lg" type="submit" onClick="sendData()"><b>Create Schedules</b></button>
 				</div>
 			</form>
 			*Added CRNs Ignore Time and Day Restrictions<br>
@@ -146,7 +147,7 @@
 			</div>
       		
 			<div style="text-align: center;" class="col-sm-9">
-			
+
 				<div class="input-group">
 					<div class="input-group-btn">
 						<select id="searchtype" class="selectpicker" data-width="auto">
@@ -154,22 +155,24 @@
 							<option value="crn">CRN</option>
 						</select>
 					</div>
-					<div><input type="text" class="form-control live-search-box" placeholder="Search a Course, CRN, Professor (PHYS 2305, 85124, Boyer, etc.)"></div>
+					<div>
+						<input type="text" class="form-control live-search-box"
+							placeholder="Search a Course, CRN, Professor (PHYS 2305, 85124, Boyer, etc.)">
+					</div>
 				</div>
-				<div style="margin-right:-50px">
-					<ul id="search" class="list-group live-search-list" style="position:fixed;text-align:left;">
-						<%	
-						    writer.searchOptions();
-						%>
-					</ul>
-				</div>
-				
-				
+				<ul id="search" class="list-group live-search-list"
+					style="position: fixed; text-align: left;">
+					<li id="hide" style="display:none" class="list-group-item"><button id="hideb" type="button" class="btn btn-default form-control">Hide Search</button></li>
+					<%
+					    writer.searchOptions();
+					%>
+				</ul>
+
+
 				<h2 style="color:darkorange">Current Schedule</h2>
-				<table class="table border" style="background-color:white;">
+				<table id="schedule" class="table border" style="background-color:white;">
 					<thead class="thead-inverse">
 						<tr style="font-weight: bold;">
-							<td>#</td>
 							<td>CRN</td>
 							<td>Course</td>
 							<td>Title</td>
@@ -179,31 +182,6 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr style="text-align:center">
-							<td style="vertical-align:middle" scope="row">1</td>
-							<td>
-								<select style="width:50%;margin-left:auto;margin-right:auto" class="form-control">
-									<option>Any</option>
-									<option>11111</option>
-								</select>
-							</td>
-							<td style="vertical-align:middle">ECE 2014</td>
-							<td style="vertical-align:middle">ECE Professionalism</td>
-							<td>
-								<select style="width:60%;margin-left:auto;margin-right:auto" class="form-control">
-									<option>Lecture</option>
-									<option>Independent Study</option>
-								</select>
-							</td>
-							<td>
-								<select style="width:60%;margin-left:auto;margin-right:auto" class="form-control">
-									<option>Ball</option>
-									<option>Super Long Name</option>
-								</select>
-							</td>
-							<td><button class="btn btn-default" type="button">Remove</button></td>
-						</tr>
-						
 						
 					</tbody>
 				</table>

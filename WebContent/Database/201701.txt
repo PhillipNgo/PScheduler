@@ -14,6 +14,7 @@ Small Bus Mgt and Ent	AAEC	3454	MF Dickhans	10074	3	L	LITRV 1870	T R	12:30PM	1:4
 International Trade & Finance	AAEC	6304	JH Grant	10099	3	L	TBA	T R	11:00AM	12:15PM
 Env Theory & Policy Analysis	AAEC	6524	K Moeltner	19386	4	L	HUTCH 209	T R	11:00AM	12:15PM
 Real Estate Appraisal	AAEC	4764	LL Geyer	10082	1	L	SMYTH 146	T R	12:30PM	1:45PM
+SS: Crop Farm Price Risk Mgmt	AAEC	4984	O Isengildina Massa	19686	1	L
 Independent Study	AAEC	5974	SC Blank	10096	1	I
 Ag Price Analysis	AAEC	4504	O Isengildina Massa	10081	3	L	LITRV 1800	M W	2:30PM	3:45PM
 Research and Dissertation	AAEC	7994	SC Blank	10101	1	R
@@ -138,6 +139,7 @@ Independent Study	AFST	4974H	Staff	10217	1	I
 Independent Study	AFST	2974	Staff	10210	1	I
 African Amer Ldrship for Chng	AFST	3454	DL Lee	10212	3	L	SURGE 103A	M W F	1:25PM	2:15PM
 Undergraduate Research	AFST	4994	Staff	10218	1	R
+SS:Strctr of Racial Inequality	AFST	5984	WL Reed	19690	3	L	TBA	T	2:00PM	4:50PM
 Independent Study	AFST	5974	Staff	10221	1	I
 Internship	AFST	4754	Staff	10214	1	L
 Independent Study	AFST	4974	Staff	10216	1	I
@@ -385,6 +387,7 @@ Computational Plasma Dynamics	AOE	6174	Staff	18962	3	L	TORG 1000	T R	2:00PM	3:15
 Adaptive Control Systems	AOE	6774	AJ Kurdila	10489	3	L	GOODW 241	T R	8:00AM	9:15AM
 Res & Prop Of Ships	AOE	3264	EG Paterson	10378	3	L	RAND 331	M W F	10:10AM	11:00AM
 Adv Dyn of High-Speed Craft	AOE	5444G	S Brizzolara	19635	3	L	PAM 3010	T R	8:00AM	9:15AM
+SS:Intro Fld Strctre Interactn	AOE	4984	KG Wang	19689	3	L
 SS: Ethics in Autonomous Syst	AOE	4984	CA Woolsey	19524	3	L	TORG 1020	T R	3:30PM	4:45PM
 SS: Electronics for AOE	AOE	4984	MK Philen	19427	3	L	DER 1076	M W F	1:25PM	2:15PM
 Adv Vehicle Dynamics & Control	AOE	6204	C Sultan	19651	3	L	GBJ 104	T R	12:30PM	1:45PM
@@ -1983,7 +1986,7 @@ Undergraduate Research	CHEM	4994H	W Santos	12344	1	R
 Undergraduate Research	CHEM	4994H	A Morris	12343	1	R
 Undergraduate Research	CHEM	4994H	J Josan	12342	1	R
 Undergraduate Research	CHEM	4994H	RD Gandour	12341	1	R	HAHN N 402	W	5:30PM	6:45PM
-Methods Molecular Biophysics	CHEM	5154	T Grove	12356	3	L	ROB 116	M W	12:30PM	1:45PM
+Methods Molecular Biophysics	CHEM	5154	Staff	12356	3	L	ROB 116	M W	12:30PM	1:45PM
 TS: Chemical Biology	CHEM	6564	W Santos	12369	3	L	TBA	T R	11:00AM	12:15PM
 TS:Adv Macro Chemistry	CHEM	6564	HW Gibson	12368	3	L	HOLD 303	T R	12:30PM	1:45PM
 Research and Thesis	CHEM	5994	JR Morris	12365	1	R
@@ -2012,7 +2015,7 @@ Phys Chem Life Sci	CHEM	4616	D Troya	12299	3	L	DAV 281	T R	9:30AM	10:45AM
 Original Research Proposal	CHEM	6914	JR Morris	12370	3	L
 Laboratory in Polymer Science	CHEM	4074	TE Long	12291	2	B	HAHN N 307	T R	1:00PM	5:00PM
 Adv Polysaccharide Chemistry	CHEM	5424G	KJ Edgar	12358	3	L	JCH 317A	T R	8:00AM	9:15AM
-Analytical Spectroscopy	CHEM	5124	LA Madsen	12354	3	L	GOODW 145	M W	10:30AM	11:45AM
+Analytical Spectroscopy	CHEM	5124	Staff	12354	3	L	GOODW 145	M W	10:30AM	11:45AM
 Physical Chemistry	CHEM	3615	H Marand	12276	3	L	HAHN N 140	T R	2:00PM	3:15PM
 Field Study	CHEM	2964	Staff	12267	1	L
 Principles Org Chem	CHEM	2566	Staff	18933	3	L	NCB 170	M W F	11:15AM	12:05PM
@@ -2319,7 +2322,6 @@ Independent Study	CNST	5974	DE Dickerson	12426	1	I
 Independent Study	CNST	5974	AL Johnson	12425	1	I
 Seminar	CNST	5944	J Iorio	12424	1	L	BFH 230	W	1:25PM	2:15PM
 Methods Const Research	CNST	5084	AR Pearce	18895	3	L	BFH 132	T R	11:00AM	12:15PM
-Digital Advocacy Campaigns	COMM	4174	JA Kuypers	18686	3	L	MCB 210	T R	3:30PM	4:45PM
 Topics in Media Writing	COMM	4254	SE Rich	12526	3	O
 Media Effects	COMM	4014	JD Ivory	18417	3	L	SHANK 160	M W	11:30AM	12:45PM
 Visual Media	COMM	2034	DJ Tamul	18357	3	L	SHANK 180	M W	2:30PM	3:45PM
@@ -2375,6 +2377,7 @@ Study Abroad	COMM	3954	SA Smith	12519	1	L	SHANK 160	M	1:25PM	2:15PM
 Teaching Practicum	COMM	5034	B Quesenberry	12541	1	L	SHANK 043	W	2:30PM	3:45PM
 Communication Law	COMM	4024	WW Hopkins	12520	3	L	SURGE 118B	M W	4:00PM	5:15PM
 Research and Thesis	COMM	5994	BM Waggenspack	12548	1	R
+Public Advocacy	COMM	3134	JA Kuypers	19688	3	L	MCB 210	T R	3:30PM	4:45PM
 Principles of Public Relations	COMM	2044	DF Cannon	18356	3	L	MCB 304	M W F	12:20PM	1:10PM
 Principles of Public Relations	COMM	2044	DF Cannon	18355	3	L	RAND 116	M W F	10:10AM	11:00AM
 Principles of Public Relations	COMM	2044	DF Cannon	12494	3	L	MCB 304	M W F	9:05AM	9:55AM
@@ -2393,7 +2396,7 @@ Communication Ethics	COMM	4334	JB Mackay	12531	3	L	MCB 304	T R	12:30PM	1:45PM
 SS: Cyberspace Law	COMM	5984	WW Hopkins	19392	3	L	SHANK 043	T	9:30AM	12:15PM
 Independent Study	COMM	4974	MM Preston	12539	1	I
 Independent Study	COMM	4974	MM Preston	12538	1	I
-PR Standards and Practices	COMM	4414	MC Myers	12535	3	L	RAND 318	M W	2:30PM	3:45PM
+PR Standards and Practices	COMM	4414	DF Cannon	12535	3	L	RAND 318	M W	2:30PM	3:45PM
 Independent Study	COMM	2974H	MM Preston	12500	1	I
 Broadcasting Performance	COMM	4274	WB Roth	19177	3	L	MAC 153	M W	1:00PM	2:15PM
 Digital Newsroom	COMM	4154	SJ Robinson	12524	3	H	MAC 153	M W	9:15AM	11:45AM
@@ -2711,8 +2714,7 @@ Error Control Coding	ECE	5684	Staff	18226	3	L	TORG 1050	T R	12:30PM	1:45PM
 Power System Protection	ECE	4354	Staff	12830	3	L	MCB 212	T R	11:00AM	12:15PM
 Wearable & Ubiquitous Comp	ECE	5564	Staff	18061	3	L	RAND 206A	T R	9:30AM	10:45AM
 Adaptive Control Systems	ECE	6774	AJ Kurdila	13156	3	L	GOODW 241	T R	8:00AM	9:15AM
-Applied Electrical Theory	ECE	2054	Staff	12753	3	H	SURGE 104C	M W F	9:05AM	9:55AM
-Applied Electrical Theory	ECE	2054	Staff	12752	3	H	SURGE 104B	M W F	10:10AM	11:00AM
+Applied Electrical Theory	ECE	2054	Staff	12752	3	L	HAN 100	M W F	10:10AM	11:00AM
 Electronics	ECE	2204	Staff	12757	3	L	MCB 113	M W F	10:10AM	11:00AM
 Electronics	ECE	2204	Staff	12756	3	L	NCB 320	M W F	9:05AM	9:55AM
 SS: Linux Kernel Programming	ECE	4984	P Olivier	19480	3	L	TORG 1000	T R	5:00PM	6:15PM
@@ -4064,7 +4066,7 @@ Corporate Finance	FIN	3154	H Li	14154	3	L	ROB 116	T R	3:30PM	4:45PM
 Corporate Finance	FIN	3154	JC Easterwood	14152	3	L	DER 3092	M W	2:30PM	3:45PM
 Corporate Finance	FIN	3154	Y Xie	14151	3	L	PAM 3008	T R	2:00PM	3:15PM
 Corporate Finance	FIN	3154	M Tepe	14149	3	L	PAM 1001	M W	4:00PM	5:15PM
-Legal & Ethical Env Bus	FIN	3054	Staff	18641	3	L	TORG 1060	M W	4:00PM	5:15PM
+Legal & Ethical Env Bus	FIN	3054	JN Spicer	18641	3	L	TORG 1060	M W	4:00PM	5:15PM
 Legal & Ethical Env Bus	FIN	3054	Staff	18640	3	L	TBA	T R	3:30PM	4:45PM
 Legal & Ethical Env Bus	FIN	3054	JB Malone	14134	3	L	NCB 160	T R	12:30PM	1:45PM
 Legal & Ethical Env Bus	FIN	3054	JB Malone	14133	3	L	NCB 260	T R	5:00PM	6:15PM
@@ -4185,7 +4187,7 @@ Independent Study	FREC	4974	Staff	14269	1	I
 Advanced Wildland Fire Mgmt	FREC	4414	KR Kidd	14264	3	L	JCH 213	T R	9:30AM	10:45AM	JCH 213	T	2:00PM	5:00PM
 Internship	FREC	3964	Staff	14259	1	B
 Forest Boundaries and Roads	FREC	3724	WM Aust	14256	3	L	JCH 212	T R	11:00AM	11:50AM	JCH 212	F	1:25PM	5:15PM
-Population Genomics	FREC	5164	JA Holliday	19405	3	L	JCH 212	M W	10:10AM	11:30AM
+Population Genomics	FREC	5164	JA Holliday	19405	3	L	JCH 212	W F	10:10AM	11:30AM
 Graduate Seminar	FREC	5004	RQ Thomas	14271	1	L	LITRV 1860	F	11:00AM	12:00PM
 Arboriculture Field Skills	FREC	2254	PE Wiseman	14243	1	B
 Dendrology Laboratory	FREC	2324	JR Seiler	14244	1	B	JCH 218	W	2:30PM	5:20PM
@@ -5772,6 +5774,7 @@ Advanced Mechatronics	ME	5736G	AL Wicks	15715	3	L	RAND 100L	M W F	9:05AM	9:55AM
 Adv Topics in Thermodynamics	ME	6104	MR von Spakovsky	18784	3	L	MCB 210	T R	2:00PM	3:15PM
 Adv Topics in Thermodynamics	ME	6104	MR von Spakovsky	15834	3	O	TBA	T R	11:00AM	12:15PM
 Linear Control Theory	ME	6544	MH Farhood	15839	3	L	RAND 206	T R	3:30PM	4:45PM
+SS: Adv Nonlinear Systems	ME	6984	Staff	19685	3	L	MCB 201	T R	9:30AM	10:45AM
 Energy Systems	ME	5334	F Battaglia	18112	3	L	WLH 330	M W	2:30PM	3:45PM
 Dynamic Systems - Vibrations	ME	3504	Staff	15600	3	L	GOODW 115	M W F	10:10AM	11:00AM
 Dynamic Systems - Vibrations	ME	3504	Staff	15599	3	L	GOODW 145	T R	9:30AM	10:45AM
@@ -5823,7 +5826,7 @@ Actv Matls/Smart Struct-I	ME	5804	AJ Kurdila	15717	3	L	RAND 100L	T R	9:30AM	10:4
 Strategic Management	MGT	4394	LF Tegarden	15992	3	L	GBJ 100	T R	12:30PM	1:45PM
 Strategic Management	MGT	4394	R Kennedy	15991	3	L	WLH 335	T R	9:30AM	10:45AM
 Strategic Management	MGT	4394	LF Tegarden	15990	3	L	WLH 345	T R	11:00AM	12:15PM
-Strategic Management	MGT	4394	Staff	15989	3	L	PAM 3010	M W	4:00PM	5:15PM
+Strategic Management	MGT	4394	D Lescop	15989	3	L	PAM 3010	M W	4:00PM	5:15PM
 Strategic Management	MGT	4394	LF Tegarden	15988	3	L	PAM 2002	T R	8:00AM	9:15AM
 Strategic Management	MGT	4394	Staff	15987	3	L	PAM 3004	M W	5:30PM	6:45PM
 Strategic Management	MGT	4394	FD Tuggle	15986	3	L	PAM 3004	M W	4:00PM	5:15PM
@@ -5834,11 +5837,11 @@ Strategic Management	MGT	4394	FD Tuggle	15982	3	L	PAM 2003	M W	2:30PM	3:45PM
 Strategic Management	MGT	4394	AH Cortes	15981	3	L	DER 1090	T R	2:00PM	3:15PM
 Strategic Management	MGT	4394	C Fitch	15980	3	L	HUTCH 409	T R	2:00PM	3:15PM
 Strategic Management	MGT	4394	Staff	15979	3	L	AA 109	T R	12:30PM	1:45PM
-Strategic Management	MGT	4394	Staff	15978	3	L	PAM 3004	M W	2:30PM	3:45PM
+Strategic Management	MGT	4394	D Lescop	15978	3	L	PAM 3004	M W	2:30PM	3:45PM
 Leadership Skills	MGT	4354	KA Carlson	15977	3	L	WMS 134	T R	5:30PM	6:45PM
 Diversity Intern & Prof Dev	MGT	3464	KA Carlson	15956	3	L
-Cornerstones Entrepreneurship	MGT	3064	Staff	18657	3	L	GBJ 104	M W	2:30PM	3:45PM
-Cornerstones Entrepreneurship	MGT	3064	Staff	15937	3	L	PAM 3028	T	4:00PM	7:00PM
+Cornerstones Entrepreneurship	MGT	3064	LR Fournier	18657	3	L	GBJ 104	M W	2:30PM	3:45PM
+Cornerstones Entrepreneurship	MGT	3064	LR Fournier	15937	3	L	PAM 3028	T	4:00PM	7:00PM
 Strategy Competition Analytics	MGT	3614	A Seth	15960	3	L	NCB 130A	T	5:30PM	8:30PM
 Strategy Competition Analytics	MGT	3614	A Seth	15959	3	L	NCB 130B	M	4:00PM	7:00PM
 Adv Professional Dev for Cdts	MGT	3936	E Humphrey	15961	2	L	WLH 350	T	3:30PM	4:45PM
@@ -5947,6 +5950,7 @@ Resource Recovery	MINE	3554	RH Yoon	16033	2	L	HOLD AUD	M W	11:15AM	12:05PM
 Underground Mine Design	MINE	3564	MG Karfakis	16034	3	L	DER 3081	M W F	1:25PM	2:15PM
 Mining Engrg Seminar	MINE	4554	ME Karmis	16040	1	B	RAND 221	T	2:00PM	4:45PM
 Undergraduate Research	MINE	4994	Staff	16042	1	R
+SS: Mlticompnt Thermodynamics	MINE	5984	B Nojabaei	19684	3	L	MCB 201	T R	2:00PM	3:15PM
 SS: Adv Mining Ventilation	MINE	5984	KD Luxbacher	19649	3	L	HOLD 111	M W	9:30AM	10:45AM
 Mine Rec and Environ	MINE	4544	EA Sarver	16039	3	L	SURGE 118B	T R	11:00AM	12:15PM
 Independent Study	MINE	5974	Staff	16046	1	I
@@ -6557,6 +6561,7 @@ Personal Health	PHS	1514	AH Smith	16703	3	O
 Project and Report	PHS	5904	SW Marmagas	16716	1	R
 Drug Education	PHS	3534	AH Smith	16704	3	O
 Prog Dev in Health Ed	PHS	5214	KJ Redican	16711	3	O
+SS: Grantwrtng for Public Hlt	PHS	5984	SW Marmagas	19687	1	L	VMIA 220	M	1:00PM	1:50PM
 SS: Global Health Analytics	PHS	5984	KM Abbas	19252	3	L	VMIA 220	W	8:00AM	10:45AM
 Prin Community Health Ed	PHS	5204	SW Marmagas	18618	3	L	VMIA 220	R	2:00PM	5:00PM
 Infectious Disease Epidemiol	PHS	5314	KM Abbas	18617	3	L	VMIA 220	W	5:15PM	8:00PM
@@ -7757,7 +7762,6 @@ Honors Reading Seminar	UH	2124	Staff	19199	1	L	HUTCH 207	R	5:00PM	5:50PM
 Honors Reading Seminar	UH	2124	Staff	19198	1	L	SAUND 408	R	3:30PM	4:20PM
 Honors Reading Seminar	UH	2124	Staff	19197	1	L	HUTCH 207	T	5:00PM	5:50PM
 Honors Reading Seminar	UH	2124	Staff	19196	1	L	SAUND 408	T	3:30PM	4:20PM
-Honors Reading Seminar	UH	2124	Staff	19195	1	L	SEITZ 207	W	4:00PM	4:50PM
 Honors Reading Seminar	UH	2124	Staff	19194	1	L	HUTCH 204	W	1:25PM	2:15PM
 Honors Reading Seminar	UH	2124	Staff	19193	1	L	ENGEL 219	W	12:20PM	1:10PM
 Honors Reading Seminar	UH	2124	Staff	19192	1	L	MCB 666	W	11:15AM	12:05PM
@@ -7774,8 +7778,7 @@ TS:Musical Comedy, Then & Now	UH	3004	MB Saffle	17901	3	L	MCB 201	T	7:00PM	9:00P
 TS:The Metaphysical Room	UH	3004	KA Black	17900	3	L	HILL 132	T	5:30PM	8:00PM
 TS:Cultural Impc't of Taxation	UH	3004	DA Salbador	17899	3	L	HILL 132	W	9:00AM	11:00AM
 Undergraduate Research	UH	4994	PV Heilker	17915	1	R
-TS:Read Seminar Peer Educators	UH	4104	Staff	19675	2	L	LITRV 1770	W	4:00PM	5:15PM
-Honors Student Teach Practicum	UH	4104	AZ Smith	17913	2	L
+TS:Read Seminar Peer Educators	UH	4104	AZ Smith	19675	2	L	LITRV 1770	W	4:00PM	5:15PM
 Independent Study	UH	4974	PV Heilker	17914	1	I
 College Success Strategies	UNIV	1004	S Mondesir	17920	3	L	FEM 110	T R	9:30AM	10:45AM
 College Success Strategies	UNIV	1004	DF McGuire	17919	3	L	FEM 111	T R	2:00PM	3:15PM

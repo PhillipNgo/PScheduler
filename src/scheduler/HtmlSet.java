@@ -63,8 +63,10 @@ public class HtmlSet {
                 for (String s : classes.keySet()) {
                     LinkedList<String> types = new LinkedList<>();
                     LinkedList<String> profs = new LinkedList<>();
+                    LinkedList<String> crns = new LinkedList<>();
                     String name = null;
                     for (VTCourse c : classes.get(s)) {
+                        crns.add(c.getCRN());
                         if (types.indexOf(c.getClassType()) < 0) {
                             types.add(c.getClassType());
                         }
@@ -74,8 +76,8 @@ public class HtmlSet {
                         if (name == null) {
                             name = c.getName();
                         }
-                        writer.print("<li id='crn' class='list-group-item' style='display:none'>"
-                                + "<button class='btn btn-default btn-sm' type='button'>Add</button> " 
+                        writer.print("<li id='crn' class='list-group-item' style='display:none;'>"
+                                + "<button class='btn btn-default btn-sm crnb' type='button'>Add</button> " 
                                 + c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " - " + c.getName() + " / "
                                 + longClassType(c.getClassType()) + " / " + c.getProf());
                         Time t = c.getTimeSlot();
@@ -98,7 +100,7 @@ public class HtmlSet {
                         }
                         writer.print("</li>\r\n");
                     }
-                    writer.print("<li id='course' class='list-group-item' style='display:none'><button class='btn btn-default btn-sm' type='button'>Add</button> " 
+                    writer.print("<li id='course' class='list-group-item' style='display:none;'><button class='btn btn-default btn-sm courseb' type='button'>Add</button> " 
                             + subject + " " + s + " - " + name + " / " + longClassType(types.get(0)));
                     for (int i = 1; i < types.size(); i++) {
                         writer.print(", " + longClassType(types.get(i)));
@@ -106,6 +108,10 @@ public class HtmlSet {
                     writer.print(" / " + profs.get(0));
                     for (int i = 1; i < profs.size(); i++) {
                         writer.print(", " + profs.get(i));
+                    }
+                    writer.print(" / " + crns.get(0));
+                    for (int i = 1; i < crns.size(); i++) {
+                        writer.print(", " + crns.get(i));
                     }
                     writer.print("</li>\r\n");
                 }
