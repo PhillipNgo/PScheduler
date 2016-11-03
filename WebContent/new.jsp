@@ -14,6 +14,17 @@
 <link rel="stylesheet" href="stylesheets/styles.css">
 <script type="text/javascript" src="javascripts/search.js"></script>
 <script type="text/javascript" src="javascripts/Classes.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86032292-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
 <%@ page import="java.util.Scanner"%>
 <%@ page import="scheduler.HtmlSet"%>
 <%@ page import="java.io.File"%>
@@ -31,7 +42,7 @@
 	<div class="container-fluid">
 		<div style="padding-left: 5px;padding-right: 25px" class="row">
 			<div class="col-sm-3">
-			<form id="form" class="panel panel-default outline" action="">
+			<form id="form" class="panel panel-default outline" action="generate">
 				<div style="background-color: white" class="panel-heading">
 					<h2 style="color:darkorange">Restrictions</h2>
 				</div>

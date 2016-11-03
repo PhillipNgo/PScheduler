@@ -15,7 +15,11 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>ScheduleForm</servlet-name>
-    <url-pattern>/ScheduleForm.do</url-pattern>
+    <url-pattern>/generate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ScheduleGen</servlet-name>
+    <url-pattern>/generate</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>ModifyForm</servlet-name>
