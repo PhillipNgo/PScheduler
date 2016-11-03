@@ -182,7 +182,7 @@ public class VTParser {
         this.resetFields();
         HashMap<String, HashMap<String, LinkedList<VTCourse>>> list = new HashMap<>();
         for (int i = 1; i < subjects.length; i++) {
-            //System.out.println(i); //debugging
+            //System.out.println(i + " " + subjects[i]); //debugging
             vtForm.fillSelectField("subj_code", subjects[i]);
             list.put(subjects[i], parseCourseListing());
         }
@@ -411,7 +411,7 @@ public class VTParser {
      * @param termYear the term value
      * @throws Exception
      */
-    public static void outputFile(String termYear) throws Exception {
+    public static void outputTermDataFile(String termYear) throws Exception {
         VTParser parser = new VTParser(termYear);
         HashMap<String, HashMap<String, LinkedList<VTCourse>>> map = parser.parseTerm();
         String[] subjects = parser.getSubjectValues();
@@ -438,6 +438,25 @@ public class VTParser {
                     }
                 }
             }
+        }
+    }
+    
+    /**
+     * Outputs class data into an output file with the name of the term
+     * @param termYear the term value
+     * @throws Exception
+     */
+    public void outputTermsFile() throws Exception {
+        String[] optionNames = getTerms();
+        String[] optionValues = getTermValues();
+        int i = 1;
+        while (i < optionNames.length &&
+                (optionNames[i].contains("Summer") || optionNames[i].contains("Winter"))) {
+            i++;
+        }
+        try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+                new FileOutputStream("WebContent/Database/terms.txt"), "utf-8"))) {
+            writer.write(optionNames[i] + "/" + optionValues[i-1]);
         }
     }
     
@@ -515,8 +534,9 @@ public class VTParser {
     }
     
     public static void main(String[] args) throws Exception {
-        VTParser.outputFile("201609");
-        VTParser.outputFile("201701");
+        //VTParser.outputFile("201609");
+        //(new VTParser()).outputTermsFile();
+        VTParser.outputTermDataFile("201701");
         //System.out.println(VTParser.parseTermFile("201609"));
     }
 }

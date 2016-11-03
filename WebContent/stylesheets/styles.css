@@ -84,3 +84,7 @@ table {
 .hide {
 	display: none;
 }
+
+.position {
+	position: fixed;
+}

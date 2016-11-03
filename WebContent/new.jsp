@@ -14,13 +14,14 @@
 <link rel="stylesheet" href="stylesheets/styles.css">
 <script type="text/javascript" src="javascripts/search.js"></script>
 <%@ page import="java.util.Scanner"%>
+<%@ page import="scheduler.HtmlSet"%>
 <%@ page import="java.io.File"%>
 
 </head>
 <body style="background-color: #eceeef">
 	<div class="header">
 		<div class="container-fluid">
-			<h1>
+			<h1 style="font-size:350%">
 				<span style="color: darkorange">P</span><span style="color: white">Scheduler</span>
 				<small style="color: darkorange"><i>VT Schedule Creation</i></small>
 			</h1>
@@ -38,17 +39,8 @@
 						<h4>Term</h4>
 						<select name="term" id="term" class="selectpicker">
 							<%
-        	 	 				Scanner scan;
-        	     				try {
-        	         				scan = new Scanner(new File("webapps/ROOT/SelectOptions/TermOptions.txt"));
-        	     				}
-        	     				catch (Exception e) {
-        	         				scan = new Scanner(new File("WebContent/SelectOptions/TermOptions.txt"));
-        	     				}
-        	     				while (scan.hasNextLine()) {
-        	         				out.print(scan.nextLine());
-        	     				}
-        	     				scan.close();
+        	 	 				HtmlSet writer = new HtmlSet(out);
+								writer.termOptions();
         	 				%>
 						</select>
 					</div>
@@ -154,36 +146,24 @@
 			</div>
       		
 			<div style="text-align: center;" class="col-sm-9">
-				<input type="text" class="form-control live-search-box" placeholder="Search A Course">
-				<ul id="search" class="list-group live-search-list" style="position:fixed;text-align:left;">
-					<%
-					    try {
-					        scan = new Scanner(new File(
-					                "webapps/ROOT/SelectOptions/201701options.html"));
-					    }
-					    catch (Exception e) {
-					        scan = new Scanner(
-					                new File("WebContent/SelectOptions/201701options.html"));
-					    }
-
-					    while (scan.hasNextLine()) {
-					        out.print(scan.nextLine());
-					    }
-					    try {
-					        scan = new Scanner(new File(
-					                "webapps/ROOT/SelectOptions/201609options.html"));
-					    }
-					    catch (Exception e) {
-					        scan = new Scanner(
-					                new File("WebContent/SelectOptions/201609options.html"));
-					    }
-
-					    while (scan.hasNextLine()) {
-					        out.print(scan.nextLine());
-					    }
-					    scan.close();
-					%>
-				</ul>
+			
+				<div class="input-group">
+					<div class="input-group-btn">
+						<select id="searchtype" class="selectpicker" data-width="auto">
+							<option value="course">Course</option>
+							<option value="crn">CRN</option>
+						</select>
+					</div>
+					<div><input type="text" class="form-control live-search-box" placeholder="Search a Course, CRN, Professor (PHYS 2305, 85124, Boyer, etc.)"></div>
+				</div>
+				<div style="margin-right:-50px">
+					<ul id="search" class="list-group live-search-list" style="position:fixed;text-align:left;">
+						<%	
+						    writer.searchOptions();
+						%>
+					</ul>
+				</div>
+				
 				
 				<h2 style="color:darkorange">Current Schedule</h2>
 				<table class="table border" style="background-color:white;">
@@ -202,7 +182,7 @@
 						<tr style="text-align:center">
 							<td style="vertical-align:middle" scope="row">1</td>
 							<td>
-								<select class="selectpicker" data-width="auto">
+								<select style="width:50%;margin-left:auto;margin-right:auto" class="form-control">
 									<option>Any</option>
 									<option>11111</option>
 								</select>
@@ -210,13 +190,13 @@
 							<td style="vertical-align:middle">ECE 2014</td>
 							<td style="vertical-align:middle">ECE Professionalism</td>
 							<td>
-								<select class="selectpicker" data-width="auto">
+								<select style="width:60%;margin-left:auto;margin-right:auto" class="form-control">
 									<option>Lecture</option>
 									<option>Independent Study</option>
 								</select>
 							</td>
 							<td>
-								<select class="selectpicker" data-width="auto">
+								<select style="width:60%;margin-left:auto;margin-right:auto" class="form-control">
 									<option>Ball</option>
 									<option>Super Long Name</option>
 								</select>

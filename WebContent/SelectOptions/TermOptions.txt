@@ -1,2 +1,0 @@
-<option value="201701">Spring 2017</option>
-<option value="201609">Fall 2016</option>
