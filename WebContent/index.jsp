@@ -33,7 +33,7 @@
 	<div class="header">
 		<div class="container-fluid">
 			<h1 style="font-size:350%">
-				<span style="color: darkorange">P</span><span style="color: white">Scheduler</span>
+				<a href='http://www.pscheduler.com' style='text-decoration:none'><span style="color: darkorange">P</span><span style="color: white">Scheduler</span></a>
 				<small style="color: darkorange"><i>VT Schedule Creation</i></small>
 			</h1>
 		</div>
@@ -152,8 +152,8 @@
 						<button style="color:darkorange;width:100%" class="btn btn-default btn-lg" type="submit" onClick="sendData()"><b>Create Schedules</b></button>
 				</div>
 			</form>
-			*Added CRNs Ignore Time and Day Restrictions<br>
-			*Class Data Last Updated: 10/21/2016
+			*Specific CRNs Ignore Time and Day Restrictions<br>
+			*Class Data Last Updated: 11/4/2016
 			</div>
       		
 			<div style="text-align: center;" class="col-sm-9">
@@ -202,7 +202,7 @@
 		<div style="padding: 2vh 15vw 2vh 15vw;" class="container-fluid">
 			<div style="color:white;" class="row">
 				<div class="col-sm-4 text-right">
-					ngophill@vt.edu
+					<a href='mailto:ngophill@vt.edu' style='color:white'>ngophill@vt.edu</a>
 				</div>
 				<div class="col-sm-4 text-center">
 					<a style="color:darkorange;" href="https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_DispRequest">Virginia Tech Class Time Table</a>

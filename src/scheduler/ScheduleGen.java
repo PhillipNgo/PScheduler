@@ -24,7 +24,6 @@ public class ScheduleGen extends HttpServlet {
      */
     public ScheduleGen() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     /**
@@ -44,7 +43,6 @@ public class ScheduleGen extends HttpServlet {
             schedules = null;
             exc = e;
         }
-        
         
         // -- HEAD START -- ///
         html.append("<!DOCTYPE html>");
@@ -77,7 +75,8 @@ public class ScheduleGen extends HttpServlet {
         html.append("<div style='background-color: DarkSlateGray; border-bottom: 1px solid darkorange;'>");
         html.append("<div class='container-fluid'>");
         html.append("<h1>");
-        html.append("<span style='color: darkorange'>P</span><span style='color: white'>Scheduler</span>");
+        html.append("<a href='http://www.pscheduler.com' style='text-decoration:none'>");
+        html.append("<span style='color: darkorange'>P</span><span style='color: white'>Scheduler</span></a>");
         html.append("<small style='color: darkorange'><i> VT Schedule Creation</i></small>");
         html.append("</h1>");
         html.append("</div>");
@@ -152,11 +151,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("<div style='padding-top:0px' class='panel-body'>");
         
         try {
-            if (schedules == null) {
-                html.append("Error in Making Schedules<br>Please submit a bug below in the footer using this url<br>");
-                html.append(exc.getMessage());
-            }
-            else if (schedules.size() == 0) {
+            if (schedules == null || schedules.size() == 0) {
                 html.append("No Schedules Matched Your Parameters");
             }
             else if (schedules.size() < 1000) {
@@ -173,8 +168,7 @@ public class ScheduleGen extends HttpServlet {
             }
         }
         catch (Exception e) {
-            html.append("Error in Displaying Schedules<br>Please submit a bug below in the footer using this url<br>");
-            html.append(exc.getMessage());
+            html.append("Error in Displaying Schedules<br>Please email me the url of this page!<br>");
         }
             
         html.append("</div>");
@@ -189,7 +183,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("<div style='padding: 2vh 15vw 2vh 15vw;' class='container-fluid'>");
         html.append("<div style='color:white;' class='row'>");
         html.append("<div class='col-sm-4 text-right'>");
-        html.append("ngophill@vt.edu");
+        html.append("<a href='mailto:ngophill@vt.edu' style='color:white'>ngophill@vt.edu</a>");
         html.append("</div>");
         html.append("<div class='col-sm-4 text-center'>");
         html.append("<a style='color:darkorange;' href='https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_DispRequest'>Virginia Tech Class Time Table</a>");

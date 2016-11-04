@@ -14,6 +14,7 @@ Small Bus Mgt and Ent	AAEC	3454	MF Dickhans	10074	3	L	LITRV 1870	T R	12:30PM	1:4
 International Trade & Finance	AAEC	6304	JH Grant	10099	3	L	TBA	T R	11:00AM	12:15PM
 Env Theory & Policy Analysis	AAEC	6524	K Moeltner	19386	4	L	HUTCH 209	T R	11:00AM	12:15PM
 Real Estate Appraisal	AAEC	4764	LL Geyer	10082	1	L	SMYTH 146	T R	12:30PM	1:45PM
+SS:Strategic Mgt & Negotiation	AAEC	4984	RT Crowder	19696	3	L	HUTCH 310	M W	7:45AM	8:50AM
 SS: Crop Farm Price Risk Mgmt	AAEC	4984	O Isengildina Massa	19686	1	L
 Independent Study	AAEC	5974	SC Blank	10096	1	I
 Ag Price Analysis	AAEC	4504	O Isengildina Massa	10081	3	L	LITRV 1800	M W	2:30PM	3:45PM
@@ -130,8 +131,7 @@ Intro to Bus Analytics & BI	ACIS	1504	EA Martin	10104	3	L	MCB 100	T R	9:30AM	10:
 Intro to Bus Analytics & BI	ACIS	1504	EA Martin	10103	3	L	MCB 100	T R	8:00AM	9:15AM
 Intro to Bus Analytics & BI	ACIS	1504	EA Martin	10102	3	L	MCB 100	T R	9:30AM	10:45AM
 Poverty in Black America	AFST	5364	ET Graves	18424	3	L	MCB 658	R	8:00AM	10:50AM
-TS: Documenting the Sixties	AFST	4354	Staff	19683	3	L	MCB 202	M	10:10AM	12:45PM	MCB 202	W	11:30AM	12:45PM
-TS: Embattled Knowledge	AFST	4354	Staff	19601	3	L	WLH 330	T R	2:00PM	3:15PM
+TS: Embattled Knowledge	AFST	4354	PS Polanah	19601	3	L	WLH 330	T R	2:00PM	3:15PM
 Topics in Africana Studies	AFST	4354	AC Neff	10213	3	L	NOR 209	T	2:00PM	4:50PM
 Afro-American History	AFST	3176	B Bunch-Lyons	10211	3	O
 The Black Woman in the U.S.	AFST	2734	P Seniors	18385	3	O
@@ -139,7 +139,7 @@ Independent Study	AFST	4974H	Staff	10217	1	I
 Independent Study	AFST	2974	Staff	10210	1	I
 African Amer Ldrship for Chng	AFST	3454	DL Lee	10212	3	L	SURGE 103A	M W F	1:25PM	2:15PM
 Undergraduate Research	AFST	4994	Staff	10218	1	R
-SS:Strctr of Racial Inequality	AFST	5984	WL Reed	19690	3	L	TBA	T	2:00PM	4:50PM
+SS:Strctr of Racial Inequality	AFST	5984	WL Reed	19690	3	L	MCB 566	T	2:00PM	4:50PM
 Independent Study	AFST	5974	Staff	10221	1	I
 Internship	AFST	4754	Staff	10214	1	L
 Independent Study	AFST	4974	Staff	10216	1	I
@@ -277,7 +277,7 @@ Animal Breeding and Genetics	ALS	3104	EA Dunnington	10330	3	L	ENGEL 223	F	9:05AM
 Neurochemical Regulation	ALS	4554	DM Denbow	10335	3	L	WAL 244	T R	12:30PM	1:45PM
 Undergraduate Research	ALS	4994	IC Allen	10339	1	R
 Endocrinology	ALS	6314	H Jiang	18064	3	L	LITRV 1800	M W F	11:15AM	12:05PM
-Field Study	ALS	5964	SS Sumner	10350	1	L
+Field Work/Practicum	ALS	5964	SS Sumner	10350	1	L
 Watershed Assess Mgt Policy	ALS	4614	DJ Bosch	10337	2	L	JCH 212	R	3:30PM	5:25PM
 Structural Optimization	AOE	5064	RA Canfield	19602	3	O
 Structural Optimization	AOE	5064	RA Canfield	19551	3	L	RAND 208	M W F	9:05AM	9:55AM
@@ -962,23 +962,23 @@ Field Work/Practicum	ART	5964	TJ Tucker	10975	1	L
 TS:Laser Cutting and Engraving	ART	4514	EJ Standley	10937	3	L	ARMRY 101	T R	3:30PM	6:15PM
 Adv 3D Animation & Composting	ART	5724	Staff	10972	3	L
 Creat Digi Tech in Arts & Des	ART	5604	RL Weaver	10966	3	L	LIBR 120	T R	3:30PM	5:25PM
-AFROTC Leadership Laboratory	AS	2944	JM Guy	10992	1	B	TORG 1010	F	8:00AM	8:50AM
-AFROTC Leadership Laboratory	AS	2944	JM Guy	10991	1	B	MCB 100	T	3:30PM	4:45PM
-AFROTC Leadership Laboratory	AS	2944	JM Guy	10990	1	B	MCB 100	T	3:30PM	4:45PM
-AFROTC Leadership Laboratory	AS	2944	JM Guy	10989	1	B	MCB 100	T	3:30PM	4:45PM
-AFROTC Leadership Laboratory	AS	2944	JM Guy	10988	1	B	MCB 100	T	3:30PM	4:45PM
+AFROTC Leadership Laboratory	AS	2944	SC McGan	10992	1	B	TORG 1010	F	8:00AM	8:50AM
+AFROTC Leadership Laboratory	AS	2944	SC McGan	10991	1	B	MCB 100	T	3:30PM	4:45PM
+AFROTC Leadership Laboratory	AS	2944	SC McGan	10990	1	B	MCB 100	T	3:30PM	4:45PM
+AFROTC Leadership Laboratory	AS	2944	SC McGan	10989	1	B	MCB 100	T	3:30PM	4:45PM
+AFROTC Leadership Laboratory	AS	2944	SC McGan	10988	1	B	MCB 100	T	3:30PM	4:45PM
 Introduction to the Air Force	AS	1116	SC McGan	10983	1	L	MCB 129	W	1:25PM	2:15PM
 Introduction to the Air Force	AS	1116	SC McGan	10982	1	L	SURGE 118B	W	11:15AM	12:05PM
 The Development of Air Power	AS	2116	JM Guy	10985	1	L	SEC 203	T	11:00AM	11:50AM
 The Development of Air Power	AS	2116	JM Guy	10984	1	L	GYM 124	W	10:10AM	11:00AM
 AF Management & Leadership	AS	3216	RA Ward	10994	3	L	MIL 208	M W F	12:20PM	1:10PM
 AF Management & Leadership	AS	3216	RA Ward	10993	3	L	MIL 208	M W F	1:25PM	2:15PM
-Independent Study	AS	4974	JM Guy	10998	3	I
-Independent Study	AS	4974	JM Guy	10997	3	I
-Natl Security Forces	AS	4216	CW Torrens	10996	3	L	MIL 208	T R	12:30PM	1:45PM
-Natl Security Forces	AS	4216	CW Torrens	10995	3	L	MIL 208	T R	9:30AM	10:45AM
-Air Force Fitness	AS	2934	JM Guy	10987	1	L	MIL 207	M W	8:00AM	9:15AM
-Air Force Fitness	AS	2934	JM Guy	10986	1	L	MIL 207	T R	8:00AM	9:15AM
+Independent Study	AS	4974	SC McGan	10998	3	I
+Independent Study	AS	4974	SC McGan	10997	3	I
+Natl Security Forces	AS	4216	CA Cox	10996	3	L	MIL 208	T R	12:30PM	1:45PM
+Natl Security Forces	AS	4216	CA Cox	10995	3	L	MIL 208	T R	9:30AM	10:45AM
+Air Force Fitness	AS	2934	SC McGan	10987	1	L	MIL 207	M W	8:00AM	9:15AM
+Air Force Fitness	AS	2934	SC McGan	10986	1	L	MIL 207	T R	8:00AM	9:15AM
 Theories of Globalization	ASPT	6014	MJ Caraccioli	18696	3	L	MAJWM 502	R	2:00PM	5:00PM
 Research and Dissertation	ASPT	7994	F Debrix	11003	1	R
 Critical Security Studies	ASPT	5464	P Dixit	19406	3	L	MAJWM 502	W	5:30PM	8:20PM
@@ -1594,7 +1594,7 @@ Independent Study	BSE	5974	ML Wolfe	11598	1	I
 Independent Study	BSE	4974	ML Wolfe	11573	1	I
 Seminar	BSE	5944	PK Mallikarjunan	11597	1	L	HABB1 108	T	3:30PM	4:45PM
 Project and Report	BTDM	5904	Staff	11635	1	R
-Tech Envir Analysis	CEE	5184	AM Dietrich	11737	3	L	HUTCH 310	M W	2:30PM	3:45PM
+Tech Envir Analysis	CEE	5184	AM Dietrich	11737	3	L	PAM 3028	M W	2:30PM	3:45PM
 Advanced Coastal Engineering	CEE	5854G	JL Irish	11765	3	L	PAT 12	T R	9:30AM	10:45AM
 Advanced Open Channel Flow	CEE	5384	KB Strom	11742	3	L	PAT 215	M W F	11:15AM	12:05PM
 Unit Ops & Proc Lab	CEE	5144	WR Knocke	11735	3	L	TBA	T R	2:00PM	4:45PM
@@ -1856,7 +1856,6 @@ Fluid Mech for CEE	CEE	3304	RP Scardina	11658	0	B	PAT 12	W	4:30PM	6:20PM
 Fluid Mech for CEE	CEE	3304	RP Scardina	11657	3	L	NCB 250	M W F	12:20PM	1:10PM
 Fluid Mech for CEE	CEE	3304	RP Scardina	11656	3	L	PAT 207	T R	12:30PM	1:45PM
 Fluid Mech for CEE	CEE	3304	RP Scardina	11655	0	B	PAT 12	R	4:00PM	5:50PM
-Reinf Concr Struct I	CEE	3424	Staff	11668	3	L	PAT 215	T R	9:30AM	10:45AM
 Reinf Concr Struct I	CEE	3424	RT Leon	11667	3	L	GOODW 125	T R	9:30AM	10:45AM
 Intro Environ Engr	CEE	3104	JW Metch	11653	3	L	PAT 207	M W F	10:10AM	11:00AM
 Intro Environ Engr	CEE	3104	JC Little	11652	3	L	RAND 129	T R	3:30PM	4:45PM
@@ -1921,6 +1920,7 @@ Instrument Design	CHEM	5144	JR Morris	12355	3	L	PAM 1002	M W	2:00PM	3:15PM
 Organometallic Chemistry	CHEM	6434	PA Deck	12366	3	L	MCB 207	M W F	9:05AM	9:55AM
 Survey of Chemical Literature	CHEM	4014	VK Long	12290	1	L	ROB 101	R	11:15AM	12:05PM
 Survey of Chemical Literature	CHEM	4014	VK Long	12289	1	L	ROB 103	M	11:15AM	12:05PM
+Chemical Kinetics	CHEM	5664	Staff	19694	3	L	PAM 3008	M W	5:30PM	6:45PM
 Gen Chemistry Lab for Majors	CHEM	1066	BE Hanson	12213	1	B	HAHN N 308	T	8:00AM	10:50AM
 Gen Chemistry Lab for Majors	CHEM	1066	BE Hanson	12212	1	B	HAHN N 308	T	11:00AM	1:50PM
 Gen Chemistry Lab for Majors	CHEM	1066	BE Hanson	12211	1	B	HAHN N 308	M	2:30PM	5:20PM
@@ -2691,7 +2691,7 @@ Exploration of Space	ECE	2164	Staff	12755	3	L	NCB 110	M W F	12:20PM	1:10PM
 AC Circuit Analysis	ECE	3004	Staff	12788	3	L	SURGE 104A	M W	2:30PM	3:45PM
 Semiconductor Device Fund	ECE	4214	Staff	12827	3	L	DURHM 261	T R	9:30AM	10:45AM
 Advanced VLSI Design	ECE	5545	Staff	18467	3	L	RAND 220	M W	4:00PM	5:15PM
-Telecommuncations	ECE	5666	Staff	18227	3	O
+Telecommuncations	ECE	5666	DG Sweeney	18227	3	O
 Independent Study	ECE	4974	Staff	12864	1	I
 Independent Study	ECE	4974	Staff	12863	1	I
 Independent Study	ECE	4974	Staff	12862	1	I
@@ -2884,7 +2884,7 @@ Stochastic Signals and Systems	ECE	5606	Staff	12907	3	O
 RFIC Design	ECE	5220	Staff	12890	3	L	MCB 212	M W	4:00PM	5:15PM
 Photonic Devices and Systems	ECE	6154	Staff	18247	3	L	RAND 320	T R	3:30PM	4:45PM
 Pwr Syst Prot Lab	ECE	4374	Staff	18290	1	B	WHIT 430	M	5:30PM	8:20PM
-IT Security and Trust	ECE	5586	Staff	12905	3	O
+IT Security and Trust	ECE	5586	DR Raymond	12905	3	O
 Advanced DSP and Filter Design	ECE	5620	Staff	18457	3	L	RAND 206A	T R	2:00PM	3:15PM
 Advanced Computer Vision	ECE	6554	Staff	13153	3	L	RAND 220	T R	2:00PM	3:15PM
 Electic Circuit Analysis Lab	ECE	2074	Staff	19100	1	B	SURGE 104D	W	5:30PM	6:45PM
@@ -3140,7 +3140,7 @@ Computer Architecture	ECE	5504	D Lee	18674	3	L	RAND 116	T R	12:30PM	1:45PM
 Testing & Verif Digit Systems	ECE	5506	Staff	12897	3	L	RAND 121	T R	3:30PM	4:45PM
 Computational Plasma Dynamics	ECE	6174	Staff	18284	3	L	TORG 1000	T R	2:00PM	3:15PM
 Computational Plasma Dynamics	ECE	6174	Staff	18283	3	O	TBA	T R	2:00PM	3:15PM
-Fundamentals Computer Systems	ECE	5484	Staff	12895	3	O
+Fundamentals Computer Systems	ECE	5484	KE Giles	12895	3	O
 Introduction to Space Weather	ECE	4154	Staff	19553	3	L	WHIT 257	T R	8:00AM	9:15AM
 Real-Time Systems	ECE	4550	Staff	12838	3	L	TORG 1030	T R	12:30PM	1:45PM
 Advanced Power Conversion Tech	ECE	5244	Staff	19595	3	L	WHIT 143	T R	3:30PM	4:45PM
@@ -3668,7 +3668,7 @@ First-Year Writing	ENGL	1106	RL Wurster	13792	3	L	PAM 31	M W F	1:25PM	2:15PM
 First-Year Writing	ENGL	1106	CC Correll	13791	3	L	PAM 3008	M W F	1:25PM	2:15PM
 First-Year Writing	ENGL	1106	CJ Clem	13790	3	L	PAM 3028	M W F	1:25PM	2:15PM
 First-Year Writing	ENGL	1106	R Uren	13789	3	L	PAM 1004	M W F	9:05AM	9:55AM
-First-Year Writing	ENGL	1106	CJ Clem	13788	3	L	RAND 206	M W F	11:15AM	12:05PM
+First-Year Writing	ENGL	1106	CJ Clem	13788	3	L	PAM 2002	M W F	11:15AM	12:05PM
 First-Year Writing	ENGL	1106	A Bhowmik	13787	3	L	RAND 121	M W F	11:15AM	12:05PM
 First-Year Writing	ENGL	1106	GK Natishan	13786	3	L	AA 109	M W	2:30PM	3:45PM
 First-Year Writing	ENGL	1106	JM Beckett	13785	3	L	RAND 220	T R	11:00AM	12:15PM
@@ -4248,7 +4248,7 @@ Food Safety and Security	FST	5614	Staff	19581	3	O
 Food Processing	FST	4406	JE Marcy	14335	2	L	FST 27	T R	12:30PM	1:45PM
 Research and Dissertation	GBCB	7994	DR Bevan	14358	1	R
 Seminar in GBCB	GBCB	5004	DR Bevan	14354	1	L	AA 7	R	3:55PM	4:45PM
-Prob Solving GBCB	GBCB	5874	S Li	14356	3	L	MCB 230	M	2:30PM	5:15PM
+Prob Solving GBCB	GBCB	5874	S Li	14356	3	L	WLH 345	M	2:30PM	5:15PM
 Computational Cell Biology	GBCB	5424	Y Cao	14355	3	L	HUTCH 207	T R	9:30AM	10:45AM
 Independent Study	GBCB	5974	DR Bevan	14357	1	I
 Geography of Wine	GEOG	4054	JD Boyer	14389	3	O
@@ -4578,8 +4578,8 @@ Engineering Cultures	HIST	2054	Staff	18749	0	L	LANE 134	F	11:15AM	12:05PM	SURGE 
 Engineering Cultures	HIST	2054	Staff	18747	0	L	LANE 134	F	10:10AM	11:00AM	SURGE 118C	M W	10:10AM	11:00AM
 Engineering Cultures	HIST	2054	Staff	18744	0	L	LANE 134	F	9:05AM	9:55AM	SURGE 118C	M W	10:10AM	11:00AM
 Engineering Cultures	HIST	2054	Staff	14671	3	O
-Engineering Cultures	HIST	2054	Staff	14670	3	O
-Engineering Cultures	HIST	2054	Staff	14669	3	O
+Engineering Cultures	HIST	2054	S Chung	14670	3	O
+Engineering Cultures	HIST	2054	SM Halimi	14669	3	O
 History of the United States	HIST	1116	Staff	19399	3	L	MAJWM 334	M W	4:00PM	5:15PM
 History of the United States	HIST	1116	D Halpin	18181	3	L	MCB 308	M W	2:30PM	3:45PM
 History of the United States	HIST	1116	NL Shumsky	14659	3	L	MAJWM 334	M W F	9:05AM	9:55AM
@@ -4813,7 +4813,7 @@ TS: Typography (1)	IDS	3224	EA Dorsa	19533	1	L	BURCH 000	W	9:30AM	12:00PM
 TS: Portfolio (2)	IDS	3224	B Kennedy	19530	1	L	BURCH 000	W	9:30AM	12:00PM
 Materials and Processes	IDS	3124	EA Dorsa	14912	3	L	SURGE 117A	T R	5:00PM	6:15PM
 ID Europe Study Abroad	IDS	3234	ML Sullivan	19538	3	L	BURCH 000	M	11:15AM	12:05PM
-TS:History of Tableware (2)	IDS	3234	WR Green	14919	1	L	BURCH 000	T R	3:30PM	4:45PM
+TS:History of Tableware (2)	IDS	3234	WR Green	14919	1	L	CO 400	T R	11:00AM	12:15PM
 TS:Studio Collective	IDS	3234	CB Pritchett	14918	1	L
 Industrial Design Lab IV	IDS	4015	EA Dorsa	14920	6	L	BURCH 000	M W F	1:00PM	4:50PM
 Industrial Design Lab IV	IDS	4016	EA Dorsa	14921	6	L	BURCH 000	M W F	1:00PM	4:50PM
@@ -5081,8 +5081,8 @@ Interior Design IV	ITDS	3054	E Tural	15169	6	L	BUR 222E	M W F	1:00PM	4:45PM
 Constructin Documents for ID	ITDS	3184	MD Wagner	15173	3	L	BUR 224A	T R	3:30PM	4:45PM
 Elementary Japanese	JPN	1106	Staff	19240	3	L	MCB 223	M W F	12:20PM	1:10PM
 Elementary Japanese	JPN	1106	Staff	15184	3	L	AA 114	M W F	1:25PM	2:15PM
-Elementary Japanese	JPN	1106	Y Younos	15183	3	L	SMYTH 232	M W F	11:15AM	12:05PM
-Elementary Japanese	JPN	1106	Y Younos	15182	3	L	SMYTH 232	M W F	9:05AM	9:55AM
+Elementary Japanese	JPN	1106	Y Younos	15183	3	L	MCB 204	M W F	11:15AM	12:05PM
+Elementary Japanese	JPN	1106	Y Younos	15182	3	L	MCB 204	M W F	9:05AM	9:55AM
 Elementary Japanese	JPN	1106	Y Younos	15181	3	L	PAM 1001	M W F	12:20PM	1:10PM
 Independent Study	JPN	4974H	Staff	15195	1	I
 Independent Study	JPN	4974H	Staff	15194	1	I
@@ -5108,6 +5108,8 @@ Independent Study	JUD	4974	Staff	15203	1	I
 Independent Study	JUD	2974H	Staff	15202	1	I
 Undergraduate Research	JUD	4994H	Staff	15206	1	R
 Independent Study	LAHS	4974H	Staff	15209	1	I
+SS: Academic Recovery: ASPIRE	LAHS	2984	TM Amal	19692	1	L	TBA	W	11:15AM	12:05PM
+SS: Academic Recovery: ASPIRE	LAHS	2984	TM Amal	19691	1	L	TBA	M	1:25PM	2:15PM
 Undergraduate Research	LAHS	4994	Staff	15212	1	R
 Undergraduate Research	LAHS	4994	Staff	15211	1	R
 Undergraduate Research	LAHS	4994	RP Stephens	15210	1	R
@@ -5465,11 +5467,11 @@ Independent Study	ME	4974H	Staff	15660	1	I
 Independent Study	ME	4974H	Staff	15659	1	I
 System Dynamics	ME	3514	Staff	15602	3	L	RAND 331	M W F	9:05AM	9:55AM
 System Dynamics	ME	3514	Staff	15601	3	L	RAND 331	M W F	8:00AM	8:50AM
+Engr Design & Econ	ME	2024	Staff	19697	3	L	RAND 206	M W F	11:15AM	12:05PM
 Engr Design & Econ	ME	2024	Staff	15565	3	L	RAND 206A	M W F	11:15AM	12:05PM
 Engr Design & Econ	ME	2024	Staff	15564	3	L	RAND 206A	M W F	12:20PM	1:10PM
 Engr Design & Econ	ME	2024	Staff	15563	3	L	RAND 206	M W F	1:25PM	2:15PM
 Engr Design & Econ	ME	2024	Staff	15562	3	L	RAND 206	M W F	12:20PM	1:10PM
-Combustion	ME	5214	Staff	18781	3	L	RAND 206A	T R	11:00AM	12:15PM
 Mechanical Engineering Lab	ME	4005	ST Huxtable	15624	0	B	GOODW 130	T	10:00AM	11:50AM
 Mechanical Engineering Lab	ME	4005	ST Huxtable	15623	0	B	GOODW 130	W	4:30PM	6:20PM
 Mechanical Engineering Lab	ME	4005	ST Huxtable	15622	0	B	GOODW 130	W	6:30PM	8:20PM
@@ -5774,7 +5776,7 @@ Advanced Mechatronics	ME	5736G	AL Wicks	15715	3	L	RAND 100L	M W F	9:05AM	9:55AM
 Adv Topics in Thermodynamics	ME	6104	MR von Spakovsky	18784	3	L	MCB 210	T R	2:00PM	3:15PM
 Adv Topics in Thermodynamics	ME	6104	MR von Spakovsky	15834	3	O	TBA	T R	11:00AM	12:15PM
 Linear Control Theory	ME	6544	MH Farhood	15839	3	L	RAND 206	T R	3:30PM	4:45PM
-SS: Adv Nonlinear Systems	ME	6984	Staff	19685	3	L	MCB 201	T R	9:30AM	10:45AM
+SS: Adv Nonlinear Systems	ME	6984	AJ Kurdila	19685	3	L	MCB 201	T R	9:30AM	10:45AM
 Energy Systems	ME	5334	F Battaglia	18112	3	L	WLH 330	M W	2:30PM	3:45PM
 Dynamic Systems - Vibrations	ME	3504	Staff	15600	3	L	GOODW 115	M W F	10:10AM	11:00AM
 Dynamic Systems - Vibrations	ME	3504	Staff	15599	3	L	GOODW 145	T R	9:30AM	10:45AM
@@ -5816,6 +5818,7 @@ Undergraduate Research	ME	4994	Staff	15664	1	R
 Undergraduate Research	ME	4994	Staff	15663	1	R
 Undergraduate Research	ME	4994	Staff	15662	1	R
 Undergraduate Research	ME	4994	Staff	15661	1	R
+Radiation Heat Transfer	ME	5324	JR Mahan	19695	3	L	RAND 206A	T R	11:00AM	12:15PM
 Modeling MEMS and NEMS	ME	5764	MR Paul	18389	3	L	RAND 110	T R	11:00AM	12:15PM
 Rapid Prototyping	ME	5644	Staff	18771	3	L	GOODW 155	T R	9:30AM	10:45AM
 Bayesian Robotics	ME	5524	T Furukawa	15704	3	L	RAND 206	W	4:00PM	6:45PM
@@ -5854,7 +5857,7 @@ International Business	MGT	3314	P Thakur Wernz	15949	3	L	WLH 335	T R	11:00AM	12:
 Managing Human Resources	MGT	3334	Staff	15952	3	L	WMS 220	T R	12:30PM	1:45PM
 MGT Career Planning Strategy	MGT	3014	BL O'Donnell	18655	3	L	WLH 335	M W	2:30PM	3:45PM
 SS: Global Ldrship St-Cadets	MGT	4984	E Humphrey	19641	3	L	PAM 2002	F	1:30PM	3:00PM
-SS. Design Thinking	MGT	4984	KS Jones	19485	3	L
+SS. Design Thinking	MGT	4984	KS Jones	19485	3	L	HOLD 303	M W F	10:10AM	11:00AM
 Organization Behavior	MGT	5314	SE Markham	18431	3	L	NCB 270	T R	2:00PM	3:15PM
 Independent Study	MGT	5974	Staff	16021	1	I
 Independent Study	MGT	5974	Staff	16020	1	I
@@ -6331,7 +6334,7 @@ Undergraduate Research	NANO	4994	TE Long	16416	1	R
 Neuroscience Senior Seminar	NEUR	4044	ML Olsen	16430	3	L	LITRV 1770	M W	2:30PM	3:45PM
 Clinical Neuro in Practice	NEUR	4594	Staff	19626	3	H	RAND 316	T	9:30AM	10:45AM
 Introduction to Neuroscience	NEUR	2026	S Clinton	16420	3	L	LITRV 1670	T R	9:30AM	10:45AM
-Undergraduate Research	NEUR	2994	Staff	16427	1	R
+Undergraduate Research	NEUR	2994	MA Fox	16427	1	R
 Diseases of the Nervous System	NEUR	4034	HW Sontheimer	16429	3	L	RAND 110	M W	4:00PM	5:15PM
 Neuroscience Laboratory	NEUR	2036	CR McCoy	18798	1	B	NCB 350	F	1:25PM	4:10PM
 Neuroscience Laboratory	NEUR	2036	CR McCoy	16425	1	B	NCB 350	W	1:25PM	4:10PM
@@ -7342,6 +7345,7 @@ Sociological Theory	SOC	3104	ET Graves	17460	3	L	MCB 307	T R	11:00AM	12:15PM
 Dating, Marriage and Divorce	SOC	2014	KJ Kiecolt	17448	3	L	SURGE 118B	M W F	10:10AM	11:00AM
 Social Inequality	SOC	3004	DW Wimberley	17458	3	L	HOLD 110	T R	11:00AM	12:15PM
 Undergraduate Research	SOC	4994	Staff	17477	1	R
+Advanced Topics in Criminology	SOC	4434	Staff	19693	3	L	MCB 202	M	10:10AM	12:45PM	MCB 202	W	11:30AM	12:45PM
 Advanced Topics in Criminology	SOC	4434	DJ Davis	17472	3	O
 Juvenile Delinquency Justice	SOC	5424	DJ Shoemaker	18484	3	L	MCB 566	F	9:00AM	11:50AM
 Internship	SOC	4754	DA Sedgwick	17473	1	L
@@ -7512,9 +7516,9 @@ Engineering Cultures	STS	2054	GL Downey	19219	3	L	SURGE 118C	M W	10:10AM	11:00AM
 Engineering Cultures	STS	2054	GL Downey	18452	0	L	LANE 134	F	11:15AM	12:05PM	SURGE 118C	M W	10:10AM	11:00AM
 Engineering Cultures	STS	2054	GL Downey	18450	0	L	LANE 134	F	10:10AM	11:00AM	SURGE 118C	M W	10:10AM	11:00AM
 Engineering Cultures	STS	2054	GL Downey	18440	0	L	LANE 134	F	9:05AM	9:55AM	SURGE 118C	M W	10:10AM	11:00AM
-Engineering Cultures	STS	2054	Staff	17626	3	O
-Engineering Cultures	STS	2054	Staff	17625	3	O
-Engineering Cultures	STS	2054	Staff	17624	3	O
+Engineering Cultures	STS	2054	S Lotfi	17626	3	O
+Engineering Cultures	STS	2054	SM Halimi	17625	3	O
+Engineering Cultures	STS	2054	S Chung	17624	3	O
 History of Technology	STS	3716	RF Hirsh	19302	3	L	MCB 216	M W	2:30PM	3:45PM
 Independent Study	STS	4974H	Staff	17640	1	I
 Medical Dilemmas & Human Exper	STS	3314	PR Olson	17632	3	L	WMS 220	M W	2:30PM	3:45PM
