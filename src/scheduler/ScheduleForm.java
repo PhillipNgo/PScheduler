@@ -100,10 +100,6 @@ public class ScheduleForm extends HttpServlet {
             String term = request.getParameter("term");
             
             String[] classes = request.getParameter("schedule").split("xx");
-            //String[] subjects = new String[classes.length];
-            //String[] numbers = new String[classes.length];
-            //String[] types = new String[classes.length];
-            //boolean[] onlineAllowed = new boolean[classes.length];
             LinkedList<String> subjects = new LinkedList<>();
             LinkedList<String> numbers = new LinkedList<>();
             LinkedList<String> types = new LinkedList<>();
@@ -124,7 +120,7 @@ public class ScheduleForm extends HttpServlet {
                     }
                 }
             }
-            LinkedList<Schedule> schedules = ScheduleMaker.generateSchedule(term, subjects, numbers, types, startTime, endTime, freeDay, crns);
+            LinkedList<Schedule> schedules = new LinkedList<>();//ScheduleMaker.generateSchedule(term, subjects, numbers, types, startTime, endTime, freeDay, crns);
             
             if (schedules.size() == 0) {
                 html.append("No Schedules Matched Your Parameters");

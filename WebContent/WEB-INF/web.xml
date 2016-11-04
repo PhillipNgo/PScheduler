@@ -17,6 +17,10 @@
     <servlet-name>ScheduleForm</servlet-name>
     <url-pattern>/generate</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>ScheduleGen</servlet-name>
+    <servlet-class>scheduler.ScheduleGen</servlet-class>
+  </servlet>
   <servlet-mapping>
     <servlet-name>ScheduleGen</servlet-name>
     <url-pattern>/generate</url-pattern>
@@ -27,6 +31,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>ModifyForm</servlet-name>
-    <url-pattern>/ModifyForm.do</url-pattern>
+    <url-pattern>/#</url-pattern>
   </servlet-mapping>
 </web-app>

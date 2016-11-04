@@ -10,8 +10,8 @@ jQuery(document).ready(function($){
 		if (searchTerm.length > 1) {
 			var count = 0;
 			$('.live-search-list li').each(function(){
-				if ((($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) && $(this).attr('id') === searchType && count < 10)
-									|| $(this).attr('id') === 'hide') {
+				if ((($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) &&
+									$(this).attr('id') === searchType && count < 10) || $(this).attr('id') === 'hide') {
 					$(this).show();
 					count++;
 				} 
@@ -31,8 +31,8 @@ jQuery(document).ready(function($){
 
 	$('.crnb').each(function(){
 		$(this).on('click', function() {
-			addCRN($(this));
-			hide();
+				addCRN($(this));
+				hide();
 		});
 	});
 
@@ -42,6 +42,8 @@ jQuery(document).ready(function($){
 			hide();
 		});
 	});
+	
+
 });
 
 function hide() {

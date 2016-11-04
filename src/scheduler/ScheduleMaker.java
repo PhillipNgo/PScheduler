@@ -29,7 +29,7 @@ public final class ScheduleMaker {
      * @throws Exception
      */
     public static LinkedList<Schedule> generateSchedule(String term, LinkedList<String> subjects, LinkedList<String> numbers, LinkedList<String> types,   
-                                                        String start, String end, String freeDay, LinkedList<String> crns) throws Exception {
+                                                        String start, String end, String[] freeDays, LinkedList<String> crns, LinkedList<String> profs) throws Exception {
         LinkedList<Schedule> schedules = new LinkedList<>();
         LinkedList<LinkedList<VTCourse>> classes = new LinkedList<>();
         HashMap<String, HashMap<String, LinkedList<VTCourse>>> map = null; 
@@ -56,7 +56,7 @@ public final class ScheduleMaker {
             }
             Iterator<VTCourse> iter = curr.iterator();
             while (iter.hasNext()) {
-                if (!checkRestrictions(iter.next(), start, end, types.get(i), freeDay)) {
+                if (!checkRestrictions(iter.next(), start, end, types.get(i), freeDays, profs.get(i))) {
                     iter.remove();
                 }
             }
@@ -134,10 +134,15 @@ public final class ScheduleMaker {
      * @return true if the course meets the restrictions
      * @throws TimeException
      */
-    private static boolean checkRestrictions(VTCourse course, String start, String end, String type, String freeDay) throws TimeException {
+    private static boolean checkRestrictions(VTCourse course, String start, String end, String type, String[] freeDays,
+                                             String prof) throws TimeException {
         Time time = course.getTimeSlot();
          
         if (!type.equals("A") && !type.equals(course.getClassType())) {
+            return false;
+        }
+        
+        if (!prof.equals("A") && !prof.equals(course.getProf())) {
             return false;
         }
         
@@ -146,10 +151,12 @@ public final class ScheduleMaker {
         }      
         int startTime = Time.timeNumber(start);
         int endTime = Time.timeNumber(end);
-        if (Arrays.binarySearch(course.getDays(), freeDay) >= 0) {
-            return false;
-        }
-        else if (time.getStartNum() < startTime || time.getEndNum() > endTime) {
+        for (String d : freeDays) {
+            if (Arrays.binarySearch(course.getDays(), d) >= 0) {
+                return false;
+            }
+        } 
+        if (time.getStartNum() < startTime || time.getEndNum() > endTime) {
             return false;
         }
         
@@ -159,42 +166,15 @@ public final class ScheduleMaker {
         }
         startTime = Time.timeNumber(start);
         endTime = Time.timeNumber(end);
-        if (Arrays.binarySearch(course.getAdditionalDays(), freeDay) >= 0) {
-            return false;
+        for (String d : freeDays) {
+            if (Arrays.binarySearch(course.getAdditionalDays(), d) >= 0) {
+                return false;
+            }
         }
-        else if (time.getStartNum() < startTime || time.getEndNum() > endTime) {
+        if (time.getStartNum() < startTime || time.getEndNum() > endTime) {
             return false;
         }
 
         return true;
-    }
-    
-    public static void main(String[] args) throws Exception {
-        String term = "201701";
-        String[] subjects = new String[]{"CS", "CS", "ECE", "ECE", "ECE", "ECE", "ECE"};
-        String[] numbers = new String[]{"3114", "2506", "2014", "2524", "2704", "2204", "2274"};
-        String[] types = new String[]{"L", "L", "L", "L", "L", "L", "B"};
-        String[] crns = new String[]{};
-        //String[] subjects = new String[]{"AHRM", "AHRM", "MKTG", "FIN", "MUS", "BIT"};
-        //String[] numbers = new String[]{"2644", "2674", "3104H", "3074", "2056", "2406"};
-        //String[] types = new String[]{"O", "L", "L", "L", "L", "L"};
-        //String[] crns = new String[]{"10061"};
-        //String[] subjects = new String[]{"MATH"};
-        //String[] numbers = new String[]{"1014"};
-        //String[] types = new String[]{"L"};
-        //String[] crns = new String[]{};
-        String start = "8:00AM";
-        String end = "8:00PM";
-        String freeDay = "";
-        //long startTime = System.currentTimeMillis();
-        LinkedList<Schedule> schedules = ScheduleMaker.generateSchedule(term, new LinkedList<>(subjects), new LinkedList<>(numbers), 
-                                                                        new LinkedList<>(types), start, end, freeDay, new LinkedList<>(crns));
-        //System.out.println(schedules + "\n" + schedules.size());
-        //long endTime = System.currentTimeMillis();
-        //System.out.println(endTime - startTime);
-        if (schedules.size() == 0) {
-            throw new TimeException("No possible schedules, there must be conflicts");
-        }
-        ExcelSchedule.outputFile(schedules);
     }
 }

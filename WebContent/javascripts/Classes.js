@@ -1,4 +1,8 @@
 function addClass(button) {
+	if ($('#schedule tr').length > 13) {
+		return;
+	}
+		
 	var text = button.parent().text().split(" / ");
 	var crns = text[3].split(", ");
 	var types = text[1].split(", ");
@@ -42,6 +46,10 @@ function addClass(button) {
 }
 
 function addCRN(button) {
+	if ($('#schedule tr').length > 13) {
+		return;
+	}
+	
 	var text = button.parent().text().split(" / ");
 	var name = text[1].split(" - ");
 	var html =  "<tr><td>" +
@@ -113,5 +121,48 @@ function classType(type) {
 	    case "Independent Study": return "I";
 	    case "Research": return "R";
 	    default:  return "bug";
+	}
+}
+
+function setParameters() {
+	var qs = (function(a) {
+	    if (a == "") return {};
+	    var b = {};
+	    for (var i = 0; i < a.length; ++i)
+	    {
+	        var p=a[i].split('=', 2);
+	        if (p.length == 1)
+	            b[p[0]] = "";
+	        else
+	            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+	    }
+	    return b;
+	})(window.location.search.substr(1).split('&'));
+	
+	if (qs["term"] != undefined) {
+		var list = ["term", "h1", "m1", "start", "h2", "m2", "end", "free"];
+		//need to select right free days
+		for (var i = 0; i < list.length; i++) {
+			var option = document.getElementsByName(list[i])[0];
+			option.value = qs[list[i]];
+		}
+		var classList = qs["classes"].split("xx");
+		for (var i = 0; i < classList.length; i++) {
+			var str = classList[i];
+			var split = str.split('ZXD');
+			var index = 0;
+			if (split[0].charAt(split[0].length-1) == 'H') {
+                index = 1;
+            }
+			if (split[0].length == 5 && !isNaN(parseInt(split[0], 10))) {
+				$('[name="' + split[0] + '"]').click();
+			}
+			else {
+				$('[name="' + split[0].substring(1, split[0].length-4-index) + '"]').click();
+				$('#schedule tbody tr:last').children('td'); //continue here
+				selectClass(str.substring(1, str.length-4-index), str.substring(str.length-4-index, str.length));
+				document.getElementById("row" + i).value = str.substring(0, 1);
+			}			
+		}
 	}
 }
