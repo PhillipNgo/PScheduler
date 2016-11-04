@@ -34,14 +34,12 @@ public class ScheduleGen extends HttpServlet {
         PrintWriter printer = response.getWriter();
         StringBuilder html = new StringBuilder();
         LinkedList<Schedule> schedules;
-        Exception exc = null;
         
         try {
             schedules = getSchedules(request);
         }
         catch (Exception e) {
             schedules = null;
-            exc = e;
         }
         
         // -- HEAD START -- ///

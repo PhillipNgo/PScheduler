@@ -178,7 +178,6 @@
 					%>
 				</ul>
 
-
 				<h2 style="color:darkorange">Current Schedule</h2>
 				<table id="schedule" class="table border" style="background-color:white;">
 					<thead class="thead-inverse">
