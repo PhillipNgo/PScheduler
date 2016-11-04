@@ -142,7 +142,7 @@ public final class ScheduleMaker {
             return false;
         }
         
-        if (!prof.equals("A") && !prof.equals(course.getProf())) {
+        if (!prof.equals("A") && !(prof.replace("11", " ")).equals(course.getProf())) {
             return false;
         }
         
@@ -151,11 +151,13 @@ public final class ScheduleMaker {
         }      
         int startTime = Time.timeNumber(start);
         int endTime = Time.timeNumber(end);
-        for (String d : freeDays) {
-            if (Arrays.binarySearch(course.getDays(), d) >= 0) {
-                return false;
+        if (freeDays != null) {
+            for (String d : freeDays) {
+                if (Arrays.binarySearch(course.getDays(), d) >= 0) {
+                    return false;
+                }
             }
-        } 
+        }
         if (time.getStartNum() < startTime || time.getEndNum() > endTime) {
             return false;
         }
@@ -166,9 +168,11 @@ public final class ScheduleMaker {
         }
         startTime = Time.timeNumber(start);
         endTime = Time.timeNumber(end);
-        for (String d : freeDays) {
-            if (Arrays.binarySearch(course.getAdditionalDays(), d) >= 0) {
-                return false;
+        if (freeDays != null) {
+            for (String d : freeDays) {
+                if (Arrays.binarySearch(course.getAdditionalDays(), d) >= 0) {
+                    return false;
+                }
             }
         }
         if (time.getStartNum() < startTime || time.getEndNum() > endTime) {

@@ -43,7 +43,7 @@ jQuery(document).ready(function($){
 		});
 	});
 	
-
+	setParameters();
 });
 
 function hide() {

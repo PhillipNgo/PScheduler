@@ -1,19 +1,19 @@
 jQuery(document).ready(function($){
 
 	$('.hidetb').on('click', function(){
-		if (this.text() === 'Hide Table') {
+		if ($(this).text() === 'Hide Table') {
 			$('#textschedules').hide();
-			this.text('Show Table');
+			$(this).text('Show Table');
 		}
 		else {
 			$('#textschedules').show();
-			this.text('Hide Table');
+			$(this).text('Hide Table');
 		}
 	});
 	
 	$("#changet").on('keyup', function(e) {
 	    if (e.keyCode == 13) {
-	    	var num = parseInt(this.val());
+	    	var num = parseInt($(this).val()) - 1;
 	        if (!isNaN(num)) {
 	        	changeSchedule(num - parseInt($('#tableschedules').attr('name')));
 	        }
@@ -34,5 +34,6 @@ function changeSchedule(inc) {
 		listItem2[currNum].style.display = "none";
 		listItem2[currNum + inc].style.display = "table";
 		list2.attributes["name"].value = listItem[currNum + inc].id;
+		$('#changet').val(currNum + inc + 1);
 	}
 }

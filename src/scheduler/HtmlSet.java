@@ -76,8 +76,8 @@ public class HtmlSet {
                         if (name == null) {
                             name = c.getName();
                         }
-                        writer.print("<li name='" + c.getCRN() + "' id='crn' class='list-group-item' style='display:none;'>"
-                                + "<button class='btn btn-default btn-sm crnb' type='button'>Add</button> " 
+                        writer.print("<li id='crn' class='list-group-item' style='display:none;'>"
+                                + "<button name='" + c.getCRN() + "' class='btn btn-default btn-sm crnb' type='button'>Add</button> " 
                                 + c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " - " + c.getName() + " / "
                                 + longClassType(c.getClassType()) + " / " + c.getProf());
                         Time t = c.getTimeSlot();
@@ -100,8 +100,8 @@ public class HtmlSet {
                         }
                         writer.print("</li>\r\n");
                     }
-                    writer.print("<li name='" + subject + s + "' id='course' class='list-group-item' style='display:none;'>"
-                            + "<button class='btn btn-default btn-sm courseb' type='button'>Add</button> " 
+                    writer.print("<li id='course' class='list-group-item' style='display:none;'>"
+                            + "<button name='" + subject + s + "' class='btn btn-default btn-sm courseb' type='button'>Add</button> " 
                             + subject + " " + s + " - " + name + " / " + longClassType(types.get(0)));
                     for (int i = 1; i < types.size(); i++) {
                         writer.print(", " + longClassType(types.get(i)));

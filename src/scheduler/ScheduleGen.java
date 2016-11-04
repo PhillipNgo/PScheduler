@@ -78,7 +78,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("<div class='container-fluid'>");
         html.append("<h1>");
         html.append("<span style='color: darkorange'>P</span><span style='color: white'>Scheduler</span>");
-        html.append("<small style='color: darkorange'><i>VT Schedule Creation</i></small>");
+        html.append("<small style='color: darkorange'><i> VT Schedule Creation</i></small>");
         html.append("</h1>");
         html.append("</div>");
         html.append("</div>");
@@ -117,7 +117,7 @@ public class ScheduleGen extends HttpServlet {
             html.append("0 Schedules");
         }
         else {
-            html.append(schedules.size());
+            html.append(schedules.size() + " Schedules");
             if (schedules.size() != 0) {
                 html.append(" | " + schedules.get(0).totalCredits() + " Credit Hours");
             }
@@ -126,7 +126,7 @@ public class ScheduleGen extends HttpServlet {
         
         html.append("</div>");
         html.append("<div style='text-align:right' class='col-sm-1'>");
-        html.append("<form action=\"ModifyForm.do\">");
+        html.append("<form action='modify'>");
         html.append("<button type='submit' class='btn btn-default'>Modify Search</button>");
         html.append("<select style='display: none;' name='classes'><option value='" + request.getParameter("schedule") + "'></option></select>");
         html.append("<select style='display: none;' name='term'><option value='" + request.getParameter("term") + "'></option></select>");
@@ -137,8 +137,10 @@ public class ScheduleGen extends HttpServlet {
         html.append("<select style='display: none;' name='m2'><option value='" + request.getParameter("m2") + "'></option></select>");
         html.append("<select style='display: none;' name='end'><option value='" + request.getParameter("end") + "'></option></select>");
         String[] freeDays = request.getParameterValues("free");
-        for (String d : freeDays) {
-            html.append("<select style='display: none;' name='free'><option value='" + d + "'></option></select>");
+        if (freeDays != null) {
+            for (String d : freeDays) {
+                html.append("<select style='display: none;' name='free'><option value='" + d + "'></option></select>");
+            }
         }
         html.append("</form>");
         html.append("</div>");
@@ -158,11 +160,11 @@ public class ScheduleGen extends HttpServlet {
                 html.append("No Schedules Matched Your Parameters");
             }
             else if (schedules.size() < 1000) {
-                html.append("<ul id='textschedules' name='0'>");
+                html.append("<ul style='padding-left:0' id='textschedules' name='0'>");
                 appendTextSchedules(html, schedules);
                 html.append("</ul>");
            
-                html.append("<ul id='tableschedules' name='0'>");
+                html.append("<ul style='padding-top:5px; padding-left:0' id='tableschedules' name='0'>");
                 appendTableSchedules(html, schedules);
                 html.append("</ul>");
             }
@@ -269,8 +271,8 @@ public class ScheduleGen extends HttpServlet {
             html.append("<tr style='font-weight:bold'><td class='text'>CRN</td> <td  class='text'>Course</td> <td  class='text'>Title</td>"
                     + "<td class='text'>Type</td><td  class='text'>Credits</td><td  class='text'>Instructor</td>"
                     + "<td class='text'>Days</td> <td  class='text'>Time</td> <td  class='text'>Location</td></tr>");
+            int j = 0;
             for (VTCourse c : schedule) {
-                int j = 0;
                 html.append("<tr class='left'"); //background color goes here
                 if (c.getTimeSlot() != null) {
                     html.append(" style='background-color:" + colors[j] + "'");

@@ -10,12 +10,12 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-    <servlet-name>ScheduleForm</servlet-name>
-    <servlet-class>scheduler.ScheduleForm</servlet-class>
+    <servlet-name>ModifyForm</servlet-name>
+    <servlet-class>scheduler.ModifyForm</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>ScheduleForm</servlet-name>
-    <url-pattern>/generate</url-pattern>
+    <servlet-name>ModifyForm</servlet-name>
+    <url-pattern>/modify</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>ScheduleGen</servlet-name>
@@ -24,13 +24,5 @@
   <servlet-mapping>
     <servlet-name>ScheduleGen</servlet-name>
     <url-pattern>/generate</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>ModifyForm</servlet-name>
-    <servlet-class>scheduler.ModifyForm</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ModifyForm</servlet-name>
-    <url-pattern>/#</url-pattern>
   </servlet-mapping>
 </web-app>

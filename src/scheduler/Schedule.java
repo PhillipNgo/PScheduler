@@ -86,7 +86,7 @@ public class Schedule extends LinkedList<VTCourse> {
                 min = Math.min(Time.timeNumber(curr.getTimeSlot().getStart()), min);
             }
             if (curr.getAdditionalTime() != null) {
-                min = Math.max(Time.timeNumber(curr.getAdditionalTime().getStart()), min);
+                min = Math.min(Time.timeNumber(curr.getAdditionalTime().getStart()), min);
             }
             early = Math.min(min, early);
         }

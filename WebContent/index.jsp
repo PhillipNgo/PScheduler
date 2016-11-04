@@ -1,15 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Scheduler</title>
-  <link rel="stylesheet" href="stylesheets/styles.css">
-  <script src="javascripts/Classes.js" type="text/javascript"></script>
-  <%@ page import="java.util.Scanner"%>
-  <%@ page import="java.io.File"%>
-</head>
+<title>PScheduler</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+<link rel="stylesheet" href="stylesheets/styles.css">
+<script type="text/javascript" src="javascripts/search.js"></script>
+<script type="text/javascript" src="javascripts/Classes.js"></script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -19,206 +23,195 @@
   ga('create', 'UA-86032292-1', 'auto');
   ga('send', 'pageview');
 </script>
-<body class="Site">
-  <header>
-    <h1><a href="http://pscheduler.us-west-2.elasticbeanstalk.com">Scheduler</a></h1>
-    <p class="view">VT Schedule Creation</p>
-    
-  </header>
-  <div class="parent">
-    <div class="child box1">
 
-      <form name="form" id="form" action="ScheduleForm.do">
-        <h3>Term:</h3><br>
-        <select name="term" id="term" onchange="displayNums(true)">
-        	 <%
-        	 	 Scanner scan;
-        	     try {
-        	         scan = new Scanner(new File("webapps/ROOT/SelectOptions/TermOptions.txt"));
-        	     }
-        	     catch (Exception e) {
-        	         scan = new Scanner(new File("WebContent/SelectOptions/TermOptions.txt"));
-        	     }
-        	     while (scan.hasNextLine()) {
-        	         out.print(scan.nextLine());
-        	     }
-        	     scan.close();
-        	 %>
-      	</select><br><br>
-        <h3>Earliest Start:<br>
-      	<select name="hour1">
-       		<option value="1">01</option>
-      		<option value="2">02</option>
-      		<option value="3">03</option>
-      		<option value="4">04</option>
-      		<option value="5">05</option>
-      		<option value="6">06</option>
-      		<option value="7">07</option>
-      		<option value="8" selected="selected">08</option>
-      		<option value="9">09</option>
-      		<option value="10">10</option>
-      		<option value="11">11</option>
-      		<option value="12">12</option>
-      	</select>
-      	:
-      	<select name="minute1">
-      		<option value="1">00</option>
-      		<option value="2">05</option>
-      		<option value="3">10</option>
-      		<option value="4">15</option>
-      		<option value="5">20</option>
-      		<option value="6">25</option>
-      		<option value="7">30</option>
-      		<option value="8">35</option>
-      		<option value="9">40</option>
-      		<option value="10">45</option>
-      		<option value="11">50</option>
-      		<option value="12">55</option>
-      	</select>
-      	<select name="start">
-      		<option value="am">AM</option>
-      		<option value="pm">PM</option>
-      	</select></h3> &nbsp;to&nbsp;
-        <h3>Latest End:<br>
-      	<select name="hour2">
-      		<option value="1">01</option>
-      		<option value="2">02</option>
-      		<option value="3">03</option>
-      		<option value="4">04</option>
-      		<option value="5">05</option>
-      		<option value="6">06</option>
-      		<option value="7">07</option>
-      		<option value="8" selected="selected">08</option>
-      		<option value="9">09</option>
-      		<option value="10">10</option>
-      		<option value="11">11</option>
-      		<option value="12">12</option>
-      	</select>
-      	:
-      	<select name="minute2">
-      		<option value="1">00</option>
-      		<option value="2">05</option>
-      		<option value="3">10</option>
-      		<option value="4">15</option>
-      		<option value="5">20</option>
-      		<option value="6">25</option>
-      		<option value="7">30</option>
-      		<option value="8">35</option>
-      		<option value="9">40</option>
-      		<option value="10">45</option>
-      		<option value="11">50</option>
-      		<option value="12">55</option>
-      	</select>
-      	<select name="end">
-      		<option value="am">AM</option>
-      		<option value="pm" selected="selected">PM</option>
-      	</select></h3><br><br>
+<%@ page import="java.util.Scanner"%>
+<%@ page import="scheduler.HtmlSet"%>
+<%@ page import="java.io.File"%>
 
-        <h3>Free Day:<br>
-      	<select name="freeday">
-      		<option value="none">None</option>
-      		<option value="M">Monday</option>
-      		<option value="T">Tuesday</option>
-      		<option value="W">Wednesday</option>
-      		<option value="E">Thursday</option>
-      		<option value="F">Friday</option>
-      	</select></h3><br><br>
+</head>
+<body style="background-color: #eceeef">
+	<div class="header">
+		<div class="container-fluid">
+			<h1 style="font-size:350%">
+				<span style="color: darkorange">P</span><span style="color: white">Scheduler</span>
+				<small style="color: darkorange"><i>VT Schedule Creation</i></small>
+			</h1>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div style="padding-left: 5px;padding-right: 25px" class="row">
+			<div class="col-sm-3">
+			<form id="form" class="panel panel-default outline" action="generate">
+				<div style="background-color: white" class="panel-heading">
+					<h2 style="color:darkorange">Restrictions</h2>
+				</div>
+				<div class="panel-body">
+					<div style="padding-bottom: 10px">
+						<h4>Term</h4>
+						<select name="term" id="term" class="selectpicker">
+							<%
+        	 	 				HtmlSet writer = new HtmlSet(out);
+								writer.termOptions();
+        	 				%>
+						</select>
+					</div>
+					<h4>Start Time</h4>
+					<div style="padding-bottom: 10px" class="row">
+						<div style="padding-right: 1px;" class="col-sm-4">
+							<select name="h1" class="selectpicker form-control">
+								<option value="1">01</option>
+					      		<option value="2">02</option>
+					      		<option value="3">03</option>
+					      		<option value="4">04</option>
+					      		<option value="5">05</option>
+					      		<option value="6">06</option>
+					      		<option value="7">07</option>
+					      		<option value="8" selected="selected">08</option>
+					      		<option value="9">09</option>
+					      		<option value="10">10</option>
+					      		<option value="11">11</option>
+					      		<option value="12">12</option>
+							</select>
+						</div>
+						<div style="padding-left: 1px;" class="col-sm-4">
+							<select name="m1" class="selectpicker form-control">
+								<option value="1">00</option>
+					      		<option value="2">05</option>
+					      		<option value="3">10</option>
+					      		<option value="4">15</option>
+					      		<option value="5">20</option>
+					      		<option value="6">25</option>
+					      		<option value="7">30</option>
+					      		<option value="8">35</option>
+					      		<option value="9">40</option>
+					      		<option value="10">45</option>
+					      		<option value="11">50</option>
+					      		<option value="12">55</option>
+							</select>
+						</div>
+						<div style="padding-left: 5px;" class="col-sm-4">
+							<select name="start" class="selectpicker form-control">
+								<option value="am">AM</option>
+      							<option value="pm">PM</option>
+							</select>
+						</div>
+					</div>
+					<h4>End Time</h4>
+					<div style="padding-bottom:10px" class="row">
+						<div style="padding-right:1px;" class="col-sm-4">
+							<select name="h2" class="selectpicker form-control">
+								<option value="1">01</option>
+					      		<option value="2">02</option>
+					      		<option value="3">03</option>
+					      		<option value="4">04</option>
+					      		<option value="5">05</option>
+					      		<option value="6">06</option>
+					      		<option value="7">07</option>
+					      		<option value="8" selected="selected">08</option>
+					      		<option value="9">09</option>
+					      		<option value="10">10</option>
+					      		<option value="11">11</option>
+					      		<option value="12">12</option>
+							</select>
+						</div>
+						<div style="padding-left:1px;" class="col-sm-4">
+							<select name="m2" class="selectpicker form-control">
+								<option value="1">00</option>
+					      		<option value="2">05</option>
+					      		<option value="3">10</option>
+					      		<option value="4">15</option>
+					      		<option value="5">20</option>
+					      		<option value="6">25</option>
+					      		<option value="7">30</option>
+					      		<option value="8">35</option>
+					      		<option value="9">40</option>
+					      		<option value="10">45</option>
+					      		<option value="11">50</option>
+					      		<option value="12">55</option>
+							</select>
+						</div>
+						<div style="padding-left:5px;" class="col-sm-4">
+							<select name="end" class="selectpicker form-control">
+								<option value="am">AM</option>
+      							<option value="pm" selected="selected">PM</option>
+							</select>
+						</div>
+					</div>
+					<div style="padding-bottom:10px">
+						<h4>Free Days</h4>
+						<select name="free" class="selectpicker" multiple>
+							<option value="M">Monday</option>
+      						<option value="T">Tuesday</option>
+				      		<option value="W">Wednesday</option>
+				      		<option value="R">Thursday</option>
+				      		<option value="F">Friday</option>
+						</select>
+					</div>
+				</div>
+				<div style="background-color:white;padding-bottom:10px" class="panel-footer">
+						<button style="color:darkorange;width:100%" class="btn btn-default btn-lg" type="submit" onClick="sendData()"><b>Create Schedules</b></button>
+				</div>
+			</form>
+			*Added CRNs Ignore Time and Day Restrictions<br>
+			*Class Data Last Updated: 10/21/2016
+			</div>
+      		
+			<div style="text-align: center;" class="col-sm-9">
 
-        <h3>Subjects and Course Numbers:</h3><br>
-        <div id="add" class="addclass">
-          Add Class:<br> 
-            <%
-            	try {
-                	scan = new Scanner(new File("webapps/ROOT/SelectOptions/SubjectOptions.txt"));
-      			}
-      			catch (Exception e) {
-      		 		scan = new Scanner(new File("WebContent/SelectOptions/SubjectOptions.txt"));
-      			}
-            	
-			    while (scan.hasNextLine()) {
-			        out.print(scan.nextLine());
-			    }
-			    scan.close();
-          	%>
-         
-          	<%
-          		try {
-          			scan = new Scanner(new File("webapps/ROOT/SelectOptions/NumberOptions.txt"));
-          		}
-          		catch (Exception e) {
-          			scan = new Scanner(new File("WebContent/SelectOptions/NumberOptions.txt"));
-          		}
-			    while (scan.hasNextLine()) {
-			        out.print(scan.nextLine());
-			    }
-			    scan.close();
-          	%>
+				<div class="input-group">
+					<div class="input-group-btn">
+						<select id="searchtype" class="selectpicker" data-width="auto">
+							<option value="course">Course</option>
+							<option value="crn">CRN</option>
+						</select>
+					</div>
+					<div>
+						<input type="text" class="form-control live-search-box"
+							placeholder="Search a Course, CRN, Professor (PHYS 2305, 85124, Boyer, etc.)">
+					</div>
+				</div>
+				<ul id="search" class="list-group live-search-list"
+					style="position: fixed; text-align: left;">
+					<li id="hide" style="display:none" class="list-group-item"><button id="hideb" type="button" class="btn btn-default form-control">Hide Search</button></li>
+					<%
+					    writer.searchOptions();
+					%>
+				</ul>
 
-	      <input type="button" name="addClassButton" value="Add" onclick="addClass('Z')"/>
-		  <div style="padding-top:10px;">Add CRN:<br><input type="text" id="crn" class="optionfont short"/>
-          <input type="button" name="addCRNButton" value="Add" onclick="addCRN()"/>
-          </div><br>
-        </div>
-        
-        Current Schedule:
-        <table id="scheduledisplay">
-        	
-        </table>
-        
-        <input type="submit" class="createbutton" value="Create Schedules" onclick="sendSchedule()"/>
-      </form>
-    </div>
-    
-  </div>
-  <footer>
-    <p>ngophill@vt.edu | <a href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a> | 
-    <a href="https://goo.gl/forms/CIeZtR1XndZCFdUH2">Submit a Bug or Suggestion</a> | <a href="changelog.html">Recent Changes</a></p>
-  </footer>
+
+				<h2 style="color:darkorange">Current Schedule</h2>
+				<table id="schedule" class="table border" style="background-color:white;">
+					<thead class="thead-inverse">
+						<tr style="font-weight: bold;">
+							<td>CRN</td>
+							<td>Course</td>
+							<td>Title</td>
+							<td>Class Type</td>
+							<td>Professor</td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div style="padding: 2vh 15vw 2vh 15vw;" class="container-fluid">
+			<div style="color:white;" class="row">
+				<div class="col-sm-4 text-right">
+					ngophill@vt.edu
+				</div>
+				<div class="col-sm-4 text-center">
+					<a style="color:darkorange;" href="https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_DispRequest">Virginia Tech Class Time Table</a>
+				</div>
+				<div class="col-sm-4 text-left">
+					<a style="color:white;" href="https://github.com/PhillipNgo/Scheduler-Website">View the Project on GitHub</a>
+				</div>
+			</div>
+		</div>
+  	</div>
 </body>
-<script type="text/javascript">
-	function codeAddress() {
-		var qs = (function(a) {
-		    if (a == "") return {};
-		    var b = {};
-		    for (var i = 0; i < a.length; ++i)
-		    {
-		        var p=a[i].split('=', 2);
-		        if (p.length == 1)
-		            b[p[0]] = "";
-		        else
-		            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
-		    }
-		    return b;
-		})(window.location.search.substr(1).split('&'));
-		
-		if (qs["term"] != undefined) {
-			var list = ["term", "hour1", "minute1", "start", "hour2", "minute2", "end", "freeday"];
-			for (var i = 0; i < list.length; i++) {
-				var option = document.getElementsByName(list[i])[0];
-				option.value = qs[list[i]];
-			}
-			displayNums(false);
-			displaySubj();
-			var classList = qs["classes"].split("xx");
-			for (var i = 0; i < classList.length; i++) {
-				var str = classList[i];
-				var index = 0;
-				if (str.charAt(str.length-1) == 'H') {
-                    index = 1;
-                }
-				if (str.length == 5 && !isNaN(parseInt(str, 10))) {
-					selectCRN(str);
-				}
-				else {
-					selectClass(str.substring(1, str.length-4-index), str.substring(str.length-4-index, str.length));
-					document.getElementById("row" + i).value = str.substring(0, 1);
-				}			
-			}
-		}
-		else {
-			displayNums(false);
-		}
-	}
-	window.onload = codeAddress;
-</script>
 </html>
