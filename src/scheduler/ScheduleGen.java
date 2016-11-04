@@ -320,6 +320,12 @@ public class ScheduleGen extends HttpServlet {
                         html.append("</tr>");
                     }
                 }
+                else {
+                    html.append("<td  class='text'>N/A</td>");
+                    html.append("<td  class='text'>N/A</td>");
+                    html.append("<td  class='text pad'>N/A</td>");
+                    html.append("</tr>");
+                }
                 j++;
             }
             html.append("</table>");
