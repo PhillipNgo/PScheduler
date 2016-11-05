@@ -19,7 +19,20 @@ jQuery(document).ready(function($){
 	        }
 	    }
 	});
+	
+	$(document).keydown(function(e) {
+	    switch(e.which) {
+	        case 37: changeSchedule(-1);
+	        		 break; 
+	        case 39: changeSchedule(1);
+	        		 break;
+	        default: return; 
+	    }
+	    e.preventDefault();
+	});
 });
+
+
 
 function changeSchedule(inc) {
 	var list = document.getElementById("tableschedules");
