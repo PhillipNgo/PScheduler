@@ -2,7 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>PScheduler</title>
+<title>PScheduler - Schedule Creation</title>
+<link rel='shortcut icon' href='favicon.ico' type='image/icon'>
+<link rel='icon' href='favicon.ico' type='image/icon'>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -31,12 +33,17 @@
 </head>
 <body style="background-color: #eceeef">
 	<div class="header">
-		<div class="container-fluid">
+		<div style='padding-bottom:10px' class="container-fluid">
 			<h1 style="font-size:350%">
 				<a href='http://www.pscheduler.com' style='text-decoration:none'><span style="color: darkorange">P</span><span style="color: white">Scheduler</span></a>
-				<small style="color: darkorange"><i>VT Schedule Creation</i></small>
+				<small style="color: darkorange"><i>Virginia Tech Schedule Creation</i></small>
 			</h1>
 		</div>
+		<ul class="nav nav-tabs">
+			<li role="presentation" class="active"><a href="#">Schedule Generator</a></li>
+			<li role="presentation" class="tab"><a href="#">Course Search</a></li>
+			<li role="presentation"><a href="#">About Me</a></li>
+		</ul>
 	</div>
 	<div class="container-fluid">
 		<div style="padding-left: 5px;padding-right: 25px" class="row">
@@ -167,7 +174,7 @@
 					</div>
 					<div>
 						<input type="text" class="form-control live-search-box"
-							placeholder="Search a Course, CRN, Professor (PHYS 2305, 85124, Boyer, etc.)">
+							placeholder="Search a Course, CRN, or Professor to add (PHYS 2305, 85124, Boyer, etc.)">
 					</div>
 				</div>
 				<ul id="search" class="list-group live-search-list"

@@ -46,7 +46,9 @@ public class ScheduleGen extends HttpServlet {
         html.append("<!DOCTYPE html>");
         html.append("<html lang='en'>");
         html.append("<head>");
-        html.append("<title>PScheduler</title>");
+        html.append("<title>PScheduler - search</title>");
+        html.append("<link rel='shortcut icon' href='favicon.ico' type='image/icon'>");
+        html.append("<link rel='icon' href='favicon.ico' type='image/icon'>");
         html.append("<meta charset='utf-8'>");
         html.append("<meta name='viewport' content='width=device-width, initial-scale=1'>");
         html.append("<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>");
@@ -75,7 +77,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("<h1>");
         html.append("<a href='http://www.pscheduler.com' style='text-decoration:none'>");
         html.append("<span style='color: darkorange'>P</span><span style='color: white'>Scheduler</span></a>");
-        html.append("<small style='color: darkorange'><i> VT Schedule Creation</i></small>");
+        html.append("<small style='color: darkorange'><i> Virginia Tech Schedule Creation</i></small>");
         html.append("</h1>");
         html.append("</div>");
         html.append("</div>");

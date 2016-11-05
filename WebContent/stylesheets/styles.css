@@ -12,11 +12,24 @@ body {
 	margin-bottom: 70px;
 }
 
+li.active a {
+	color: darkslategray !important;
+	background-color: #eceeef !important;
+}
+
+.nav-tabs > li > a:hover {
+	color:  darkslategray;
+	background-color: #eceeef; 
+}
+
+.nav-tabs > li > a {
+	color:  white;
+}
+
 .header {
 	background-color: DarkSlateGray;
-	border-bottom: 1px solid darkorange;
-	margin-bottom:10px;
-	padding:20px 0 30px 0;
+	margin-bottom:5px;
+	padding:20px 0 0 0;
 }
 
 .footer {
