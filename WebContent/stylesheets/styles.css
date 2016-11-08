@@ -8,6 +8,10 @@ html {
 	min-height: 100%;
 }
 
+.btn-group {
+	padding: 0 0 0 0 !important;
+}
+
 body {
 	margin-bottom: 70px;
 }

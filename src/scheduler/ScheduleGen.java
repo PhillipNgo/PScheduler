@@ -124,8 +124,9 @@ public class ScheduleGen extends HttpServlet {
         html.append("</b></h4>");
         
         html.append("</div>");
-        html.append("<div style='text-align:right' class='col-sm-1'>");
-        html.append("<form action='modify'>");
+        html.append("<div style='text-align:right' role='group' class='btn-group col-sm-2' aria-label='...'>");
+        html.append("<form action='modify' style='padding-right:12px'>");
+        html.append("<button type='button' class='btn btn-default'>Search Data</button>");
         html.append("<button type='submit' class='btn btn-default'>Modify Search</button>");
         html.append("<select style='display: none;' name='classes'><option value='" + request.getParameter("schedule") + "'></option></select>");
         html.append("<select style='display: none;' name='term'><option value='" + request.getParameter("term") + "'></option></select>");
@@ -141,10 +142,10 @@ public class ScheduleGen extends HttpServlet {
                 html.append("<select style='display: none;' name='free'><option value='" + d + "'></option></select>");
             }
         }
-        html.append("</form>");
-        html.append("</div>");
-        html.append("<div style='text-ling:right' class='col-sm-1'>");
         html.append("<button type='button' class='btn btn-default hidetb'>Hide Table</button>");
+        html.append("</form>");
+        //html.append("</div>");
+        //html.append("<div style='text-ling:right' class='col-sm-1'>");
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
