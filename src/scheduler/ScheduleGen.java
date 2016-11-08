@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/ScheduleGen")
 public class ScheduleGen extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    private static String[] colors = new String[]{"orange", "lightseagreen", "lightgrey", "gold", "lightskyblue", 
+    private static String[] colors = new String[]{"orange", "lightseagreen", "antiquewhite", "gold", "lightskyblue", 
                                                   "lightsalmon", "lightgreen", "lightblue", "lightyellow", 
                                                   "silver", "peachpuff", "pink"};;
 

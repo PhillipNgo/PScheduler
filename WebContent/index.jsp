@@ -25,10 +25,7 @@
   ga('create', 'UA-86032292-1', 'auto');
   ga('send', 'pageview');
 </script>
-
-<%@ page import="java.util.Scanner"%>
 <%@ page import="scheduler.HtmlSet"%>
-<%@ page import="java.io.File"%>
 
 </head>
 <body style="background-color: #eceeef">
