@@ -1,12 +1,11 @@
 jQuery(document).ready(function($){
 
 	$('.hidetb').on('click', function(){
+		$('#textschedules').collapse('toggle');
 		if ($(this).text() === 'Hide Table') {
-			$('#textschedules').hide();
 			$(this).text('Show Table');
 		}
 		else {
-			$('#textschedules').show();
 			$(this).text('Hide Table');
 		}
 	});
@@ -30,9 +29,18 @@ jQuery(document).ready(function($){
 	    }
 	    e.preventDefault();
 	});
+	
+	
 });
 
+function togglePanel() {
+	$('#schedule-panel').collapse('toggle');
+	$('#data-panel').collapse('toggle');
+}
 
+function changeIcon(button) {
+	$(button).toggleClass('glyphicon-plus glyphicon-minus');	
+}
 
 function changeSchedule(inc) {
 	var list = document.getElementById("tableschedules");

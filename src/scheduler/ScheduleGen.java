@@ -2,6 +2,7 @@ package scheduler;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.HashMap;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,8 +18,9 @@ public class ScheduleGen extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private static String[] colors = new String[]{"orange", "lightseagreen", "antiquewhite", "gold", "lightskyblue", 
                                                   "lightsalmon", "lightgreen", "lightblue", "lightyellow", 
-                                                  "silver", "peachpuff", "pink"};;
-
+                                                  "silver", "peachpuff", "pink"};
+    private ScheduleMaker generator;
+                                               
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -46,7 +48,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("<!DOCTYPE html>");
         html.append("<html lang='en'>");
         html.append("<head>");
-        html.append("<title>PScheduler - search</title>");
+        html.append("<title>PScheduler | search</title>");
         html.append("<link rel='shortcut icon' href='favicon.ico' type='image/icon'>");
         html.append("<link rel='icon' href='favicon.ico' type='image/icon'>");
         html.append("<meta charset='utf-8'>");
@@ -87,10 +89,10 @@ public class ScheduleGen extends HttpServlet {
         html.append("<div class='container-fluid'>");
         html.append("<div style='padding-top: 10px;' class='row'>");
         html.append("<div style='padding-left: 12.5px; padding-right: 12.5px;' class='col-sm-12'>");
-        html.append("<div class=' panel panel-default outline'>");
+        html.append("<div id='schedule-panel' class=' collapse in panel panel-default outline'>");
         html.append("<div style='background-color: white;' class='panel-heading center'>");
         html.append("<div class='row'>");
-        html.append("<div class='col-sm-2'>");
+        html.append("<div class='col-sm-3'>");
         html.append("<div class='input-group'>");
         html.append("<div class='row'>");
         html.append("<div style='padding:0 0 0 5px;' class='col-sm-4'>");
@@ -109,7 +111,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
-        html.append("<div class='col-sm-8'>");
+        html.append("<div class='col-sm-6'>");
         
         html.append("<h4><b>");
         if (schedules == null) {
@@ -124,9 +126,9 @@ public class ScheduleGen extends HttpServlet {
         html.append("</b></h4>");
         
         html.append("</div>");
-        html.append("<div style='text-align:right' role='group' class='btn-group col-sm-2' aria-label='...'>");
+        html.append("<div style='text-align:right' role='group' class='btn-group col-sm-3' aria-label='...'>");
         html.append("<form action='modify' style='padding-right:12px'>");
-        html.append("<button type='button' class='btn btn-default'>Search Data</button>");
+        html.append("<button type='button' class='btn btn-default hidetb'>Hide Table</button>");
         html.append("<button type='submit' class='btn btn-default'>Modify Search</button>");
         html.append("<select style='display: none;' name='classes'><option value='" + request.getParameter("schedule") + "'></option></select>");
         html.append("<select style='display: none;' name='term'><option value='" + request.getParameter("term") + "'></option></select>");
@@ -142,10 +144,9 @@ public class ScheduleGen extends HttpServlet {
                 html.append("<select style='display: none;' name='free'><option value='" + d + "'></option></select>");
             }
         }
-        html.append("<button type='button' class='btn btn-default hidetb'>Hide Table</button>");
+        html.append("<button type='button' class='btn btn-default' onclick='togglePanel()'>Search Data</button>");
+        
         html.append("</form>");
-        //html.append("</div>");
-        //html.append("<div style='text-ling:right' class='col-sm-1'>");
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
@@ -153,10 +154,10 @@ public class ScheduleGen extends HttpServlet {
         
         try {
             if (schedules == null || schedules.size() == 0) {
-                html.append("No Schedules Matched Your Parameters");
+                html.append("No Schedules Matched Your Parameters. See 'Search Data' for more information.");
             }
             else if (schedules.size() < 1000) {
-                html.append("<ul style='padding-left:0' id='textschedules' name='0'>");
+                html.append("<ul class='collapse in' style='padding-left:0' id='textschedules' name='0'>");
                 appendTextSchedules(html, schedules);
                 html.append("</ul>");
            
@@ -165,15 +166,62 @@ public class ScheduleGen extends HttpServlet {
                 html.append("</ul>");
             }
             else {
-                html.append("There were over 999 Schedules, please narrow your parameters");
+                html.append("There were over 999 Schedules, please narrow your parameters. See 'Search Data' for more information.");
             }
         }
         catch (Exception e) {
             html.append("Error in Displaying Schedules<br>Please email me the url of this page!<br>");
         }
+        
+        html.append("</div>");
+        html.append("</div>");
+        //search data start
+        html.append("<div id='data-panel' class='collapse panel panel-default outline'>");
+        html.append("<div style='background-color: white;' class='panel-heading center'>");
+        html.append("<div class='row'>");
+        html.append("<div class='col-sm-1'>");
+        html.append("</div>");
+        html.append("<div class='center col-sm-10'>");
+        html.append("<h4><b>Search Data</b></h4>");
+        html.append("</div>");
+        html.append("<div class='col-sm-1'>");
+        html.append("<button type='button' class='btn btn-default' onclick='togglePanel()'>Schedules</button>");
+        html.append("</div>");
+        html.append("</div>");
+        html.append("</div>");
+        
+        html.append("<div style='padding-top:0px' class='panel-body'>");
+        
+        HashMap<String, LinkedList<VTCourse>> passed = generator.getPassed();
+        HashMap<String, LinkedList<VTCourse>> failed = generator.getFailed();
+        int i = 0;
+        for (String str : passed.keySet()) {
+            html.append("<h4><b>" + str + "</b> | " + generator.getListings().get(str).size() + " Sections</h4>");
+            html.append("<a class='btn btn-default glyphicon glyphicon-plus' onclick='changeIcon(this)' role='button' data-toggle='collapse' href='#pass" + i +"'>");
+            html.append("</a> " + passed.get(str).size() + " met the restrictions<br>");
+            html.append("<div class='collapse' id='pass" + i + "'>");
+            html.append("<table class='table text'>");
+            for (VTCourse c : passed.get(str)) {
+                html.append(textClass(c, false, -1));
+            }
+            html.append("</table>");
+            html.append("</div>");
             
+            html.append("<a class='btn btn-default glyphicon glyphicon-plus' onclick='changeIcon(this)' role='button' data-toggle='collapse' href='#fail" + i + "'>");
+            html.append("</a> " + failed.get(str).size() +  " did not meet the restrictions<br>");
+            html.append("<div class='collapse' id='fail" + i++ + "'>");
+            html.append("<table class='table text'>");
+            for (VTCourse c : failed.get(str)) {
+                html.append(textClass(c, false, -1));
+            }
+            html.append("</table>");
+            html.append("</div>");
+        }
+        
+        
         html.append("</div>");
         html.append("</div>");
+        //search data end
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
@@ -249,11 +297,87 @@ public class ScheduleGen extends HttpServlet {
                 profs.add(split[1].replace("11", " "));
             }
         }
-        
-        return ScheduleMaker.generateSchedule(term, subjects, numbers, types, startTime, endTime, freeDays, crns, profs);
+        generator = new ScheduleMaker(term, subjects, numbers, types, startTime, endTime, freeDays, crns, profs);
+        return generator.getSchedules();
     }
     
-
+    /**
+     * returns a string for a row or two of an html table that signifies a class
+     * 
+     * @param c the class to create
+     * @param color if there will be color
+     * @param colorInd the index of the color
+     * @return html string for the class
+     */
+    private String textClass(VTCourse c, boolean color, int colorInd) {
+        String html = "<tr class='left'";
+        if (color && c.getTimeSlot() != null) {
+            html += " style='background-color:" + colors[colorInd] + "'";
+        }
+        html += "><td class='text'>" + c.getCRN() + "</td>";
+        html += "<td class='text'>" + c.getSubject() + " " + c.getNum() + "</td>";
+        html += "<td class='text pad'>" + c.getName() + "</td>";
+        String classType = c.getClassType();
+        switch (classType) {
+            case "L": classType = "Lecture";
+                      break;
+            case "B": classType = "Lab";
+                      break;
+            case "C": classType = "Recitation";
+                      break;
+            case "H": classType = "Hybrid";
+                      break;
+            case "E": classType = "Emporium";
+                      break;
+            case "O": classType = "Online";
+                      break;
+            case "I": classType = "Independent Study";
+                      break;
+            case "R": classType = "Research";
+                      break;
+            default:  classType = "bug";
+                      break;
+        }
+        html += "<td class='text'>" + classType + "</td>";
+        html += "<td class='text'>" + c.getCredits() + "</td>";
+        html += "<td class='text'>" + c.getProf() + "</td>";             
+        Time t = c.getTimeSlot();
+        if (t != null) {
+            String[] days = c.getDays();
+            String day = "";
+            for (int k = 0; k < days.length; k++) {
+                day += days[k];
+            }
+            html += "<td  class='text'>" + day + "</td>";
+            html += "<td  class='text'>" + t.getStart() + " - " + t.getEnd() + "</td>";
+            html += "<td  class='text pad'>" + c.getLocation() + "</td>";
+            html += "</tr>";
+            if (c.getAdditionalDays() != null && c.getAdditionalTime() != null && c.getAdditionalLocation() != null) {
+                html += "<tr ";
+                if (color) {
+                    html += "style='background-color:" + colors[colorInd];
+                }
+                html += "'><td></td><td></td><td></td><td></td><td></td><td></td>";
+                days = c.getAdditionalDays();
+                String addedDays = "";
+                for (int k = 0; k < days.length; k++) {
+                    addedDays += days[k];
+                }
+                html += "<td class='text'>" + addedDays + "</td>";
+                html += "<td class='text'>" + c.getAdditionalTime().getStart() + " - " + c.getAdditionalTime().getEnd() + "</td>";
+                html += "<td class='text pad'>" + c.getAdditionalLocation() + "</td>";
+                html += "</tr>";
+            }
+        }
+        else {
+            html += "<td class='text'>N/A</td>";
+            html += "<td class='text'>N/A</td>";
+            html += "<td class='text pad'>N/A</td>";
+            html += "</tr>";
+        }
+        return html;
+    }
+    
     private void appendTextSchedules(StringBuilder html, LinkedList<Schedule> schedules) {
         int i = 0;
         for (Schedule schedule : schedules) {
@@ -268,67 +392,7 @@ public class ScheduleGen extends HttpServlet {
                     + "<td class='text'>Days</td> <td  class='text'>Time</td> <td  class='text'>Location</td></tr>");
             int j = 0;
             for (VTCourse c : schedule) {
-                html.append("<tr class='left'"); //background color goes here
-                if (c.getTimeSlot() != null) {
-                    html.append(" style='background-color:" + colors[j] + "'");
-                }
-                html.append("><td class='text'>" + c.getCRN() + "</td>");
-                html.append("<td class='text'>" + c.getSubject() + " " + c.getNum() + "</td>");
-                html.append("<td class='text pad'>" + c.getName() + "</td>");
-                String classType = c.getClassType();
-                switch (classType) {
-                    case "L": classType = "Lecture";
-                              break;
-                    case "B": classType = "Lab";
-                              break;
-                    case "C": classType = "Recitation";
-                              break;
-                    case "H": classType = "Hybrid";
-                              break;
-                    case "E": classType = "Emporium";
-                              break;
-                    case "O": classType = "Online";
-                              break;
-                    case "I": classType = "Independent Study";
-                              break;
-                    case "R": classType = "Research";
-                              break;
-                    default:  classType = "bug";
-                              break;
-                }
-                html.append("<td class='text'>" + classType + "</td>");
-                html.append("<td class='text'>" + c.getCredits() + "</td>");
-                html.append("<td class='text'>" + c.getProf() + "</td>");             
-                Time t = c.getTimeSlot();
-                if (t != null) {
-                    String[] days = c.getDays();
-                    String day = "";
-                    for (int k = 0; k < days.length; k++) {
-                        day += days[k];
-                    }
-                    html.append("<td  class='text'>" + day + "</td>");
-                    html.append("<td  class='text'>" + t.getStart() + " - " + t.getEnd() + "</td>");
-                    html.append("<td  class='text pad'>" + c.getLocation() + "</td>");
-                    html.append("</tr>");
-                    if (c.getAdditionalDays() != null && c.getAdditionalTime() != null && c.getAdditionalLocation() != null) {
-                        html.append("<tr " + "style='background-color:" + colors[j] + "'><td></td><td></td><td></td><td></td><td></td><td></td>");
-                        days = c.getAdditionalDays();
-                        String addedDays = "";
-                        for (int k = 0; k < days.length; k++) {
-                            addedDays += days[k];
-                        }
-                        html.append("<td  class='text'>" + addedDays + "</td>");
-                        html.append("<td  class='text'>" + c.getAdditionalTime().getStart() + " - " + c.getAdditionalTime().getEnd() + "</td>");
-                        html.append("<td  class='text pad'>" + c.getAdditionalLocation() + "</td>");
-                        html.append("</tr>");
-                    }
-                }
-                else {
-                    html.append("<td  class='text'>N/A</td>");
-                    html.append("<td  class='text'>N/A</td>");
-                    html.append("<td  class='text pad'>N/A</td>");
-                    html.append("</tr>");
-                }
+                html.append(textClass(c, true, j));
                 j++;
             }
             html.append("</table>");

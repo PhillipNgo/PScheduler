@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>PScheduler - Schedule Creation</title>
+<title>PScheduler | Schedule Creation</title>
 <link rel='shortcut icon' href='favicon.ico' type='image/icon'>
 <link rel='icon' href='favicon.ico' type='image/icon'>
 <meta charset="utf-8">
@@ -25,6 +25,7 @@
   ga('create', 'UA-86032292-1', 'auto');
   ga('send', 'pageview');
 </script>
+
 <%@ page import="scheduler.HtmlSet"%>
 
 </head>

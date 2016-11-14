@@ -3,7 +3,6 @@ package scheduler;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Iterator;
 
 /**
  * ScheduleMaker generates a list of schedules
@@ -11,7 +10,36 @@ import java.util.Iterator;
  * 
  * @author Phillip Ngo
  */
-public final class ScheduleMaker {
+public class ScheduleMaker {
+    
+    private LinkedList<Schedule> schedules;
+    private HashMap<String, LinkedList<VTCourse>> listings;
+    private HashMap<String, LinkedList<VTCourse>> pass;
+    private HashMap<String, LinkedList<VTCourse>> fail;
+    
+    public ScheduleMaker(String term, LinkedList<String> subjects, LinkedList<String> numbers, LinkedList<String> types,   
+            String start, String end, String[] freeDays, LinkedList<String> crns, LinkedList<String> profs) throws Exception {
+        listings = new HashMap<>();
+        pass = new HashMap<>();
+        fail = new HashMap<>();
+        schedules = generateSchedule(term, subjects, numbers, types, start, end, freeDays, crns, profs);
+    }
+    
+    public LinkedList<Schedule> getSchedules() {
+        return schedules;
+    }
+    
+    public HashMap<String, LinkedList<VTCourse>> getListings() {
+        return listings;
+    }
+    
+    public HashMap<String, LinkedList<VTCourse>> getFailed() {
+        return fail;
+    }
+    
+    public HashMap<String, LinkedList<VTCourse>> getPassed() {
+        return pass;
+    }
     
     /**
      * Generates all possible schedules with the given parameter
@@ -28,7 +56,7 @@ public final class ScheduleMaker {
      * @return the LinkedList of all the schedules
      * @throws Exception
      */
-    public static LinkedList<Schedule> generateSchedule(String term, LinkedList<String> subjects, LinkedList<String> numbers, LinkedList<String> types,   
+    private LinkedList<Schedule> generateSchedule(String term, LinkedList<String> subjects, LinkedList<String> numbers, LinkedList<String> types,   
                                                         String start, String end, String[] freeDays, LinkedList<String> crns, LinkedList<String> profs) throws Exception {
         LinkedList<Schedule> schedules = new LinkedList<>();
         LinkedList<LinkedList<VTCourse>> classes = new LinkedList<>();
@@ -45,21 +73,27 @@ public final class ScheduleMaker {
             LinkedList<VTCourse> curr = null;
             try {
                 if (map != null) {
-                    curr = map.get(subjects.get(i)).get(numbers.get(i)).createCopy();
+                    LinkedList<VTCourse> find = map.get(subjects.get(i)).get(numbers.get(i));
+                    listings.put(subjects.get(i) + " " + numbers.get(i), find);
+                    curr = find.createCopy();
                 }
                 else {
-                    curr = parser.parseCourse(subjects.get(i), numbers.get(i));
+                    LinkedList<VTCourse> find = parser.parseCourse(subjects.get(i), numbers.get(i));
+                    listings.put(subjects.get(i) + " " + numbers.get(i), find);
+                    curr = find.createCopy();
                 }
             }
             catch (Exception e) {
                 throw new Exception(subjects.get(i) + " " + numbers.get(i) + " does not exist on the timetable");
             }
-            Iterator<VTCourse> iter = curr.iterator();
-            while (iter.hasNext()) {
-                if (!checkRestrictions(iter.next(), start, end, types.get(i), freeDays, profs.get(i))) {
-                    iter.remove();
+            LinkedList<VTCourse> failed = new LinkedList<>();
+            for (VTCourse c : curr) {
+                if (!checkRestrictions(c, start, end, types.get(i), freeDays, profs.get(i))) {
+                    failed.add(curr.remove(c));
                 }
             }
+            pass.put(subjects.get(i) + " " + numbers.get(i), curr);
+            fail.put(subjects.get(i) + " " + numbers.get(i), failed);
             if (curr.isEmpty()) {
                 return schedules;
             }
@@ -99,7 +133,7 @@ public final class ScheduleMaker {
     * @param schedules the list of possible schedules
     * @throws Exception
     */
-    private static void createSchedules(LinkedList<LinkedList<VTCourse>> classListings, Schedule schedule,
+    private void createSchedules(LinkedList<LinkedList<VTCourse>> classListings, Schedule schedule,
                                         int classIndex, LinkedList<Schedule> schedules) throws Exception { 
         for (VTCourse course : classListings.get(classIndex)) {
             Schedule copy = schedule;
@@ -134,7 +168,7 @@ public final class ScheduleMaker {
      * @return true if the course meets the restrictions
      * @throws TimeException
      */
-    private static boolean checkRestrictions(VTCourse course, String start, String end, String type, String[] freeDays,
+    private boolean checkRestrictions(VTCourse course, String start, String end, String type, String[] freeDays,
                                              String prof) throws TimeException {
         Time time = course.getTimeSlot();
          

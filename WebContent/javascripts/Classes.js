@@ -9,7 +9,7 @@ function addClass(button) {
 	var profs = text[2].split(", ");
 	var name = text[0].split(" - ");
 	var html =  "<tr><td>" +
-	"<select style='width:70%;margin-left:auto;margin-right:auto' class='form-control'>";
+	"<select style='width:70%;margin-left:auto;margin-right:auto' class='form-control' onchange='crnCheck(this)'>";
 	if (crns.length > 1) {
 		html += "<option value='A'>Any</option>";
 	}
@@ -72,6 +72,18 @@ function addCRN(button) {
 	"<td><button class='btn btn-default' type='button' onClick='removeClass(this)'>Remove</button></td></tr>";
 	$("#schedule > tbody:last-child").append(html);
 }
+
+function crnCheck(select) {
+	if (select.value !== 'A') {
+		$($($(select).parent().parent().children('td').get(3)).children()[0]).prop('disabled', true);
+		$($($(select).parent().parent().children('td').get(4)).children()[0]).prop('disabled', true);
+	}
+	else {
+		$($($(select).parent().parent().children('td').get(3)).children()[0]).prop('disabled', false);
+		$($($(select).parent().parent().children('td').get(4)).children()[0]).prop('disabled', false);
+	}
+}
+
 
 function removeClass(button) {
 	$(button).parent().parent().remove();
