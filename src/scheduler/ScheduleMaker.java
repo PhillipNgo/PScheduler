@@ -16,12 +16,14 @@ public class ScheduleMaker {
     private HashMap<String, LinkedList<VTCourse>> listings;
     private HashMap<String, LinkedList<VTCourse>> pass;
     private HashMap<String, LinkedList<VTCourse>> fail;
+    private LinkedList<VTCourse> crnCourses;
     
     public ScheduleMaker(String term, LinkedList<String> subjects, LinkedList<String> numbers, LinkedList<String> types,   
             String start, String end, String[] freeDays, LinkedList<String> crns, LinkedList<String> profs) throws Exception {
         listings = new HashMap<>();
         pass = new HashMap<>();
         fail = new HashMap<>();
+        crnCourses = new LinkedList<>();
         schedules = generateSchedule(term, subjects, numbers, types, start, end, freeDays, crns, profs);
     }
     
@@ -110,6 +112,7 @@ public class ScheduleMaker {
                         for (VTCourse c : subject.get(num)) {
                             if (crn.equals(c.getCRN())) {
                                 curr.add(c);
+                                crnCourses.add(c);
                                 break outerloop;
                             }
                         }
