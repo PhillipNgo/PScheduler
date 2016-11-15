@@ -157,8 +157,7 @@
 						<button style="color:darkorange;width:100%" class="btn btn-default btn-lg" type="submit" onClick="sendData()"><b>Create Schedules</b></button>
 				</div>
 			</form>
-			*Specific CRNs Ignore Time and Day Restrictions<br>
-			*Class Data Last Updated: 11/4/2016
+			*Specific CRNs Ignore Time and Day Restrictions
 			</div>
       		
 			<div style="text-align: center;" class="col-sm-9">

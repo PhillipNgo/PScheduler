@@ -35,6 +35,10 @@ public class ScheduleMaker {
         return listings;
     }
     
+    public LinkedList<VTCourse> getCrns() {
+        return crnCourses;
+    }
+    
     public HashMap<String, LinkedList<VTCourse>> getFailed() {
         return fail;
     }
@@ -96,9 +100,6 @@ public class ScheduleMaker {
             }
             pass.put(subjects.get(i) + " " + numbers.get(i), curr);
             fail.put(subjects.get(i) + " " + numbers.get(i), failed);
-            if (curr.isEmpty()) {
-                return schedules;
-            }
             classes.add(curr);
         }
         
@@ -109,7 +110,9 @@ public class ScheduleMaker {
                 for (String subj : map.keySet()) {
                     HashMap<String, LinkedList<VTCourse>> subject = map.get(subj);
                     for (String num : subject.keySet()) {
-                        for (VTCourse c : subject.get(num)) {
+                        LinkedList<VTCourse> list = subject.get(num);
+                        listings.put(subj + " " + num, list);
+                        for (VTCourse c : list) {
                             if (crn.equals(c.getCRN())) {
                                 curr.add(c);
                                 crnCourses.add(c);

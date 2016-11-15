@@ -52,35 +52,28 @@ function addCRN(button) {
 
 	var text = button.parent().text().split(" / ");
 	var name = text[1].split(" - ");
-	var html =  "<tr><td>" +
-	"<select style='width:70%;margin-left:auto;margin-right:auto' class='form-control'>" +
-	"<option value='" + text[0].substring(4, text[0].length) + "'>" + text[0].substring(4, text[0].length) + "</option>" +
-	"</select>" +
-	"</td>" +
-	"<td style='vertical-align:middle'>" + name[0] + "</td>" +
-	"<td style='vertical-align:middle'>" + name[1] + "</td>" +
-	"<td>" +
-	"<select style='width:75%;margin-left:auto;margin-right:auto' class='form-control'>" +
-	"<option>" + text[2] + "</option>" +
-	"</select>" +
-	"</td>" + 
-	"<td>" + 
-	"<select style='width:55%;margin-left:auto;margin-right:auto' class='form-control'>" +
-	"<option>" + text[3] + "</option>" +
-	"</select>" +
-	"</td>" +
-	"<td><button class='btn btn-default' type='button' onClick='removeClass(this)'>Remove</button></td></tr>";
-	$("#schedule > tbody:last-child").append(html);
+	button = $("[name='" + name[0].replace(/ /g, '') + "']");
+	addClass(button);
+	var row = $('#schedule tbody tr:last').children('td');
+	$($(row.get(3)).children()[0]).val(classType(text[2]));
+	$($(row.get(4)).children()[0]).val(text[3].replace(/ /g, '11'));
+	$($(row.get(0)).children()[0]).val(text[0].replace('Add ', ''));
+	$($(row.get(3)).children()[0]).prop('disabled', true);
+	$($(row.get(4)).children()[0]).prop('disabled', true);
 }
 
 function crnCheck(select) {
+	var row = $(select).parent().parent().children('td');
 	if (select.value !== 'A') {
-		$($($(select).parent().parent().children('td').get(3)).children()[0]).prop('disabled', true);
-		$($($(select).parent().parent().children('td').get(4)).children()[0]).prop('disabled', true);
+		var text = $("[name='" + select.value + "']").parent().text().split(" / ");
+		$($(row.get(3)).children()[0]).val(classType(text[2]));
+		$($(row.get(4)).children()[0]).val(text[3].replace(/ /g, '11'));
+		$($(row.get(3)).children()[0]).prop('disabled', true);
+		$($(row.get(4)).children()[0]).prop('disabled', true);
 	}
 	else {
-		$($($(select).parent().parent().children('td').get(3)).children()[0]).prop('disabled', false);
-		$($($(select).parent().parent().children('td').get(4)).children()[0]).prop('disabled', false);
+		$($(row.get(3)).children()[0]).prop('disabled', false);
+		$($(row.get(4)).children()[0]).prop('disabled', false);
 	}
 }
 

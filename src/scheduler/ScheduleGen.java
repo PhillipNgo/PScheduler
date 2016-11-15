@@ -20,6 +20,7 @@ public class ScheduleGen extends HttpServlet {
                                                   "lightsalmon", "lightgreen", "lightblue", "lightyellow", 
                                                   "silver", "peachpuff", "pink"};
     private ScheduleMaker generator;
+    //private String[] restrict;
                                                
     /**
      * @see HttpServlet#HttpServlet()
@@ -36,7 +37,7 @@ public class ScheduleGen extends HttpServlet {
         PrintWriter printer = response.getWriter();
         StringBuilder html = new StringBuilder();
         LinkedList<Schedule> schedules;
-        
+        //restrict = new String[3];
         try {
             schedules = getSchedules(request);
         }
@@ -44,7 +45,7 @@ public class ScheduleGen extends HttpServlet {
             schedules = null;
         }
         
-        // -- HEAD START -- ///
+        // -- HEAD START -- //
         html.append("<!DOCTYPE html>");
         html.append("<html lang='en'>");
         html.append("<head>");
@@ -194,9 +195,37 @@ public class ScheduleGen extends HttpServlet {
         
         HashMap<String, LinkedList<VTCourse>> passed = generator.getPassed();
         HashMap<String, LinkedList<VTCourse>> failed = generator.getFailed();
+        //html.append("<h4><b>Your Restrictions</b></h4>");
+        //html.append("<table align='left'>");
+        //html.append("<tr><th class='pad'>Start Time</th><th class='pad'>End Time</th><th class='pad'>Free Days</th></tr><tr></tr>");
+        //html.append("<tr><td>" + restrict[0] + "</td><td>" + restrict[1] + "</td><td>" + restrict[2] + "</td></tr>");
+        //html.append("</table><br>");
         int i = 0;
+        for (VTCourse c : generator.getCrns()) {
+            String str = c.getSubject() + " " + c.getNum();
+            LinkedList<VTCourse> listings = generator.getListings().get(str);
+            html.append("<h4><b>" + str + " - " + c.getName() + "</b>" + " | " + listings.size() + " Sections</h4>");
+            html.append("<a class='btn btn-default glyphicon glyphicon-plus' onclick='changeIcon(this)' role='button' data-toggle='collapse' href='#pass" + i +"'>");
+            html.append("</a> CRN " + c.getCRN() + "<br>");
+            html.append("<div class='collapse' id='pass" + i + "'>");
+            html.append("<table class='table text'>");
+            html.append(textClass(c, false, -1));
+            html.append("</table>");
+            html.append("</div>");
+            listings.remove(c);
+            html.append("<a class='btn btn-default glyphicon glyphicon-plus' onclick='changeIcon(this)' role='button' data-toggle='collapse' href='#fail" + i + "'>");
+            html.append("</a> " + listings.size() +  " other sections<br>");
+            html.append("<div class='collapse' id='fail" + i++ + "'>");
+            html.append("<table class='table text'>");
+            for (VTCourse co : listings) {
+                html.append(textClass(co, false, -1));
+            }
+            html.append("</table>");
+            html.append("</div>");
+        }
         for (String str : passed.keySet()) {
-            html.append("<h4><b>" + str + "</b> | " + generator.getListings().get(str).size() + " Sections</h4>");
+            LinkedList<VTCourse> listings = generator.getListings().get(str);
+            html.append("<h4><b>" + str + " - " + listings.get(0).getName() + "</b> | " + listings.size() + " Sections</h4>");
             html.append("<a class='btn btn-default glyphicon glyphicon-plus' onclick='changeIcon(this)' role='button' data-toggle='collapse' href='#pass" + i +"'>");
             html.append("</a> " + passed.get(str).size() + " met the restrictions<br>");
             html.append("<div class='collapse' id='pass" + i + "'>");
@@ -254,7 +283,6 @@ public class ScheduleGen extends HttpServlet {
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO Auto-generated method stub
         doGet(request, response);
     }
     
@@ -297,6 +325,7 @@ public class ScheduleGen extends HttpServlet {
                 profs.add(split[1].replace("11", " "));
             }
         }
+
         generator = new ScheduleMaker(term, subjects, numbers, types, startTime, endTime, freeDays, crns, profs);
         return generator.getSchedules();
     }
