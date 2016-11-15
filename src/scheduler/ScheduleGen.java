@@ -249,6 +249,7 @@ public class ScheduleGen extends HttpServlet {
         
         
         html.append("</div>");
+        html.append("<div style='padding-top:0px;background-color: white;' class='panel-heading center'><h4><b>Statistics</b></h4></div>");
         html.append("</div>");
         //search data end
         html.append("</div>");

@@ -40,7 +40,7 @@
 		<ul class="nav nav-tabs">
 			<li role="presentation" class="active"><a href="#">Schedule Generator</a></li>
 			<li role="presentation" class="tab"><a href="#">Course Search</a></li>
-			<li role="presentation"><a href="#">About Me</a></li>
+			<%--<li role="presentation"><a href="#">About Me</a></li>--%>
 		</ul>
 	</div>
 	<div class="container-fluid">
