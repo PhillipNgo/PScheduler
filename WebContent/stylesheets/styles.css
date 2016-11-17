@@ -1,5 +1,5 @@
 body {
-	font-family: 'Georgia Italic';
+	font-family: 'Roboto', sans-serif;/*'Georgia Italic'*/;
 	font-size: 150%;
 }
 
@@ -18,12 +18,12 @@ body {
 
 li.active a {
 	color: darkslategray !important;
-	background-color: #eceeef !important;
+	background-color: #FFFAFA !important;
 }
 
 .nav-tabs > li > a:hover {
 	color:  darkslategray;
-	background-color: #eceeef; 
+	background-color: #FFFAFA; 
 }
 
 .nav-tabs > li > a {
@@ -31,9 +31,9 @@ li.active a {
 }
 
 .header {
+	font-family: 'Raleway', sans-serif;
 	background-color: DarkSlateGray;
 	margin-bottom:5px;
-	padding:20px 0 0 0;
 }
 
 .footer {

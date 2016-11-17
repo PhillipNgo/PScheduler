@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="stylesheets/styles.css">
 <script type="text/javascript" src="javascripts/search.js"></script>
 <script type="text/javascript" src="javascripts/Classes.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -29,12 +30,13 @@
 <%@ page import="scheduler.HtmlSet"%>
 
 </head>
-<body style="background-color: #eceeef">
-	<div class="header">
+<body style="background-color: #FFFAFA">
+	<div class="header" style='padding:10px 0 0 0;'>
 		<div style='padding-bottom:10px' class="container-fluid">
 			<h1 style="font-size:350%">
-				<a href='http://www.pscheduler.com' style='text-decoration:none'><span style="color: darkorange">P</span><span style="color: white">Scheduler</span></a>
-				<small style="color: darkorange"><i>Virginia Tech Schedule Creation</i></small>
+				<a href='http://www.pscheduler.com' style='text-decoration:none'>
+				<span style="color: darkorange">P</span><span style="color: white;">Scheduler</span></a>
+				<small style="color: darkorange"> Virginia Tech Schedule Creation</small>
 			</h1>
 		</div>
 		<ul class="nav nav-tabs">
@@ -48,7 +50,7 @@
 			<div class="col-sm-3">
 			<form id="form" class="panel panel-default outline" action="generate">
 				<div style="background-color: white" class="panel-heading">
-					<h2 style="color:darkorange">Restrictions</h2>
+					<h3 style="color:darkorange">Restrictions</h3>
 				</div>
 				<div class="panel-body">
 					<div style="padding-bottom: 10px">
@@ -154,7 +156,7 @@
 					</div>
 				</div>
 				<div style="background-color:white;padding-bottom:10px" class="panel-footer">
-						<button style="color:darkorange;width:100%" class="btn btn-default btn-lg" type="submit" onClick="sendData()"><b>Create Schedules</b></button>
+						<button style="color:darkorange;width:100%" class="btn btn-default btn-lg" type="submit" onClick="sendData()">Create Schedules</button>
 				</div>
 			</form>
 			*Specific CRNs Ignore Time and Day Restrictions
@@ -182,7 +184,7 @@
 					%>
 				</ul>
 
-				<h2 style="color:darkorange">Current Schedule</h2>
+				<h3 style="color:darkorange">Current Schedule</h3>
 				<table id="schedule" class="table border" style="background-color:white;">
 					<thead class="thead-inverse">
 						<tr style="font-weight: bold;">

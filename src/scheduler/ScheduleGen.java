@@ -69,18 +69,19 @@ public class ScheduleGen extends HttpServlet {
         html.append("ga('create', 'UA-86032292-1', 'auto');");
         html.append("ga('send', 'pageview');");
         html.append("</script>");
+        html.append("<link href='https://fonts.googleapis.com/css?family=Raleway|Roboto' rel='stylesheet'>");
         html.append("</head>");
         // -- HEAD END -- //
 
         
         // -- HEADER START -- //
-        html.append("<body style='background-color: #eceeef'>");
+        html.append("<body style='background-color: #FFFAFA'>");
         html.append("<div style='background-color: DarkSlateGray; border-bottom: 1px solid darkorange;'>");
-        html.append("<div class='container-fluid'>");
+        html.append("<div class='container-fluid header'>");
         html.append("<h1>");
         html.append("<a href='http://www.pscheduler.com' style='text-decoration:none'>");
         html.append("<span style='color: darkorange'>P</span><span style='color: white'>Scheduler</span></a>");
-        html.append("<small style='color: darkorange'><i> Virginia Tech Schedule Creation</i></small>");
+        html.append("<small style='color: darkorange'> Virginia Tech Schedule Creation</small>");
         html.append("</h1>");
         html.append("</div>");
         html.append("</div>");
@@ -495,10 +496,10 @@ public class ScheduleGen extends HttpServlet {
                         Time t = c.getTimeSlot();
                         if (t.getStart().equals(startTime)) {
                             html.append(c.getSubject() + " " + c.getNum() + "<br>");
-                            html.append("CRN: " + c.getCRN() + "<br>");
+                            html.append(c.getCRN() + "<br>");
                             html.append(t.getStart() + " - " + t.getEnd() + "<br>");
                             html.append(c.getLocation() + "<br>");
-                            html.append("Prof: " + c.getProf());
+                            html.append(c.getProf());
                             int start = Time.timeNumber(t.getStart())/5;
                             int end = Time.timeNumber(t.getEnd())/5;
                             html.append("--" + (end-start));
@@ -516,10 +517,10 @@ public class ScheduleGen extends HttpServlet {
                         Time t = c.getAdditionalTime();
                         if (c.getAdditionalTime().getStart().equals(startTime)) {
                             html.append(c.getSubject() + " " + c.getNum() + "<br>");
-                            html.append("CRN: " + c.getCRN() + "<br>");
+                            html.append(c.getCRN() + "<br>");
                             html.append(t.getStart() + " - " + t.getEnd() + "<br>");
                             html.append(c.getAdditionalLocation() + "<br>");
-                            html.append("Prof: " + c.getProf());
+                            html.append(c.getProf());
                             int start = Time.timeNumber(t.getStart())/5;
                             int end = Time.timeNumber(t.getEnd())/5;
                             html.append("--" + (end-start));

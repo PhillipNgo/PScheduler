@@ -32,7 +32,7 @@ function addClass(button) {
 	html += 	"</select>" +
 	"</td>" + 
 	"<td>" + 
-	"<select style='width:55%;margin-left:auto;margin-right:auto' class='form-control'>";
+	"<select style='width:75%;margin-left:auto;margin-right:auto' class='form-control'>";
 	if (profs.length > 1) {
 		html += "<option value='A'>Any</option>";
 	}
