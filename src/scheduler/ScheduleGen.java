@@ -192,15 +192,26 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("</div>");
         
-        html.append("<div style='padding-top:0px' class='panel-body'>");
-        
+        //
+        html.append("<div class='panel-body panel-group'>");
+        html.append("<div class='panel panel-default'>");
+        html.append("<div data-toggle='collapse' href='#collapseOne' class='panel-heading' role='button' id='headingOne'>");
+        html.append("<h3 class='panel-title'><b>Your Restrictions</b></h3>");
+        html.append("</div>");
+        html.append("<div id='collapseOne' class='panel-collapse collapse' role='tabpanel'>");
+        html.append("<div class='panel-body'>");
+             
+        html.append("</div>");
+        html.append("</div>");
+        html.append("</div>");
+        html.append("<div class='panel panel-default'>");
+        html.append("<div data-toggle='collapse' href='#collapseTwo' class='panel-heading' role='button' id='headingTwo'>");
+        html.append("<h3 class='panel-title'><b>Courses Found on Timetable</b></h3>");
+        html.append("</div>");
+        html.append("<div id='collapseTwo' class='panel-collapse collapse' role='tabpanel'>");
+        html.append("<div class='panel-body'>");
         HashMap<String, LinkedList<VTCourse>> passed = generator.getPassed();
         HashMap<String, LinkedList<VTCourse>> failed = generator.getFailed();
-        //html.append("<h4><b>Your Restrictions</b></h4>");
-        //html.append("<table align='left'>");
-        //html.append("<tr><th class='pad'>Start Time</th><th class='pad'>End Time</th><th class='pad'>Free Days</th></tr><tr></tr>");
-        //html.append("<tr><td>" + restrict[0] + "</td><td>" + restrict[1] + "</td><td>" + restrict[2] + "</td></tr>");
-        //html.append("</table><br>");
         int i = 0;
         for (VTCourse c : generator.getCrns()) {
             String str = c.getSubject() + " " + c.getNum();
@@ -247,10 +258,21 @@ public class ScheduleGen extends HttpServlet {
             html.append("</table>");
             html.append("</div>");
         }
-        
-        
         html.append("</div>");
-        html.append("<div style='padding-top:0px;background-color: white;' class='panel-heading center'><h4><b>Statistics</b></h4></div>");
+        html.append("</div>");
+        html.append("</div>");
+        html.append("<div class='panel panel-default'>");
+        html.append("<div data-toggle='collapse' href='#collapseThree' class='panel-heading' role='button' id='headingThree'>");
+        html.append("<h3 class='panel-title'><b>Conflicts</b></h3>");
+        html.append("</div>");
+        html.append("<div id='collapseThree' class='panel-collapse collapse' role='tabpanel'>");
+        html.append("<div class='panel-body'>");
+              
+        html.append("</div>");
+        html.append("</div>");
+        html.append("</div>");
+        html.append("</div>");
+        //
         html.append("</div>");
         //search data end
         html.append("</div>");
