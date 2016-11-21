@@ -144,7 +144,7 @@ function setParameters() {
 	for (i; i < params.length; i++) {
 		days[i-8] = params[i].split('=')[1];
 	}
-	$('[name="free"').selectpicker('val', days);
+	$('[name="free"]').selectpicker('val', days);
 	
 	var classList = params[0].split('=')[1].split('%7E');
 	if (classList[0].length != 0) {
