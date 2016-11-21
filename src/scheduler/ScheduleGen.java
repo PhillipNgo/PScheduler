@@ -2,7 +2,11 @@ package scheduler;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,7 +24,14 @@ public class ScheduleGen extends HttpServlet {
                                                   "lightsalmon", "lightgreen", "lightblue", "lightyellow", 
                                                   "silver", "peachpuff", "pink"};
     private ScheduleMaker generator;
-    //private String[] restrict;
+    private String start;
+    private String end;
+    private String free;
+    private LinkedList<String> subjects;
+    private LinkedList<String> numbers;
+    private LinkedList<String> types;
+    private LinkedList<String> crns;
+    private LinkedList<String> profs;
                                                
     /**
      * @see HttpServlet#HttpServlet()
@@ -115,15 +126,12 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("<div class='col-sm-6'>");
         
-        html.append("<h4><b>");
+        html.append("<h4 id='title'><b>");
         if (schedules == null) {
             html.append("0 Schedules");
         }
         else {
-            html.append(schedules.size() + " Schedules");
-            if (schedules.size() != 0) {
-                html.append(" | " + schedules.get(0).totalCredits() + " Credit Hours");
-            }
+            html.append("Schedule 1 of " + schedules.size());
         }
         html.append("</b></h4>");
         
@@ -194,83 +202,62 @@ public class ScheduleGen extends HttpServlet {
         
         //
         html.append("<div class='panel-body panel-group'>");
+        
+        html.append("<div style='padding-bottom:10px;' class='row'>");
+        html.append("<div class='col-sm-4'>");
         html.append("<div class='panel panel-default'>");
-        html.append("<div data-toggle='collapse' href='#collapseOne' class='panel-heading' role='button' id='headingOne'>");
+        html.append("<div data-toggle='collapse' href='#collapseOne' class='panel-heading' role='button'>");
         html.append("<h3 class='panel-title'><b>Your Restrictions</b></h3>");
         html.append("</div>");
-        html.append("<div id='collapseOne' class='panel-collapse collapse' role='tabpanel'>");
+        html.append("<div id='collapseOne' class='panel-collapse collapse in' role='tabpanel'>");
         html.append("<div class='panel-body'>");
-             
+        appendRestrictions(html);
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
+        html.append("</div>");
+        
+        html.append("<div style='padding:0 0 0 0;' class='col-sm-2'>");
         html.append("<div class='panel panel-default'>");
-        html.append("<div data-toggle='collapse' href='#collapseTwo' class='panel-heading' role='button' id='headingTwo'>");
-        html.append("<h3 class='panel-title'><b>Courses Found on Timetable</b></h3>");
+        html.append("<div data-toggle='collapse' href='#collapseFour' class='panel-heading' role='button'>");
+        html.append("<h3 class='panel-title'><b>Search Statistics</b></h3>");
         html.append("</div>");
-        html.append("<div id='collapseTwo' class='panel-collapse collapse' role='tabpanel'>");
+        html.append("<div id='collapseFour' class='panel-collapse collapse in' role='tabpanel'>");
         html.append("<div class='panel-body'>");
-        HashMap<String, LinkedList<VTCourse>> passed = generator.getPassed();
-        HashMap<String, LinkedList<VTCourse>> failed = generator.getFailed();
-        int i = 0;
-        for (VTCourse c : generator.getCrns()) {
-            String str = c.getSubject() + " " + c.getNum();
-            LinkedList<VTCourse> listings = generator.getListings().get(str);
-            html.append("<h4><b>" + str + " - " + c.getName() + "</b>" + " | " + listings.size() + " Sections</h4>");
-            html.append("<a class='btn btn-default glyphicon glyphicon-plus' onclick='changeIcon(this)' role='button' data-toggle='collapse' href='#pass" + i +"'>");
-            html.append("</a> CRN " + c.getCRN() + "<br>");
-            html.append("<div class='collapse' id='pass" + i + "'>");
-            html.append("<table class='table text'>");
-            html.append(textClass(c, false, -1));
-            html.append("</table>");
-            html.append("</div>");
-            listings.remove(c);
-            html.append("<a class='btn btn-default glyphicon glyphicon-plus' onclick='changeIcon(this)' role='button' data-toggle='collapse' href='#fail" + i + "'>");
-            html.append("</a> " + listings.size() +  " other sections<br>");
-            html.append("<div class='collapse' id='fail" + i++ + "'>");
-            html.append("<table class='table text'>");
-            for (VTCourse co : listings) {
-                html.append(textClass(co, false, -1));
-            }
-            html.append("</table>");
-            html.append("</div>");
-        }
-        for (String str : passed.keySet()) {
-            LinkedList<VTCourse> listings = generator.getListings().get(str);
-            html.append("<h4><b>" + str + " - " + listings.get(0).getName() + "</b> | " + listings.size() + " Sections</h4>");
-            html.append("<a class='btn btn-default glyphicon glyphicon-plus' onclick='changeIcon(this)' role='button' data-toggle='collapse' href='#pass" + i +"'>");
-            html.append("</a> " + passed.get(str).size() + " met the restrictions<br>");
-            html.append("<div class='collapse' id='pass" + i + "'>");
-            html.append("<table class='table text'>");
-            for (VTCourse c : passed.get(str)) {
-                html.append(textClass(c, false, -1));
-            }
-            html.append("</table>");
-            html.append("</div>");
-            
-            html.append("<a class='btn btn-default glyphicon glyphicon-plus' onclick='changeIcon(this)' role='button' data-toggle='collapse' href='#fail" + i + "'>");
-            html.append("</a> " + failed.get(str).size() +  " did not meet the restrictions<br>");
-            html.append("<div class='collapse' id='fail" + i++ + "'>");
-            html.append("<table class='table text'>");
-            for (VTCourse c : failed.get(str)) {
-                html.append(textClass(c, false, -1));
-            }
-            html.append("</table>");
-            html.append("</div>");
-        }
+        appendScheduleStats(html);
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
+        html.append("</div>");
+        
+        html.append("<div class='col-sm-6'>");
         html.append("<div class='panel panel-default'>");
-        html.append("<div data-toggle='collapse' href='#collapseThree' class='panel-heading' role='button' id='headingThree'>");
+        html.append("<div data-toggle='collapse' href='#collapseThree' class='panel-heading' role='button'>");
         html.append("<h3 class='panel-title'><b>Conflicts</b></h3>");
         html.append("</div>");
-        html.append("<div id='collapseThree' class='panel-collapse collapse' role='tabpanel'>");
+        html.append("<div id='collapseThree' class='panel-collapse collapse in' role='tabpanel'>");
         html.append("<div class='panel-body'>");
-              
+        try {
+            appendConflicts(html);
+        }
+        catch (Exception e) {}
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
+        html.append("</div>");
+        html.append("</div>");
+        
+        html.append("<div class='panel panel-default'>");
+        html.append("<div data-toggle='collapse' href='#collapseTwo' class='panel-heading' role='button'>");
+        html.append("<h3 class='panel-title'><b>Courses Found on Timetable</b></h3>");
+        html.append("</div>");
+        html.append("<div id='collapseTwo' class='panel-collapse collapse in' role='tabpanel'>");
+        html.append("<div class='panel-body'>");
+        appendCourseSearch(html);
+        html.append("</div>");
+        html.append("</div>");
+        html.append("</div>");
+        
         html.append("</div>");
         //
         html.append("</div>");
@@ -311,34 +298,43 @@ public class ScheduleGen extends HttpServlet {
     }
     
     private LinkedList<Schedule> getSchedules(HttpServletRequest request) throws Exception {
-        String startTime = request.getParameter("h1")+ ":";
+        start = request.getParameter("h1")+ ":";
         if ((Integer.parseInt(request.getParameter("m1"))-1)*5 == 0 || (Integer.parseInt(request.getParameter("m1"))-1)*5 == 5) {
-            startTime += "0";
+            start += "0";
         }
-        startTime += ((Integer.parseInt(request.getParameter("m1"))-1)*5) + request.getParameter("start");
+        start += ((Integer.parseInt(request.getParameter("m1"))-1)*5) + request.getParameter("start");
 
-        String endTime = request.getParameter("h2")+ ":";
+        end = request.getParameter("h2")+ ":";
         if ((Integer.parseInt(request.getParameter("m2"))-1)*5 == 0 || (Integer.parseInt(request.getParameter("m2"))-1)*5 == 5) {
-            endTime += "0";
+            end += "0";
         }
-        endTime += ((Integer.parseInt(request.getParameter("m2"))-1)*5) + request.getParameter("end");
+        end += ((Integer.parseInt(request.getParameter("m2"))-1)*5) + request.getParameter("end");
 
-        String[] freeDays = request.getParameterValues("free");  
+        String[] freeDays = request.getParameterValues("free");
+        free = "";
+        if (freeDays != null) {
+            for (String day : freeDays) {
+                free += day;
+            }
+        }
+        else {
+            free = "None";
+        }
+        
         String term = request.getParameter("term");
-
-        String[] classes = request.getParameter("schedule").split("xx");
-        LinkedList<String> subjects = new LinkedList<>();
-        LinkedList<String> numbers = new LinkedList<>();
-        LinkedList<String> types = new LinkedList<>();
-        LinkedList<String> crns = new LinkedList<>();
-        LinkedList<String> profs = new LinkedList<>();
+        String[] classes = request.getParameter("schedule").split("~");
+        subjects = new LinkedList<>();
+        numbers = new LinkedList<>();
+        types = new LinkedList<>();
+        crns = new LinkedList<>();
+        profs = new LinkedList<>();
 
         for (int i = 0; i < classes.length; i++) {
             if (classes[i].length() == 5) {
                 crns.add(classes[i]);
             }
             else {
-                String[] split = classes[i].split("ZXD");
+                String[] split = classes[i].split("-");
                 int index = 0;
                 if (split[0].charAt(split[0].length()-1) == 'H') {
                     index = 1;
@@ -346,12 +342,27 @@ public class ScheduleGen extends HttpServlet {
                 types.add(split[0].substring(0, 1));
                 subjects.add(split[0].substring(1, split[0].length()-4-index));
                 numbers.add(split[0].substring(split[0].length()-4-index, split[0].length()));
-                profs.add(split[1].replace("11", " "));
+                profs.add(split[1].replace("_", " "));
             }
         }
 
-        generator = new ScheduleMaker(term, subjects, numbers, types, startTime, endTime, freeDays, crns, profs);
+        generator = new ScheduleMaker(term, subjects, numbers, types, start, end, freeDays, crns, profs);
         return generator.getSchedules();
+    }
+    
+    private String classType(String type) {
+        switch (type) {
+            case "L": return "Lecture";
+            case "B": return "Lab";
+            case "C": return "Recitation";
+            case "H": return "Hybrid";
+            case "E": return "Emporium";
+            case "O": return "Online";
+            case "I": return "Independent Study";
+            case "R": return "Research";
+            case "A": return "Any";
+            default:  return "bug";
+        }
     }
     
     /**
@@ -370,28 +381,7 @@ public class ScheduleGen extends HttpServlet {
         html += "><td class='text'>" + c.getCRN() + "</td>";
         html += "<td class='text'>" + c.getSubject() + " " + c.getNum() + "</td>";
         html += "<td class='text pad'>" + c.getName() + "</td>";
-        String classType = c.getClassType();
-        switch (classType) {
-            case "L": classType = "Lecture";
-                      break;
-            case "B": classType = "Lab";
-                      break;
-            case "C": classType = "Recitation";
-                      break;
-            case "H": classType = "Hybrid";
-                      break;
-            case "E": classType = "Emporium";
-                      break;
-            case "O": classType = "Online";
-                      break;
-            case "I": classType = "Independent Study";
-                      break;
-            case "R": classType = "Research";
-                      break;
-            default:  classType = "bug";
-                      break;
-        }
-        html += "<td class='text'>" + classType + "</td>";
+        html += "<td class='text'>" + classType(c.getClassType()) + "</td>";
         html += "<td class='text'>" + c.getCredits() + "</td>";
         html += "<td class='text'>" + c.getProf() + "</td>";             
         Time t = c.getTimeSlot();
@@ -431,6 +421,190 @@ public class ScheduleGen extends HttpServlet {
         return html;
     }
     
+    private void appendConflicts(StringBuilder html) throws Exception {
+        HashMap<String, LinkedList<VTCourse>> pass = generator.getPassed();
+        HashMap<String, LinkedList<VTCourse>> copy = new HashMap<>();
+        for (String key : pass.keySet()) {
+            copy.put(key, pass.get(key));
+        }
+        for (VTCourse c : generator.getCrns()) {
+            LinkedList<VTCourse> crn = new LinkedList<>();
+            crn.add(c);
+            copy.put(c.getClassType() + c.getSubject() + " " + c.getNum(), crn);
+        }
+        ArrayList<Double> conflicts = new ArrayList<>();
+        ArrayList<Set<String>> name = new ArrayList<>();
+        for (Set<String> set : powerSet(copy.keySet())) {
+            LinkedList<LinkedList<VTCourse>> list = new LinkedList<>();
+            int total = 1;
+            for (String key : set) {
+                total *= copy.get(key).size();
+                list.add(copy.get(key));        
+            }
+            
+            if (set.size() > 1) {
+                conflicts.add((1.0 - (double) getConflicts(list, new Schedule(), 0, 0)/total)*100);
+                name.add(set);
+            }
+        }
+        for (int i = 0; i < 5; i++) {
+            double max = Collections.max(conflicts);
+            int ind = conflicts.indexOf(max);
+            String s = "";
+            for (String key : name.get(ind)) {
+                s += key.substring(1) + " " + key.substring(0, 1) + ", ";
+            }
+            html.append("<b>[ " + s.substring(0, s.length()-2) + " ]</b> conflicts " + max + "% of the time<br>");
+            name.remove(ind);
+            conflicts.remove(ind);
+        }
+    }
+    
+    private int getConflicts(LinkedList<LinkedList<VTCourse>> classListings, Schedule schedule, int classIndex, int total) throws Exception { 
+        for (VTCourse course : classListings.get(classIndex)) {
+            try {
+                schedule.add(course);
+            }
+            catch (TimeException e) {
+                continue;
+            }
+
+            if (classIndex == classListings.size() - 1) {
+                total++;
+            }
+            else {
+                total += getConflicts(classListings, schedule, classIndex + 1, 0);
+            }
+            schedule.remove(course);
+        }
+        return total;
+    }
+    
+    private Set<Set<String>> powerSet(Set<String> originalSet) {
+        Set<Set<String>> sets = new HashSet<Set<String>>();
+        if (originalSet.isEmpty()) {
+            sets.add(new HashSet<String>());
+            return sets;
+        }
+        ArrayList<String> list = new ArrayList<String>(originalSet);
+        String head = list.get(0);
+        Set<String> rest = new HashSet<String>(list.subList(1, list.size())); 
+        for (Set<String> set : powerSet(rest)) {
+            Set<String> newSet = new HashSet<String>();
+            newSet.add(head);
+            newSet.addAll(set);
+            sets.add(newSet);
+            sets.add(set);
+        }
+        return sets;
+    }  
+    
+    private void appendScheduleStats(StringBuilder html) {
+        HashMap<String, LinkedList<VTCourse>> list = generator.getListings();
+        int perm = 1;
+        for (String key : list.keySet()) {
+            perm *= list.get(key).size();
+        }
+        html.append("<b>Total # of Permutations: </b>" + perm + "<br>");
+        list = generator.getPassed();
+        perm = 1;
+        for (String key : list.keySet()) {
+            perm *= list.get(key).size();
+        }
+        html.append("<b># Passing the Restrictions: </b>" + perm + "<br>");
+        LinkedList<Schedule> scheds = generator.getSchedules();
+        html.append("<b># Possible (no conflicts):</b> " + generator.getSchedules().size() + "<br>");
+        if (scheds.size() == 0) {
+            html.append("<b>Total Credits:</b> N/A");
+        }
+        else {
+            html.append("<b>Total Credits:</b> " + generator.getSchedules().get(0).totalCredits());
+        }
+        
+    }
+    
+    private void appendRestrictions(StringBuilder html) {
+        html.append("<div class='row'><div class='col-sm-4'>");
+        html.append("<b>Earliest Start:</b> " + start + "<br><b>Latest End:</b> " + end + "<br><b>Free Days:</b> " + free + "<br>");
+        html.append("<b>CRNs: </b>");
+        if (crns.size() == 0) {
+            html.append("None");
+        }
+        for (String crn : crns) {
+            html.append(crn);
+            if (crns.indexOf(crn) < crns.size() - 1) {
+                html.append(", ");
+            }
+        }
+        html.append("</div><div class='col-sm-8'>");
+        html.append("<b>Courses (course number / class type / professor):</b><br>");
+        if (subjects.size() == 0) {
+            html.append("None");
+        }
+        for (int i = 0; i < subjects.size(); i++) {
+            html.append(subjects.get(i) + " " + numbers.get(i) + " / " + classType(types.get(i)) + " / ");
+            if (!profs.get(i).equals("A")) {
+                html.append(profs.get(i));
+            }
+            else {
+                html.append("Any");
+            }
+            html.append("<br>");
+        }
+        html.append("</div></div>");
+    }
+    
+    private void appendCourseSearch(StringBuilder html) {
+        HashMap<String, LinkedList<VTCourse>> passed = generator.getPassed();
+        HashMap<String, LinkedList<VTCourse>> failed = generator.getFailed();
+        int i = 0;
+        for (VTCourse c : generator.getCrns()) {
+            String str = c.getClassType() + c.getSubject() + " " + c.getNum();
+            LinkedList<VTCourse> listings = generator.getListings().get(str);
+            html.append("<b>" + c.getSubject() + " " + c.getNum() + " - " + c.getName() + "</b><i> " + classType(c.getClassType()) + "</i> | " + listings.size() + " Sections<br>");
+            html.append("<a class='btn btn-default glyphicon glyphicon-plus' onclick='changeIcon(this)' role='button' data-toggle='collapse' href='#pass" + i +"'>");
+            html.append("</a> CRN " + c.getCRN() + "<br>");
+            html.append("<div class='collapse' id='pass" + i + "'>");
+            html.append("<table class='table text'>");
+            html.append(textClass(c, false, -1));
+            html.append("</table>");
+            html.append("</div>");
+            listings.remove(c);
+            html.append("<a class='btn btn-default glyphicon glyphicon-plus' onclick='changeIcon(this)' role='button' data-toggle='collapse' href='#fail" + i + "'>");
+            html.append("</a> " + listings.size() +  " other sections<br>");
+            html.append("<div class='collapse' id='fail" + i++ + "'>");
+            html.append("<table class='table text'>");
+            for (VTCourse co : listings) {
+                html.append(textClass(co, false, -1));
+            }
+            html.append("</table>");
+            html.append("</div>");
+        }
+        for (String str : passed.keySet()) {
+            LinkedList<VTCourse> listings = generator.getListings().get(str);
+            html.append("<b>" + str.substring(1) + " - " + listings.get(0).getName() + "</b><i> " + classType(listings.get(0).getClassType()) + "</i> | "+ listings.size() + " Sections<br>");
+            html.append("<a class='btn btn-default glyphicon glyphicon-plus' onclick='changeIcon(this)' role='button' data-toggle='collapse' href='#pass" + i +"'>");
+            html.append("</a> " + passed.get(str).size() + " met the restrictions<br>");
+            html.append("<div class='collapse' id='pass" + i + "'>");
+            html.append("<table class='table text'>");
+            for (VTCourse c : passed.get(str)) {
+                html.append(textClass(c, false, -1));
+            }
+            html.append("</table>");
+            html.append("</div>");
+            
+            html.append("<a class='btn btn-default glyphicon glyphicon-plus' onclick='changeIcon(this)' role='button' data-toggle='collapse' href='#fail" + i + "'>");
+            html.append("</a> " + failed.get(str).size() +  " did not meet the restrictions<br>");
+            html.append("<div class='collapse' id='fail" + i++ + "'>");
+            html.append("<table class='table text'>");
+            for (VTCourse c : failed.get(str)) {
+                html.append(textClass(c, false, -1));
+            }
+            html.append("</table>");
+            html.append("</div>");
+        }
+    }
+    
     private void appendTextSchedules(StringBuilder html, LinkedList<Schedule> schedules) {
         int i = 0;
         for (Schedule schedule : schedules) {
@@ -441,7 +615,7 @@ public class ScheduleGen extends HttpServlet {
                 html.append("<table id='" + (i++) + "' class='text table'>");
             }
             html.append("<tr style='font-weight:bold'><td class='text'>CRN</td> <td  class='text'>Course</td> <td  class='text'>Title</td>"
-                    + "<td class='text'>Type</td><td  class='text'>Credits</td><td  class='text'>Instructor</td>"
+                    + "<td class='text'>Type</td><td  class='text'>Credits (" + schedules.get(0).totalCredits() + ")</td><td  class='text'>Instructor</td>"
                     + "<td class='text'>Days</td> <td  class='text'>Time</td> <td  class='text'>Location</td></tr>");
             int j = 0;
             for (VTCourse c : schedule) {

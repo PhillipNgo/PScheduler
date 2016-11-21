@@ -56,5 +56,9 @@ function changeSchedule(inc) {
 		listItem2[currNum + inc].style.display = "table";
 		list2.attributes["name"].value = listItem[currNum + inc].id;
 		$('#changet').val(currNum + inc + 1);
+		var title = document.getElementById('title');
+		var split = title.innerText.split(' ');
+		split[1] = (parseInt(split[1]) + inc) + "";
+		title.innerHTML = "<b>" + split[0] + " " + split[1] + " " + split[2] + " " + split[3] + "</b>";
 	}
 }

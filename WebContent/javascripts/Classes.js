@@ -37,7 +37,7 @@ function addClass(button) {
 		html += "<option value='A'>Any</option>";
 	}
 	for (var i = 0; i < profs.length; i++) {
-		html += "<option value='" + profs[i].replace(/ /g, "11") + "'>" + profs[i] + "</option>";
+		html += "<option value='" + profs[i].replace(/-/g, "_").replace(/ /g, "_") + "'>" + profs[i] + "</option>";
 	};
 	html += 	"</select>" +
 	"</td>" +
@@ -56,7 +56,7 @@ function addCRN(button) {
 	addClass(button);
 	var row = $('#schedule tbody tr:last').children('td');
 	$($(row.get(3)).children()[0]).val(classType(text[2]));
-	$($(row.get(4)).children()[0]).val(text[3].replace(/ /g, '11'));
+	$($(row.get(4)).children()[0]).val(text[3].replace(/ /g, '_'));
 	$($(row.get(0)).children()[0]).val(text[0].replace('Add ', ''));
 	$($(row.get(3)).children()[0]).prop('disabled', true);
 	$($(row.get(4)).children()[0]).prop('disabled', true);
@@ -67,7 +67,7 @@ function crnCheck(select) {
 	if (select.value !== 'A') {
 		var text = $("[name='" + select.value + "']").parent().text().split(" / ");
 		$($(row.get(3)).children()[0]).val(classType(text[2]));
-		$($(row.get(4)).children()[0]).val(text[3].replace(/ /g, '11'));
+		$($(row.get(4)).children()[0]).val(text[3].replace(/ /g, '_'));
 		$($(row.get(3)).children()[0]).prop('disabled', true);
 		$($(row.get(4)).children()[0]).prop('disabled', true);
 	}
@@ -99,13 +99,13 @@ function sendData() {
 		else {
 			var type = row.cells[3].children[0];
 			type = type.options[type.selectedIndex].value;
-			value += type + row.cells[1].getAttribute('value') + 'ZXD';
+			value += type + row.cells[1].getAttribute('value') + '-';
 			var prof = row.cells[4].children[0];
 			prof = prof.options[prof.selectedIndex].value;
 			value += prof;
 		}
 		if (i != table.rows.length-1) {
-			value += "xx";
+			value += "~";
 		}
 	}
 
@@ -146,11 +146,11 @@ function setParameters() {
 	}
 	$('[name="free"').selectpicker('val', days);
 	
-	var classList = params[0].split('=')[1].split('xx');
+	var classList = params[0].split('=')[1].split('%7E');
 	if (classList[0].length != 0) {
 		for (i = 0; i < classList.length; i++) {
 			var str = classList[i];
-			var split = str.split('ZXD');
+			var split = str.split('-');
 			var index = 0;
 			if (split[0].charAt(split[0].length-1) == 'H') {
 				index = 1;
