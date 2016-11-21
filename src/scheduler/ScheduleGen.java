@@ -127,7 +127,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("<div class='col-sm-6'>");
         
         html.append("<h4 id='title'><b>");
-        if (schedules == null) {
+        if (schedules == null || schedules.size() == 0) {
             html.append("0 Schedules");
         }
         else {
