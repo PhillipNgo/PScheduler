@@ -138,7 +138,7 @@ function setParameters() {
 	var i;
 	for (i = 1; i < 8; i++) { 
 		var val = params[i].split('=');
-		$('[name="' + val[0] + '"').selectpicker('val', val[1]);
+		$('[name="' + val[0] + '"]').selectpicker('val', val[1]);
 	}
 	var days = [];
 	for (i; i < params.length; i++) {
