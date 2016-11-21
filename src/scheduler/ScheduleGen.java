@@ -204,7 +204,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("<div class='panel-body panel-group'>");
         
         html.append("<div style='padding-bottom:10px;' class='row'>");
-        html.append("<div class='col-sm-4'>");
+        html.append("<div class='col-sm-5'>");
         html.append("<div class='panel panel-default'>");
         html.append("<div data-toggle='collapse' href='#collapseOne' class='panel-heading' role='button'>");
         html.append("<h3 class='panel-title'><b>Your Restrictions</b></h3>");
@@ -230,7 +230,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("</div>");
         
-        html.append("<div class='col-sm-6'>");
+        html.append("<div class='col-sm-5'>");
         html.append("<div class='panel panel-default'>");
         html.append("<div data-toggle='collapse' href='#collapseThree' class='panel-heading' role='button'>");
         html.append("<h3 class='panel-title'><b>Conflicts</b></h3>");
