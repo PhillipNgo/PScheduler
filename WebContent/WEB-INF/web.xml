@@ -25,4 +25,12 @@
     <servlet-name>ScheduleGen</servlet-name>
     <url-pattern>/generate</url-pattern>
   </servlet-mapping>
+  <servlet>
+  	<servlet-name>LiveSearch</servlet-name>
+  	<servlet-class>scheduler.LiveSearch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LiveSearch</servlet-name>
+  	<url-pattern>/LiveSearch/*</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -536,7 +536,8 @@ public class VTParser {
     public static void main(String[] args) throws Exception {
         //VTParser.outputFile("201609");
         //(new VTParser()).outputTermsFile();
-        VTParser.outputTermDataFile("201701");
+        //VTParser.outputTermDataFile("201701");
+        //HtmlSet.createSearchOptions();
         //System.out.println(VTParser.parseTermFile("201609"));
     }
 }

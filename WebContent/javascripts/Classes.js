@@ -85,6 +85,10 @@ function removeClass(button) {
 function sendData() {
 	var send = document.getElementById("form");
 	var table = document.getElementById("schedule");
+	if (table.rows.length == 1) {
+		alert('Your Schedule is Empty! Add classes using the search bar to generate schedules.');
+		return;
+	}
 	var select = document.createElement("select")
 	select.name = "schedule";
 	var option = document.createElement("option");
@@ -112,7 +116,8 @@ function sendData() {
 	select.hidden = true;
 	option.value = value;
 	select.add(option);
-	send.appendChild(select)
+	send.appendChild(select);
+	send.submit();
 }
 
 function classType(type) {

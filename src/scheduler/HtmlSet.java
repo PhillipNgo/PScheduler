@@ -75,6 +75,8 @@ public class HtmlSet {
      * @throws Exception
      */
     public static void createSearchOptions() throws Exception {
+        terms = new LinkedList<String>();
+        terms.add("201701");
         try (Writer output = new BufferedWriter(new OutputStreamWriter(
                 new FileOutputStream("WebContent/Database/options.txt"), "utf-8"))) {
             for (String term : terms) {
@@ -104,10 +106,7 @@ public class HtmlSet {
                             if (name == null) {
                                 name = c.getName();
                             }
-                            output.write("<li id='crn' class='list-group-item' style='display:none;'>"
-                                    + "<button name='" + c.getCRN() + "' class='btn btn-default btn-sm crnb' type='button'>Add</button> " 
-                                    + c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " - " + c.getName() + " / "
-                                    + longClassType(c.getClassType()) + " / " + c.getProf());
+                            output.write(c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " - " + c.getName() + " / " + longClassType(c.getClassType()) + " / " + c.getProf());
                             Time t = c.getTimeSlot();
                             if (t != null) {
                                 String[] days = c.getDays();
@@ -126,11 +125,9 @@ public class HtmlSet {
                                     output.write(" " + t.getStart() + " - " + t.getEnd());
                                 }
                             }
-                            output.write("</li>\r\n");
+                            output.write("\r\n");
                         }
-                        output.write("<li id='course' class='list-group-item' style='display:none;'>"
-                                + "<button name='" + subject + s + "' class='btn btn-default btn-sm courseb' type='button'>Add</button> " 
-                                + subject + " " + s + " - " + name + " / " + longClassType(types.get(0)));
+                        output.write(subject + " " + s + " - " + name + " / " + longClassType(types.get(0)));
                         for (int i = 1; i < types.size(); i++) {
                             output.write(", " + longClassType(types.get(i)));
                         }
@@ -142,7 +139,7 @@ public class HtmlSet {
                         for (int i = 1; i < crns.size(); i++) {
                             output.write(", " + crns.get(i));
                         }
-                        output.write("</li>\r\n");
+                        output.write("\r\n");
                     }
                 }
             } 
