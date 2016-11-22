@@ -1,0 +1,14 @@
+branch-defaults:
+  master:
+    environment: pscheduler-env
+environment-defaults:
+  pscheduler-env:
+    branch: null
+    repository: null
+global:
+  application_name: PScheduler
+  default_ec2_keyname: null
+  default_platform: 64bit Amazon Linux 2016.09 v2.3.1 running Tomcat 8 Java 8
+  default_region: us-east-1
+  profile: eb-cli
+  sc: git
