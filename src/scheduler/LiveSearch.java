@@ -29,7 +29,7 @@ public class LiveSearch extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    response.setContentType("text/html");
-	    String searchTerm = request.getParameter("search").toLowerCase();
+	    String searchTerm = request.getParameter("search");
 	    String searchType = request.getParameter("type");
 	    StringBuilder html = new StringBuilder();
 	    html.append("<li id='hide' class='list-group-item'><button onclick='hide()' id='hideb' type='button' class='btn btn-default form-control'>Hide Search</button></li>");

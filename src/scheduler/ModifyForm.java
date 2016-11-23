@@ -27,7 +27,7 @@ public class ModifyForm extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	    RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
+	    RequestDispatcher dispatcher = request.getRequestDispatcher("/index.html");
 	    dispatcher.forward(request, response);
 	}
 

@@ -2,7 +2,6 @@ function addClass(button) {
 	if ($('#schedule tr').length > 12) {
 		return;
 	}
-
 	var text = button.parent().text().split(" / ");
 	var crns = text[3].split(", ");
 	var types = text[1].split(", ");
@@ -49,27 +48,34 @@ function addCRN(button) {
 	if ($('#schedule tr').length > 12) {
 		return;
 	}
-
+	
+	$.ajax({
+	     async: false,
+	     type: 'GET',
+	     url: 'LiveSearch',
+	     data: {search:button.attr("name"), type:"course"},
+	     success: function(response) {
+	    	 addClass($($($($.parseHTML(response)).get(1)).children('button')));
+	     }
+	});
+	
 	var text = button.parent().text().split(" / ");
 	var name = text[1].split(" - ");
-	button = $("[name='" + name[0].replace(/ /g, '') + "']");
-	addClass(button);
 	var row = $('#schedule tbody tr:last').children('td');
-	$($(row.get(3)).children()[0]).val(classType(text[2]));
-	$($(row.get(4)).children()[0]).val(text[3].replace(/ /g, '_'));
 	$($(row.get(0)).children()[0]).val(text[0].replace('Add ', ''));
-	$($(row.get(3)).children()[0]).prop('disabled', true);
-	$($(row.get(4)).children()[0]).prop('disabled', true);
+	crnCheck($(row.get(0)).children()[0]);
 }
 
 function crnCheck(select) {
 	var row = $(select).parent().parent().children('td');
 	if (select.value !== 'A') {
-		var text = $("[name='" + select.value + "']").parent().text().split(" / ");
-		$($(row.get(3)).children()[0]).val(classType(text[2]));
-		$($(row.get(4)).children()[0]).val(text[3].replace(/ /g, '_'));
-		$($(row.get(3)).children()[0]).prop('disabled', true);
-		$($(row.get(4)).children()[0]).prop('disabled', true);
+		$.get('LiveSearch', {search:select.value, type:"crn"}, function(response) {
+			var text = $($($.parseHTML(response)).get(1)).text().split(' / ');
+			$($(row.get(3)).children()[0]).val(classType(text[2]));
+			$($(row.get(4)).children()[0]).val(text[3].replace(/ /g, '_'));
+			$($(row.get(3)).children()[0]).prop('disabled', true);
+			$($(row.get(4)).children()[0]).prop('disabled', true);
+		});	
 	}
 	else {
 		$($(row.get(3)).children()[0]).prop('disabled', false);
@@ -131,45 +137,5 @@ function classType(type) {
 	case "Independent Study": return "I";
 	case "Research": return "R";
 	default:  return "bug";
-	}
-}
-
-function setParameters() {
-	var params = window.location.search.substr(1);
-	if (params.length == 0) {
-		return
-	}
-	params = params.split('&');
-	var i;
-	for (i = 1; i < 8; i++) { 
-		var val = params[i].split('=');
-		$('[name="' + val[0] + '"]').selectpicker('val', val[1]);
-	}
-	var days = [];
-	for (i; i < params.length; i++) {
-		days[i-8] = params[i].split('=')[1];
-	}
-	$('[name="free"]').selectpicker('val', days);
-	
-	var classList = params[0].split('=')[1].split('%7E');
-	if (classList[0].length != 0) {
-		for (i = 0; i < classList.length; i++) {
-			var str = classList[i];
-			var split = str.split('-');
-			var index = 0;
-			if (split[0].charAt(split[0].length-1) == 'H') {
-				index = 1;
-			}
-			if (split[0].length == 5 && !isNaN(parseInt(split[0], 10))) {
-				$('[name="' + split[0] + '"]').click();
-			}
-			else {
-				$('[name="' + split[0].substring(1) + '"]').click();
-				$('#schedule tbody tr:last').children('td'); //continue here
-				//selectClass(str.substring(1, str.length-4-index), str.substring(str.length-4-index, str.length));
-				$($($('#schedule tbody tr:last').children('td').get(3)).children()[0]).val(split[0].substring(0, 1));
-				$($($('#schedule tbody tr:last').children('td').get(4)).children()[0]).val(split[1]);
-			}			
-		}
 	}
 }
