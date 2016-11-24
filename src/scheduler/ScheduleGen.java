@@ -43,7 +43,6 @@ public class ScheduleGen extends HttpServlet {
      */
     public ScheduleGen() {
         super();
-        html = new StringBuilder();
     }
 
     /**
@@ -52,6 +51,7 @@ public class ScheduleGen extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //Set up response and generate schedules
         response.setContentType("text/html");
+        html = new StringBuilder();
         PrintWriter printer = response.getWriter();
         LinkedList<Schedule> schedules;
         try {

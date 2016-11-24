@@ -24,7 +24,6 @@ public class LiveSearch extends HttpServlet {
      */
     public LiveSearch() {
         super();
-        html = new StringBuilder();
     }
 
 	/**
@@ -32,6 +31,7 @@ public class LiveSearch extends HttpServlet {
 	 * Searches options.txt for classes that match the search term and creates a list of 10 options to display
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	    html = new StringBuilder();
 	    response.setContentType("text/html");
 	    String searchTerm = request.getParameter("search");
 	    String searchType = request.getParameter("type");
