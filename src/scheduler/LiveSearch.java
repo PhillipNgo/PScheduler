@@ -12,26 +12,29 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * Servlet implementation class LiveSearch
+ * Searches the class options
  */
 @WebServlet("/LiveSearch")
 public class LiveSearch extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	private StringBuilder html;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
     public LiveSearch() {
         super();
+        html = new StringBuilder();
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * Searches options.txt for classes that match the search term and creates a list of 10 options to display
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    response.setContentType("text/html");
 	    String searchTerm = request.getParameter("search");
 	    String searchType = request.getParameter("type");
-	    StringBuilder html = new StringBuilder();
 	    html.append("<li id='hide' class='list-group-item'><button onclick='hide()' id='hideb' type='button' class='btn btn-default form-control'>Hide Search</button></li>");
 	    Scanner scan;
 	    try {

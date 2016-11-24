@@ -16,10 +16,14 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * Servlet implementation class ScheduleGen
+ * Creates the dynamic page of schedule search results
  */
 @WebServlet("/ScheduleGen")
 public class ScheduleGen extends HttpServlet {
     private static final long serialVersionUID = 1L;
+    /**
+     * The color coding for schedules
+     */
     private static String[] colors = new String[]{"orange", "lightseagreen", "antiquewhite", "gold", "lightskyblue", 
                                                   "lightsalmon", "lightgreen", "lightblue", "lightyellow", 
                                                   "silver", "peachpuff", "pink"};
@@ -32,23 +36,24 @@ public class ScheduleGen extends HttpServlet {
     private LinkedList<String> types;
     private LinkedList<String> crns;
     private LinkedList<String> profs;
+    private StringBuilder html;
                                                
     /**
      * @see HttpServlet#HttpServlet()
      */
     public ScheduleGen() {
         super();
+        html = new StringBuilder();
     }
 
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //Set up response and generate schedules
         response.setContentType("text/html");
         PrintWriter printer = response.getWriter();
-        StringBuilder html = new StringBuilder();
         LinkedList<Schedule> schedules;
-        //restrict = new String[3];
         try {
             schedules = getSchedules(request);
         }
@@ -56,7 +61,7 @@ public class ScheduleGen extends HttpServlet {
             schedules = null;
         }
         
-        // -- HEAD START -- //
+        // -- HEAD START -- // Imports, favicon, scripts
         html.append("<!DOCTYPE html>");
         html.append("<html lang='en'>");
         html.append("<head>");
@@ -85,7 +90,7 @@ public class ScheduleGen extends HttpServlet {
         // -- HEAD END -- //
 
         
-        // -- HEADER START -- //
+        // -- HEADER START -- // header bar on top
         html.append("<body style='background-color: #FFFAFA'>");
         html.append("<div style='background-color: DarkSlateGray; border-bottom: 1px solid darkorange;'>");
         html.append("<div class='container-fluid header'>");
@@ -98,7 +103,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         // -- HEADER END -- //
         
-        // -- BODY START -- //
+        // -- BODY START -- // schedules and search data
         html.append("<div class='container-fluid'>");
         html.append("<div style='padding-top: 10px;' class='row'>");
         html.append("<div style='padding-left: 12.5px; padding-right: 12.5px;' class='col-sm-12'>");
@@ -168,11 +173,11 @@ public class ScheduleGen extends HttpServlet {
             }
             else if (schedules.size() < 1000) {
                 html.append("<ul class='collapse in' style='padding-left:0' id='textschedules' name='0'>");
-                appendTextSchedules(html, schedules);
+                appendTextSchedules(schedules);
                 html.append("</ul>");
            
                 html.append("<ul style='padding-top:5px; padding-left:0' id='tableschedules' name='0'>");
-                appendTableSchedules(html, schedules);
+                appendTableSchedules(schedules);
                 html.append("</ul>");
             }
             else {
@@ -180,7 +185,7 @@ public class ScheduleGen extends HttpServlet {
             }
         }
         catch (Exception e) {
-            html.append("Error in Displaying Schedules<br>Please email me the url of this page!<br>");
+            html.append("There was an error when displaying your schedules!<br>");
         }
         
         html.append("</div>");
@@ -211,7 +216,9 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("<div id='collapseOne' class='panel-collapse collapse in' role='tabpanel'>");
         html.append("<div class='panel-body'>");
-        appendRestrictions(html);
+        try {
+            html.append(getRestrictions());
+        } catch (Exception e) {};
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
@@ -224,7 +231,9 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("<div id='collapseFour' class='panel-collapse collapse in' role='tabpanel'>");
         html.append("<div class='panel-body'>");
-        appendScheduleStats(html);
+        try {
+            getScheduleStats();
+        } catch (Exception e) {}
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
@@ -238,7 +247,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("<div id='collapseThree' class='panel-collapse collapse in' role='tabpanel'>");
         html.append("<div class='panel-body'>");
         try {
-            appendConflicts(html);
+            html.append(getConflicts());
         }
         catch (Exception e) {}
         html.append("</div>");
@@ -253,7 +262,10 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("<div id='collapseTwo' class='panel-collapse collapse in' role='tabpanel'>");
         html.append("<div class='panel-body'>");
-        appendCourseSearch(html);
+        try{
+            appendCourseSearch();
+        }
+        catch(Exception e) {}
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
@@ -297,6 +309,12 @@ public class ScheduleGen extends HttpServlet {
         doGet(request, response);
     }
     
+    /**
+     * Returns the generated schedules and instantiates the generator in order to pull data
+     * @param request The Request to get the data parameters from completed form
+     * @return LinkedList of valid schedules
+     * @throws Exception
+     */
     private LinkedList<Schedule> getSchedules(HttpServletRequest request) throws Exception {
         start = request.getParameter("h1")+ ":";
         if ((Integer.parseInt(request.getParameter("m1"))-1)*5 == 0 || (Integer.parseInt(request.getParameter("m1"))-1)*5 == 5) {
@@ -350,6 +368,11 @@ public class ScheduleGen extends HttpServlet {
         return generator.getSchedules();
     }
     
+    /**
+     * Returns long form of a class type
+     * @param type the short form
+     * @return the corresponding long form
+     */
     private String classType(String type) {
         switch (type) {
             case "L": return "Lecture";
@@ -421,7 +444,12 @@ public class ScheduleGen extends HttpServlet {
         return html;
     }
     
-    private void appendConflicts(StringBuilder html) throws Exception {
+    /**
+     * Create html conflict data from the generator
+     * @throws Exception
+     */
+    private String getConflicts() throws Exception {
+        StringBuilder html = new StringBuilder();
         HashMap<String, LinkedList<VTCourse>> pass = generator.getPassed();
         HashMap<String, LinkedList<VTCourse>> copy = new HashMap<>();
         for (String key : pass.keySet()) {
@@ -458,8 +486,18 @@ public class ScheduleGen extends HttpServlet {
             name.remove(ind);
             conflicts.remove(ind);
         }
+        return html.toString();
     }
     
+    /**
+     * Returns the total amount of classes that do not conflict together for a given list of classes
+     * @param classListings the classes to create permutations from
+     * @param schedule schedule to test conflicts
+     * @param classIndex the current class index in classListings
+     * @param total the total amount that pass
+     * @return total
+     * @throws Exception
+     */
     private int getConflicts(LinkedList<LinkedList<VTCourse>> classListings, Schedule schedule, int classIndex, int total) throws Exception { 
         for (VTCourse course : classListings.get(classIndex)) {
             try {
@@ -480,6 +518,11 @@ public class ScheduleGen extends HttpServlet {
         return total;
     }
     
+    /**
+     * Creates the power set of a set
+     * @param originalSet the set to create the powerset from
+     * @return the power set
+     */
     private Set<Set<String>> powerSet(Set<String> originalSet) {
         Set<Set<String>> sets = new HashSet<Set<String>>();
         if (originalSet.isEmpty()) {
@@ -499,8 +542,12 @@ public class ScheduleGen extends HttpServlet {
         return sets;
     }  
     
-    private void appendScheduleStats(StringBuilder html) {
+    /**
+     * Creates HTML schedule statistics like total credits and permutations 
+     */
+    private String getScheduleStats() {
         HashMap<String, LinkedList<VTCourse>> list = generator.getListings();
+        StringBuilder html = new StringBuilder();
         int perm = 1;
         for (String key : list.keySet()) {
             perm *= list.get(key).size();
@@ -520,10 +567,14 @@ public class ScheduleGen extends HttpServlet {
         else {
             html.append("<b>Total Credits:</b> " + generator.getSchedules().get(0).totalCredits());
         }
-        
+        return html.toString();
     }
     
-    private void appendRestrictions(StringBuilder html) {
+    /**
+     * Creates HTML representing the search restrictions 
+     */
+    private String getRestrictions() {
+        StringBuilder html = new StringBuilder();
         html.append("<div class='row'><div class='col-sm-4'>");
         html.append("<b>Earliest Start:</b> " + start + "<br><b>Latest End:</b> " + end + "<br><b>Free Days:</b> " + free + "<br>");
         html.append("<b>CRNs: </b>");
@@ -552,9 +603,14 @@ public class ScheduleGen extends HttpServlet {
             html.append("<br>");
         }
         html.append("</div></div>");
+        return html.toString();
     }
     
-    private void appendCourseSearch(StringBuilder html) {
+    /**
+     * Appends all class data found from the timetable. Data is found in the generator
+     */
+    private String appendCourseSearch() {
+        StringBuilder html = new StringBuilder();
         HashMap<String, LinkedList<VTCourse>> passed = generator.getPassed();
         HashMap<String, LinkedList<VTCourse>> failed = generator.getFailed();
         int i = 0;
@@ -603,9 +659,14 @@ public class ScheduleGen extends HttpServlet {
             html.append("</table>");
             html.append("</div>");
         }
+        return html.toString();
     }
     
-    private void appendTextSchedules(StringBuilder html, LinkedList<Schedule> schedules) {
+    /**
+     * Creates html tables for a list of schedule, all but the first are hidden
+     * @param schedules the schedules to create
+     */
+    private void appendTextSchedules(LinkedList<Schedule> schedules) {
         int i = 0;
         for (Schedule schedule : schedules) {
             if (i != 0) {
@@ -626,7 +687,12 @@ public class ScheduleGen extends HttpServlet {
         }      
     }
     
-    private void appendTableSchedules(StringBuilder html, LinkedList<Schedule> schedules) throws TimeException {
+    /**
+     * Appends the visualized tables to the html, the all but the first are hidden
+     * @param schedules the schedues
+     * @throws TimeException
+     */
+    private void appendTableSchedules(LinkedList<Schedule> schedules) throws TimeException {
         int i = 0;
         for (Schedule schedule : schedules) {
             if (i != 0) {

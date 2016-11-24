@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * Servlet implementation class ModifyForm
+ * Redirects the user to the home page to modify their search
  */
 @WebServlet("/ModifyForm")
 public class ModifyForm extends HttpServlet {
@@ -20,10 +21,10 @@ public class ModifyForm extends HttpServlet {
      */
     public ModifyForm() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
+	 * Redirects the submitted form data back to index.html to modify the schedule
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -35,7 +36,6 @@ public class ModifyForm extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 

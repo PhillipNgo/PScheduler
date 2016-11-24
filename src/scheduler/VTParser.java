@@ -407,11 +407,11 @@ public class VTParser {
     }
     
     /**
-     * Outputs class data into an output file with the name of the term
+     * Outputs class data and search options into an output files
      * @param termYear the term value
      * @throws Exception
      */
-    public static void outputTermDataFile(String termYear) throws Exception {
+    public static void outputTermDataFiles(String termYear) throws Exception {
         VTParser parser = new VTParser(termYear);
         HashMap<String, HashMap<String, LinkedList<VTCourse>>> map = parser.parseTerm();
         String[] subjects = parser.getSubjectValues();
@@ -439,24 +439,88 @@ public class VTParser {
                 }
             }
         }
+        
+        try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+                new FileOutputStream("WebContent/Database/options.txt"), "utf-8"))) {
+            for (String subject : subjects) {
+                if (subject.equals("%")) {
+                    continue;
+                }
+                HashMap<String, LinkedList<VTCourse>> classes = map.get(subject);
+                if (classes == null) {
+                    continue;
+                }
+                for (String s : classes.keySet()) {
+                    LinkedList<String> types = new LinkedList<>();
+                    LinkedList<String> profs = new LinkedList<>();
+                    LinkedList<String> crns = new LinkedList<>();
+                    String name = null;
+                    for (VTCourse c : classes.get(s)) {
+                        crns.add(c.getCRN());
+                        if (types.indexOf(c.getClassType()) < 0) {
+                            types.add(c.getClassType());
+                        }
+                        if (profs.indexOf(c.getProf()) < 0) {
+                            profs.add(c.getProf());
+                        }
+                        if (name == null) {
+                            name = c.getName();
+                        }
+                        writer.write(c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " - " + c.getName() + " / " + longClassType(c.getClassType()) + " / " + c.getProf());
+                        Time t = c.getTimeSlot();
+                        if (t != null) {
+                            String[] days = c.getDays();
+                            writer.write(" / ");
+                            for (int i = 0; i < days.length; i++) {
+                                writer.write(days[i]);
+                            }
+                            writer.write(" " + t.getStart() + " - " + t.getEnd());
+                            t = c.getAdditionalTime();
+                            if (t != null) {
+                                days = c.getAdditionalDays();
+                                writer.write(" / ");
+                                for (int i = 0; i < days.length; i++) {
+                                    writer.write(days[i]);
+                                }
+                                writer.write(" " + t.getStart() + " - " + t.getEnd());
+                            }
+                        }
+                        writer.write("\r\n");
+                    }
+                    writer.write(subject + " " + s + " - " + name + " / " + longClassType(types.get(0)));
+                    for (int i = 1; i < types.size(); i++) {
+                        writer.write(", " + longClassType(types.get(i)));
+                    }
+                    writer.write(" / " + profs.get(0));
+                    for (int i = 1; i < profs.size(); i++) {
+                        writer.write(", " + profs.get(i));
+                    }
+                    writer.write(" / " + crns.get(0));
+                    for (int i = 1; i < crns.size(); i++) {
+                        writer.write(", " + crns.get(i));
+                    }
+                    writer.write("\r\n");
+                }
+            }
+        }
     }
     
     /**
-     * Outputs class data into an output file with the name of the term
-     * @param termYear the term value
-     * @throws Exception
+     * Converts a class type letter into its long for
+     * @param type the class type
+     * @return the long form
      */
-    public void outputTermsFile() throws Exception {
-        String[] optionNames = getTerms();
-        String[] optionValues = getTermValues();
-        int i = 1;
-        while (i < optionNames.length &&
-                (optionNames[i].contains("Summer") || optionNames[i].contains("Winter"))) {
-            i++;
-        }
-        try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-                new FileOutputStream("WebContent/Database/terms.txt"), "utf-8"))) {
-            writer.write(optionNames[i] + "/" + optionValues[i-1]);
+    private static String longClassType(String type) {
+        switch (type) {
+            case "L": return "Lecture";
+            case "B": return "Lab";
+            case "C": return "Recitation";
+            case "H": return "Hybrid";
+            case "E": return "Emporium";
+            case "O": return "Online";
+            case "I": return "Independent Study";
+            case "R": return "Research";
+            default:  return "bug";
         }
     }
     
@@ -534,10 +598,6 @@ public class VTParser {
     }
     
     public static void main(String[] args) throws Exception {
-        //VTParser.outputFile("201609");
-        //(new VTParser()).outputTermsFile();
-        //VTParser.outputTermDataFile("201701");
-        //HtmlSet.createSearchOptions();
-        //System.out.println(VTParser.parseTermFile("201609"));
+        VTParser.outputTermDataFiles("201701");
     }
 }
