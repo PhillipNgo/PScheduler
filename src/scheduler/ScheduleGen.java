@@ -3,6 +3,7 @@ package scheduler;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -37,6 +38,7 @@ public class ScheduleGen extends HttpServlet {
     private LinkedList<String> crns;
     private LinkedList<String> profs;
     private StringBuilder html;
+    private StringBuilder fullConflicts;
                                                
     /**
      * @see HttpServlet#HttpServlet()
@@ -54,12 +56,29 @@ public class ScheduleGen extends HttpServlet {
         html = new StringBuilder();
         PrintWriter printer = response.getWriter();
         LinkedList<Schedule> schedules;
+        
         try {
             schedules = getSchedules(request);
         }
         catch (Exception e) {
             schedules = null;
         }
+        fullConflicts = new StringBuilder();
+        String restrictions = "";
+        String stats = "";
+        String conflicts = "";
+        String courseSearch = "";
+        if (schedules != null) {
+            restrictions = this.getRestrictions();
+            stats = this.getScheduleStats();
+            conflicts = "";
+            try {
+                conflicts = this.getConflicts();
+            }
+            catch (Exception e) {}
+            courseSearch = this.getCourseSearch();
+        }
+        
         
         // -- HEAD START -- // Imports, favicon, scripts
         html.append("<!DOCTYPE html>");
@@ -142,7 +161,9 @@ public class ScheduleGen extends HttpServlet {
         
         html.append("</div>");
         html.append("<div style='text-align:right' role='group' class='btn-group col-sm-3' aria-label='...'>");
+        
         html.append("<form action='modify' style='padding-right:12px'>");
+        html.append("<a class='btn btn-default' id='download' href='download' onclick='dlHref()'>Download as Excel</a>");
         html.append("<button type='button' class='btn btn-default hidetb'>Hide Table</button>");
         html.append("<button type='submit' class='btn btn-default'>Modify Search</button>");
         html.append("<select style='display: none;' name='classes'><option value='" + request.getParameter("schedule") + "'></option></select>");
@@ -168,8 +189,12 @@ public class ScheduleGen extends HttpServlet {
         html.append("<div style='padding-top:0px' class='panel-body'>");
         
         try {
-            if (schedules == null || schedules.size() == 0) {
-                html.append("No Schedules Matched Your Parameters. See 'Search Data' for more information.");
+            if (schedules == null) {
+                html.append("Sorry, something went wrong when trying to generate your schedules.");
+            }
+            else if (schedules.size() == 0) {
+                html.append("No Schedules Matched Your Parameters. See below or 'Search Data' for more information.<br>");
+                html.append(fullConflicts.toString());
             }
             else if (schedules.size() < 1000) {
                 html.append("<ul class='collapse in' style='padding-left:0' id='textschedules' name='0'>");
@@ -216,9 +241,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("<div id='collapseOne' class='panel-collapse collapse in' role='tabpanel'>");
         html.append("<div class='panel-body'>");
-        try {
-            html.append(getRestrictions());
-        } catch (Exception e) {};
+        html.append(restrictions);
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
@@ -231,9 +254,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("<div id='collapseFour' class='panel-collapse collapse in' role='tabpanel'>");
         html.append("<div class='panel-body'>");
-        try {
-            getScheduleStats();
-        } catch (Exception e) {}
+        html.append(stats);
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
@@ -246,10 +267,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("<div id='collapseThree' class='panel-collapse collapse in' role='tabpanel'>");
         html.append("<div class='panel-body'>");
-        try {
-            html.append(getConflicts());
-        }
-        catch (Exception e) {}
+        html.append(conflicts);
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
@@ -262,10 +280,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("<div id='collapseTwo' class='panel-collapse collapse in' role='tabpanel'>");
         html.append("<div class='panel-body'>");
-        try{
-            appendCourseSearch();
-        }
-        catch(Exception e) {}
+        html.append(courseSearch);
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
@@ -300,6 +315,7 @@ public class ScheduleGen extends HttpServlet {
         // -- FOOTER END -- //
         
         printer.print(html.toString());
+        printer.flush();
     }
 
     /**
@@ -321,17 +337,24 @@ public class ScheduleGen extends HttpServlet {
             start += "0";
         }
         start += ((Integer.parseInt(request.getParameter("m1"))-1)*5) + request.getParameter("start");
-
+        
         end = request.getParameter("h2")+ ":";
         if ((Integer.parseInt(request.getParameter("m2"))-1)*5 == 0 || (Integer.parseInt(request.getParameter("m2"))-1)*5 == 5) {
             end += "0";
         }
         end += ((Integer.parseInt(request.getParameter("m2"))-1)*5) + request.getParameter("end");
-
+        
+        if (!Time.isTime(start) || !Time.isTime(end)) {
+            throw new TimeException("");
+        }
+        
         String[] freeDays = request.getParameterValues("free");
         free = "";
         if (freeDays != null) {
             for (String day : freeDays) {
+                if (!Schedule.DAYS.contains(day)) {
+                    throw new IllegalArgumentException();
+                }
                 free += day;
             }
         }
@@ -470,7 +493,7 @@ public class ScheduleGen extends HttpServlet {
                 list.add(copy.get(key));        
             }
             
-            if (set.size() > 1) {
+            if (set.size() > 1 && total > 0) {
                 conflicts.add((1.0 - (double) getConflicts(list, new Schedule(), 0, 0)/total)*100);
                 name.add(set);
             }
@@ -482,7 +505,10 @@ public class ScheduleGen extends HttpServlet {
             for (String key : name.get(ind)) {
                 s += key.substring(1) + " " + key.substring(0, 1) + ", ";
             }
-            html.append("<b>[ " + s.substring(0, s.length()-2) + " ]</b> conflicts " + max + "% of the time<br>");
+            html.append("<b>[ " + s.substring(0, s.length()-2) + " ]</b> conflicts " + String.format("%.2f", max) + "% of the time<br>");
+            if (max == 100.0) {
+                fullConflicts.append("<b>[ " + s.substring(0, s.length()-2) + " ]</b> conflicts " + String.format("%.2f", max) + "% of the time<br>");
+            }
             name.remove(ind);
             conflicts.remove(ind);
         }
@@ -609,7 +635,7 @@ public class ScheduleGen extends HttpServlet {
     /**
      * Appends all class data found from the timetable. Data is found in the generator
      */
-    private String appendCourseSearch() {
+    private String getCourseSearch() {
         StringBuilder html = new StringBuilder();
         HashMap<String, LinkedList<VTCourse>> passed = generator.getPassed();
         HashMap<String, LinkedList<VTCourse>> failed = generator.getFailed();
@@ -658,6 +684,19 @@ public class ScheduleGen extends HttpServlet {
             }
             html.append("</table>");
             html.append("</div>");
+            
+            if (passed.get(str).size() == 0) {
+                fullConflicts.append("<b>" + str.substring(1) + " - " + listings.get(0).getName() + "</b><i> " + classType(listings.get(0).getClassType()) + "</i> | "+ listings.size() + " Sections<br>");
+                fullConflicts.append("<a class='btn btn-default glyphicon glyphicon-plus' onclick='changeIcon(this)' role='button' data-toggle='collapse' href='#fail" + i + "'>");
+                fullConflicts.append("</a> " + failed.get(str).size() +  " did not meet the restrictions<br>");
+                fullConflicts.append("<div class='collapse' id='fail" + i++ + "'>");
+                fullConflicts.append("<table class='table text'>");
+                for (VTCourse c : failed.get(str)) {
+                    fullConflicts.append(textClass(c, false, -1));
+                }
+                fullConflicts.append("</table>");
+                fullConflicts.append("</div>");
+            }
         }
         return html.toString();
     }

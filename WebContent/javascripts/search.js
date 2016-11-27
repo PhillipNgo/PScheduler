@@ -49,25 +49,52 @@ function setParameters() {
 			if (split[0].charAt(split[0].length-1) == 'H') {
 				index = 1;
 			}
-			if (split[0].length == 5 && !isNaN(parseInt(split[0], 10))) {
-				$.get('LiveSearch', {search:split[0], type:"crn"}, function(response) {
-					addCRN($($($($.parseHTML(response)).get(1)).children('button')));
-				});
-			}
-			else {
-				var search = (split[0].substring(1, split[0].length-4-index) + " " + split[0].substring(split[0].length-4-index)).toLowerCase();
-				$.ajax({
-				     async: false,
-				     type: 'GET',
-				     url: 'LiveSearch',
-				     data: {search:search, type:"course"},
-				     success: function(response) {
-				    	 addClass($($($($.parseHTML(response)).get(1)).children('button')));
-				     }
-				});
-				$($($('#schedule tbody tr:last').children('td').get(3)).children()[0]).val(split[0].substring(0, 1));
-				$($($('#schedule tbody tr:last').children('td').get(4)).children()[0]).val(split[1]);
-			}			
+			var crns = [];
+			var crnNum = [];
+			var courses = [];
+			var types = [];
+			var profs = [];
+			try {
+				if (split[0].length == 5 && !isNaN(parseInt(split[0], 10))) {
+					$.ajax({
+						async: false,
+						type: 'GET',
+						url: 'LiveSearch',
+						data: {search:split[0], type:"course"},
+						success: function(response) {
+							crns[crns.length] = $($($($.parseHTML(response)).get(1)));
+							crnNum[crnNum.length] = split[0];
+						}
+					});
+				}
+				else {
+					var search = (split[0].substring(1, split[0].length-4-index) + " " + split[0].substring(split[0].length-4-index)).toLowerCase();
+					$.ajax({
+						 async: false,
+					     type: 'GET',
+					     url: 'LiveSearch',
+					     data: {search:search, type:"course"},
+					     success: function(response) {
+					    	 courses[courses.length] = $($($($.parseHTML(response)).get(1)));
+					     }
+					});
+					types[types.length] = split[0].substring(0, 1);
+					profs[profs.length] = split[1];
+				}
+				for (var k = 0; k < crns.length; k++) {
+					addClass($(crns[k]).children('button'));
+					$($($('#schedule tbody tr:last').children('td').get(0)).children()[0]).val(crnNum[k]);
+					crnCheck($($($('#schedule tbody tr:last').children('td').get(0)).children()[0]));
+				}
+				for (var j = 0; j < courses.length; j++) {
+					addClass($(courses[j]).children('button'));
+					$($($('#schedule tbody tr:last').children('td').get(3)).children()[0]).val(types[j]);
+					$($($('#schedule tbody tr:last').children('td').get(4)).children()[0]).val(profs[j]);
+				}
+				
+			} catch(err) {
+				continue;
+			}		
 		}
 	}
 }

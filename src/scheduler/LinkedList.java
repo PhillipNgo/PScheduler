@@ -28,7 +28,6 @@ public class LinkedList<T> implements Iterable<T> {
      * fills the list with the given array
      * 
      * @param arr the array to input
-     * @throws Exception 
      */
     public LinkedList(T[] arr) throws Exception {
         clear();
@@ -74,9 +73,6 @@ public class LinkedList<T> implements Iterable<T> {
      * @return  True. 
      */
     public void add(T newEntry) throws Exception {
-        if (newEntry == null) {
-            throw new IllegalArgumentException();
-        }
         Node newNode = new Node(newEntry);
         newNode.next = firstNode;        
         firstNode = newNode;       

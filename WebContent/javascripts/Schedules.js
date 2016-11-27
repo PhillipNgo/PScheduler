@@ -33,6 +33,11 @@ jQuery(document).ready(function($){
 	
 });
 
+function dlHref() {
+	var a = document.getElementById('download');
+	a.href += "?" + window.location.search.substr(1);
+}
+
 function togglePanel() {
 	$('#schedule-panel').collapse('toggle');
 	$('#data-panel').collapse('toggle');

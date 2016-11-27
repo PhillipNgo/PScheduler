@@ -8,7 +8,7 @@ function addClass(button) {
 	var profs = text[2].split(", ");
 	var name = text[0].split(" - ");
 	var html =  "<tr><td>" +
-	"<select style='width:70%;margin-left:auto;margin-right:auto' class='form-control' onchange='crnCheck(this)'>";
+	"<select style='width:70%;margin-left:auto;margin-right:auto' class='form-control' onchange='crnCheck($(this))'>";
 	if (crns.length > 1) {
 		html += "<option value='A'>Any</option>";
 	}
@@ -63,19 +63,25 @@ function addCRN(button) {
 	var name = text[1].split(" - ");
 	var row = $('#schedule tbody tr:last').children('td');
 	$($(row.get(0)).children()[0]).val(text[0].replace('Add ', ''));
-	crnCheck($(row.get(0)).children()[0]);
+	crnCheck($($(row.get(0)).children()[0]));
 }
 
 function crnCheck(select) {
-	var row = $(select).parent().parent().children('td');
-	if (select.value !== 'A') {
-		$.get('LiveSearch', {search:select.value, type:"crn"}, function(response) {
-			var text = $($($.parseHTML(response)).get(1)).text().split(' / ');
-			$($(row.get(3)).children()[0]).val(classType(text[2]));
-			$($(row.get(4)).children()[0]).val(text[3].replace(/ /g, '_'));
-			$($(row.get(3)).children()[0]).prop('disabled', true);
-			$($(row.get(4)).children()[0]).prop('disabled', true);
-		});	
+	var row = select.parent().parent().children('td');
+	if (select.val() !== 'A') {
+		$.ajax({
+		     async: false,
+		     type: 'GET',
+		     url: 'LiveSearch',
+		     data: {search:select.val(), type:"crn"},
+		     success: function(response) {
+		    	 var text = $($($.parseHTML(response)).get(1)).text().split(' / ');
+					$($(row.get(3)).children()[0]).val(classType(text[2]));
+					$($(row.get(4)).children()[0]).val(text[3].replace(/ /g, '_'));
+					$($(row.get(3)).children()[0]).prop('disabled', true);
+					$($(row.get(4)).children()[0]).prop('disabled', true);
+		     }
+		});
 	}
 	else {
 		$($(row.get(3)).children()[0]).prop('disabled', false);

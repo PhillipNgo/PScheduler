@@ -229,7 +229,7 @@ public class ScheduleMaker {
             return false;
         }
         
-        if (!prof.equals("A") && !(prof.replace("11", " ")).equals(course.getProf())) {
+        if (!prof.equals("A") && !(prof).equals(course.getProf().replace("-", " "))) {
             return false;
         }
         
