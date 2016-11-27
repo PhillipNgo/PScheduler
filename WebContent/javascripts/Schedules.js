@@ -33,6 +33,33 @@ jQuery(document).ready(function($){
 	
 });
 
+function printerFriendly() {
+	$('#header').hide();
+	$('#content').hide();
+	$('#footer').hide();
+	$('body').append("<div id='printerFriendly'>" +
+						"<span class='no-print'>" +
+					 		"<button class='btn btn-default' onclick='exitPrinter()'><span class='glyphicon glyphicon-circle-arrow-left' style='vertical-align:top'> Return</span></button>" +
+					 		"<button class='btn btn-default' onclick='togglePrint(1)'>Toggle Text</button>" +
+					 		"<button class='btn btn-default' onclick='togglePrint(2)'>Toggle Visual</button>" +
+					 		"<button class='btn btn-default' onclick='window.print()'><span class='glyphicon glyphicon-print' style='vertical-align:top'> Print</span></button>" +
+					    "</span>" +
+					    $('#tablebody').html() + 
+					 "</div>");
+	window.print();
+}
+
+function togglePrint(index) {
+	$($('#printerFriendly').children()[index]).toggle();
+}
+
+function exitPrinter() {
+	$('#header').show();
+	$('#content').show();
+	$('#footer').show();
+	$('#printerFriendly').remove();
+}
+
 function dlHref() {
 	var a = document.getElementById('download');
 	a.href += "?" + window.location.search.substr(1);

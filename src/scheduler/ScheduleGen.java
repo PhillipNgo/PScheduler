@@ -3,7 +3,6 @@ package scheduler;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -111,7 +110,7 @@ public class ScheduleGen extends HttpServlet {
         
         // -- HEADER START -- // header bar on top
         html.append("<body style='background-color: #FFFAFA'>");
-        html.append("<div style='background-color: DarkSlateGray; border-bottom: 1px solid darkorange;'>");
+        html.append("<div id='header' style='background-color: DarkSlateGray; border-bottom: 1px solid darkorange;'>");
         html.append("<div class='container-fluid header'>");
         html.append("<h1>");
         html.append("<a href='http://www.pscheduler.com' style='text-decoration:none'>");
@@ -123,13 +122,13 @@ public class ScheduleGen extends HttpServlet {
         // -- HEADER END -- //
         
         // -- BODY START -- // schedules and search data
-        html.append("<div class='container-fluid'>");
+        html.append("<div id='content' class='container-fluid'>");
         html.append("<div style='padding-top: 10px;' class='row'>");
         html.append("<div style='padding-left: 12.5px; padding-right: 12.5px;' class='col-sm-12'>");
         html.append("<div id='schedule-panel' class=' collapse in panel panel-default outline'>");
         html.append("<div style='background-color: white;' class='panel-heading center'>");
         html.append("<div class='row'>");
-        html.append("<div class='col-sm-3'>");
+        html.append("<div class='col-sm-4'>");
         html.append("<div class='input-group'>");
         html.append("<div class='row'>");
         html.append("<div style='padding:0 0 0 5px;' class='col-sm-4'>");
@@ -148,7 +147,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
-        html.append("<div class='col-sm-6'>");
+        html.append("<div class='col-sm-4'>");
         
         html.append("<h4 id='title'><b>");
         if (schedules == null || schedules.size() == 0) {
@@ -160,9 +159,10 @@ public class ScheduleGen extends HttpServlet {
         html.append("</b></h4>");
         
         html.append("</div>");
-        html.append("<div style='text-align:right' role='group' class='btn-group col-sm-3' aria-label='...'>");
+        html.append("<div style='text-align:right' role='group' class='btn-group col-sm-4' aria-label='...'>");
         
         html.append("<form action='modify' style='padding-right:12px'>");
+        html.append("<button type='button' class='btn btn-default' onclick='printerFriendly()'>Print Page</button>");
         html.append("<a class='btn btn-default' id='download' href='download' onclick='dlHref()'>Download as Excel</a>");
         html.append("<button type='button' class='btn btn-default hidetb'>Hide Table</button>");
         html.append("<button type='submit' class='btn btn-default'>Modify Search</button>");
@@ -186,7 +186,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
-        html.append("<div style='padding-top:0px' class='panel-body'>");
+        html.append("<div id='tablebody' style='padding-top:0px' class='panel-body'>");
         
         try {
             if (schedules == null) {
@@ -295,7 +295,7 @@ public class ScheduleGen extends HttpServlet {
         // -- BODY END -- //
         
         // -- FOOTER START -- //
-        html.append("<div class='footer'>");
+        html.append("<div id='footer'>");
         html.append("<div style='padding: 2vh 15vw 2vh 15vw;' class='container-fluid'>");
         html.append("<div style='color:white;' class='row'>");
         html.append("<div class='col-sm-4 text-right'>");
@@ -422,7 +422,7 @@ public class ScheduleGen extends HttpServlet {
     private String textClass(VTCourse c, boolean color, int colorInd) {
         String html = "<tr class='left'";
         if (color && c.getTimeSlot() != null) {
-            html += " style='background-color:" + colors[colorInd] + "'";
+            html += " style='background-color:" + colors[colorInd] + " !important;'";
         }
         html += "><td class='text'>" + c.getCRN() + "</td>";
         html += "<td class='text'>" + c.getSubject() + " " + c.getNum() + "</td>";
@@ -444,9 +444,9 @@ public class ScheduleGen extends HttpServlet {
             if (c.getAdditionalDays() != null && c.getAdditionalTime() != null && c.getAdditionalLocation() != null) {
                 html += "<tr ";
                 if (color) {
-                    html += "style='background-color:" + colors[colorInd];
+                    html += "style='background-color:" + colors[colorInd] + " !important;'";
                 }
-                html += "'><td></td><td></td><td></td><td></td><td></td><td></td>";
+                html += "><td></td><td></td><td></td><td></td><td></td><td></td>";
                 days = c.getAdditionalDays();
                 String addedDays = "";
                 for (int k = 0; k < days.length; k++) {
@@ -742,7 +742,7 @@ public class ScheduleGen extends HttpServlet {
             }
             
             html.append("<tr>");
-            html.append("<td class='center' style='width:100pt; height:35pt;'>" + i + " of " + schedules.size() + "</td>");
+            html.append("<td class='center' style='width:100pt; height:35pt;'>" + "</td>");
             html.append("<td class='outline center' style='width:200pt; height:35pt;'>Monday</td>");
             html.append("<td class='outline center' style='width:200pt; height:35pt;'>Tuesday</td>");
             html.append("<td class='outline center' style='width:200pt; height:35pt;'>Wednesday</td>");
@@ -765,7 +765,7 @@ public class ScheduleGen extends HttpServlet {
                         if (c != null) {
                             String[] s = c.split("--");
                             html.append("<td " + "class='outline fill center' rowspan='" + s[1] + "' style='" +
-                                        "background-color:" + s[2] + "'>");
+                                        "background-color:" + s[2] + " !important;'>");
                             html.append(s[0]);
                             html.append("</td>");
                         }

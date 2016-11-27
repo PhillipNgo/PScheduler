@@ -37,7 +37,7 @@ li.active a {
 	margin-bottom:5px;
 }
 
-.footer {
+#footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -105,4 +105,14 @@ table {
 
 .position {
 	position: fixed;
+}
+
+@media print {
+	.no-print, .no-print * {
+		display: none !important;
+	}
+	
+	#printerFriendly tr td {
+		-webkit-print-color-adjust: exact !important;
+	}
 }
