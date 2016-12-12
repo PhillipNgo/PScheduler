@@ -18,7 +18,7 @@ SS: COINS	AAEC	4984	O Isengildina Massa	19791	1	L	FRALN 102	T	5:00PM	6:00PM	HUTC
 SS:Strategic Mgt & Negotiation	AAEC	4984	RT Crowder	19696	3	L	HUTCH 310	M W	7:45AM	8:50AM
 SS: Crop Farm Price Risk Mgmt	AAEC	4984	O Isengildina Massa	19686	1	L
 Independent Study	AAEC	5974	SC Blank	10096	1	I
-Ag Price Analysis	AAEC	4504	O Isengildina Massa	10081	3	L	LITRV 1800	M W	2:30PM	3:45PM
+Ag Price Analysis	AAEC	4504	O Isengildina Massa	10081	3	L	HUTCH 204	M W	2:30PM	3:45PM
 Research and Dissertation	AAEC	7994	SC Blank	10101	1	R
 Final Examination	AAEC	5894	SC Blank	10094	3	L
 Applied Microeconomic Theory	AAEC	5114	EB Peterson	10089	3	L	HUTCH 204	M W	11:15AM	12:30PM
@@ -33,8 +33,8 @@ Intl Agri Dvlp & Trad	AAEC	3204	C Larochelle	19026	3	L	HUTCH 204	T R	3:30PM	4:45
 Environment Sustain Dev Econ	AAEC	3324	MJ Ellerbrock	10073	3	L	HAHN N 140	M W F	12:20PM	1:10PM
 Agr Prod & Cons Econ	AAEC	3004	DB Taylor	10066	3	L	ENGEL 223	T R	2:00PM	3:15PM
 Research Project Plan	AAEC	5104	DJ Bosch	10088	1	L	HUTCH 207	T	12:30PM	1:45PM
-Empirical Economics	AAEC	5126	K Moeltner	10090	3	L	PAM 1001	T R	9:30AM	10:45AM
-SS: Adv Ag Price Analysis	AAEC	5984	O Isengildina Massa	19747	3	L	LITRV 1800	M W	2:30PM	3:45PM
+Empirical Economics	AAEC	5126	K Moeltner	10090	3	L	HUTCH 204	T R	9:30AM	10:45AM
+SS: Adv Ag Price Analysis	AAEC	5984	O Isengildina Massa	19747	3	L	HUTCH 204	M W	2:30PM	3:45PM
 Env Econ Analy & Mgt	AAEC	4314	SK Stephenson	10080	3	L	HUTCH 310	M W F	10:10AM	11:00AM
 Independent Study	AAEC	4974	Staff	10086	1	I
 Independent Study	AAEC	4974	Staff	10085	1	I
@@ -119,7 +119,7 @@ Principles of Accounting	ACIS	2115	LA Almond	10106	3	H	PAM 3004	W	10:10AM	11:00A
 Advanced Financial Accounting	ACIS	4114	DP Garner	10155	3	L	PAM 2028	M W F	11:15AM	12:05PM
 Advanced Financial Accounting	ACIS	4114	DP Garner	10154	3	L	NCB 260	M W F	10:10AM	11:00AM
 Networks & Telecomm Business	ACIS	4554	W Shen	10167	3	L	SURGE 118B	T R	9:30AM	10:45AM
-Networks & Telecomm Business	ACIS	4554	W Shen	10166	3	L	WHIT 277	T R	12:30PM	1:45PM
+Networks & Telecomm Business	ACIS	4554	W Shen	10166	3	L	PAM 31	T R	12:30PM	1:45PM
 Undergraduate Research	ACIS	4994	JJ Maher	10170	1	R
 Taxation of Business Entities	ACIS	5324	WE Seago	10179	3	L	PAM 3004	T R	8:00AM	9:15AM
 Cost Planning and Control	ACIS	4214	MA Cobabe	10161	3	L	PAM 3008	T R	3:30PM	4:45PM
@@ -133,10 +133,10 @@ Intro to Bus Analytics & BI	ACIS	1504	EA Martin	10104	3	L	MCB 100	T R	9:30AM	10:
 Intro to Bus Analytics & BI	ACIS	1504	EA Martin	10103	3	L	MCB 100	T R	8:00AM	9:15AM
 Intro to Bus Analytics & BI	ACIS	1504	EA Martin	10102	3	L	MCB 100	T R	9:30AM	10:45AM
 Poverty in Black America	AFST	5364	ET Graves	18424	3	L	MCB 658	R	8:00AM	10:50AM
-TS: Embattled Knowledge	AFST	4354	PS Polanah	19601	3	L	WLH 330	T R	2:00PM	3:15PM
+TS: Embattled Knowledges	AFST	4354	PS Polanah	19601	3	L	MCB 223	T R	2:00PM	3:15PM
 Topics in Africana Studies	AFST	4354	AC Neff	10213	3	L	NOR 209	T	2:00PM	4:50PM
 Afro-American History	AFST	3176	B Bunch-Lyons	10211	3	O
-The Black Woman in the U.S.	AFST	2734	P Seniors	18385	3	O
+The Black Woman in the U.S.	AFST	2734	ES Akoma	18385	3	O
 Independent Study	AFST	4974H	Staff	10217	1	I
 Independent Study	AFST	2974	Staff	10210	1	I
 African Amer Ldrship for Chng	AFST	3454	DL Lee	10212	3	L	SURGE 103A	M W F	1:25PM	2:15PM
@@ -149,12 +149,12 @@ Field Study	AFST	4964	Staff	10215	1	L
 Intro to African Studies	AFST	1814	O Agozino	19764	3	O
 Intro to African Studies	AFST	1814	PS Polanah	10205	3	L	NCB 160	T R	11:00AM	12:15PM
 Intro to African Studies	AFST	1814	O Agozino	10204	3	L	MCB 134	M W	4:00PM	5:15PM
-Intro African American Studies	AFST	1714	ES Akoma	10203	3	O
+Intro African American Studies	AFST	1714	P Seniors	10203	3	O
 Intro African American Studies	AFST	1714	P Seniors	10202	3	O
 Intro African American Studies	AFST	1714	CJ Miles	10201	3	L	WLH 340	T R	11:00AM	12:15PM
-Contemporary Issues Prop Mgt	AHRM	4694	Staff	10252	3	L	WAL 412	T R	11:00AM	12:15PM
+Contemporary Issues Prop Mgt	AHRM	4694	D Read	10252	3	L	WAL 412	T R	11:00AM	12:15PM
 Adv Housing Energy/Envrionment	AHRM	5604G	KR Parrott	10269	3	L	NCB 230	T R	9:30AM	10:45AM
-Consumer Rights	AHRM	2404	Staff	10228	3	L	NCB 360	T R	9:30AM	10:45AM
+Consumer Rights	AHRM	2404	JO Beamish	19825	3	O
 Independent Study	AHRM	4974H	Staff	10264	1	I
 Independent Study	AHRM	4974H	Staff	10263	1	I
 Family Financial Management	AHRM	2304	OJ Solis	10227	3	L	GLCDB 64	T R	11:00AM	12:15PM
@@ -181,7 +181,7 @@ Merchandising Strategies	AHRM	4264	DH Kincade	18588	3	L	WAL 100	M W F	11:15AM	12
 Managing Leasing Comm Property	AHRM	4684	D Read	19774	3	L	WAL 412	M	2:30PM	5:15PM
 Clothing Behavior Patterns	AHRM	4124	HI Chen-Yu	10243	3	L	WAL 126	T R	2:00PM	3:15PM
 Apparel Product Development	AHRM	2264	PP Quesenberry	10226	3	L	WAL 128	T R	12:30PM	2:15PM
-Res Property Mgt Study Tour	AHRM	4914	Staff	10253	1	L
+Res Property Mgt Study Tour	AHRM	4914	D Read	10253	1	L
 Clothing and People	AHRM	1204	LR Gaskill	10222	3	L	WAL 100	T R	11:00AM	12:15PM
 Residential Technologies Lab	AHRM	2634	MG Carneal	18591	1	B	WAL 247	W	2:30PM	4:30PM
 Consumer Education Strategies	AHRM	3404	IE Leech	18589	3	L	WAL 246	T R	2:00PM	3:40PM
@@ -192,6 +192,7 @@ Textile Evaluation	AHRM	3204	JR Wimmer	10235	3	B	WAL 126	M W	1:25PM	3:50PM
 Housing: Energy & Environment	AHRM	4604H	KR Parrott	10250	3	L	NCB 230	T R	9:30AM	10:45AM
 Fashion Retailing Concepts	AHRM	3104	DH Kincade	18587	3	L	WAL 100	M W F	9:05AM	9:55AM
 Multifamily Prop Mgnt & OP	AHRM	2674	RC Goss	18590	3	L	WAL 412	T R	3:30PM	4:45PM
+Apparel Production	AHRM	3224	PP Quesenberry	19817	3	L	WAL 127	M W	9:05AM	11:35AM
 Apparel Production	AHRM	3224	PP Quesenberry	10236	3	B	WAL 127	T R	9:30AM	12:00PM
 Undergraduate Research	AHRM	4994	Staff	10266	3	R
 Undergraduate Research	AHRM	4994	Staff	10265	3	R
@@ -202,18 +203,17 @@ American Housing	AHRM	3644	E Hwang	10240	3	L	WAL 412	T R	12:30PM	1:45PM
 Professional in Consum Affairs	AHRM	4414	IE Leech	10248	3	L	WAL 126	T R	11:00AM	12:15PM
 Independent Study	AHRM	2974H	Staff	10234	1	I
 Independent Study	AHRM	2974H	Staff	10233	1	I
+Intro American Indian Studies	AINS	1104	Staff	19864	3	L	GYM 219	T R	3:30PM	4:45PM
 Intro American Indian Studies	AINS	1104	NM Copeland	10273	3	L	MCB 134	M W	2:30PM	3:45PM
 Intro American Indian Studies	AINS	1104	SR Cook	10272	3	L	MCB 134	T R	3:30PM	4:45PM
 Intro American Indian Studies	AINS	1104	GL Wood	10271	3	L	MCB 218	M W F	9:05AM	9:55AM
 Intro American Indian Studies	AINS	1104	MN Faircloth	10270	3	L	MCB 218	T R	9:30AM	10:45AM
 Independent Study	AINS	2974	Staff	10274	1	I
 Topics in Indigenous Studies	AINS	5004	KR Precoda	18488	3	L	MCB 658	R	2:00PM	4:50PM
-American Indian Studies Topics	AINS	4004	NM Copeland	10276	3	L	GYM 219	T R	3:30PM	4:45PM
 Undergraduate Research	AINS	4994	Staff	10279	1	R
 Internship	AINS	4754	Staff	10277	1	I
 Independent Study	AINS	4974	Staff	10278	1	I
 Internship in Coop Extension	ALCE	4054	Staff	10290	1	L
-Teaching Practice Ag Life Sci	ALCE	5004	CR Friedel	10302	1	L	LITRV 250	R	10:00AM	11:00AM
 Team Sci Coop Intrdsc Work	ALCE	5224	MK Spindler	19779	3	O
 Agricultural Metal Fabrication	ALCE	3084	MK Spindler	10283	3	O
 Internship in Ag&Extension Ed	ALCE	5754	DM Westfall-Rudd	10307	1	L
@@ -223,13 +223,15 @@ Independent Study	ALCE	5974	HH Scherer	10312	1	I
 Field Study/Practicum	ALCE	4964	CR Friedel	10298	1	L
 Comm Ag & Life Sci in Speaking	ALCE	3634	PL Woodward	10285	3	L	LITRV 200	T R	11:00AM	12:15PM
 Study Abroad	ALCE	3954	CR Friedel	10288	1	L
+Topics in Ag Leader & Commu Ed	ALCE	5814	RD Rudd	19826	1	L	LITRV 244	T	12:30PM	1:30PM
 STEM Integration in Ag Ed	ALCE	5054	HH Scherer	10303	3	O
 Agricultural Sciences Seminar	ALCE	4044	MK Spindler	10289	3	L	LITRV 1770	T	6:00PM	8:45PM
 Research and Dissertation	ALCE	7994	RD Rudd	10318	1	R
 Teach & Train Meth Ag Life Sci	ALCE	4244	HH Scherer	10291	3	L	LITRV 244	M	2:30PM	5:15PM
 Serving Intnl Ag & Education	ALCE	5114	TA Drape	18359	3	O
 Research and Thesis	ALCE	5994	RD Rudd	10315	1	R
-Project and Report	ALCE	5904	RD Rudd	10309	1	O
+Project and Report	ALCE	5904	Staff	19824	1	R
+Project and Report	ALCE	5904	Staff	10309	1	O
 Project and Report	ALCE	5904	DM Westfall-Rudd	10308	1	O
 Comm Agriculture in Writing	ALCE	3624	Staff	10284	3	H	NCB 130A	T	11:00AM	12:15PM
 Independent Study	ALCE	2974	Staff	10281	1	I
@@ -237,7 +239,7 @@ Independent Study	ALCE	2974	CR Friedel	10280	1	I
 Educ Programs Ag & Life Sci	ALCE	3004	DM Westfall-Rudd	10282	3	L	LITRV 280	M W	9:05AM	9:55AM
 Undegraduate Research	ALCE	4994	CR Friedel	10301	1	R
 Undegraduate Research	ALCE	4994	TA Drape	10300	1	R
-SS: Theoretical Apps in Ag	ALCE	5984	RD Rudd	19667	3	L
+SS: Theoretical Apps in Ag	ALCE	5984	RD Rudd	19667	3	L	LITRV 244	W	2:00PM	4:45PM
 SS: Food Sec&Comm Resilience	ALCE	5984	KL Niewolny	19642	3	L	LITRV 244	R	4:00PM	7:00PM
 Engagement in Univ Teach	ALCE	6436	DM Westfall-Rudd	19781	3	L	LITRV 244	R	9:30AM	10:45AM
 Field Studies	ALCE	7964	Staff	10317	1	L
@@ -246,7 +248,6 @@ Internship in Education	ALCE	4754	DM Westfall-Rudd	10294	1	L
 Internship in Education	ALCE	4754	CR Friedel	10292	1	L
 Independent Study	ALCE	4974	Staff	10299	1	I
 Field Study	ALCE	5964	MK Spindler	10311	1	L
-Field Study	ALCE	5964	RD Rudd	10310	1	L	LITRV 244	T	12:30PM	1:30PM
 Intro to Grad Teach Scholar	ALCE	6416	DM Westfall-Rudd	19780	2	L	LITRV 250	T	10:10AM	11:00AM
 Sem Mol Cell Biotech	ALS	5064	Staff	10340	1	L	BIOI2 145	F	12:20PM	1:10PM
 Social Behav Birds & Mammals	ALS	4574	EA Dunnington	10336	3	L	LITRV 1870	T R	9:30AM	10:45AM
@@ -306,8 +307,7 @@ Spacecraft Dynamics & Control	AOE	4140	C Sultan	10385	3	L	GOODW 135	T R	11:00AM	
 Fluid Flows in Nature	AOE	4064	JA Schetz	10380	3	O
 Fluid Flows in Nature	AOE	4064	JA Schetz	10379	3	O
 Aircraft Design	AOE	4066	P Raj	10381	3	L	GBJ 100	T R	3:30PM	4:45PM
-Mechanical & Struct Dynamics	AOE	5034	GD Seidel	10421	3	O
-Mechanical & Struct Dynamics	AOE	5034	GD Seidel	10420	3	L	HOLD 114	T R	9:30AM	10:45AM
+Mechanical & Struct Dynamics	AOE	5034	S Thangjitham	10420	3	L	HOLD 114	T R	9:30AM	10:45AM
 Ship Design	AOE	4266	AJ Brown	10390	3	L	MCB 230	T R	3:30PM	4:45PM
 Orbital Mechanics	AOE	5234	JT Black	10428	3	O
 Orbital Mechanics	AOE	5234	JT Black	10427	3	L	MCB 666	M W F	9:05AM	9:55AM
@@ -383,13 +383,13 @@ Undergraduate Research	AOE	2994	H Xiao	10353	1	R
 Aerospace Structures	AOE	3124	MJ Patil	10374	3	L	DER 3083	T R	9:30AM	10:45AM
 Aerospace Structures	AOE	3124	MJ Patil	10373	3	L	GOODW 125	T R	2:00PM	3:15PM
 SS:Intro Fld Strctre Interactn	AOE	5984	KG Wang	19705	3	L	RAND 120	T R	5:00PM	6:15PM
-SS: Data Analysis in Fluid Dyn	AOE	5984	KT Lowe	19500	3	L
+SS: Data Analysis in Fluid Dyn	AOE	5984	KT Lowe	19500	3	L	RAND 116	T R	8:00AM	9:15AM
 SS: Cyb-Phys Systems & Control	AOE	5984	K Vamvoudakis	19499	3	L
 Ocean Wave Mechanics	AOE	4214	H Xiao	10388	3	L	TORG 1060	T R	12:30PM	1:45PM
 Independent Study	AOE	4974	HP Artis	10395	3	I
 Seminar	AOE	5944	RK Kapania	10447	1	L	SURGE 117A	M	4:00PM	5:15PM
 Undergraduate Research	AOE	2994H	WJ Devenport	10354	1	R
-Computational Plasma Dynamics	AOE	6174	Staff	18962	3	L	TORG 1000	T R	2:00PM	3:15PM
+Computational Plasma Dynamics	AOE	6174	B Srinivasan	18962	3	L	TORG 1000	T R	2:00PM	3:15PM
 Adaptive Control Systems	AOE	6774	AJ Kurdila	10489	3	L	GOODW 241	T R	8:00AM	9:15AM
 Res & Prop Of Ships	AOE	3264	EG Paterson	10378	3	L	RAND 331	M W F	10:10AM	11:00AM
 Adv Dyn of High-Speed Craft	AOE	5444G	S Brizzolara	19783	3	O
@@ -601,6 +601,7 @@ Animal & Poultry Science Lab	APSC	1464	CM Wood	10537	1	B	LARNA 103	R	2:30PM	4:20
 Animal & Poultry Science Lab	APSC	1464	CM Wood	10536	1	B	LARNA 103	R	12:30PM	2:20PM
 Adv Livestock Enterprise Mgmt	APSC	4554	SP Greiner	10569	3	L	LITRV 1860	T R	8:00AM	9:15AM
 Undergraduate Research	APSC	4994	Staff	10575	2	R
+IS:APSC 2424 TA	APSC	4974	CM Leeth	19862	1	I
 IS: APSC 1464 Adv UTA	APSC	4974	Staff	19731	1	I
 Independent Study	APSC	4974	Staff	10574	2	I
 APSC Capstone Experience	APSC	4954	CM Wood	10571	1	L
@@ -618,12 +619,13 @@ Arab Culture and Civilization	ARBC	2774	WC Taggart	10591	3	L	RAND 116	M W	2:30PM
 Undergraduate Research	ARBC	4994	Staff	10595	1	R
 Independent Study	ARBC	4974	Staff	19633	1	I
 Study Abroad	ARBC	3954	Staff	10594	1	L
+Topics in Comp Appl Design	ARCH	5064	EG Becker	19841	3	L	BURCH 007	W F	9:00AM	10:30AM
 TS: Component Thinking II	ARCH	5064	D Regan	10798	3	L	BUR 224A	R	5:00PM	7:30PM
 TS: Component Thinking I	ARCH	5064	D Regan	10797	3	L	BUR 224A	T	5:00PM	7:30PM
 Building Structures	ARCH	4075	M Setareh	10662	3	L	SURGE 103A	M W F	10:10AM	11:00AM
-Building Structures	ARCH	4075	M Cortes	10661	3	L	WLH 335	M W F	9:05AM	9:55AM
+Building Structures	ARCH	4075	M Cortes	10661	3	L	WLH 320	M W F	9:05AM	9:55AM
 Intermediate Bldg Structures	ARCH	5775G	M Setareh	10853	3	L	SURGE 103A	M W F	10:10AM	11:00AM
-Intermediate Bldg Structures	ARCH	5775G	M Cortes	10852	3	L	WLH 335	M W F	9:05AM	9:55AM
+Intermediate Bldg Structures	ARCH	5775G	M Cortes	10852	3	L	WLH 320	M W F	9:05AM	9:55AM
 Adv Bldg Struct II	ARCH	4154	M Setareh	10665	3	L	PAM 1002	M	5:30PM	8:00PM
 Building Cities	ARCH	4034	HC Rott	10655	3	L
 Building Cities	ARCH	4034	S Tomer	10654	3	L	CO 300	T R	11:00AM	12:15PM
@@ -631,15 +633,14 @@ Building Cities	ARCH	4034	MJ Sattler	10653	3	L
 Envir Bldg Systems	ARCH	4056	EJ Grant	10660	3	L	HAN 100	T R	12:30PM	1:45PM
 Art of Building	ARCH	2034	PA Doan	10613	2	L	HAN 100	T R	3:30PM	4:20PM
 Building Assemblies	ARCH	3046	WU Galloway	10621	2	L	HAN 100	T R	9:30AM	10:20AM
-Professional Practice	ARCH	5044G	D Dugas	10794	3	L	BURCH 001	R	9:00AM	12:00PM
-Professional Practice	ARCH	5044G	M McGrath	10793	3	L	BURCH 001	T	9:00AM	12:00PM
+Professional Practice	ARCH	5044G	KW Jones	10794	3	L	BURCH 001	R	9:00AM	12:00PM
+Professional Practice	ARCH	5044G	KW Jones	10793	3	L	BURCH 001	T	9:00AM	12:00PM
 Qualifying Design Seminar	ARCH	4706	HC Rott	10747	3	L	CO 303	M W	9:00AM	12:00PM
 Professional Studies	ARCH	4904	Staff	10749	1	L
 Design-Related Media	ARCH	3514	CB Pritchett	10639	3	L
 Design Rel. Media-Photography	ARCH	3514	DE Snook	10638	3	L
 TS:Textile Space	ARCH	3514	PA Zellner Bassett	10637	3	L	BURCH 27	R	9:15AM	12:00PM
 TS:Watercolors	ARCH	3514	M Cortes	10636	3	L	SURGE 103A	T R	5:00PM	6:50PM
-TS:Felt Construction	ARCH	3514	HS Renard	10635	3	L	BURCH 007	T	9:30AM	12:15PM
 TS:Screen-printing	ARCH	3514	CB Pritchett	10634	3	L	CO 300	W	7:00PM	10:00PM
 Des.-Rel. Media-Product Design	ARCH	3514	RR Pieper	10633	3	L
 GRAPHICS	ARCH	3514	RT Holt	10632	3	L	BURCH 106	T R	11:00AM	12:15PM
@@ -669,7 +670,6 @@ SS: Vegetated Architecture	ARCH	4984	KA Black	19318	3	L	BURCH 007	M W F	11:00AM	
 Media & Environment	ARCH	5116	M Cortes	10807	3	L	GOODW 241	T R	5:00PM	6:50PM
 Media & Environment	ARCH	5116	CB Pritchett	10806	3	L
 Media & Environment	ARCH	5116	CB Pritchett	10805	3	L	CO 300	W	7:00PM	10:00PM
-Media & Environment	ARCH	5116	HS Renard	10804	3	L	BURCH 007	T	9:30AM	12:15PM
 Media & Environment	ARCH	5116	RT Holt	10803	3	B	BURCH 106	T R	11:00AM	12:15PM
 Media & Environment	ARCH	5116	RT Holt	10802	3	L	BURCH 106	T R	9:30AM	10:45AM
 Independent Study	ARCH	5974	JR Jones	10875	1	I
@@ -716,7 +716,7 @@ Thesis Documentation	ARCH	4524	A Ishida	10727	3	L
 Thesis Documentation	ARCH	4524	KW Jones	10726	3	L
 Thesis Documentation	ARCH	4524	PA Zellner Bassett	10725	3	L
 Thesis Documentation	ARCH	4524	Staff	10724	3	L
-Thesis Documentation	ARCH	4524	Staff	10723	3	L
+Thesis Documentation	ARCH	4524	H Schnoedt	10723	3	L
 Thesis Documentation	ARCH	4524	HT de Hahn	10722	3	L
 Thesis Documentation	ARCH	4524	KC Albright	10721	3	L
 Thesis Documentation	ARCH	4524	EG Becker	10720	3	L
@@ -735,10 +735,12 @@ Arch & Urbanism Lab	ARCH	5716	M Breitschmid	10841	6	B
 Arch & Urbanism Lab	ARCH	5716	JL King	10840	6	L	CO 000	M W F	1:00PM	4:50PM
 Arch & Urbanism Lab	ARCH	5716	H Schnoedt	10839	6	L	CO 000	M W F	1:00PM	4:50PM
 Arch & Urbanism Lab	ARCH	5716	KF Edge	10838	6	B	CO 300	M W F	1:00PM	4:50PM
+Comp Appl Design	ARCH	4164	EG Becker	19840	3	L	BURCH 007	W F	9:00AM	10:30AM
 Comp Appl Design	ARCH	4164	SM Bitar	10667	3	L
 Comp Appl Design	ARCH	4164	JA Iwaskiw	10666	3	L
+Professional Practice	ARCH	4044	CW Von Weise	19854	3	L
 Professional Practice	ARCH	4044	M McGrath	10659	3	L
-Professional Practice	ARCH	4044	D Dugas	10658	3	L	BURCH 001	R	9:00AM	12:00PM
+Professional Practice	ARCH	4044	KW Jones	10658	3	L	BURCH 001	R	9:00AM	12:00PM
 Professional Practice	ARCH	4044	M McGrath	10657	3	L	BURCH 001	T	9:00AM	12:00PM
 Professional Practice	ARCH	4044	RA Mars	10656	3	L
 Advanced Building Structures	ARCH	5056	M Setareh	10796	3	L	PAM 1002	M	5:30PM	8:00PM
@@ -751,7 +753,7 @@ TS:Pres of Historic Interiors	ARCH	5134	MD Casto	10823	3	L	BUR 120A	F	8:30AM	11:
 TS:Textile Space	ARCH	5134	PA Zellner Bassett	10822	3	L	BURCH 27	R	9:15AM	12:00PM
 TS:Frank L. Wright Bldg & Writ	ARCH	5134	HL Rodriguez-Camilloni	10821	3	L	BURCH 007	T	7:00PM	10:00PM
 TS:Neo-Classicism to Modernism	ARCH	5134	HT de Hahn	10819	3	L	WHIT 300	T R	11:00AM	12:15PM
-TS: Env Des & Sustainability	ARCH	5134	RP Schubert	10818	3	L	CO 202	T R	5:00PM	7:30PM
+TS: Env Des & Sustainability	ARCH	5134	RP Schubert	10818	3	L	CO 300	R	5:00PM	7:00PM
 TS:What makes a town	ARCH	5134	DW Dunay	10817	3	L	CO 304	M	7:00PM	9:50PM
 TS:European Residency/Culture	ARCH	5134	M Breitschmid	10816	3	L
 TS:History/Theory Indus Design	ARCH	5134	WR Green	10815	3	L	CO 300	T R	3:30PM	4:45PM
@@ -784,13 +786,18 @@ Architecture II	ARCH	2016	PA Zellner Bassett	10609	6	B	CO 000	M W F	1:00PM	4:50P
 Architecture II	ARCH	2016	S Tomer	10608	6	B	CO 000	M W F	1:00PM	4:50PM
 Architecture II	ARCH	2016	J Bassett	10607	0	L	HAN 100	T R	2:00PM	3:15PM
 Architecture II	ARCH	2016	M Cortes	10606	6	B	CO 000	M W F	1:00PM	4:50PM
-Ideas-Concepts-Representations	ARCH	4114	J Bedford	10663	2	L	CO 300	T R	12:30PM	1:45PM
+Ideas-Concepts-Representations	ARCH	4114	M Breitschmid	19819	2	L
+Ideas-Concepts-Representations	ARCH	4114	H Bryon	10663	2	L	CO 300	T R	12:30PM	1:45PM
+Undergraduate Research	ARCH	4994	MG Ermann	19850	1	R
+Undergraduate Research	ARCH	4994	M Breitschmid	19820	3	R
 Undergraduate Research	ARCH	4994	M Setareh	10791	1	R
 Undergraduate Research	ARCH	4994	H Schnoedt	10789	1	R
 Molded Ceramics	ARCH	5126	ML Sullivan	10810	3	L	BURCH 021	T R	11:00AM	12:15PM
 Bldg Materials & Construction	ARCH	5566	WU Galloway	10831	3	L	HAN 100	T R	9:30AM	10:20AM
 Bldg Materials & Construction	ARCH	5566	M Breitschmid	10830	3	L
-Bldg Materials & Construction	ARCH	5566	VH Pittman	10829	3	L	CO 304	T R	9:30AM	10:45AM
+Bldg Materials & Construction	ARCH	5566	VH Pittman	10829	3	L	CO 400	T R	3:30PM	5:00PM
+Architecture IV	ARCH	4016	CW Von Weise	19853	7	L
+Architecture IV	ARCH	4016	L McSherry	19814	7	L
 Architecture IV	ARCH	4016	ML Geiss	19770	0	L
 Architecture IV	ARCH	4016	PJ Kelsch	10652	7	B
 Architecture IV	ARCH	4016	M Feuerstein	10651	7	B
@@ -803,6 +810,7 @@ Architecture IV	ARCH	4016	H Schnoedt	10643	7	B	CO 000	M W F	1:00PM	4:50PM	CO 000
 Architecture IV	ARCH	4016	MG Ermann	10642	7	B	CO 000	M W F	1:00PM	4:50PM	CO 000	T	3:30PM	4:50PM
 TS:Europe Residence	ARCH	4016	M Breitschmid	10641	7	B
 Architecture IV	ARCH	4016	H Schnoedt	10640	0	L	HAN 100	T R	2:00PM	3:15PM
+TS:Urban Environment	ARCH	4214	CW Von Weise	19855	3	L
 Topic Arch His & Theo	ARCH	4214	PF Emmons	10679	3	L
 TS:Building Drawing	ARCH	4214	PA Doan	10678	3	L	TBA	R	7:00PM	10:00PM
 TS:Louis Kahn Bldgs	ARCH	4214	HL Rodriguez-Camilloni	10676	3	L	BURCH 007	T R	11:00AM	12:15PM
@@ -810,9 +818,9 @@ TS:Preserv of His Int	ARCH	4214	MD Casto	10675	3	L	BUR 120A	F	8:30AM	11:00AM
 TS:European Residency/Culture	ARCH	4214	Staff	10673	3	L
 TS:What makes a town	ARCH	4214	DW Dunay	10672	3	L	CO 304	M	7:00PM	9:50PM
 TS:Frank L. Wright Bldg & Writ	ARCH	4214	HL Rodriguez-Camilloni	10671	3	L	BURCH 007	T	7:00PM	10:00PM
-TS: Env Des & Sustainability	ARCH	4214	RP Schubert	10669	3	L	CO 202	T R	5:00PM	7:30PM
+TS: Env Des & Sustainability	ARCH	4214	RP Schubert	10669	3	L	CO 300	R	5:00PM	7:00PM
 Independent Study	ARCH	4974	EB Braaten	10787	1	I
-Independent Study	ARCH	4974	CR Vorster	10786	1	I
+Independent Study	ARCH	4974	H Schnoedt	10786	1	I
 Independent Study	ARCH	4974	HC Rott	10785	1	I
 Independent Study	ARCH	4974	VH Pittman	10784	1	I
 Independent Study	ARCH	4974	ML Sullivan	10783	1	I
@@ -828,7 +836,7 @@ Independent Study	ARCH	4974	CB Pritchett	10774	1	I
 Independent Study	ARCH	4974	JH Wheeler	10773	1	I
 Independent Study	ARCH	4974	M Cortes	10772	1	I
 Independent Study	ARCH	4974	H Bryon	10770	1	I
-Independent Study	ARCH	4974	DB Clark	10769	1	I
+Independent Study	ARCH	4974	M Breitschmid	10769	1	I
 Independent Study	ARCH	4974	MG Ermann	10768	1	I
 Independent Study	ARCH	4974	M Setareh	10767	1	I
 Independent Study	ARCH	4974	S Choudhury	10765	1	I
@@ -844,10 +852,10 @@ Independent Study	ARCH	4974	DW Dunay	10755	1	I
 Independent Study	ARCH	4974	A Ishida	10754	1	I
 Independent Study	ARCH	4974	RP Schubert	10753	1	I
 Independent Study	ARCH	4974	SF Martin	10752	1	I
-Independent Study	ARCH	4974	DB Jones	10751	1	I
+Independent Study	ARCH	4974	KC Albright	10751	1	I
 Independent Study	ARCH	4974	WU Galloway	10750	1	I
 Urban Design Seminar	ARCH	5624	SR Thompson	19231	1	L	CO 303	T	9:30AM	12:00PM
-Architecture V	ARCH	4516	Staff	10717	6	B	BURCH 000	M W F	1:00PM	4:50PM	CO 000	T	2:00PM	4:50PM
+Architecture V	ARCH	4516	H Schnoedt	10717	6	B	BURCH 000	M W F	1:00PM	4:50PM	CO 000	T	2:00PM	4:50PM
 Architecture V	ARCH	4516	S Tomer	10716	6	B	CO 000	M W F	1:00PM	4:50PM	CO 000	T	2:00PM	4:50PM
 Architecture V	ARCH	4516	PA Doan	10715	6	B	CO 000	M W F	1:00PM	4:50PM	CO 000	T	2:00PM	4:50PM
 Architecture V	ARCH	4516	JR Jones	10714	6	B	CO 000	M W F	1:00PM	4:50PM	CO 000	T	2:00PM	4:50PM
@@ -938,7 +946,6 @@ Typography	ART	2565	P Finley	10908	3	L	HEND 203	M W	9:20AM	12:05PM
 TS: Adv Video Game Design	ART	4544	TJ Tucker	19414	0	L	LIBR 120	M W	2:30PM	4:45PM
 TS: Advance Rendering	ART	4544	D Webster	19410	0	L	LIBR 120	T R	8:00AM	9:55AM
 Advanced Character Animation	ART	4544	D Webster	18874	0	L	LIBR 120	T R	10:20AM	12:15PM
-Lighting/Projection Mapping	ART	4544	TJ Tucker	18852	0	L	TBA	M W	12:20PM	2:15PM
 Drawing Methods and Concepts	ART	5514	Staff	10960	3	L
 Topics in Multimedia Studio	ART	4504	RL Weaver	19412	0	L	LIBR 120	T R	3:30PM	5:25PM
 Digital Video	ART	4504	RL Weaver	18851	0	L	LIBR 120	T R	12:30PM	2:25PM
@@ -946,7 +953,7 @@ Creative Code Art & Design	ART	5714	D Webster	10971	3	L
 Intro to New Media Art	ART	2604	LJ Duffield	18844	3	L	LIBR 120	T R	5:30PM	7:25PM
 Exhibition Design And Display	ART	4564	DA Sim	10943	3	H	ARMRY 200	M W	12:20PM	1:35PM
 Surv Hist West Art	ART	2386	LB Van Hook	10904	3	L	TORG 2150	T R	9:30AM	10:45AM
-TS: Character Animation	ART	3704	D Webster	10930	3	L	LIBR 120	T R	10:20AM	12:15PM
+TS: Character Animation	ART	3704	D Webster	10930	3	L	LIBR 120	M W	12:20PM	2:15PM
 TS:Video Game Design	ART	3704	TJ Tucker	10929	3	L	LIBR 120	M W	2:30PM	4:45PM
 Studio Art for Non-Majors	ART	1004	J Rosenthal	10896	3	O
 Studio Art for Non-Majors	ART	1004	J Rosenthal	10895	3	O
@@ -1013,7 +1020,7 @@ IS:Econ Food Fiber Sys	AT	0974	MJ Ellerbrock	19765	3	I
 Soils and Nutrient Management	AT	0414	SO Doak	11020	3	L	LITRV 1860	M W	11:10AM	12:00PM	LITRV 232	M	3:00PM	4:50PM
 Soils and Nutrient Management	AT	0414	SO Doak	11019	3	L	LITRV 1860	M W	11:10AM	12:00PM	LITRV 232	M	1:00PM	2:50PM
 Applied Ag Math	AT	0114	P Mykerezi	11004	3	L	LITRV 1890	T R	8:30AM	9:45AM
-Chemical Application	AT	0554	PA Hipkins	11027	2	L	SEITZ 313	F	10:10AM	11:00AM	SEITZ 313	F	11:15AM	1:10PM
+Chemical Application	AT	0554	CA Laub	11027	2	L	SEITZ 313	F	10:10AM	11:00AM	SEITZ 313	F	11:15AM	1:10PM
 Feeds and Feeding	AT	0354	WA Gwaltney	11016	2	L	LITRV 1890	T	2:15PM	3:05PM	LITRV 1890	F	9:00AM	9:50AM
 Spanish for the Green Industry	AT	0674	BH Leshyn	11031	3	L	LITRV 232	T R	2:00PM	3:15PM
 Spanish for the Green Industry	AT	0674	BH Leshyn	11030	3	L	LITRV 232	T R	3:30PM	4:45PM
@@ -1110,7 +1117,7 @@ Research and Dissertation	BCHM	7994	Staff	11140	1	R
 Comput Biochem Bioinformatics	BCHM	5024	DR Bevan	11133	3	L	ENGEL 219	M W F	11:15AM	12:05PM
 Biochem Research Rotations	BCHM	5014	Staff	11132	4	B
 Molec Biol Life Sci	BCHM	5344	Z Tu	11135	3	L	FRALN 002	M W F	9:05AM	9:55AM
-Lab Prob Biochemistry	BCHM	4124	P Rangarajan	11122	6	B	ENGEL 219	T R	8:00AM	11:50AM	FRALN 002	F	1:25PM	2:55PM
+Lab Prob Biochemistry	BCHM	4124	PJ Kennelly	11122	6	B	ENGEL 219	T R	8:00AM	11:50AM	FRALN 002	F	1:25PM	2:55PM
 Lab Prob Biochemistry	BCHM	4124	J Zhu	11121	6	B	ENGEL 219	T R	1:30PM	5:20PM	ENGEL 219	F	1:25PM	2:55PM
 Lab Prob Biochemistry	BCHM	4124	JG Tokuhisa	11120	6	B	ENGEL 219	M W	1:25PM	5:15PM	ENGEL 223	F	1:25PM	2:55PM
 Lab Prob Biochemistry	BCHM	4124	TJ Larson	11119	6	B	ENGEL 219	M W F	7:50AM	11:00AM
@@ -1122,7 +1129,7 @@ Independent Study	BCHM	4974H	Staff	11127	1	I
 Independent Study	BCHM	4974H	Staff	11126	1	I
 Independent Study	BCHM	2974	Staff	11115	1	I
 Biochemical Calculations	BCHM	2114	P Sobrado	11114	2	L	HAHN N 140	M W	5:30PM	6:45PM
-Concepts of Biochemistry	BCHM	2024	PJ Kennelly	11113	3	L	MCB 100	M W F	9:05AM	9:55AM
+Concepts of Biochemistry	BCHM	2024	P Rangarajan	11113	3	L	MCB 100	M W F	9:05AM	9:55AM
 Undergraduate Research	BCHM	4994	Staff	11128	1	R
 Independent Study	BCHM	5974	Staff	11138	1	I
 Independent Study	BCHM	5974	Staff	11137	1	I
@@ -1161,6 +1168,7 @@ Ornithology	BIOL	4404	DM Hawley	11283	4	L	DER 3081	T R	11:00AM	12:15PM	DER 3094	
 Ornithology	BIOL	4404	DM Hawley	11282	4	L	DER 3081	T R	11:00AM	12:15PM	DER 3094	R	7:00AM	9:50AM
 Ornithology	BIOL	4404	DM Hawley	11281	4	L	DER 3081	T R	11:00AM	12:15PM	DER 3094	W	7:00AM	9:50AM
 Proteomics Mass Spectrometry	BIOL	4844	MI Lazar	18582	3	L	LFSCI 101	T R	11:00AM	12:15PM
+TS:Euk Pathogen Host Interact	BIOL	6704	CB Lawrence	19811	3	L	LFSCI 101	T	1:00PM	4:00PM
 Evolutionary Biology	BIOL	2704	RF Sheppard	11249	3	L	TORG 2150	M W	2:30PM	3:45PM
 Undergraduate Research	BIOL	4994H	RA Walker	11301	1	R
 Undergraduate Research	BIOL	4994H	RA Walker	11300	1	R
@@ -1168,10 +1176,10 @@ Advanced Global Change Ecology	BIOL	5114	JE Barrett	18579	4	L	DER 1076	T R	12:30
 Research and Thesis	BIOL	5994	JR Walters	11312	1	R
 TS: Behavioral Ecology	BIOL	6004	JR Walters	11313	3	L	GYM 219	T R	2:00PM	3:15PM
 Med & Vet Entomology	BIOL	3254	SL Paulson	11264	3	L	ENGEL 223	T R	11:00AM	12:15PM
-Food Microbiology	BIOL	3604	RC Williams	11274	4	L	LITRV 1870	T R	11:00AM	12:15PM	FST 17	M	4:00PM	5:50PM
-Food Microbiology	BIOL	3604	RC Williams	11273	4	L	LITRV 1870	T R	11:00AM	12:15PM	FST 17	T	3:00PM	4:50PM
-Food Microbiology	BIOL	3604	RC Williams	11272	4	L	LITRV 1870	T R	11:00AM	12:15PM	FST 17	M	1:25PM	3:15PM
-Food Microbiology	BIOL	3604	RC Williams	11271	4	L	LITRV 1870	T R	11:00AM	12:15PM	FST 17	T	1:00PM	2:50PM
+Food Microbiology	BIOL	3604	MA Ponder	11274	4	L	LITRV 1870	T R	11:00AM	12:15PM	FST 17	M	4:00PM	5:50PM
+Food Microbiology	BIOL	3604	MA Ponder	11273	4	L	LITRV 1870	T R	11:00AM	12:15PM	FST 17	T	3:00PM	4:50PM
+Food Microbiology	BIOL	3604	MA Ponder	11272	4	L	LITRV 1870	T R	11:00AM	12:15PM	FST 17	M	1:25PM	3:15PM
+Food Microbiology	BIOL	3604	MA Ponder	11271	4	L	LITRV 1870	T R	11:00AM	12:15PM	FST 17	T	1:00PM	2:50PM
 Principles of Biology	BIOL	1106	MS Rosenzweig	11152	3	L	SQUIR COLNL	M W	4:00PM	5:15PM
 Principles of Biology	BIOL	1106	MS Rosenzweig	11151	3	L	SQUIR COLNL	M W	2:30PM	3:45PM
 Principles of Biology	BIOL	1106	EP Hogan	11150	3	L	GOODW 190	T R	11:00AM	12:15PM
@@ -1278,7 +1286,6 @@ General Microbiology	BIOL	2604	AK Burke	11228	3	L	WHIT 300	T R	12:30PM	1:45PM
 General Microbiology	BIOL	2604	RW Seyler	11227	3	L	LITRV 1670	M W	4:00PM	5:15PM
 General Microbiology	BIOL	2604	DL Popham	11226	3	L	SMYTH 146	T R	11:00AM	12:15PM
 Immunology	BIOL	4704	CN Jones	11290	3	L	SURGE 104C	T R	8:00AM	9:15AM
-GS: Work/Life Balance Academia	BIOL	5174	LK Belden	18584	1	L	DER 3004	W	1:25PM	2:10PM
 GS:Microbiology	BIOL	5174	DL Popham	11306	1	L
 GS:Ecolgy, Evolutn, Behavr Sem	BIOL	5174	JW McGlothlin	11305	1	L	FRALN 102	R	3:30PM	5:00PM
 GS:Seminars Across the Science	BIOL	5174	BS Winkel	11304	1	L
@@ -1328,28 +1335,28 @@ Global Ops & Info Technology	BIT	4474	RS Russell	11353	3	L	DER 3081	T R	9:30AM	1
 Bus Analysis Seminar in IT	BIT	4454	AS Abrahams	11351	3	L	AA 7	T R	9:30AM	10:45AM
 Bus Analysis Seminar in IT	BIT	4454	AS Abrahams	11350	3	L	GOODW 135	T R	2:00PM	3:15PM
 Enterprise Planning & Control	BIT	3464	LZ Khansa	11345	3	L	PAM 3008	T R	12:30PM	1:45PM
-Enterprise Planning & Control	BIT	3464	LZ Khansa	11344	3	L	SURGE 117A	T R	9:30AM	10:45AM
+Enterprise Planning & Control	BIT	3464	LZ Khansa	11344	3	L	NCB 270	T R	9:30AM	10:45AM
 Quantitative Methods	BIT	2405	SC Kwaramba	19541	3	L	DER 1076	M W F	12:20PM	1:10PM
 Quantitative Methods	BIT	2405	QJ Nottingham	11320	3	L	PAM 2030	T R	8:00AM	9:15AM
 Quantitative Methods	BIT	2405	RM Jones	11319	3	L	NCB 160	M W F	1:25PM	2:15PM
 Quantitative Methods	BIT	2405	RM Jones	11318	3	L	NCB 160	M W F	11:15AM	12:05PM
 Quantitative Methods	BIT	2405	RM Jones	11317	3	L	SURGE 104D	T R	11:00AM	12:15PM
 Quantitative Methods	BIT	2405	RM Jones	11316	3	L	SURGE 117A	T R	2:00PM	3:15PM
-Operations & Supply Chain Mgt	BIT	3414	LL Clark	11331	3	L	DER 3092	T R	9:30AM	10:45AM
+Operations & Supply Chain Mgt	BIT	3414	LL Clark	11331	3	L	SURGE 117A	T R	9:30AM	10:45AM
 Operations & Supply Chain Mgt	BIT	3414	LL Clark	11330	3	L	SURGE 117A	T R	11:00AM	12:15PM
-Operations & Supply Chain Mgt	BIT	3414	LL Clark	11329	3	L	PAM 32	T R	3:30PM	4:45PM
-Operations & Supply Chain Mgt	BIT	3414	LL Clark	11328	3	L	PAM 30	T R	2:00PM	3:15PM
+Operations & Supply Chain Mgt	BIT	3414	LL Clark	11329	3	L	NCB 250	T R	3:30PM	4:45PM
+Operations & Supply Chain Mgt	BIT	3414	LL Clark	11328	3	L	SURGE 118C	T R	2:00PM	3:15PM
 Adv Modeling for Bus Analytics	BIT	3434	TR Rakes	11338	3	L	NCB 250	T R	11:00AM	12:15PM
 Adv Modeling for Bus Analytics	BIT	3434	CT Ragsdale	11336	3	L	SURGE 109	T R	8:00AM	9:15AM
 Adv Modeling for Bus Analytics	BIT	3434	CT Ragsdale	11335	3	L	SURGE 118B	T R	12:30PM	1:45PM
 Business Process Improvement	BIT	3454	DF Cook	11343	3	L	PAM 30	T R	8:00AM	9:15AM
-Web-Based DSS	BIT	4444	CW Zobel	11349	3	L	PAM 3001	T R	12:30PM	1:45PM
+Web-Based DSS	BIT	4444	CW Zobel	11349	3	L	SEITZ 313	T R	12:30PM	1:45PM
 Applied Bus Intel & Analytics	BIT	5534	Staff	19698	3	L	WMS 209	T R	5:00PM	6:15PM
 Applied Bus Intel & Analytics	BIT	5534	RL Major	11371	3	O
 Independent Study	BIT	5974	Staff	11379	1	I
 BIT Visualization Analytics	BIT	4424	TL James	11347	3	L	DER 1076	T R	11:00AM	12:15PM
 Systems Development	BIT	4524	DP Tegarden	11360	3	L	SURGE 104A	T R	11:00AM	12:15PM
-Systems Development	BIT	4524	W Shen	11359	3	L	PAM 3010	T R	2:00PM	3:15PM
+Systems Development	BIT	4524	W Shen	11359	3	L	PAM 31	T R	2:00PM	3:15PM
 Systems Development	BIT	4524	DP Tegarden	11358	3	L	PAM 1002	T R	8:00AM	9:15AM
 Quantitative Methods	BIT	2406	LA Matheson	19025	3	L	PAM 32	M W F	8:00AM	8:50AM
 Quantitative Methods	BIT	2406	JM Teets	11327	3	L	SURGE 104A	M W F	1:25PM	2:15PM
@@ -1364,19 +1371,19 @@ Project Management	BIT	4484	JK Deane	18599	3	L	SURGE 104D	T R	12:30PM	1:45PM
 Project Management	BIT	4484	PJ Fernandez	11355	3	L	DER 3083	M W F	10:10AM	11:00AM
 Project Management	BIT	4484	JK Deane	11354	3	L	NCB 110	T R	9:30AM	10:45AM
 Research and Dissertation	BIT	7994	CT Ragsdale	11383	1	R
-Adv Supply Chain Mgt	BIT	4464	DF Cook	11352	3	L	PAM 31	T R	12:30PM	1:45PM
+Adv Supply Chain Mgt	BIT	4464	DF Cook	11352	3	L	NCB 170	T R	12:30PM	1:45PM
 Final Examination	BIT	5894	Staff	11378	3	R
 Research and Thesis	BIT	5994	Staff	11381	1	R
 Intro Bus Analytics Modeling	BIT	3424	TR Rakes	11334	3	L	PAM 31	T R	9:30AM	10:45AM
-Intro Bus Analytics Modeling	BIT	3424	MM Seref	11333	3	L	PAM 3001	T R	3:30PM	4:45PM
+Intro Bus Analytics Modeling	BIT	3424	MM Seref	11333	3	L	PAM 32	T R	3:30PM	4:45PM
 Intro Bus Analytics Modeling	BIT	3424	MM Seref	11332	3	L	PAM 3010	T R	12:30PM	1:45PM
 Adv Bus Comp and App	BIT	3444	RD Badinelli	11341	3	L	SURGE 104A	T R	9:30AM	10:45AM
 Adv Bus Comp and App	BIT	3444	O Seref	11340	3	L	PAM 31	T R	8:00AM	9:15AM
-Adv Bus Comp and App	BIT	3444	O Seref	11339	3	L	PAM 31	T R	2:00PM	3:15PM
-Networks & Telecomm Business	BIT	4554	W Shen	11362	3	L	SURGE 118B	T R	9:30AM	10:45AM
-Networks & Telecomm Business	BIT	4554	W Shen	11361	3	L	WHIT 277	T R	12:30PM	1:45PM
+Adv Bus Comp and App	BIT	3444	O Seref	11339	3	L	GYM 124	T R	2:00PM	3:15PM
+Networks & Telecomm Business	BIT	4554	W Shen	11362	3	L	ENGEL 223	T R	9:30AM	10:45AM
+Networks & Telecomm Business	BIT	4554	W Shen	11361	3	L	PAM 31	T R	12:30PM	1:45PM
 Undergraduate Research	BIT	4994	Staff	11366	1	R
-Seminar in Information Tech	BIT	6414	AS Abrahams	11382	3	L	PAM 3001	T R	8:00AM	9:15AM
+Seminar in Information Tech	BIT	6414	AS Abrahams	11382	3	L	PAM 1008	F	2:00PM	5:00PM
 Comp Sim In Bus	BIT	4434	LP Rees	18597	3	L	PAM 2003	T R	8:00AM	9:15AM
 Comp Sim In Bus	BIT	4434	LP Rees	11348	3	L	PAM 30	T R	3:30PM	4:45PM
 Independent Study	BIT	4974	Staff	11365	1	I
@@ -1479,6 +1486,7 @@ Human Anatomy & Physiology Lab	BMSP	2146	TL Gillian	11474	1	B	TORG 1010	T	9:30AM
 Human Anatomy & Physiology Lab	BMSP	2146	TL Gillian	11473	1	B	TORG 1010	W	6:00PM	7:50PM
 Human Anatomy & Physiology Lab	BMSP	2146	TL Gillian	11472	1	B	TORG 1010	R	8:55AM	10:45AM
 Human Anatomy & Physiology Lab	BMSP	2146	TL Gillian	11471	1	B	TORG 1010	M	6:00PM	7:50PM
+Independent Study	BMSP	4974	Staff	19863	1	I
 Laboratory Animal Management	BMVS	4054	DM Moore	11478	3	L	VM 2 3	M W	1:00PM	1:50PM	VM 2 3	W	2:00PM	3:50PM
 Oncology Pathology	BMVS	5144	GK Saunders	11487	2	L	TBA	T R	9:00AM	10:00AM
 Bio Ultrastructure	BMVS	5364	T Caceci	11494	3	L
@@ -1524,7 +1532,7 @@ Veterinary Parasitology	BMVS	5744	AM Zajac	11501	3	L
 Equine Theriogenology I	BMVS	6514	JJ Dascanio	11517	1	L
 BMVS Seminar	BMVS	5944	Staff	11507	1	L	VM 3 2	T	4:00PM	4:50PM
 VMS Surgery	BMVS	5604	KE Sullins	11498	1	B
-Water & Sanitation	BSE	4394	Staff	19246	3	L	SEITZ 108	T R	11:00AM	12:15PM
+Water & Sanitation	BSE	4394	LA Krometis	19246	3	L	SEITZ 108	T R	11:00AM	12:15PM
 Research and Dissertation	BSE	7994	JE Shortridge	18849	1	R
 Research and Dissertation	BSE	7994	Z Easton	11634	1	R
 Research and Dissertation	BSE	7994	BL Benham	11633	1	R
@@ -1566,19 +1574,19 @@ Research and Thesis	BSE	5994	VR Sridhar	11599	1	R
 Engines Power Trains	BSE	2484	SC Mariger	11527	3	L	SEITZ 313	T R	8:00AM	8:50AM	SEITZ 114	T R	11:00AM	12:15PM
 Engines Power Trains	BSE	2484	SC Mariger	11526	3	L	SEITZ 313	T R	8:00AM	8:50AM	SEITZ 114	T R	9:00AM	10:15AM
 Engr Analysis for Biol Systems	BSE	3144	DT Scott	11530	2	L	GOODW 125	M W	11:15AM	12:05PM
-Advanced Metabolic Engineering	BSE	5564G	Staff	18820	3	L	SEITZ 108	M W F	9:05AM	9:55AM
+Advanced Metabolic Engineering	BSE	5564G	RS Senger	18820	3	L	SEITZ 108	M W F	9:05AM	9:55AM
 Advanced Welding Technology	BSE	3494	SC Mariger	11532	1	B	SEITZ 110	T	2:00PM	4:45PM
 Applied GIS	BSE	5344G	Staff	11592	3	L	SEITZ 105	T	8:00AM	9:55AM	SEITZ 105	R	8:00AM	10:45AM
 Intro Metal Fab	BSE	2094	SC Mariger	11524	1	B	SEITZ 110	F	8:00AM	10:50AM
 Project and Report	BSE	5904	ML Wolfe	11596	1	O
 Project and Report	BSE	5904	ML Wolfe	11595	1	R
-Trans Proc Biol Syst	BSE	3504	WC Ruder	11533	3	L	SAUND 409	M W F	10:10AM	11:00AM
+Trans Proc Biol Syst	BSE	3504	JR Barone	11533	3	L	SAUND 409	M W F	10:10AM	11:00AM
 Landscape Meas & Modeling	BSE	2304	DL Yoder	11525	3	L	SEITZ 108	T	12:30PM	2:20PM	SEITZ 108	R	12:30PM	3:20PM
 Unit Operations in BSE	BSE	3524	YH Zhang	11536	3	L	SEITZ 300	M W	12:20PM	1:10PM	AGNEW 100	R	2:00PM	4:45PM
 Unit Operations in BSE	BSE	3524	YH Zhang	11535	3	L	SEITZ 300	M W	12:20PM	1:10PM	AGNEW 100	W	2:30PM	5:15PM
 Unit Operations in BSE	BSE	3524	YH Zhang	11534	3	L	AGNEW 100	M	2:30PM	5:15PM	SEITZ 300	M W	12:20PM	1:10PM
 Bioprocess Engineering	BSE	3534	X Feng	11537	3	L	SEITZ 313	M W F	8:00AM	8:50AM
-Intro Biological Systems Eng	BSE	2004	Staff	11523	2	L	SEITZ 108	M	1:25PM	2:15PM	SEITZ 108	W	1:25PM	4:25PM
+Intro Biological Systems Eng	BSE	2004	TM Thompson	11523	2	L	SEITZ 108	M	1:25PM	2:15PM	SEITZ 108	W	1:25PM	4:25PM
 NPS Assessment & Control	BSE	3334	LA Krometis	11531	3	L	SEITZ 105	M W	1:25PM	2:15PM	SEITZ 105	M	2:30PM	5:15PM
 Undergraduate Research	BSE	4994	JE Shortridge	18847	1	R
 Undergraduate Research	BSE	4994	DJ Sample	11590	1	R
@@ -1644,7 +1652,7 @@ Independent Study	CEE	5974	Staff	11822	1	I
 Independent Study	CEE	5974	Staff	11821	1	I
 Independent Study	CEE	5974	Staff	11820	1	I
 Independent Study	CEE	5974	Staff	11819	1	I
-Independent Study	CEE	5974	Staff	11818	1	I
+Independent Study	CEE	5974	EW Shealy	11818	1	I
 Independent Study	CEE	5974	Staff	11817	1	I
 Independent Study	CEE	5974	Staff	11816	1	I
 FE Analysis of Struct	CEE	5414	I Koutromanos	11743	3	L	PAT 207	M W F	9:05AM	9:55AM
@@ -1656,6 +1664,7 @@ Undergraduate Research	CEE	4994H	Staff	11726	1	R
 Global Virtual Dsgn & Const	CEE	5074	EW Shealy	11730	3	L	PAT 315	M W	11:15AM	12:30PM
 Coastal Engineering	CEE	4384	JL Irish	11702	3	L	PAT 12	T R	9:30AM	10:45AM
 Air Resources Engineering	CEE	4144	LC Marr	18626	3	L	BUR 123A	W	4:00PM	6:45PM
+Adv Sustainable Systems	CEE	5114	JC Little	19843	3	L	PAT 215	T R	11:00AM	12:15PM
 Soil and Site Improvement	CEE	5554	RA Green	11747	3	L	PAT 305	T R	9:30AM	10:45AM
 Research and Thesis	CEE	5994	CD Moen	11893	1	R
 Research and Thesis	CEE	5994	PM Murray-Tuite	11892	1	R
@@ -1694,7 +1703,7 @@ Research and Thesis	CEE	5994	PJ Vikesland	11860	1	R
 Research and Thesis	CEE	5994	AG Hobeika	11859	1	R
 Research and Thesis	CEE	5994	AJ Pruden-Bagchi	11858	1	R
 Research and Thesis	CEE	5994	AR Pearce	11857	1	R
-Research and Thesis	CEE	5994	MR Eatherton	11856	1	R
+Research and Thesis	CEE	5994	S Hotle	11856	1	R
 Research and Thesis	CEE	5994	CG Olgun	11855	1	R
 Research and Thesis	CEE	5994	MR Eatherton	11854	1	R
 Research and Thesis	CEE	5994	RT Leon	11853	1	R
@@ -1717,7 +1726,7 @@ Intro Transport Engr	CEE	3604	BJ Katz	11677	3	L	MCB 209	M W	4:00PM	5:15PM
 Project and Report	CEE	5904	Z He	11803	1	R
 Project and Report	CEE	5904	MM Flint	11802	1	R
 Project and Report	CEE	5904	A Rodriguez-Marek	11801	1	R
-Project and Report	CEE	5904	JE Taylor	11800	1	R
+Project and Report	CEE	5904	BJ Katz	11800	1	R
 Project and Report	CEE	5904	MR Eatherton	11799	1	R
 Project and Report	CEE	5904	RA Green	11798	1	R
 Project and Report	CEE	5904	ET Hester	11797	1	R
@@ -1762,7 +1771,6 @@ Foundation Engineering II	CEE	5544	GM Filz	11746	3	L	PAT 12	T R	11:00AM	12:15PM
 SS:Data Mining&Visual Blt Eval	CEE	5984	F Jazizadeh Karimi	19759	3	L	PAT 316	T R	5:00PM	6:15PM
 SS: Stormwater Treatment	CEE	5984	Z Wang	19735	3	O
 SS:Environmental Biotechnology	CEE	5984	Z He	19316	3	O
-SS: Env Sustain-A Syst Apprch	CEE	5984	JC Little	19313	3	L	PAT 215	T R	11:00AM	12:15PM
 SS:Environmental Biotechnology	CEE	5984	Z He	19312	3	L	TBA	T	6:00PM	8:45PM
 SS: Adv Structural Eng	CEE	5984	M Shakiba	19258	3	L	PAT 316	T R	11:00AM	12:15PM
 SS: Stormwater Treatment	CEE	5984	Z Wang	19256	3	L	WHIT 281	R	5:00PM	7:45PM
@@ -1780,7 +1788,7 @@ Environmental Fluid Mechanics	CEE	5304	KB Strom	18628	3	L	PAT 12	M W F	9:05AM	9:
 Topics in Struct Steel Design	CEE	5744	MH Hebdon	18645	3	L	RAND 110	M W	2:30PM	3:45PM
 Transportation and Land Use	CEE	5624	PM Murray-Tuite	19001	3	O
 Transportation and Land Use	CEE	5624	PM Murray-Tuite	18635	3	L	BUR 123A	T R	9:30AM	10:45AM
-Seminar	CEE	5944	Staff	18964	1	L	TORG 1000	F	3:30PM	5:00PM
+Seminar	CEE	5944	AA Trani	18964	1	L	TORG 1000	F	3:30PM	5:00PM
 GS:Seminar	CEE	5944	RT Leon	11813	1	L	GOODW 115	W	4:00PM	4:50PM
 GS:Seminar	CEE	5944	GM Filz	11812	1	L	PAT 12	W	12:20PM	1:10PM
 Seminar	CEE	5944	Z He	11811	1	L	DURHM 261	F	2:30PM	3:30PM
@@ -1799,7 +1807,7 @@ Mass Transit Systems	CEE	5634	KP Heaslip	11751	3	L	BUR 123A	M	4:00PM	6:45PM
 Adv Land Development Design	CEE	4284	KD Young	18627	3	L	PAT 316	F	7:00PM	9:00PM	PAT 316	S	9:00AM	12:00PM
 Schedule Impact Analysis	CEE	5010	JM de la Garza	11727	3	L	RAND 318	T R	9:30AM	10:45AM
 Reli Meth in Str Mech	CEE	5494	MM Flint	18631	3	L	BUR 116	T R	9:30AM	10:45AM
-Research and Dissertation	CEE	7994	A Ziotopoulou	11972	1	R
+Research and Dissertation	CEE	7994	S Hotle	11972	1	R
 Research and Dissertation	CEE	7994	N Stark	11971	1	R
 Research and Dissertation	CEE	7994	MJ Garvin	11970	1	R
 Research and Dissertation	CEE	7994	MH Hebdon	11969	1	R
@@ -1880,8 +1888,8 @@ Undergraduate Research	CEE	4994	Staff	11723	1	R
 Undergraduate Research	CEE	4994	Staff	11722	1	R
 Undergraduate Research	CEE	4994	Staff	11721	1	R
 Undergraduate Research	CEE	4994	Staff	11720	1	R
-Undergraduate Research	CEE	4994	Staff	11719	1	R
-Undergraduate Research	CEE	4994	Staff	11718	1	R
+Undergraduate Research	CEE	4994	MR Eatherton	11719	1	R
+Undergraduate Research	CEE	4994	MH Hebdon	11718	1	R
 Environ Engr Design	CEE	5126	WR Knocke	11734	3	L	BUR 123A	T R	8:00AM	9:15AM
 Asphalt Technology	CEE	5764	GW Flintsch	18639	0	L	NCB 360	T R	11:00AM	12:15PM
 Infrastr Con Assess	CEE	4634	L Wang	11708	3	L	PAT 305	T R	2:00PM	3:15PM
@@ -1931,13 +1939,11 @@ Independent Study	CHE	4974	Staff	12013	1	I
 Chemical Engineering Seminar	CHE	5944	DF Cox	12019	1	L	GOODW 155	M F	10:10AM	11:00AM
 Honors General Chem for Majors	CHEM	1056H	GT Yee	12209	4	L	HAHN N 140	M W F	9:05AM	9:55AM	AA 114	R	3:00PM	3:50PM
 Instrument Design	CHEM	5144	JR Morris	12355	3	L	HAHN N 402	M W	2:00PM	3:15PM
-Organometallic Chemistry	CHEM	6434	PA Deck	12366	3	L	HAHN N 402	M W F	8:00AM	10:00AM
 Survey of Chemical Literature	CHEM	4014	VK Long	12290	1	L	ROB 101	R	11:15AM	12:05PM
 Survey of Chemical Literature	CHEM	4014	VK Long	12289	1	L	ROB 103	M	11:15AM	12:05PM
 Chemical Kinetics	CHEM	5664	JM Tanko	19694	3	L	PAM 3008	M W	5:30PM	6:45PM
 Gen Chemistry Lab for Majors	CHEM	1066	BE Hanson	12213	1	B	HAHN N 308	T	8:00AM	10:50AM
 Gen Chemistry Lab for Majors	CHEM	1066	BE Hanson	12212	1	B	HAHN N 308	T	11:00AM	1:50PM
-Gen Chemistry Lab for Majors	CHEM	1066	BE Hanson	12211	1	B	HAHN N 308	M	2:30PM	5:20PM
 Gen Chemistry Lab for Majors	CHEM	1066	BE Hanson	12210	1	B	HAHN N 308	T	2:00PM	4:50PM
 Independent Study	CHEM	4974H	PR Carlier	12311	1	I
 Independent Study	CHEM	4974H	J Matson	12310	1	I
@@ -1986,7 +1992,7 @@ General Chemistry for Majors	CHEM	1056	GT Yee	12207	4	L	HAHN N 140	M W F	9:05AM	
 General Chemistry for Majors	CHEM	1056	GT Yee	12206	4	L	HAHN N 140	M W F	9:05AM	9:55AM	DER 1090	R	6:00PM	6:50PM
 General Chemistry for Majors	CHEM	1056	GT Yee	12205	4	L	HAHN N 140	M W F	9:05AM	9:55AM	PAM 32	R	5:00PM	5:50PM
 Independent Study	CHEM	5974	JR Morris	12364	1	I
-Synthetic Organic Chemistry	CHEM	5535	J Josan	12359	3	L	PAM 3008	M W	10:10AM	11:25AM
+Synthetic Organic Chemistry	CHEM	5535	J Josan	12359	3	L	HAHN N 402	M W	12:30PM	1:45PM
 Field Study	CHEM	4964	Staff	12302	1	L
 Undergraduate Research	CHEM	4994H	Staff	12352	1	R
 Undergraduate Research	CHEM	4994H	Staff	12351	1	R
@@ -1999,13 +2005,12 @@ Undergraduate Research	CHEM	4994H	JR Morris	12345	1	R
 Undergraduate Research	CHEM	4994H	W Santos	12344	1	R
 Undergraduate Research	CHEM	4994H	A Morris	12343	1	R
 Undergraduate Research	CHEM	4994H	J Josan	12342	1	R
-Undergraduate Research	CHEM	4994H	RD Gandour	12341	1	R	HAHN N 402	W	5:30PM	6:45PM
+Undergraduate Research	CHEM	4994H	RD Gandour	12341	1	R
 TS:Adv Macro Chemistry	CHEM	6564	HW Gibson	12368	3	L	HAHN N 402	T R	12:30PM	1:45PM
-Advanced Electrochemistry	CHEM	5114	A Morris	19699	3	L	HAHN N 402	M W	12:30PM	1:45PM
+Advanced Electrochemistry	CHEM	5114	A Morris	19699	3	L	PAM 3008	M W	10:10AM	11:25AM
 Research and Thesis	CHEM	5994	JR Morris	12365	1	R
 Project and Report	CHEM	5904	JR Morris	12361	1	R
 Intro Chem Lab	CHEM	1026	JE Eddleton	19756	1	O
-Intro Chem Lab	CHEM	1026	JE Eddleton	12024	1	B	HAHN N 308	M	12:00PM	1:50PM
 Org Syn-Tech Lab	CHEM	2555	HW Gibson	12265	2	B	HAHN N 305	T R	9:30AM	9:50AM	HAHN N 309	T R	9:55AM	12:20PM
 Org Syn-Tech Lab	CHEM	2555	HW Gibson	12264	2	B	HAHN N 305	T R	2:00PM	2:25PM	HAHN N 309	T R	2:30PM	5:00PM
 Org Syn-Tech Lab	CHEM	2555	HW Gibson	12263	2	B	HAHN N 305	M W	2:30PM	2:55PM	HAHN N 309	M W	3:00PM	5:20PM
@@ -2031,7 +2036,6 @@ Adv Polysaccharide Chemistry	CHEM	5424G	KJ Edgar	12358	3	L	JCH 317A	T R	8:00AM	9
 Physical Chemistry	CHEM	3615	H Marand	12276	3	L	HAHN N 140	T R	2:00PM	3:15PM
 Field Study	CHEM	2964	Staff	12267	1	L
 Principles Org Chem	CHEM	2566	RD Gandour	18933	3	L	NCB 170	M W F	11:15AM	12:05PM
-Principles Org Chem	CHEM	2566	Staff	12266	3	L	ROB 105	M W F	9:05AM	9:55AM
 General Chemistry	CHEM	1036	SM Arachchige	12086	3	L	DAV 281	M W F	11:15AM	12:05PM	ROB 112	R	6:00PM	6:50PM
 General Chemistry	CHEM	1036	SM Arachchige	12085	3	L	DAV 281	M W F	11:15AM	12:05PM	PAM 1002	R	5:00PM	5:50PM
 General Chemistry	CHEM	1036	SM Arachchige	12084	3	L	DAV 281	M W F	11:15AM	12:05PM	ROB 105	R	6:00PM	6:50PM
@@ -2253,7 +2257,7 @@ Undergraduate Research	CHEM	4994	G Liu	12339	1	R
 Undergraduate Research	CHEM	4994	DG Kingston	12338	1	R
 Undergraduate Research	CHEM	4994	J Josan	12337	1	R
 Undergraduate Research	CHEM	4994	T Grove	12336	1	R
-Undergraduate Research	CHEM	4994	RD Gandour	12335	1	R	HAHN N 402	W	5:30PM	6:45PM
+Undergraduate Research	CHEM	4994	RD Gandour	12335	1	R
 Undergraduate Research	CHEM	4994	AR Esker	12334	1	R
 Undergraduate Research	CHEM	4994	PA Deck	12333	1	R
 Undergraduate Research	CHEM	4994	PR Carlier	12332	1	R
@@ -2277,7 +2281,6 @@ Undergraduate Research	CHEM	4994	Staff	12315	1	R
 Undergraduate Research	CHEM	4994	Staff	12314	1	R
 Undergraduate Research	CHEM	4994	Staff	12313	1	R
 Undergraduate Research	CHEM	4994	A Morris	12312	1	R
-Organometallic Chemistry	CHEM	4434	PA Deck	12296	3	L	TBA	M W F	9:05AM	9:55AM
 Colloid and Surface Chemistry	CHEM	5644	AR Esker	19701	3	L	HAHN N 402	T R	2:00PM	3:15PM
 Polymer and Surface Chemistry	CHEM	4634	AR Esker	12300	3	L	HOLD 303	T R	2:00PM	3:15PM
 Green Chemistry	CHEM	4514	FA Etzkorn	19432	3	L	PAM 2002	T R	11:00AM	12:15PM
@@ -2348,10 +2351,10 @@ Communication Skills	COMM	1016	SC Stinson	18682	3	L	PAM 1002	T R	9:30AM	10:45AM
 Communication Skills	COMM	1016	SC Stinson	18680	3	L	SHANK 160	T R	12:30PM	1:45PM
 Communication Skills	COMM	1016	N Sowder	18679	3	L	RAND 320	M W	4:00PM	5:15PM
 Communication Skills	COMM	1016	EW Stallings	18678	3	L	NCB 270	M W	2:30PM	3:45PM
-Communication Skills	COMM	1016	CE Hall	12458	3	L	RAND 222	T R	3:30PM	4:45PM
-Communication Skills	COMM	1016	CE Hall	12457	3	L	MCB 240	T R	2:00PM	3:15PM
+Communication Skills	COMM	1016	CH Boor	12458	3	L	RAND 222	T R	3:30PM	4:45PM
+Communication Skills	COMM	1016	CH Boor	12457	3	L	MCB 240	T R	2:00PM	3:15PM
 Communication Skills	COMM	1016	EL Tydings	12456	3	L	PAM 2001	M W	2:30PM	3:45PM
-Communication Skills	COMM	1016	CE Hall	12455	3	L	GYM 219	M W	2:30PM	3:45PM
+Communication Skills	COMM	1016	CH Boor	12455	3	L	GYM 219	M W	2:30PM	3:45PM
 Communication Skills	COMM	1016	HL Shinault	12454	3	L	MCB 216	M W F	10:10AM	11:00AM
 Communication Skills	COMM	1016	HL Shinault	12453	3	L	RAND 121	M W F	12:20PM	1:10PM
 Communication Skills	COMM	1016	EW Stallings	12452	3	L	PAM 1010	T R	9:30AM	10:45AM
@@ -2362,7 +2365,7 @@ Communication Skills	COMM	1016	EL Tydings	12447	3	L	PAM 2001	M W F	9:05AM	9:55AM
 Communication Skills	COMM	1016	DS Conner	12443	3	L	PAM 1002	M W	4:00PM	5:15PM
 Communication Skills	COMM	1016	DM Jenkins	12442	3	L	SHANK 180	T R	9:30AM	10:45AM
 Communication Skills	COMM	1016	EL Tydings	12441	3	L	MCB 216	M W F	12:20PM	1:10PM
-Communication Skills	COMM	1016	CE Hall	12440	3	L	MCB 216	M W	4:00PM	5:15PM
+Communication Skills	COMM	1016	CH Boor	12440	3	L	MCB 216	M W	4:00PM	5:15PM
 Communication Skills	COMM	1016	N Sowder	12439	3	L	RAND 116	T R	3:30PM	4:45PM
 Communication Skills	COMM	1016	EL Tydings	12438	3	L	RAND 206A	M W F	10:10AM	11:00AM
 Communication Skills	COMM	1016	DS Conner	12437	3	L	RAND 220	M W	2:30PM	3:45PM
@@ -2422,13 +2425,12 @@ Writing and Editing for PR	COMM	3144	HL Shinault	12508	3	L	SHANK 160	M W	2:30PM	
 Persuasion	COMM	3064	BW Howell	18685	3	L	TORG 1010	M W	2:30PM	3:45PM
 Field Study	COMM	2964	MM Preston	12499	1	L
 Intro to Media Production Tech	COMM	1114	SJ Robinson	12459	3	L	MAC 157	T R	2:00PM	3:15PM
+Public Speaking	COMM	2004	B Quesenberry	19807	3	L	MCB 240	M W F	12:20PM	1:10PM
+Public Speaking	COMM	2004	B Quesenberry	19806	3	L	PAM 1008	M W F	9:05AM	9:55AM
 Public Speaking	COMM	2004	B Quesenberry	19437	3	L	MCB 218	M W F	10:10AM	11:00AM
 Public Speaking	COMM	2004	B Quesenberry	12484	3	L	MCB 232	M W F	8:00AM	8:50AM
 Public Speaking	COMM	2004	B Quesenberry	12483	3	L	MCB 329	M W F	9:05AM	9:55AM
 Public Speaking	COMM	2004	B Quesenberry	12482	3	L	RAND 222	M W F	9:05AM	9:55AM
-Public Speaking	COMM	2004	B Quesenberry	12481	3	L	MCB 232	M W F	1:25PM	2:15PM
-Public Speaking	COMM	2004	B Quesenberry	12480	3	L	MCB 230	M W F	1:25PM	2:15PM
-Public Speaking	COMM	2004	B Quesenberry	12479	3	L	MCB 226	M W F	1:25PM	2:15PM
 Public Speaking	COMM	2004	B Quesenberry	12478	3	L	MCB 318	M W F	11:15AM	12:05PM
 Public Speaking	COMM	2004	B Quesenberry	12477	3	L	MCB 232	M W F	12:20PM	1:10PM
 Public Speaking	COMM	2004	B Quesenberry	12476	3	L	MCB 231	M W F	12:20PM	1:10PM
@@ -2450,7 +2452,7 @@ Public Speaking	COMM	2004	B Quesenberry	12461	3	L	MCB 231	M W F	11:15AM	12:05PM
 Public Speaking	COMM	2004	B Quesenberry	12460	3	L	MCB 232	M W F	10:10AM	11:00AM
 Professional Communication	COMM	3214	B Quesenberry	18235	3	L	BUR 116	T R	11:00AM	12:15PM
 Intro Comm Research	COMM	2124	AH Ivory	12498	3	L	RAND 221	T R	12:30PM	1:45PM
-Intro Comm Research	COMM	2124	DJ Tamul	12497	3	L	SHANK 160	M W	4:00PM	5:15PM
+Intro Comm Research	COMM	2124	DJ Tamul	12497	3	L	WLH 350	M W	4:00PM	5:15PM
 PR & Corporate Social Resp.	COMM	3334	N Logan	18358	3	L	MCB 209	T R	12:30PM	1:45PM
 Public Relations Cases	COMM	3014	N Logan	12501	3	L	RAND 221	T R	11:00AM	12:15PM
 Public Relations Campaigns	COMM	4304	MC Myers	12529	3	L	RAND 320	M W F	12:20PM	1:10PM
@@ -2479,7 +2481,7 @@ Advanced Topics in Criminology	CRIM	4434	DJ Davis	12557	3	O
 Numerical Analysis	CS	5466	CA Beattie	12640	3	L	MCB 216	M W F	11:15AM	12:05PM
 Social Media Analytics	CS	5664	N Ramakrishnan	18276	3	O
 Intro to Programming in Python	CS	1064	HM Monti	12566	3	L	MCB 100	M W F	12:20PM	1:10PM
-Self Study Prog Sys	CS	2304	Staff	19772	1	C	MCB 126	R	3:30PM	4:45PM
+Self Study Prog Sys	CS	2304	Staff	19772	1	C	MCB 126	R	3:30PM	4:20PM
 Self Study Prog Sys	CS	2304	BE Hartsock	12594	1	C	MCB 113	R	5:00PM	5:50PM
 Intro to Problem Solving in CS	CS	2104	MO Ellis	12583	3	L	WLH 340	M W F	9:05AM	9:55AM
 Intro to Problem Solving in CS	CS	2104	A Onufriev	12582	3	L	MCB 113	T R	2:00PM	3:15PM
@@ -2491,9 +2493,9 @@ Independent Study	CS	5974	Staff	12661	1	I
 Independent Study	CS	5974	Staff	12660	1	I
 PGMs and Structured Prediction	CS	6424	Staff	12672	3	L	RAND 318	T R	3:30PM	4:45PM
 Computer Graphics	CS	4204	D Gracanin	18155	3	L	MCB 224	T R	11:00AM	12:15PM
-Creative Computing Studio	CS	4644	SR Harrison	12622	3	L	MCB 655	W	2:30PM	5:15PM
+Creative Computing Studio	CS	4644	SR Harrison	12622	3	L	MAC 253A	W	2:30PM	5:15PM
 Field Study	CS	4964	Staff	12628	1	L
-Comptr-Supp Coop Work	CS	5734	DG Tatar	18160	3	L	MCB 655	T	3:15PM	6:00PM
+Comptr-Supp Coop Work	CS	5734	DG Tatar	18160	3	L	MAC 253A	T	3:15PM	6:00PM
 Comp Sci Foundations for CMDA	CS	3634	T Warburton	12610	3	L	TORG 1060	T R	3:30PM	4:45PM
 Database Management Systems	CS	5614	BA Prakash	18159	3	L	MCB 226	T R	9:30AM	10:45AM
 TS:Software Engineering Rsrch	CS	6704	N Meng	12678	3	L	MCB 218	W	2:30PM	5:15PM
@@ -2503,10 +2505,11 @@ Intro to Computer Organization	CS	2506	WD McQuain	12597	3	L	TORG 3100	M W	4:00PM
 Int Data Base Mgt Sys	CS	4604	Staff	12620	3	L	SURGE 109	M W	4:00PM	5:15PM
 Intro Computer Organization	CS	2505	C Jung	12596	3	L	NCB 260	T R	2:00PM	3:15PM
 Intro Computer Organization	CS	2505	HM Monti	12595	3	L	TORG 2150	M W F	9:05AM	9:55AM
+Mobile Software Development	CS	3714	Staff	19835	3	L	PAM 3004	T R	9:30AM	10:45AM
 Mobile Software Development	CS	3714	A Esakia	12613	3	L	MCB 113	T R	3:30PM	4:45PM
 Principles Computer Security	CS	4264	Staff	19593	3	L	GOODW 135	M W	2:30PM	3:45PM
 Advanced Parallel Computation	CS	5234	W Feng	12636	3	L	MCB 332	M W	2:30PM	3:45PM
-Human-Computer Interact Capstn	CS	4784	AL Kavanaugh	12625	3	L	MCB 655	F	1:00PM	3:45PM
+Human-Computer Interact Capstn	CS	4784	AL Kavanaugh	12625	3	L	MAC 253A	F	1:00PM	3:45PM
 Theory of Algorithms	CS	5114	LS Heath	12634	3	L	MCB 307	T R	3:30PM	4:45PM
 Research and Thesis	CS	5994	Staff	12666	1	R
 System and Software Security	CS	5590	D Yao	18158	3	L	RAND 222	T R	12:30PM	1:45PM
@@ -2534,7 +2537,7 @@ Intermed Data Analytics & ML	CS	4654	RB Gramacy	12623	3	L	SEITZ 313	M W	4:00PM	5
 Computational Cell Biology	CS	5424	Y Cao	12639	3	L	HUTCH 207	T R	9:30AM	10:45AM
 Independent Study	CS	4974	Staff	12629	1	I
 Software Design and Quality	CS	5744	Staff	12652	3	O
-Computer Architecture	CS	5504	D Lee	18157	3	L	RAND 116	T R	12:30PM	1:45PM
+Computer Architecture	CS	5504	D Lee	18157	3	L	NCB 120	T R	12:30PM	1:45PM
 Graduate Seminar	CS	5944	D Gracanin	12658	1	L	TORG 2150	F	11:15AM	12:30PM
 Human-Computr Intrctn	CS	3724	DS McCrickard	12614	3	L	SURGE 104B	T R	12:30PM	1:45PM
 Software Engineering	CS	5704	GW Kulczycki	12650	3	O
@@ -2616,7 +2619,7 @@ Managed Ecosystems Serv & Sust	CSES	4444	SC Hodges	12708	3	L	SMYTH 331	T R	12:30
 Forage Crop Ecology	CSES	4544	AO Abaye	12709	3	L	SMYTH 246A	T R	2:00PM	3:15PM
 SS:Fdmntls Comp Data Analysis	CSES	4984	S Li	19708	3	L	SMYTH 246A	M W	11:00AM	1:00PM
 Independent Study	CSES	5974	WL Daniels	12722	1	I
-Soil Chemistry	CSES	5634	MJ Eick	18871	4	L	RAND 116	T R	11:00AM	12:15PM
+Soil Chemistry	CSES	5634	MJ Eick	18871	4	L	WMS 120	T R	11:00AM	12:15PM
 Field Study	CSES	4964	TL Thompson	12711	1	R
 Study Abroad	CSES	3954	Staff	19444	1	L
 Study Abroad	CSES	3954	AO Abaye	19086	1	L
@@ -2624,7 +2627,7 @@ Adv Managed Ecosys Serv & Sust	CSES	5744G	SC Hodges	12718	3	L	SMYTH 331	T R	12:3
 Environmental Microbiology	CSES	4164	BD Badgley	12704	3	L	HUTCH 409	T R	11:00AM	11:50AM	HAHN N 216	W	9:30AM	12:20PM
 Environmental Microbiology	CSES	4164	BD Badgley	12703	3	L	WAL 340	T R	11:00AM	11:50AM	HAHN N 216	W	1:25PM	4:15PM
 Research and Dissertation	CSES	7994	WL Daniels	12724	1	R
-Plant Breeding and Genetics	CSES	4144	CA Griffey	18853	0	L	SMYTH 246A	T R	8:00AM	9:15AM
+Plant Breeding and Genetics	CSES	4144	CA Griffey	18853	3	L	SMYTH 232	T R	8:00AM	9:15AM
 Crop Physiology and Ecology	CSES	4344	T Fukao	12707	3	L	SMYTH 246A	T R	9:30AM	10:45AM
 Soils for Professionals	CSES	5114	WL Daniels	12716	3	O
 Soils for Professionals	CSES	5114	WL Daniels	12715	3	O
@@ -2647,7 +2650,7 @@ Grasslands Science	CSES	5544	JH Fike	19557	3	L
 Water Quality	CSES	4314	K Xia	12706	3	L	SEITZ 300	T R	2:00PM	3:15PM
 Independent Study	CSES	4974	TL Thompson	12712	1	I
 Plant for Envir Rest	CSES	3644	EH Ervin	12701	3	L	HUTCH 207	M W	2:30PM	3:45PM
-Environmental Soil Chemistry	CSES	4734	MJ Eick	12710	3	L	RAND 116	T R	11:00AM	12:15PM
+Environmental Soil Chemistry	CSES	4734	MJ Eick	12710	3	L	WMS 120	T R	11:00AM	12:15PM
 Applied Dairy Cattle Genetics	DASC	4174	R Cockrum	12729	3	L	LITRV 2567	M W F	10:10AM	11:00AM
 Physiology of Lactation	DASC	4374	BA Corl	12730	3	L	LITRV 1770	M W	9:05AM	9:55AM	LITRV 200	M	2:30PM	5:15PM
 Advanced Dairy Management Eval	DASC	4474	WA White	12732	2	L	LITRV 2567	M	12:20PM	2:15PM
@@ -2692,7 +2695,7 @@ Linear Control Theory	ECE	6744	MH Farhood	13155	3	L	RAND 206	T R	3:30PM	4:45PM
 Electronic Design Automation	ECE	5534	Staff	12900	3	L	RAND 206A	T R	5:00PM	6:15PM
 TS:Embedded&Controls Syst Secr	ECE	6504	RM Gerdes	19663	3	O
 Adv Tps:Embd & Contrl Syst Sec	ECE	6504	RM Gerdes	19661	3	O
-Electronic Circuit Design	ECE	4206	Staff	18251	3	L	WHIT 277	M W	4:00PM	5:15PM
+Electronic Circuit Design	ECE	4206	DM Sable	18251	3	L	WHIT 277	M W	4:00PM	5:15PM
 Signals and Systems	ECE	2704	Staff	12783	3	L	NCB 360	M W F	12:20PM	1:10PM
 Signals and Systems	ECE	2704	Staff	12782	3	L	WHIT 300	M W F	1:25PM	2:15PM
 Digital Image Processing	ECE	4580	Staff	12842	3	O
@@ -2703,7 +2706,7 @@ Industrial Electronics	ECE	3254	Staff	12797	3	L	WHIT 300	M W F	10:10AM	11:00AM
 Exploration of Space	ECE	2164	Staff	12755	3	L	NCB 110	M W F	12:20PM	1:10PM
 AC Circuit Analysis	ECE	3004	Staff	12788	3	L	SURGE 104A	M W	2:30PM	3:45PM
 Semiconductor Device Fund	ECE	4214	Staff	12827	3	L	DURHM 261	T R	9:30AM	10:45AM
-Advanced VLSI Design	ECE	5545	Staff	18467	3	L	RAND 220	M W	4:00PM	5:15PM
+Advanced VLSI Design	ECE	5545	PK Ampadu	18467	3	L	RAND 220	M W	4:00PM	5:15PM
 Telecommuncations	ECE	5666	DG Sweeney	18227	3	O
 Independent Study	ECE	4974	Staff	12864	1	I
 Independent Study	ECE	4974	Staff	12863	1	I
@@ -2818,7 +2821,7 @@ Research and Dissertation	ECE	7994	W Saad	13181	1	R
 Research and Dissertation	ECE	7994	H Zeng	13180	1	R
 Research and Dissertation	ECE	7994	HS Dhillon	13179	1	R
 Research and Dissertation	ECE	7994	M Manteghi	13178	1	R
-Research and Dissertation	ECE	7994	Staff	13177	1	R
+Research and Dissertation	ECE	7994	JM Ernst	13177	1	R
 Research and Dissertation	ECE	7994	LJ Guido	13176	1	R
 Research and Dissertation	ECE	7994	M Agah	13175	1	R
 Research and Dissertation	ECE	7994	Staff	13174	1	R
@@ -2862,10 +2865,8 @@ Independent Study	ECE	2974	Staff	12785	1	I
 Independent Study	ECE	2974	Staff	12784	1	I
 Introduction to Power Systems	ECE	3304	Staff	12806	3	L	SURGE 103A	T R	9:30AM	10:45AM
 Introduction to Power Systems	ECE	3304	Staff	12805	3	L	SURGE 107	T R	9:30AM	10:45AM
-Digital Design I	ECE	3544	Staff	18341	4	L	RAND 208	T R	8:00AM	9:15AM
 Digital Design I	ECE	3544	Staff	12814	4	L	NCB 270	T R	8:00AM	9:15AM
-Data Structures and Algorithms	ECE	2574	Staff	12781	3	L	SURGE 118B	M W F	8:00AM	8:50AM
-Data Structures and Algorithms	ECE	2574	Staff	12780	3	L	NCB 110	M W F	8:00AM	8:50AM
+Data Structures and Algorithms	ECE	2574	Staff	12780	3	L	SURGE 118C	M W F	8:00AM	8:50AM
 Antennas	ECE	4114	Staff	12820	3	L	RAND 206A	M W F	9:05AM	9:55AM
 Undergraduate Research	ECE	4994	Staff	12884	1	R
 Undergraduate Research	ECE	4994	Staff	12883	1	R
@@ -2900,11 +2901,9 @@ IT Security and Trust	ECE	5586	DR Raymond	12905	3	O
 Advanced Computer Vision	ECE	6554	Staff	13153	3	L	RAND 220	T R	2:00PM	3:15PM
 Electic Circuit Analysis Lab	ECE	2074	Staff	19100	1	B	SURGE 104D	W	5:30PM	6:45PM
 Electic Circuit Analysis Lab	ECE	2074	Staff	12754	1	B	HAHN N 140	R	5:30PM	6:45PM
-Intro Computer Engr	ECE	2504	Staff	18339	3	L	RAND 331	M W F	1:25PM	2:15PM
 Intro Computer Engr	ECE	2504	Staff	12773	3	L	RAND 221	M W F	10:10AM	11:00AM
-Intro Computer Engr	ECE	2504	Staff	12772	3	L	DURHM 261	M W F	10:10AM	11:00AM
-Intro Computer Engr	ECE	2504	Staff	12771	3	L	DURHM 261	M W F	1:25PM	2:15PM
-Senior Design Project	ECE	4805	Staff	18062	3	L	SURGE 117A	T R	8:00AM	9:15AM
+Intro Computer Engr	ECE	2504	Staff	12771	3	L	SURGE 109	M W F	1:25PM	2:15PM
+Senior Design Project	ECE	4805	KR Schulz	18062	3	L	SURGE 117A	T R	8:00AM	9:15AM
 Senior Design Project	ECE	4806	Staff	12849	3	L	SURGE 117A	T R	8:00AM	9:15AM
 Computer Org & Architecture	ECE	2500	Staff	12770	3	L	ROB 105	T R	11:00AM	12:15PM
 Computer Org & Architecture	ECE	2500	Staff	12769	3	L	DURHM 261	T R	11:00AM	12:15PM
@@ -3023,14 +3022,12 @@ Research and Thesis	ECE	5994	A Wang	13046	1	R
 Research and Thesis	ECE	5994	CL Wyatt	13045	1	R
 Research and Thesis	ECE	5994	TC Poon	13044	1	R
 Research and Thesis	ECE	5994	AA Beex	13043	1	R
-Research and Thesis	ECE	5994	Staff	13042	1	R
+Research and Thesis	ECE	5994	JM Ernst	13042	1	R
 Research and Thesis	ECE	5994	TL Martin	13041	1	R
 Research and Thesis	ECE	5994	V Kekatos	13040	1	R
 Research and Thesis	ECE	5994	SF Midkiff	13039	1	R
 Research and Thesis	ECE	5994	WG Odendaal	13038	1	R
-Applied Software Design	ECE	3574	Staff	18342	3	L	SURGE 103A	T R	2:00PM	3:15PM
-Applied Software Design	ECE	3574	Staff	12815	3	L	NCB 160	T R	2:00PM	3:15PM
-Electrical Theory	ECE	3054	Staff	12790	3	L	LITRV 1870	M W F	9:05AM	9:55AM
+Applied Software Design	ECE	3574	Staff	12815	3	L	TORG 2150	T R	2:00PM	3:15PM
 Electrical Theory	ECE	3054	Staff	12789	3	L	SURGE 104B	M W F	9:05AM	9:55AM
 Adv Alternate Energy Systems	ECE	5374G	Staff	12892	3	O
 System and Software Security	ECE	5590	D Yao	18675	3	L	RAND 222	T R	12:30PM	1:45PM
@@ -3110,7 +3107,7 @@ Project and Report	ECE	5904	RB Knapp	12938	1	R
 Project and Report	ECE	5904	MV Marathe	12937	1	R
 Project and Report	ECE	5904	SW Ellingson	12936	1	R
 Project and Report	ECE	5904	FC Lee	12935	1	R
-Project and Report	ECE	5904	Staff	12934	1	R
+Project and Report	ECE	5904	JM Ernst	12934	1	R
 Project and Report	ECE	5904	TC Clancy	12933	1	R
 Project and Report	ECE	5904	CR Clauer	12932	1	R
 Project and Report	ECE	5904	JS Lai	12931	1	R
@@ -3136,17 +3133,17 @@ SS: Adv Transactional Program	ECE	5984	S Hans	19496	3	L	TORG 1030	M W	12:30PM	1:
 SS: Adv Linus Kernel Program	ECE	5984	P Olivier	19494	3	L	TORG 1000	T R	5:00PM	6:15PM
 SS: GNSS Receiver Design	ECE	5984	WA Scales	19248	3	L	RAND 206	T R	5:00PM	6:15PM
 SS: Adv Robot Motion Planning	ECE	5984	P Tokekar	18906	3	L	RAND 331	T R	5:00PM	6:15PM
-Adv Instrumentation in Pwr Sys	ECE	6314	Staff	18289	3	L	JCH 317A	T R	12:30PM	1:45PM
+Adv Instrumentation in Pwr Sys	ECE	6314	Staff	18289	3	L	WHIT 277	T R	12:30PM	1:45PM
 Embedded System Design	ECE	4534	Staff	19067	4	L	DURHM 368	T R	12:30PM	1:45PM
 Embedded System Design	ECE	4534	Staff	12837	4	L	DURHM 368	T R	9:30AM	10:45AM
 Embedded System Design	ECE	4534	Staff	12836	4	L	DURHM 368	T R	11:00AM	12:15PM
 Electromagnetic Waves	ECE	5106	Staff	12886	3	O
 Electromagnetic Waves	ECE	5106	Staff	12885	3	L	WHIT 281	M	4:00PM	6:45PM
-Computer Architecture	ECE	5504	D Lee	18674	3	L	RAND 116	T R	12:30PM	1:45PM
+Computer Architecture	ECE	5504	D Lee	18674	3	L	NCB 120	T R	12:30PM	1:45PM
 Testing & Verif Digit Systems	ECE	5506	Staff	12897	3	L	RAND 121	T R	3:30PM	4:45PM
-Computational Plasma Dynamics	ECE	6174	Staff	18284	3	L	TORG 1000	T R	2:00PM	3:15PM
-Computational Plasma Dynamics	ECE	6174	Staff	18283	3	O	TBA	T R	2:00PM	3:15PM
-Fundamentals Computer Systems	ECE	5484	KE Giles	12895	3	O
+Computational Plasma Dynamics	ECE	6174	B Srinivasan	18284	3	L	TORG 1000	T R	2:00PM	3:15PM
+Computational Plasma Dynamics	ECE	6174	B Srinivasan	18283	3	O	TBA	T R	2:00PM	3:15PM
+Fundamentals Computer Systems	ECE	5484	Staff	12895	3	O
 Introduction to Space Weather	ECE	4154	Staff	19553	3	L	WHIT 257	T R	8:00AM	9:15AM
 Real-Time Systems	ECE	4550	Staff	12838	3	L	TORG 1030	T R	12:30PM	1:45PM
 Advanced Power Conversion Tech	ECE	5244	Staff	19595	3	L	WHIT 143	T R	3:30PM	4:45PM
@@ -3156,17 +3153,18 @@ Intro Comm Systems	ECE	3614	Staff	12816	3	L	NCB 270	M W F	10:10AM	11:00AM
 Intro to Unix for Engineers	ECE	2524	Staff	12774	2	L	NCB 320	T R	11:00AM	11:50AM
 Electric Circuit Analysis	ECE	2004	Staff	12749	3	L	SURGE 104C	M W F	11:15AM	12:05PM
 Electric Circuit Analysis	ECE	2004	Staff	12748	3	L	SURGE 104B	M W F	11:15AM	12:05PM
+TS:Energy Power Electronics	ECE	6204	JS Lai	19809	3	L
 Design in Power Engineering	ECE	4304	Staff	12828	3	L	RAND 206A	M W F	1:25PM	2:15PM
 Design of Systems on a Chip	ECE	5514	Staff	12899	3	O
 Design of Systems on a Chip	ECE	5514	Staff	12898	3	O
-Cybersecurity Seminar	ECE	4944	Staff	12850	1	L	RAND 129	W	1:25PM	2:15PM
+Cybersecurity Seminar	ECE	4944	WO Plymale	12850	1	L	PAM 32	W	2:30PM	3:20PM
 Principles of Robotics Systems	ECE	4704	Staff	12847	3	L	GOODW 155	T R	3:30PM	4:45PM
 Autonomous Systems Seminar	ECE	5914	AJ Kurdila	13019	1	L	RAND 208	F	2:30PM	3:45PM
 Power Electronics Laboratory	ECE	4284	Staff	19509	1	B	WHIT 253	W	9:00AM	11:50AM
 Comp and Net Security Fund	ECE	4560	Staff	18278	3	O	TBA	W	4:00PM	6:45PM
 Comp and Net Security Fund	ECE	4560	Staff	18277	3	L	TORG 1030	W	4:00PM	6:45PM
 Final Examination	ECE	5894	Staff	12917	3	L
-TS: Nanophotonics	ECE	6104	Staff	18291	3	L	SURGE 103A	M W	2:30PM	3:45PM
+TS: Nanophotonics	ECE	6104	Staff	18291	3	L	PAM 2002	M W	2:30PM	3:45PM
 Network Application Design	ECE	4564	Staff	19066	3	L	NCB 110	M W F	1:25PM	2:15PM
 Power Laboratory	ECE	3354	RF Cooper	12813	1	B	WHIT 430	W	2:30PM	5:20PM
 Power Laboratory	ECE	3354	RF Cooper	12812	1	B	WHIT 430	W	5:30PM	8:20PM
@@ -3180,7 +3178,7 @@ Microcontroller Interfacing	ECE	2534	Staff	18340	4	L	ROB 105	M W F	10:10AM	11:00
 Microcontroller Interfacing	ECE	2534	Staff	12779	4	L	SURGE 109	M W F	11:15AM	12:05PM
 Microcontroller Interfacing	ECE	2534	Staff	12778	4	L	TORG 1010	M W F	10:10AM	11:00AM
 Microcontroller Interfacing	ECE	2534	Staff	12777	4	L	DURHM 261	M W F	11:15AM	12:05PM
-Microcontroller Interfacing	ECE	2534	Staff	12776	4	L	SURGE 109	M W F	1:25PM	2:15PM
+Microcontroller Interfacing	ECE	2534	Staff	12776	4	L	DURHM 261	M W F	1:25PM	2:15PM
 Microcontroller Interfacing	ECE	2534	Staff	12775	4	L	WLH 350	M W F	1:25PM	2:15PM
 Electromagnetic Fields	ECE	3106	Staff	12794	3	L	NCB 110	M W F	11:15AM	12:05PM
 Electromagnetic Fields	ECE	3106	Staff	12793	3	L	NCB 170	M W F	12:20PM	1:10PM
@@ -3218,24 +3216,24 @@ Economics of Organizations	ECON	4404	HH Haller	13296	3	L	MCB 210	T R	9:30AM	10:4
 Undergraduate Research	ECON	4994H	SB Ball	13306	1	R
 Undergraduate Research	ECON	4994H	SB Ball	13305	1	R
 Industry Structure	ECON	4084	Z Yang	13293	3	L	PAM 1001	T R	5:00PM	6:15PM
-Industry Structure	ECON	4084	Z Yang	13292	3	L	PAM 1010	T R	12:30PM	1:45PM
-Public Economics	ECON	4044	TN Tideman	19534	3	L	MCB 226	M W F	10:10AM	11:00AM
+Industry Structure	ECON	4084	Z Yang	13292	3	L	PAM 2028	T R	12:30PM	1:45PM
+Public Economics	ECON	4044	TN Tideman	19534	3	L	WMS 334	M W F	10:10AM	11:00AM
 Research and Dissertation	ECON	7994	KP Tsang	13317	1	R
 Economics of China	ECON	4144	S Ge	13294	3	L	PAM 2001	T R	2:00PM	3:15PM
-Money and Price Level	ECON	5015	RD Cothren	13308	3	L	ROB 101	T R	12:30PM	1:45PM
+Money and Price Level	ECON	5015	RD Cothren	13308	3	L	PAM 1010	T R	12:30PM	1:45PM
 Research and Thesis	ECON	5994	KP Tsang	13312	1	R
 Strategic Behavior	ECON	6004	EA Bahel	13313	3	L	WMS 320	R	5:00PM	6:15PM
-Analysis of Economic Data	ECON	3254	Staff	13290	3	L	PAM 3004	T R	9:30AM	10:45AM
-Analysis of Economic Data	ECON	3254	Staff	13289	3	L	ROB 103	T R	11:00AM	12:15PM
+Analysis of Economic Data	ECON	3254	CD Luketic	13290	3	L	MCB 328	T R	9:30AM	10:45AM
+Analysis of Economic Data	ECON	3254	MM Agurto Adrianzen	13289	3	L	PAM 2001	T R	11:00AM	12:15PM
 Macroeconomic Theory	ECON	3204	KP Tsang	13286	3	L	PAM 1001	T R	2:00PM	3:15PM
-Macroeconomic Theory	ECON	3204	KP Tsang	13285	3	L	ROB 122	T R	3:30PM	4:45PM
-Microeconomic Theory	ECON	3104	G Tserenjigmid	13284	3	L	PAM 2028	T R	12:30PM	1:45PM
-Microeconomic Theory	ECON	3104	AP Dominiak	13283	3	L	PAM 2001	T R	11:00AM	12:15PM
+Macroeconomic Theory	ECON	3204	KP Tsang	13285	3	L	PAM 2030	T R	3:30PM	4:45PM
+Microeconomic Theory	ECON	3104	G Tserenjigmid	13284	3	L	ROB 101	T R	12:30PM	1:45PM
+Microeconomic Theory	ECON	3104	AP Dominiak	13283	3	L	ROB 103	T R	11:00AM	12:15PM
 Undergraduate Research	ECON	4994	SB Ball	13304	1	R
 Empirical Economics	ECON	5126	K Moeltner	13309	3	L	PAM 1001	T R	9:30AM	10:45AM
 SS:Micro-origns Econ Flctuatns	ECON	5984	S Luo	19776	3	L	SAUND 408	T R	12:30PM	1:45PM
 SS: Behavioral Economics	ECON	5984	AC Smith	19668	3	L	DER 3083	M W	2:30PM	3:15PM
-Prices and Markets	ECON	5006	AP Dominiak	13307	3	L	PAM 2030	T R	3:30PM	4:45PM
+Prices and Markets	ECON	5006	AP Dominiak	13307	3	L	ROB 122	T R	3:30PM	4:45PM
 Internship	ECON	4754	SB Ball	13298	1	L
 Independent Study	ECON	4974	SB Ball	13301	1	I
 Experimental Economics	ECON	5964	SB Ball	13310	3	L	PAM 2002	M W	1:00PM	2:15PM
@@ -3246,7 +3244,7 @@ Comp and Cont Rdg	EDCI	5264	AP Azano	13330	3	L	GYM 220L	T	4:00PM	6:50PM
 Comp and Cont Rdg	EDCI	5264	AP Azano	13329	3	L	GYM 220L	W	1:00PM	3:50PM
 Teacher Education Curriculum	EDCI	6014	BS Billingsley	19105	3	L	GYM 220L	W	4:00PM	6:50PM
 GS:Develop Profes Dispositions	EDCI	5784	JM Bondy	19085	3	L	GYM 220F	W	7:00PM	9:50PM
-GS:Math Educ Ldrship II	EDCI	5784	BC Kreye	13358	3	L	GYM 118	R	4:00PM	6:50PM
+GS:Math Educ Ldrship II	EDCI	5784	JL Wilkins	13358	3	L	GYM 118	R	4:00PM	6:50PM
 GS:Res Asses/Diagno Math Clsrm	EDCI	5784	CL Ulrich	13357	3	L	GYM 118	M	1:00PM	3:50PM
 GS: Gaps in Educ Conversation	EDCI	5784	JW Garrison	13356	3	L	GYM 400	T	4:00PM	6:50PM
 Engr. Leadership/Mgmt	EDCI	4454	BR Brand	13322	3	L	DER 1096	W	5:00PM	8:00PM
@@ -3424,7 +3422,7 @@ Research and Dissertation	EDRE	7994	Staff	13598	1	R
 TS: Assessment	EDRE	6794	DJ Kniola	19446	3	L	GYM 234	W	1:00PM	3:50PM
 TS: Longitudinal Data Analysis	EDRE	6794	Y Miyazaki	13595	3	L	GYM 220G	M	4:00PM	6:50PM
 Structural Equation Modelling	EDRE	6664	JM Cohen	13593	3	L	GYM 220G	W	1:00PM	3:50PM
-Qual Res II	EDRE	6524	EG Creamer	13586	3	L	TBA	M	9:00AM	11:50AM
+Qual Res II	EDRE	6524	EG Creamer	13586	3	L	GYM 220F	M	9:00AM	11:50AM
 Adv Stat for Educ	EDRE	6634	GE Skaggs	13592	3	L	GYM 220G	M	1:00PM	3:50PM
 Mxd Method Research Dsgn	EDRE	6744	EG Creamer	18996	3	L	GYM 234	W	9:00AM	11:50AM
 Independent Study	EDRE	5974	Staff	13583	1	I
@@ -3552,7 +3550,7 @@ Independent Study	ENGE	5974	VK Lohani	13683	1	I
 Assessment Techniques Engr Ed	ENGE	5404	WC Lee	13679	3	L	GOODW 241	M	12:40PM	3:25PM
 Practicum in Engr Classroom	ENGE	5504	RM Goff	13680	1	L	GOODW 241	R	12:30PM	3:15PM
 TS: Engr Ed Research Methods 2	ENGE	5714	H Matusovich	13682	3	L	GOODW 241	W	12:40PM	3:25PM
-TS: Curriclm&Chng Higher Ed	ENGE	6714	DB Knight	19617	3	L
+TS: Curriclm&Chng Higher Ed	ENGE	6714	DB Knight	19617	3	L	GOODW 244	R	12:30PM	3:15PM
 EngE Graduate Seminar	ENGE	5704	H Matusovich	13681	1	L	GOODW 145	F	10:30AM	12:00PM
 History English Lang	ENGL	4054	JF Eska	18362	3	L	WHIT 277	M W F	11:15AM	12:05PM
 Literature and the Law	ENGL	3684	NA Metz	13897	3	L	MCB 318	T R	3:30PM	4:45PM
@@ -3613,6 +3611,7 @@ Undergraduate Research	ENGL	4994H	VC Fowler	13963	1	R
 Digital Humanities	ENGL	5074	A Reed	18380	3	L	SHANK 360	T R	3:30PM	4:45PM
 Practicum	ENGL	5034	K Kearcher	13965	3	L	SHANK 340	M W F	12:20PM	1:10PM
 Practicum	ENGL	5034	K Kearcher	13964	3	L	SHANK 340	M W F	11:15AM	12:05PM
+Senior Seminar	ENGL	4784	NA Metz	19832	3	L	MCB 219	T R	11:00AM	12:15PM
 Senior Seminar	ENGL	4784	NA Metz	13954	3	L	SHANK 352	T R	2:00PM	3:15PM
 TS: Senior Seminar	ENGL	4784	PW Graham	13953	3	L	SHANK 352	T R	11:00AM	12:15PM
 Research and Thesis	ENGL	5994	CM Eska	13979	1	L
@@ -3620,8 +3619,8 @@ Intro to Detective Fiction	ENGL	1624	Staff	18370	3	O
 Intro to Detective Fiction	ENGL	1624	AF Kinder	13840	3	O
 Intro to Detective Fiction	ENGL	1624	Staff	13839	3	L	ROB 210	M W	2:30PM	3:45PM
 First-Year Writing	ENGL	1106	SD Mooney	19681	3	L	MCB 233	M W	4:00PM	5:15PM
-First-Year Writing	ENGL	1106	Staff	19674	3	L	MAJWM 434	T R	9:30AM	10:45AM
-First-Year Writing	ENGL	1106	Staff	19673	3	L	MAJWM 434	T R	8:00AM	9:15AM
+First-Year Writing	ENGL	1106	LP Livesay	19674	3	L	MAJWM 434	T R	9:30AM	10:45AM
+First-Year Writing	ENGL	1106	LP Livesay	19673	3	L	MAJWM 434	T R	8:00AM	9:15AM
 First-Year Writing	ENGL	1106	RM Allnutt	19672	3	L	MCB 223	M W F	11:15AM	12:05PM
 First-Year Writing	ENGL	1106	JA Gibbs	19671	3	L	MCB 316	T R	8:00AM	9:15AM
 First-Year Writing	ENGL	1106	RH Canter	19662	3	L	AA 101	T R	11:00AM	12:15PM
@@ -3673,12 +3672,12 @@ First-Year Writing	ENGL	1106	CJ Clem	13790	3	L	PAM 3028	M W F	1:25PM	2:15PM
 First-Year Writing	ENGL	1106	R Uren	13789	3	L	PAM 1004	M W F	9:05AM	9:55AM
 First-Year Writing	ENGL	1106	CJ Clem	13788	3	L	PAM 2002	M W F	11:15AM	12:05PM
 First-Year Writing	ENGL	1106	A Bhowmik	13787	3	L	RAND 121	M W F	11:15AM	12:05PM
-First-Year Writing	ENGL	1106	GK Natishan	13786	3	L	AA 109	M W	2:30PM	3:45PM
+First-Year Writing	ENGL	1106	CA Cook Marshall	13786	3	L	AA 109	M W	2:30PM	3:45PM
 First-Year Writing	ENGL	1106	JM Beckett	13785	3	L	RAND 220	T R	11:00AM	12:15PM
 First-Year Writing	ENGL	1106	JA Drapeau	13783	3	L	HOLD 114	M W F	10:10AM	11:00AM
 First-Year Writing	ENGL	1106	ME Glasson-Darling	13782	3	L	MCB 322	M W F	1:25PM	2:15PM
 First-Year Writing	ENGL	1106	AK McGlone	13781	3	L	PAM 1004	T R	3:30PM	4:45PM
-First-Year Writing	ENGL	1106	MJ Bliss	13779	3	L	RAND 320	T R	9:30AM	10:45AM
+First-Year Writing	ENGL	1106	MJ Bliss	13779	3	L	PAM 3010	T R	9:30AM	10:45AM
 First-Year Writing	ENGL	1106	R Uren	13778	3	L	MCB 328	M W F	1:25PM	2:15PM
 First-Year Writing	ENGL	1106	VL Ruccolo	13777	3	L	RAND 318	T R	12:30PM	1:45PM
 First-Year Writing	ENGL	1106	VA Le Corre-Cochran	13776	3	L	PAM 1001	M W F	1:25PM	2:15PM
@@ -3688,7 +3687,7 @@ First-Year Writing	ENGL	1106	MS Maycock	13772	3	L	MCB 302	T R	3:30PM	4:45PM
 First-Year Writing	ENGL	1106	CP Kour	13771	3	L	RAND 206	M W F	10:10AM	11:00AM
 First-Year Writing	ENGL	1106	EA Dellinger	13770	3	L	MCB 219	M W F	9:05AM	9:55AM
 First-Year Writing	ENGL	1106	AK McGlone	13769	3	L	RAND 220	T R	12:30PM	1:45PM
-First-Year Writing	ENGL	1106	CA Cook Marshall	13768	3	L	ROB 105	M W F	11:15AM	12:05PM
+First-Year Writing	ENGL	1106	GK Natishan	13768	3	L	ROB 105	M W F	11:15AM	12:05PM
 First-Year Writing	ENGL	1106	Staff	13767	3	L	MCB 233	M W F	9:05AM	9:55AM
 First-Year Writing	ENGL	1106	JM Adams	13766	3	L	PAM 3028	M W F	11:15AM	12:05PM
 First-Year Writing	ENGL	1106	M Denton-Edmundson	13765	3	L	HOLD 212	M W F	10:10AM	11:00AM
@@ -3715,13 +3714,13 @@ First-Year Writing	ENGL	1106	SJ Baker	13742	3	L	MCB 233	T R	3:30PM	4:45PM
 First-Year Writing	ENGL	1106	RH Canter	13740	3	L	MCB 321	T R	2:00PM	3:15PM
 First-Year Writing	ENGL	1106	R Uren	13739	3	L	MCB 328	M W F	10:10AM	11:00AM
 First-Year Writing	ENGL	1106	MJ Bliss	13738	3	L	PAM 1001	M W F	9:05AM	9:55AM
-First-Year Writing	ENGL	1106	CA Cook Marshall	13737	3	L	MCB 302	M W F	10:10AM	11:00AM
+First-Year Writing	ENGL	1106	GK Natishan	13737	3	L	MCB 302	M W F	10:10AM	11:00AM
 First-Year Writing	ENGL	1106	MD Neuhoff	13736	3	L	MCB 302	M W F	8:00AM	8:50AM
 First-Year Writing	ENGL	1106	Staff	13735	3	L	PAM 1001	M W F	11:15AM	12:05PM
 First-Year Writing	ENGL	1106	H Baker	13734	3	L	MCB 316	M W F	1:25PM	2:15PM
 First-Year Writing	ENGL	1106	IL Johnson	13733	3	L	RAND 110	T R	12:30PM	1:45PM
 First-Year Writing	ENGL	1106	KN Colonna	13732	3	L	PAM 1003	M W F	10:10AM	11:00AM
-First-Year Writing	ENGL	1106	GK Natishan	13731	3	L	ROB 105	M W	4:00PM	5:15PM
+First-Year Writing	ENGL	1106	CA Cook Marshall	13731	3	L	ROB 105	M W	4:00PM	5:15PM
 First-Year Writing	ENGL	1106	Staff	13729	3	L	MCB 316	T R	5:00PM	6:15PM
 First-Year Writing	ENGL	1106	IL Johnson	13728	3	L	MCB 209	T R	2:00PM	3:15PM
 First-Year Writing	ENGL	1106	MJ Bliss	13727	3	L	PAM 1001	M W F	10:10AM	11:00AM
@@ -3732,7 +3731,7 @@ First-Year Writing	ENGL	1106	IL Johnson	13722	3	L	RAND 206	T R	9:30AM	10:45AM
 First-Year Writing	ENGL	1106	C Commer	13721	3	L	HOLD 114	T R	11:00AM	12:15PM
 First-Year Writing	ENGL	1106	AN Williams	13720	3	L	DER 1084	M W F	11:15AM	12:05PM
 First-Year Writing	ENGL	1106	MS Smith	13719	3	L	ROB 116	T R	8:00AM	9:15AM
-First-Year Writing	ENGL	1106	MJ Bliss	13718	3	L	MCB 322	T R	8:00AM	9:15AM
+First-Year Writing	ENGL	1106	MJ Bliss	13718	3	L	PAM 2001	T R	8:00AM	9:15AM
 First-Year Writing	ENGL	1106	H Baker	13717	3	L	MCB 302	M W F	11:15AM	12:05PM
 First-Year Writing	ENGL	1106	TS Cohen	13716	3	L	PAM 1001	M W F	8:00AM	8:50AM
 First-Year Writing	ENGL	1106	DE Whitley	13715	3	L	MCB 328	M W F	8:00AM	8:50AM
@@ -3874,7 +3873,7 @@ Env Life Cycle Assessment	ENGR	4134	S McGinnis	13994	3	L	NCB 220	T R	11:00AM	12:
 Env Life Cycle Assessment	ENGR	4134	S McGinnis	13993	3	L	NCB 220	T R	9:30AM	10:45AM
 Engr UG Exploratory Activity	ENGR	2004R	Staff	13987	0	I
 Engr Fund for Scientists	ENGR	2464	BA Watford	13989	2	L	HAN 209	M W	12:20PM	1:10PM
-Green Engineering	ENGR	3124	Staff	13991	3	L	GOODW 115	T R	8:00AM	9:15AM
+Green Engineering	ENGR	3124	CV Martin	13991	3	L	GOODW 115	T R	8:00AM	9:15AM
 Syst Engr Process	ENGR	5004	A Salado Diez	13997	3	O	TBA	M	7:00PM	9:45PM
 Syst Engr Process	ENGR	5004	A Salado Diez	13996	3	L	TORG 1000	M	7:00PM	9:45PM
 Engr International Activity	ENGR	2004A	Staff	13985	0	I
@@ -3898,7 +3897,8 @@ Undergraduate Research	ENSC	4994	TL Thompson	14019	1	R
 Water Quality	ENSC	4314	K Xia	14013	3	L	SEITZ 300	T R	2:00PM	3:15PM
 Independent Study	ENSC	4974	TL Thompson	14018	1	I
 Plant for Envir Rest	ENSC	3644	EH Ervin	14009	3	L	HUTCH 207	M W	2:30PM	3:45PM
-Monitoring & Analysis Environ	ENSC	4414	K Xia	14014	2	L	SAUND 201	M	1:20PM	5:20PM	SAUND 201	F	9:00AM	1:00PM
+Monitoring & Analysis Environ	ENSC	4414	K Xia	19838	2	L	SAUND 201	F	9:00AM	9:50AM	SAUND 201	F	10:00AM	1:00PM
+Monitoring & Analysis Environ	ENSC	4414	K Xia	14014	2	L	SAUND 201	M	1:20PM	2:10PM	SAUND 201	M	2:20PM	5:20PM
 Field Study	ENSC	4964	TL Thompson	14017	1	R
 Environmental Soil Chemistry	ENSC	4734	MJ Eick	14016	3	L	RAND 116	T R	11:00AM	12:15PM
 Biol Control of Pests	ENT	5264	SM Salom	18615	3	L	PRICE 221	T R	10:10AM	11:00AM	PRICE 221	F	9:05AM	11:50AM
@@ -4011,11 +4011,10 @@ Undergraduate Research	ESM	2994H	Staff	14072	1	R
 Creativity & the Aesthetic Exp	FA	2004	A Weinstein	14121	1	L	SQUIR COLNL	M	12:20PM	1:10PM
 Creativity & the Aesthetic Exp	FA	2004	A Weinstein	14120	1	L	SQUIR COLNL	W	12:20PM	1:10PM
 Free Markets and Ind Freedom	FIN	5284	DM Patterson	14183	3	L	PAM 1001	M W	4:00PM	5:15PM
-Equity Securities	FIN	4274	Staff	19555	3	L	TBA	M W	2:30PM	3:45PM
-Equity Securities	FIN	4274	P Ye	14174	3	L	ROB 103	T R	12:30PM	1:45PM
+Equity Securities	FIN	4274	P Ye	14174	3	L	PAM 32	T R	12:30PM	1:45PM
 Equity Securities	FIN	4274	P Ye	14171	3	L	ROB 122	T R	2:00PM	3:15PM
-Real Estate Finance	FIN	4154	VA Bonomo	14163	3	L	ROB 210	T R	2:00PM	3:15PM
-Real Estate Finance	FIN	4154	VA Bonomo	14162	3	L	DER 3083	T R	12:30PM	1:45PM
+Real Estate Finance	FIN	4154	BN Murray	14163	3	L	ROB 210	T R	2:00PM	3:15PM
+Real Estate Finance	FIN	4154	BN Murray	14162	3	L	DER 3083	T R	12:30PM	1:45PM
 Analytics Equity Portfolio Mgt	FIN	4275	RS Billingsley	14175	3	L
 Bank Mgt & Financial	FIN	4254	GE Morgan	14169	3	L	ROB 116	T R	11:00AM	12:15PM
 Principles of Finance	FIN	5024	A MacKinlay	19058	3	L	GBJ 100	T R	11:00AM	12:15PM
@@ -4033,7 +4032,7 @@ Investments: Debt-Equity-Deriv	FIN	3144	R Kumar	14144	3	L	ROB 105	T R	9:30AM	10:
 Wills, Trusts, and Estates	FIN	4004	JB Malone	14157	3	L	NCB 160	T R	3:30PM	4:45PM
 Fixed Income Securities	FIN	4224	GE Morgan	14164	3	L	PAM 1003	T R	2:00PM	3:15PM
 Analytics Fixed Inc. Port Mgmt	FIN	4225	GE Morgan	14165	3	L	ROB 116	W	7:00PM	10:00PM
-SS: Commodity Ins & Bus Law	FIN	4984	CA Spicer	19640	3	L	PAM 3008	M W	2:30PM	3:45PM
+SS:Commodity Invest Portfolios	FIN	4984	CA Spicer	19640	3	L	PAM 3008	M W	2:30PM	3:45PM
 Study Abroad	FIN	3954	GE Morgan	14156	1	L
 Free Markets and Welfare	FIN	4284	DM Patterson	14176	3	L	PAM 1001	M W	4:00PM	5:15PM
 Managing Risk with Derivatives	FIN	4264	T Wang	19515	3	L	DER 3092	T R	11:00AM	12:15PM
@@ -4045,7 +4044,7 @@ Research and Dissertation	FIN	7994	R Kumar	19059	1	R
 Research and Dissertation	FIN	7994	JC Easterwood	14197	1	L
 Int Fin Mgt	FIN	4144	S Amini Moghadam	19516	3	L	PAM 31	T R	11:00AM	12:15PM
 Int Fin Mgt	FIN	4144	DM Patterson	14160	3	L	DER 3092	M W	2:30PM	3:45PM
-Int Fin Mgt	FIN	4144	VA Bonomo	14159	3	L	DER 1084	T R	9:30AM	10:45AM
+Int Fin Mgt	FIN	4144	S Amini Moghadam	14159	3	L	DER 1084	T R	9:30AM	10:45AM
 Asset Valuation & Governance	FIN	4244	JM Pinkerton	18647	3	L	DER 1076	M W	4:00PM	5:15PM
 Asset Valuation & Governance	FIN	4244	JM Pinkerton	14168	3	L	DER 1076	M W	2:30PM	3:45PM
 Client Relationship Management	FIN	4124	RH Lytton	18913	3	L	DER 1084	M W	2:30PM	3:45PM
@@ -4077,20 +4076,18 @@ Legal & Ethical Env Bus	FIN	3054	JB Malone	14132	3	L	NCB 160	T R	9:30AM	10:45AM
 Legal & Ethical Env Bus	FIN	3054	JT Showalter	14131	3	L	NCB 160	M W	4:00PM	5:15PM
 Finance Career Strategies	FIN	3174	MT Kender	18649	1	L	PAM 1010	W	12:20PM	1:15PM
 Legal & Finance Entrepreneurs	FIN	3074	KG Sullivan	19099	3	L	NCB 120	M W	4:00PM	5:15PM
-Invest & Financial Literacy	FIN	2114	Staff	19096	3	L	PAM 32	T R	8:00AM	9:15AM
 Invest & Financial Literacy	FIN	2114	TB Reilly	18653	3	L	PAM 30	T R	12:30PM	1:45PM
 Invest & Financial Literacy	FIN	2114	TB Reilly	18634	3	L	AA 109	T R	9:30AM	10:45AM
 Invest & Financial Literacy	FIN	2114	CB Carter	18633	3	L	ROB 116	T R	3:30PM	4:45PM
 Invest & Financial Literacy	FIN	2114	RH Lytton	18632	3	L	ROB 105	T R	2:00PM	3:15PM
-Introduction to Finance	FIN	3104	Staff	19805	3	L	PAM 31	M W	5:30PM	6:45PM
-Introduction to Finance	FIN	3104	S Amini Moghadam	19804	3	L	PAM 32	M W	4:00PM	5:15PM
-Introduction to Finance	FIN	3104	S Amini Moghadam	19803	3	L	PAM 2003	M W	5:30PM	6:45PM
-Introduction to Finance	FIN	3104	Staff	14137	3	L	PAM 32	T R	12:30PM	1:45PM
+Introduction to Finance	FIN	3104	A Kaushik	19827	3	L	AA 7	M W	2:30PM	3:45PM
+Introduction to Finance	FIN	3104	A Kaushik	19804	3	L	PAM 32	M W	4:00PM	5:15PM
 Introduction to Finance	FIN	3104	AJ Keown	14136	3	L	MCB 100	T	6:30PM	9:15PM
 Fin Planning for Professionals	FIN	3124	RS Billingsley	18911	3	L	GOODW 244	M W	2:30PM	3:45PM
 Fin Plan Technology & Modeling	FIN	4114	DD Klock	19056	3	L	HUTCH 302	M W	12:30PM	1:45PM
 Financial Modeling in Excel	FIN	4214	CA Spicer	18646	3	L	PAM 1001	T R	11:00AM	12:15PM
 Financial Modeling in Excel	FIN	4214	CA Spicer	18644	3	L	GYM 126	T R	9:30AM	10:45AM
+Corporate Finance	FIN	6116	Staff	19860	3	L	PAM 2002	M W	4:00PM	5:15PM
 Corporate Finance	FIN	6116	JC Easterwood	18650	3	L	PAM 3001	T R	11:00AM	12:15PM
 Research and Dissertation	FIW	7994	Staff	14224	1	R
 Wildlife Habitat Evaluation	FIW	4474	DF Stauffer	19417	1	B	JCH 317BC	T	2:00PM	5:50PM
@@ -4111,14 +4108,14 @@ Wildl Hab Ecol & Mgmt	FIW	4434	DF Stauffer	14207	3	L	JCH 317BC	M W F	10:10AM	11:
 Independent Study	FIW	5974	Staff	14221	1	I
 Independent Study	FIW	5974	Staff	14220	1	I
 Conservation Biology	FIW	4314	SM Karpanty	14204	4	L	LIBR 100S	M	12:45PM	3:45PM	JCH 317BC	W	1:15PM	5:15PM
-Ichthyology	FIW	4424	DJ Orth	14206	4	L	JCH 133	M W	12:20PM	1:10PM	JCH 132	M W	2:30PM	5:30PM
+Ichthyology	FIW	4424	DJ Orth	14206	4	L	JCH 132	M W	12:20PM	1:10PM	JCH 132	M W	2:30PM	5:30PM
 Independent Study	FIW	4974	Staff	14214	1	I
 Independent Study	FIW	4974	Staff	14213	1	I
 Internship	FIW	3964	Staff	14202	1	L
 Marine Ecology	FIW	4624	Y Jiao	14211	3	L	JCH 132	T R	11:00AM	12:15PM
 Study Abroad	FIW	3954	WA Hopkins	14201	4	L	TBA	F	12:30PM	3:30PM
 Fish Ecology	FIW	4614	EA Frimpong	14210	3	L	JCH 317BC	T R	12:30PM	1:45PM
-Fisheries Management	FIW	4714	VJ DiCenzo	14212	4	L	JCH 317A	T R	2:00PM	3:15PM	JCH 317A	R	3:20PM	6:20PM
+Fisheries Management	FIW	4714	BR Murphy	14212	4	L	JCH 317A	T R	2:00PM	3:15PM	JCH 317A	R	3:20PM	6:20PM
 Independent Study	FL	4974H	Staff	14229	1	I
 Ethics, Practice & Languages	FL	5174	RJ Watson	18429	3	O
 Ethics, Practice & Languages	FL	5174	RJ Watson	18428	3	L	MAJWM 327	R	4:00PM	7:00PM
@@ -4137,16 +4134,16 @@ Comp, Style, & Verbal Analysis	FR	5154G	FG Teulon	18807	3	O
 Comp, Style, & Verbal Analysis	FR	5154G	FG Teulon	18805	3	L	MAJWM 327	M W	5:30PM	6:45PM
 Elementary French	FR	1106	EG Schaal	14290	3	L	MCB 210	M W F	11:15AM	12:05PM
 Elementary French	FR	1106	A Dickow	14289	3	L	MCB 204	M W F	1:25PM	2:15PM
-Elementary French	FR	1106	MC Gibson	14288	3	L	SEITZ 207	M W F	10:10AM	11:00AM
+Elementary French	FR	1106	MC Gibson	14288	3	L	MCB 226	M W F	10:10AM	11:00AM
 Survey of French Literature	FR	3306	A Dickow	14303	3	L	MCB 210	M W F	10:10AM	11:00AM
 Independent Study	FR	4974H	Staff	14311	1	I
 Independent Study	FR	4974H	Staff	14310	1	I
+Intermediate French	FR	2106	A Mishra	19828	3	L	MAJWM 532	M W F	1:25PM	2:15PM
 Intermediate French	FR	2106	S Mishra	14291	3	L	AA 7	M W F	11:15AM	12:05PM
 Field Study	FR	2964	Staff	14294	1	L
-French Culture & Civ	FR	3206	Staff	19680	3	L	MCB 231	T R	12:30PM	1:45PM
+French Culture & Civ	FR	3206	RL Shryock	19680	3	L	MCB 231	T R	12:30PM	1:45PM
 French Culture & Civ	FR	3206	S Mishra	14300	3	L	MCB 210	T R	12:30PM	1:45PM
 Independent Study	FR	2974	Staff	14295	1	I
-Gram/Comp/Con	FR	3106	S Mishra	18480	3	L	MAJWM 532	M W F	1:25PM	2:15PM
 Gram/Comp/Con	FR	3106	FG Teulon	14297	3	L	WMS 320	M W F	12:20PM	1:10PM
 Gram/Comp/Con	FR	3106	FG Teulon	14296	3	L	MCB 212	M W F	11:15AM	12:05PM
 Intro French Lit	FR	3304	RL Shryock	14301	3	L	MCB 204	T R	11:00AM	12:15PM
@@ -4162,10 +4159,10 @@ Topics in French Studies	FR	5404	C Noirot	19242	3	O
 Topics in French Studies	FR	5404	C Noirot	18922	3	L	MCB 207	M W	4:00PM	5:15PM
 Undergraduate Research	FR	4994H	Staff	14314	1	R
 Undergraduate Research	FR	4994H	Staff	14313	1	R
-Urban For Mgt and Pol	FREC	4454	PE Wiseman	14267	3	L	JCH 132	M W	12:20PM	1:10PM	JCH 213	R	2:00PM	4:45PM
+Urban For Mgt and Pol	FREC	4454	PE Wiseman	14267	3	L	JCH 133	M W	12:20PM	1:10PM	JCH 213	R	2:00PM	4:45PM
 Environmental Silviculture	FREC	3364	TR Fox	18065	3	L	JCH 132	M W F	9:05AM	9:55AM
-Adv Urban Forest Mgt & Policy	FREC	5454G	PE Wiseman	14281	3	L	JCH 132	M W	12:20PM	1:10PM	JCH 213	R	2:00PM	4:45PM
-Int For Mgt Practicum	FREC	4444	SM Barrett	14266	3	L	JCH 220	T R	11:00AM	12:15PM
+Adv Urban Forest Mgt & Policy	FREC	5454G	PE Wiseman	14281	3	L	JCH 133	M W	12:20PM	1:10PM	JCH 213	R	2:00PM	4:45PM
+Int For Mgt Practicum	FREC	4444	SM Barrett	14266	3	L	JCH 217	R	12:30PM	1:45PM	JCH 132	T	12:30PM	1:45PM
 Genetics of Nat & Mngd Popns	FREC	4324	JA Holliday	14263	3	L	JCH 132	T R	9:30AM	10:45AM
 Independent Study	FREC	5974	Staff	14285	1	I
 Independent Study	FREC	5974	Staff	14284	1	I
@@ -4185,13 +4182,13 @@ Ecology of Appalachian Forests	FREC	2114	JR Seiler	14241	3	L	LITRV 1870	M W F	10
 Nature and American Values	FREC	2554	RB Hull	14247	3	L	TORG 3100	T R	12:30PM	1:45PM
 Silvi Princ Appl	FREC	3324	TR Fox	14252	4	L	JCH 212	M W F	12:20PM	1:10PM	JCH 317A	W	1:25PM	5:15PM
 Sem Remote Sensing & GIS	FREC	5104	RH Wynne	14272	1	L	MCB 136	M	12:20PM	1:10PM
-SS: Adv Natural Resource Econ	FREC	5984	GS Amacher	19520	3	L
+SS: Adv Natural Resource Econ	FREC	5984	GS Amacher	19520	3	L	JCH 213	M W	4:00PM	5:15PM
 SS:Wetland Hydro & Biogeochem	FREC	5984	DL McLaughlin	19187	3	L	JCH 220	T R	12:30PM	1:45PM
-Forest Photogrammetry	FREC	4214	Staff	19768	3	L	JCH 317BC	T R	9:30AM	10:45AM	JCH 217	T	4:00PM	6:45PM
-Forest Photogrammetry	FREC	4214	Staff	19630	3	L	JCH 217	W	2:00PM	5:00PM	JCH 317BC	T R	9:30AM	10:45AM
+Forest Photogrammetry	FREC	4214	RH Wynne	19768	3	L	JCH 317BC	T R	9:30AM	10:45AM	JCH 217	T	4:00PM	6:45PM
+Forest Photogrammetry	FREC	4214	RH Wynne	19630	3	L	JCH 217	W	2:00PM	5:00PM	JCH 317BC	T R	9:30AM	10:45AM
 Forest Photogrammetry	FREC	4214	RH Wynne	19385	3	L	JCH 217	M	2:00PM	5:00PM	JCH 317BC	T R	9:30AM	10:45AM
 Independent Study	FREC	4974	Staff	14269	1	I
-Advanced Wildland Fire Mgmt	FREC	4414	KR Kidd	14264	3	L	JCH 213	T R	9:30AM	10:45AM	JCH 213	T	2:00PM	5:00PM
+Advanced Wildland Fire Mgmt	FREC	4414	Staff	14264	3	L	JCH 213	T R	9:30AM	10:45AM	JCH 213	T	2:00PM	5:00PM
 Internship	FREC	3964	Staff	14259	1	B
 Forest Boundaries and Roads	FREC	3724	WM Aust	14256	3	L	JCH 212	T R	11:00AM	11:50AM	JCH 212	F	1:25PM	5:15PM
 Population Genomics	FREC	5164	JA Holliday	19405	3	L	JCH 212	W F	10:10AM	11:30AM
@@ -4211,7 +4208,7 @@ Adv Info Tech for Natl Res Mgt	FREC	5114G	Staff	19588	3	L	SMYTH 146	M W	10:10AM	
 Field Exp Forest Resources	FREC	2414	WM Aust	14245	2	B	JCH 218	T R	2:00PM	5:50PM
 Independent Study	FREC	2974	Staff	14248	1	I
 Digital Planet	FREC	1004	VA Thomas	14239	3	L	WHIT 300	T R	2:00PM	3:15PM
-Prin of Watershed Hydrology	FREC	3104	KJ McGuire	14249	3	L	JCH 132	M W F	11:15AM	12:05PM
+Prin of Watershed Hydrology	FREC	3104	KJ McGuire	14249	3	L	NCB 250	M W F	11:15AM	12:05PM
 Outdoor Recreation Management	FREC	3544	MG Sorice	14255	3	L	JCH 317BC	M W F	9:05AM	9:55AM
 Forest Biometrics Laboratory	FREC	3224	PJ Radtke	14251	1	B	JCH 217	T	8:00AM	10:45AM
 Plants & Greenspaces Urban Com	FREC	2134	SD Day	18938	3	L	NCB 320	T R	2:00PM	3:15PM
@@ -4222,10 +4219,10 @@ Info Tech for Natl Resrce Mgt	FREC	4114	Staff	14260	3	L	SMYTH 146	M W	10:10AM	11
 Undergraduate Research	FREC	4994	Staff	14270	1	R
 Forest Resource Policy	FREC	4434	KM Cobourn	14265	3	L	LITRV 1860	M W	2:30PM	3:45PM
 Harvesting Systems Evaluation	FREC	4714	MC Bolding	19603	3	L	JCH 218	M W	9:05AM	10:20AM
-Adv Epi Food & Water Diseases	FST	5634G	Staff	19757	4	L	LITRV 1800	T R	2:00PM	3:15PM
+Adv Epi Food & Water Diseases	FST	5634G	MA Ponder	19757	4	L	LITRV 1800	T R	2:00PM	3:15PM
 Research and Dissertation	FST	7994	Staff	14353	1	R
-Graduate Seminar	FST	5004	MA Ponder	14339	1	L	HABB1 108	M	10:00AM	10:50AM
-Flavor Chemistry	FST	5664	Staff	19580	3	L	FST 132	T R	8:00AM	9:15AM
+Graduate Seminar	FST	5004	AC Stewart	14339	1	L	HABB1 108	M	10:00AM	10:50AM
+Flavor Chemistry	FST	5664	SF O'Keefe	19580	3	L	FST 132	T R	8:00AM	9:15AM
 Research and Thesis	FST	5994	Staff	14352	1	R
 Food, War and Conflict	FST	2044	JD Eifert	14325	3	L	SMYTH 331	T R	8:00AM	9:15AM
 Food Microbiology	FST	3604	MA Ponder	14333	4	L	LITRV 1870	T R	11:00AM	12:15PM	FST 17	M	4:00PM	5:50PM
@@ -4239,8 +4236,8 @@ Project and Report	FST	5904	JD Eifert	14346	1	O
 Project and Report	FST	5904	DD Kuhn	14345	1	O
 Project and Report	FST	5904	RR Boyer	14344	1	O
 Project and Report	FST	5904	RC Williams	14343	1	O
-Food Analysis	FST	3514	AP Neilson	14329	4	L	FST 27	M W F	12:20PM	1:10PM	FST 17	W	2:00PM	4:50PM
-Food Analysis	FST	3514	AP Neilson	14328	4	L	FST 27	M W F	12:20PM	1:10PM	FST 17	R	2:00PM	4:50PM
+Food Analysis	FST	3514	AP Neilson	14329	4	L	LITRV 1760	M W F	12:20PM	1:10PM	FST 17	W	2:00PM	4:50PM
+Food Analysis	FST	3514	AP Neilson	14328	4	L	LITRV 1760	M W F	12:20PM	1:10PM	FST 17	R	2:00PM	4:50PM
 Independent Study	FST	2974	Staff	14326	1	I
 Introduction to Food Science	FST	2014	SF O'Keefe	14323	2	L	SMYTH 146	M W	11:15AM	12:05PM
 Undergraduate Research	FST	4994	Staff	14338	1	R
@@ -4250,10 +4247,10 @@ Independent Study	FST	5974	Staff	14350	1	I
 Independent Study	FST	4974	Staff	14337	1	I
 Food Safety & Quality Assur	FST	4524	JD Eifert	14336	3	L	SEITZ 313	T R	5:00PM	6:15PM
 Epidemiology Foodborne Disease	FST	4634	MA Ponder	18790	3	L	LITRV 1800	T R	2:00PM	3:15PM
-Food Safety and Security	FST	5614	Staff	19582	3	O
-Food Safety and Security	FST	5614	Staff	19581	3	O
-Advances in Food Microbiology	FST	5604	Staff	19754	3	L	LITRV 1870	T R	11:00AM	12:15PM	TBA	T	1:00PM	2:00PM
-Food Processing	FST	4406	JE Marcy	14335	2	L	FST 27	T R	12:30PM	1:45PM
+Food Safety and Security	FST	5614	RR Boyer	19582	3	O
+Food Safety and Security	FST	5614	RR Boyer	19581	3	O
+Advances in Food Microbiology	FST	5604	MA Ponder	19754	3	L	LITRV 1870	T R	11:00AM	12:15PM	TBA	T	1:00PM	2:00PM
+Food Processing	FST	4406	JE Marcy	14335	2	L	LITRV 1860	T R	12:30PM	1:45PM
 Research and Dissertation	GBCB	7994	DR Bevan	14358	1	R
 Seminar in GBCB	GBCB	5004	DR Bevan	14354	1	L	AA 7	R	3:55PM	4:45PM
 Prob Solving GBCB	GBCB	5874	S Li	14356	3	L	WLH 345	M	2:30PM	5:15PM
@@ -4267,7 +4264,7 @@ Introduction to World Politics	GEOG	2054	CI Thomas	14365	3	L	NCB 160	M W F	9:05A
 Digital Planet	GEOG	1084	VA Thomas	14360	3	L	WHIT 300	T R	2:00PM	3:15PM
 Dynamic Meteorology	GEOG	3516	A Ellis	14387	3	L	WLH 335	T R	12:30PM	1:45PM
 Advanced Modeling with GIS	GEOG	5084G	Y Shao	14401	3	L	WLH 320	M	4:00PM	4:50PM	WLH 340	W	5:30PM	8:30PM
-Seeking Sustainability	GEOG	1116	TD Baird	14362	3	L	MCB 136	T R	9:30AM	10:45AM
+Seeking Sustainability	GEOG	1116	TD Baird	14362	3	L	MAC 253A	T R	9:30AM	10:45AM
 Field Study	GEOG	2964	MM Deisinger	14378	1	L
 Cartography	GEOG	3314	SA Scales	14385	3	L	MCB 136	T R	3:30PM	4:20PM	TORG 1080	T R	5:00PM	6:15PM
 World Regions	GEOG	1014	JD Boyer	14359	3	O
@@ -4319,7 +4316,6 @@ Advanced Groundwater Hydrology	GEOS	5804G	R Pollyea	18712	3	L	DER 4069	T R	9:30A
 Advanced Groundwater Hydrology	GEOS	5804G	R Pollyea	18711	3	L	DER 4069	T R	9:30AM	10:45AM	DER 2052	R	11:00AM	1:50PM
 Vertebrate Evolution	GEOS	4234	SJ Nesbitt	19361	4	L	DER 4069	M W	8:30AM	9:45AM	DER 3045	M	1:00PM	4:00PM
 Graduate Advanced Structure	GEOS	5404G	RD Law	14462	3	L	DER 4052	M	6:00PM	6:50PM	DER 4052	W	6:00PM	8:50PM
-Advanced Earthquake Seismology	GEOS	5254G	Y Zhou	19389	3	L	DER 4052	M W	9:00AM	12:00PM
 Advanced Vertebrate Evolution	GEOS	5234G	SJ Nesbitt	19362	4	L	DER 4069	M W	8:30AM	9:45AM	DER 3045	M	1:00PM	4:00PM
 Groundwater Hydrology	GEOS	4804	R Pollyea	18710	3	L	DER 4069	T R	9:30AM	10:45AM	DER 2052	R	2:00PM	4:50PM
 Groundwater Hydrology	GEOS	4804	R Pollyea	18709	3	L	DER 4069	T R	9:30AM	10:45AM	DER 2052	R	11:00AM	1:50PM
@@ -4340,7 +4336,7 @@ Earth's Natural Hazards	GEOS	1034	NE Johnson	14422	3	L	LITRV 1670	T R	11:00AM	12
 TS:Curr Dev Geobiol Sed/Strat	GEOS	6304	SJ Nesbitt	14466	1	L	DER 4052	R	5:00PM	6:00PM
 SS:Quantitative Mthds in GEOS	GEOS	4984	R Weiss	19457	3	L	DER 4052	T R	9:00AM	11:30AM
 SS: Tectonics	GEOS	4984	DS Stamps	18946	3	L	DER 2052	W	8:00AM	11:00AM
-Fluids in the Earth's Crust	GEOS	5754	RJ Bodnar	19618	3	L
+Fluids in the Earth's Crust	GEOS	5754	RJ Bodnar	19618	3	L	DER 4053	M W F	10:15AM	11:05AM
 Independent Study	GEOS	5974	NL Ross	14463	1	I
 X-RAY CRYSTALLOGRAPHY	GEOS	5536	C Slebodnick	18732	3	L	ILSB 2031	T R	9:30AM	10:45AM
 TS:Seminar in Active Tectonics	GEOS	6404	DS Stamps	19619	1	L	DER 4052	W	1:00PM	1:50PM
@@ -4349,7 +4345,9 @@ Mineral Deposits	GEOS	4624	NE Johnson	14456	3	L	DER 4069	M W	10:10AM	11:00AM	DER
 Mineral Deposits	GEOS	4624	NE Johnson	14455	3	L	DER 4069	M W	10:10AM	11:00AM	DER 2060	T	8:00AM	10:50AM
 Mineral Deposits	GEOS	4624	NE Johnson	14454	3	L	DER 4069	M W	10:10AM	11:00AM	DER 2060	R	8:00AM	10:50AM
 TS:Geochemical Kinetics	GEOS	6604	JD Rimstidt	14467	3	L	DER 4045	M W F	9:00AM	10:00AM
+Undergraduate Research	GEOS	4994H	Staff	19830	1	R
 Undergraduate Research	GEOS	4994H	NL Ross	14459	1	R
+Strong-Motion Seismol & Hazard	GEOS	5154	MC Chapman	19865	3	L
 Research and Dissertation	GEOS	7994	NL Ross	14469	1	R
 Senior Seminar	GEOS	4024	JA Spotila	14452	3	L	DER 4069	T	2:00PM	5:00PM
 TS: Quantitative Geosciences	GEOS	6104	R Weiss	19360	3	L	DER 4052	W	2:00PM	4:00PM
@@ -4397,7 +4395,7 @@ Field Study	GER	2964	Staff	14475	1	L
 Survey of German Literature	GER	3305	S Hofer	14482	3	L	GBJ 102	T R	12:30PM	1:45PM
 Independent Study	GER	2974	Staff	14476	1	I
 Gram/Comp/Convers	GER	3106	S Hofer	14479	3	L	GBJ 102	T R	11:00AM	12:15PM
-Gram/Comp/Convers	GER	3106	EK Bauer	14478	3	L	MCB 207	M W F	1:25PM	2:15PM
+Gram/Comp/Convers	GER	3106	EK Bauer	14478	3	L	MCB 226	M W F	1:25PM	2:15PM
 Accelerated Elementary German	GER	1114	JM Layne	14473	6	L	MCB 223	M W F	1:25PM	2:15PM	MCB 224	T R	12:30PM	1:45PM
 German Culture	GER	3204	DL Stoudt	14481	3	L	WAL 244	M W	5:30PM	6:45PM
 German Oral Proficy	GER	3126	JC Orr	14480	3	L	MCB 210	M W	4:00PM	5:15PM
@@ -4433,7 +4431,7 @@ Internat Development	GIA	5524	G Datz	19428	3	O
 Field Work/Practicum	GIA	5964	Staff	14518	1	L
 Topics in Political Geography	GIA	5404	G Toal	19429	3	O
 Peace Corps Service Credits	GIA	5914	Staff	14517	6	L
-Elementary Modern Greek	GR	1206	MK Hatzios	14530	3	L	MCB 212	T R	12:30PM	1:45PM
+Elementary Modern Greek	GR	1206	MK Hatzios	14530	3	L	MAJWM 327	T R	12:30PM	1:45PM
 Class and NT Greek	GR	1106	AS Becker	14529	3	L	MAJWM 327	M W F	10:10AM	11:00AM
 Independent Study	GR	4974H	Staff	14537	1	I
 Independent Study	GR	4974H	Staff	14536	1	I
@@ -4476,7 +4474,7 @@ Human Development II	HD	2004	S Kim	18068	3	O
 Human Development II	HD	2004	BD Stucki	14579	3	L	SMYTH 331	T R	11:00AM	12:15PM
 Infancy and Early Childhood	HD	3214	SL Molloy	18074	3	L	SAUND 409	M W	2:30PM	3:45PM
 Infancy and Early Childhood	HD	3214	AF Gardner	14596	3	L	LITRV 1770	T R	2:00PM	3:15PM
-Research Methods in Human Dev	HD	3014	KJ Kim	18210	0	L	LITRV 1760	M W	2:30PM	3:45PM
+Research Methods in Human Dev	HD	3014	KJ Kim	18210	3	L	LITRV 1760	M W	2:30PM	3:45PM
 Research Methods in Human Dev	HD	3014	Staff	14594	3	O
 Lifespan Community Services	HD	3234	AM Ogletree	18211	3	L	NCB 170	M W F	10:10AM	11:00AM
 Topics in Adv Research Methods	HD	6524	JS Savla	14641	1	L	WAL 407	W	3:00PM	3:50PM
@@ -4511,7 +4509,7 @@ Human Development I	HD	1004	Staff	18736	3	L	SAUND 409	T R	9:30AM	10:45AM
 Human Development I	HD	1004	Staff	18193	3	L	SAUND 409	T R	3:30PM	4:45PM
 Human Development I	HD	1004	SC Borowski	18192	3	L	SMYTH 331	T R	2:00PM	3:15PM
 Human Development I	HD	1004	EC Potter	18067	3	O
-Human Development I	HD	1004	Staff	18066	3	O
+Human Development I	HD	1004	KJ Kim	18066	3	O
 Human Development I	HD	1004	KJ Kim	14573	3	L	SMYTH 146	M W	5:30PM	6:45PM
 Human Development I	HD	1004	V Blanchard	14571	3	L	LITRV 1870	M W	2:30PM	3:45PM
 Human Development I	HD	1004	JE Natwick	14570	3	L	SMYTH 331	M W	4:00PM	5:15PM
@@ -4521,6 +4519,7 @@ Middle Child & Adolescence	HD	3224	MJ Benson	14597	3	L	NCB 110	M W	4:00PM	5:15PM
 UR:Bio Measures Sibling Stress	HD	4994	C Shivers	19775	1	R
 Undergraduate Research	HD	4994	Staff	14609	1	L
 SS: Cognitive Development	HD	5984	V Diaz	19575	3	L	WAL 407	R	9:00AM	11:50AM
+IS:Data Analy Vunerable Popult	HD	4974	KJ Kim	19861	2	I
 Independent Study	HD	4974	Staff	14607	1	I
 TS: HD Research Team	HD	5964	Staff	19542	1	L
 MFT Supervision	HD	5964	EL Grafsky	14621	1	L	WAL 407	W	9:00AM	11:50AM
@@ -4529,10 +4528,8 @@ Professional Practices in HD	HD	5624	EL Grafsky	18078	3	L	WAL 407	W	12:00PM	2:50
 Adv Research Methods	HD	6514	JS Savla	14639	3	L	WAL 407	M	3:00PM	5:50PM
 Senior Capstone Seminar	HD	4714	ME Verdu	18072	3	L	LITRV 1800	T R	9:30AM	10:45AM
 Senior Capstone Seminar	HD	4714	ME Verdu	14604	3	L	LITRV 1800	T R	12:30PM	1:45PM
-Senior Capstone Seminar	HD	4714	MJ Benson	14603	3	L	WAL 234	T R	11:00AM	12:15PM
 Independent Study	HEB	4974H	Staff	14648	1	I
 Independent Study	HEB	4974H	Staff	14647	1	I
-Hebrew II	HEB	1114	EF Hallerman	14645	0	L	MAJWM 327	T R	12:30PM	1:45PM
 Independent Study	HEB	2974H	Staff	14646	1	I
 Undergraduate Research	HEB	4994H	Staff	14650	1	R
 Undergraduate Research	HEB	4994H	Staff	14649	1	R
@@ -4543,16 +4540,16 @@ Intro to World History	HIST	1216	MN Pervaiz	19344	3	L	MCB 238	M W	4:00PM	5:15PM
 History of Technology	HIST	3716	RF Hirsh	19235	3	L	MCB 216	M W	2:30PM	3:45PM
 Crit Reading/Analysis in Hist	HIST	3914	HL Gumbert	18180	3	L	MCB 240	T R	3:30PM	4:45PM
 Independent Study	HIST	4974H	Staff	14701	1	I
-Intro to World History	HIST	1215	DF Skiles	19751	3	L	NCB 120	M W	2:30PM	3:45PM
+Intro to World History	HIST	1215	DF Skiles	19751	3	L	MCB 219	M W	2:30PM	3:45PM
 Intro to World History	HIST	1215	MJ Alexander	18184	3	O
 History of the Modern World	HIST	1214	EL McKagen	19322	3	L	TORG 1040	T R	11:00AM	12:15PM
 SS: New Media Storytelling	HIST	2984	DP Cline	19393	3	L	MAJWM 434	T R	11:00AM	12:15PM
 SS: Crime & Punishment in US	HIST	2984	D Halpin	19320	3	L	MCB 232	M W	4:00PM	5:15PM
 SS: Murder in American History	HIST	2984	MA Kiechle	19319	3	L	NCB 120	M W F	11:15AM	12:05PM
 SS: Duels, Disease & Disaster	HIST	2984	AE Elder	19257	3	L	MCB 238	T R	9:30AM	10:45AM
-SS: Intro Data Social Context	HIST	2984	ET Ewing	18950	3	L	TBA	M W	10:10AM	11:00AM	MAJWM 434	W	6:00PM	8:00PM
+SS: Intro Data Social Context	HIST	2984	ET Ewing	18950	3	L	MAC 253A	M W	10:10AM	11:00AM	MAJWM 434	W	6:00PM	8:00PM
 The North American West	HIST	3234	DB Thorp	18219	3	L	MCB 233	M W F	11:15AM	12:05PM
-Sociocultural Topics	HIST	4004	Staff	19624	3	L	MCB 230	T R	2:00PM	3:15PM
+Sociocultural Topics	HIST	4004	DP Cline	19624	3	L	MCB 230	T R	2:00PM	3:15PM
 Independent Study	HIST	5974	Staff	14716	1	I
 Independent Study	HIST	5974	Staff	14715	1	I
 Topics Cultural Hist & Theory	HIST	5414	AR Ekirch	14707	3	L	MAJWM 427	W	2:00PM	4:50PM
@@ -4562,14 +4559,15 @@ Study Abroad	HIST	3954	BL Shadle	19236	1	L	MAJWM 434	R	5:00PM	6:00PM
 Study Abroad	HIST	3954	Staff	14695	3	L
 Gender in U.S. History	HIST	5934	MB Mollin	18306	3	L	MAJWM 427	T	5:30PM	8:30PM
 Undergraduate Research	HIST	4994H	Staff	14703	1	R
-History through Film	HIST	3694	MS Dufour	19218	3	L	MCB 233	R	12:30PM	1:45PM	MCB 134	T	6:00PM	9:00PM
+History through Film	HIST	3694	MS Dufour	19842	3	L	MCB 134	T	6:00PM	9:00PM	MAJWM 334	R	6:00PM	7:15PM
+History through Film	HIST	3694	MS Dufour	19218	3	L	MCB 134	T	6:00PM	9:00PM	MCB 233	R	12:30PM	1:45PM
 Research and Thesis	HIST	5994	Staff	14718	1	R
 History of France	HIST	2166	D Agmon	19179	3	L	MCB 233	T R	9:30AM	10:45AM
 The Vietnam War	HIST	3254	GW Berkley-Coats	14683	3	L	RAND 320	T R	2:00PM	3:15PM
 Afro-American History	HIST	3176	B Bunch-Lyons	14681	3	O
 The American Civil War	HIST	3054	TH Edmondson	19378	3	L	NCB 270	M W F	1:25PM	2:15PM
 Project and Report	HIST	5904	Staff	14712	1	R
-Intro European Civ	HIST	1025	FJ Baumgartner	14651	3	L	SEITZ 207	T R	11:00AM	12:15PM
+Intro European Civ	HIST	1025	FJ Baumgartner	14651	3	L	WAL 234	T R	11:00AM	12:15PM
 History of China	HIST	2355	HM Schneider	18812	3	L	MCB 219	M W F	11:15AM	12:05PM
 Independent Study	HIST	4974	Staff	14700	1	I
 Twentieth-Century Russia	HIST	3644	A Nelson	18173	3	L	MCB 316	T R	9:30AM	10:45AM
@@ -4582,9 +4580,9 @@ American Environmental History	HIST	3144	MV Barrow	14680	3	L	MCB 218	T R	3:30PM	
 Engineering Cultures	HIST	2054	GL Downey	19224	3	L	SURGE 118C	M W	10:10AM	11:00AM	LANE 132	F	11:15AM	12:05PM
 Engineering Cultures	HIST	2054	GL Downey	19222	3	L	SURGE 118C	M W	10:10AM	11:00AM	LANE 132	F	10:10AM	11:00AM
 Engineering Cultures	HIST	2054	GL Downey	19220	3	L	SURGE 118C	M W	10:10AM	11:00AM	LANE 132	F	9:05AM	9:55AM
-Engineering Cultures	HIST	2054	Staff	18749	0	L	LANE 134	F	11:15AM	12:05PM	SURGE 118C	M W	10:10AM	11:00AM
-Engineering Cultures	HIST	2054	Staff	18747	0	L	LANE 134	F	10:10AM	11:00AM	SURGE 118C	M W	10:10AM	11:00AM
-Engineering Cultures	HIST	2054	Staff	18744	0	L	LANE 134	F	9:05AM	9:55AM	SURGE 118C	M W	10:10AM	11:00AM
+Engineering Cultures	HIST	2054	Staff	18749	3	L	LANE 134	F	11:15AM	12:05PM	SURGE 118C	M W	10:10AM	11:00AM
+Engineering Cultures	HIST	2054	Staff	18747	3	L	LANE 134	F	10:10AM	11:00AM	SURGE 118C	M W	10:10AM	11:00AM
+Engineering Cultures	HIST	2054	Staff	18744	3	L	LANE 134	F	9:05AM	9:55AM	SURGE 118C	M W	10:10AM	11:00AM
 Engineering Cultures	HIST	2054	Staff	14671	3	O
 Engineering Cultures	HIST	2054	S Chung	14670	3	O
 Engineering Cultures	HIST	2054	SM Halimi	14669	3	O
@@ -4595,7 +4593,7 @@ Field Study	HIST	2964	Staff	14675	1	L
 History of the United States	HIST	1115	DB Thorp	14656	3	L	MCB 224	M W F	1:25PM	2:15PM
 Historical Methods	HIST	2004	AR Ekirch	14666	3	L	MAJWM 532	T R	9:30AM	10:45AM
 Historical Methods	HIST	2004	Staff	14665	3	L	MAJWM 532	M W	2:30PM	3:45PM
-Issues in World History	HIST	2124	MA Kiechle	19237	3	L	MCB 219	M W	2:30PM	3:45PM
+Issues in World History	HIST	2124	MA Kiechle	19237	3	L	NCB 120	M W	2:30PM	3:45PM
 The American Revolution	HIST	3014	AR Ekirch	14678	3	L	MCB 224	T R	8:00AM	9:15AM
 The Arab-Israeli Dispute	HIST	3654	HA Jordan	19652	3	L	NCB 250	T R	2:00PM	3:15PM
 The Arab-Israeli Dispute	HIST	3654	CM Gitre	18178	3	L	MCB 226	T R	2:00PM	3:15PM
@@ -4624,16 +4622,15 @@ Nutr and Phys Perform	HNFE	4174	MS Rockwell	18325	3	L	WLH 320	T R	2:00PM	3:15PM
 Sem Nutrition & Foods	HNFE	5044	MI Frisard	14768	1	L	TBA	M	3:00PM	3:50PM
 Mol Aspects Nutr Dis	HNFE	5144	EM Schmelz	18105	3	L	ILSB 1040	R	2:15PM	4:45PM
 Prog Dev in Health Ed	HNFE	5684	KJ Redican	14770	3	O
-Science of Food Prep Lab	HNFE	3024	N Girmes-Grieco	18250	2	B	WAL 403	R	2:00PM	4:45PM	AA 7	M	10:10AM	11:00AM
-Science of Food Prep Lab	HNFE	3024	N Girmes-Grieco	18249	2	B	WAL 403	R	9:30AM	12:15PM	AA 7	M	10:10AM	11:00AM
-Science of Food Prep Lab	HNFE	3024	N Girmes-Grieco	18248	2	B	WAL 403	T	11:00AM	1:45PM	AA 7	M	10:10AM	11:00AM
+Science of Food Prep Lab	HNFE	3024	N Girmes-Grieco	18250	2	B	WAL 403	R	2:00PM	4:45PM	SEITZ 313	M	10:10AM	11:00AM
+Science of Food Prep Lab	HNFE	3024	N Girmes-Grieco	18249	2	B	WAL 403	R	9:30AM	12:15PM	SEITZ 313	M	10:10AM	11:00AM
+Science of Food Prep Lab	HNFE	3024	N Girmes-Grieco	18248	2	B	WAL 403	T	11:00AM	1:45PM	SEITZ 313	M	10:10AM	11:00AM
 Nutrition Across the Life Span	HNFE	2014H	N Girmes-Grieco	14725	3	L	GLCDB 64	M W F	1:25PM	2:15PM
 Independent Study	HNFE	4974H	Staff	14765	1	I
 TS:Lifetime Act/Intro Canoeing	HNFE	1214	D Goodman	19228	1	B	TBA	T R	3:30PM	4:45PM
 TS: Lifetime Act/Weight Trng	HNFE	1214	SA Trotter	14722	1	B	MCCOM 90	T R	9:30AM	10:45AM
 Life Activities: Weight Train	HNFE	1214	SA Trotter	14721	1	B	MCCOM 90	T R	8:00AM	9:15AM
 Medical Terminology	HNFE	2204	RS Eaton	14726	3	O
-SS:Act Trans/Hlthy&Sus Planet	HNFE	2984	JW Rankin	19600	3	L	TBA	T	2:00PM	4:45PM
 Professional Dietetics	HNFE	2004	HK Cox	14723	1	L	LITRV 1870	M	4:00PM	4:50PM
 Seminar HNFE Writing&Discourse	HNFE	4004	MI Frisard	14750	3	L	WAL 340	W	10:00AM	12:30PM
 Seminar HNFE Writing&Discourse	HNFE	4004	EM Schmelz	14749	3	L	WAL 332	T	2:00PM	4:30PM
@@ -4670,10 +4667,9 @@ Independent Study	HNFE	2974	Staff	14735	1	I
 Foods, Nutrition And Exercise	HNFE	1004	MD Lewis	14720	3	L	WHIT 300	M W F	9:05AM	9:55AM
 Foods, Nutrition And Exercise	HNFE	1004	MD Lewis	14719	3	L	LITRV 1670	M W F	1:25PM	2:15PM
 Intro to Integrative Health	HNFE	2334	YH Ju	19225	3	L	WAL 332	M W	2:30PM	3:15PM
-TS: Act Trans/Hlthy&Sus Planet	HNFE	2774	Staff	19226	3	L
+TS: Act Trans/Hlthy&Sus Planet	HNFE	2774	JW Rankin	19226	3	L	WAL 340	T	2:00PM	4:45PM
 Nutrition Across the Life Span	HNFE	2014	N Girmes-Grieco	14724	3	L	GLCDB 64	M W F	1:25PM	2:15PM
 Metabolic Nutrition	HNFE	3026	DJ Good	14737	3	L	GOODW 190	T R	9:30AM	10:45AM
-Communicating with Food	HNFE	3224	HK Cox	18689	3	L	NCB 130B	F	9:00AM	11:45AM	NCB 210	M W	1:25PM	2:15PM
 Communicating with Food	HNFE	3224	HK Cox	14743	3	L	NCB 210	M W	1:25PM	2:15PM	NCB 170	T	2:00PM	4:45PM
 Communicating with Food	HNFE	3224	HK Cox	14742	3	L	NCB 210	M W	1:25PM	2:15PM	NCB 130B	W	10:00AM	12:45PM
 Adv Topics: Adv Kinesiology	HNFE	4774	JH Williams	18743	3	L	ENGEL 223	T R	12:30PM	1:45PM
@@ -4713,7 +4709,7 @@ Woody Landscape Plants	HORT	3326	AX Niemiera	14796	0	B	GH 3	W	2:30PM	5:15PM
 Woody Landscape Plants	HORT	3326	AX Niemiera	14795	0	B	GH 8	T	2:00PM	4:50PM
 Woody Landscape Plants	HORT	3326	AX Niemiera	14794	3	L	GYM 219	T R	9:30AM	10:20AM
 Arboriculture Field Skills	HORT	2554	PE Wiseman	14791	1	B
-Herbaceous Landscape Plants	HORT	3346	HL Scoggins	19402	0	L	GH 100	M W	11:15AM	12:05PM	TBA	W	2:30PM	3:15PM
+Herbaceous Landscape Plants	HORT	3346	HL Scoggins	19402	0	L	GH 100	M W	11:15AM	12:05PM	TBA	W	2:30PM	5:15PM
 Landscape Construction	HORT	3544	RF McDuffie	14801	2	L	SEITZ 207	M	1:25PM	5:35PM
 Envir Factors in Hort	HORT	2234	AX Niemiera	14787	3	L	LITRV 1760	M W F	10:10AM	11:00AM
 World Crops and Systems	HORT	3444	AO Abaye	14800	3	L	NCB 210	M W	10:10AM	11:00AM	WAL 405	M	12:00PM	2:00PM
@@ -4723,7 +4719,7 @@ Plants & Greenspaces Urban Com	HORT	2134	SD Day	18937	3	L	NCB 320	T R	2:00PM	3:1
 Undergraduate Research	HORT	4994	GE Welbaum	14810	2	R
 Undergraduate Research	HORT	4994	Staff	14809	2	R
 Ornamental Plant Prod & Market	HORT	4614	HL Scoggins	14804	3	L	GH 100	M W	9:05AM	9:55AM	GH 8	M	2:30PM	5:15PM
-Hosp Mktg Res Prob	HTM	6454	Staff	14869	3	L	WAL 364	R	2:00PM	5:00PM
+Hosp Mktg Res Prob	HTM	6454	Z Xiang	14869	3	L	WAL 364	R	2:00PM	5:00PM
 Theory Hosp Service	HTM	6434	NG McGehee	14867	3	L	WAL 364	W	2:00PM	5:00PM
 Hospitality Revenue Management	HTM	4454	GD Walton	14840	3	L	WAL 244	T R	11:00AM	12:15PM
 Hospitality Revenue Management	HTM	4454	GD Walton	14839	3	L	WAL 234	T R	12:30PM	1:45PM
@@ -4749,13 +4745,13 @@ Events Management	HTM	4424	C Fitch	14837	3	L	WAL 234	M W	4:00PM	5:15PM
 Field Study in HTM	HTM	4964	TF Duetsch	14844	3	L
 International Tourism	HTM	4484	A Zatori	14843	3	L	WAL 234	T R	5:00PM	6:15PM
 Research and Dissertation	HTM	7994	RR Perdue	14870	1	R
-Human Res Mgt HRIM	HTM	4464	HJ Kang	14842	3	L	HUTCH 207	T R	3:30PM	4:45PM
+Human Res Mgt HRIM	HTM	4464	HJ Kang	14842	3	L	HUTCH 209	T R	3:30PM	4:45PM
 Human Res Mgt HRIM	HTM	4464	HJ Kang	14841	3	L	HUTCH 207	T R	2:00PM	3:15PM
 Research and Thesis	HTM	5994	RR Perdue	14865	1	R
 Adv Meth for Hosp App	HTM	6444	M Uysal	14868	3	L	WAL 364	T	9:00AM	12:00PM
 Catering Management	HTM	2514	RD Parsons	14825	3	O
 Independent Study	HTM	2974	RR Perdue	14826	1	I
-Lodging Management	HTM	3524	VP Magnini	19369	3	L	PAM 2002	M W	2:30PM	3:45PM
+Lodging Management	HTM	3524	VP Magnini	19369	3	L	LITRV 1770	M W	2:30PM	3:45PM
 Lodging Management	HTM	3524	VP Magnini	14835	3	L	WAL 244	M W	4:00PM	5:15PM
 Hospitality Sales	HTM	2434	H Feiertag	14820	3	L	WAL 244	T R	9:30AM	10:45AM
 Travel & Tourism Management	HTM	2454	Staff	14823	3	O
@@ -4929,7 +4925,7 @@ Usability Engineering	ISE	5714	HR Hartson	15066	3	L	WHIT 518	T R	2:00PM	3:15PM
 Engr Program Project Mgt	ISE	5174	LK Harmon	15057	3	O	TBA	T	4:00PM	6:45PM
 Engr Program Project Mgt	ISE	5174	LK Harmon	15056	3	L	TORG 1030	T	4:00PM	6:45PM
 Industrial Automation	ISE	4264	RH Sturges	18752	0	B	TBA	M	4:00PM	6:50PM
-Industrial Automation	ISE	4264	RH Sturges	18208	0	L	WHIT 518	M W	8:00AM	8:50AM
+Industrial Automation	ISE	4264	RH Sturges	18208	3	L	WHIT 518	M W	8:00AM	8:50AM
 Macroergonomics	ISE	5694	VR Lewis	15064	3	L	TORG 1030	F	1:00PM	3:45PM
 Research and Dissertation	ISE	7994	D Srinivasan	15142	1	R
 Research and Dissertation	ISE	7994	SC Sarin	15141	1	R
@@ -5039,7 +5035,7 @@ Undergraduate Research	ISE	4994	Staff	15037	1	R
 Undergraduate Research	ISE	4994	Staff	15036	1	R
 Undergraduate Research	ISE	4994	Staff	15035	1	R
 Undergraduate Research	ISE	4994	Staff	15034	1	R
-Undergraduate Research	ISE	4994	Staff	15033	1	R
+Undergraduate Research	ISE	4994	RH Sturges	15033	1	R
 SS:Occupational Neuromechanics	ISE	5984	C Duncan	19390	3	L	WHIT 518	M W	11:00AM	12:15PM
 SS: Sply Chain & Oper Eng	ISE	5984	EK Bish	19250	3	L	MCB 332	T R	9:30AM	10:45AM
 SS: Hlthcare Sys Eng & Mdlng	ISE	5984	N Hosseinichimeh	19249	3	L	WHIT 281	T	7:00PM	9:45PM
@@ -5088,8 +5084,8 @@ Independent Study	ITDS	4974	MD Wagner	15175	1	I
 Interior Design IV	ITDS	3054	MD Wagner	15170	6	L	BUR 222E	M W F	1:00PM	4:45PM
 Interior Design IV	ITDS	3054	E Tural	15169	6	L	BUR 222E	M W F	1:00PM	4:45PM
 Constructin Documents for ID	ITDS	3184	MD Wagner	15173	3	L	BUR 224A	T R	3:30PM	4:45PM
-Elementary Japanese	JPN	1106	Staff	19240	3	L	MCB 223	M W F	12:20PM	1:10PM
-Elementary Japanese	JPN	1106	Staff	15184	3	L	AA 114	M W F	1:25PM	2:15PM
+Elementary Japanese	JPN	1106	TU Mercer	19240	3	L	MCB 223	M W F	12:20PM	1:10PM
+Elementary Japanese	JPN	1106	TU Mercer	15184	3	L	AA 114	M W F	1:25PM	2:15PM
 Elementary Japanese	JPN	1106	Y Younos	15183	3	L	MCB 204	M W F	11:15AM	12:05PM
 Elementary Japanese	JPN	1106	Y Younos	15182	3	L	MCB 204	M W F	9:05AM	9:55AM
 Elementary Japanese	JPN	1106	Y Younos	15181	3	L	PAM 1001	M W F	12:20PM	1:10PM
@@ -5111,7 +5107,6 @@ Undergraduate Research	JPN	4994H	Staff	15196	1	R
 Independent Study	JUD	4974H	Staff	15204	1	I
 Torah and Tradition	JUD	3404	SJ Kessler	18927	3	L	MCB 232	T R	11:00AM	12:15PM
 Independent Study	JUD	2974	Staff	15201	1	I
-Hebrew II	JUD	1114	EF Hallerman	15199	0	L	MAJWM 327	T R	12:30PM	1:45PM
 Undergraduate Research	JUD	4994	Staff	15205	1	R
 Independent Study	JUD	4974	Staff	15203	1	I
 Independent Study	JUD	2974H	Staff	15202	1	I
@@ -5193,7 +5188,7 @@ Field Study	LDRS	2964	CR Friedel	15295	1	L
 Field Study	LDRS	2964	GR Kirk	15294	1	L
 Field Study	LDRS	2964	PD Martin	15293	1	L
 Exploring Citizen Leadership	LDRS	1016	HO Kovacs	19761	3	L	PAYNE 1003	T R	1:00PM	2:15PM
-Exploring Citizen Leadership	LDRS	1016	PD Martin	15290	3	L	PAYNE 1003	M W	5:00PM	6:15PM
+Exploring Citizen Leadership	LDRS	1016	PD Martin	15290	3	L	PAYNE 1003	M	5:30PM	6:45PM
 Exploring Citizen Leadership	LDRS	1016	T Williams	15289	3	L	PAYNE 1003	M W	1:00PM	2:15PM
 Exploring Citizen Leadership	LDRS	1016	BL Webster	15288	3	L	PAYNE 1003	M W	3:30PM	4:45PM
 Exploring Citizen Leadership	LDRS	1016	MW Kuhn	15286	3	L	PAYNE 1003	T R	3:30PM	4:45PM
@@ -5223,7 +5218,7 @@ Comp Sci, Lib Arts	MASC	1044	ND Barnette	15319	3	L	RAND 121	M W	4:00PM	5:15PM
 Cryptography	MATH	4176	E Ufferman	18720	3	L	MCB 238	T R	12:30PM	1:45PM
 Cryptography	MATH	4176	E Ufferman	15514	3	L	MCB 332	T R	8:00AM	9:15AM
 Cryptography	MATH	4176	EA Brown	15513	3	L	MCB 304	M W F	1:25PM	2:15PM
-Chaos and Dynamical Systems	MATH	4254	T Iliescu	15519	3	L	MCB 204	M W	2:30PM	3:45PM
+Chaos and Dynamical Systems	MATH	4254	Staff	15519	3	L	MCB 204	M W	2:30PM	3:45PM
 Combinatorics	MATH	5464	DD Orr	18722	3	L	NCB 130A	M W F	9:05AM	9:55AM
 Number Theory	MATH	4134	EA Brown	15511	3	L	RAND 116	M W F	12:20PM	1:10PM
 Vector/Complex Analysis	MATH	4574	Staff	15533	3	L	SURGE 104B	T R	3:30PM	4:45PM
@@ -5358,9 +5353,9 @@ Introduction to Linear Algebra	MATH	2114	Staff	15408	3	L	GBJ 102	M W	2:30PM	3:45
 Introduction to Linear Algebra	MATH	2114	Staff	15407	3	L	MCB 307	M W F	10:10AM	11:00AM
 Introduction to Linear Algebra	MATH	2114	Staff	15406	3	L	MCB 307	M W F	9:05AM	9:55AM
 Undergraduate Research	MATH	2994	PE Haskell	15482	1	L
-Modern Algebra	MATH	3124	Staff	15490	3	L	MCB 316	M W F	10:10AM	11:00AM
-Modern Algebra	MATH	3124	Staff	15489	3	L	DURHM 261	M W F	9:05AM	9:55AM
-Modern Algebra	MATH	3124	Staff	15488	3	L	GOODW 244	M W F	1:25PM	2:15PM
+Modern Algebra	MATH	3124	EA Saenz Maldonado	15490	3	L	MCB 316	M W F	10:10AM	11:00AM
+Modern Algebra	MATH	3124	EA Saenz Maldonado	15489	3	L	DURHM 261	M W F	9:05AM	9:55AM
+Modern Algebra	MATH	3124	HD Hart	15488	3	L	GOODW 244	M W F	1:25PM	2:15PM
 College Geometry	MATH	4334	SM Hagen	15521	3	L	EMPOR 126	M W	2:30PM	3:45PM
 SS: Invitation to Analysis	MATH	5984	A Elgart	19251	3	L	MCB 212	M W F	1:25PM	2:15PM
 Real Analysis	MATH	5226	SM Sun	15545	3	L	TORG 1040	M W F	10:10AM	11:00AM
@@ -5412,7 +5407,7 @@ Math in Computational Context	MATH	2406H	M Chung	15474	5	L	MCB 216	M W	8:00AM	8:
 Complex Analysis	MATH	5236	JF Rossi	15546	3	L	PAT 305	M W F	12:20PM	1:10PM
 Elementary Real Analysis	MATH	4226	JF Rossi	15516	3	L	MCB 209	M W F	10:10AM	11:00AM
 Elementary Real Analysis	MATH	4226	LD Kay	15515	3	L	GOODW 241	M W F	10:10AM	11:00AM
-Intro Multivariable Calculus	MATH	2204H	J Fillman	15450	3	L	TORG 1080	M W F	10:10AM	11:00AM
+Intro Multivariable Calculus	MATH	2204H	J Fillman	15450	3	L	MCB 204	M W F	10:10AM	11:00AM
 Fourier Series PDE	MATH	4426	RC Rogers	15524	3	L	MCB 322	T R	12:30PM	1:45PM
 Model and Sim of Bio Systems	MATH	5516	LM Childs	15554	3	L	MCB 308	T R	9:30AM	10:45AM
 Math for Secondary Teachers	MATH	4626	M Wawro	15534	3	L	EMPOR 126	T R	3:30PM	4:45PM
@@ -5421,11 +5416,11 @@ Operational Methods	MATH	4564	Staff	15531	3	L	SURGE 109	M W F	9:05AM	9:55AM
 Operational Methods	MATH	4564	Staff	15530	3	L	WLH 350	T R	2:00PM	3:15PM
 Operational Methods	MATH	4564	Staff	15529	3	L	WLH 330	M W	4:00PM	5:15PM
 Operational Methods	MATH	4564	Staff	15528	3	L	WLH 320	T R	12:30PM	1:45PM
-Introduction to Proofs	MATH	3034	Staff	18719	3	L	RAND 208	T R	11:00AM	12:15PM
-Introduction to Proofs	MATH	3034	Staff	15486	3	L	MCB 238	M W F	9:05AM	9:55AM
-Introduction to Proofs	MATH	3034	Staff	15485	3	L	MCB 232	T R	8:00AM	9:15AM
-Introduction to Proofs	MATH	3034	Staff	15484	3	L	MCB 308	M W F	1:25PM	2:15PM
-Introduction to Proofs	MATH	3034	Staff	15483	3	L	RAND 222	M W F	12:20PM	1:10PM
+Introduction to Proofs	MATH	3034	NP Robbins	18719	3	L	RAND 208	T R	11:00AM	12:15PM
+Introduction to Proofs	MATH	3034	RC Rogers	15486	3	L	MCB 238	M W F	9:05AM	9:55AM
+Introduction to Proofs	MATH	3034	NP Robbins	15485	3	L	MCB 232	T R	8:00AM	9:15AM
+Introduction to Proofs	MATH	3034	NA Loehr	15484	3	L	MCB 308	M W F	1:25PM	2:15PM
+Introduction to Proofs	MATH	3034	T Iliescu	15483	3	L	RAND 222	M W F	12:20PM	1:10PM
 Calc With Matrices	MATH	1525	JH England	15390	3	E
 Calc With Matrices	MATH	1525	JH England	15389	3	E
 Early Teaching Experience	MATH	3624	ND Gildersleeve	15510	4	L	EMPOR 126	T R	8:00AM	9:50AM
@@ -5472,7 +5467,7 @@ Spacecraft Propulsion	ME	4174	B Srinivasan	15633	3	L	RAND 206A	T R	12:30PM	1:45P
 Convex Optimization	ME	5584	MH Farhood	19506	3	L	RAND 121	T R	5:15PM	6:30PM
 Comp Fluid Dyn Heat Trans	ME	6434	DK Tafti	18787	3	L	MCB 666	T R	9:30AM	10:45AM
 Independent Study	ME	4974H	Staff	15660	1	I
-Independent Study	ME	4974H	Staff	15659	1	I
+Independent Study	ME	4974H	DJ Nelson	15659	1	I
 System Dynamics	ME	3514	Staff	15602	3	L	RAND 331	M W F	9:05AM	9:55AM
 System Dynamics	ME	3514	Staff	15601	3	L	RAND 331	M W F	8:00AM	8:50AM
 Engr Design & Econ	ME	2024	Staff	19697	3	L	RAND 206	M W F	11:15AM	12:05PM
@@ -5641,6 +5636,7 @@ Undergraduate Research	ME	2994	Staff	15578	1	R
 Undergraduate Research	ME	2994	Staff	15577	1	R
 Thermodynamics	ME	3124	Staff	15587	3	L	WLH 340	T R	9:30AM	10:45AM
 Thermodynamics	ME	3124	Staff	15586	3	L	WLH 340	T R	8:00AM	9:15AM
+Engineering Design and Project	ME	4016	RS Ott	19851	3	L
 Engineering Design and Project	ME	4016	SC Southward	19544	0	B	RAND 222	T R	5:00PM	6:15PM
 Engineering Design and Project	ME	4016	SC Southward	15630	0	B	RAND 206A	M W	5:15PM	7:00PM
 Engineering Design and Project	ME	4016	JM Kennedy	15629	0	B	RAND 208	M	5:30PM	7:30PM
@@ -5663,7 +5659,7 @@ Independent Study	ME	4974	Staff	15650	1	I
 Independent Study	ME	4974	Staff	15649	1	I	TBA	T R	6:30PM	8:00PM
 Independent Study	ME	4974	Staff	15648	1	I
 Independent Study	ME	4974	Staff	15647	1	I
-Independent Study	ME	4974	Staff	15646	1	I
+Independent Study	ME	4974	DJ Nelson	15646	1	I
 Meth Mech Engineering Analysis	ME	5744	B Vick	15716	3	L	RAND 220	M W F	10:10AM	11:00AM
 ME Graduate Seminar	ME	5944	MR Paul	15726	1	L
 Undergraduate Research	ME	2994H	Staff	15585	1	R
@@ -5685,7 +5681,8 @@ Intro Thermal Fluid	ME	2124	Staff	15567	2	L	SURGE 103A	T R	11:00AM	11:50AM
 Intro Thermal Fluid	ME	2124	Staff	15566	2	L	RAND 331	T R	9:30AM	10:20AM
 Automotive Engineering	ME	4544	JB Ferris	18103	3	L	GOODW 115	T R	12:30PM	1:45PM
 SS: Nano/Micromech of Matls	ME	4984	R Mirzaeifar	19778	3	L
-Conv Heat & Mass Transfer	ME	5314	R Pitchumani	15697	3	L	RAND 117A	T R	3:30PM	4:45PM
+Conv Heat & Mass Transfer	ME	5314	Staff	15698	3	O
+Conv Heat & Mass Transfer	ME	5314	R Pitchumani	15697	3	L	BUR 123A	M	11:15AM	2:00PM
 Control Engr I	ME	4504	WN Hardy	15637	3	L	WLH 340	M W F	8:00AM	8:50AM
 Digital Signal Processing	ME	5714	AL Wicks	15712	3	O
 Digital Signal Processing	ME	5714	AL Wicks	15711	3	L	RAND 100L	M W F	10:10AM	11:00AM
@@ -5794,7 +5791,7 @@ Independent Study	ME	2974	Staff	15575	1	I
 Independent Study	ME	2974	Staff	15574	1	I
 Independent Study	ME	2974	Staff	15573	1	I
 Independent Study	ME	2974	Staff	15572	1	I
-Independent Study	ME	2974	Staff	15571	1	I
+Independent Study	ME	2974	DJ Nelson	15571	1	I
 Heat and Mass Transfer	ME	3304	Staff	15593	3	L	GOODW 135	M W F	11:15AM	12:05PM
 Heat and Mass Transfer	ME	3304	Staff	15592	3	L	GOODW 135	M W F	12:20PM	1:10PM
 Heat and Mass Transfer	ME	3304	Staff	15591	3	L	GOODW 125	M W F	12:20PM	1:10PM
@@ -5833,11 +5830,12 @@ Intro to CAD/CAM	ME	4634	JH Bohn	15644	3	L	GOODW 244	M W	10:10AM	11:00AM	RAND 11
 Intro to CAD/CAM	ME	4634	JH Bohn	15643	3	L	GOODW 244	M W	10:10AM	11:00AM	RAND 114E	R	2:00PM	4:50PM
 Intro to CAD/CAM	ME	4634	JH Bohn	15642	3	L	GOODW 244	M W	10:10AM	11:00AM	RAND 114E	T	2:00PM	4:50PM
 Actv Matls/Smart Struct-I	ME	5804	AJ Kurdila	15717	3	L	RAND 100L	T R	9:30AM	10:45AM
+Strategic Management	MGT	4394	AH Cortes	19829	3	L	WLH 345	T R	12:30PM	1:45PM
 Strategic Management	MGT	4394	LF Tegarden	15992	3	L	GBJ 100	T R	12:30PM	1:45PM
 Strategic Management	MGT	4394	R Kennedy	15991	3	L	WLH 335	T R	9:30AM	10:45AM
 Strategic Management	MGT	4394	LF Tegarden	15990	3	L	WLH 345	T R	11:00AM	12:15PM
-Strategic Management	MGT	4394	Staff	15989	3	L	PAM 3010	M W	4:00PM	5:15PM
-Strategic Management	MGT	4394	LF Tegarden	15988	3	L	PAM 2002	T R	8:00AM	9:15AM
+Strategic Management	MGT	4394	Staff	15989	3	L	HUTCH 409	M W	4:00PM	5:15PM
+Strategic Management	MGT	4394	LF Tegarden	15988	3	L	PAM 1004	T R	8:00AM	9:15AM
 Strategic Management	MGT	4394	Staff	15987	3	L	PAM 3004	M W	5:30PM	6:45PM
 Strategic Management	MGT	4394	FD Tuggle	15986	3	L	PAM 3004	M W	4:00PM	5:15PM
 Strategic Management	MGT	4394	R Kennedy	15985	3	L	WLH 335	T R	2:00PM	3:15PM
@@ -5847,9 +5845,8 @@ Strategic Management	MGT	4394	FD Tuggle	15982	3	L	PAM 2003	M W	2:30PM	3:45PM
 Strategic Management	MGT	4394	AH Cortes	15981	3	L	DER 1090	T R	2:00PM	3:15PM
 Strategic Management	MGT	4394	C Fitch	15980	3	L	HUTCH 409	T R	2:00PM	3:15PM
 Strategic Management	MGT	4394	Staff	15979	3	L	AA 109	T R	12:30PM	1:45PM
-Strategic Management	MGT	4394	Staff	15978	3	L	PAM 3004	M W	2:30PM	3:45PM
+Strategic Management	MGT	4394	Staff	15978	3	L	HUTCH 409	M W	2:30PM	3:45PM
 Leadership Skills	MGT	4354	KA Carlson	15977	3	L	WMS 134	T R	5:30PM	6:45PM
-Diversity Intern & Prof Dev	MGT	3464	KA Carlson	15956	3	L
 Cornerstones Entrepreneurship	MGT	3064	LR Fournier	18657	3	L	GBJ 104	M W	2:30PM	3:45PM
 Cornerstones Entrepreneurship	MGT	3064	LR Fournier	15937	3	L	PAM 3028	T	4:00PM	7:00PM
 Strategy Competition Analytics	MGT	3614	A Seth	15960	3	L	NCB 130A	T	5:30PM	8:30PM
@@ -5875,13 +5872,13 @@ Study Abroad	MGT	3954	R Kennedy	15963	1	L
 Small Unit Ldrshp for Cadets	MGT	2946	E Humphrey	15931	1	L	MCB 100	R	3:30PM	4:45PM
 Executive Ldrshp for Cadets	MGT	4946	E Humphrey	15996	1	L	DAV 281	R	3:30PM	4:45PM
 Undergraduate Research	MGT	4994H	KD Carlson	16001	4	R
-Management Consulting	MGT	4084	Staff	19796	3	L	PAM 2001	T R	9:30AM	10:45AM
+Management Consulting	MGT	4084	SJ Skripak	19796	3	L	PAM 2001	T R	9:30AM	10:45AM
 Management Consulting	MGT	4084	SJ Skripak	15969	3	L	GBJ 104	M W	4:00PM	5:15PM
 Management Consulting	MGT	4084	SJ Skripak	15968	3	L	PAM 2028	T R	2:00PM	3:15PM
 Developing Entrep Ventures	MGT	4064	SJ Collins	15966	3	L	NCB 230	T R	3:30PM	4:45PM
 Developing Entrep Ventures	MGT	4064	SJ Collins	15965	3	L	NCB 130A	T R	2:00PM	3:15PM
 Research and Dissertation	MGT	7994	DJ Beal	16026	1	R
-SS: Measurement in Bus Rsrch	MGT	6984	DJ Beal	19670	3	L	TBA	S	8:30AM	11:30AM
+SS: Measurement in Bus Rsrch	MGT	6984	DJ Beal	19670	3	L	PAM 2002	S	8:30AM	11:30AM
 Prod and Qual Leader	MGT	4344	ME Deck	15976	3	L	WLH 345	T R	2:00PM	3:15PM
 Prod and Qual Leader	MGT	4344	ME Deck	15975	3	L	PAM 3001	T R	9:30AM	10:45AM
 Prod and Qual Leader	MGT	4344	ME Deck	15974	3	L	PAM 2030	M W	4:00PM	5:15PM
@@ -5911,16 +5908,16 @@ HR Staffing and Development	MGT	3424	RD Zimmerman	15953	3	L	PAM 2028	T R	9:30AM	
 Organization Behavior	MGT	3324	JP Flynn	15951	3	L	PAM 3004	T R	4:00PM	5:15PM
 Organization Behavior	MGT	3324	JP Flynn	15950	3	L	TORG 1020	T R	2:00PM	3:15PM
 Multi Diversity in Orgs	MGT	3444	AK Ward Bartlett	15955	3	L	TBA	T R	11:00AM	12:15PM
-Ethical Leadership	MGT	4334	AH Cortes	15973	3	L	PAM 1004	M W	2:30PM	3:45PM
-Ethical Leadership	MGT	4334	RE Wokutch	15972	3	L	PAM 1003	T R	11:00AM	12:15PM
-Ethical Leadership	MGT	4334	RE Wokutch	15971	3	L	PAM 2002	T R	2:00PM	3:15PM
+Ethical Leadership	MGT	4334	RE Wokutch	15973	3	L	PAM 1004	M W	2:30PM	3:45PM
+Ethical Leadership	MGT	4334	EC Jamison	15972	3	L	PAM 1003	T R	11:00AM	12:15PM
+Ethical Leadership	MGT	4334	EC Jamison	15971	3	L	PAM 2002	T R	2:00PM	3:15PM
 Undergraduate Research	MGT	4994	KD Carlson	16000	3	R
 Independent Study	MGT	4974	Staff	15999	1	I
 Independent Study	MGT	4974	E Humphrey	15998	1	I
 Compensation & Performance Mgt	MGT	4414	JB Arthur	15994	3	L	PAM 1003	T R	12:30PM	1:45PM
 Compensation & Performance Mgt	MGT	4414	JB Arthur	15993	3	L	PAM 3010	T R	11:00AM	12:15PM
 Field Study	MGT	3964	KA Carlson	15964	1	L
-Fundamentals of Cadet Ldrship	MGT	1946	E Humphrey	15929	2	L	GLCDB 64	R	3:30PM	4:45PM	MCB 100	M	6:00PM	8:00PM
+Fundamentals of Cadet Ldrship	MGT	1946	E Humphrey	15929	2	L	GLCDB 64	R	3:30PM	4:45PM	MCB 100	M	6:30PM	8:30PM
 Career Planning for Cadets	MGT	2936	E Humphrey	15930	2	L	WLH 345	T	3:30PM	4:45PM
 Org Behav Theory Seminar	MGT	6714	DJ Beal	19545	3	L	PAM 2007B	F	1:00PM	3:50PM
 Leader Tech-Based Org	MGT	5804	DR Lohr	16016	3	O
@@ -5964,59 +5961,57 @@ SS:Uncnvntnl Oil&Gas Resvr Eng	MINE	5984	NS Ripepi	19745	3	L	HOLD 111	T R	9:30AM
 SS: Num Mthds for Fluid Flow	MINE	5984	C Chen	19744	3	L	HOLD 111	T	3:30PM	6:00PM
 SS: Mlticompnt Thermodynamics	MINE	5984	B Nojabaei	19684	3	L	MCB 201	T R	2:00PM	3:15PM
 SS: Adv Mining Ventilation	MINE	5984	KD Luxbacher	19649	3	L	HOLD 111	M W	9:30AM	10:45AM
-Mine Rec and Environ	MINE	4544	EA Sarver	16039	3	L	SURGE 118B	T R	11:00AM	12:15PM
+Mine Rec and Environ	MINE	4544	AK Louk	16039	3	L	SURGE 118B	T R	11:00AM	12:15PM
 Independent Study	MINE	5974	Staff	16046	1	I
 Independent Study	MINE	4974	Staff	16041	1	I
 Senior Design Project	MINE	4536	EC Westman	16038	2	B	RAND 221	W	2:30PM	5:15PM
-Seminar	MINE	5944	Staff	16045	1	L	HOLD 212	T	4:00PM	4:50PM
+Seminar	MINE	5944	E Gilliland	16045	1	L	HOLD 212	T	4:00PM	4:50PM
 Marketing Management	MKTG	3104H	D Wertalik	16051	3	L	TBA	M W	2:30PM	3:45PM
 Marketing Research	MKTG	4154	J Jiang	16058	3	L	DER 1076	T R	9:30AM	10:45AM
 Marketing Research	MKTG	4154	J Jiang	16057	3	L	NCB 270	T R	11:00AM	12:15PM
-Marketing Research	MKTG	4154	J Jiang	16056	3	L	TBA	T R	12:30PM	1:45PM
+Marketing Research	MKTG	4154	J Jiang	16056	3	L	PAM 2002	T R	12:30PM	1:45PM
 Marketing Research	MKTG	4154	K Daniloski	16055	3	L
 Mktg Chnl & Lgst	MKTG	4354	TW Reilly	16067	3	L	NCB 110	T R	11:00AM	12:15PM
 Mktg Chnl & Lgst	MKTG	4354	TW Reilly	16066	3	L	PAM 2002	T R	5:00PM	6:15PM
 Sales Force Management	MKTG	4454	BK Collins	16072	3	L	PAM 3008	M W	4:00PM	5:15PM
 Mktg, Mgmt & Public Purpose	MKTG	5444	M Pandelaere	16104	3	L	PAM 31	M W	2:30PM	3:45PM
 Advanced Topics In Marketing	MKTG	6106	D Chakravarti	19359	3	L
-Sem In Buyer Beh Res	MKTG	6304	M Pandelaere	16121	3	L
-Independent Study	MKTG	5974	A Chaxel	16117	1	I
-Independent Study	MKTG	5974	J Sundie	16116	1	I
+Independent Study	MKTG	5974	Staff	16117	1	I
+Independent Study	MKTG	5974	Staff	16116	1	I
 Independent Study	MKTG	5974	Staff	16115	1	I
-Independent Study	MKTG	5974	PM Herr	16114	1	I
+Independent Study	MKTG	5974	Staff	16114	1	I
 Independent Study	MKTG	5974	Staff	16113	1	I
 Independent Study	MKTG	5974	Staff	16112	1	I
 Independent Study	MKTG	5974	Staff	16111	1	I
 Independent Study	MKTG	5974	Staff	16110	1	I
 Advanced Topics In Marketing	MKTG	6105	PM Herr	16120	3	L
-Consumer Behavior	MKTG	4204	Staff	16063	3	L	TBA	T R	3:30PM	4:45PM
+Consumer Behavior	MKTG	4204	J Kim	16063	3	L	DER 1076	T R	3:30PM	4:45PM
 Consumer Behavior	MKTG	4204	DL Brinberg	16062	3	L
-Consumer Behavior	MKTG	4204	FD May	16061	3	L	NCB 270	M W	4:00PM	5:15PM
-Consumer Behavior	MKTG	4204	LE Schirr	16060	3	L	PAM 1004	T R	2:00PM	3:15PM
-Consumer Behavior	MKTG	4204	FD May	16059	3	L	PAM 3010	M W	2:30PM	3:45PM
-Mktg, Soc, & Pub Interests	MKTG	4644	Staff	19358	3	L	PAM 2028	M W	5:30PM	6:45PM
+Consumer Behavior	MKTG	4204	R Rabino	16061	3	L	NCB 270	M W	4:00PM	5:15PM
+Consumer Behavior	MKTG	4204	J Kim	16060	3	L	PAM 1004	T R	2:00PM	3:15PM
+Consumer Behavior	MKTG	4204	R Rabino	16059	3	L	PAM 3010	M W	2:30PM	3:45PM
+Mktg, Soc, & Pub Interests	MKTG	4644	M Pandelaere	19358	3	L	PAM 2028	M W	5:30PM	6:45PM
 Mktg, Soc, & Pub Interests	MKTG	4644	M Pandelaere	16079	3	L	PAM 31	M W	4:00PM	5:15PM
 Mktg, Soc, & Pub Interests	MKTG	4644	PM Herr	16078	3	L
 Mktg, Soc, & Pub Interests	MKTG	4644	M Pandelaere	16077	3	L	PAM 31	M W	2:30PM	3:45PM
 Marketing Communications	MKTG	4304	A Chaxel	16065	3	L	PAM 3028	M W	4:00PM	5:15PM
 Marketing Communications	MKTG	4304	A Chaxel	16064	3	L	PAM 1045	M W	12:30PM	1:45PM
-Field Practicum In Marketing	MKTG	4404	Staff	19656	3	L	PAM 3001	M W	2:30PM	3:45PM
+Field Practicum In Marketing	MKTG	4404	BL Sanchez	19656	3	L	PAM 3001	M W	2:30PM	3:45PM
 Field Practicum In Marketing	MKTG	4404	DL Brinberg	16071	3	L
 Field Practicum In Marketing	MKTG	4404	BK Collins	16070	3	L
 Field Practicum In Marketing	MKTG	4404	D Wertalik	16069	3	L
 Field Practicum In Marketing	MKTG	4404	TW Reilly	16068	3	L
 Study Abroad	MKTG	3954	K Daniloski	16054	3	L
-Retail Management	MKTG	4604	NR Evans	16076	3	L	PAM 1001	T R	8:00AM	9:15AM
 International Marketing	MKTG	4704	MJ Sirgy	16082	3	L	DER 3083	T R	11:00AM	12:15PM
 International Marketing	MKTG	4704	TW Reilly	16081	3	L	PAM 3010	T R	3:30PM	4:45PM
 International Marketing	MKTG	4704	Staff	16080	3	L
 Honors Undergraduate Research	MKTG	4994H	FD May	16100	1	R
 Honors Undergraduate Research	MKTG	4994H	Staff	16099	1	R
 Res Mktg Dec	MKTG	5154	J Jiang	16102	3	L	DER 1076	T R	9:30AM	10:45AM
-Research and Dissert	MKTG	7994	Staff	16122	1	R
-Final Examination	MKTG	5894	PM Herr	16107	3	L
+Research and Dissert	MKTG	7994	PM Herr	16122	1	R
+Final Examination	MKTG	5894	Staff	16107	3	L
 Research and Thesis	MKTG	5994	Staff	16119	1	R
-Project and Report	MKTG	5904	PM Herr	16108	1	R
+Project and Report	MKTG	5904	Staff	16108	1	R
 Advertising	MKTG	3504	C Hsu	16053	3	L	DER 1090	T R	11:00AM	12:15PM
 Advertising	MKTG	3504	C Hsu	16052	3	L	PAM 3008	T R	9:30AM	10:45AM
 Marketing Management	MKTG	3104	LE Schirr	16050	3	L	DER 1084	T R	11:00AM	12:15PM
@@ -6029,13 +6024,13 @@ Undergraduate Research	MKTG	4994	Staff	16097	1	R
 Strategic Marketing	MKTG	4754	DA Gresh	16087	3	L	NCB 110	T R	2:00PM	3:15PM
 Strategic Marketing	MKTG	4754	EB Coupey	16086	3	L	PAM 3008	T R	11:00AM	12:15PM
 Strategic Marketing	MKTG	4754	EB Coupey	16085	3	L	TORG 1040	T R	9:30AM	10:45AM
-Strategic Marketing	MKTG	4754	EB Coupey	16084	3	L	PAM 2002	T R	12:30PM	1:45PM
-Independent Study	MKTG	4974	LE Schirr	16096	1	I
-Independent Study	MKTG	4974	TW Reilly	16095	1	I
-Independent Study	MKTG	4974	D Wertalik	16094	1	I
-Independent Study	MKTG	4974	DL Brinberg	16093	1	I
-Independent Study	MKTG	4974	SP Mease	16092	1	I
-Independent Study	MKTG	4974	BK Collins	16091	1	I
+Strategic Marketing	MKTG	4754	LE Schirr	16084	3	L	PAM 3001	T R	12:30PM	1:45PM
+Independent Study	MKTG	4974	Staff	16096	1	I
+Independent Study	MKTG	4974	Staff	16095	1	I
+Independent Study	MKTG	4974	Staff	16094	1	I
+Independent Study	MKTG	4974	Staff	16093	1	I
+Independent Study	MKTG	4974	Staff	16092	1	I
+Independent Study	MKTG	4974	Staff	16091	1	I
 Independent Study	MKTG	4974	Staff	16090	1	I
 Independent Study	MKTG	4974	Staff	16089	1	I
 Independent Study	MKTG	4974	Staff	16088	1	I
@@ -6075,7 +6070,7 @@ MS IV, AROTC	MS	4006	KW Milton	16149	3	L	SEC 203	T	3:30PM	5:20PM
 Field Study	MS	4964	KW Milton	16154	2	L
 Field Study	MS	4964	KW Milton	16153	3	L
 Diffusion and Kinetics	MSE	5064	WT Reynolds	16227	3	L	MCB 212	T R	5:00PM	6:15PM
-Senior Design Laboratory	MSE	4076	Staff	18958	2	B
+Senior Design Laboratory	MSE	4076	H Yu	18958	2	B
 Senior Design Laboratory	MSE	4076	C Tallon Galdeano	18957	2	B
 Senior Design Laboratory	MSE	4076	TW Staley	18956	2	B
 Senior Design Laboratory	MSE	4076	RL Clark	18955	2	B
@@ -6131,7 +6126,7 @@ Independent Study	MSE	5974	AR Whittington	16242	1	I
 Independent Study	MSE	5974	EJ Foster	16241	1	I
 Materials Design Experiments	MSE	4644	GR Pickrell	16209	3	L	GOODW 115	M W	5:30PM	6:45PM
 Metals and Alloys	MSE	4304	AP Druschitz	16201	3	L	MCB 219	T R	8:00AM	9:15AM
-Metal Casting	MSE	4306	Staff	16202	3	L	HOLD 303	M W F	9:05AM	9:55AM
+Metal Casting	MSE	4306	EB Connelly	16202	3	L	HOLD 303	M W F	9:05AM	9:55AM
 Composite Materials	MSE	4604	AO Aning	16208	3	L	MCB 210	T R	5:00PM	6:15PM
 Undergraduate Research	MSE	4994H	AO Aning	16222	1	R
 Advanced Physical Ceramics	MSE	5174	C Tallon Galdeano	19210	3	L	RAND 116	T R	5:00PM	6:15PM
@@ -6295,7 +6290,6 @@ Adv Ind Ap Conducting	MUS	4744	DD Bigler	16379	1	L
 Grad Ind App Voice	MUS	5514	B Thorsett	16397	1	L
 Grad Ind App Voice	MUS	5514	AE Wyatt	16396	1	L
 Adv Ind App Bassoon	MUS	4624	RL Meisel	16371	1	L
-Junior Recital	MUS	4824	TE Cowden	16383	1	L
 Grad Ind App Flute	MUS	5574	EL Crone	16399	1	L
 Adv Ind Ap Percussion	MUS	4684	AJ Stevens	16377	1	L
 Adv Ind App Bass	MUS	4564	A Weinstein	16366	1	L
@@ -6338,21 +6332,21 @@ Quantum Physics Nanostructures	NANO	2024	G Khodaparast	16410	4	L	DER 3076	T R	12
 Nanoscience and Environment	NANO	3124	FM Michel	16415	3	L	DER 3076	M W F	10:10AM	11:00AM
 Undergraduate Research	NANO	4994	C Tao	16419	1	R
 Undergraduate Research	NANO	4994	V Nguyen	16418	1	R
-Undergraduate Research	NANO	4994	H Robinson	16417	1	R
+Undergraduate Research	NANO	4994	DF Kelly	16417	1	R
 Undergraduate Research	NANO	4994	TE Long	16416	1	R
 Neuroscience Senior Seminar	NEUR	4044	ML Olsen	16430	3	L	PAM 1002	M W	2:30PM	3:45PM
 Clinical Neuro in Practice	NEUR	4594	HW Sontheimer	19626	3	L	WLH 345	T	9:30AM	10:45AM
 Introduction to Neuroscience	NEUR	2026	S Clinton	16420	3	L	LITRV 1670	T R	9:30AM	10:45AM
-Undergraduate Research	NEUR	2994	Staff	19724	1	R
-Undergraduate Research	NEUR	2994	Staff	19723	1	R
-Undergraduate Research	NEUR	2994	Staff	19722	1	R
-Undergraduate Research	NEUR	2994	HW Sontheimer	19721	1	R
+Undergraduate Research	NEUR	2994	S Robel	19724	1	R
+Undergraduate Research	NEUR	2994	S Clinton	19723	1	R
+Undergraduate Research	NEUR	2994	JM Bowers	19722	1	R
+Undergraduate Research	NEUR	2994	S Campbell	19721	1	R
 Undergraduate Research	NEUR	2994	M Buczynski	19720	1	R
 Undergraduate Research	NEUR	2994	C Thompson	19719	1	R
 Undergraduate Research	NEUR	2994	GE Hodes	19718	1	R
 Undergraduate Research	NEUR	2994	ML Olsen	19717	1	R
 Undergraduate Research	NEUR	2994	MA Fox	16427	1	R
-Diseases of the Nervous System	NEUR	4034	Staff	19716	3	L	NCB 250	M	4:00PM	5:15PM	NCB 170	W	2:30PM	3:45PM
+Diseases of the Nervous System	NEUR	4034	HW Sontheimer	19716	3	L	NCB 250	M	4:00PM	5:15PM	NCB 170	W	2:30PM	3:45PM
 Diseases of the Nervous System	NEUR	4034	HW Sontheimer	16429	3	L	NCB 250	M W	4:00PM	5:15PM
 Neuroscience Laboratory	NEUR	2036	CR McCoy	18798	1	B	NCB 350	F	1:25PM	4:10PM
 Neuroscience Laboratory	NEUR	2036	CR McCoy	16425	1	B	NCB 350	W	1:25PM	4:10PM
@@ -6361,23 +6355,22 @@ Neuroscience Laboratory	NEUR	2036	CR McCoy	16423	1	B	NCB 350	M	2:30PM	5:15PM
 Neuroscience Laboratory	NEUR	2036	CR McCoy	16422	1	B	NCB 350	M	10:10AM	12:55PM
 Neuroscience Laboratory	NEUR	2036	CR McCoy	16421	1	B	NCB 350	W	8:00AM	10:45AM
 Neuroscience and Society	NEUR	3464	K Sewall	18803	3	L	NCB 170	T R	11:00AM	12:15PM
-Undergraduate Research	NEUR	4994	Staff	19729	1	R
-Undergraduate Research	NEUR	4994	Staff	19728	1	R
-Undergraduate Research	NEUR	4994	Staff	19727	1	R
-Undergraduate Research	NEUR	4994	Staff	19726	1	R
-Undergraduate Research	NEUR	4994	Staff	19725	1	R
-Undergraduate Research	NEUR	4994	Staff	16436	1	R
-Undergraduate Research	NEUR	4994	Staff	16435	1	R
-Undergraduate Research	NEUR	4994	Staff	16434	1	R
+Undergraduate Research	NEUR	4994	JC Chappell	19729	1	R
+Undergraduate Research	NEUR	4994	G Valdez	19728	1	R
+Undergraduate Research	NEUR	4994	JM Bowers	19727	1	R
+Undergraduate Research	NEUR	4994	S Campbell	19726	1	R
+Undergraduate Research	NEUR	4994	AS Bertke	19725	1	R
+Undergraduate Research	NEUR	4994	C Thompson	16436	1	R
+Undergraduate Research	NEUR	4994	S Robel	16435	1	R
+Undergraduate Research	NEUR	4994	AM Brown	16434	1	R
 Undergraduate Research	NEUR	4994	M Buczynski	16433	1	R
 SS: Advanced Neuroimmunology	NEUR	5984	GE Hodes	19634	3	L	LITRV 1760	T R	12:30PM	1:45PM
 SS: Neuroimmunology	NEUR	4984	GE Hodes	19484	3	L	LITRV 1760	T R	12:30PM	1:45PM
 SS: Neuroscience of Addiction	NEUR	4984	M Buczynski	19483	3	L	LITRV 1800	M W F	12:20PM	1:10PM
-SS: Human Physiology for Neur	NEUR	3984	MA Cline	19482	4	L	LITRV 1860	T R	11:00AM	12:15PM	NCB 350	T	1:00PM	2:50PM
+SS: Human Physiology for Neur	NEUR	3984	MA Cline	19482	4	L	NCB 350	T R	11:00AM	12:15PM	NCB 350	T	1:00PM	2:50PM
 Cognitive Neuroscience	NEUR	3084	JM Bowers	18806	3	L	LITRV 1860	T R	2:00PM	3:15PM
 Global Issues Natural Resource	NR	5114	KJ Lindsey	16449	3	O
 Adv Watrshed Assess Mgt Policy	NR	5614G	SH Schoenholtz	16451	2	L	JCH 212	R	3:30PM	5:25PM
-TS: Environmental Forensics	NR	5884	CE Kimmel	19645	3	O
 TS: Communication & Influence	NR	5884	EK Talley	18089	3	O
 TS: Coastal & Marine Systems	NR	5884	DJ Marcucci	18088	3	O
 TS: Adaptive Management	NR	5884	HE Eves	18087	3	O
@@ -6402,7 +6395,7 @@ Conservation Ecology	NR	5724	MM Draheim	16452	3	O
 Study Abroad	NR	3954	Staff	16440	1	L
 Study Abroad	NR	3954	MJ Kelly	16439	1	L
 Watershed Assess Mgt Policy	NR	4614	SH Schoenholtz	16443	2	L	JCH 212	R	3:30PM	5:25PM
-Adv Nuclear Reactor Analysis	NSEG	6124	Staff	19771	3	O	TBA	M W	11:30AM	1:00PM
+Adv Nuclear Reactor Analysis	NSEG	6124	A Haghighat	19771	3	O	TBA	M W	11:30AM	1:00PM
 Adv Nuclear Reactor Analysis	NSEG	6124	A Haghighat	16500	3	L	RAND 100L	M W	11:30AM	1:00PM
 Research and Thesis	NSEG	7994	A Haghighat	16508	1	O
 Research and Thesis	NSEG	7994	Staff	16507	1	O
@@ -6416,6 +6409,7 @@ Research and Thesis	NSEG	5994	C Hin	16497	1	O
 Research and Thesis	NSEG	5994	Staff	16496	1	O
 Research and Thesis	NSEG	5994	Staff	16495	1	O
 Research and Thesis	NSEG	5994	MA Pierson	16494	1	O
+Nuclear Reactor Safety	NSEG	6334	Y Liu	19821	3	O
 Nuclear Reactor Safety	NSEG	6334	Y Liu	19527	3	L	MCB 308	M W	4:00PM	5:15PM
 Project and Report	NSEG	5904	Staff	16487	1	O
 Project and Report	NSEG	5904	A Haghighat	16486	1	O
@@ -6426,7 +6420,7 @@ Project and Report	NSEG	5904	MA Pierson	16482	1	O
 Fundamental of Nuclear Engr	NSEG	3146	MA Pierson	16470	3	L	RAND 129	T R	12:30PM	1:45PM
 Undergraduate Research	NSEG	4994	Staff	16474	1	R
 Undergraduate Research	NSEG	4994	Staff	16473	1	R
-Undergraduate Research	NSEG	4994	Staff	16472	1	R
+Undergraduate Research	NSEG	4994	MA Pierson	16472	1	R
 Nuclear Fuel Cycle	NSEG	5204	MA Pierson	16479	3	O
 Nuclear Fuel Cycle	NSEG	5204	MA Pierson	16478	3	L	RAND 121	M W	2:30PM	3:45PM
 Independent Study	NSEG	5974	A Haghighat	16493	1	O
@@ -6446,8 +6440,8 @@ Undergraduate Research	NSEG	4994H	Staff	16475	1	R
 Cap Sem Public Mgt	PAPA	6394	AM Khademian	16588	3	L	CPAP 102	M	6:45PM	9:30PM
 Local Govt & Prof Mgr	PAPA	5044	SF Owen	18972	3	L	WHIT 281	W	4:00PM	6:45PM
 Local Govt & Prof Mgr	PAPA	5044	SF Owen	16513	3	O	TBA	W	4:00PM	6:45PM
-TS:Context of Local Government	PAPA	6154	KL Chandler	16556	3	O	TBA	R	4:00PM	6:45PM
-Adv Topics Pub Orgs	PAPA	6154	KL Chandler	16555	3	L	TBA	R	4:00PM	6:45PM
+TS:Context of Local Government	PAPA	6154	AJ Romanello	16556	3	O	TBA	R	4:00PM	6:45PM
+Adv Topics Pub Orgs	PAPA	6154	AJ Romanello	16555	3	L	TBA	R	4:00PM	6:45PM
 Adv Topics System Mgt	PAPA	6264	PS Roberts	19420	3	L	CPAP 102	W	7:00PM	9:45PM
 Research and Dissertation	PAPA	7994	RH Lemaire	16622	1	R
 Research and Dissertation	PAPA	7994	AM Eckerd	16621	1	R
@@ -6477,7 +6471,7 @@ Research and Thesis	PAPA	5994	JV Rees	16549	1	R
 Research and Thesis	PAPA	5994	SM Sterett	16548	1	R
 Research and Thesis	PAPA	5994	KM Hult	16547	1	R
 Research and Thesis	PAPA	5994	BJ Cook	16546	1	R
-Public Policy Design	PAPA	6224	AM Eckerd	16567	3	L	CPAP 203	R	5:30PM	8:15PM
+Public Policy Design	PAPA	6224	AM Eckerd	16567	3	L	AA 7	R	5:30PM	8:15PM
 Project and Report	PAPA	5904	AM Eckerd	16523	3	R	CPAP 203	F	9:30AM	12:15PM
 Independent Study	PAPA	5974	AM Eckerd	19180	1	I
 Independent Study	PAPA	5974	LS Jensen	16535	1	I
@@ -6643,7 +6637,7 @@ Foundations of Physics I	PHYS	2306	TR Merritt	16864	0	B	HAHN N 103	M	12:20PM	2:1
 Foundations of Physics I	PHYS	2306	TR Merritt	16863	0	B	HAHN N 103	W	8:00AM	9:50AM
 Foundations of Physics I	PHYS	2306	TR Merritt	16862	0	B	HAHN N 103	W	10:10AM	12:00PM
 Foundations of Physics I	PHYS	2306	JH Simonetti	16861	4	L	DER 3076	M W F	9:05AM	9:55AM	LIBR 100S	R	2:00PM	2:50PM
-Math Methods in Physics	PHYS	2504	Staff	16912	3	L	ROB 105	T R	12:30PM	1:45PM
+Math Methods in Physics	PHYS	2504	K Papavasiliou	16912	3	L	ROB 105	T R	12:30PM	1:45PM
 Foundations of Physics I	PHYS	2305	Staff	18412	4	L	HAHN N 130	M W F	10:10AM	11:00AM	ROB 122	W	2:30PM	3:20PM
 Foundations of Physics I	PHYS	2305	Staff	18411	4	L	HAHN N 130	M W F	10:10AM	11:00AM	ROB 112	W	2:30PM	3:20PM
 Foundations of Physics I	PHYS	2305	Staff	18409	4	L	HAHN N 130	M W F	10:10AM	11:00AM	ROB 101	T	11:15AM	12:05PM
@@ -6677,7 +6671,7 @@ Foundations of Physics I	PHYS	2305	TR Merritt	16833	0	B	HAHN N 103	R	4:40PM	6:30
 Foundations of Physics I	PHYS	2305	TR Merritt	16831	0	B	HAHN N 103	R	10:10AM	12:00PM
 Foundations of Physics I	PHYS	2305	VW Scarola	16830	4	L	HAHN N 130	T R	11:00AM	12:15PM	ROB 122	W	8:00AM	8:50AM
 Foundations of Physics I	PHYS	2305	TR Merritt	16829	0	B	HAHN N 103	R	8:00AM	9:50AM
-Foundations of Physics I	PHYS	2305	CC Glesner	16828	4	L	HAHN N 130	M W F	8:00AM	8:50AM	ROB 101	M	10:10AM	11:00AM
+Foundations of Physics I	PHYS	2305	Staff	16828	4	L	HAHN N 130	M W F	8:00AM	8:50AM	ROB 101	M	10:10AM	11:00AM
 Foundations of Physics I	PHYS	2305	VW Scarola	16827	4	L	HAHN N 130	T R	11:00AM	12:15PM	ROB 122	W	9:05AM	9:55AM
 Foundations of Physics I	PHYS	2305	VW Scarola	16826	4	L	HAHN N 130	T R	11:00AM	12:15PM	ROB 112	W	8:00AM	8:50AM
 Foundations of Physics I	PHYS	2305	VW Scarola	16825	4	L	HAHN N 130	T R	11:00AM	12:15PM	ROB 122	W	10:10AM	11:00AM
@@ -6704,8 +6698,8 @@ Foundations of Physics I	PHYS	2305	TR Merritt	16805	0	B	HAHN N 103	M	6:50PM	8:40
 Foundations of Physics I	PHYS	2305	TR Merritt	16804	0	B	HAHN N 103	M	4:40PM	6:30PM
 Foundations of Physics I	PHYS	2305	P Kraykivskiy	16803	4	L	HAHN N 130	M W F	11:15AM	12:05PM	ROB 112	F	12:20PM	1:10PM
 Foundations of Physics I	PHYS	2305	BP Fahrman	16802	4	L	HAHN N 140	T R	9:30AM	10:45AM	ROB 103	F	8:00AM	8:50AM
-Foundations of Physics I	PHYS	2305	BP Fahrman	16801	4	L	HAHN N 140	T R	9:30AM	10:45AM	ROB 101	M	2:30PM	3:20PM
-Foundations of Physics I	PHYS	2305	BP Fahrman	16800	4	L	HAHN N 140	T R	9:30AM	10:45AM	ROB 101	M	1:25PM	2:15PM
+Foundations of Physics I	PHYS	2305	Staff	16801	4	L	HAHN N 140	T R	9:30AM	10:45AM	ROB 101	M	2:30PM	3:20PM
+Foundations of Physics I	PHYS	2305	Staff	16800	4	L	HAHN N 140	T R	9:30AM	10:45AM	ROB 101	M	1:25PM	2:15PM
 Foundations of Physics I	PHYS	2305	TR Merritt	16799	4	L	HAHN N 130	T R	9:30AM	10:45AM	ROB 103	W	10:10AM	11:00AM
 Foundations of Physics I	PHYS	2305	P Kraykivskiy	16798	4	L	HAHN N 130	M W F	12:20PM	1:10PM	ROB 122	F	11:15AM	12:05PM
 Foundations of Physics I	PHYS	2305	P Kraykivskiy	16797	4	L	HAHN N 130	M W F	12:20PM	1:10PM	ROB 101	W	10:10AM	11:00AM
@@ -6718,12 +6712,12 @@ Foundations of Physics I	PHYS	2305	P Kraykivskiy	16791	4	L	HAHN N 130	M W F	12:2
 Foundations of Physics I	PHYS	2305	KP Nelson	16790	4	L	HAHN N 130	T R	8:00AM	9:15AM	PAM 2028	W	12:20PM	1:10PM
 Foundations of Physics I	PHYS	2305	KP Nelson	16789	4	L	HAHN N 130	T R	8:00AM	9:15AM	PAM 3001	M	11:15AM	12:05PM
 Foundations of Physics I	PHYS	2305	P Kraykivskiy	16788	4	L	HAHN N 130	M W F	12:20PM	1:10PM	ROB 101	W	8:00AM	8:50AM
-Foundations of Physics I	PHYS	2305	CC Glesner	16787	4	L	HAHN N 130	M W F	8:00AM	8:50AM	ROB 101	M	11:15AM	12:05PM
-Foundations of Physics I	PHYS	2305	CC Glesner	16786	4	L	HAHN N 130	M W F	8:00AM	8:50AM	ROB 101	M	12:20PM	1:10PM
-Foundations of Physics I	PHYS	2305	CC Glesner	16785	4	L	HAHN N 130	M W F	8:00AM	8:50AM	ROB 101	M	9:05AM	9:55AM
+Foundations of Physics I	PHYS	2305	Staff	16787	4	L	HAHN N 130	M W F	8:00AM	8:50AM	ROB 101	M	11:15AM	12:05PM
+Foundations of Physics I	PHYS	2305	Staff	16786	4	L	HAHN N 130	M W F	8:00AM	8:50AM	ROB 101	M	12:20PM	1:10PM
+Foundations of Physics I	PHYS	2305	Staff	16785	4	L	HAHN N 130	M W F	8:00AM	8:50AM	ROB 101	M	9:05AM	9:55AM
 Foundations of Physics I	PHYS	2305	KP Nelson	16784	4	L	HAHN N 130	T R	12:30PM	1:45PM	ROB 103	W	8:00AM	8:50AM
 Foundations of Physics I	PHYS	2305	TR Merritt	16783	4	L	HAHN N 130	T R	9:30AM	10:45AM	ROB 103	W	11:15AM	12:05PM
-Foundations of Physics I	PHYS	2305	BP Fahrman	16782	4	L	HAHN N 140	T R	9:30AM	10:45AM	ROB 101	M	8:00AM	8:50AM
+Foundations of Physics I	PHYS	2305	Staff	16782	4	L	HAHN N 140	T R	9:30AM	10:45AM	ROB 101	M	8:00AM	8:50AM
 Foundations of Physics I	PHYS	2305	P Kraykivskiy	16781	4	L	HAHN N 130	M W F	11:15AM	12:05PM	ROB 103	M	9:05AM	9:55AM
 Foundations of Physics I	PHYS	2305	P Kraykivskiy	16780	4	L	HAHN N 130	M W F	1:25PM	2:15PM	ROB 101	W	9:05AM	9:55AM
 Foundations of Physics I	PHYS	2305	P Kraykivskiy	16779	4	L	HAHN N 130	M W F	1:25PM	2:15PM	ROB 122	F	10:10AM	11:00AM
@@ -6841,13 +6835,14 @@ Independent Study	PHYS	4974	JM Link	16972	1	I
 Independent Study	PHYS	4974	JH Simonetti	16971	1	I
 Independent Study	PHYS	4974	JH Simonetti	16970	1	I
 Independent Study	PHYS	4974	Staff	16969	1	I
-Seminar	PHYS	5944	D Farrah	17023	1	L	ROB 116	F	1:25PM	2:40PM
+Seminar	PHYS	5944	K Park	17023	1	L	ROB 116	F	1:25PM	2:40PM
 Seminar	PHYS	5944	Staff	17022	1	L
 Undergraduate Research	PHYS	2994H	Staff	16951	1	R
 Undergraduate Research	PHYS	2994H	Staff	16950	1	R
 Undergraduate Research	PHYS	2994H	Staff	16949	1	R
 Undergraduate Research	PHYS	2994H	Staff	16948	1	R
 Undergraduate Research	PHYS	2994H	V Nguyen	16947	1	R
+Sel Topics Theor Phys	PHYS	6714	JA Gray	19810	3	L	RAND 121	T R	9:30AM	10:45AM
 Independent Study	PHYS	2974H	Staff	16918	1	I
 Independent Study	PHYS	2974H	Staff	16917	1	I
 Statistical Mechanics	PHYS	5705	S Cheng	17018	3	L	ROB 116	T R	9:30AM	10:45AM
@@ -6873,9 +6868,9 @@ Astronomy Laboratory	PHYS	1156	JH Simonetti	16725	1	B	DER 4009	W	8:00PM	9:50PM
 Astronomy Laboratory	PHYS	1156	JH Simonetti	16724	1	B	DER 4029	T	8:00PM	9:50PM
 Astronomy Laboratory	PHYS	1156	JH Simonetti	16723	1	B	DER 4029	R	8:00PM	9:50PM
 Astronomy Laboratory	PHYS	1156	JH Simonetti	16722	1	B	DER 4009	M	8:00PM	9:50PM
-SS: Quantum Info Technologies	PHYS	4984	SE Economou	19627	3	L
+SS: Quantum Info Technologies	PHYS	4984	SE Economou	19627	3	L	RAND 129	T R	11:00AM	12:15PM
 Solid-State Physics	PHYS	5556	JJ Heremans	17014	3	L	ROB 122	M W	5:30PM	6:45PM
-Introduction to Astrophysics	PHYS	3656	N Arav	16960	3	L	ROB 210	M W F	11:15AM	12:05PM
+Introduction to Astrophysics	PHYS	3656	KP Nelson	16960	3	L	ROB 210	M W F	11:15AM	12:05PM
 Research and Dissertation	PHYS	7994	V Nguyen	17090	1	R
 Research and Dissertation	PHYS	7994	JJ Heremans	17089	1	R
 Research and Dissertation	PHYS	7994	JR Heflin	17088	1	R
@@ -6969,8 +6964,8 @@ Undergraduate Research	PHYS	4994	JR Heflin	16978	1	R
 Undergraduate Research	PHYS	4994	JJ Heremans	16977	1	R
 Undergraduate Research	PHYS	4994	P Huber	16976	1	R
 Undergraduate Research	PHYS	4994	G Khodaparast	16975	1	R
-Modern Experimental Physics	PHYS	4316	JM Link	16962	2	B	HAHN N 109	T R	2:00PM	4:50PM
-Classical Electromagnetism	PHYS	5406	ER Sharpe	17012	3	L	ROB 116	M W	4:00PM	5:15PM
+Modern Experimental Physics	PHYS	4316	C Mariani	16962	2	B	HAHN N 109	T R	2:00PM	4:50PM
+Classical Electromagnetism	PHYS	5406	ER Sharpe	17012	3	L	ROB 116	M W F	12:20PM	1:10PM
 Introduction to Biophysics	PHYS	4714	W Mather	16967	3	L	ROB 105	M W F	1:25PM	2:15PM
 Conversational Portug	PORT	1106	JE Bixler	17091	3	L	TORG 1100C	T R	11:00AM	12:15PM
 Field Study	PORT	2964	Staff	17092	1	L
@@ -6993,19 +6988,13 @@ Project and Report	PPWS	5904	Staff	17125	1	O
 Project and Report	PPWS	5904	Staff	17124	1	R
 Field Study	PPWS	2964	Staff	17098	1	R
 Mysterious Mushrooms & Molds	PPWS	2004	DG Schmale	17097	3	L	NCB 360	M W F	1:25PM	2:15PM
-Undergraduate Research	PPWS	4994	JG Jelesko	17114	1	R
 Undergraduate Research	PPWS	4994	Staff	17113	1	R
 Undergraduate Research	PPWS	4994	G Pilot	17112	1	R
-Undergraduate Research	PPWS	4994	BA Vinatzer	17111	1	R
-Undergraduate Research	PPWS	4994	DC Haak	17108	1	R
-Undergraduate Research	PPWS	4994	J Barney	17107	1	R
-Undergraduate Research	PPWS	4994	DS McCall	17106	1	R
 Undergraduate Research	PPWS	4994	JH Westwood	17105	1	R
 Undergraduate Research	PPWS	4994	DG Schmale	17104	1	R
 Diseases of Crop Plants	PPWS	5214	AB Baudoin	17119	1	O
 Independent Study	PPWS	5974	Staff	17126	1	I
-Independent Study	PPWS	4974	DG Schmale	17102	1	I
-Independent Study	PPWS	4974	MA Hansen	17101	1	I
+Independent Study	PPWS	4974	Staff	17101	1	I
 Environmental Politics/Policy	PSCI	5584	RC Rich	17230	3	O
 Critical Security Studies	PSCI	5464	P Dixit	19371	3	L	MAJWM 502	W	5:30PM	8:20PM
 Political Behavior	PSCI	5344	CE Jewitt	19298	3	L	PAM 1002	T	12:30PM	3:20PM
@@ -7120,28 +7109,25 @@ Global Soc Violence & Peace	PSVP	4104	HL Lesko	17241	3	L	NOR 209	T R	5:00PM	6:15
 Independent Study	PSVP	4974	Staff	17242	1	I
 Sensation and Perception	PSYC	4074	A Cate	17302	3	L	WMS 120	T R	3:30PM	4:45PM
 TS: Clinical Assessment	PSYC	6254	Staff	18836	3	L	WMS 227	W	9:00AM	12:00PM
-Lab Sensa Percept	PSYC	4274	Staff	17309	1	B	WMS 209	W	9:05AM	10:55AM
+Lab Sensa Percept	PSYC	4274	P Muralidharan	17309	1	B	WMS 209	W	9:05AM	10:55AM
 TS: Adulthood and Aging	PSYC	4034	PK Harrison	17300	3	L	NCB 230	M W	2:30PM	3:45PM
 Language Development	PSYC	4134	RK Panneton	17304	3	L	WMS 320	M W	2:30PM	3:45PM
 Cognitive Psychology	PSYC	5344	RA Diana	17324	3	L	WMS 209	T R	12:30PM	1:45PM
-Develop Psyc Lab	PSYC	4234	Staff	18833	1	B	WMS 209	T	2:00PM	3:50PM
-Develop Psyc Lab	PSYC	4234	Staff	17306	1	B	WMS 320	M	4:00PM	5:50PM
-Develop Psyc Lab	PSYC	4234	Staff	17305	1	B	WMS 209	R	2:00PM	3:50PM
-Developmental Psychology	PSYC	2034	Staff	18824	3	L	WMS 209	T R	11:00AM	12:15PM
+Develop Psyc Lab	PSYC	4234	AE Brieant	18833	1	B	WMS 209	T	2:00PM	3:50PM
+Develop Psyc Lab	PSYC	4234	LN Kim	17306	1	B	WMS 320	M	4:00PM	5:50PM
+Develop Psyc Lab	PSYC	4234	LN Kim	17305	1	B	WMS 209	R	2:00PM	3:50PM
 Developmental Psychology	PSYC	2034	PK Harrison	17273	3	L	WMS 220	T R	2:00PM	3:15PM
-Developmental Psychology	PSYC	2034	Staff	17272	3	L	WMS 320	M W F	1:25PM	2:15PM
+Developmental Psychology	PSYC	2034	E Hernandez	17272	3	L	WMS 320	M W F	1:25PM	2:15PM
 Developmental Psychology	PSYC	2034	PK Harrison	17270	3	L	NCB 260	T R	9:30AM	10:45AM
-Environmental Psychology	PSYC	3024	Staff	17294	3	L	WMS 120	T R	11:00AM	12:15PM
-Psychology of Personality	PSYC	2054	Staff	18827	3	L	WMS 120	M W F	1:25PM	2:15PM
 Psychology of Personality	PSYC	2054	J Germana	17278	3	L	WMS 320	T R	2:00PM	3:15PM
 Psychology of Personality	PSYC	2054	RJ Harvey	17277	3	L	WMS 320	M W F	10:10AM	11:00AM
 Psychology of Personality	PSYC	2054	J Germana	17276	3	L	WMS 134	T R	9:30AM	10:45AM
 Independent Study	PSYC	4974H	Staff	17320	1	I
 Field Study	PSYC	2964	Staff	17285	1	R
-Abnormal Psychology	PSYC	3014	Staff	18830	3	L	WMS 120	M W F	10:10AM	11:00AM
-Abnormal Psychology	PSYC	3014	Staff	17293	3	L	WMS 220	T R	4:00PM	5:15PM
-Abnormal Psychology	PSYC	3014	Staff	17292	3	L	WMS 120	M W F	11:15AM	12:05PM
-Abnormal Psychology	PSYC	3014	Staff	17291	3	L	WMS 120	M W F	12:20PM	1:10PM
+Abnormal Psychology	PSYC	3014	AE Halliburton	18830	3	L	WMS 120	M W F	10:10AM	11:00AM
+Abnormal Psychology	PSYC	3014	AD Valdespino	17293	3	L	WMS 220	T R	4:00PM	5:15PM
+Abnormal Psychology	PSYC	3014	RC Guerra	17292	3	L	WMS 120	M W F	11:15AM	12:05PM
+Abnormal Psychology	PSYC	3014	AT Wieckowski	17291	3	L	WMS 120	M W F	12:20PM	1:10PM
 Abnormal Psychology	PSYC	3014	JA Richey	17290	3	L	WMS 120	T R	2:00PM	3:15PM
 Abnormal Psychology	PSYC	3014	RT Jones	17289	3	L	WMS 320	T R	9:30AM	10:45AM
 Psych Perspecs Soc Ps	PSYC	5314	DK Axsom	17323	3	L	WMS 209	T R	9:30AM	10:45AM
@@ -7153,12 +7139,12 @@ Field Study	PSYC	4964	Staff	17317	1	L
 Undergraduate Research	PSYC	4994H	Staff	17322	1	R
 Advanced Social Psychology	PSYC	4084	DK Axsom	17303	3	L	WMS 120	T R	12:30PM	1:45PM
 Physiological Psychology	PSYC	4064	BH Scarpa-Friedman	17301	3	L	WMS 220	T R	11:00AM	12:15PM
-Lab in Social Psyc	PSYC	4284	Staff	17311	1	B	WMS 209	W	4:00PM	5:50PM
-Lab in Social Psyc	PSYC	4284	Staff	17310	1	B	WMS 334	T	3:30PM	5:20PM
+Lab in Social Psyc	PSYC	4284	S Yibass	17311	1	B	WMS 209	W	4:00PM	5:50PM
+Lab in Social Psyc	PSYC	4284	S Yibass	17310	1	B	WMS 334	T	3:30PM	5:20PM
 Health Psychology	PSYC	5374	RA Winett	19380	3	L	WMS 327	M	2:00PM	5:00PM
 Child Psychopathology	PSYC	6264	BA White	17330	3	L	WMS 227	M	2:00PM	5:00PM
-Lab in Phys Psyc	PSYC	4264	Staff	17308	1	B	WMS 320	T	5:00PM	6:50PM
-Lab in Phys Psyc	PSYC	4264	Staff	17307	1	B	WMS 320	W	4:30PM	6:20PM
+Lab in Phys Psyc	PSYC	4264	SS Grant	17308	1	B	WMS 320	T	5:00PM	6:50PM
+Lab in Phys Psyc	PSYC	4264	SS Grant	17307	1	B	WMS 320	W	4:30PM	6:20PM
 Research and Dissertation	PSYC	7994	Staff	17335	1	L
 TS: Introduction to Clinical	PSYC	4364	GA Clum	17316	3	L	WMS 209	M W	2:30PM	3:45PM
 TS:Self and Beyond Self	PSYC	4364	J Germana	17315	3	L	WMS 334	M W	4:00PM	5:15PM
@@ -7167,27 +7153,23 @@ TS:Psychology of Diversity	PSYC	4364	KA Hoffman	17313	3	L	NCB 130B	T R	9:30AM	10
 TS: Psychology of Trauma	PSYC	4364	RT Jones	17312	3	L	NCB 130A	T R	12:30PM	1:45PM
 Indust/Organiz Psych	PSYC	4024	NM Hauenstein	17299	3	L	WMS 320	T R	12:30PM	1:45PM
 Research and Thesis	PSYC	5994	Staff	17327	1	R
-Psychology of Learning	PSYC	2044	Staff	18826	3	L	WMS 334	M W F	10:10AM	11:00AM
-Psychology of Learning	PSYC	2044	Staff	18825	3	L	WMS 220	M W	4:00PM	5:15PM
-Psychology of Learning	PSYC	2044	Staff	17275	3	L	WMS 334	M W F	12:20PM	1:10PM
-Psychology of Learning	PSYC	2044	Staff	17274	3	L	WMS 220	M W F	10:10AM	11:00AM
-Psyc Dis Children	PSYC	3034	Staff	17295	3	L	WMS 120	M W	2:30PM	3:45PM
+Psychology of Learning	PSYC	2044	JM Wang	18825	3	L	WMS 220	M W	4:00PM	5:15PM
+Psychology of Learning	PSYC	2044	EE Condy	17275	3	L	WMS 334	M W F	12:20PM	1:10PM
+Psychology of Learning	PSYC	2044	X Yang	17274	3	L	WMS 220	M W F	10:10AM	11:00AM
+Psyc Dis Children	PSYC	3034	RM Slough	17295	3	L	WMS 120	M W	2:30PM	3:45PM
 Psych Fdn of Educ	PSYC	3154	TA Bumbarger	17298	3	L	GYM 219	T R	11:00AM	12:15PM
 Psych Fdn of Educ	PSYC	3154	EL Nicholas	17297	3	L	GBJ 102	T R	2:00PM	3:15PM
-Nervous Systems & Behavior	PSYC	2064	Staff	18828	3	L	WMS 334	T R	12:30PM	1:45PM
-Nervous Systems & Behavior	PSYC	2064	Staff	17281	3	L	WMS 220	T R	8:00AM	9:15AM
-Nervous Systems & Behavior	PSYC	2064	Staff	17280	3	L	WMS 220	M W F	9:05AM	9:55AM
+Nervous Systems & Behavior	PSYC	2064	V Brown	17281	3	L	WMS 220	T R	8:00AM	9:15AM
+Nervous Systems & Behavior	PSYC	2064	SM Roldan	17280	3	L	WMS 220	M W F	9:05AM	9:55AM
 Nervous Systems & Behavior	PSYC	2064	A Cate	17279	3	L	WMS 120	T R	9:30AM	10:45AM
-Health Psychology	PSYC	3054	Staff	17296	3	L	WMS 334	T R	2:00PM	3:15PM
-Prin Psyc Research	PSYC	1094	Staff	17269	3	L	WMS 334	M W	2:30PM	3:45PM
-Prin Psyc Research	PSYC	1094	Staff	17268	3	L	WMS 320	T R	11:00AM	12:15PM
+Prin Psyc Research	PSYC	1094	PF Hill	17269	3	L	WMS 334	M W	2:30PM	3:45PM
+Prin Psyc Research	PSYC	1094	BP Torian	17268	3	L	WMS 320	T R	11:00AM	12:15PM
 Prin Psyc Research	PSYC	1094	RJ Harvey	17267	3	L	WMS 220	M W F	1:25PM	2:15PM
-Prin Psyc Research	PSYC	1094	Staff	17266	3	L	WMS 120	M W F	9:05AM	9:55AM
+Prin Psyc Research	PSYC	1094	JM Brown	17266	3	L	WMS 120	M W F	9:05AM	9:55AM
 Prin Psyc Research	PSYC	1094	NM Hauenstein	17265	3	L	WMS 334	T R	9:30AM	10:45AM
-Social Psychology	PSYC	2084	Staff	18829	3	L	WMS 120	T R	8:00AM	9:15AM
-Social Psychology	PSYC	2084	Staff	17284	3	L	WMS 120	M W	4:00PM	5:15PM
-Social Psychology	PSYC	2084	Staff	17283	3	L	WMS 220	M W F	11:15AM	12:05PM
-Social Psychology	PSYC	2084	Staff	17282	3	L	WMS 220	M W F	12:20PM	1:10PM
+Social Psychology	PSYC	2084	MD Roediger	17284	3	L	WMS 120	M W	4:00PM	5:15PM
+Social Psychology	PSYC	2084	BP Acton	17283	3	L	WMS 220	M W F	11:15AM	12:05PM
+Social Psychology	PSYC	2084	CP Sullivan	17282	3	L	WMS 220	M W F	12:20PM	1:10PM
 Language and the Mind	PSYC	1524	AJ Walker	19403	3	L	RAND 110	T R	9:30AM	10:45AM
 Independent Study	PSYC	2974	Staff	17286	1	I
 Introductory Psychology	PSYC	1004	Staff	19285	0	L	WMS 134	M	12:20PM	1:10PM
@@ -7197,7 +7179,7 @@ Introductory Psychology	PSYC	1004	Staff	17262	0	C	WMS 134	F	9:05AM	9:55AM
 Introductory Psychology	PSYC	1004	Staff	17261	0	C	WMS 134	W	12:20PM	1:10PM
 Introductory Psychology	PSYC	1004	Staff	17260	0	C	WMS 134	W	10:10AM	11:00AM
 Introductory Psychology	PSYC	1004	Staff	17259	0	C	WMS 134	M	2:30PM	3:20PM
-Introductory Psychology	PSYC	1004	Staff	17258	3	L	GLCDB 64	T R	12:30PM	1:20PM
+Introductory Psychology	PSYC	1004	KA Hoffman	17258	3	L	GLCDB 64	T R	12:30PM	1:20PM
 Introductory Psychology	PSYC	1004	Staff	17257	0	C	WMS 134	M	11:15AM	12:05PM
 Introductory Psychology	PSYC	1004	Staff	17256	0	C	WMS 134	T	2:00PM	2:50PM
 Introductory Psychology	PSYC	1004	Staff	17255	0	C	WMS 134	M	1:25PM	2:15PM
@@ -7218,7 +7200,7 @@ Clinical Internship	PSYC	7964	Staff	19278	1	L
 Independent Study	PSYC	4974	Staff	17319	1	I
 Biological Bases of Behavior	PSYC	5404	DW Harrison	19379	3	L	WMS 209	M	9:05AM	12:05PM
 Clinical Practicum	PSYC	5966	LD Cooper	17325	1	L
-Advanced Topics in Org Psyc	PSYC	6934	RJ Foti	19381	3	L	WMS 227	W	2:00PM	5:00PM
+Advanced Topics in Org Psyc	PSYC	6934	RJ Foti	19381	3	L	WMS 327	W	12:00PM	3:00PM
 Independent Study	PSYC	2974H	Staff	17287	1	I
 Real Estate Studio	REAL	4076	K Boyle	17339	3	L	BFH 230	F	10:10AM	12:00PM	BFH 210	M	10:10AM	11:00AM
 Principles of Real Estate	REAL	2004	S Franzi	19502	3	L	NCB 260	M W F	8:00AM	8:50AM
@@ -7261,7 +7243,7 @@ Undergraduate Research	RLCL	4994	Staff	17377	1	R
 Mat Cult & Pub Hum Theory	RLCL	5104	A Ansell	17379	3	L	LANE 132	W	2:00PM	4:45PM
 SS: Foundtns of Rel Frdm in US	RLCL	5984	Staff	19598	3	O
 Independent Study	RLCL	4974	Staff	17375	1	I
-Material Culture & Humanities	RLCL	5304	Staff	19762	3	L
+Material Culture & Humanities	RLCL	5304	BM Britt	19762	3	L
 Religion and Culture In Asia	RLCL	1904	Z Ni	18314	3	L	MCB 302	T R	9:30AM	10:45AM
 Religion and Culture In Asia	RLCL	1904	PL Schmitthenner	17354	3	L	NCB 230	M W F	11:15AM	12:05PM
 Religion and Culture In Asia	RLCL	1904	A Abeysekara	17353	3	L	LANE 132	T R	2:00PM	3:15PM
@@ -7284,7 +7266,7 @@ Undergraduate Research	RUS	4994	Staff	17404	1	L
 TS:Rus Cultural Linguistics	RUS	4204	RO Efird	19653	3	L	MCB 207	T R	2:00PM	3:15PM
 Independent Study	RUS	4974	N Milman-Miller	17401	1	I
 Independent Study	RUS	4974	RO Efird	17400	1	I
-Studies in Russian Literature	RUS	4304	RO Efird	17397	3	L	MCB 201	T R	12:30PM	1:45PM
+Studies in Russian Literature	RUS	4304	RO Efird	17397	3	L	MCB 212	T R	12:30PM	1:45PM
 Field Study	RUS	4964	N Milman-Miller	17399	1	L
 Study Abroad	RUS	3954	Staff	17396	1	L
 Independent Study	RUS	2974H	Staff	17392	1	I
@@ -7292,14 +7274,14 @@ Undergraduate Research	RUS	4994H	N Milman-Miller	17406	1	R
 Undergraduate Research	RUS	4994H	Staff	17405	1	R
 Packaging Systems Design Prac	SBIO	4054	RJ Bush	17420	3	L	JCH 132	F	2:30PM	4:30PM
 Adv Polysaccharide Chemistry	SBIO	5424G	KJ Edgar	17430	3	L	WAL 234	T R	8:00AM	9:15AM
-Seminar	SBIO	5004	RL Smith	17427	1	L	JCH 317A	M	3:00PM	4:00PM
+Seminar	SBIO	5004	RL Smith	17427	1	L	BROOK 102	M	3:00PM	4:00PM
 Quantitative Wood Anatomy	SBIO	5224	A Zink-Sharp	17428	2	L	JCH 213	T R	12:30PM	1:45PM
 Forest Products Business Sys	SBIO	3464	HJ Quesada Pineda	19631	3	L	TBA	M W F	8:00AM	8:50AM
 Wood Mechanics	SBIO	3314	DP Hindman	17413	4	L	JCH 212	M W F	9:05AM	9:55AM	BROOK 102	W	2:30PM	5:20PM
 Intro Wood Desgn & Crftsmanshp	SBIO	1234	JR Loferski	17407	3	L	BROOK 102	R	3:30PM	6:15PM	JCH 212	T	3:30PM	4:20PM
 CAD in Packaging	SBIO	2004	L Horvath	17408	3	L	JCH 220	M W	10:45AM	12:00PM
 Chem & Conv of Sust Biomatls	SBIO	3434	M Roman	19421	3	L	JCH 213	M W F	11:15AM	12:30PM
-Biodeterioration and Bioenergy	SBIO	3114	B Goodell	17411	3	L	JCH 213	M W	2:30PM	3:45PM
+Biodeterioration and Bioenergy	SBIO	3114	B Goodell	17411	3	L	DURHM 261	M T	6:00PM	7:30PM
 Sust Biomatls Enterprises	SBIO	3554	UK Buehlmann	17417	3	L	JCH 218	T R	11:00AM	12:15PM
 Society Sustain Biomat Energy	SBIO	3454	AL Hammett	17416	3	L	JCH 218	T R	8:00AM	9:15AM
 Pallet and Container Design	SBIO	4224	L Horvath	17421	3	L	JCH 213	M W	9:05AM	9:55AM	BROOK 102	T	2:15PM	5:05PM
@@ -7315,7 +7297,7 @@ Intro Forest Prod Marketing	SBIO	2614	RJ Bush	17409	3	L	LITRV 1870	M W F	1:25PM	
 Wood House	SBIO	4716	JR Loferski	17423	3	L	JCH 218	T R	9:30AM	10:45AM
 Independent Study	SBIO	2974	Staff	17410	1	I
 Wood Design and Innovation	SBIO	3446	DE Kline	17415	3	L	BROOK 116B	T R	5:00PM	5:50PM	BROOK 116B	T	2:00PM	4:50PM
-Packaging Law and Regulation	SBIO	2114	Staff	19418	3	O
+Packaging Law and Regulation	SBIO	2114	RJ Bush	19418	3	O
 Sust Biomatls & Bioenergy	SBIO	3444	CE Frazier	17414	3	L	JCH 213	T R	11:00AM	12:15PM
 Paper and Paperboard Packaging	SBIO	3124	YT Kim	17412	3	L	BROOK 102	R	1:30PM	3:20PM	JCH 218	T R	12:30PM	1:20PM
 Undergraduate Research	SBIO	4994	Staff	17426	1	R
@@ -7354,9 +7336,10 @@ Final Examination	SOC	5894	Staff	17482	3	L
 Research and Thesis	SOC	5994	Staff	17484	1	L
 LGBTQ Issues	SOC	2284	LL Kahle	17450	3	L	MCB 321	M W	2:30PM	3:45PM
 Asian American Experience	SOC	2514	PL Schmitthenner	19064	3	L	MCB 219	M W	4:00PM	5:15PM
-The Black Woman in the U.S	SOC	2734	P Seniors	18499	3	O
+The Black Woman in the U.S	SOC	2734	ES Akoma	18499	3	O
 Population Trends and Issues	SOC	3504	TD Fuller	17463	3	O
 Independent Study	SOC	2974	Staff	17456	1	I
+Introductory Sociology	SOC	1004	TD Fuller	19852	3	O
 Introductory Sociology	SOC	1004	S Ovink	18466	3	L	HOLD 110	T R	12:30PM	1:45PM
 Introductory Sociology	SOC	1004	H Momplaisir	17443	3	O
 Introductory Sociology	SOC	1004	SD Kachipande	17442	3	O
@@ -7374,8 +7357,7 @@ Advanced Topics in Criminology	SOC	4434	DJ Davis	17472	3	O
 Juvenile Delinquency Justice	SOC	5424	DJ Shoemaker	18484	3	L	MCB 566	F	9:00AM	11:50AM
 Internship	SOC	4754	DA Sedgwick	17473	1	L
 Independent Study	SOC	4974	Staff	17475	1	I
-Drugs and Society	SOC	4414	JE Hawdon	17470	3	L	SURGE 103A	T R	3:30PM	4:45PM
-Population Processes	SOC	5504	TD Fuller	18464	3	L	MCB 658	M	2:00PM	4:50PM
+Drugs and Society	SOC	4414	JE Hawdon	17470	3	L	SURGE 107	T R	3:30PM	4:45PM
 Sociology of Mental Illness	SOC	4714	MD Hughes	18463	3	L	SURGE 104A	M W	5:00PM	6:15PM
 Independent Study	SOC	2974H	Staff	17457	1	I
 Span-Amer Literature & History	SPAN	5344	CD Andrango-Walker	18478	3	O
@@ -7393,7 +7375,7 @@ Field Study	SPAN	4964H	Staff	17528	1	L
 Intermediate Spanish	SPAN	2105	RP Ponton	18468	3	L	WMS 334	M W F	1:25PM	2:15PM
 Modern Penin Culture & Lit	SPAN	3414	JA Folkart	17517	3	L	MAJWM 434	T R	2:00PM	3:15PM
 Modern Penin Culture & Lit	SPAN	3414	JA Folkart	17516	3	L	MAJWM 434	T R	12:30PM	1:45PM
-Accelerated Elementary Spanish	SPAN	1114	RP Ponton	19730	0	L	BUR 116	M W F	11:05AM	12:05PM
+Accelerated Elementary Spanish	SPAN	1114	RP Ponton	19730	4	L	BUR 116	M W F	11:05AM	12:05PM
 Accelerated Elementary Spanish	SPAN	1114	RP Ponton	17495	4	L	PAM 2001	M W F	10:10AM	11:00AM
 Spanish Business Professions	SPAN	3534	MD Cana Jimenez	18471	3	L	GOODW 244	M W	4:00PM	5:15PM
 Independent Study	SPAN	5974	Staff	17541	1	I
@@ -7407,17 +7389,17 @@ Research and Thesis	SPAN	5994	Staff	17542	1	L
 Mod Spanish Caribbean Cult Lit	SPAN	3474	EL Austin	17520	3	L	HUTCH 310	T R	11:00AM	12:15PM
 Mod Spanish Caribbean Cult Lit	SPAN	3474	EL Austin	17519	3	L	MCB 216	T R	9:30AM	10:45AM
 Elementary Spanish	SPAN	1106	ED Dorton	17494	3	L	MAJWM 434	M W F	10:10AM	11:00AM
-Elementary Spanish	SPAN	1106	CL Griffin	17493	3	L	PAM 1002	M W F	11:15AM	12:05PM
+Elementary Spanish	SPAN	1106	RA Avalos-Reyes	17493	3	L	PAM 1002	M W F	11:15AM	12:05PM
 Elementary Spanish	SPAN	1106	G Vargas	17492	3	L	MCB 322	M W F	12:20PM	1:10PM
 Elementary Spanish	SPAN	1106	G Vargas	17491	3	L	MCB 216	M W F	1:25PM	2:15PM
 Elementary Spanish	SPAN	1106	ED Dorton	17490	3	L	MAJWM 434	M W F	9:05AM	9:55AM
-Elementary Spanish	SPAN	1105	RA Avalos-Reyes	18460	3	L	MAJWM 434	M W F	11:15AM	12:05PM
+Elementary Spanish	SPAN	1105	CL Griffin	18460	3	L	MAJWM 434	M W F	11:15AM	12:05PM
 Independent Study	SPAN	2974	Staff	17502	1	L
 Gram/Composition/Conv	SPAN	3106	NP Lopez-Romero	18470	3	L	PAM 1002	M W F	10:10AM	11:00AM
 Gram/Composition/Conv	SPAN	3106	AR Dalton	17510	3	L	RAND 318	M W F	12:20PM	1:10PM
 Gram/Composition/Conv	SPAN	3106	AR Dalton	17509	3	L	PAM 1010	M W F	1:25PM	2:15PM
-Gram/Composition/Conv	SPAN	3106	AB Sobrado	17508	3	L	HUTCH 207	M W F	9:05AM	9:55AM
-Gram/Composition/Conv	SPAN	3106	AB Sobrado	17506	3	L	WMS 209	M W F	8:00AM	8:50AM
+Gram/Composition/Conv	SPAN	3106	AB Sobrado	17508	3	L	BUR 116	M W F	9:05AM	9:55AM
+Gram/Composition/Conv	SPAN	3106	AB Sobrado	17506	3	L	BUR 116	M W F	8:00AM	8:50AM
 Intro Hispanic Lit	SPAN	3304	V Venkatesh	17515	3	L	WHIT 277	M W F	1:25PM	2:15PM
 Intro Hispanic Lit	SPAN	3304	S Sierra	17514	3	L	HUTCH 207	M W F	10:10AM	11:00AM
 Intro Hispanic Lit	SPAN	3304	S Sierra	17513	3	L	HUTCH 207	M W F	11:15AM	12:05PM
@@ -7437,9 +7419,10 @@ Independent Study	SPAN	2974H	Staff	17503	1	I
 SS: Community Systems Thinking	SPIA	2984	GR Kirk	19628	3	L	AA 109	M W	4:00PM	5:15PM
 Nonprofit Org & Mgmt	SPIA	5574	MO Stephenson	18164	3	L	AA 114	W	4:30PM	6:50PM
 Nonprofit Law and Ethics	SPIA	5564	M Berinzon	18165	3	O
-Knowledge Theory & Planning	SPIA	6104	JO Browder	19401	3	L	AA 200	W	4:00PM	6:30PM
+Knowledge Theory & Planning	SPIA	6104	JO Browder	19401	3	L	AA 107	W	1:00PM	3:30PM
 SS: Ethics in Autonomous Syst	SPIA	5984	SR Jordan	19525	3	L	TORG 1020	T R	3:30PM	4:45PM
 Sem Env Plan	SPIA	6006	J Peters	19419	3	L	TBA	T	7:00PM	9:30PM
+Field Work/Practicum	SPIA	4964	Staff	19839	1	L
 NGOS in Internat Development	SPIA	5514	MO Stephenson	18163	3	L	AA 114	M	4:30PM	6:50PM
 Adv Topics Bayesian Statistics	STAT	6474	H Zhu	17615	3	L	SMYTH 232	T R	11:00AM	12:15PM
 Exp Design: Concepts & Appl	STAT	5204G	Staff	17599	3	L	SEITZ 313	M W F	9:05AM	9:55AM
@@ -7459,6 +7442,7 @@ Stat Methods for Engr	STAT	4604	HC Tavera	17580	3	L	SAUND 409	M W F	1:25PM	2:15P
 Statistics in Research	STAT	5616	AR Driscoll	17607	3	L	SURGE 118C	M W	4:00PM	5:15PM
 Undergraduate Research	STAT	4994H	Staff	17594	1	R
 Undergraduate Research	STAT	4994H	Staff	17593	1	R
+Adv Appl Multivariate Analysis	STAT	5504G	Staff	19823	3	L	SEITZ 207	T R	9:30AM	10:45AM
 Topics in Biostatistics	STAT	5594	Staff	18810	3	L	TORG 1010	M W F	11:15AM	12:05PM
 Communication in Stat Collab	STAT	4024	Staff	17569	3	L	SEITZ 300	M W	4:00PM	5:15PM
 Statistical Inference	STAT	5114	SC Leman	17596	3	L	HUTCH 204	M W F	9:05AM	9:55AM
@@ -7476,8 +7460,8 @@ Applied Time Series	STAT	4534	Staff	17579	3	L	HUTCH 209	M W	2:30PM	3:45PM
 Independent Study	STAT	4974	Staff	17589	1	I
 Advanced Topics in Regression	STAT	6514	I Kim	17616	3	L	HUTCH 209	T R	9:30AM	10:45AM
 Independent Study	STAT	2974H	Staff	17549	1	I
-Adv Topics Math Stat	STAT	6494	Staff	18813	3	L	HUTCH 204	T R	2:00PM	3:15PM
-Adv Method Regression	STAT	5214G	Staff	19245	3	L	LITRV 1760	T R	2:00PM	3:15PM
+Adv Topics Math Stat	STAT	6494	WH Woodall	18813	3	L	HUTCH 204	T R	2:00PM	3:15PM
+Adv Method Regression	STAT	5214G	S Ranganathan	19245	3	L	LITRV 1760	T R	2:00PM	3:15PM
 Adv Method Regression	STAT	5214G	AR Driscoll	17601	3	L	SEITZ 313	T R	2:00PM	3:15PM
 Adv Method Regression	STAT	5214G	AR Driscoll	17600	3	L	SEITZ 313	T R	9:30AM	10:45AM
 Response Surface II	STAT	6574	Staff	18815	3	L	HUTCH 310	M W	4:00PM	5:15PM
@@ -7490,11 +7474,11 @@ Biological Statistics	STAT	3615	Staff	17558	3	L	SEITZ 300	M W	2:30PM	3:45PM
 Biological Statistics	STAT	3615	Staff	17557	3	L	SEITZ 300	T R	9:30AM	10:45AM
 Biological Statistics	STAT	3615	Staff	17556	3	L	SEITZ 313	M W	2:30PM	3:45PM
 Biological Statistics	STAT	3615	Staff	17555	3	L	SEITZ 313	M W	5:30PM	6:45PM
-Statistics for Engr	STAT	4705	Staff	17583	3	L	WMS 220	T R	9:30AM	10:45AM
+Statistics for Engr	STAT	4705	GR Terrell	17583	3	L	WMS 220	T R	9:30AM	10:45AM
 Statistics for Engr	STAT	4705	Staff	17582	3	L	SEITZ 300	M W F	1:25PM	2:15PM
 Statistics for Engr	STAT	4706	HC Tavera	17584	3	L	SEITZ 300	T R	11:00AM	12:15PM
 Field Study	STAT	2964	Staff	17548	1	L
-Introductory Statistics	STAT	2004	Staff	18795	0	L	GOODW 190	M W F	10:10AM	11:00AM	DER 3081	R	4:00PM	4:50PM
+Introductory Statistics	STAT	2004	Staff	18795	3	L	GOODW 190	M W F	10:10AM	11:00AM	DER 3081	R	4:00PM	4:50PM
 Introductory Statistics	STAT	2004	Staff	17547	3	L	GOODW 190	M W F	10:10AM	11:00AM	DER 3081	M	4:00PM	4:50PM
 Introductory Statistics	STAT	2004	Staff	17546	3	L	GOODW 190	M W F	10:10AM	11:00AM	SAUND 409	W	4:00PM	4:50PM
 Introductory Statistics	STAT	2004	Staff	17545	3	L	GOODW 190	M W F	10:10AM	11:00AM	SEITZ 313	T	4:00PM	4:50PM
@@ -7508,6 +7492,7 @@ Intro Data Analytics & Visual	STAT	3654	S Sengupta	17562	3	L	DER 3081	T R	8:00AM
 Theoretical Statistics	STAT	4105	BM Fraticelli	17572	3	L	SURGE 107	M W F	1:25PM	2:15PM
 Theoretical Statistics	STAT	4105	BM Fraticelli	17571	3	L	SURGE 107	M W F	12:20PM	1:10PM
 Theoretical Statistics	STAT	4106	WH Woodall	17573	3	L	LITRV 1760	T R	11:00AM	12:15PM
+Applied Multivariate Analysis	STAT	4504	Staff	19822	3	L	SEITZ 207	T R	9:30AM	10:45AM
 Biological Statistics	STAT	3616	C Lucero	18800	3	L	WLH 320	M W F	11:15AM	12:05PM
 Biological Statistics	STAT	3616	C Lucero	18799	3	L	GYM 124	M W F	1:25PM	2:15PM
 Biological Statistics	STAT	3616	Staff	17561	3	L	GYM 124	T R	9:30AM	10:45AM
@@ -7520,12 +7505,13 @@ Stat for Eng Apps	STAT	3704	Staff	17566	2	L	SAUND 409	T R	2:00PM	2:50PM
 Stat for Eng Apps	STAT	3704	Staff	17565	2	L	SMYTH 146	T R	2:00PM	2:50PM
 Stat for Eng Apps	STAT	3704	Staff	17564	2	L	SEITZ 300	M W	9:05AM	9:55AM
 Stat for Eng Apps	STAT	3704	Staff	17563	2	L	SEITZ 300	M W	11:15AM	12:05PM
-Probability and Distributions	STAT	3104	GR Terrell	17552	3	L	SEITZ 313	T R	12:30PM	1:45PM
+Probability and Distributions	STAT	3104	GR Terrell	19831	3	L	HUTCH 409	T R	12:30PM	1:45PM
+Probability and Distributions	STAT	3104	Staff	17552	3	L	GYM 124	T R	12:30PM	1:45PM
 Undergraduate Research	STAT	4994	LL House	17592	1	R
 Exp Design & Anal I	STAT	5204	X Deng	17598	3	L	SEITZ 207	T R	2:00PM	3:15PM
 Data Analytics	STAT	5525	C Reddy	19451	3	L
 Data Analytics	STAT	5526	B Huang	17606	3	L	TORG 1000	W	4:00PM	6:45PM
-Prob & Stat for EE	STAT	4714	Staff	17586	3	L	SURGE 117A	M W F	10:10AM	11:00AM
+Prob & Stat for EE	STAT	4714	GR Terrell	17586	3	L	SURGE 117A	M W F	10:10AM	11:00AM
 Prob & Stat for EE	STAT	4714	Staff	17585	3	L	SMYTH 146	M W F	12:20PM	1:10PM
 TS:Colloquia	STAT	5924	Staff	17611	1	L	SEITZ 300	T R	3:30PM	4:45PM
 Biometry	STAT	5606	Staff	18793	3	L	SEITZ 300	T R	8:00AM	9:15AM
@@ -7536,16 +7522,16 @@ Hum, Techn, & Life Sciences	STS	2154	R Hester	19300	3	L	DER 3092	M W	4:00PM	5:15
 Engineering Cultures	STS	2054	GL Downey	19223	3	L	SURGE 118C	M W	10:10AM	11:00AM	LANE 132	F	11:15AM	12:05PM
 Engineering Cultures	STS	2054	GL Downey	19221	3	L	SURGE 118C	M W	10:10AM	11:00AM	LANE 132	F	10:10AM	11:00AM
 Engineering Cultures	STS	2054	GL Downey	19219	3	L	SURGE 118C	M W	10:10AM	11:00AM	LANE 132	F	9:05AM	9:55AM
-Engineering Cultures	STS	2054	GL Downey	18452	0	L	LANE 134	F	11:15AM	12:05PM	SURGE 118C	M W	10:10AM	11:00AM
-Engineering Cultures	STS	2054	GL Downey	18450	0	L	LANE 134	F	10:10AM	11:00AM	SURGE 118C	M W	10:10AM	11:00AM
-Engineering Cultures	STS	2054	GL Downey	18440	0	L	LANE 134	F	9:05AM	9:55AM	SURGE 118C	M W	10:10AM	11:00AM
+Engineering Cultures	STS	2054	GL Downey	18452	3	L	LANE 134	F	11:15AM	12:05PM	SURGE 118C	M W	10:10AM	11:00AM
+Engineering Cultures	STS	2054	GL Downey	18450	3	L	LANE 134	F	10:10AM	11:00AM	SURGE 118C	M W	10:10AM	11:00AM
+Engineering Cultures	STS	2054	GL Downey	18440	3	L	LANE 134	F	9:05AM	9:55AM	SURGE 118C	M W	10:10AM	11:00AM
 Engineering Cultures	STS	2054	S Lotfi	17626	3	O
 Engineering Cultures	STS	2054	SM Halimi	17625	3	O
 Engineering Cultures	STS	2054	S Chung	17624	3	O
 History of Technology	STS	3716	RF Hirsh	19302	3	L	MCB 216	M W	2:30PM	3:45PM
 Independent Study	STS	4974H	Staff	17640	1	I
 Medical Dilemmas & Human Exper	STS	3314	PR Olson	17632	3	L	WMS 220	M W	2:30PM	3:45PM
-Medical Dilemmas & Human Exper	STS	3314	AS Heflin	17631	3	L	RAND 208	T R	12:30PM	1:45PM
+Medical Dilemmas & Human Exper	STS	3314	CM Olson	17631	3	L	RAND 208	T R	12:30PM	1:45PM
 Religion and Science	STS	2464	MR Goodrum	17627	3	L	RAND 208	M W F	11:15AM	12:05PM
 Independent Study	STS	5974	Staff	17655	1	I
 Independent Study	STS	5974	Staff	17654	1	I
@@ -7559,7 +7545,7 @@ Intro to S&T Policy	STS	5614	SE Halfon	17651	3	L	LANE 134	T	2:00PM	4:45PM
 Undergraduate Research	STS	4994H	Staff	17642	1	R
 Research and Dissertation	STS	7994	Staff	17660	1	R
 Research and Thesis	STS	5994	Staff	17657	1	R
-Adv Top Sci Tech Pol	STS	6664	BL Allen	18288	3	L	BUR 123A	T	7:00PM	9:45PM
+Adv Top Sci Tech Pol	STS	6664	BL Allen	18288	3	L
 History of Science	STS	3706	BJ Reeves	17634	3	L	MAJWM 532	T R	12:30PM	1:45PM
 Independent Study	STS	2974	Staff	17628	1	I
 Sci & Techn in Modern Society	STS	3105	MR Goodrum	17630	3	L	DURHM 261	M W	4:00PM	5:15PM
@@ -7567,6 +7553,7 @@ Undergraduate Research	STS	4994	Staff	17641	1	R
 Topics in STS: Science Wars	STS	5424	JH Collier	17648	3	L	LANE 134	W	1:00PM	3:45PM
 Internship	STS	4754	Staff	17637	1	L
 Independent Study	STS	4974	Staff	17639	1	I
+Hist Sci & Tech	STS	5205	JE Abbate	19866	3	L
 Hist Sci & Tech	STS	5205	MR Goodrum	17645	3	L	LANE 134	R	2:00PM	4:45PM
 Hist Sci & Tech	STS	5206	RF Hirsh	17646	3	L	SURGE 101A	R	9:00AM	11:45AM
 Intro Science, Tech, Society	STS	1504	SJ Fried	17622	3	L	MAJWM 434	M W F	12:20PM	1:10PM
@@ -7592,17 +7579,18 @@ TS:Ind Design Studio	TA	3114	RW Ward	17698	0	L
 Introduction to Acting	TA	2024	RH Leonard	17666	3	L	T101 101	M W	9:30AM	10:45AM
 Introduction to Acting	TA	2024	JA Goff	17665	3	L	COLS2 214	T R	3:30PM	4:45PM
 Introduction to Acting	TA	2024	N Staley	17664	3	L	T101 201	T R	9:30AM	10:45AM
+Theatre Production Lab	TA	3014	LD Vo	19833	1	B
 Theatre Production Lab	TA	3014	CS Russo	17695	1	B
 Theatre Production Lab	TA	3014	JA Stein	17694	1	B	HEND 107	T R	2:00PM	3:30PM
 Theatre Production Lab	TA	3014	JA Stein	17693	1	B	HEND 107	W F	3:30PM	5:00PM
 Theatre Production Lab	TA	3014	JA Stein	17692	1	B	HEND 107	W F	12:30PM	2:00PM
 Theatre Production Lab	TA	3014	JA Stein	17691	1	B	HEND 107	T R	3:30PM	5:00PM
-Theatre Production Lab	TA	3014	JA Stein	17690	1	B	HEND 107	T R	11:00AM	12:30PM
+Theatre Production Lab	TA	3014	JA Stein	17690	1	B	HEND 107	T R	12:30PM	2:00PM
 Theatre Production Lab	TA	3014	CS Russo	17689	1	B	SQUIR 132	W F	4:00PM	5:30PM
 Theatre Production Lab	TA	3014	CS Russo	17688	1	B	SQUIR 132	M W	4:00PM	5:30PM
 Theatre Production Lab	TA	3014	CS Russo	17687	1	B	SQUIR 132	M W	2:30PM	4:00PM
 Stage Management Lab & General	TA	3014	KM Murphy	17686	1	B
-Theatre Production Lab	TA	3014	Staff	17685	1	B	HEND 140	T R	3:30PM	4:45PM
+Theatre Production Lab	TA	3014	PS Lavender	17685	1	B	HEND 140	T R	3:30PM	4:45PM
 Theatre Production Lab	TA	3014	CS Russo	17684	1	B	SQUIR 132	M W	1:00PM	2:30PM
 Theatre Production Lab	TA	3014	JA Stein	17683	1	B	HEND 107	W F	2:00PM	3:30PM
 Theatre Production Lab	TA	3014	CS Russo	17682	1	B	SQUIR 132	W F	1:00PM	2:30PM
@@ -7710,8 +7698,8 @@ Brain and Cognitive Science	TBMH	5014	MA Fox	17756	8	L	RCTR1 232	M T W R	9:00AM	
 Seminar in TBMH	TBMH	5204	A Van Wart	17763	1	L
 Prof Development and Ethics	TBMH	5106	A Van Wart	17762	2	L	RCTR1 232	W	1:00PM	3:00PM
 Translational Research Exper	TBMH	5304	A Van Wart	17764	3	B
-Renewable Energy Syst	UAP	4394	J Randolph	17799	3	L	AA 109	T	5:00PM	7:30PM
-Adv Research Methods	UAP	5484	S Misra	19376	3	L
+Renewable Energy Syst	UAP	4394	J Randolph	17799	3	L	AA 7	T	5:00PM	7:30PM
+Adv Research Methods	UAP	5484	S Misra	19376	3	L	TBA	W	4:15PM	6:45PM
 NGOS in Development	UAP	5364	MO Stephenson	17818	3	L
 Planning Studio	UAP	5124	DL Zahm	17815	3	L	PAT 305	M	1:25PM	4:45PM
 Power and Policy in the US	UAP	5004	C Matheis	18925	3	L	AA 107	T	5:30PM	8:30PM
@@ -7802,14 +7790,15 @@ TS:The Art of Interviews	UH	3004	GW Justice	17902	3	L	HEND 302	T	3:30PM	5:15PM
 TS:Musical Comedy, Then & Now	UH	3004	MB Saffle	17901	3	L	MCB 201	T	7:00PM	9:00PM
 TS:The Metaphysical Room	UH	3004	KA Black	17900	3	L	HILL 132	T	5:30PM	8:00PM
 TS:Cultural Impc't of Taxation	UH	3004	DA Salbador	17899	3	L	HILL 132	W	9:00AM	11:00AM
+Undergraduate Research	UH	4994	PV Heilker	19808	3	R
 Undergraduate Research	UH	4994	PV Heilker	17915	1	R
 TS:Read Seminar Peer Educators	UH	4104	AZ Smith	19675	2	L	LITRV 1770	W	4:00PM	5:15PM
 Independent Study	UH	4974	PV Heilker	17914	1	I
-College Success Strategies	UNIV	1004	S Mondesir	17920	3	L	FEM 110	T R	9:30AM	10:45AM
-College Success Strategies	UNIV	1004	DF McGuire	17919	3	L	FEM 111	T R	2:00PM	3:15PM
+College Success Strategies	UNIV	1004	TM Amal	17920	3	L	FEM 110	T R	9:30AM	10:45AM
+College Success Strategies	UNIV	1004	S Mondesir	17919	3	L	FEM 111	T R	2:00PM	3:15PM
 College Success Strategies	UNIV	1004	RT Jones	17918	3	L	STAD 309	M W F	8:00AM	8:50AM
-College Success Strategies	UNIV	1004	TM Amal	17917	3	L	RAND 129	M W	11:15AM	12:30PM
-College Success Strategies	UNIV	1004	TM Amal	17916	3	L	FEM 110	T R	11:00AM	12:15PM
+College Success Strategies	UNIV	1004	DF McGuire	17917	3	L	RAND 129	M W	11:15AM	12:30PM
+College Success Strategies	UNIV	1004	DF McGuire	17916	3	L	FEM 110	T R	11:00AM	12:15PM
 SS:iScholars Onboarding Course	UNIV	2984	JC Sible	19802	1	L
 Intro Residential Communites	UNIV	2394	KM Wogenrich	17921	3	L	PAYNE 1003	T	6:30PM	8:30PM
 Veterinary Physiology II	VM	8134	BJ Smith	17929	4	L
@@ -7831,6 +7820,7 @@ Morph Path Elec Clksp	VM	9744	KD Pelzer	18013	4	L
 Clinical Pathology	VM	8414	KM Boes	17935	3	L
 Anesthesiology Clerkship	VM	9624	PN Henao Guerrero	17997	4	L
 Anesthesiology Clerkship	VM	9624	PN Henao Guerrero	17996	4	L
+Equine Medical Center Clkshp	VM	9544	Staff	19844	4	L
 Equine Medical Center Clkshp	VM	9544	MO Furr	17985	4	L
 Avian Med Elec Clkshp	VM	9424	JM Pelzer	17976	4	L
 Avian Med Elec Clkshp	VM	9424	JM Pelzer	17975	4	L
@@ -7854,7 +7844,7 @@ Clin Serv Elec Clkshp	VM	9554	JM Pelzer	17988	4	L
 Clin Serv Elec Clkshp	VM	9554	JM Pelzer	17987	4	L
 Advanced Small Animal Surgery	VM	9034	SL Barry	17959	2	L
 Center Govt/Corporate Clkshp	VM	9794	JM Pelzer	18026	4	L
-Veterinary Toxicology	VM	8424	S James-Yi	17936	2	L
+Veterinary Toxicology	VM	8424	MF Ehrich	17936	2	L
 Radiology Clerkship	VM	9634	MM Larson	17998	4	L
 Environmental Health	VM	7014	JM Gohlke	17922	3	L	TBA	M W	10:00AM	11:30AM
 Veterinary Pathology I	VM	8304	TE Cecere	17933	3	L
@@ -7881,7 +7871,7 @@ SS: Dermatology Clk	VM	8984	JM Pelzer	19469	4	L
 SS: Cardiology Clk	VM	8984	JM Pelzer	19467	4	L
 SS: Equine Field Services Clk	VM	8984	RA Funk	19466	4	L
 SS: CVM Externship Clk	VM	8984	JM Pelzer	19465	4	L
-SS: Beef Cow-Calf Institute	VM	8984	JF Currin	19464	2	L
+SS: Beef Cow-Calf Institute	VM	8984	JF Currin	19464	4	L
 SS: Oncology Clk	VM	8984	SL Klahn	19463	4	L
 SS: Veterinary Oncology	VM	8984	SL Klahn	19462	1	L
 Clin Path Elec Clkshp	VM	9704	KL Zimmerman	18007	4	L
@@ -7943,6 +7933,7 @@ Prod Man Med Clkshp	VM	9534	SG Clark-Deener	17983	4	L
 Adv Vet Public Health	VM	9094	KD Pelzer	17963	1	L
 Vet Musculoskeletal	VM	8284	RS Gilley	17932	3	L
 Veterinary Epidemiology	VM	8084	BA Burgess	17924	2	L
+Food An Priv Pract Clerkship	VM	9804	Staff	19845	4	L
 Food An Priv Pract Clerkship	VM	9804	JM Pelzer	18029	4	L
 Food An Priv Pract Clerkship	VM	9804	JM Pelzer	18028	4	L
 Food An Priv Pract Clerkship	VM	9804	JM Pelzer	18027	4	L
@@ -7954,7 +7945,7 @@ Sexual Health and Human Rights	WGS	5244	C Kaestle	19639	3	L	WAL 244	R	5:30PM	8:2
 TS: Rheotorics in Scl Justice	WGS	6004	KM Powell	18489	3	L	SHANK 352	W	2:30PM	5:20PM
 Feminist Activism	WGS	2254	S Samanta	18047	3	L	MCB 232	T R	12:30PM	1:45PM
 LGBTQ Issues	WGS	2284	LL Kahle	18048	3	L	MCB 321	M W	2:30PM	3:45PM
-The Black Woman in the U.S.	WGS	2734	P Seniors	18474	3	O
+The Black Woman in the U.S.	WGS	2734	ES Akoma	18474	3	O
 Independent Study	WGS	2974	Staff	18050	1	I
 Women's Studies Seminar	WGS	4224	C Labuski	18052	3	L	MCB 566	M W	5:30PM	6:45PM
 Undergraduate Research	WGS	4994	Staff	18056	1	L

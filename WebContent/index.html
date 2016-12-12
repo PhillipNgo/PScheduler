@@ -24,6 +24,7 @@
   ga('create', 'UA-86032292-1', 'auto');
   ga('send', 'pageview');
 </script>
+</head>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
@@ -31,7 +32,6 @@
     enable_page_level_ads: true
   });
 </script>
-</head>
 <body>
 	<div class="header" style='padding:10px 0 0 0;'>
 		<div style='padding-bottom:10px' class="container-fluid">
@@ -57,7 +57,7 @@
 				<div class="panel-body">
 					<div style="padding-bottom: 10px">
 						<h4>Term</h4>
-						<select style="width:50%" name="term" id="term" class="selectpicker">
+						<select name="term" id="term" class="selectpicker form-control">
 							<option value="201701">Spring 2017</option>
 						</select>
 					</div>
@@ -145,7 +145,7 @@
 					</div>
 					<div style="padding-bottom:10px">
 						<h4>Free Days</h4>
-						<select name="free" class="selectpicker" multiple>
+						<select name="free" class="selectpicker form-control" multiple>
 							<option value="M">Monday</option>
       						<option value="T">Tuesday</option>
 				      		<option value="W">Wednesday</option>
@@ -162,7 +162,7 @@
 			</div>
       		
 			<div style="text-align: center;" class="col-sm-9">
-
+				<div>
 				<div class="input-group">
 					<div class="input-group-btn">
 						<select id="searchtype" class="selectpicker" data-width="auto">
@@ -178,7 +178,7 @@
 				<ul id="search" class="list-group live-search-list"
 					style="position: fixed; text-align: left;">
 				</ul>
-
+				</div>
 				<h3 style="color:darkorange">Current Schedule</h3>
 				<table id="schedule" class="table border" style="background-color:white;">
 					<thead class="thead-inverse">

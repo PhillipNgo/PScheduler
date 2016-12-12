@@ -182,9 +182,26 @@ public class VTParser {
         this.resetFields();
         HashMap<String, HashMap<String, LinkedList<VTCourse>>> list = new HashMap<>();
         for (int i = 1; i < subjects.length; i++) {
-            //System.out.println(i + " " + subjects[i]); //debugging
+            System.out.println(i + " " + subjects[i]); //debugging
             vtForm.fillSelectField("subj_code", subjects[i]);
-            list.put(subjects[i], parseCourseListing());
+            Exception exc = new Exception();
+            int failCount = 0;
+            while (exc != null) {
+                try {
+                    list.put(subjects[i], parseCourseListing());
+                    exc = null;
+                    failCount = 0;
+                }
+                catch (com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException e) {
+                    System.out.println("connection failed, trying again");
+                    exc = e;
+                    failCount++;
+                    if (failCount == 10) {
+                        System.out.println("Connection Failed 10 Times, exiting");
+                        System.exit(0);
+                    }
+                }
+            }
         }
         return list;
     }

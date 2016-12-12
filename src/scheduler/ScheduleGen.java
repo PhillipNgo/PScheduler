@@ -128,7 +128,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("<div id='schedule-panel' class=' collapse in panel panel-default outline'>");
         html.append("<div style='background-color: white;' class='panel-heading center'>");
         html.append("<div class='row'>");
-        html.append("<div class='col-sm-4'>");
+        html.append("<div class='col-sm-5'>");
         html.append("<div class='input-group'>");
         html.append("<div class='row'>");
         html.append("<div style='padding:0 0 0 5px;' class='col-sm-4'>");
@@ -147,7 +147,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
-        html.append("<div class='col-sm-4'>");
+        html.append("<div class='col-sm-2'>");
         
         html.append("<h4 id='title'><b>");
         if (schedules == null || schedules.size() == 0) {
@@ -159,7 +159,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</b></h4>");
         
         html.append("</div>");
-        html.append("<div style='text-align:right' role='group' class='btn-group col-sm-4' aria-label='...'>");
+        html.append("<div style='text-align:right' role='group' class='btn-group col-sm-5' aria-label='...'>");
         
         html.append("<form action='modify' style='padding-right:12px'>");
         html.append("<button type='button' class='btn btn-default' onclick='printerFriendly()'>Print Page</button>");
@@ -709,10 +709,10 @@ public class ScheduleGen extends HttpServlet {
         int i = 0;
         for (Schedule schedule : schedules) {
             if (i != 0) {
-                html.append("<table id='" + (i++) + "' style='display: none;' class='text table'>");
+                html.append("<table id='" + (i++) + "' style='display: none;' class='text table-sm'>");
             }
             else {
-                html.append("<table id='" + (i++) + "' class='text table'>");
+                html.append("<table id='" + (i++) + "' class='text table-sm'>");
             }
             html.append("<tr style='font-weight:bold'><td class='text'>CRN</td> <td  class='text'>Course</td> <td  class='text'>Title</td>"
                     + "<td class='text'>Type</td><td  class='text'>Credits (" + schedules.get(0).totalCredits() + ")</td><td  class='text'>Instructor</td>"

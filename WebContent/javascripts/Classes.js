@@ -8,7 +8,7 @@ function addClass(button) {
 	var profs = text[2].split(", ");
 	var name = text[0].split(" - ");
 	var html =  "<tr><td>" +
-	"<select style='width:70%;margin-left:auto;margin-right:auto' class='form-control' onchange='crnCheck($(this))'>";
+	"<select style='margin-left:auto;margin-right:auto' class='form-control center' onchange='crnCheck($(this))'>";
 	if (crns.length > 1) {
 		html += "<option value='A'>Any</option>";
 	}
@@ -21,7 +21,7 @@ function addClass(button) {
 	"'>" + name[0].substring(4, name[0].length) + "</td>" +
 	"<td style='vertical-align:middle'>" + name[1] + "</td>" +
 	"<td>" +
-	"<select style='width:75%;margin-left:auto;margin-right:auto' class='form-control'>";
+	"<select style='margin-left:auto;margin-right:auto' class='form-control center'>";
 	if (types.length > 1) {
 		html += "<option value='A'>Any</option>";
 	}
@@ -31,7 +31,7 @@ function addClass(button) {
 	html += 	"</select>" +
 	"</td>" + 
 	"<td>" + 
-	"<select style='width:75%;margin-left:auto;margin-right:auto' class='form-control'>";
+	"<select style='margin-left:auto;margin-right:auto' class='form-control center'>";
 	if (profs.length > 1) {
 		html += "<option value='A'>Any</option>";
 	}
