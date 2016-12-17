@@ -709,10 +709,10 @@ public class ScheduleGen extends HttpServlet {
         int i = 0;
         for (Schedule schedule : schedules) {
             if (i != 0) {
-                html.append("<table id='" + (i++) + "' style='display: none;' class='text table-sm'>");
+                html.append("<table id='" + (i++) + "' style='display: none;' class='text table'>");
             }
             else {
-                html.append("<table id='" + (i++) + "' class='text table-sm'>");
+                html.append("<table id='" + (i++) + "' class='text'>");
             }
             html.append("<tr style='font-weight:bold'><td class='text'>CRN</td> <td  class='text'>Course</td> <td  class='text'>Title</td>"
                     + "<td class='text'>Type</td><td  class='text'>Credits (" + schedules.get(0).totalCredits() + ")</td><td  class='text'>Instructor</td>"

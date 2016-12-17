@@ -256,7 +256,7 @@ public class VTParser {
                                 type = "H";
                             }
                             else {
-                                throw new Exception("A class with type " + type + " has an additional time that is arr");
+                                //throw new Exception("A class with type " + type + " has an additional time that is arr");
                             }
                         }
                         i += 4;
