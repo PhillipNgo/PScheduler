@@ -75,7 +75,11 @@ function setParameters() {
 					     url: 'LiveSearch',
 					     data: {search:search, type:"course"},
 					     success: function(response) {
-					    	 courses[courses.length] = $($($($.parseHTML(response)).get(1)));
+					    	 var temp = $($($($.parseHTML(response)).get(1)));
+					    	 if (temp.children().get(0).name.endsWith('H') && index == 0) {
+					    		 temp = $($($($.parseHTML(response)).get(2)));
+					    	 }
+					    	 courses[courses.length] = temp;
 					     }
 					});
 					types[types.length] = split[0].substring(0, 1);
@@ -88,8 +92,14 @@ function setParameters() {
 				}
 				for (var j = 0; j < courses.length; j++) {
 					addClass($(courses[j]).children('button'));
-					$($($('#schedule tbody tr:last').children('td').get(3)).children()[0]).val(types[j]);
-					$($($('#schedule tbody tr:last').children('td').get(4)).children()[0]).val(profs[j]);
+					var cTypeSelect = $($($('#schedule tbody tr:last').children('td').get(3)).children()[0]);
+					if (cTypeSelect.filter(function(){ return $(this).val() == types[j];}).length) {
+						cTypeSelect.val(types[j]);
+					}
+					var pSelect = $($($('#schedule tbody tr:last').children('td').get(4)).children()[0])
+					if (pSelect.filter(function(){ return $(this).val() == profs[j];}).length) {
+						pSelect.val(profs[j]);
+					}
 				}
 				
 			} catch(err) {
