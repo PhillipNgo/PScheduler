@@ -193,7 +193,15 @@ public class ScheduleGen extends HttpServlet {
                 html.append("Sorry, something went wrong when trying to generate your schedules.");
             }
             else if (schedules.size() == 0) {
-                html.append("No Schedules Matched Your Parameters. See below or 'Search Data' for more information.<br>");
+                html.append("No Schedules Matched Your Parameters. See below or 'Search Data' for more information.<br><br>");
+                
+                html.append("<div class='row'>");
+                html.append("<div class='col-sm-4'>");
+                html.append("<p><b>Your Restrictions</b><p>");
+                html.append(restrictions);
+                html.append("</div>");
+                html.append("</div><br>");
+                
                 html.append(fullConflicts.toString());
             }
             else if (schedules.size() < 1000) {
@@ -498,6 +506,25 @@ public class ScheduleGen extends HttpServlet {
                 name.add(set);
             }
         }
+        
+        for (int i = 0; i < name.size() - 1; i++) {
+            for (int j = i + 1; j < name.size(); j++) {
+                if (conflicts.get(i).equals(conflicts.get(j))) {
+                    if (name.get(i).containsAll(name.get(j))) {
+                        name.remove(i);
+                        conflicts.remove(i);
+                        i--;
+                        break;
+                    }
+                    else if (name.get(j).containsAll(name.get(i))) {
+                        name.remove(j);
+                        conflicts.remove(j);
+                        j--;
+                    }
+                }
+            }
+        }
+        
         for (int i = 0; i < 5; i++) {
             double max = Collections.max(conflicts);
             int ind = conflicts.indexOf(max);
@@ -712,7 +739,7 @@ public class ScheduleGen extends HttpServlet {
                 html.append("<table id='" + (i++) + "' style='display: none;' class='text table'>");
             }
             else {
-                html.append("<table id='" + (i++) + "' class='text'>");
+                html.append("<table id='" + (i++) + "' class='text table'>");
             }
             html.append("<tr style='font-weight:bold'><td class='text'>CRN</td> <td  class='text'>Course</td> <td  class='text'>Title</td>"
                     + "<td class='text'>Type</td><td  class='text'>Credits (" + schedules.get(0).totalCredits() + ")</td><td  class='text'>Instructor</td>"

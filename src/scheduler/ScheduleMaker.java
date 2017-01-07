@@ -1,7 +1,6 @@
 package scheduler;
 
 import java.io.FileNotFoundException;
-import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -240,11 +239,14 @@ public class ScheduleMaker {
         int endTime = Time.timeNumber(end);
         if (freeDays != null) {
             for (String d : freeDays) {
-                if (Arrays.binarySearch(course.getDays(), d) >= 0) {
-                    return false;
+                for (String d2 : course.getDays()) {
+                    if (d.equals(d2)) {
+                        return false;
+                    }
                 }
             }
         }
+
         if (time.getStartNum() < startTime || time.getEndNum() > endTime) {
             return false;
         }
@@ -257,8 +259,10 @@ public class ScheduleMaker {
         endTime = Time.timeNumber(end);
         if (freeDays != null) {
             for (String d : freeDays) {
-                if (Arrays.binarySearch(course.getAdditionalDays(), d) >= 0) {
-                    return false;
+                for (String d2 : course.getAdditionalDays()) {
+                    if (d.equals(d2)) {
+                        return false;
+                    }
                 }
             }
         }
