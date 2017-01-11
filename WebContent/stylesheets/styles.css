@@ -13,7 +13,6 @@ html {
 }
 
 body {
-	margin-bottom: 70px;
 	background-color: #FFFAFA;
 }
 
@@ -37,15 +36,6 @@ li.active a {
 	margin-bottom:5px;
 }
 
-#footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 65px;
-	background-color: DarkSlateGray;
-	border-top: 1px solid darkorange;
-}
-
 .outline {
 	border: 1px solid lightslategray;
 	border-spacing: 0px;
@@ -58,7 +48,7 @@ li.active a {
 }
 
 .small {
-	height: 9px;
+	height: 7px;
 }
 
 .fill {

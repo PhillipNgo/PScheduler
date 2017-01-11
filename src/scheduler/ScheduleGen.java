@@ -303,21 +303,6 @@ public class ScheduleGen extends HttpServlet {
         // -- BODY END -- //
         
         // -- FOOTER START -- //
-        html.append("<div id='footer'>");
-        html.append("<div style='padding: 2vh 15vw 2vh 15vw;' class='container-fluid'>");
-        html.append("<div style='color:white;' class='row'>");
-        html.append("<div class='col-sm-4 text-right'>");
-        html.append("<a href='mailto:ngophill@vt.edu' style='color:white'>ngophill@vt.edu</a>");
-        html.append("</div>");
-        html.append("<div class='col-sm-4 text-center'>");
-        html.append("<a style='color:darkorange;' href='https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_DispRequest'>Virginia Tech Class Time Table</a>");
-        html.append("</div>");
-        html.append("<div class='col-sm-4 text-left'>");
-        html.append("<a style='color:white;' href='https://github.com/PhillipNgo/Scheduler-Website'>View the Project on GitHub</a>");
-        html.append("</div>");
-        html.append("</div>");
-        html.append("</div>");
-        html.append("</div>");
         html.append("</body>");
         html.append("</html>");
         // -- FOOTER END -- //
@@ -736,10 +721,10 @@ public class ScheduleGen extends HttpServlet {
         int i = 0;
         for (Schedule schedule : schedules) {
             if (i != 0) {
-                html.append("<table id='" + (i++) + "' style='display: none;' class='text table'>");
+                html.append("<table id='" + (i++) + "' style='display: none;' class='text table table-condensed'>");
             }
             else {
-                html.append("<table id='" + (i++) + "' class='text table'>");
+                html.append("<table id='" + (i++) + "' class='text table table table-condensed'>");
             }
             html.append("<tr style='font-weight:bold'><td class='text'>CRN</td> <td  class='text'>Course</td> <td  class='text'>Title</td>"
                     + "<td class='text'>Type</td><td  class='text'>Credits (" + schedules.get(0).totalCredits() + ")</td><td  class='text'>Instructor</td>"
@@ -824,7 +809,7 @@ public class ScheduleGen extends HttpServlet {
                         Time t = c.getTimeSlot();
                         if (t.getStart().equals(startTime)) {
                             html.append(c.getSubject() + " " + c.getNum() + "<br>");
-                            html.append(c.getCRN() + "<br>");
+                            //html.append(c.getCRN() + "<br>");
                             html.append(t.getStart() + " - " + t.getEnd() + "<br>");
                             html.append(c.getLocation() + "<br>");
                             html.append(c.getProf());
@@ -845,7 +830,7 @@ public class ScheduleGen extends HttpServlet {
                         Time t = c.getAdditionalTime();
                         if (c.getAdditionalTime().getStart().equals(startTime)) {
                             html.append(c.getSubject() + " " + c.getNum() + "<br>");
-                            html.append(c.getCRN() + "<br>");
+                            //html.append(c.getCRN() + "<br>");
                             html.append(t.getStart() + " - " + t.getEnd() + "<br>");
                             html.append(c.getAdditionalLocation() + "<br>");
                             html.append(c.getProf());
