@@ -170,9 +170,9 @@ public class ScheduleMaker {
                 classes.add(curr);
             }
         }
-        
-        createSchedules(classes, new Schedule(), 0, schedules);
-     
+        try {
+            createSchedules(classes, new Schedule(), 0, schedules);
+        } catch (Exception e) {}
         return schedules;
     }
     
@@ -201,6 +201,9 @@ public class ScheduleMaker {
             }
             
             if (classIndex == classListings.size() - 1) {
+                if (schedules.size() >= 501) {
+                    throw new Exception("Too Many Schedules");
+                }
                 schedules.add(copy);
             }
             else {

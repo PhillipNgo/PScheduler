@@ -137,7 +137,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</span>");
         html.append("</div>");
         html.append("<div style='padding:1px 0 0 0;' class='col-sm-4'>");
-        html.append("<input id='changet' class='form-control' type='text' value='1'> ");
+        html.append("<input id='changet' class='form-control' type='text' value='try keyboard arrows'> ");
         html.append("</div>");
         html.append("<div style='padding:0 3px 0 2px;' class='col-sm-4'>");
         html.append("<span class='input-group-btn'>");
@@ -152,6 +152,9 @@ public class ScheduleGen extends HttpServlet {
         html.append("<h4 id='title'><b>");
         if (schedules == null || schedules.size() == 0) {
             html.append("0 Schedules");
+        }
+        else if (schedules.size() > 500) {
+            html.append("Schedule 1 of 500+");
         }
         else {
             html.append("Schedule 1 of " + schedules.size());
@@ -204,7 +207,7 @@ public class ScheduleGen extends HttpServlet {
                 
                 html.append(fullConflicts.toString());
             }
-            else if (schedules.size() < 1000) {
+            else {
                 html.append("<ul class='collapse in' style='padding-left:0' id='textschedules' name='0'>");
                 appendTextSchedules(schedules);
                 html.append("</ul>");
@@ -212,9 +215,6 @@ public class ScheduleGen extends HttpServlet {
                 html.append("<ul style='padding-top:5px; padding-left:0' id='tableschedules' name='0'>");
                 appendTableSchedules(schedules);
                 html.append("</ul>");
-            }
-            else {
-                html.append("There were over 999 Schedules, please narrow your parameters. See 'Search Data' for more information.");
             }
         }
         catch (Exception e) {
@@ -592,7 +592,11 @@ public class ScheduleGen extends HttpServlet {
         }
         html.append("<b># Passing the Restrictions: </b>" + perm + "<br>");
         LinkedList<Schedule> scheds = generator.getSchedules();
-        html.append("<b># Possible (no conflicts):</b> " + generator.getSchedules().size() + "<br>");
+        html.append("<b># Possible (no conflicts):</b> ");
+        if (generator.getSchedules().size() > 500) {
+            html.append(">");
+        }
+        html.append(generator.getSchedules().size() + "<br>");
         if (scheds.size() == 0) {
             html.append("<b>Total Credits:</b> N/A");
         }

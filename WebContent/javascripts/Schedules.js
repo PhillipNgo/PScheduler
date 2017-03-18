@@ -80,7 +80,7 @@ function changeSchedule(inc) {
 	var listItem = list.getElementsByTagName("table");
 	var list2 = document.getElementById("textschedules");
 	var listItem2 = list2.getElementsByTagName("table");
-	if (currNum + inc >= 0 && currNum + inc < listItem.length) {
+	if (currNum + inc >= 0 && currNum + inc < Math.min(listItem.length, 500)) {
 		listItem[currNum].style.display = "none";
 		listItem[currNum + inc].style.display = "table";
 		list.attributes["name"].value = listItem[currNum + inc].id;
