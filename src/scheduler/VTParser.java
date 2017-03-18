@@ -458,7 +458,7 @@ public class VTParser {
         }
         
         try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-                new FileOutputStream("WebContent/Database/options.txt"), "utf-8"))) {
+                new FileOutputStream("WebContent/Database/" + termYear + "options.txt"), "utf-8"))) {
             for (String subject : subjects) {
                 if (subject.equals("%")) {
                     continue;
@@ -616,5 +616,6 @@ public class VTParser {
     
     public static void main(String[] args) throws Exception {
         VTParser.outputTermDataFiles("201701");
+        VTParser.outputTermDataFiles("201709");
     }
 }

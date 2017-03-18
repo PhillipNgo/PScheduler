@@ -35,13 +35,14 @@ public class LiveSearch extends HttpServlet {
 	    response.setContentType("text/html");
 	    String searchTerm = request.getParameter("search");
 	    String searchType = request.getParameter("type");
+	    String termYear = request.getParameter("term");
 	    html.append("<li id='hide' class='list-group-item'><button onclick='hide()' id='hideb' type='button' class='btn btn-default form-control'>Hide Search</button></li>");
 	    Scanner scan;
 	    try {
-            scan = new Scanner(new File("webapps/ROOT/Database/options.txt"));
+            scan = new Scanner(new File("webapps/ROOT/Database/" + termYear + "options.txt"));
         }
         catch (Exception e) {
-            scan = new Scanner(new File("WebContent/Database/options.txt"));
+            scan = new Scanner(new File("WebContent/Database/" + termYear + "options.txt"));
         }
 	    int count = 0;
 	    while (count < 9 && scan.hasNextLine()) {

@@ -326,15 +326,9 @@ public class ScheduleGen extends HttpServlet {
      */
     private LinkedList<Schedule> getSchedules(HttpServletRequest request) throws Exception {
         start = request.getParameter("h1")+ ":";
-        if ((Integer.parseInt(request.getParameter("m1"))-1)*5 == 0 || (Integer.parseInt(request.getParameter("m1"))-1)*5 == 5) {
-            start += "0";
-        }
         start += ((Integer.parseInt(request.getParameter("m1"))-1)*5) + request.getParameter("start");
         
         end = request.getParameter("h2")+ ":";
-        if ((Integer.parseInt(request.getParameter("m2"))-1)*5 == 0 || (Integer.parseInt(request.getParameter("m2"))-1)*5 == 5) {
-            end += "0";
-        }
         end += ((Integer.parseInt(request.getParameter("m2"))-1)*5) + request.getParameter("end");
         
         if (!Time.isTime(start) || !Time.isTime(end)) {

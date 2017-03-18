@@ -3,8 +3,9 @@ jQuery(document).ready(function($){
 	$('.live-search-box').on('keyup focus', function(){
 		var searchType = $('#searchtype').val();
 		var searchTerm = $(this).val().toLowerCase();
+		var termYear = $('#term').val();
 		if (searchTerm.length > 1) {
-			$.get('LiveSearch', {search:searchTerm, type:searchType}, function(response) {
+			$.get('LiveSearch', {search:searchTerm, type:searchType, term:termYear}, function(response) {
 				$('#search').html(response);
 			});
 		}
@@ -38,11 +39,9 @@ function setParameters() {
 	}
 	$('[name="free"]').val(days);
 	$('[name="free"]').selectpicker('refresh');
-	
 	var classList = params[0].split('=')[1].split('%7E');
 	if (classList[0].length != 0) {
 		for (i = 0; i < classList.length; i++) {
-			
 			var str = classList[i];
 			var split = str.split('-');
 			var index = 0;
@@ -60,7 +59,7 @@ function setParameters() {
 						async: false,
 						type: 'GET',
 						url: 'LiveSearch',
-						data: {search:split[0], type:"course"},
+						data: {search:split[0], type:"course", term:$('#term').val()},
 						success: function(response) {
 							crns[crns.length] = $($($($.parseHTML(response)).get(1)));
 							crnNum[crnNum.length] = split[0];
@@ -73,7 +72,7 @@ function setParameters() {
 						 async: false,
 					     type: 'GET',
 					     url: 'LiveSearch',
-					     data: {search:search, type:"course"},
+					     data: {search:search, type:"course", term:$('#term').val()},
 					     success: function(response) {
 					    	 var temp = $($($($.parseHTML(response)).get(1)));
 					    	 if (temp.children().get(0).name.endsWith('H') && index == 0) {
@@ -93,13 +92,22 @@ function setParameters() {
 				for (var j = 0; j < courses.length; j++) {
 					addClass($(courses[j]).children('button'));
 					var cTypeSelect = $($($('#schedule tbody tr:last').children('td').get(3)).children()[0]);
-					if (cTypeSelect.filter(function(){ return $(this).val() == types[j];}).length) {
+					if (cTypeSelect.each(function(){
+					    if (this.value == types[j]) {
+					        return false;
+					    }
+					})) {
 						cTypeSelect.val(types[j]);
 					}
-					var pSelect = $($($('#schedule tbody tr:last').children('td').get(4)).children()[0])
-					if (pSelect.filter(function(){ return $(this).val() == profs[j];}).length) {
+
+					var pSelect = $($($('#schedule tbody tr:last').children('td').get(4)).children()[0]);
+					if (pSelect.each(function(){
+					    if (this.value == profs[j]) {
+					        return false;
+					    }
+					})) {
 						pSelect.val(profs[j]);
-					}
+					};
 				}
 				
 			} catch(err) {

@@ -45,7 +45,7 @@ public class LinkedList<T> implements Iterable<T> {
      * @return the data of the entry
      */
     public T get(int index) {
-        if (index > numberOfEntries || index < 0) {
+        if (index > numberOfEntries - 1 || index < 0) {
             throw new IndexOutOfBoundsException();
         }
         Node currNode = firstNode;
