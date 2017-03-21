@@ -823,7 +823,7 @@ ARCH 3045 - Building Assemblies / Lecture / J Bassett / 80657
 ARCH 5044G - Professional Practice / Lecture / D Dugas, Staff, KW Jones / 80779, 80780, 80781
 80740 / ARCH 4705 - Qualifying Design Seminar / Lecture / HC Rott / MW 10:00AM - 12:00PM
 ARCH 4705 - Qualifying Design Seminar / Lecture / HC Rott / 80740
-89259 / ARCH 3514 - TS:Posters,Printing&Promotions / Lecture / Staff / TR 10:20AM - 12:15PM
+89259 / ARCH 3514 - TS:Posters,Printing&Promotions / Lecture / CB Pritchett / TR 10:20AM - 12:15PM
 80666 / ARCH 3514 - TS:Screen Printing / Lecture / CB Pritchett / W 7:00PM - 10:00PM
 80665 / ARCH 3514 - Hand Building Wtih Clay / Lecture / ML Sullivan / TR 11:00AM - 12:15PM
 80664 / ARCH 3514 - TS:Graphics / Lecture / RT Holt / TR 9:30AM - 10:45AM
@@ -832,7 +832,7 @@ ARCH 4705 - Qualifying Design Seminar / Lecture / HC Rott / 80740
 80661 / ARCH 3514 - Design-Related Media / Lecture / CB Pritchett
 80660 / ARCH 3514 - TS:Design Build / Lecture / RR Pieper
 80659 / ARCH 3514 - Design-Related Media / Lecture / MD Dreher
-ARCH 3514 - TS:Posters,Printing&Promotions / Lecture / MD Dreher, RR Pieper, DE Snook, RT Holt, ML Sullivan, CB Pritchett, Staff / 80659, 80660, 80661, 80662, 80663, 80664, 80665, 80666, 89259
+ARCH 3514 - TS:Posters,Printing&Promotions / Lecture / MD Dreher, RR Pieper, DE Snook, RT Holt, ML Sullivan, CB Pritchett / 80659, 80660, 80661, 80662, 80663, 80664, 80665, 80666, 89259
 80637 / ARCH 1015 - Foundation Design Laboratory / Lab / S Choudhury / MWF 8:00AM - 11:50AM
 80636 / ARCH 1015 - Foundation Design Laboratory / Lab / ML Paget / MWF 8:00AM - 11:50AM
 80635 / ARCH 1015 - Foundation Design Laboratory / Lab / G Tew / MWF 8:00AM - 11:50AM
@@ -934,8 +934,7 @@ ARCH 5035 - Adv Env Controls / Lecture / MG Ermann / 80778
 80799 / ARCH 5134 - TS:History of Ind. Design / Lecture / WR Green / TR 3:30PM - 4:45PM
 80798 / ARCH 5134 - TS:Classical Tradition in Arch / Lecture / HL Rodriguez-Camilloni / T 7:00PM - 9:50PM
 80797 / ARCH 5134 - TS:The Art & Science of Travel / Lecture / FH Weiner
-80796 / ARCH 5134 - TS:Film + Drawing / Lecture / SF Martin / T 7:00PM - 9:00PM
-ARCH 5134 - TS: Ruskin Reading Group / Lecture / SF Martin, FH Weiner, WR Green, HL Rodriguez-Camilloni, JR Jones, H Bryon, KF Edge, WU Galloway / 80796, 80797, 80798, 80799, 80800, 80801, 80802, 80803, 80804
+ARCH 5134 - TS: Ruskin Reading Group / Lecture / FH Weiner, WR Green, HL Rodriguez-Camilloni, JR Jones, H Bryon, KF Edge, WU Galloway / 80797, 80798, 80799, 80800, 80801, 80802, 80803, 80804
 80871 / ARCH 5994 - Research and Thesis / Research / Staff
 80870 / ARCH 5994 - Research and Thesis / Research / MG Ermann / MTWRF 1:00PM - 5:00PM
 80869 / ARCH 5994 - Research and Thesis / Research / FH Weiner / MTWRF 1:00PM - 5:00PM
@@ -982,14 +981,13 @@ ARCH 4114 - Ideas-Concepts-Representations / Lecture / Staff, J Bedford / 80687,
 ARCH 4994 - Undergraduate Research / Research / H Schnoedt, Staff, EJ Grant, M Setareh / 80774, 80775, 80776, 80777
 80701 / ARCH 4214 - TS:So Amer Pre-Columb Art/Arch / Lecture / HL Rodriguez-Camilloni / TR 11:00AM - 12:15PM
 80700 / ARCH 4214 - TS:Europe Studio/Culture Stds / Lecture / H Schnoedt
-80699 / ARCH 4214 - TS:Film + Drawing / Lecture / SF Martin / T 7:00PM - 9:00PM
 80698 / ARCH 4214 - TS: Urban Environment / Lecture / CW Von Weise
 80697 / ARCH 4214 - Topics Arch His & Theo / Lecture / M Feuerstein
 80696 / ARCH 4214 - TS:Classical Tradition in Arch / Lecture / HL Rodriguez-Camilloni / T 7:00PM - 9:50PM
 80695 / ARCH 4214 - Topic Arch His & Theo / Lecture / PF Emmons
 80694 / ARCH 4214 - TS:The Art & Science of Travel / Lecture / SR Thompson
 80693 / ARCH 4214 - TS: Ruskin Reading Group / Lecture / WU Galloway
-ARCH 4214 - TS:So Amer Pre-Columb Art/Arch / Lecture / WU Galloway, SR Thompson, PF Emmons, M Feuerstein, CW Von Weise, SF Martin, H Schnoedt, HL Rodriguez-Camilloni / 80693, 80694, 80695, 80696, 80697, 80698, 80699, 80700, 80701
+ARCH 4214 - TS:So Amer Pre-Columb Art/Arch / Lecture / WU Galloway, SR Thompson, PF Emmons, M Feuerstein, CW Von Weise, H Schnoedt, HL Rodriguez-Camilloni / 80693, 80694, 80695, 80696, 80697, 80698, 80700, 80701
 80773 / ARCH 4974 - Independent Study / Independent Study / CB Pritchett
 80772 / ARCH 4974 - Independent Study / Independent Study / JH Wheeler
 80771 / ARCH 4974 - Independent Study / Independent Study / M Cortes
@@ -2322,7 +2320,7 @@ CEE 2994 - Undergraduate Research / Research / Staff / 81609, 81610, 81611
 81689 / CEE 5104 - Environmental Chemistry / Lecture / AM Dietrich / TR 9:30AM - 10:45AM
 CEE 5104 - Environmental Chemistry / Lecture / AM Dietrich / 81689
 89333 / CEE 5984 - SS:Blt Env Info Mdlng&Proc / Online / F Jazizadeh Karimi
-89331 / CEE 5984 - SS:Blt Env Info Mdlng&Proc / Lecture / F Jazizadeh Karimi
+89331 / CEE 5984 - SS:Blt Env Info Mdlng&Proc / Lecture / F Jazizadeh Karimi / R 6:30PM - 9:15PM
 89207 / CEE 5984 - SS:Choice Modeling&Statistics / Online / S Hotle
 89152 / CEE 5984 - SS: Choice Modeling&Statistics / Lecture / S Hotle / MW 2:30PM - 3:45PM
 89151 / CEE 5984 - SS: Atmospheric Chemistry / Lecture / G Isaacman-VanWertz / TR 8:00AM - 9:15AM
@@ -2649,9 +2647,9 @@ CHEM 4524 - Identif Organic Compounds / Lecture / HC Dorn / 82225
 CHEM 4964 - Field Study / Lecture / Staff / 82229
 82293 / CHEM 6624 - Chemical Thermodynamics / Lecture / AR Esker / TR 2:00PM - 3:15PM
 CHEM 6624 - Chemical Thermodynamics / Lecture / AR Esker / 82293
-82223 / CHEM 4404 - Physical Inorganic Chemistry / Lecture / BE Hanson / TR 12:30PM - 1:45PM
+82223 / CHEM 4404 - Physical Inorganic Chemistry / Lecture / Staff / TR 12:30PM - 1:45PM
 82222 / CHEM 4404 - Physical Inorganic Chemistry / Lecture / BE Hanson / TR 11:00AM - 12:15PM
-CHEM 4404 - Physical Inorganic Chemistry / Lecture / BE Hanson / 82222, 82223
+CHEM 4404 - Physical Inorganic Chemistry / Lecture / BE Hanson, Staff / 82222, 82223
 82297 / CHEM 6904 - Generating Research Ideas / Lecture / JR Morris / TR 11:00AM - 12:15PM
 CHEM 6904 - Generating Research Ideas / Lecture / JR Morris / 82297
 82277 / CHEM 4994H - Undergraduate Research / Research / DG Kingston
@@ -2689,8 +2687,8 @@ CHEM 2556 - Org Syn-Tech Lab / Lab / HW Gibson / 82198, 82199, 82200
 81999 / CHEM 1025 - Intro Chem Lab / Lab / JE Eddleton / M 10:00AM - 11:50AM
 81998 / CHEM 1025 - Intro Chem Lab / Lab / JE Eddleton / M 8:00AM - 9:50AM
 CHEM 1025 - Intro Chem Lab / Lab, Online / JE Eddleton / 81998, 81999, 82000
-82140 / CHEM 2114 - Analytical Chemistry / Lecture / GT Yee / TR 11:00AM - 12:15PM
-CHEM 2114 - Analytical Chemistry / Lecture / GT Yee / 82140
+82140 / CHEM 2114 - Analytical Chemistry / Lecture / Staff / TR 11:00AM - 12:15PM
+CHEM 2114 - Analytical Chemistry / Lecture / Staff / 82140
 82294 / CHEM 6634 - Quant Chem & Spectry / Lecture / N Mayhall / MW 11:15AM - 12:30PM
 CHEM 6634 - Quant Chem & Spectry / Lecture / N Mayhall / 82294
 82226 / CHEM 4534 - Organic Chemistry of Polymers / Lecture / SR Turner / TR 11:00AM - 12:15PM
@@ -2750,8 +2748,8 @@ CHEM 1035 - General Chemistry / Lecture / BE Hanson, JS Merola, KA Neidigh, SM A
 CHEM 2124 - Analytical Chem Lab / Lab / BM Tissue / 82141, 82142, 82143, 82144, 82145
 82287 / CHEM 5914 - Lit Review and Research Plan / Lecture / JR Morris
 CHEM 5914 - Lit Review and Research Plan / Lecture / JR Morris / 82287
-82134 / CHEM 1055H - Honors General Chem for Majors / Lecture / GT Yee / MWF 9:05AM - 9:55AM / R 5:00PM - 5:50PM
-CHEM 1055H - Honors General Chem for Majors / Lecture / GT Yee / 82134
+82134 / CHEM 1055H - Honors General Chem for Majors / Lecture / D Troya / MWF 9:05AM - 9:55AM / R 5:00PM - 5:50PM
+CHEM 1055H - Honors General Chem for Majors / Lecture / D Troya / 82134
 82299 / CHEM 7994 - Research and Dissertation / Research / JR Morris
 CHEM 7994 - Research and Dissertation / Research / JR Morris / 82299
 82279 / CHEM 5014 - Presentation Skills / Lecture / MB Bump / T 12:30PM - 2:30PM
@@ -2763,11 +2761,11 @@ CHEM 4124 - Instrumental Analysis Lab / Lab / BM Tissue / 82219, 82220, 82221
 82296 / CHEM 6664 - TS:Polymer Morphology / Lecture / RB Moore / TR 11:00AM - 12:15PM
 82295 / CHEM 6664 - TS:Group Theory / Lecture / EF Valeyev / TR 12:30PM - 1:45PM
 CHEM 6664 - TS:Polymer Morphology / Lecture / EF Valeyev, RB Moore / 82295, 82296
-82133 / CHEM 1055 - General Chemistry for Majors / Lecture / GT Yee / MWF 9:05AM - 9:55AM / R 6:00PM - 6:50PM
-82132 / CHEM 1055 - General Chemistry for Majors / Lecture / GT Yee / MWF 9:05AM - 9:55AM / R 5:00PM - 5:50PM
-82131 / CHEM 1055 - General Chemistry for Majors / Lecture / GT Yee / MWF 9:05AM - 9:55AM / R 2:00PM - 2:50PM
-82130 / CHEM 1055 - General Chemistry for Majors / Lecture / GT Yee / MWF 9:05AM - 9:55AM / R 3:30PM - 4:20PM
-CHEM 1055 - General Chemistry for Majors / Lecture / GT Yee / 82130, 82131, 82132, 82133
+82133 / CHEM 1055 - General Chemistry for Majors / Lecture / D Troya / MWF 9:05AM - 9:55AM / R 6:00PM - 6:50PM
+82132 / CHEM 1055 - General Chemistry for Majors / Lecture / D Troya / MWF 9:05AM - 9:55AM / R 5:00PM - 5:50PM
+82131 / CHEM 1055 - General Chemistry for Majors / Lecture / D Troya / MWF 9:05AM - 9:55AM / R 2:00PM - 2:50PM
+82130 / CHEM 1055 - General Chemistry for Majors / Lecture / D Troya / MWF 9:05AM - 9:55AM / R 3:30PM - 4:20PM
+CHEM 1055 - General Chemistry for Majors / Lecture / D Troya / 82130, 82131, 82132, 82133
 82280 / CHEM 5094 - Grant Writing and Ethics / Lecture / CC Caswell / F 10:00AM - 12:00PM
 CHEM 5094 - Grant Writing and Ethics / Lecture / CC Caswell / 82280
 82216 / CHEM 3626 - Physical Chemistry Laboratory / Lab / LA Madsen / M 2:30PM - 5:20PM
@@ -3254,13 +3252,13 @@ CRIM 2964 - Field Work/Practicum / Lecture / Staff / 82487
 CRIM 2754 - Internship / Lecture / Staff / 82486
 82490 / CRIM 3414 - Criminology / Online / O Agozino
 82489 / CRIM 3414 - Criminology / Lecture / DW Alexander / TR 12:30PM - 1:45PM
-82488 / CRIM 3414 - Criminology / Lecture / Staff / MW 4:00PM - 5:15PM
+82488 / CRIM 3414 - Criminology / Lecture / Staff / TR 3:30PM - 4:45PM
 CRIM 3414 - Criminology / Lecture, Online / Staff, DW Alexander, O Agozino / 82488, 82489, 82490
-88768 / CRIM 3434 - Systems of Justice / Lecture / AV Reichelmann / TR 12:30PM - 2:45PM
+88768 / CRIM 3434 - Systems of Justice / Lecture / AV Reichelmann / MW 4:00PM - 5:15PM
 CRIM 3434 - Systems of Justice / Lecture / AV Reichelmann / 88768
 82496 / CRIM 4994 - Undergraduate Research / Research / Staff
 CRIM 4994 - Undergraduate Research / Research / Staff / 82496
-82493 / CRIM 4434 - Advanced Topics in Criminology / Lecture / KM Boyle / TR 12:30PM - 1:45PM
+82493 / CRIM 4434 - Advanced Topics in Criminology / Lecture / KM Boyle / TR 9:30AM - 10:45AM
 CRIM 4434 - Advanced Topics in Criminology / Lecture / KM Boyle / 82493
 82492 / CRIM 4424 - Juvenile Delinquency / Online / DJ Shoemaker
 CRIM 4424 - Juvenile Delinquency / Online / DJ Shoemaker / 82492
@@ -3283,18 +3281,12 @@ CS 1014 - Intro Computational Thinking / Lecture / AC Bart, DG Kafura / 88893, 8
 82558 / CS 3114 - Data Structures and Algorithms / Lecture / Staff / MW 2:30PM - 3:45PM
 82557 / CS 3114 - Data Structures and Algorithms / Lecture / Staff / TR 12:30PM - 1:45PM
 CS 3114 - Data Structures and Algorithms / Lecture / Staff, Y Cao / 82557, 82558, 82559
-82640 / CS 6304 - TS: Adv Compliers & Comp Arch / Lecture / Staff / TR 3:30PM - 4:45PM
-CS 6304 - TS: Adv Compliers & Comp Arch / Lecture / Staff / 82640
 82627 / CS 5974 - Independent Study / Independent Study / Staff
 CS 5974 - Independent Study / Independent Study / Staff / 82627
 82583 / CS 4644 - Creative Computing Studio / Lecture / Staff / F 1:00PM - 4:00PM
 CS 4644 - Creative Computing Studio / Lecture / Staff / 82583
 82589 / CS 4964 - Field Study / Lecture / Staff
 CS 4964 - Field Study / Lecture / Staff / 82589
-82642 / CS 6704 - TS: Software Eng Automation / Lecture / Staff / TR 11:00AM - 12:15PM
-CS 6704 - TS: Software Eng Automation / Lecture / Staff / 82642
-82644 / CS 6824 - TS: Computing the Brain / Lecture / Staff / TR 11:00AM - 12:15PM
-CS 6824 - TS: Computing the Brain / Lecture / Staff / 82644
 82553 / CS 2506 - Intro to Computer Organization / Lecture / Staff / TR 2:00PM - 3:15PM
 82552 / CS 2506 - Intro to Computer Organization / Lecture / WD McQuain / TR 11:00AM - 12:15PM
 CS 2506 - Intro to Computer Organization / Lecture / WD McQuain, Staff / 82552, 82553
@@ -3310,7 +3302,7 @@ CS 4264 - Principles Computer Security / Lecture / D Yao / 82579
 CS 5474 - Finite Difference Mth / Lecture / Staff / 82601
 82585 / CS 4784 - Human-Computer Interact Capstn / Lecture / DG Tatar / R 3:30PM - 6:15PM
 CS 4784 - Human-Computer Interact Capstn / Lecture / DG Tatar / 82585
-88911 / CS 5114 - Theory of Algorithms / Lecture / Staff / TR 2:00PM - 3:15PM
+88911 / CS 5114 - Theory of Algorithms / Lecture / Staff / MW 4:00PM - 5:15PM
 CS 5114 - Theory of Algorithms / Lecture / Staff / 88911
 82604 / CS 5510 - Multiprocessor Programming / Lecture / D Lee / TR 2:00PM - 3:15PM
 CS 5510 - Multiprocessor Programming / Lecture / D Lee / 82604
@@ -3357,7 +3349,7 @@ CS 5504 - Computer Architecture / Online / JM Paul / 82603
 CS 5944 - Graduate Seminar / Lecture / DS McCrickard / 82625
 82621 / CS 5824 - Advanced Machine Learning / Lecture / B Huang / TR 9:30AM - 10:45AM
 CS 5824 - Advanced Machine Learning / Lecture / B Huang / 82621
-82573 / CS 3724 - Human-Computr Intrctn / Lecture / DA Bowman / MW 4:00PM - 5:15PM
+82573 / CS 3724 - Human-Computr Intrctn / Lecture / DA Bowman / TR 11:00AM - 12:15PM
 CS 3724 - Human-Computr Intrctn / Lecture / DA Bowman / 82573
 82616 / CS 5704 - Software Engineering / Online / GW Kulczycki
 82615 / CS 5704 - Software Engineering / Lecture / FJ Servant Cortes / MW 5:30PM - 6:45PM
@@ -3368,11 +3360,13 @@ CS 1944 - Computer Science 1st Yr Sem / Lecture / ND Barnette / 82532
 CS 5560 - Fundamentals of Info Security / Online / J Park / 82608
 82594 / CS 5044 - Object-Oriented Pgmming Java / Online / GW Kulczycki
 CS 5044 - Object-Oriented Pgmming Java / Online / GW Kulczycki / 82594
+89357 / CS 5045 - Computation for Life Sciences / Lecture / Staff / TR 11:00AM - 12:15PM
+CS 5045 - Computation for Life Sciences / Lecture / Staff / 89357
 82602 / CS 5485 - Numer Analy and Softw / Lecture / Staff / TR 9:30AM - 10:45AM
 CS 5485 - Numer Analy and Softw / Lecture / Staff / 82602
 82599 / CS 5244 - Internet Software / Online / GW Kulczycki
 CS 5244 - Internet Software / Online / GW Kulczycki / 82599
-82578 / CS 4234 - Parallel Computation / Lecture / W Feng / TR 8:00AM - 9:15AM
+82578 / CS 4234 - Parallel Computation / Lecture / W Feng / MW 2:30PM - 3:45PM
 CS 4234 - Parallel Computation / Lecture / W Feng / 82578
 82610 / CS 5565 - Network Arch and Protocols / Lecture / Y Yang / TR 2:00PM - 3:15PM
 CS 5565 - Network Arch and Protocols / Lecture / Y Yang / 82610
@@ -3399,7 +3393,7 @@ CS 3414 - Numerical Methods / Lecture / LT Watson / 82564
 82518 / CS 1114 - Intro to Software Design / Lab / Staff / F 2:30PM - 4:30PM
 82517 / CS 1114 - Intro to Software Design / Lab / Staff / R 3:30PM - 5:30PM
 82516 / CS 1114 - Intro to Software Design / Lecture / SH Edwards / MW 10:10AM - 11:00AM
-82515 / CS 1114 - Intro to Software Design / Lecture / Staff / TR 9:30AM - 10:45AM
+82515 / CS 1114 - Intro to Software Design / Lecture / Staff / MW 4:00PM - 5:15PM
 82513 / CS 1114 - Intro to Software Design / Lab / Staff / F 12:20PM - 2:20PM
 82512 / CS 1114 - Intro to Software Design / Lab / Staff / F 2:30PM - 4:30PM
 82511 / CS 1114 - Intro to Software Design / Lab / Staff / F 11:15AM - 1:15PM
@@ -3407,13 +3401,13 @@ CS 1114 - Intro to Software Design / Lecture, Lab / SH Edwards, Staff / 82511, 8
 82561 / CS 3214 - Computer Systems / Lecture / Staff / MW 2:30PM - 3:45PM
 82560 / CS 3214 - Computer Systems / Lecture / WD McQuain / TR 9:30AM - 10:45AM
 CS 3214 - Computer Systems / Lecture / WD McQuain, Staff / 82560, 82561
-82576 / CS 4104 - Data and Algorithm Analysis / Lecture / LS Heath / MW 4:00PM - 5:15PM
+82576 / CS 4104 - Data and Algorithm Analysis / Lecture / LS Heath / TR 9:30AM - 10:45AM
 CS 4104 - Data and Algorithm Analysis / Lecture / LS Heath / 82576
-82639 / CS 6204 - TS: Prog Anomaly Detect/Lrng / Lecture / Staff / M 2:00PM - 5:00PM
+82639 / CS 6204 - TS: Prog Anomaly Detect/Lrng / Lecture / Staff / TR 11:00AM - 12:15PM
 CS 6204 - TS: Prog Anomaly Detect/Lrng / Lecture / Staff / 82639
-82569 / CS 3654 - Intro Data Analytics & Visual / Lecture / C Lucero / TR 11:00AM - 12:15PM
-82568 / CS 3654 - Intro Data Analytics & Visual / Lecture / S Sengupta / MWF 1:25PM - 2:15PM
-CS 3654 - Intro Data Analytics & Visual / Lecture / S Sengupta, C Lucero / 82568, 82569
+82569 / CS 3654 - Intro Data Analytics & Visual / Lecture / S Sengupta / TR 11:00AM - 12:15PM
+82568 / CS 3654 - Intro Data Analytics & Visual / Lecture / C Lucero / MWF 1:25PM - 2:15PM
+CS 3654 - Intro Data Analytics & Visual / Lecture / C Lucero, S Sengupta / 82568, 82569
 82643 / CS 6724 - TS:Critical & Cultural Comp / Lecture / K Luther / MW 2:30PM - 3:45PM
 CS 6724 - TS:Critical & Cultural Comp / Lecture / K Luther / 82643
 88950 / CS 5834 - Intro to Urban Computing / Lecture / N Ramakrishnan / W 4:00PM - 6:45PM
@@ -3422,12 +3416,11 @@ CS 5834 - Intro to Urban Computing / Lecture / N Ramakrishnan / 88950
 CS 4504 - Computer Organization / Lecture / Staff / 88974
 82588 / CS 4944 - Seminar / Lecture / CJ Ribbens / T 5:00PM - 5:50PM
 CS 4944 - Seminar / Lecture / CJ Ribbens / 82588
-82641 / CS 6604 - TS: Instructional Design in CS / Lecture / Staff / TR 5:00PM - 6:15PM
+82641 / CS 6604 - TS: Instructional Design in CS / Lecture / Staff / TR 3:30PM - 4:45PM
 CS 6604 - TS: Instructional Design in CS / Lecture / Staff / 82641
 89309 / CS 4824 - Machine Learning / Lecture / Staff / TR 9:30AM - 10:45AM
-82587 / CS 4824 - Machine Learning / Lecture / SM Lee / TR 2:00PM - 3:15PM
-CS 4824 - Machine Learning / Lecture / SM Lee, Staff / 82587, 89309
-82584 / CS 4704 - Software Engineering Capstone / Lecture / Staff / MW 2:30PM - 3:45PM
+CS 4824 - Machine Learning / Lecture / Staff / 89309
+82584 / CS 4704 - Software Engineering Capstone / Lecture / Staff / TR 8:00AM - 9:15AM
 CS 4704 - Software Engineering Capstone / Lecture / Staff / 82584
 82580 / CS 4284 - Systems & Networking Capstone / Lecture / A Butt / TR 12:30PM - 1:45PM
 CS 4284 - Systems & Networking Capstone / Lecture / A Butt / 82580
@@ -3439,8 +3432,6 @@ CS 5014 - Research Meth in CS / Lecture / Staff / 82593
 CS 5894 - Final Examination / Research / Staff / 82623
 82577 / CS 4124 - Theory of Computation / Lecture / LT Watson / TR 12:30PM - 1:45PM
 CS 4124 - Theory of Computation / Lecture / LT Watson / 82577
-82620 / CS 5774 - User Interface Software / Lecture / Staff / TR 11:00AM - 12:15PM
-CS 5774 - User Interface Software / Lecture / Staff / 82620
 82509 / CS 1054 - Intro to Programming in Java / Lab / JA Lewis / T 4:00PM - 6:00PM
 82508 / CS 1054 - Intro to Programming in Java / Lecture / JA Lewis / WF 10:10AM - 11:00AM
 82507 / CS 1054 - Intro to Programming in Java / Lab / JA Lewis / T 8:00AM - 10:00AM
@@ -3474,11 +3465,11 @@ CS 3304 - Comparative Languages / Lecture / N Meng, E Tilevich / 82562, 82563
 CS 4994 - Undergraduate Research / Research / Staff / 82591, 82592, 88906, 88907, 88908, 88909, 88910
 82619 / CS 5764 - Information Visualization / Lecture / CL North / TR 12:30PM - 1:45PM
 CS 5764 - Information Visualization / Lecture / CL North / 82619
-82597 / CS 5204 - Operating Systems / Lecture / A Butt / MW 4:00PM - 5:15PM
+82597 / CS 5204 - Operating Systems / Lecture / A Butt / TR 2:00PM - 3:15PM
 CS 5204 - Operating Systems / Lecture / A Butt / 82597
 82614 / CS 5644 - Machine Learning with Big Data / Online / N Ramakrishnan
 CS 5644 - Machine Learning with Big Data / Online / N Ramakrishnan / 82614
-82582 / CS 4634 - Design Of Information / Lecture / SR Harrison / TR 11:00AM - 12:15PM
+82582 / CS 4634 - Design Of Information / Lecture / SR Harrison / MW 4:00PM - 5:15PM
 CS 4634 - Design Of Information / Lecture / SR Harrison / 82582
 82606 / CS 5525 - Data Analytics / Lecture / C Reddy / T 4:00PM - 7:00PM
 CS 5525 - Data Analytics / Lecture / C Reddy / 82606
@@ -3488,8 +3479,8 @@ CS 3744 - Intro GUI Programming/Graphics / Lecture / D Gracanin / 82574
 CS 5724 - Models of HCI / Lecture / DS McCrickard / 82617
 82613 / CS 5604 - Info Storage and Ret / Lecture / EA Fox / TR 3:30PM - 4:45PM
 CS 5604 - Info Storage and Ret / Lecture / EA Fox / 82613
-82531 / CS 1604 - Introduction to the Internet / Online / DA Altarawy
-CS 1604 - Introduction to the Internet / Online / DA Altarawy / 82531
+89358 / CS 3824 - Intro Comp Bio Bioinformatics / Lecture / Staff / TR 11:00AM - 12:15PM
+CS 3824 - Intro Comp Bio Bioinformatics / Lecture / Staff / 89358
 82676 / CSES 5124 - Topics in Soil Genesis / Lab / JM Galbraith
 CSES 5124 - Topics in Soil Genesis / Lab / JM Galbraith / 82676
 82664 / CSES 3144 - Soil Description and Interp / Lecture / JM Galbraith / F 3:45PM - 6:45PM
@@ -3957,7 +3948,7 @@ ECE 5314 - Pwr Sys Oper and Ctrl / Lecture / Staff / 82839
 82866 / ECE 5754 - Applied Linear Systems / Online / SC Southward
 82865 / ECE 5754 - Applied Linear Systems / Lecture / SC Southward / TR 11:00AM - 12:15PM
 ECE 5754 - Applied Linear Systems / Lecture, Online / SC Southward / 82865, 82866
-82787 / ECE 4424 - Machine Learning / Lecture / Staff / TR 2:00PM - 3:15PM
+82787 / ECE 4424 - Machine Learning / Lecture / Staff / TR 9:30AM - 10:45AM
 ECE 4424 - Machine Learning / Lecture / Staff / 82787
 82784 / ECE 4304 - Design in Power Engineering / Lecture / Staff / MW 2:30PM - 3:45PM
 ECE 4304 - Design in Power Engineering / Lecture / Staff / 82784
@@ -4165,14 +4156,14 @@ ECE 4634 - Digital Communications / Lecture / Staff / 82801
 ECE 4514 - Digital Design II / Lecture / Staff / 82788
 88707 / ECE 5605 - Stochastic Signals and Systems / Lecture / Staff / TR 12:30PM - 1:45PM
 ECE 5605 - Stochastic Signals and Systems / Lecture / Staff / 88707
-83282 / ECON 5124 - Mathematical Econ / Lecture / A Kats / TR 3:30PM - 4:45PM
-ECON 5124 - Mathematical Econ / Lecture / A Kats / 83282
+83282 / ECON 5124 - Mathematical Econ / Lecture / Staff / TR 3:30PM - 4:45PM
+ECON 5124 - Mathematical Econ / Lecture / Staff / 83282
 83268 / ECON 4014 - Environmental Economics / Lecture / GS Amacher / TR 2:00PM - 3:15PM
 ECON 4014 - Environmental Economics / Lecture / GS Amacher / 83268
 83274 / ECON 4454 - Neuroeconomics / Lecture / SB Ball / MW 2:30PM - 3:45PM
 ECON 4454 - Neuroeconomics / Lecture / SB Ball / 83274
-83283 / ECON 5125 - Empirical Economics / Lecture / A Spanos / TR 11:00AM - 12:15PM
-ECON 5125 - Empirical Economics / Lecture / A Spanos / 83283
+83283 / ECON 5125 - Empirical Economics / Lecture / Staff / TR 11:00AM - 12:15PM
+ECON 5125 - Empirical Economics / Lecture / Staff / 83283
 83289 / ECON 6994 - Research Seminar / Lecture / KP Tsang / MW 4:00PM - 5:30PM / F 4:00PM - 5:30PM
 ECON 6994 - Research Seminar / Lecture / KP Tsang / 83289
 83261 / ECON 3024 - Economic Justice / Lecture / Staff / MWF 11:15AM - 12:05PM
@@ -4190,12 +4181,12 @@ ECON 2006 - Principles of Economics / Lecture / Staff / 83246, 83247, 83248, 832
 83243 / ECON 2005 - Principles of Economics / Lecture / Staff / MWF 11:15AM - 12:05PM
 83242 / ECON 2005 - Principles of Economics / Lecture / Staff / MWF 8:00AM - 8:50AM
 ECON 2005 - Principles of Economics / Lecture / Staff / 83242, 83243, 83244, 83245
-83281 / ECON 5016 - Money and Price Level / Lecture / KP Tsang / TR 11:00AM - 12:15PM
-ECON 5016 - Money and Price Level / Lecture / KP Tsang / 83281
+83281 / ECON 5016 - Money and Price Level / Lecture / Staff / TR 11:00AM - 12:15PM
+ECON 5016 - Money and Price Level / Lecture / Staff / 83281
 83285 / ECON 5974 - Independent Study / Independent Study / KP Tsang
 ECON 5974 - Independent Study / Independent Study / KP Tsang / 83285
-83288 / ECON 6204 - Public Economics / Lecture / TN Tideman / MWF 12:20PM - 1:10PM
-ECON 6204 - Public Economics / Lecture / TN Tideman / 83288
+83288 / ECON 6204 - Public Economics / Lecture / Staff / MWF 12:20PM - 1:10PM
+ECON 6204 - Public Economics / Lecture / Staff / 83288
 83271 / ECON 4424 - Theo Games Econ Beh / Lecture / Staff / TR 9:30AM - 10:45AM
 ECON 4424 - Theo Games Econ Beh / Lecture / Staff / 83271
 83270 / ECON 4304 - Econometric Methods / Lecture / Staff / TR 12:30PM - 1:45PM
@@ -4206,8 +4197,8 @@ ECON 4964 - Field Study / Lecture / SB Ball / 83276
 ECON 4994H - Undergraduate Research / Research / SB Ball / 83279
 83290 / ECON 7994 - Research and Dissertation / Research / KP Tsang
 ECON 7994 - Research and Dissertation / Research / KP Tsang / 83290
-83287 / ECON 6024 - Adv Top Ecnmetric Thy / Lecture / A Spanos / TR 3:30PM - 4:45PM
-ECON 6024 - Adv Top Ecnmetric Thy / Lecture / A Spanos / 83287
+83287 / ECON 6024 - Adv Top Ecnmetric Thy / Lecture / Staff / TR 3:30PM - 4:45PM
+ECON 6024 - Adv Top Ecnmetric Thy / Lecture / Staff / 83287
 83269 / ECON 4124 - Growth and Development / Lecture / Staff / TR 11:00AM - 12:15PM
 ECON 4124 - Growth and Development / Lecture / Staff / 83269
 83286 / ECON 5994 - Research and Thesis / Research / KP Tsang
@@ -4234,8 +4225,8 @@ ECON 2894 - Intro Philosophy Politics Econ / Lecture / M Moehler / 83254
 ECON 3004 - TS: American Economic History / Lecture / Staff / 83257, 83258, 83259, 83260
 83278 / ECON 4994 - Undergraduate Research / Research / SB Ball
 ECON 4994 - Undergraduate Research / Research / SB Ball / 83278
-83280 / ECON 5005 - Prices and Markets / Lecture / HH Haller / TR 5:00PM - 6:15PM
-ECON 5005 - Prices and Markets / Lecture / HH Haller / 83280
+83280 / ECON 5005 - Prices and Markets / Lecture / Staff / TR 5:00PM - 6:15PM
+ECON 5005 - Prices and Markets / Lecture / Staff / 83280
 83273 / ECON 4434 - Experimental Economics / Lecture / Staff / TR 11:00AM - 12:15PM
 83272 / ECON 4434 - Experimental Economics / Lecture / Staff / TR 9:30AM - 10:45AM
 ECON 4434 - Experimental Economics / Lecture / Staff / 83272, 83273
@@ -4245,8 +4236,8 @@ ECON 4754 - Internship / Lecture / SB Ball / 83275
 ECON 4974 - Independent Study / Independent Study / SB Ball / 83277
 83256 / ECON 2994H - Undergraduate Research / Research / SB Ball
 ECON 2994H - Undergraduate Research / Research / SB Ball / 83256
-83284 / ECON 5946 - Econometric Theory & Practice / Lecture / W You / TR 9:30AM - 10:45AM
-ECON 5946 - Econometric Theory & Practice / Lecture / W You / 83284
+83284 / ECON 5946 - Econometric Theory & Practice / Lecture / Staff / TR 9:30AM - 10:45AM
+ECON 5946 - Econometric Theory & Practice / Lecture / Staff / 83284
 88333 / EDCI 6034 - Education and Anthropology / Lecture / J Wilson / R 1:00PM - 3:50PM
 EDCI 6034 - Education and Anthropology / Lecture / J Wilson / 88333
 83305 / EDCI 5264 - Comp and Cont Rdg / Lecture / Staff / T 4:00PM - 6:50PM
@@ -4295,7 +4286,7 @@ EDCI 5814 - STEM Education Pedagogy / Lecture, Online / JG Wells / 83339, 83340
 EDCI 5914 - Multicultural Teaching ESL / Lecture / GA Tilley-Lubbs / 89177
 83309 / EDCI 5374 - Assess K-12 Science Education / Lecture / BR Brand / M 4:00PM - 6:50PM
 EDCI 5374 - Assess K-12 Science Education / Lecture / BR Brand / 83309
-88622 / EDCI 4264 - Intro to Reading Instruction / Lecture / Staff / MW 1:00PM - 3:50PM
+88622 / EDCI 4264 - Intro to Reading Instruction / Lecture / Staff / MW 1:00PM - 3:00PM
 EDCI 4264 - Intro to Reading Instruction / Lecture / Staff / 88622
 83374 / EDCI 7994 - Research and Dissertation / Online / Staff
 83373 / EDCI 7994 - Research and Dissertation / Research / Staff
@@ -4790,12 +4781,12 @@ ENGL 1624 - Intro to Detective Fiction / Online / AF Kinder / 83792
 89206 / ENGL 1106 - First-Year Writing / Lecture / VL Ruccolo / MWF 11:15AM - 12:05PM
 83766 / ENGL 1106 - First-Year Writing / Lecture / ZK Combiths / TR 3:30PM - 4:45PM
 83765 / ENGL 1106 - First-Year Writing / Lecture / IL Johnson / MWF 10:10AM - 11:00AM
-83764 / ENGL 1106 - First-Year Writing / Lecture / TL Gardner / MWF 10:10AM - 11:00AM
+83764 / ENGL 1106 - First-Year Writing / Lecture / Staff / MWF 10:10AM - 11:00AM
 83763 / ENGL 1106 - First-Year Writing / Lecture / IL Johnson / MWF 2:30PM - 3:20PM
 83762 / ENGL 1106 - First-Year Writing / Lecture / HR Patton / TR 9:30AM - 10:45AM
-83761 / ENGL 1106 - First-Year Writing / Lecture / IL Johnson / MWF 1:25PM - 2:15PM
+83761 / ENGL 1106 - First-Year Writing / Lecture / SD Frost / MWF 1:25PM - 2:15PM
 83760 / ENGL 1106 - First-Year Writing / Lecture / ZK Combiths / TR 12:30PM - 1:45PM
-83759 / ENGL 1106 - First-Year Writing / Lecture / TL Gardner / MWF 9:05AM - 9:55AM
+83759 / ENGL 1106 - First-Year Writing / Lecture / Staff / MWF 9:05AM - 9:55AM
 83758 / ENGL 1106 - First-Year Writing / Lecture / Staff / MWF 11:15AM - 12:05PM
 83757 / ENGL 1106 - First-Year Writing / Lecture / LC Skinner / MWF 10:10AM - 11:00AM
 83756 / ENGL 1106 - First-Year Writing / Lecture / GK Natishan / TR 11:00AM - 12:15PM
@@ -4817,7 +4808,7 @@ ENGL 1624 - Intro to Detective Fiction / Online / AF Kinder / 83792
 83739 / ENGL 1106 - First-Year Writing / Lecture / LC Skinner / MWF 9:05AM - 9:55AM
 83737 / ENGL 1106 - First-Year Writing / Lecture / MS Smith / TR 11:00AM - 12:15PM
 83736 / ENGL 1106 - First-Year Writing / Lecture / SR Conaway / MWF 9:05AM - 9:55AM
-ENGL 1106 - First-Year Writing / Lecture / SR Conaway, SD Mooney, SD Frost, MS Smith, GK Natishan, LC Skinner, Staff, HR Patton, TL Gardner, IL Johnson, ZK Combiths, VL Ruccolo / 83736, 83737, 83739, 83740, 83741, 83742, 83743, 83744, 83745, 83746, 83747, 83748, 83749, 83750, 83751, 83752, 83753, 83755, 83756, 83757, 83758, 83759, 83760, 83761, 83762, 83763, 83764, 83765, 83766, 89206, 89211
+ENGL 1106 - First-Year Writing / Lecture / SR Conaway, SD Mooney, MS Smith, GK Natishan, LC Skinner, SD Frost, HR Patton, Staff, IL Johnson, ZK Combiths, VL Ruccolo / 83736, 83737, 83739, 83740, 83741, 83742, 83743, 83744, 83745, 83746, 83747, 83748, 83749, 83750, 83751, 83752, 83753, 83755, 83756, 83757, 83758, 83759, 83760, 83761, 83762, 83763, 83764, 83765, 83766, 89206, 89211
 83893 / ENGL 3804 - Technical Editing and Style / Lecture / C Commer / TR 2:00PM - 3:15PM
 ENGL 3804 - Technical Editing and Style / Lecture / C Commer / 83893
 88885 / ENGL 1105 - First-Year Writing / Lecture / JT Truscello / MWF 11:15AM - 12:05PM
@@ -4825,24 +4816,16 @@ ENGL 3804 - Technical Editing and Style / Lecture / C Commer / 83893
 88883 / ENGL 1105 - First-Year Writing / Lecture / R Uren / MWF 10:10AM - 11:00AM
 88684 / ENGL 1105 - First-Year Writing / Lecture / R Uren / MWF 11:15AM - 12:05PM
 88683 / ENGL 1105 - First-Year Writing / Lecture / KM West / MWF 11:15AM - 12:05PM
-88682 / ENGL 1105 - First-Year Writing / Lecture / TM Prater / MWF 11:15AM - 12:05PM
+88682 / ENGL 1105 - First-Year Writing / Lecture / JA Drapeau / MWF 11:15AM - 12:05PM
 88681 / ENGL 1105 - First-Year Writing / Lecture / VL Ruccolo / MWF 10:10AM - 11:00AM
 88680 / ENGL 1105 - First-Year Writing / Lecture / DS Lawrence / MWF 10:10AM - 11:00AM
-88679 / ENGL 1105 - First-Year Writing / Lecture / CP Kour / MWF 10:10AM - 11:00AM
-88678 / ENGL 1105 - First-Year Writing / Lecture / A Bhowmik / MWF 10:10AM - 11:00AM
-88677 / ENGL 1105 - First-Year Writing / Lecture / Staff / MWF 12:20PM - 1:10PM
-88676 / ENGL 1105 - First-Year Writing / Lecture / Staff / MWF 12:20PM - 1:10PM
-88675 / ENGL 1105 - First-Year Writing / Lecture / Staff / MWF 12:20PM - 1:10PM
-88674 / ENGL 1105 - First-Year Writing / Lecture / Staff / MWF 12:20PM - 1:10PM
-88673 / ENGL 1105 - First-Year Writing / Lecture / Staff / MWF 12:20PM - 1:10PM
-88672 / ENGL 1105 - First-Year Writing / Lecture / Staff / MWF 12:20PM - 1:10PM
-88671 / ENGL 1105 - First-Year Writing / Lecture / Staff / MWF 12:20PM - 1:10PM
-88670 / ENGL 1105 - First-Year Writing / Lecture / Staff / MWF 12:20PM - 1:10PM
+88679 / ENGL 1105 - First-Year Writing / Lecture / LM Mitchell Reford / MWF 10:10AM - 11:00AM
+88678 / ENGL 1105 - First-Year Writing / Lecture / C Wilson / MWF 10:10AM - 11:00AM
 88669 / ENGL 1105 - First-Year Writing / Lecture / TW McDonald / MWF 11:15AM - 12:05PM
-88668 / ENGL 1105 - First-Year Writing / Lecture / DS Lawrence / MWF 11:15AM - 12:05PM
+88668 / ENGL 1105 - First-Year Writing / Lecture / AK McGlone / MWF 11:15AM - 12:05PM
 88667 / ENGL 1105 - First-Year Writing / Lecture / CP Kour / MWF 11:15AM - 12:05PM
 88666 / ENGL 1105 - First-Year Writing / Lecture / MC Hall / MWF 11:15AM - 12:05PM
-88655 / ENGL 1105 - First-Year Writing / Lecture / DH Koch / MW 4:00PM - 5:15PM
+88655 / ENGL 1105 - First-Year Writing / Lecture / Staff / MW 4:00PM - 5:15PM
 83735 / ENGL 1105 - First-Year Writing / Lecture / Staff / TR 8:00AM - 9:15AM
 83734 / ENGL 1105 - First-Year Writing / Lecture / C Wilson / MWF 8:00AM - 8:50AM
 83733 / ENGL 1105 - First-Year Writing / Lecture / JT Truscello / MWF 1:25PM - 2:15PM
@@ -4863,33 +4846,33 @@ ENGL 3804 - Technical Editing and Style / Lecture / C Commer / 83893
 83717 / ENGL 1105 - First-Year Writing / Lecture / R Uren / MWF 9:05AM - 9:55AM
 83716 / ENGL 1105 - First-Year Writing / Lecture / LE Jernegan / MWF 8:00AM - 8:50AM
 83715 / ENGL 1105 - First-Year Writing / Lecture / VL Ruccolo / MWF 1:25PM - 2:15PM
-83713 / ENGL 1105 - First-Year Writing / Lecture / TM Prater / MWF 1:25PM - 2:15PM
+83713 / ENGL 1105 - First-Year Writing / Lecture / IL Johnson / MWF 1:25PM - 2:15PM
 83712 / ENGL 1105 - First-Year Writing / Lecture / DE Whitley / MWF 10:10AM - 11:00AM
-83711 / ENGL 1105 - First-Year Writing / Lecture / AK McGlone / MWF 10:10AM - 11:00AM
+83711 / ENGL 1105 - First-Year Writing / Lecture / JM Harding / MWF 10:10AM - 11:00AM
 83710 / ENGL 1105 - First-Year Writing / Lecture / RH Canter / MWF 11:15AM - 12:05PM
 83709 / ENGL 1105 - First-Year Writing / Lecture / L Neilan / TR 3:30PM - 4:45PM
 83708 / ENGL 1105 - First-Year Writing / Lecture / PA Siebel / TR 11:00AM - 12:15PM
-83707 / ENGL 1105 - First-Year Writing / Lecture / Staff / TR 11:00AM - 12:15PM
+83707 / ENGL 1105 - First-Year Writing / Lecture / DH Koch / TR 11:00AM - 12:15PM
 83706 / ENGL 1105 - First-Year Writing / Lecture / Staff / TR 12:30PM - 1:45PM
 83705 / ENGL 1105 - First-Year Writing / Lecture / VA Le Corre-Cochran / TR 11:00AM - 12:15PM
 83704 / ENGL 1105 - First-Year Writing / Lecture / MS Maycock / TR 3:30PM - 4:45PM
-83703 / ENGL 1105 - First-Year Writing / Lecture / TW McDonald / MWF 1:25PM - 2:15PM
-83702 / ENGL 1105 - First-Year Writing / Lecture / C Wilson / MWF 9:05AM - 9:55AM
+83703 / ENGL 1105 - First-Year Writing / Lecture / A Bhowmik / MWF 1:25PM - 2:15PM
+83702 / ENGL 1105 - First-Year Writing / Lecture / TW McDonald / MWF 9:05AM - 9:55AM
 83701 / ENGL 1105 - First-Year Writing / Lecture / KE Schurer / MWF 9:05AM - 9:55AM
-83700 / ENGL 1105 - First-Year Writing / Lecture / LM Mitchell Reford / MWF 9:05AM - 9:55AM
+83700 / ENGL 1105 - First-Year Writing / Lecture / CP Kour / MWF 9:05AM - 9:55AM
 83699 / ENGL 1105 - First-Year Writing / Lecture / EC Howe / MWF 10:10AM - 11:00AM
 83698 / ENGL 1105 - First-Year Writing / Lecture / MC Hall / MWF 1:25PM - 2:15PM
 83697 / ENGL 1105 - First-Year Writing / Lecture / VA Le Corre-Cochran / TR 9:30AM - 10:45AM
 83695 / ENGL 1105 - First-Year Writing / Lecture / L Neilan / TR 2:00PM - 3:15PM
 83694 / ENGL 1105 - First-Year Writing / Lecture / DE Whitley / MWF 8:00AM - 8:50AM
 83693 / ENGL 1105 - First-Year Writing / Lecture / DP Kennedy / MWF 2:30PM - 3:20PM
-83692 / ENGL 1105 - First-Year Writing / Lecture / Staff / MWF 9:05AM - 9:55AM
+83692 / ENGL 1105 - First-Year Writing / Lecture / DS Lawrence / MWF 9:05AM - 9:55AM
 83691 / ENGL 1105 - First-Year Writing / Lecture / EC Howe / MWF 8:00AM - 8:50AM
 83690 / ENGL 1105 - First-Year Writing / Lecture / R Dhamala / MWF 8:00AM - 8:50AM
 83689 / ENGL 1105 - First-Year Writing / Lecture / MD Neuhoff / MWF 9:05AM - 9:55AM
 83688 / ENGL 1105 - First-Year Writing / Lecture / KE Schurer / MWF 1:25PM - 2:15PM
-83687 / ENGL 1105 - First-Year Writing / Lecture / JA Drapeau / MWF 10:10AM - 11:00AM
-83686 / ENGL 1105 - First-Year Writing / Lecture / DH Koch / MW 2:30PM - 3:45PM
+83687 / ENGL 1105 - First-Year Writing / Lecture / TM Prater / MWF 10:10AM - 11:00AM
+83686 / ENGL 1105 - First-Year Writing / Lecture / Staff / MW 2:30PM - 3:45PM
 83685 / ENGL 1105 - First-Year Writing / Lecture / RM Allnutt / MWF 11:15AM - 12:05PM
 83684 / ENGL 1105 - First-Year Writing / Lecture / DP Kennedy / MWF 1:25PM - 2:15PM
 83683 / ENGL 1105 - First-Year Writing / Lecture / AK McGlone / MWF 9:05AM - 9:55AM
@@ -4897,9 +4880,9 @@ ENGL 3804 - Technical Editing and Style / Lecture / C Commer / 83893
 83681 / ENGL 1105 - First-Year Writing / Lecture / MS Maycock / TR 2:00PM - 3:15PM
 83680 / ENGL 1105 - First-Year Writing / Lecture / VA Le Corre-Cochran / TR 2:00PM - 3:15PM
 83679 / ENGL 1105 - First-Year Writing / Lecture / MJ Bliss / TR 9:30AM - 10:45AM
-83678 / ENGL 1105 - First-Year Writing / Lecture / Staff / TR 8:00AM - 9:15AM
+83678 / ENGL 1105 - First-Year Writing / Lecture / DH Koch / TR 8:00AM - 9:15AM
 83677 / ENGL 1105 - First-Year Writing / Lecture / ME Glasson-Darling / MWF 1:25PM - 2:15PM
-83676 / ENGL 1105 - First-Year Writing / Lecture / Staff / MWF 9:05AM - 9:55AM
+83676 / ENGL 1105 - First-Year Writing / Lecture / TM Prater / MWF 9:05AM - 9:55AM
 83675 / ENGL 1105 - First-Year Writing / Lecture / JA Drapeau / MWF 9:05AM - 9:55AM
 83674 / ENGL 1105 - First-Year Writing / Lecture / MS Maycock / MW 4:00PM - 5:15PM
 83673 / ENGL 1105 - First-Year Writing / Lecture / MS Maycock / MW 2:30PM - 3:45PM
@@ -4913,7 +4896,7 @@ ENGL 3804 - Technical Editing and Style / Lecture / C Commer / 83893
 83665 / ENGL 1105 - First-Year Writing / Lecture / RH Canter / MWF 9:05AM - 9:55AM
 83664 / ENGL 1105 - First-Year Writing / Lecture / MJ Bliss / MWF 9:05AM - 9:55AM
 83663 / ENGL 1105 - First-Year Writing / Lecture / RH Canter / MWF 1:25PM - 2:15PM
-ENGL 1105 - First-Year Writing / Lecture / JM Harding, MJ Bliss, RM Allnutt, JA Drapeau, MD Neuhoff, R Dhamala, DP Kennedy, EC Howe, KE Schurer, MS Maycock, VA Le Corre-Cochran, L Neilan, RH Canter, DE Whitley, ME Glasson-Darling, LE Jernegan, J Lawrence, PA Siebel, LM Mitchell Reford, DR Melling, AK McGlone, C Wilson, DH Koch, MC Hall, TW McDonald, Staff, A Bhowmik, CP Kour, DS Lawrence, VL Ruccolo, TM Prater, KM West, R Uren, JT Truscello / 83663, 83664, 83665, 83666, 83667, 83668, 83669, 83670, 83671, 83672, 83673, 83674, 83675, 83676, 83677, 83678, 83679, 83680, 83681, 83682, 83683, 83684, 83685, 83686, 83687, 83688, 83689, 83690, 83691, 83692, 83693, 83694, 83695, 83697, 83698, 83699, 83700, 83701, 83702, 83703, 83704, 83705, 83706, 83707, 83708, 83709, 83710, 83711, 83712, 83713, 83715, 83716, 83717, 83718, 83719, 83720, 83721, 83723, 83724, 83725, 83726, 83727, 83728, 83729, 83730, 83731, 83732, 83733, 83734, 83735, 88655, 88666, 88667, 88668, 88669, 88670, 88671, 88672, 88673, 88674, 88675, 88676, 88677, 88678, 88679, 88680, 88681, 88682, 88683, 88684, 88883, 88884, 88885
+ENGL 1105 - First-Year Writing / Lecture / MJ Bliss, RM Allnutt, TM Prater, MD Neuhoff, R Dhamala, DP Kennedy, EC Howe, KE Schurer, MS Maycock, VA Le Corre-Cochran, DH Koch, L Neilan, RH Canter, JM Harding, DE Whitley, IL Johnson, ME Glasson-Darling, LE Jernegan, J Lawrence, PA Siebel, DR Melling, A Bhowmik, Staff, MC Hall, CP Kour, AK McGlone, TW McDonald, C Wilson, LM Mitchell Reford, DS Lawrence, VL Ruccolo, JA Drapeau, KM West, R Uren, JT Truscello / 83663, 83664, 83665, 83666, 83667, 83668, 83669, 83670, 83671, 83672, 83673, 83674, 83675, 83676, 83677, 83678, 83679, 83680, 83681, 83682, 83683, 83684, 83685, 83686, 83687, 83688, 83689, 83690, 83691, 83692, 83693, 83694, 83695, 83697, 83698, 83699, 83700, 83701, 83702, 83703, 83704, 83705, 83706, 83707, 83708, 83709, 83710, 83711, 83712, 83713, 83715, 83716, 83717, 83718, 83719, 83720, 83721, 83723, 83724, 83725, 83726, 83727, 83728, 83729, 83730, 83731, 83732, 83733, 83734, 83735, 88655, 88666, 88667, 88668, 88669, 88678, 88679, 88680, 88681, 88682, 88683, 88684, 88883, 88884, 88885
 83847 / ENGL 3524 - Literature for Children / Lecture / JA Wemhoener / TR 12:30PM - 1:45PM
 83846 / ENGL 3524 - Literature for Children / Lecture / JA Wemhoener / TR 2:00PM - 3:15PM
 ENGL 3524 - Literature for Children / Lecture / JA Wemhoener / 83846, 83847
@@ -4935,7 +4918,7 @@ ENGL 4214 - Milton / Lecture / K Cleland / 88633
 83882 / ENGL 3764 - Technical Writing / Online / Staff
 83881 / ENGL 3764 - Technical Writing / Online / AM Kulak
 83880 / ENGL 3764 - Technical Writing / Online / Staff
-83879 / ENGL 3764 - Technical Writing / Online / Staff
+83879 / ENGL 3764 - Technical Writing / Online / TL Gardner
 83878 / ENGL 3764 - Technical Writing / Online / ZK Combiths
 83877 / ENGL 3764 - Technical Writing / Online / ZK Combiths
 83876 / ENGL 3764 - Technical Writing / Online / J Barton
@@ -4957,7 +4940,7 @@ ENGL 4214 - Milton / Lecture / K Cleland / 88633
 83860 / ENGL 3764 - Technical Writing / Lecture / CN Bean / MWF 1:25PM - 2:15PM
 83859 / ENGL 3764 - Technical Writing / Lecture / EA Lautenschlager / TR 11:00AM - 12:15PM
 83858 / ENGL 3764 - Technical Writing / Lecture / CN Bean / MWF 11:15AM - 12:05PM
-ENGL 3764 - Technical Writing / Lecture, Online / CN Bean, AB Hutchison, BE Covington, EA Lautenschlager, MR Armstrong, J Barton, ZK Combiths, AM Kulak, Staff, J Sano-Franchini / 83858, 83859, 83860, 83861, 83862, 83863, 83864, 83865, 83866, 83867, 83868, 83869, 83870, 83871, 83872, 83873, 83874, 83875, 83876, 83877, 83878, 83879, 83880, 83881, 83882, 83883, 83884, 83885, 88652, 88658
+ENGL 3764 - Technical Writing / Lecture, Online / CN Bean, AB Hutchison, BE Covington, EA Lautenschlager, MR Armstrong, J Barton, ZK Combiths, TL Gardner, AM Kulak, Staff, J Sano-Franchini / 83858, 83859, 83860, 83861, 83862, 83863, 83864, 83865, 83866, 83867, 83868, 83869, 83870, 83871, 83872, 83873, 83874, 83875, 83876, 83877, 83878, 83879, 83880, 83881, 83882, 83883, 83884, 83885, 88652, 88658
 83917 / ENGL 4974 - Independent Study / Independent Study / VC Fowler
 ENGL 4974 - Independent Study / Independent Study / VC Fowler / 83917
 83913 / ENGL 4854 - Wrtng, Research, Study Abroad / Lecture / JA Wemhoener / W 4:00PM - 6:50PM
@@ -5023,7 +5006,7 @@ ENGL 2444 - Greek and Roman Myth / Lecture / RL Phillips / 83808, 83809
 ENGL 4664 - Contemporary Fiction / Lecture / JM Vollmer / 83905
 89212 / ENGL 3774 - Business Writing / Lecture / SD Frost / MWF 9:05AM - 9:55AM
 88641 / ENGL 3774 - Business Writing / Online / Staff
-83892 / ENGL 3774 - Business Writing / Online / SD Frost
+83892 / ENGL 3774 - Business Writing / Online / TL Gardner
 83891 / ENGL 3774 - Business Writing / Online / TL Gardner
 83890 / ENGL 3774 - Business Writing / Online / TL Gardner
 83889 / ENGL 3774 - Business Writing / Online / J Barton
@@ -5259,8 +5242,6 @@ ESM 5734 - Intro Finite Elements / Lecture / Staff / 84073
 ESM 4994H - Undergraduate Research / Research / Staff / 84064
 88409 / ESM 6044 - Theory of Plates and Shells / Lecture / Staff / MWF 11:15AM - 12:05PM
 ESM 6044 - Theory of Plates and Shells / Lecture / Staff / 88409
-88407 / ESM 5554 - Turbulence and Turbulent Flows / Lecture / Staff / TR 8:00AM - 9:15AM
-ESM 5554 - Turbulence and Turbulent Flows / Lecture / Staff / 88407
 88597 / ESM 5994 - Research and Thesis / Research / Staff
 88596 / ESM 5994 - Research and Thesis / Research / Staff
 88595 / ESM 5994 - Research and Thesis / Research / Staff
@@ -5429,15 +5410,16 @@ ESM 6974 - Independent Study / Independent Study / Staff / 84083
 FA 2004 - Creativity & the Artistic Exp / Lecture / A Weinstein / 84085, 84086
 88527 / FCS 4964 - Field Work/Practicum / Lecture / JO Beamish
 FCS 4964 - Field Work/Practicum / Lecture / JO Beamish / 88527
+89359 / FIN 4274 - Equity Securities / Lecture / Staff / MW 2:30PM - 3:45PM
 88967 / FIN 4274 - Equity Securities / Lecture / RS Billingsley / MW 2:30PM - 3:45PM
-84152 / FIN 4274 - Equity Securities / Lecture / Staff / MW 4:00PM - 5:15PM
-FIN 4274 - Equity Securities / Lecture / Staff, RS Billingsley / 84152, 88967
+84152 / FIN 4274 - Equity Securities / Lecture / P Ye / MW 4:00PM - 5:15PM
+FIN 4274 - Equity Securities / Lecture / P Ye, RS Billingsley, Staff / 84152, 88967, 89359
 84140 / FIN 4154 - Real Estate Finance / Lecture / BN Murray / TR 12:30PM - 1:45PM
 84139 / FIN 4154 - Real Estate Finance / Lecture / BN Murray / TR 2:00PM - 3:15PM
 FIN 4154 - Real Estate Finance / Lecture / BN Murray / 84139, 84140
 84153 / FIN 4275 - Analytics Equity Portfolio Mgt / Lecture / RS Billingsley / MW 4:00PM - 5:15PM
 FIN 4275 - Analytics Equity Portfolio Mgt / Lecture / RS Billingsley / 84153
-84136 / FIN 4134 - Fin Planning Applications / Lecture / RH Lytton / TR 9:30AM - 10:45AM
+84136 / FIN 4134 - Fin Planning Applications / Lecture / RH Lytton / T 5:30PM - 8:30PM
 FIN 4134 - Fin Planning Applications / Lecture / RH Lytton / 84136
 84131 / FIN 4014 - Internet Law / Lecture / JS Hiller / TR 2:00PM - 3:15PM
 FIN 4014 - Internet Law / Lecture / JS Hiller / 84131
@@ -5445,12 +5427,11 @@ FIN 4014 - Internet Law / Lecture / JS Hiller / 84131
 84146 / FIN 4234 - Venture Cap & Inv Banking / Lecture / MT Kender / TR 9:30AM - 10:45AM
 FIN 4234 - Venture Cap & Inv Banking / Lecture / MT Kender / 84146, 84147
 84125 / FIN 3144 - Investments: Debt-Equity-Deriv / Lecture / T Wang / TR 11:00AM - 12:15PM
-84124 / FIN 3144 - Investments: Debt-Equity-Deriv / Lecture / Staff / TR 12:30PM - 1:45PM
+84124 / FIN 3144 - Investments: Debt-Equity-Deriv / Lecture / H Li / TR 12:30PM - 1:45PM
 84123 / FIN 3144 - Investments: Debt-Equity-Deriv / Lecture / Staff / TR 3:30PM - 4:45PM
 84122 / FIN 3144 - Investments: Debt-Equity-Deriv / Lecture / T Wang / TR 2:00PM - 3:15PM
-84121 / FIN 3144 - Investments: Debt-Equity-Deriv / Lecture / H Li / MW 2:30PM - 3:45PM
 84120 / FIN 3144 - Investments: Debt-Equity-Deriv / Lecture / Staff / TR 12:30PM - 1:45PM
-FIN 3144 - Investments: Debt-Equity-Deriv / Lecture / H Li, Staff, T Wang / 84120, 84121, 84122, 84123, 84124, 84125
+FIN 3144 - Investments: Debt-Equity-Deriv / Lecture / Staff, H Li, T Wang / 84120, 84122, 84123, 84124, 84125
 84144 / FIN 4224 - Fixed Income Securities / Lecture / Staff / MW 4:00PM - 5:15PM
 84143 / FIN 4224 - Fixed Income Securities / Lecture / Staff / MW 2:30PM - 3:45PM
 FIN 4224 - Fixed Income Securities / Lecture / Staff / 84143, 84144
@@ -5474,9 +5455,9 @@ FIN 4144 - Int Fin Mgt / Lecture / DM Patterson / 84137, 84138
 84149 / FIN 4244 - Asset Valuation & Governance / Lecture / Staff / TR 12:30PM - 1:45PM
 84148 / FIN 4244 - Asset Valuation & Governance / Lecture / Staff / TR 2:00PM - 3:15PM
 FIN 4244 - Asset Valuation & Governance / Lecture / Staff / 84148, 84149
-88975 / FIN 4124 - Client Relationship Management / Lecture / RH Lytton / MW 4:00PM - 5:15PM
-84135 / FIN 4124 - Client Relationship Management / Lecture / Staff / MW 2:30PM - 3:45PM
-FIN 4124 - Client Relationship Management / Lecture / Staff, RH Lytton / 84135, 88975
+88975 / FIN 4124 - Client Relationship Management / Lecture / Staff / MW 4:00PM - 5:15PM
+84135 / FIN 4124 - Client Relationship Management / Lecture / RH Lytton / MW 2:30PM - 3:45PM
+FIN 4124 - Client Relationship Management / Lecture / RH Lytton, Staff / 84135, 88975
 88966 / FIN 6125 - Investments / Lecture / Staff / M 3:00PM - 6:00PM
 FIN 6125 - Investments / Lecture / Staff / 88966
 88850 / FIN 3134 - Financial Analytics / Lecture / BS Paye / TR 2:00PM - 3:15PM
@@ -5492,13 +5473,13 @@ FIN 3134 - Financial Analytics / Lecture / JC Easterwood, BR Hart, BS Paye / 841
 88976 / FIN 2164 - Survey of Finance and Careers / Lecture / WB Newton / M 12:20PM - 1:15PM
 84100 / FIN 2164 - Survey of Finance and Careers / Lecture / WB Newton / M 2:30PM - 3:20PM
 84099 / FIN 2164 - Survey of Finance and Careers / Lecture / WB Newton / M 1:25PM - 2:15PM
-84098 / FIN 2164 - Survey of Finance and Careers / Lecture / Staff / W 10:10AM - 11:00AM
+84098 / FIN 2164 - Survey of Finance and Careers / Lecture / MR Jones / W 10:10AM - 11:00AM
 84097 / FIN 2164 - Survey of Finance and Careers / Lecture / Staff / W 9:05AM - 9:55AM
 84096 / FIN 2164 - Survey of Finance and Careers / Lecture / WB Newton / M 4:00PM - 4:50PM
 84095 / FIN 2164 - Survey of Finance and Careers / Lecture / MR Jones / W 11:15AM - 12:05PM
 84094 / FIN 2164 - Survey of Finance and Careers / Lecture / MT Kender / W 4:00PM - 4:50PM
 84093 / FIN 2164 - Survey of Finance and Careers / Lecture / MT Kender / W 2:30PM - 3:20PM
-FIN 2164 - Survey of Finance and Careers / Lecture / MT Kender, MR Jones, Staff, WB Newton / 84093, 84094, 84095, 84096, 84097, 84098, 84099, 84100, 88976
+FIN 2164 - Survey of Finance and Careers / Lecture / MT Kender, Staff, MR Jones, WB Newton / 84093, 84094, 84095, 84096, 84097, 84098, 84099, 84100, 88976
 88870 / FIN 3154 - Corporate Finance / Lecture / J Xu / TR 11:00AM - 12:15PM
 88869 / FIN 3154 - Corporate Finance / Lecture / Staff / TR 11:00AM - 12:15PM
 84128 / FIN 3154 - Corporate Finance / Lecture / Staff / TR 2:00PM - 3:15PM
@@ -5521,14 +5502,13 @@ FIN 5194 - Commerical Law / Lecture / JS Hiller / 84160
 FIN 3204 - Risk and Insurance / Lecture / EK Johnsen / 84130
 84092 / FIN 2114 - Invest & Financial Literacy / Lecture / TB Reilly / TR 12:30PM - 1:45PM
 84091 / FIN 2114 - Invest & Financial Literacy / Lecture / CB Carter / MW 4:00PM - 5:15PM
-84090 / FIN 2114 - Invest & Financial Literacy / Lecture / KM Hogan / TR 11:00AM - 12:15PM
+84090 / FIN 2114 - Invest & Financial Literacy / Lecture / Staff / TR 11:00AM - 12:15PM
 84089 / FIN 2114 - Invest & Financial Literacy / Lecture / TB Reilly / TR 2:00PM - 3:15PM
 84088 / FIN 2114 - Invest & Financial Literacy / Lecture / Staff / TR 3:30PM - 4:45PM
-FIN 2114 - Invest & Financial Literacy / Lecture / Staff, KM Hogan, CB Carter, TB Reilly / 84088, 84089, 84090, 84091, 84092
+FIN 2114 - Invest & Financial Literacy / Lecture / Staff, CB Carter, TB Reilly / 84088, 84089, 84090, 84091, 84092
 88977 / FIN 3104 - Introduction to Finance / Lecture / AJ Keown / TR 11:00AM - 12:15PM
 84109 / FIN 3104 - Introduction to Finance / Lecture / AJ Keown / TR 9:30AM - 10:45AM
-84108 / FIN 3104 - Introduction to Finance / Lecture / Staff / TR 8:00AM - 9:15AM
-FIN 3104 - Introduction to Finance / Lecture / Staff, AJ Keown / 84108, 84109, 88977
+FIN 3104 - Introduction to Finance / Lecture / AJ Keown / 84109, 88977
 84110 / FIN 3124 - Fin Planning for Professionals / Lecture / Staff / MW 2:30PM - 3:45PM
 FIN 3124 - Fin Planning for Professionals / Lecture / Staff / 84110
 84134 / FIN 4114 - Fin Plan Technology & Modeling / Lecture / DD Klock / MW 4:00PM - 5:15PM
@@ -5549,10 +5529,10 @@ FIW 5894 - Final Examination / Lecture / Staff / 84192
 FIW 5004 - GS:Global Change Seminar / Lecture / SM Karpanty, JR Walters / 84187, 84188
 84194 / FIW 5994 - Research and Thesis / Research / Staff
 FIW 5994 - Research and Thesis / Research / Staff / 84194
-89201 / FIW 6004 - Topics: Fisheries & Wildlife / Lecture / Staff / W 4:00PM - 7:00PM
+89201 / FIW 6004 - Topics: Fisheries & Wildlife / Lecture / BR Murphy / W 4:00PM - 7:00PM
 84196 / FIW 6004 - Topics: Fisheries & Wildlife / Lecture / Staff
 84195 / FIW 6004 - TS:Srvy Habt Mgt Aplchn&Pdmnt / Lecture / WM Ford / W 10:10AM - 11:40AM
-FIW 6004 - Topics: Fisheries & Wildlife / Lecture / WM Ford, Staff / 84195, 84196, 89201
+FIW 6004 - Topics: Fisheries & Wildlife / Lecture / WM Ford, Staff, BR Murphy / 84195, 84196, 89201
 84189 / FIW 5464G - Adv Human Dimensions of FIW / Lecture / AA Dayer / MWF 1:25PM - 2:15PM
 FIW 5464G - Adv Human Dimensions of FIW / Lecture / AA Dayer / 84189
 84177 / FIW 3514 - Fisheries Techniques / Lecture / L Castello / R 12:30PM - 6:00PM / T 12:30PM - 1:45PM
@@ -5578,10 +5558,12 @@ FIW 4994 - Undergraduate Research / Research / Staff / 84185, 84186
 FIW 5314 - Vertebrate Pop Ecology & Mgnt / Lecture / SM Karpanty, Staff / 88532, 88648, 89085
 84193 / FIW 5974 - Independent Study / Independent Study / Staff
 FIW 5974 - Independent Study / Independent Study / Staff / 84193
-89349 / FIW 4534 - Ecol & Mgmt of Wetland Systems / Lecture / Staff / MW 10:10AM - 11:00AM / T 2:00PM - 4:45PM
-FIW 4534 - Ecol & Mgmt of Wetland Systems / Lecture / Staff / 89349
+89349 / FIW 4534 - Ecol & Mgmt of Wetland Systems / Lecture / JA Parkhurst / MW 10:10AM - 11:00AM / T 2:00PM - 4:45PM
+FIW 4534 - Ecol & Mgmt of Wetland Systems / Lecture / JA Parkhurst / 89349
 84184 / FIW 4974 - Independent Study / Independent Study / Staff
 FIW 4974 - Independent Study / Independent Study / Staff / 84184
+89356 / FIW 5414 - Endangered Species Management / Lecture / Staff / TR 12:30PM - 1:45PM
+FIW 5414 - Endangered Species Management / Lecture / Staff / 89356
 84182 / FIW 4414 - Pop Dynamics & Estimation / Lecture / MJ Kelly / MW 2:30PM - 3:45PM
 FIW 4414 - Pop Dynamics & Estimation / Lecture / MJ Kelly / 84182
 84178 / FIW 3964 - Internship / Lab / Staff
@@ -5811,9 +5793,9 @@ FST 5974 - Independent Study / Independent Study, Online / Staff / 84312, 84313
 FST 4534 - Food Chemistry Lab / Lab / C Fernandez-Fraguas / 84297, 84298
 84299 / FST 4974 - Independent Study / Independent Study / Staff
 FST 4974 - Independent Study / Independent Study / Staff / 84299
-89285 / FST 4304 - Food Processing / Lecture / Staff / MWF 10:10AM - 11:00AM / W 2:30PM - 5:15PM
+89285 / FST 4304 - Food Processing / Lecture / H Huang / MWF 10:10AM - 11:00AM / W 2:30PM - 5:15PM
 89180 / FST 4304 - Food Processing / Lecture / H Huang / MWF 10:10AM - 11:00AM / M 2:30PM - 5:15PM
-FST 4304 - Food Processing / Lecture / H Huang, Staff / 89180, 89285
+FST 4304 - Food Processing / Lecture / H Huang / 89180, 89285
 84305 / FST 5404 - Food Packaging / Lecture / JE Marcy / MWF 1:25PM - 2:15PM
 FST 5404 - Food Packaging / Lecture / JE Marcy / 84305
 88344 / FST 5624 - Appl Food Micro & Sanitation / Online / JD Eifert
@@ -5927,15 +5909,15 @@ GEOG 1504 - Survey of Meteorology / Lecture / DF Carroll / 84325
 GEOS 5634G - Adv Environmental Geochemistry / Lecture / BC Gill / 84433
 84428 / GEOS 5024 - Prof Develop & Ethics Geosci / Lecture / JA Spotila / F 2:30PM - 3:45PM
 GEOS 5024 - Prof Develop & Ethics Geosci / Lecture / JA Spotila / 84428
-84436 / GEOS 5804G - Advanced Groundwater Hydrology / Lecture / ME Schreiber / MW 11:15AM - 12:05PM / R 2:00PM - 4:50PM
-84435 / GEOS 5804G - Advanced Groundwater Hydrology / Lecture / ME Schreiber / MW 11:15AM - 12:05PM / R 11:00AM - 1:50PM
-GEOS 5804G - Advanced Groundwater Hydrology / Lecture / ME Schreiber / 84435, 84436
+84436 / GEOS 5804G - Advanced Groundwater Hydrology / Lecture / Staff / MW 11:15AM - 12:05PM / R 2:00PM - 4:50PM
+84435 / GEOS 5804G - Advanced Groundwater Hydrology / Lecture / Staff / MW 11:15AM - 12:05PM / R 11:00AM - 1:50PM
+GEOS 5804G - Advanced Groundwater Hydrology / Lecture / Staff / 84435, 84436
 84415 / GEOS 4354 - Introduction to Remote Sensing / Lecture / JB Campbell / MW 8:00AM - 8:50AM / MF 12:20PM - 1:35PM
 84414 / GEOS 4354 - Introduction to Remote Sensing / Lecture / JB Campbell / MW 8:00AM - 8:50AM / MF 2:00PM - 3:15PM
 GEOS 4354 - Introduction to Remote Sensing / Lecture / JB Campbell / 84414, 84415
-84420 / GEOS 4804 - Groundwater Hydrology / Lecture / ME Schreiber / MW 11:15AM - 12:05PM / R 11:00AM - 1:50PM
-84419 / GEOS 4804 - Groundwater Hydrology / Lecture / ME Schreiber / MW 11:15AM - 12:05PM / R 2:00PM - 4:50PM
-GEOS 4804 - Groundwater Hydrology / Lecture / ME Schreiber / 84419, 84420
+84420 / GEOS 4804 - Groundwater Hydrology / Lecture / Staff / MW 11:15AM - 12:05PM / R 11:00AM - 1:50PM
+84419 / GEOS 4804 - Groundwater Hydrology / Lecture / Staff / MW 11:15AM - 12:05PM / R 2:00PM - 4:50PM
+GEOS 4804 - Groundwater Hydrology / Lecture / Staff / 84419, 84420
 84405 / GEOS 3614 - Soils / Lecture / WL Daniels / TR 12:30PM - 1:45PM
 GEOS 3614 - Soils / Lecture / WL Daniels / 84405
 84394 / GEOS 2964 - Field Study / Lecture / NL Ross
@@ -5963,8 +5945,8 @@ GEOS 6504 - Advanced Topics in Mineralogy / Lecture / Staff / 84443
 84442 / GEOS 6404 - Adv Topics Struc/Tec / Lecture / Staff
 84441 / GEOS 6404 - TS: Active Tectonics / Lecture / JA Spotila
 GEOS 6404 - Adv Topics Struc/Tec / Lecture / JA Spotila, Staff / 84441, 84442
-88955 / GEOS 5834 - Chemical Hydrogeology / Lecture / ME Schreiber
-GEOS 5834 - Chemical Hydrogeology / Lecture / ME Schreiber / 88955
+88955 / GEOS 5834 - Chemical Hydrogeology / Lecture / Staff
+GEOS 5834 - Chemical Hydrogeology / Lecture / Staff / 88955
 88954 / GEOS 5814 - Num Mod Groundwater / Lecture / TJ Burbey / TR 9:30AM - 10:45AM
 GEOS 5814 - Num Mod Groundwater / Lecture / TJ Burbey / 88954
 84427 / GEOS 4994H - Undergraduate Research / Research / NL Ross
@@ -6039,9 +6021,9 @@ GEOS 4974 - Independent Study / Independent Study / NL Ross / 84421
 84416 / GEOS 4634 - Environmental Geochemistry / Lecture / BC Gill / MWF 10:10AM - 11:00AM
 GEOS 4634 - Environmental Geochemistry / Lecture / BC Gill / 84416
 89294 / GEOS 4954 - Study Abroad / Lecture / Staff
-89293 / GEOS 4954 - Study Abroad / Lecture / Staff
-89249 / GEOS 4954 - Study Abroad / Lecture / Staff
-GEOS 4954 - Study Abroad / Lecture / Staff / 89249, 89293, 89294
+89293 / GEOS 4954 - Study Abroad / Lecture / RJ Bodnar
+89249 / GEOS 4954 - Study Abroad / Lecture / RJ Bodnar
+GEOS 4954 - Study Abroad / Lecture / RJ Bodnar, Staff / 89249, 89293, 89294
 84417 / GEOS 4714 - Volcanic Processes / Lecture / E Gazel
 GEOS 4714 - Volcanic Processes / Lecture / E Gazel / 84417
 84460 / GER 4154 - Adv Comp and Style / Lecture / DL Stoudt / MW 5:30PM - 6:45PM
@@ -6151,10 +6133,11 @@ GRAD 5144 - Communicating Science / Lecture / CJ Kroehler / 84528, 84529
 GRAD 7994 - Research and Dissertation / Research / KP DePauw / 84553
 89235 / GRAD 5024 - Data Management Skills / Lecture / AL Ogier / R 10:00AM - 11:50AM
 GRAD 5024 - Data Management Skills / Lecture / AL Ogier / 89235
+89355 / GRAD 5134 - TS: Intfcs of Glbl Change Sem / Lecture / JR Walters / M 5:30PM - 7:00PM
+89354 / GRAD 5134 - TS:Intrfc of Glb Chgn Capstone / Lecture / JR Walters / F 1:00PM - 4:00PM
 89318 / GRAD 5134 - TS: Polymers in Med. & Biology / Lecture / JS Riffle
-84526 / GRAD 5134 - TS: IGEP Human Centered Design / Lecture / SR Harrison / M 7:00PM - 9:45PM
-84525 / GRAD 5134 - TS Interdis Res: BioBuild / Lecture / AR Pearce / T 3:30PM - 5:30PM
-GRAD 5134 - TS: Polymers in Med. & Biology / Lecture / AR Pearce, SR Harrison, JS Riffle / 84525, 84526, 89318
+84526 / GRAD 5134 - TS: IGEP Human Centered Design / Lecture / Staff
+GRAD 5134 - TS: Intfcs of Glbl Change Sem / Lecture / Staff, JS Riffle, JR Walters / 84526, 89318, 89354, 89355
 84516 / GRAD 5014 - Academic Integ & Plagiarism / Online / KP DePauw
 GRAD 5014 - Academic Integ & Plagiarism / Online / KP DePauw / 84516
 84524 / GRAD 5124 - Grad Library Research Skills / Online / VS Pannabecker
@@ -6163,8 +6146,8 @@ GRAD 5014 - Academic Integ & Plagiarism / Online / KP DePauw / 84516
 84521 / GRAD 5124 - Grad Library Research Skills / Online / J Feerrar
 84520 / GRAD 5124 - Grad Library Research Skills / Online / KK Goldbeck DeBose
 GRAD 5124 - Grad Library Research Skills / Online / KK Goldbeck DeBose, J Feerrar, EF Lener, LD Becksford, VS Pannabecker / 84520, 84521, 84522, 84523, 84524
-84519 / GRAD 5114 - Contemporary Pedagogy / Lecture / C Matheis / W 6:00PM - 8:50PM
-GRAD 5114 - Contemporary Pedagogy / Lecture / C Matheis / 84519
+84519 / GRAD 5114 - Contemporary Pedagogy / Lecture / A Nelson / W 6:00PM - 8:50PM
+GRAD 5114 - Contemporary Pedagogy / Lecture / A Nelson / 84519
 84545 / GRAD 5994 - Research and Thesis / Research / KP DePauw
 GRAD 5994 - Research and Thesis / Research / KP DePauw / 84545
 84532 / GRAD 5224G - Adv Glob Aspect Intel Prop Law / Lecture / A Bieri / MW 4:00PM - 5:15PM
@@ -6427,10 +6410,7 @@ HIST 5964 - Field Work/Practicum / Lecture / MM Heaton / 88888
 89194 / HIST 3744 - Social History of Film / Lecture / HL Gumbert / TR 3:30PM - 4:45PM
 HIST 3744 - Social History of Film / Lecture / HL Gumbert / 89194
 88689 / HNFE 4174 - Nutr and Phys Perform / Lecture / MS Rockwell / TR 11:00AM - 12:15PM
-84738 / HNFE 4174 - Nutr and Phys Perform / Lecture / JW Rankin / MWF 9:05AM - 9:55AM
-HNFE 4174 - Nutr and Phys Perform / Lecture / JW Rankin, MS Rockwell / 84738, 88689
-84757 / HNFE 5044 - Sem Nutrition & Foods / Lecture / MI Frisard / M 3:00PM - 4:00PM
-HNFE 5044 - Sem Nutrition & Foods / Lecture / MI Frisard / 84757
+HNFE 4174 - Nutr and Phys Perform / Lecture / MS Rockwell / 88689
 84760 / HNFE 5684 - Prog Dev in Health Ed / Online / KJ Redican
 HNFE 5684 - Prog Dev in Health Ed / Online / KJ Redican / 84760
 84713 / HNFE 2254 - Exer Ldrship-Group Fit Instr / Lecture / KN Gwilliam / TR 9:30AM - 10:45AM
@@ -6461,8 +6441,8 @@ HNFE 3114 - Foodservice and Meal Mgt / Lecture / HK Cox / 84726
 84734 / HNFE 4004 - Seminar HNFE Writing&Discourse / Lecture / JH Williams / TR 8:00AM - 9:15AM
 84732 / HNFE 4004 - Seminar HNFE Writing&Discourse / Lecture / WE Barbeau / MW 1:25PM - 2:40PM
 84731 / HNFE 4004 - Seminar HNFE Writing&Discourse / Lecture / YH Ju / MW 8:30AM - 9:45AM
-84730 / HNFE 4004 - Seminar HNFE Writing&Discourse / Lecture / D Liu / MW 11:15AM - 12:30PM
-HNFE 4004 - Seminar HNFE Writing&Discourse / Lecture / D Liu, YH Ju, WE Barbeau, JH Williams, DJ Good / 84730, 84731, 84732, 84734, 88687
+84730 / HNFE 4004 - Seminar HNFE Writing&Discourse / Lecture / Staff / MW 11:15AM - 12:30PM
+HNFE 4004 - Seminar HNFE Writing&Discourse / Lecture / Staff, YH Ju, WE Barbeau, JH Williams, DJ Good / 84730, 84731, 84732, 84734, 88687
 84736 / HNFE 4125 - Medical Nutrition Therapy / Lecture / VE Hedrick / TR 8:00AM - 9:15AM
 HNFE 4125 - Medical Nutrition Therapy / Lecture / VE Hedrick / 84736
 84762 / HNFE 5754 - Internship Hum Foods & Nutr / Lecture / Staff
@@ -6549,7 +6529,7 @@ HORT 4794 - Medicinal Plants and Herbs / Lecture / GE Welbaum / 84803
 HORT 2154 - Spanish for the Green Industry / Lecture / BH Leshyn / 84775, 84776
 84780 / HORT 2304 - Plant Biology / Lecture / EP Beers / MWF 9:05AM - 9:55AM
 HORT 2304 - Plant Biology / Lecture / EP Beers / 84780
-89300 / HORT 2984 - SS: Home Gardening / Lecture / AG Hessler
+89300 / HORT 2984 - SS: Home Gardening / Lecture / AG Hessler / TR 2:00PM - 3:15PM
 HORT 2984 - SS: Home Gardening / Lecture / AG Hessler / 89300
 84779 / HORT 2224 - Horticulture Science & Industr / Lecture / AX Niemiera / MW 9:05AM - 9:55AM
 HORT 2224 - Horticulture Science & Industr / Lecture / AX Niemiera / 84779
@@ -6708,7 +6688,7 @@ HUM 2504 - Intro Amer Studies / Lecture / D Christensen / 84879
 HUM 5904 - Project and Report / Independent Study / Staff / 84890
 84869 / HUM 1324 - HUM: Mod World / Lecture / MB Saffle / TR 11:00AM - 12:15PM
 HUM 1324 - HUM: Mod World / Lecture / MB Saffle / 84869
-84878 / HUM 2204 - The Creative Process / Lecture / Staff / TR 2:00PM - 3:15PM
+84878 / HUM 2204 - The Creative Process / Lecture / Staff / MW 2:30PM - 3:45PM
 HUM 2204 - The Creative Process / Lecture / Staff / 84878
 84880 / HUM 2974 - Independent Study / Independent Study / Staff
 HUM 2974 - Independent Study / Independent Study / Staff / 84880
@@ -6735,7 +6715,7 @@ HUM 4404 - Appalachian Folk Cultures / Lecture / D Christensen / 84885
 84873 / HUM 1704 - Intro to Appalachian Studies / Lecture / Staff / MWF 9:05AM - 9:55AM
 84872 / HUM 1704 - Intro to Appalachian Studies / Lecture / Staff / TR 9:30AM - 10:45AM
 HUM 1704 - Intro to Appalachian Studies / Lecture / RP Kauffman, EM Satterwhite, TH Edmondson, JC Hennen, Staff / 84872, 84873, 84874, 84875, 84876, 84877, 88448, 88450, 89315
-84871 / HUM 1604 - Intro Hum and Arts / Lecture / E Stamm / MW 2:30PM - 3:45PM
+84871 / HUM 1604 - Intro Hum and Arts / Lecture / E Stamm / TR 2:00PM - 3:15PM
 HUM 1604 - Intro Hum and Arts / Lecture / E Stamm / 84871
 84888 / HUM 4994H - Undergraduate Research / Research / Staff
 HUM 4994H - Undergraduate Research / Research / Staff / 84888
@@ -6888,8 +6868,8 @@ ISC 1115 - Integrated Science Lab I / Lab / GL Long / 84973, 84974
 ISC 2105 - Integrated Science II / Lecture / W Mather / 84975
 84971 / ISC 1004 - ISC Orientation Seminar / Lecture / MJ Pleimling / M 9:05AM - 9:55AM
 ISC 1004 - ISC Orientation Seminar / Lecture / MJ Pleimling / 84971
-88876 / ISC 1224 - ISC Diff & Integral Calculus / Lecture / Staff / MT 5:15PM - 6:30PM
-ISC 1224 - ISC Diff & Integral Calculus / Lecture / Staff / 88876
+88876 / ISC 1224 - ISC Diff & Integral Calculus / Lecture / MJ Pleimling / MT 5:15PM - 6:30PM
+ISC 1224 - ISC Diff & Integral Calculus / Lecture / MJ Pleimling / 88876
 84977 / ISC 2115 - Integrated Science Lab II / Lab / GL Long / M 8:30AM - 11:00AM
 84976 / ISC 2115 - Integrated Science Lab II / Lab / GL Long / F 2:30PM - 5:00PM
 ISC 2115 - Integrated Science Lab II / Lab / GL Long / 84976, 84977
@@ -7292,9 +7272,9 @@ LDRS 3104 - The Dynamics of Leadership / Lecture / EC Jamison / 85301
 LDRS 2014 - Principles of Peer Leadership / Online / CR Friedel / 85296, 85297
 85307 / LDRS 4994 - Undergraduate Research / Research / Staff
 LDRS 4994 - Undergraduate Research / Research / Staff / 85307
-89156 / LDRS 5534 - Cognit Prob Slvg Pref for Chng / Online / Staff
-89155 / LDRS 5534 - Cognit Prob Slvg Pref for Chng / Lecture / Staff / R 5:00PM - 7:45PM
-LDRS 5534 - Cognit Prob Slvg Pref for Chng / Lecture, Online / Staff / 89155, 89156
+89156 / LDRS 5534 - Cognit Prob Slvg Pref for Chng / Online / JC Anderson
+89155 / LDRS 5534 - Cognit Prob Slvg Pref for Chng / Lecture / JC Anderson / R 5:00PM - 7:45PM
+LDRS 5534 - Cognit Prob Slvg Pref for Chng / Lecture, Online / JC Anderson / 89155, 89156
 85312 / LDRS 5974 - Independent Study / Independent Study / Staff
 LDRS 5974 - Independent Study / Independent Study / Staff / 85312
 85303 / LDRS 4754 - Internship / Lecture / CR Friedel
@@ -7598,7 +7578,7 @@ MATH 3034 - Introduction to Proofs / Lecture / Staff / 85488, 85489, 85490, 8549
 MATH 1525 - Calc With Matrices / Emporium, Online / JH England / 85404, 85405, 85406, 85407, 85408, 85409, 85410, 85411
 85484 / MATH 2534 - Intro Discrete Math / Lecture / Staff / MW 2:30PM - 3:45PM
 85483 / MATH 2534 - Intro Discrete Math / Lecture / Staff / TR 3:30PM - 4:45PM
-85482 / MATH 2534 - Intro Discrete Math / Lecture / Staff / MW 4:00PM - 4:55PM
+85482 / MATH 2534 - Intro Discrete Math / Lecture / Staff / MW 4:00PM - 5:15PM
 85481 / MATH 2534 - Intro Discrete Math / Lecture / Staff / TR 12:30PM - 1:45PM
 MATH 2534 - Intro Discrete Math / Lecture / Staff / 85481, 85482, 85483, 85484
 85486 / MATH 2974 - Independent Study / Independent Study / PE Haskell
@@ -7906,7 +7886,7 @@ ME 3124 - Thermodynamics / Lecture / Staff / 85590, 85591, 85592, 85593, 85594
 85638 / ME 4015 - Engineering Design and Project / Lab / SC Southward / TR 3:30PM - 4:45PM
 85637 / ME 4015 - Engineering Design and Project / Lab / RL West / TR 5:00PM - 6:15PM
 85636 / ME 4015 - Engineering Design and Project / Lab / JM Kennedy / TR 9:30AM - 10:45AM
-85635 / ME 4015 - Engineering Design and Project / Lecture / KB Kochersberger / M 2:30PM - 3:45PM
+85635 / ME 4015 - Engineering Design and Project / Lecture / KB Kochersberger / MWF 8:00AM - 8:50AM
 ME 4015 - Engineering Design and Project / Lecture, Lab / KB Kochersberger, JM Kennedy, RL West, SC Southward, DJ Nelson, JB Ferris, RL Clark, Staff / 85635, 85636, 85637, 85638, 85639, 85640, 85641, 89217
 85714 / ME 5104 - Thermodynamics: Found/Applic / Lecture / MR von Spakovsky / MWF 11:15AM - 12:05PM
 ME 5104 - Thermodynamics: Found/Applic / Lecture / MR von Spakovsky / 85714
@@ -8128,37 +8108,37 @@ ME 5724 - Advanced Instrumentation / Lecture, Online / AL Wicks / 85735, 88995, 
 86076 / MGT 4394 - Strategic Management / Lecture / LF Tegarden / MW 2:30PM - 3:45PM
 86075 / MGT 4394 - Strategic Management / Lecture / Staff / TR 5:00PM - 6:15PM
 86074 / MGT 4394 - Strategic Management / Lecture / FD Tuggle / MW 4:00PM - 5:15PM
-86073 / MGT 4394 - Strategic Management / Lecture / Staff / TR 11:00AM - 12:15PM
+86073 / MGT 4394 - Strategic Management / Lecture / VM Danielsen / TR 11:00AM - 12:15PM
 86072 / MGT 4394 - Strategic Management / Lecture / FD Tuggle / MW 2:30PM - 3:45PM
-86071 / MGT 4394 - Strategic Management / Lecture / Staff / TR 12:30PM - 1:45PM
+86071 / MGT 4394 - Strategic Management / Lecture / VM Danielsen / TR 12:30PM - 1:45PM
 86070 / MGT 4394 - Strategic Management / Lecture / LF Tegarden / MW 4:00PM - 5:15PM
 86069 / MGT 4394 - Strategic Management / Lecture / C Fitch / TR 2:00PM - 3:15PM
 86068 / MGT 4394 - Strategic Management / Lecture / Staff / TR 8:00AM - 9:15AM
-MGT 4394 - Strategic Management / Lecture / C Fitch, FD Tuggle, Staff, LF Tegarden / 86068, 86069, 86070, 86071, 86072, 86073, 86074, 86075, 86076
+MGT 4394 - Strategic Management / Lecture / C Fitch, VM Danielsen, FD Tuggle, Staff, LF Tegarden / 86068, 86069, 86070, 86071, 86072, 86073, 86074, 86075, 86076
 86067 / MGT 4354 - Leadership Skills / Lecture / KA Carlson / TR 5:00PM - 6:15PM
 MGT 4354 - Leadership Skills / Lecture / KA Carlson / 86067
-86085 / MGT 5124 - Business Research Methods / Lecture / Staff / S 8:30AM - 11:30AM
-MGT 5124 - Business Research Methods / Lecture / Staff / 86085
+86085 / MGT 5124 - Business Research Methods / Lecture / DJ Beal / S 8:30AM - 11:30AM
+MGT 5124 - Business Research Methods / Lecture / DJ Beal / 86085
 86048 / MGT 3464 - Diversity Intern & Prof Dev / Lecture / KA Carlson
 MGT 3464 - Diversity Intern & Prof Dev / Lecture / KA Carlson / 86048
-86026 / MGT 3064 - Cornerstones Entrepreneurship / Lecture / D Townsend / T 4:00PM - 7:00PM
-86025 / MGT 3064 - Cornerstones Entrepreneurship / Lecture / D Townsend / M 4:00PM - 7:00PM
+86026 / MGT 3064 - Cornerstones Entrepreneurship / Lecture / Staff / T 4:00PM - 7:00PM
+86025 / MGT 3064 - Cornerstones Entrepreneurship / Lecture / Staff / M 4:00PM - 7:00PM
 86024 / MGT 3064 - Cornerstones Entrepreneurship / Lecture / Staff / W 4:00PM - 7:00PM
-MGT 3064 - Cornerstones Entrepreneurship / Lecture / Staff, D Townsend / 86024, 86025, 86026
+MGT 3064 - Cornerstones Entrepreneurship / Lecture / Staff / 86024, 86025, 86026
 86060 / MGT 4094 - Managing Tech Commercializatn / Lecture / M Junkunc / TR 5:00PM - 6:15PM
 MGT 4094 - Managing Tech Commercializatn / Lecture / M Junkunc / 86060
 86053 / MGT 3935 - Adv Professional Dev for Cdts / Lecture / E Humphrey / T 3:30PM - 4:45PM
 MGT 3935 - Adv Professional Dev for Cdts / Lecture / E Humphrey / 86053
-86051 / MGT 3614 - Strategy Competition Analytics / Lecture / Staff / TR 8:00AM - 9:15AM
-MGT 3614 - Strategy Competition Analytics / Lecture / Staff / 86051
+86051 / MGT 3614 - Strategy Competition Analytics / Lecture / A Seth / T 5:30PM - 8:30PM
+MGT 3614 - Strategy Competition Analytics / Lecture / A Seth / 86051
 86022 / MGT 2964 - Field Study / Lecture / KA Carlson
 86021 / MGT 2964 - Field Study / Lecture / KA Carlson
 MGT 2964 - Field Study / Lecture / KA Carlson / 86021, 86022
-86042 / MGT 3314 - International Business / Lecture / Staff / TR 11:00AM - 12:15PM
-86041 / MGT 3314 - International Business / Lecture / A Seth / MW 4:00PM - 5:15PM
-MGT 3314 - International Business / Lecture / A Seth, Staff / 86041, 86042
-86045 / MGT 3334 - Managing Human Resources / Lecture / RD Zimmerman / TR 12:30PM - 1:45PM
-MGT 3334 - Managing Human Resources / Lecture / RD Zimmerman / 86045
+86042 / MGT 3314 - International Business / Lecture / P Thakur Wernz / TR 11:00AM - 12:15PM
+86041 / MGT 3314 - International Business / Lecture / P Thakur Wernz / MW 4:00PM - 5:15PM
+MGT 3314 - International Business / Lecture / P Thakur Wernz / 86041, 86042
+86045 / MGT 3334 - Managing Human Resources / Lecture / Staff / TR 12:30PM - 1:45PM
+MGT 3334 - Managing Human Resources / Lecture / Staff / 86045
 86023 / MGT 3014 - MGT Career Planning Strategy / Lecture / BL O'Donnell / MW 2:30PM - 3:45PM
 MGT 3014 - MGT Career Planning Strategy / Lecture / BL O'Donnell / 86023
 86103 / MGT 5974 - Independent Study / Independent Study / Staff
@@ -8167,8 +8147,8 @@ MGT 3014 - MGT Career Planning Strategy / Lecture / BL O'Donnell / 86023
 MGT 5974 - Independent Study / Independent Study / Staff / 86101, 86102, 86103
 86077 / MGT 4864 - WI Undergraduate Research / Research / Staff
 MGT 4864 - WI Undergraduate Research / Research / Staff / 86077
-86052 / MGT 3754 - Management Intern & Career Dev / Lecture / BL O'Donnell / TR 8:00AM - 9:15AM
-MGT 3754 - Management Intern & Career Dev / Lecture / BL O'Donnell / 86052
+86052 / MGT 3754 - Management Intern & Career Dev / Lecture / Staff / TR 8:00AM - 9:15AM
+MGT 3754 - Management Intern & Career Dev / Lecture / Staff / 86052
 86081 / MGT 4964 - Field Study / Lecture / KA Carlson
 MGT 4964 - Field Study / Lecture / KA Carlson / 86081
 86017 / MGT 1935 - Fund of Cadet Prof Leadership / Lecture / E Humphrey / T 3:30PM - 4:45PM
@@ -8181,9 +8161,9 @@ MGT 2945 - Small Unit Lrdshp for Cadets / Lecture / E Humphrey / 86020
 MGT 4994H - Undergraduate Research / Research / DR Gnyawali / 86084
 86059 / MGT 4084 - Management Consulting / Lecture / R Kennedy / TR 3:30PM - 4:45PM
 MGT 4084 - Management Consulting / Lecture / R Kennedy / 86059
-86058 / MGT 4064 - Developing Entrep Ventures / Lecture / M Junkunc / MW 5:30PM - 6:45PM
+86058 / MGT 4064 - Developing Entrep Ventures / Lecture / Staff / MW 5:30PM - 6:45PM
 86057 / MGT 4064 - Developing Entrep Ventures / Lecture / SJ Collins / MW 4:00PM - 5:15PM
-MGT 4064 - Developing Entrep Ventures / Lecture / SJ Collins, M Junkunc / 86057, 86058
+MGT 4064 - Developing Entrep Ventures / Lecture / SJ Collins, Staff / 86057, 86058
 86106 / MGT 7994 - Research and Dissertation / Research / DJ Beal
 MGT 7994 - Research and Dissertation / Research / DJ Beal / 86106
 86066 / MGT 4344 - Prod and Qual Leader / Lecture / ME Deck / TR 2:00PM - 3:15PM
@@ -8195,51 +8175,51 @@ MGT 5994 - Research and Thesis / Research / Staff / 86105
 86049 / MGT 3604 - Managerial Analytics / Lecture / SE Markham / TR 9:30AM - 10:45AM
 MGT 3604 - Managerial Analytics / Lecture / SE Markham / 86049, 86050
 86016 / MGT 1104 - Foundations of Business / Lecture / AH Cortes / MWF 12:20PM - 1:10PM
-86015 / MGT 1104 - Foundations of Business / Lecture / LR Fournier / MWF 11:15AM - 12:05PM
+86015 / MGT 1104 - Foundations of Business / Lecture / Staff / MWF 11:15AM - 12:05PM
 86014 / MGT 1104 - Foundations of Business / Lecture / SJ Skripak / MWF 11:15AM - 12:05PM
 86013 / MGT 1104 - Foundations of Business / Lecture / R Kennedy / MWF 11:15AM - 12:05PM
-86012 / MGT 1104 - Foundations of Business / Lecture / BL O'Donnell / MWF 11:15AM - 12:05PM
+86012 / MGT 1104 - Foundations of Business / Lecture / Staff / MWF 11:15AM - 12:05PM
 86011 / MGT 1104 - Foundations of Business / Lecture / SJ Skripak / MWF 10:10AM - 11:00AM
 86010 / MGT 1104 - Foundations of Business / Lecture / AH Cortes / MWF 10:10AM - 11:00AM
 86009 / MGT 1104 - Foundations of Business / Lecture / DR Lohr / MWF 10:10AM - 11:00AM
 86008 / MGT 1104 - Foundations of Business / Lecture / R Kennedy / MWF 9:05AM - 9:55AM
 86007 / MGT 1104 - Foundations of Business / Lecture / DR Lohr / MWF 9:05AM - 9:55AM
 86006 / MGT 1104 - Foundations of Business / Lecture / SJ Skripak / MWF 9:05AM - 9:55AM
-86005 / MGT 1104 - Foundations of Business / Lecture / LR Fournier / MWF 12:20PM - 1:10PM
+86005 / MGT 1104 - Foundations of Business / Lecture / Staff / MWF 12:20PM - 1:10PM
 86004 / MGT 1104 - Foundations of Business / Lecture / R Kennedy / MWF 12:20PM - 1:10PM
-86003 / MGT 1104 - Foundations of Business / Lecture / BL O'Donnell / MWF 10:10AM - 11:00AM
-MGT 1104 - Foundations of Business / Lecture / DR Lohr, BL O'Donnell, R Kennedy, SJ Skripak, LR Fournier, AH Cortes / 86003, 86004, 86005, 86006, 86007, 86008, 86009, 86010, 86011, 86012, 86013, 86014, 86015, 86016
+86003 / MGT 1104 - Foundations of Business / Lecture / Staff / MWF 10:10AM - 11:00AM
+MGT 1104 - Foundations of Business / Lecture / DR Lohr, R Kennedy, SJ Skripak, Staff, AH Cortes / 86003, 86004, 86005, 86006, 86007, 86008, 86009, 86010, 86011, 86012, 86013, 86014, 86015, 86016
 86040 / MGT 3304 - Mgt Th & Lead Pract / Online / AT Cobb
 86039 / MGT 3304 - Mgt Th & Lead Pract / Online / AT Cobb
 86038 / MGT 3304 - Mgt Th & Lead Pract / Lecture / Staff / F 12:20PM - 1:10PM
-86037 / MGT 3304 - Mgt Th & Lead Pract / Lecture / Staff / M 10:10AM - 11:00AM
-86036 / MGT 3304 - Mgt Th & Lead Pract / Lecture / Staff / TR 12:30PM - 1:45PM
-86035 / MGT 3304 - Mgt Th & Lead Pract / Lecture / Staff / M 11:15AM - 12:05PM
+86037 / MGT 3304 - Mgt Th & Lead Pract / Lecture / SC Matuszak / M 10:10AM - 11:00AM
+86036 / MGT 3304 - Mgt Th & Lead Pract / Lecture / AK Ward Bartlett / TR 12:30PM - 1:45PM
+86035 / MGT 3304 - Mgt Th & Lead Pract / Lecture / SC Matuszak / M 11:15AM - 12:05PM
 86034 / MGT 3304 - Mgt Th & Lead Pract / Lecture / Staff / F 10:10AM - 11:00AM
-86033 / MGT 3304 - Mgt Th & Lead Pract / Lecture / Staff / W 11:15AM - 12:05PM
+86033 / MGT 3304 - Mgt Th & Lead Pract / Lecture / SC Matuszak / W 11:15AM - 12:05PM
 86032 / MGT 3304 - Mgt Th & Lead Pract / Lecture / SC Matuszak / W 10:10AM - 11:00AM
 86031 / MGT 3304 - Mgt Th & Lead Pract / Lecture / AK Ward Bartlett / TR 3:30PM - 4:45PM
 86030 / MGT 3304 - Mgt Th & Lead Pract / Lecture / ME Deck / MW 5:30PM - 6:45PM
-86029 / MGT 3304 - Mgt Th & Lead Pract / Lecture / Staff / M 12:20PM - 1:10PM
+86029 / MGT 3304 - Mgt Th & Lead Pract / Lecture / SC Matuszak / M 12:20PM - 1:10PM
 86028 / MGT 3304 - Mgt Th & Lead Pract / Lecture / Staff / F 11:15AM - 12:05PM
-86027 / MGT 3304 - Mgt Th & Lead Pract / Lecture / Staff / W 12:20PM - 1:10PM
+86027 / MGT 3304 - Mgt Th & Lead Pract / Lecture / SC Matuszak / W 12:20PM - 1:10PM
 MGT 3304 - Mgt Th & Lead Pract / Lecture, Online / ME Deck, AK Ward Bartlett, SC Matuszak, Staff, AT Cobb / 86027, 86028, 86029, 86030, 86031, 86032, 86033, 86034, 86035, 86036, 86037, 86038, 86039, 86040
-86044 / MGT 3324 - Organization Behavior / Lecture / Staff / TR 2:00PM - 3:15PM
+86044 / MGT 3324 - Organization Behavior / Lecture / JP Flynn / TR 2:00PM - 3:15PM
 86043 / MGT 3324 - Organization Behavior / Lecture / JP Flynn / MW 4:00PM - 5:15PM
-MGT 3324 - Organization Behavior / Lecture / JP Flynn, Staff / 86043, 86044
-86047 / MGT 3344 - Employee & Labor Relations / Lecture / JB Arthur / TR 12:30PM - 1:45PM
-86046 / MGT 3344 - Employee & Labor Relations / Lecture / JB Arthur / TR 11:00AM - 12:15PM
-MGT 3344 - Employee & Labor Relations / Lecture / JB Arthur / 86046, 86047
-86064 / MGT 4334 - Ethical Leadership / Lecture / RE Wokutch / TR 11:00AM - 12:15PM
-86063 / MGT 4334 - Ethical Leadership / Lecture / AH Cortes / TR 12:30PM - 1:45PM
+MGT 3324 - Organization Behavior / Lecture / JP Flynn / 86043, 86044
+86047 / MGT 3344 - Employee & Labor Relations / Lecture / Staff / TR 12:30PM - 1:45PM
+86046 / MGT 3344 - Employee & Labor Relations / Lecture / Staff / TR 11:00AM - 12:15PM
+MGT 3344 - Employee & Labor Relations / Lecture / Staff / 86046, 86047
+86064 / MGT 4334 - Ethical Leadership / Lecture / AH Cortes / TR 11:00AM - 12:15PM
+86063 / MGT 4334 - Ethical Leadership / Lecture / RE Wokutch / TR 12:30PM - 1:45PM
 86062 / MGT 4334 - Ethical Leadership / Lecture / AH Cortes / MW 4:00PM - 5:15PM
-MGT 4334 - Ethical Leadership / Lecture / AH Cortes, RE Wokutch / 86062, 86063, 86064
+MGT 4334 - Ethical Leadership / Lecture / RE Wokutch, AH Cortes / 86062, 86063, 86064
 86083 / MGT 4994 - Undergraduate Research / Research / DR Gnyawali
 MGT 4994 - Undergraduate Research / Research / DR Gnyawali / 86083
 86078 / MGT 4874 - WI Independent Study / Independent Study / Staff
 MGT 4874 - WI Independent Study / Independent Study / Staff / 86078
-86061 / MGT 4314 - International Management / Lecture / Staff / TR 2:00PM - 3:15PM
-MGT 4314 - International Management / Lecture / Staff / 86061
+86061 / MGT 4314 - International Management / Lecture / A Seth / TR 2:00PM - 3:15PM
+MGT 4314 - International Management / Lecture / A Seth / 86061
 86082 / MGT 4974 - Independent Study / Independent Study / Staff
 MGT 4974 - Independent Study / Independent Study / Staff / 86082
 86056 / MGT 3964 - Field Study / Lecture / KA Carlson
@@ -8253,8 +8233,8 @@ MGT 2935 - Career Planning for Cadets / Lecture / E Humphrey / 86019
 MGT 3945 - Cadet Organizational Ldrshp / Lecture / E Humphrey / 86054
 86079 / MGT 4935 - Cadet Citizen Leader Practicum / Lecture / E Humphrey / T 3:30PM - 4:45PM
 MGT 4935 - Cadet Citizen Leader Practicum / Lecture / E Humphrey / 86079
-86099 / MGT 5804 - Leader Tech-Based Org / Online / Staff
-MGT 5804 - Leader Tech-Based Org / Online / Staff / 86099
+86099 / MGT 5804 - Leader Tech-Based Org / Online / D Townsend
+MGT 5804 - Leader Tech-Based Org / Online / D Townsend / 86099
 88259 / MINE 6034 - Chemistry of Flotation / Lecture / RH Yoon / R 8:00AM - 9:15AM
 88258 / MINE 6034 - Chemistry of Flotation / Lecture / Staff
 MINE 6034 - Chemistry of Flotation / Lecture / Staff, RH Yoon / 88258, 88259
@@ -8728,7 +8708,7 @@ MUS 3145 - Mus Styles Lit Lab / Lab / JR Sochinski / 86427
 MUS 2055 - Audio Technology For Music / Lecture / ME Dunston / 86370
 86423 / MUS 3065 - Computer Music & Multimedia / Lecture / CS Nichols / TR 11:00AM - 12:15PM
 MUS 3065 - Computer Music & Multimedia / Lecture / CS Nichols / 86423
-86422 / MUS 3064 - Digital Sound Manipulation / Lecture / I Bukvic / TR 9:30AM - 10:45AM
+86422 / MUS 3064 - Digital Sound Manipulation / Lecture / I Bukvic / TR 12:30PM - 1:45PM
 MUS 3064 - Digital Sound Manipulation / Lecture / I Bukvic / 86422
 86392 / MUS 2524 - Individual Applied Keyboard / Lecture / RJ Masters / TR 2:00PM - 3:15PM
 86391 / MUS 2524 - Individual Applied Keyboard / Lecture / TE Cowden / TR 2:00PM - 3:15PM
@@ -8839,8 +8819,8 @@ NANO 2114 - Nanoscience Research Seminar / Lecture / BA Magill / 86505
 NANO 3015 - Nano Synth & Characterization / Lecture / G Liu / 86506, 86507, 88889
 88891 / NANO 3114 - Prof Dissemination Nano Res / Lecture / Staff / F 10:10AM - 11:00AM
 88890 / NANO 3114 - Prof Dissemination Nano Res / Lecture / Staff / W 10:10AM - 11:00AM
-86508 / NANO 3114 - Prof Dissemination Nano Res / Lecture / JR Heflin / M 10:10AM - 11:00AM
-NANO 3114 - Prof Dissemination Nano Res / Lecture / JR Heflin, Staff / 86508, 88890, 88891
+86508 / NANO 3114 - Prof Dissemination Nano Res / Lecture / Staff / M 10:10AM - 11:00AM
+NANO 3114 - Prof Dissemination Nano Res / Lecture / Staff / 86508, 88890, 88891
 86518 / NANO 4994 - Undergraduate Research / Research / EJ Foster
 86517 / NANO 4994 - Undergraduate Research / Research / G Liu
 86516 / NANO 4994 - Undergraduate Research / Research / JR Heflin
@@ -8864,9 +8844,9 @@ NEUR 4044 - Neuroscience Senior Seminar / Lecture / C Thompson, Staff, JM Bowers
 NEUR 4594 - Clinical Neuro in Practice / Lecture / HW Sontheimer / 86539
 86537 / NEUR 4454 - Neuroeconomics / Lecture / SB Ball / MW 2:30PM - 3:45PM
 NEUR 4454 - Neuroeconomics / Lecture / SB Ball / 86537
-89236 / NEUR 3144 - Mech Learning & Memory / Lecture / Staff / MW 2:30PM - 3:45PM
+89236 / NEUR 3144 - Mech Learning & Memory / Lecture / ML Olsen / MW 2:30PM - 3:45PM
 86535 / NEUR 3144 - Mech Learning & Memory / Lecture / ML Olsen / TR 12:30PM - 1:45PM
-NEUR 3144 - Mech Learning & Memory / Lecture / ML Olsen, Staff / 86535, 89236
+NEUR 3144 - Mech Learning & Memory / Lecture / ML Olsen / 86535, 89236
 86534 / NEUR 3044 - Cell Molecular Neuroscience / Lecture / ER Gilbert / TR 8:00AM - 9:15AM
 NEUR 3044 - Cell Molecular Neuroscience / Lecture / ER Gilbert / 86534
 86527 / NEUR 2974 - Independent Study / Independent Study / I Kimbrough
@@ -8882,8 +8862,8 @@ NEUR 1004 - Neur Orientation Seminar / Lecture / HW Sontheimer / 86519
 NEUR 2994 - Undergraduate Research / Research / HW Sontheimer, Staff, S Robel, C Thompson, S Clinton / 86528, 86529, 86530, 86531, 86532, 86533
 86520 / NEUR 2025 - Introduction to Neuroscience / Lecture / MA Cline / TR 8:00AM - 9:15AM
 NEUR 2025 - Introduction to Neuroscience / Lecture / MA Cline / 86520
-86536 / NEUR 3554 - Neur Research and Practice / Lecture / RA Umans / MW 4:00PM - 5:15PM
-NEUR 3554 - Neur Research and Practice / Lecture / RA Umans / 86536
+86536 / NEUR 3554 - Neur Research and Practice / Lecture / Staff / MW 4:00PM - 5:15PM
+NEUR 3554 - Neur Research and Practice / Lecture / Staff / 86536
 86526 / NEUR 2035 - Neuroscience Laboratory / Lab / I Kimbrough / F 9:05AM - 11:55AM
 86525 / NEUR 2035 - Neuroscience Laboratory / Lab / I Kimbrough / M 10:10AM - 12:55PM
 86524 / NEUR 2035 - Neuroscience Laboratory / Lab / I Kimbrough / M 2:30PM - 5:15PM
@@ -9078,9 +9058,9 @@ PAPA 7964 - Field Study / Lecture / AM Eckerd, PS Roberts, MM Dull, BJ Cook, SM 
 PAPA 5954 - Internship / Lecture / Staff / 86666
 86838 / PHIL 5204G - Intermediate Phil of Mind / Lecture / KG Trogdon / M 4:00PM - 6:45PM
 PHIL 5204G - Intermediate Phil of Mind / Lecture / KG Trogdon / 86838
-86845 / PHIL 6014 - TS: / Lecture / JC Klagge / T 7:00PM - 9:45PM
+86845 / PHIL 6014 - TS:Origins of Analyt Philosphy / Lecture / JC Klagge / T 7:00PM - 9:45PM
 86844 / PHIL 6014 - Philosophy of Race / Lecture / D Wodak / R 3:30PM - 6:15PM
-PHIL 6014 - TS: / Lecture / D Wodak, JC Klagge / 86844, 86845
+PHIL 6014 - TS:Origins of Analyt Philosphy / Lecture / D Wodak, JC Klagge / 86844, 86845
 86840 / PHIL 5614G - Intermediate Phil of Science / Lecture / Staff / TR 12:30PM - 1:45PM
 PHIL 5614G - Intermediate Phil of Science / Lecture / Staff / 86840
 86827 / PHIL 3024 - TS: Pragmatism / Lecture / D Lind / MW 2:30PM - 3:45PM
@@ -9167,7 +9147,7 @@ PHIL 3324 - Biomedical Ethics / Lecture / HR Wildman Short / 86828
 86822 / PHIL 2894 - Intro Philosophy Politics Econ / Lecture / M Moehler / MW 4:00PM - 5:15PM
 PHIL 2894 - Intro Philosophy Politics Econ / Lecture / M Moehler / 86822
 86832 / PHIL 4015 - TS: Philosophy of Race / Lecture / D Wodak / R 3:30PM - 6:15PM
-86831 / PHIL 4015 - TS: / Lecture / JC Klagge / T 7:00PM - 9:45PM
+86831 / PHIL 4015 - Special Topics in Philosophy / Lecture / JC Klagge / T 7:00PM - 9:45PM
 PHIL 4015 - TS: Philosophy of Race / Lecture / JC Klagge, D Wodak / 86831, 86832
 86837 / PHIL 4994 - Undergraduate Research / Research / BC Jantzen
 PHIL 4994 - Undergraduate Research / Research / BC Jantzen / 86837
@@ -9915,17 +9895,17 @@ PSVP 4974 - Independent Study / Independent Study / Staff / 87400
 PSYC 5284 - Psychopathology / Lecture / GA Clum / 87493
 87500 / PSYC 6254 - TS:Assessment / Lecture / SW White / W 9:05AM - 11:55AM
 PSYC 6254 - TS:Assessment / Lecture / SW White / 87500
-87467 / PSYC 4034 - Special Topics in Dev Psyc / Lecture / RK Panneton / TR 8:00AM - 9:15AM
-PSYC 4034 - Special Topics in Dev Psyc / Lecture / RK Panneton / 87467
-87474 / PSYC 4234 - Develop Psyc Lab / Lab / LN Kim / M 4:00PM - 5:50PM
-87473 / PSYC 4234 - Develop Psyc Lab / Lab / LN Kim / R 1:00PM - 2:50PM
-PSYC 4234 - Develop Psyc Lab / Lab / LN Kim / 87473, 87474
+87467 / PSYC 4034 - Special Topics in Dev Psyc / Lecture / MA Bell / TR 8:00AM - 9:15AM
+PSYC 4034 - Special Topics in Dev Psyc / Lecture / MA Bell / 87467
+87474 / PSYC 4234 - Develop Psyc Lab / Lab / Staff / M 4:00PM - 5:50PM
+87473 / PSYC 4234 - Develop Psyc Lab / Lab / Staff / R 1:00PM - 2:50PM
+PSYC 4234 - Develop Psyc Lab / Lab / Staff / 87473, 87474
 87484 / PSYC 4454 - Neuroeconomics / Lecture / SB Ball / MW 2:30PM - 3:45PM
 PSYC 4454 - Neuroeconomics / Lecture / SB Ball / 87484
-87442 / PSYC 2034 - Developmental Psychology / Lecture / E Hernandez / MWF 12:20PM - 1:10PM
+87442 / PSYC 2034 - Developmental Psychology / Lecture / Staff / MWF 12:20PM - 1:10PM
 87441 / PSYC 2034 - Developmental Psychology / Lecture / PK Harrison / TR 12:30PM - 1:45PM
 87440 / PSYC 2034 - Developmental Psychology / Lecture / PK Harrison / TR 9:30AM - 10:45AM
-PSYC 2034 - Developmental Psychology / Lecture / PK Harrison, E Hernandez / 87440, 87441, 87442
+PSYC 2034 - Developmental Psychology / Lecture / PK Harrison, Staff / 87440, 87441, 87442
 87448 / PSYC 2054 - Psychology of Personality / Lecture / J Germana / MWF 1:25PM - 2:15PM
 87447 / PSYC 2054 - Psychology of Personality / Lecture / J Germana / MWF 9:05AM - 9:55AM
 87446 / PSYC 2054 - Psychology of Personality / Lecture / RJ Harvey / TR 9:30AM - 10:45AM
@@ -9934,12 +9914,12 @@ PSYC 2054 - Psychology of Personality / Lecture / RJ Harvey, J Germana / 87446, 
 PSYC 4974H - Independent Study / Independent Study / Staff / 87488
 87455 / PSYC 2964 - Field Study / Research / Staff
 PSYC 2964 - Field Study / Research / Staff / 87455
-87462 / PSYC 3014 - Abnormal Psychology / Lecture / RC Guerra / MWF 12:20PM - 1:10PM
+87462 / PSYC 3014 - Abnormal Psychology / Lecture / Staff / MWF 12:20PM - 1:10PM
 87461 / PSYC 3014 - Abnormal Psychology / Lecture / JA Richey / TR 9:30AM - 10:45AM
-87460 / PSYC 3014 - Abnormal Psychology / Lecture / AD Valdespino / MW 2:30PM - 3:45PM
-87459 / PSYC 3014 - Abnormal Psychology / Lecture / AT Wieckowski / TR 3:30PM - 4:45PM
+87460 / PSYC 3014 - Abnormal Psychology / Lecture / Staff / MW 2:30PM - 3:45PM
+87459 / PSYC 3014 - Abnormal Psychology / Lecture / Staff / TR 3:30PM - 4:45PM
 87458 / PSYC 3014 - Abnormal Psychology / Lecture / RT Jones / TR 2:00PM - 3:15PM
-PSYC 3014 - Abnormal Psychology / Lecture / RT Jones, AT Wieckowski, AD Valdespino, JA Richey, RC Guerra / 87458, 87459, 87460, 87461, 87462
+PSYC 3014 - Abnormal Psychology / Lecture / RT Jones, JA Richey, Staff / 87458, 87459, 87460, 87461, 87462
 87498 / PSYC 5974 - Independent Study / Independent Study / Staff
 PSYC 5974 - Independent Study / Independent Study / Staff / 87498
 87495 / PSYC 5315 - Research Methods / Lecture / NM Hauenstein / TR 9:30AM - 10:45AM
@@ -9953,21 +9933,21 @@ PSYC 6965 - Clinical Practicum / Lecture / LD Cooper / 87501
 PSYC 4994H - Undergraduate Research / Research / Staff / 87491
 87494 / PSYC 5294 - Psychophysiology / Lecture / BH Scarpa-Friedman / TR 11:00AM - 12:15PM
 PSYC 5294 - Psychophysiology / Lecture / BH Scarpa-Friedman / 87494
-87469 / PSYC 4064 - Physiological Psychology / Lecture / BH Scarpa-Friedman / TR 9:30AM - 10:45AM
-PSYC 4064 - Physiological Psychology / Lecture / BH Scarpa-Friedman / 87469
+87469 / PSYC 4064 - Physiological Psychology / Lecture / Staff / TR 9:30AM - 10:45AM
+PSYC 4064 - Physiological Psychology / Lecture / Staff / 87469
 87468 / PSYC 4044 - Advanced Learning / Lecture / KA Hoffman / TR 11:00AM - 12:15PM
 PSYC 4044 - Advanced Learning / Lecture / KA Hoffman / 87468
-87478 / PSYC 4264 - Lab in Phys Psyc / Lab / SS Grant / W 1:25PM - 3:15PM
-87477 / PSYC 4264 - Lab in Phys Psyc / Lab / SS Grant / T 1:00PM - 2:50PM
-PSYC 4264 - Lab in Phys Psyc / Lab / SS Grant / 87477, 87478
+87478 / PSYC 4264 - Lab in Phys Psyc / Lab / Staff / W 1:25PM - 3:15PM
+87477 / PSYC 4264 - Lab in Phys Psyc / Lab / Staff / T 1:00PM - 2:50PM
+PSYC 4264 - Lab in Phys Psyc / Lab / Staff / 87477, 87478
 87504 / PSYC 7994 - Research and Dissertation / Research / Staff
 PSYC 7994 - Research and Dissertation / Research / Staff / 87504
-87483 / PSYC 4364 - SR SEM:Psychopharmacology / Lecture / PK Harrison / MW 2:30PM - 3:45PM
+87483 / PSYC 4364 - SR SEM:Psychopharmacology / Lecture / RK Panneton / MW 2:30PM - 3:45PM
 87482 / PSYC 4364 - SR SEM:Psychology of Trauma / Lecture / RT Jones / TR 11:00AM - 12:15PM
 87481 / PSYC 4364 - SR SEM:Self and Beyond Self / Lecture / J Germana / TR 3:30PM - 4:45PM
-87480 / PSYC 4364 - TS: Child Social Development / Lecture / JC Dunsmore / MW 4:00PM - 5:15PM
-87479 / PSYC 4364 - TS: Developmental Plasticity / Lecture / RK Panneton / TR 8:00AM - 9:15AM
-PSYC 4364 - SR SEM:Psychopharmacology / Lecture / RK Panneton, JC Dunsmore, J Germana, RT Jones, PK Harrison / 87479, 87480, 87481, 87482, 87483
+87480 / PSYC 4364 - TS: Child Social Development / Lecture / GA Clum / MW 4:00PM - 5:15PM
+87479 / PSYC 4364 - TS: Developmental Plasticity / Lecture / DW Harrison / TR 8:00AM - 9:15AM
+PSYC 4364 - SR SEM:Psychopharmacology / Lecture / DW Harrison, GA Clum, J Germana, RT Jones, RK Panneton / 87479, 87480, 87481, 87482, 87483
 87466 / PSYC 4024 - Indust/Organiz Psych / Lecture / RJ Foti / MW 4:00PM - 5:15PM
 PSYC 4024 - Indust/Organiz Psych / Lecture / RJ Foti / 87466
 87476 / PSYC 4244 - Lab in Adv Learn / Lab / P Muralidharan / T 2:00PM - 3:50PM
@@ -9977,41 +9957,41 @@ PSYC 4244 - Lab in Adv Learn / Lab / P Muralidharan / 87475, 87476
 PSYC 5114 - Industrial-Organizational Psyc / Lecture / RJ Foti / 87492
 87499 / PSYC 5994 - Research and Thesis / Research / Staff
 PSYC 5994 - Research and Thesis / Research / Staff / 87499
-87445 / PSYC 2044 - Psychology of Learning / Lecture / AE Halliburton / MWF 12:20PM - 1:10PM
-87444 / PSYC 2044 - Psychology of Learning / Lecture / JM Brown / MWF 9:05AM - 9:55AM
-87443 / PSYC 2044 - Psychology of Learning / Lecture / EE Condy / TR 9:30AM - 10:45AM
-PSYC 2044 - Psychology of Learning / Lecture / EE Condy, JM Brown, AE Halliburton / 87443, 87444, 87445
-87463 / PSYC 3034 - Psyc Dis Children / Lecture / RM Slough / MW 4:00PM - 5:15PM
-PSYC 3034 - Psyc Dis Children / Lecture / RM Slough / 87463
+87445 / PSYC 2044 - Psychology of Learning / Lecture / Staff / MWF 12:20PM - 1:10PM
+87444 / PSYC 2044 - Psychology of Learning / Lecture / Staff / MWF 9:05AM - 9:55AM
+87443 / PSYC 2044 - Psychology of Learning / Lecture / Staff / TR 9:30AM - 10:45AM
+PSYC 2044 - Psychology of Learning / Lecture / Staff / 87443, 87444, 87445
+87463 / PSYC 3034 - Psyc Dis Children / Lecture / Staff / MW 4:00PM - 5:15PM
+PSYC 3034 - Psyc Dis Children / Lecture / Staff / 87463
 89130 / PSYC 3154 - Psych Fdn of Educ / Lecture / Staff / R 2:00PM - 3:15PM
 PSYC 3154 - Psych Fdn of Educ / Lecture / Staff / 89130
 87451 / PSYC 2064 - Nervous Systems & Behavior / Lecture / RA Diana / MWF 11:15AM - 12:05PM
-87450 / PSYC 2064 - Nervous Systems & Behavior / Lecture / SM Roldan / TR 12:30PM - 1:45PM
-87449 / PSYC 2064 - Nervous Systems & Behavior / Lecture / N Lauharatanahirun / MW 2:30PM - 3:45PM
-PSYC 2064 - Nervous Systems & Behavior / Lecture / N Lauharatanahirun, SM Roldan, RA Diana / 87449, 87450, 87451
+87450 / PSYC 2064 - Nervous Systems & Behavior / Lecture / Staff / TR 12:30PM - 1:45PM
+87449 / PSYC 2064 - Nervous Systems & Behavior / Lecture / Staff / MW 2:30PM - 3:45PM
+PSYC 2064 - Nervous Systems & Behavior / Lecture / Staff, RA Diana / 87449, 87450, 87451
 87464 / PSYC 3054 - Health Psychology / Lecture / RA Winett / TR 2:00PM - 3:15PM
 PSYC 3054 - Health Psychology / Lecture / RA Winett / 87464
-87439 / PSYC 1094 - Prin Psyc Research / Lecture / PF Hill / MWF 11:15AM - 12:05PM
+87439 / PSYC 1094 - Prin Psyc Research / Lecture / Staff / MWF 11:15AM - 12:05PM
 87438 / PSYC 1094 - Prin Psyc Research / Lecture / RJ Harvey / MWF 1:25PM - 2:15PM
 87437 / PSYC 1094 - Prin Psyc Research / Lecture / NM Hauenstein / TR 11:00AM - 12:15PM
 87436 / PSYC 1094 - Prin Psyc Research / Lecture / RJ Harvey / MWF 10:10AM - 11:00AM
-PSYC 1094 - Prin Psyc Research / Lecture / NM Hauenstein, RJ Harvey, PF Hill / 87436, 87437, 87438, 87439
-87454 / PSYC 2084 - Social Psychology / Lecture / CP Sullivan / MWF 11:15AM - 12:05PM
-87453 / PSYC 2084 - Social Psychology / Lecture / MD Roediger / TR 12:30PM - 1:45PM
-87452 / PSYC 2084 - Social Psychology / Lecture / BP Acton / TR 3:30PM - 4:45PM
-PSYC 2084 - Social Psychology / Lecture / BP Acton, MD Roediger, CP Sullivan / 87452, 87453, 87454
+PSYC 1094 - Prin Psyc Research / Lecture / NM Hauenstein, RJ Harvey, Staff / 87436, 87437, 87438, 87439
+87454 / PSYC 2084 - Social Psychology / Lecture / Staff / MWF 11:15AM - 12:05PM
+87453 / PSYC 2084 - Social Psychology / Lecture / Staff / TR 12:30PM - 1:45PM
+87452 / PSYC 2084 - Social Psychology / Lecture / Staff / TR 3:30PM - 4:45PM
+PSYC 2084 - Social Psychology / Lecture / Staff / 87452, 87453, 87454
 89089 / PSYC 1524 - Language and the Mind / Lecture / AJ Walker / TR 3:30PM - 3:45PM
 PSYC 1524 - Language and the Mind / Lecture / AJ Walker / 89089
 87456 / PSYC 2974 - Independent Study / Independent Study / Staff
 PSYC 2974 - Independent Study / Independent Study / Staff / 87456
-87407 / PSYC 1004 - Introductory Psychology / Lecture / BB DeVore / TR 12:30PM - 1:20PM
-87406 / PSYC 1004 - Introductory Psychology / Lecture / BB DeVore / MW 11:15AM - 12:05PM
+87407 / PSYC 1004 - Introductory Psychology / Lecture / BB DeVore / TR 12:30PM - 1:45PM
+87406 / PSYC 1004 - Introductory Psychology / Lecture / BB DeVore
 PSYC 1004 - Introductory Psychology / Lecture / BB DeVore / 87406, 87407
 87457 / PSYC 2994 - Undergraduate Research / Research / Staff
 PSYC 2994 - Undergraduate Research / Research / Staff / 87457
-89098 / PSYC 1024 - Pathways Psychology Major / Lecture / Staff
+89098 / PSYC 1024 - Pathways Psychology Major / Lecture / KA Hoffman
 87435 / PSYC 1024 - Pathways Psychology Major / Online / KA Hoffman
-PSYC 1024 - Pathways Psychology Major / Online, Lecture / KA Hoffman, Staff / 87435, 89098
+PSYC 1024 - Pathways Psychology Major / Online, Lecture / KA Hoffman / 87435, 89098
 87470 / PSYC 4114 - Cognitive Psychology / Lecture / A Cate / TR 2:00PM - 3:15PM
 PSYC 4114 - Cognitive Psychology / Lecture / A Cate / 87470
 87490 / PSYC 4994 - Undergraduate Research / Research / Staff
@@ -10021,9 +10001,9 @@ PSYC 4994 - Undergraduate Research / Research / Staff / 87489, 87490
 PSYC 5544 - Cognitive Development / Lecture / MA Bell / 87496
 87503 / PSYC 7965 - Internship / Lecture / LD Cooper
 PSYC 7965 - Internship / Lecture / LD Cooper / 87503
-87472 / PSYC 4214 - Cognitive Psyc Lab / Lab / F Wang / T 3:30PM - 5:20PM
-87471 / PSYC 4214 - Cognitive Psyc Lab / Lab / F Wang / W 4:00PM - 5:50PM
-PSYC 4214 - Cognitive Psyc Lab / Lab / F Wang / 87471, 87472
+87472 / PSYC 4214 - Cognitive Psyc Lab / Lab / Staff / T 3:30PM - 5:20PM
+87471 / PSYC 4214 - Cognitive Psyc Lab / Lab / Staff / W 4:00PM - 5:50PM
+PSYC 4214 - Cognitive Psyc Lab / Lab / Staff / 87471, 87472
 87502 / PSYC 7964 - Clinical Internship / Lecture / Staff
 PSYC 7964 - Clinical Internship / Lecture / Staff / 87502
 87487 / PSYC 4974 - Independent Study / Independent Study / Staff
@@ -10092,7 +10072,7 @@ RLCL 2124 - Religion in American Life / Lecture / Staff / 87521
 RLCL 1034 - Religion and the Modern World / Lecture / A Abeysekara / 89197
 87531 / RLCL 2464 - Religion and Science / Lecture / MR Goodrum / MWF 11:15AM - 12:05PM
 RLCL 2464 - Religion and Science / Lecture / MR Goodrum / 87531
-87541 / RLCL 4324 - Topics in Religion and Culture / Lecture / MR Gabriele / T 6:45PM - 9:30PM
+87541 / RLCL 4324 - Topics in Religion and Culture / Lecture / MR Gabriele / TR 11:00AM - 12:15PM
 RLCL 4324 - Topics in Religion and Culture / Lecture / MR Gabriele / 87541
 87548 / RLCL 5974 - Independent Study / Independent Study / Staff
 RLCL 5974 - Independent Study / Independent Study / Staff / 87548
@@ -10106,8 +10086,8 @@ RLCL 4124 - Topics in Culture / Lecture / KR Precoda / 88795
 RLCL 5994 - Research and Thesis / Lecture / Staff / 87549
 88456 / RLCL 3034 - Theories of Pop Culture / Lecture / MB Saffle / TR 2:00PM - 3:15PM
 RLCL 3034 - Theories of Pop Culture / Lecture / MB Saffle / 88456
-87547 / RLCL 5904 - Project and Report / Independent Study / Staff
-RLCL 5904 - Project and Report / Independent Study / Staff / 87547
+87547 / RLCL 5904 - Project and Report / Independent Study / A Ansell
+RLCL 5904 - Project and Report / Independent Study / A Ansell / 87547
 87525 / RLCL 2414 - Hebrew Bible/Old Testament / Lecture / BM Britt / TR 11:00AM - 12:15PM
 RLCL 2414 - Hebrew Bible/Old Testament / Lecture / BM Britt / 87525
 87510 / RLCL 1004 - Investig in Religion & Culture / Lecture / A Ansell / MWF 9:05AM - 9:55AM
@@ -10126,9 +10106,8 @@ RLCL 4994 - Undergraduate Research / Research / Staff / 87544
 RLCL 5104 - Mat Cult & Pub Hum Theory / Lecture / A Ansell / 88464
 87543 / RLCL 4974 - Independent Study / Independent Study / Staff
 RLCL 4974 - Independent Study / Independent Study / Staff / 87543
-87520 / RLCL 1904 - Religion and Culture In Asia / Lecture / Z Ni / TR 11:00AM - 12:15PM
 87519 / RLCL 1904 - Religion and Culture In Asia / Lecture / PL Schmitthenner / MWF 11:15AM - 12:05PM
-RLCL 1904 - Religion and Culture In Asia / Lecture / PL Schmitthenner, Z Ni / 87519, 87520
+RLCL 1904 - Religion and Culture In Asia / Lecture / PL Schmitthenner / 87519
 87555 / RUS 1106 - Elementary Russian / Lecture / TP McKagen / MWF 11:15AM - 12:05PM
 RUS 1106 - Elementary Russian / Lecture / TP McKagen / 87555
 87558 / RUS 2734 - Intro Russian Civ / Lecture / K Rutsala / MWF 12:20PM - 1:10PM
@@ -10231,12 +10210,12 @@ SOC 3464 - Appalachian Communities / Lecture / AM Puckett / 87629
 SOC 3144 - Language & Ethnicity in the US / Lecture / K Carmichael / 88807
 88452 / SOC 4094 - Appalachian Community Research / Lecture / AM Puckett / W 7:00PM - 9:30PM
 SOC 4094 - Appalachian Community Research / Lecture / AM Puckett / 88452
-87620 / SOC 2404 - Deviant Behavior / Lecture / KM Boyle / TR 9:30AM - 10:45AM
+87620 / SOC 2404 - Deviant Behavior / Lecture / KM Boyle / TR 12:30PM - 1:45PM
 SOC 2404 - Deviant Behavior / Lecture / KM Boyle / 87620
 87628 / SOC 3414 - Criminology / Online / O Agozino
-87627 / SOC 3414 - Criminology / Lecture / Staff / MW 4:00PM - 5:15PM
+87627 / SOC 3414 - Criminology / Lecture / DW Alexander / TR 3:30PM - 4:45PM
 87626 / SOC 3414 - Criminology / Lecture / DW Alexander / TR 12:30PM - 1:45PM
-SOC 3414 - Criminology / Lecture, Online / DW Alexander, Staff, O Agozino / 87626, 87627, 87628
+SOC 3414 - Criminology / Lecture, Online / DW Alexander, O Agozino / 87626, 87627, 87628
 89277 / SOC 2984 - SS: Quan Appr to Cmnty Rsrch / Lecture / Staff / MWF 10:10AM - 11:00AM
 SOC 2984 - SS: Quan Appr to Cmnty Rsrch / Lecture / Staff / 89277
 87611 / SOC 2004 - Social Problems / Lecture / Staff / TR 9:30AM - 10:45AM
@@ -10272,10 +10251,10 @@ SOC 5914 - Orientation to the Discipline / Lecture / TM Calasanti / 87650
 SOC 7994 - Research and Dissertation / Research / Staff / 87653
 87649 / SOC 5894 - Final Examination / Lecture / Staff
 SOC 5894 - Final Examination / Lecture / Staff / 87649
-89204 / SOC 4124 - Topics in Culture / Lecture / Staff / MWF 12:20PM - 1:10PM
-89203 / SOC 4124 - Topics in Culture / Lecture / Staff / TR 12:30PM - 1:45PM
+89204 / SOC 4124 - Topics in Culture / Lecture / AK Harrison / MWF 12:20PM - 1:10PM
+89203 / SOC 4124 - Topics in Culture / Lecture / P Seniors / TR 12:30PM - 1:45PM
 88778 / SOC 4124 - Topics in Culture / Lecture / KR Precoda / W 10:10AM - 12:45PM
-SOC 4124 - Topics in Culture / Lecture / KR Precoda, Staff / 88778, 89203, 89204
+SOC 4124 - Topics in Culture / Lecture / KR Precoda, P Seniors, AK Harrison / 88778, 89203, 89204
 88780 / SOC 5114 - Contemp Social Theory / Lecture / NM King / M 9:00AM - 11:50AM
 SOC 5114 - Contemp Social Theory / Lecture / NM King / 88780
 87652 / SOC 5994 - Research and Thesis / Research / Staff
@@ -10295,7 +10274,7 @@ SOC 2974 - Independent Study / Independent Study / Staff / 87621
 87602 / SOC 1004 - Introductory Sociology / Lecture / NM King / TR 2:00PM - 3:15PM
 87601 / SOC 1004 - Introductory Sociology / Lecture / MD Hughes / TR 9:30AM - 10:45AM
 87600 / SOC 1004 - Introductory Sociology / Lecture / AM Stapp / TR 11:00AM - 12:15PM
-87599 / SOC 1004 - Introductory Sociology / Lecture / Staff / TR 3:30PM - 4:45PM
+87599 / SOC 1004 - Introductory Sociology / Lecture / Staff / MW 4:00PM - 5:15PM
 SOC 1004 - Introductory Sociology / Lecture, Online / MD Hughes, NM King, JW Ryan, AK Harrison, AM Stapp, Staff / 87599, 87600, 87601, 87602, 87603, 87604, 87606, 87608
 88776 / SOC 3204 - Social Research Methods / Lecture / H Zhu / TR 2:00PM - 3:15PM / T 12:30PM - 1:45PM
 87624 / SOC 3204 - Social Research Methods / Lecture / H Zhu / TR 2:00PM - 3:15PM / R 12:30PM - 1:45PM
@@ -10308,7 +10287,7 @@ SOC 2014 - Dating, Marriage and Divorce / Online / KJ Kiecolt / 87613
 SOC 3004 - Social Inequality / Online / Staff / 87622
 87641 / SOC 4994 - Undergraduate Research / Research / Staff
 SOC 4994 - Undergraduate Research / Research / Staff / 87641
-87634 / SOC 4434 - Advanced Topics in Criminology / Lecture / KM Boyle / TR 12:30PM - 1:45PM
+87634 / SOC 4434 - Advanced Topics in Criminology / Lecture / KM Boyle / TR 9:30AM - 10:45AM
 SOC 4434 - Advanced Topics in Criminology / Lecture / KM Boyle / 87634
 87645 / SOC 5204 - Data Analysis / Lecture / AS Vogt Yuan / TR 5:00PM - 6:15PM
 SOC 5204 - Data Analysis / Lecture / AS Vogt Yuan / 87645
@@ -10502,9 +10481,9 @@ STAT 2964 - Field Study / Lecture / Staff / 87719
 STAT 2004 - Introductory Statistics / Lecture / Staff / 87711, 87712, 87713, 87714, 87715, 87716
 87776 / STAT 5754 - Internship in Statistics / Lecture / Staff
 STAT 5754 - Internship in Statistics / Lecture / Staff / 87776
-87738 / STAT 3654 - Intro Data Analytics & Visual / Lecture / S Sengupta / MWF 1:25PM - 2:15PM
-87737 / STAT 3654 - Intro Data Analytics & Visual / Lecture / C Lucero / TR 11:00AM - 12:15PM
-STAT 3654 - Intro Data Analytics & Visual / Lecture / C Lucero, S Sengupta / 87737, 87738
+87738 / STAT 3654 - Intro Data Analytics & Visual / Lecture / C Lucero / MWF 1:25PM - 2:15PM
+87737 / STAT 3654 - Intro Data Analytics & Visual / Lecture / S Sengupta / TR 11:00AM - 12:15PM
+STAT 3654 - Intro Data Analytics & Visual / Lecture / S Sengupta, C Lucero / 87737, 87738
 87742 / STAT 4105 - Theoretical Statistics / Lecture / Staff / TR 11:00AM - 12:15PM
 STAT 4105 - Theoretical Statistics / Lecture / Staff / 87742
 89072 / STAT 4106 - Theoretical Statistics / Lecture / Staff / TR 11:00AM - 12:15PM
@@ -10570,8 +10549,6 @@ STS 3105 - Sci & Techn in Modern Society / Lecture / MR Goodrum / 87802
 STS 3314 - Medical Dilemmas & Human Exper / Lecture / AS Heflin, CM Olson / 87804, 87805
 87806 / STS 3334 - Energy and Society / Lecture / D Breslau / MW 2:30PM - 3:45PM
 STS 3334 - Energy and Society / Lecture / D Breslau / 87806
-88806 / STS 2354 - Hum, Tech, & Physical Sciences / Lecture / EC Patzig / TR 8:00AM - 9:15AM
-STS 2354 - Hum, Tech, & Physical Sciences / Lecture / EC Patzig / 88806
 87800 / STS 2464 - Religion and Science / Lecture / MR Goodrum / MWF 11:15AM - 12:05PM
 STS 2464 - Religion and Science / Lecture / MR Goodrum / 87800
 87809 / STS 4994 - Undergraduate Research / Research / Staff
@@ -10601,26 +10578,26 @@ STS 5306 - Phil Mod Sci & Tech / Lecture / AS Heflin / 88397
 STS 1504 - Intro Science, Tech, Society / Lecture / PR Olson / 87789, 87790, 87791, 87792, 87793, 87794
 88794 / STS 4704 - Gender and Science / Lecture / C Labuski / TR 3:30PM - 4:45PM
 STS 4704 - Gender and Science / Lecture / C Labuski / 88794
-88915 / SYSB 4065 - Research Exper in Systems Biol / Lecture / Staff
-SYSB 4065 - Research Exper in Systems Biol / Lecture / Staff / 88915
+88915 / SYSB 4065 - Research Exper in Systems Biol / Lecture / RV Jensen
+SYSB 4065 - Research Exper in Systems Biol / Lecture / RV Jensen / 88915
 87830 / SYSB 3115 - Network Dynam & Cell Physiol / Lecture / JJ Tyson / TR 3:30PM - 4:45PM / W 12:30PM - 3:15PM
 SYSB 3115 - Network Dynam & Cell Physiol / Lecture / JJ Tyson / 87830
 87828 / SYSB 2025 - Intro to Systems Biology / Lecture / JJ Tyson / TR 2:00PM - 3:15PM
 SYSB 2025 - Intro to Systems Biology / Lecture / JJ Tyson / 87828
-88916 / SYSB 4135 - Professionalism in Syst Biol / Lecture / Staff / WF 9:05AM - 9:55AM
-SYSB 4135 - Professionalism in Syst Biol / Lecture / Staff / 88916
+88916 / SYSB 4135 - Professionalism in Syst Biol / Lecture / J Chen / WF 9:05AM - 9:55AM
+SYSB 4135 - Professionalism in Syst Biol / Lecture / J Chen / 88916
 87829 / SYSB 3035 - Sys Bio of Genes and Proteins / Lecture / RV Jensen / MW 4:00PM - 5:15PM / M 12:30PM - 3:15PM
 SYSB 3035 - Sys Bio of Genes and Proteins / Lecture / RV Jensen / 87829
 89228 / TA 4014 - Contemporary Theatre Seminar / Lecture / GW Justice / MW 4:00PM - 5:15PM
 TA 4014 - Contemporary Theatre Seminar / Lecture / GW Justice / 89228
 87889 / TA 5315G - Advanced Directing / Lecture / RH Leonard / TR 3:30PM - 4:45PM
 TA 5315G - Advanced Directing / Lecture / RH Leonard / 87889
-87874 / TA 3144 - TS: / Lecture / CS Russo / TR 11:00AM - 12:15PM
+87874 / TA 3144 - TS: Drafting for the Theatre / Lecture / CS Russo / TR 11:00AM - 12:15PM
 87873 / TA 3144 - TS: Intro to Sound Design / Lecture / J Court / TR 12:30PM - 1:45PM
 87872 / TA 3144 - TS:Indivdual Desgn Studio / Lecture / JA Stein
 87871 / TA 3144 - TS:Ind Design Studio / Lecture / JF Ambrosone
 87870 / TA 3144 - TS:Sftware for Sound Designers / Lecture / J Court / MW 2:00PM - 3:15PM
-TA 3144 - TS: / Lecture / JF Ambrosone, JA Stein, J Court, CS Russo / 87870, 87871, 87872, 87873, 87874
+TA 3144 - TS: Drafting for the Theatre / Lecture / JF Ambrosone, JA Stein, J Court, CS Russo / 87870, 87871, 87872, 87873, 87874
 87876 / TA 3164 - TS: Shakespeare / Lecture / N Staley / MW 9:30AM - 10:50AM
 TA 3164 - TS: Shakespeare / Lecture / N Staley / 87876
 87847 / TA 2964 - Field Study / Lecture / SC Rinehart
@@ -10689,7 +10666,7 @@ TA 5415 - Production Studio I / Lecture / CS Nichols, JF Ambrosone, CS Russo, RW
 87918 / TA 5635 - Arts Management Studio III / Lecture / A Nelson
 TA 5635 - Arts Management Studio III / Lecture / A Nelson / 87918, 87920
 87914 / TA 5615 - Arts Management Studio I / Lecture / CE Pace / T 10:00AM - 12:30PM / F 1:00PM - 2:30PM
-87913 / TA 5615 - Arts Management Studio I / Lecture / A Nelson / M 2:00PM - 4:30PM
+87913 / TA 5615 - Arts Management Studio I / Lecture / A Nelson
 TA 5615 - Arts Management Studio I / Lecture / A Nelson, CE Pace / 87913, 87914
 89224 / TA 2604 - Introduction to Arts Marketing / Lecture / A Nelson / MWF 11:15AM - 12:05PM
 TA 2604 - Introduction to Arts Marketing / Lecture / A Nelson / 89224
@@ -10706,8 +10683,7 @@ TA 3134 - TS: Intermediate Lighting Tech / Lecture / JF Ambrosone / 89227
 87875 / TA 3154 - TS: Comedy / Lecture / DW Johnson / TR 3:30PM - 4:45PM
 TA 3154 - TS: Comedy / Lecture / DW Johnson / 87875
 87878 / TA 3174 - TS: Unarmed Stage Combat / Lecture / CE Rawlings / TR 2:00PM - 3:15PM
-87877 / TA 3174 - TS: Ballet / Lecture / B Lepczyk / MW 1:00PM - 2:15PM
-TA 3174 - TS: Unarmed Stage Combat / Lecture / B Lepczyk, CE Rawlings / 87877, 87878
+TA 3174 - TS: Unarmed Stage Combat / Lecture / CE Rawlings / 87878
 87923 / TA 5904 - Project and Report / Lecture / SC Rinehart
 TA 5904 - Project and Report / Lecture / SC Rinehart / 87923
 87846 / TA 2414 - Stage and Lighting Technology / Lecture / JF Ambrosone / TR 9:30AM - 10:45AM
@@ -10729,8 +10705,8 @@ TA 2135 - Theatre Design Lab / Lab / RW Ward / 87842
 87841 / TA 2134 - Acting Lab / Lab / GW Justice / TR 11:00AM - 12:15PM
 87840 / TA 2134 - Acting Lab / Lab / N Staley / TR 11:00AM - 12:15PM
 TA 2134 - Acting Lab / Lab / N Staley, GW Justice / 87840, 87841
-87869 / TA 3124 - TS: / Lecture / JA Stein / MW 11:00AM - 12:15PM
-TA 3124 - TS: / Lecture / JA Stein / 87869
+87869 / TA 3124 - TS:Advanced Costume Design / Lecture / JA Stein / MW 11:00AM - 12:15PM
+TA 3124 - TS:Advanced Costume Design / Lecture / JA Stein / 87869
 87887 / TA 4994 - Undergraduate Research / Research / SC Rinehart
 TA 4994 - Undergraduate Research / Research / SC Rinehart / 87887
 87886 / TA 4974 - Independent Study / Independent Study / SC Rinehart
@@ -10746,8 +10722,8 @@ TA 5425 - Production Studio II / Lecture / Staff, SC Rinehart, RW Ward, CS Russo
 87883 / TA 4315 - Directing / Lecture / RA McGrath / MW 4:00PM - 5:15PM
 87882 / TA 4315 - Directing / Lecture / RH Leonard / TR 3:30PM - 4:45PM
 TA 4315 - Directing / Lecture / RH Leonard, RA McGrath / 87882, 87883
-87916 / TA 5625 - Arts Management Studio II / Lecture / CE Pace / W 2:30PM - 5:00PM
-87915 / TA 5625 - Arts Management Studio II / Lecture / A Nelson / M 2:00PM - 4:30PM
+87916 / TA 5625 - Arts Management Studio II / Lecture / CE Pace / M 2:00PM - 4:30PM
+87915 / TA 5625 - Arts Management Studio II / Lecture / A Nelson / W 2:30PM - 5:00PM
 TA 5625 - Arts Management Studio II / Lecture / A Nelson, CE Pace / 87915, 87916
 87921 / TA 5704 - Graduate Theatre Internship / Lecture / SC Rinehart
 TA 5704 - Graduate Theatre Internship / Lecture / SC Rinehart / 87921
@@ -10843,8 +10819,8 @@ UAP 7994 - Research and Dissertation / Research / Staff / 88039
 UAP 5574 - Arts, Culture and Society / Lecture / MO Stephenson / 88004
 88011 / UAP 5794 - Environ Plan Studio / Lecture / JO Browder / W 1:25PM - 4:15PM
 UAP 5794 - Environ Plan Studio / Lecture / JO Browder / 88011
-89348 / UAP 5014 - Gateway to Planning / Lecture / Staff / TR 10:00AM - 12:15PM
-UAP 5014 - Gateway to Planning / Lecture / Staff / 89348
+89348 / UAP 5014 - Gateway to Planning / Lecture / DL Zahm / TR 10:00AM - 12:15PM
+UAP 5014 - Gateway to Planning / Lecture / DL Zahm / 89348
 88016 / UAP 5894 - Final Examination / Lecture / Staff
 UAP 5894 - Final Examination / Lecture / Staff / 88016
 89220 / UAP 4344 - Law of Critical Envl Areas / Lecture / MR Fialkoff / TR 5:00PM - 6:15PM
@@ -10887,35 +10863,8 @@ UAP 5504 - Discourse Analysis / Online / G Toal / 88000
 UAP 5924 - Peace Corp Enrollment / Lecture / MO Stephenson / 88022
 88012 / UAP 5804 - Practicum Problem / Lecture / Staff
 UAP 5804 - Practicum Problem / Lecture / Staff / 88012
-88112 / UH 4974H - Independent Study / Independent Study / PL Knox
-UH 4974H - Independent Study / Independent Study / PL Knox / 88112
-88066 / UH 1004 - TS: First-Yr Honors Sem / Lecture / AZ Smith / T 3:30PM - 4:30PM
-88065 / UH 1004 - TS: First-Yr Honors Sem / Lecture / AZ Smith / M 2:30PM - 3:30PM
-88064 / UH 1004 - TS: First-Yr Honors Sem / Lecture / AZ Smith / M 6:00PM - 7:00PM
-88063 / UH 1004 - TS:First-Yr Hillcrest Comm Sem / Lecture / AZ Smith / T 9:30AM - 10:30AM
-88062 / UH 1004 - TS:First-yr Honors RC Sem / Lecture / AZ Smith / M 10:00AM - 11:00AM
-88061 / UH 1004 - TS:First-yr Honors RC Sem / Lecture / AZ Smith / W 9:30AM - 10:30AM
-88060 / UH 1004 - TS:First-yr Honors Seminar / Lecture / AZ Smith / W 1:30PM - 2:30PM
-88059 / UH 1004 - TS:First-yr Honors Seminar / Lecture / AZ Smith / W 4:00PM - 5:00PM
-88058 / UH 1004 - TS:First-yr Honors Seminar / Lecture / AZ Smith / R 12:30PM - 1:30PM
-88057 / UH 1004 - TS:First-yr Honors Seminar / Lecture / AZ Smith / W 5:30PM - 6:30PM
-88056 / UH 1004 - TS:First-yr Hillcrest Comm Sem / Lecture / AZ Smith / R 1:30PM - 2:30PM
-88055 / UH 1004 - TS:First-yr Honors RC Sem / Lecture / AZ Smith / F 11:30AM - 12:30PM
-88054 / UH 1004 - TS:First-yr Honors RC Sem / Lecture / AZ Smith / F 1:30PM - 2:30PM
-88053 / UH 1004 - TS:First-yr Honors RC Sem / Lecture / AZ Smith / F 9:00AM - 10:00AM
-88052 / UH 1004 - TS:First-yr Honors RC Sem / Lecture / AZ Smith / M 4:00PM - 5:00PM
-88051 / UH 1004 - TS:First-yr Honors RC Sem / Lecture / AZ Smith / M 11:15AM - 12:10PM
-88050 / UH 1004 - TS:First-yr Honors RC Sem / Lecture / AZ Smith / R 11:00AM - 12:00PM
-88049 / UH 1004 - TS:First-yr Honors RC Sem / Lecture / AZ Smith / R 3:30PM - 4:30PM
-88048 / UH 1004 - TS:First-yr Honors RC Sem / Lecture / AZ Smith / T 2:00PM - 3:00PM
-88047 / UH 1004 - TS:First-yr Honors RC Sem / Lecture / AZ Smith / T 9:30AM - 10:30AM
-88046 / UH 1004 - TS:First-yr Honors RC Sem / Lecture / AZ Smith / W 6:00PM - 7:00PM
-88045 / UH 1004 - TS:First-yr Honors RC Sem / Lecture / AZ Smith / W 1:25PM - 2:20PM
-88044 / UH 1004 - TS:First-yr Hillcrest Comm Sem / Lecture / AZ Smith / W 5:00PM - 6:00PM
-88043 / UH 1004 - TS:First-yr Hillcrest Comm Sem / Lecture / AZ Smith / R 12:30PM - 1:30PM
-88042 / UH 1004 - TS:First-yr Honors RC Sem / Lecture / AZ Smith / M 12:00PM - 1:00PM
-88041 / UH 1004 - TS:First-yr Hillcrest Comm Sem / Lecture / AZ Smith / M 4:00PM - 5:00PM
-UH 1004 - TS: First-Yr Honors Sem / Lecture / AZ Smith / 88041, 88042, 88043, 88044, 88045, 88046, 88047, 88048, 88049, 88050, 88051, 88052, 88053, 88054, 88055, 88056, 88057, 88058, 88059, 88060, 88061, 88062, 88063, 88064, 88065, 88066
+88112 / UH 4974H - Independent Study / Independent Study / PV Heilker
+UH 4974H - Independent Study / Independent Study / PV Heilker / 88112
 88107 / UH 3204 - Honors Service Learning / Lecture / CS Grohs / F 8:00AM - 12:00PM / W 5:30PM - 6:30PM
 88106 / UH 3204 - Honors Service Learning / Lecture / CS Grohs / W 8:00AM - 12:00PM / W 5:30PM - 6:30PM
 88105 / UH 3204 - Honors Service Learning / Lecture / CS Grohs / R 8:00AM - 12:00PM / W 5:30PM - 6:30PM
@@ -10924,38 +10873,33 @@ UH 1004 - TS: First-Yr Honors Sem / Lecture / AZ Smith / 88041, 88042, 88043, 88
 UH 3204 - Honors Service Learning / Lecture / CS Grohs / 88103, 88104, 88105, 88106, 88107
 88067 / UH 2004 - Careers in Medicine / Lecture / CL Robinson / W 5:30PM - 6:20PM
 UH 2004 - Careers in Medicine / Lecture / CL Robinson / 88067
-88079 / UH 2124 - Honors Reading Seminar / Lecture / AZ Smith / F 8:00AM - 8:50AM
-88078 / UH 2124 - Honors Reading Seminar / Lecture / AZ Smith / F 1:25PM - 2:15PM
-88077 / UH 2124 - Honors Reading Seminar / Lecture / AZ Smith / W 1:25PM - 2:15PM
-88076 / UH 2124 - Honors Reading Seminar / Lecture / AZ Smith / M 1:25PM - 2:15PM
-88075 / UH 2124 - Honors Reading Seminar / Lecture / AZ Smith / F 11:15AM - 12:05PM
-88074 / UH 2124 - Honors Reading Seminar / Lecture / AZ Smith / W 11:15AM - 12:05PM
-88073 / UH 2124 - Honors Reading Seminar / Lecture / AZ Smith / M 11:15AM - 12:05PM
-88072 / UH 2124 - Honors Reading Seminar / Lecture / AZ Smith / W 8:00AM - 8:50AM
-88071 / UH 2124 - Honors Reading Seminar / Lecture / AZ Smith / M 8:00AM - 8:50AM
-88070 / UH 2124 - Honors Reading Seminar / Lecture / AZ Smith / F 9:05AM - 9:55AM
-88069 / UH 2124 - Honors Reading Seminar / Lecture / AZ Smith / W 9:05AM - 9:55AM
-88068 / UH 2124 - Honors Reading Seminar / Lecture / AZ Smith / M 9:05AM - 9:55AM
-UH 2124 - Honors Reading Seminar / Lecture / AZ Smith / 88068, 88069, 88070, 88071, 88072, 88073, 88074, 88075, 88076, 88077, 88078, 88079
-88102 / UH 3004 - TS: Families & Public Policies / Lecture / JA Arditti / TR 11:00AM - 12:15PM
-88101 / UH 3004 - TS: Television / Lecture / MB Saffle / T 7:00PM - 9:00PM
-88100 / UH 3004 - TS:Cultural Impcts of Taxation / Lecture / DA Salbador / MWF 9:05AM - 9:55AM
-88099 / UH 3004 - TS:Create! / Lecture / ED McNair / TR 3:30PM - 4:45PM
-88098 / UH 3004 - TS:Biomedical Ethics / Lecture / RE Benoit / MWF 1:25PM - 2:15PM
+88079 / UH 2124 - Honors Reading Seminar / Lecture / PV Heilker / F 8:00AM - 8:50AM
+88078 / UH 2124 - Honors Reading Seminar / Lecture / PV Heilker / F 1:25PM - 2:15PM
+88077 / UH 2124 - Honors Reading Seminar / Lecture / PV Heilker / W 1:25PM - 2:15PM
+88076 / UH 2124 - Honors Reading Seminar / Lecture / PV Heilker / M 1:25PM - 2:15PM
+88075 / UH 2124 - Honors Reading Seminar / Lecture / PV Heilker / F 11:15AM - 12:05PM
+88074 / UH 2124 - Honors Reading Seminar / Lecture / PV Heilker / W 11:15AM - 12:05PM
+88073 / UH 2124 - Honors Reading Seminar / Lecture / PV Heilker / M 11:15AM - 12:05PM
+88072 / UH 2124 - Honors Reading Seminar / Lecture / PV Heilker / W 8:00AM - 8:50AM
+88071 / UH 2124 - Honors Reading Seminar / Lecture / PV Heilker / M 8:00AM - 8:50AM
+88070 / UH 2124 - Honors Reading Seminar / Lecture / PV Heilker / F 9:05AM - 9:55AM
+88069 / UH 2124 - Honors Reading Seminar / Lecture / PV Heilker / W 9:05AM - 9:55AM
+88068 / UH 2124 - Honors Reading Seminar / Lecture / PV Heilker / M 9:05AM - 9:55AM
+UH 2124 - Honors Reading Seminar / Lecture / PV Heilker / 88068, 88069, 88070, 88071, 88072, 88073, 88074, 88075, 88076, 88077, 88078, 88079
+88099 / UH 3004 - TS:Create! / Lecture / ED McNair / TR 9:30AM - 10:45AM
+88098 / UH 3004 - TS:Biomedical Ethics / Lecture / RE Benoit / MW 1:00PM - 2:15PM
 88097 / UH 3004 - TS:Nutrition, Brain & Behavior / Lecture / DM Denbow / TR 3:30PM - 4:45PM
-88096 / UH 3004 - TS:Controversial Issue Sci/Soc / Lecture / JW Knight / T 3:30PM - 6:00PM
-88095 / UH 3004 - TS:The Metaphysical Room / Lecture / KA Black / T 5:30PM - 8:30PM
 88094 / UH 3004 - TS:Exercises in Design Thnkng / Lecture / SF Martin / TR 11:00AM - 12:15PM
-88093 / UH 3004 - TS:Charls Darwn Myths & Realit / Hybrid / PW Graham / W 4:00PM - 5:50PM
-UH 3004 - TS: Families & Public Policies / Hybrid, Lecture / PW Graham, SF Martin, KA Black, JW Knight, DM Denbow, RE Benoit, ED McNair, DA Salbador, MB Saffle, JA Arditti / 88093, 88094, 88095, 88096, 88097, 88098, 88099, 88100, 88101, 88102
-88109 / UH 4004 - Honors Tutorial / Lecture / PL Knox
-88108 / UH 4004 - TS:Independent Study / Lecture / WD Miller
-UH 4004 - Honors Tutorial / Lecture / WD Miller, PL Knox / 88108, 88109
+UH 3004 - TS:Create! / Lecture / SF Martin, DM Denbow, RE Benoit, ED McNair / 88094, 88097, 88098, 88099
+88109 / UH 4004 - Honors Tutorial / Lecture / PV Heilker
+UH 4004 - Honors Tutorial / Lecture / PV Heilker / 88109
 88111 / UH 4104 - TS:First-yr Stu Teach Practicm / Lecture / AZ Smith
-88110 / UH 4104 - TS:Readng Sem Stu Teach Prctcm / Lecture / AZ Smith
-UH 4104 - TS:First-yr Stu Teach Practicm / Lecture / AZ Smith / 88110, 88111
-88113 / UH 4994H - Undergraduate Research / Research / PL Knox
-UH 4994H - Undergraduate Research / Research / PL Knox / 88113
+88110 / UH 4104 - TS:Readng Sem Stu Teach Prctcm / Lecture / PV Heilker
+UH 4104 - TS:First-yr Stu Teach Practicm / Lecture / PV Heilker, AZ Smith / 88110, 88111
+89353 / UH 1504 - PGS Pre-Departure Seminar / Lecture / PV Heilker / M 4:00PM - 5:15PM
+UH 1504 - PGS Pre-Departure Seminar / Lecture / PV Heilker / 89353
+88113 / UH 4994H - Undergraduate Research / Research / PV Heilker
+UH 4994H - Undergraduate Research / Research / PV Heilker / 88113
 88118 / UNIV 1004 - College Success Strategies / Lecture / S Mondesir / TR 11:00AM - 12:15PM
 88117 / UNIV 1004 - College Success Strategies / Lecture / DF McGuire / MW 2:30PM - 3:45PM
 88116 / UNIV 1004 - College Success Strategies / Lecture / Staff / MWF 8:00AM - 8:50AM

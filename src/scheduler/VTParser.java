@@ -615,7 +615,7 @@ public class VTParser {
     }
     
     public static void main(String[] args) throws Exception {
-        VTParser.outputTermDataFiles("201701");
+        //VTParser.outputTermDataFiles("201701");
         VTParser.outputTermDataFiles("201709");
     }
 }
