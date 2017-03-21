@@ -2,11 +2,11 @@ package scheduler;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Collections;
+//import java.util.ArrayList;
+//import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
+//import java.util.HashSet;
+//import java.util.Set;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -70,9 +70,9 @@ public class ScheduleGen extends HttpServlet {
         if (schedules != null) {
             restrictions = this.getRestrictions();
             stats = this.getScheduleStats();
-            conflicts = "";
+            conflicts = "This feature has been temporarily disabled.";
             try {
-                conflicts = this.getConflicts();
+                //conflicts = this.getConflicts();
             }
             catch (Exception e) {}
             courseSearch = this.getCourseSearch();
@@ -153,8 +153,8 @@ public class ScheduleGen extends HttpServlet {
         if (schedules == null || schedules.size() == 0) {
             html.append("0 Schedules");
         }
-        else if (schedules.size() > 500) {
-            html.append("Schedule 1 of 500+");
+        else if (schedules.size() > 200) {
+            html.append("Schedule 1 of 200+");
         }
         else {
             html.append("Schedule 1 of " + schedules.size());
@@ -196,7 +196,7 @@ public class ScheduleGen extends HttpServlet {
                 html.append("Sorry, something went wrong when trying to generate your schedules.");
             }
             else if (schedules.size() == 0) {
-                html.append("No Schedules Matched Your Parameters. See below or 'Search Data' for more information.<br><br>");
+                html.append("No Schedules Matched Your Parameters. See below or 'Search Data' for more information. This may be caused by classes always conflicting.<br><br>");
                 
                 html.append("<div class='row'>");
                 html.append("<div class='col-sm-4'>");
@@ -204,8 +204,8 @@ public class ScheduleGen extends HttpServlet {
                 html.append(restrictions);
                 html.append("</div>");
                 html.append("</div><br>");
-                
-                html.append(fullConflicts.toString());
+                html.append("<p><b>Courses Found on Timetable</b><p>");
+                html.append(courseSearch.toString());
             }
             else {
                 html.append("<ul class='collapse in' style='padding-left:0' id='textschedules' name='0'>");
@@ -325,11 +325,9 @@ public class ScheduleGen extends HttpServlet {
      * @throws Exception
      */
     private LinkedList<Schedule> getSchedules(HttpServletRequest request) throws Exception {
-        start = request.getParameter("h1")+ ":";
-        start += ((Integer.parseInt(request.getParameter("m1"))-1)*5) + request.getParameter("start");
-        
-        end = request.getParameter("h2")+ ":";
-        end += ((Integer.parseInt(request.getParameter("m2"))-1)*5) + request.getParameter("end");
+        start = request.getParameter("h1") + ":" + request.getParameter("m1") + request.getParameter("start");
+        end = request.getParameter("h2") + ":" + request.getParameter("m2") + request.getParameter("end");
+     
         
         if (!Time.isTime(start) || !Time.isTime(end)) {
             throw new TimeException("");
@@ -457,7 +455,7 @@ public class ScheduleGen extends HttpServlet {
     /**
      * Create html conflict data from the generator
      * @throws Exception
-     */
+     
     private String getConflicts() throws Exception {
         StringBuilder html = new StringBuilder();
         HashMap<String, LinkedList<VTCourse>> pass = generator.getPassed();
@@ -519,7 +517,7 @@ public class ScheduleGen extends HttpServlet {
             conflicts.remove(ind);
         }
         return html.toString();
-    }
+    }*/
     
     /**
      * Returns the total amount of classes that do not conflict together for a given list of classes
@@ -529,7 +527,7 @@ public class ScheduleGen extends HttpServlet {
      * @param total the total amount that pass
      * @return total
      * @throws Exception
-     */
+     
     private int getConflicts(LinkedList<LinkedList<VTCourse>> classListings, Schedule schedule, int classIndex, int total) throws Exception { 
         for (VTCourse course : classListings.get(classIndex)) {
             try {
@@ -548,13 +546,13 @@ public class ScheduleGen extends HttpServlet {
             schedule.remove(course);
         }
         return total;
-    }
+    } */
     
     /**
      * Creates the power set of a set
      * @param originalSet the set to create the powerset from
      * @return the power set
-     */
+     
     private Set<Set<String>> powerSet(Set<String> originalSet) {
         Set<Set<String>> sets = new HashSet<Set<String>>();
         if (originalSet.isEmpty()) {
@@ -572,7 +570,7 @@ public class ScheduleGen extends HttpServlet {
             sets.add(set);
         }
         return sets;
-    }  
+    }  */
     
     /**
      * Creates HTML schedule statistics like total credits and permutations 

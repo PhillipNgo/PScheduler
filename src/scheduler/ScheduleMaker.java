@@ -201,7 +201,7 @@ public class ScheduleMaker {
             }
             
             if (classIndex == classListings.size() - 1) {
-                if (schedules.size() >= 501) {
+                if (schedules.size() >= 201) {
                     throw new Exception("Too Many Schedules");
                 }
                 schedules.add(copy);

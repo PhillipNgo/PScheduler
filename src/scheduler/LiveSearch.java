@@ -45,7 +45,7 @@ public class LiveSearch extends HttpServlet {
             scan = new Scanner(new File("WebContent/Database/" + termYear + "options.txt"));
         }
 	    int count = 0;
-	    while (count < 9 && scan.hasNextLine()) {
+	    while (count < 5 && scan.hasNextLine()) {
 	        String next = scan.nextLine();
 	        if (next.toLowerCase().contains(searchTerm)) {
 	            String[] val = next.split(" / ");

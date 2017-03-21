@@ -55,17 +55,8 @@ public class ExcelDownload extends HttpServlet {
 	 * @throws Exception
 	 */
 	private LinkedList<Schedule> getSchedules(HttpServletRequest request) throws Exception {
-        String start = request.getParameter("h1")+ ":";
-        if ((Integer.parseInt(request.getParameter("m1"))-1)*5 == 0 || (Integer.parseInt(request.getParameter("m1"))-1)*5 == 5) {
-            start += "0";
-        }
-        start += ((Integer.parseInt(request.getParameter("m1"))-1)*5) + request.getParameter("start");
-
-        String end = request.getParameter("h2")+ ":";
-        if ((Integer.parseInt(request.getParameter("m2"))-1)*5 == 0 || (Integer.parseInt(request.getParameter("m2"))-1)*5 == 5) {
-            end += "0";
-        }
-        end += ((Integer.parseInt(request.getParameter("m2"))-1)*5) + request.getParameter("end");
+        String start = request.getParameter("h1") + ":" + request.getParameter("m1") + request.getParameter("start");
+        String end = request.getParameter("h2") + ":" + request.getParameter("m2") + request.getParameter("end");
 
         String[] freeDays = request.getParameterValues("free");
         
