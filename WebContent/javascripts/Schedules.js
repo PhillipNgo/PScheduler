@@ -1,5 +1,12 @@
-jQuery(document).ready(function($){
+/**
+ * Button functions to be used on the schedule generated page
+ */
 
+jQuery(document).ready(function($){
+	
+	/**
+	 * Hides the text table of schedules
+	 */
 	$('.hidetb').on('click', function(){
 		$('#textschedules').collapse('toggle');
 		if ($(this).text() === 'Hide Table') {
@@ -10,6 +17,9 @@ jQuery(document).ready(function($){
 		}
 	});
 	
+	/**
+	 * Changes Schedule based on number input
+	 */
 	$("#changet").on('keyup', function(e) {
 	    if (e.keyCode == 13) {
 	    	var num = parseInt($(this).val()) - 1;
@@ -19,6 +29,11 @@ jQuery(document).ready(function($){
 	    }
 	});
 	
+	/**
+	 * Hotkeys for advancing/decrementing schedules
+	 * Left arrow: decrement
+	 * Right arrow: advance
+	 */
 	$(document).keydown(function(e) {
 	    switch(e.which) {
 	        case 37: changeSchedule(-1);
@@ -33,6 +48,9 @@ jQuery(document).ready(function($){
 	
 });
 
+/**
+ * Creates the printer friendly page by hiding unneeded info
+ */
 function printerFriendly() {
 	$('#header').hide();
 	$('#content').hide();
@@ -49,10 +67,17 @@ function printerFriendly() {
 	window.print();
 }
 
+/**
+ * Toggles the printer friendly page
+ * @param index
+ */
 function togglePrint(index) {
 	$($('#printerFriendly').children()[index]).toggle();
 }
 
+/**
+ * Unhides the printer friendly page
+ */
 function exitPrinter() {
 	$('#header').show();
 	$('#content').show();
@@ -60,20 +85,34 @@ function exitPrinter() {
 	$('#printerFriendly').remove();
 }
 
+/**
+ * Excel Download of the schedules
+ */
 function dlHref() {
 	var a = document.getElementById('download');
 	a.href += "?" + window.location.search.substr(1);
 }
 
+/**
+ * Toggles the search data and schedule display
+ */
 function togglePanel() {
 	$('#schedule-panel').collapse('toggle');
 	$('#data-panel').collapse('toggle');
 }
 
+/**
+ * Changes Plus drop down to Minus dropdown and viceversa
+ * @param button the button pressed
+ */
 function changeIcon(button) {
 	$(button).toggleClass('glyphicon-plus glyphicon-minus');	
 }
 
+/**
+ * Changes the displayed schedule by the increment
+ * @param inc the increment
+ */
 function changeSchedule(inc) {
 	var list = document.getElementById("tableschedules");
 	var currNum = parseInt(list.attributes["name"].value);

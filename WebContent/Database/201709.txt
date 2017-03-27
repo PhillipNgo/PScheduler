@@ -799,6 +799,7 @@ Advanced Vis Com Design	ART	4575	MA Dee	80936	3	L	TBA	M W	12:20PM	3:05PM
 Senior Studio	ART	4894	SW Paterson	80939	3	L	BRNCH A	M W	9:20AM	12:05PM
 Baroque Art and Arch	ART	3484	MY Moseley Christian	89345	3	L	HEND 204	T R	12:30PM	1:45PM
 Independent Study	ART	4974H	Staff	80944	1	I
+SS: Gateway to Art and Design	ART	2984	JL Hand	89422	1	L	ARMRY 101	M	6:30PM	7:30PM
 Digital Photography	ART	2664	M Borowski	80902	3	L	HEND 208	M W	12:20PM	3:05PM
 TS:Intermediate Sculpture	ART	3554	SP Blanchard	80909	3	L	ART C 108	T R	12:30PM	3:15PM
 Independent Study	ART	5974	LB Van Hook	80967	1	I
@@ -4309,13 +4310,17 @@ Environmental Geosciences	GEOS	3014	RJ Tracy	84395	3	L	DER 4069	T R	12:30PM	1:45
 Adv Topics Paleont	GEOS	6304	BW Romans	84440	1	L	DER 4052	R	5:00PM	6:00PM
 Independent Study	GEOS	5974	NL Ross	84437	1	I
 TS: Active Tectonics	GEOS	6404	JA Spotila	84441	3	L
+Biogeochemical Cycles	GEOS	6604	BC Gill	89419	3	L	TBA	T	2:00PM	5:00PM
+Simulation & Modeling in Geos	GEOS	6604	R Weiss	89414	3	L	DER 4045	T	2:00PM	5:00PM
 Num Mod Groundwater	GEOS	5814	TJ Burbey	88954	3	L	DER 3040	T R	9:30AM	10:45AM
 Undergraduate Research	GEOS	4994H	NL Ross	84427	1	R
 Undergraduate Research	GEOS	4994H	NL Ross	84426	1	R
 Undergraduate Research	GEOS	4994H	NL Ross	84425	1	R
+Basin Scale Hydro Processes	GEOS	6804	TJ Burbey	89420	1	L
 Potential Field Geoph	GEOS	4164	JA Hole	88952	4	L	DER 4069	T R	9:30AM	10:45AM	DER 2068	F	11:15AM	2:05PM
 Research and Dissertation	GEOS	7994	NL Ross	84444	1	R
 Earth System History	GEOS	5014	S Xiao	88953	3	L	DER 4052	M	6:00PM	9:00PM
+Advanced Volcanic Processes	GEOS	5714G	E Gazel	89418	3	L
 Advanced Volcanic Processes	GEOS	5714G	E Gazel	84434	3	L	DER 4069	M	4:00PM	6:00PM	TBA	T	9:00AM	12:00PM
 TS:Subsurface Strtigrphic Mds	GEOS	6104	BW Romans	88956	3	L	DER 2068	M	2:30PM	4:00PM
 Seismic Stratigraphy	GEOS	4124	BW Romans	88951	3	L	DER 2068	M	2:30PM	4:00PM	DER 2068	T	11:00AM	2:25PM
@@ -4361,6 +4366,7 @@ Undergraduate Research	GEOS	4994	NL Ross	84422	1	R
 Independent Study	GEOS	4974	NL Ross	84421	1	I
 Environmental Geochemistry	GEOS	4634	BC Gill	84416	3	L	DER 3076	M W F	10:10AM	11:00AM
 Study Abroad	GEOS	4954	RJ Bodnar	89249	4	L
+Volcanic Processes	GEOS	4714	E Gazel	89417	3	L
 Volcanic Processes	GEOS	4714	E Gazel	84417	3	L	DER 4069	M	4:00PM	6:00PM	TBA	T	9:00AM	12:00PM
 Adv Comp and Style	GER	4154	DL Stoudt	84460	3	L	WAL 244	M W	5:30PM	6:45PM
 Senior Tutorial	GER	4794	Staff	84462	1	L
@@ -6371,12 +6377,13 @@ SS: Neuroscience of the Law	NEUR	4984	HW Sontheimer	89278	3	L	TORG 1100C	M	1:25P
 Adv Topics in Remote Sensing	NR	6104	Y Shao	86575	3	L	MAJWM 102	W	4:00PM	6:50PM
 Natural Resources Economics	NR	4014	GS Amacher	86557	3	L	SMYTH 331	T R	9:30AM	10:45AM
 Global Issues Natural Resource	NR	5114	S Elouardighi	86562	3	O
+TS: Food Polc & Sustainability	NR	5884	Staff	89415	1	O
 TS: Human-Wildlife Conflicts	NR	5884	MM Draheim	86570	3	O
 TS: Water and Conflict	NR	5884	DK DiMauro	86569	3	O
 TS:Landscape Systm & Strategy	NR	5884	DJ Marcucci	86568	3	O
 TS: Inter'l Envir Law & Policy	NR	5884	JK Wills	86567	3	O
 TS:Watershed Stewardship	NR	5884	JA Egenrieder	86566	3	O
-Environmental Ethics	NR	5194	Staff	89413	3	O
+Environmental Ethics	NR	5194	JL Lawrence	89413	3	O
 Seeking Sustainability	NR	1115	TD Baird	86550	3	L	NCB 120	M W	2:30PM	3:45PM
 Independent Study	NR	2974	Staff	86556	1	I
 FYE Nat Resources & Environ	NR	1234	JB Mesa Cruz	86554	3	L	SMYTH 146	M W	4:00PM	4:50PM	JCH 317A	T	3:30PM	4:45PM
@@ -7240,6 +7247,7 @@ Judaism, Christianity, Islam	RLCL	1024	SJ Kessler	88616	3	L	GBJ 104	T R	9:30AM	1
 Judaism, Christianity, Islam	RLCL	1024	Staff	87511	3	L	PAT 207	M W	2:30PM	3:15PM
 Undergraduate Research	RLCL	4994	Staff	87544	1	R
 Mat Cult & Pub Hum Theory	RLCL	5104	A Ansell	88464	3	L	LANE 132	W	2:00PM	4:45PM
+SS: Foundations of Rel Freedom	RLCL	5984	Staff	89421	3	O
 Independent Study	RLCL	4974	Staff	87543	1	I
 Religion and Culture In Asia	RLCL	1904	PL Schmitthenner	87519	3	L	MCB 226	M W F	11:15AM	12:05PM
 Elementary Russian	RUS	1106	TP McKagen	87555	4	L	WMS 209	M W F	11:15AM	12:05PM

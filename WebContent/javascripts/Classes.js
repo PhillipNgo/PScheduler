@@ -1,24 +1,42 @@
+/**
+ * Button functions for use on the home page.
+ */
+
+
+/**
+ * Adds a searched course to the schedule
+ * @param button the add button found when a class is searched
+ */
 function addClass(button) {
-	if ($('#schedule tr').length > 12) {
+	if ($('#schedule tr').length > 12) { //limit to 12 classes on the schedule
 		return;
 	}
-	var text = button.parent().text().split(" / ");
-	var crns = text[3].split(", ");
-	var types = text[1].split(", ");
-	var profs = text[2].split(", ");
-	var name = text[0].split(" - ");
-	var html =  "<tr><td>" +
+	
+	var text = button.parent().text().split(" / "); //split data being displayed into arrays
+	var crns = text[3].split(", "); //crns located in text[3]
+	var types = text[1].split(", "); //class types located in text[1]
+	var profs = text[2].split(", "); //professors located in text[2]
+	var name = text[0].split(" - "); //course name located in text[0]
+	
+	//create the new schedule table item 
+	var html =  "<tr><td>" + 
 	"<select style='margin-left:auto;margin-right:auto' class='form-control center' onchange='crnCheck($(this))'>";
 	html += "<option value='A'>Any</option>";
+	
+	//add crns to the first select
 	for (var i = 0; i < crns.length; i++) {
 		html += "<option value='" + crns[i] + "'>" + crns[i] + "</option>";
 	}
 	html += 	"</select>" +
 	"</td>" +
+	
+	//add the course name
 	"<td style='vertical-align:middle' value='" + (name[0].substring(4, name[0].length)).replace(' ', '') +
 	"'>" + name[0].substring(4, name[0].length) + "</td>" +
 	"<td style='vertical-align:middle'>" + name[1] + "</td>" +
 	"<td>" +
+	
+	//add the class types
 	"<select style='margin-left:auto;margin-right:auto' class='form-control center'>";
 	for (var i = 0; i < types.length; i++) {
 		html += "<option value='" + classType(types[i]) + "'>" + types[i] + "</option>";
@@ -26,6 +44,8 @@ function addClass(button) {
 	html += 	"</select>" +
 	"</td>" + 
 	"<td>" + 
+	
+	//add the professors
 	"<select style='margin-left:auto;margin-right:auto' class='form-control center'>";
 	html += "<option value='A'>Any</option>";
 	for (var i = 0; i < profs.length; i++) {
@@ -34,14 +54,20 @@ function addClass(button) {
 	html += 	"</select>" +
 	"</td>" +
 	"<td><button class='btn btn-default' type='button' onClick='removeClass(this)'>Remove</button></td></tr>";
-	$("#schedule > tbody:last-child").append(html);
+	
+	$("#schedule > tbody:last-child").append(html); //add the table row to the schedule table
 }
 
+/**
+ * Adds a searched CRN to the schedule
+ * @param button the add button found when a CRN is searched
+ */
 function addCRN(button) {
-	if ($('#schedule tr').length > 12) {
+	if ($('#schedule tr').length > 12) { //check limit of 12 in the schedule
 		return;
 	}
 	
+	//get search option corresponding to the crn and add it 
 	$.ajax({
 	     async: false,
 	     type: 'GET',
@@ -52,6 +78,7 @@ function addCRN(button) {
 	     }
 	});
 	
+	//get data from the add crn button and set the right values
 	var text = button.parent().text().split(" / ");
 	var name = text[1].split(" - ");
 	var row = $('#schedule tbody tr:last').children('td');
@@ -59,8 +86,13 @@ function addCRN(button) {
 	crnCheck($($(row.get(0)).children()[0]));
 }
 
+/**
+ * Checks if a the course on the schedule is a crn and sets usability accordingly
+ * @param select the option to check
+ */
 function crnCheck(select) {
 	var row = select.parent().parent().children('td');
+	//if a crn is selected, choose the correct professor and class type and disable thos selects
 	if (select.val() !== 'A') {
 		$.ajax({
 		     async: false,
@@ -76,17 +108,25 @@ function crnCheck(select) {
 		     }
 		});
 	}
-	else {
+	else { //otherwise reset the disable
 		$($(row.get(3)).children()[0]).prop('disabled', false);
 		$($(row.get(4)).children()[0]).prop('disabled', false);
 	}
 }
 
-
+/**
+ * Removes a class from the schedule
+ * @param button the remove button that was pressed
+ */
 function removeClass(button) {
 	$(button).parent().parent().remove();
 }
 
+/**
+ * Converts a time in the format "04:35PM" to a minute number
+ * @param time the string to convert
+ * @returns the minute number of the time
+ */
 function timeNumber(time) {
     var t = time.split(":");
     var hour = parseInt(t[0]);
@@ -100,6 +140,9 @@ function timeNumber(time) {
     return hour + minute;
 }
 
+/**
+ * Shortens data into the form to send the schedule to be generated
+ */
 function sendData() {
 	var send = document.getElementById("form");
 	var table = document.getElementById("schedule");
@@ -144,6 +187,11 @@ function sendData() {
 	send.submit();
 }
 
+/**
+ * Gets the corressponding letter to a class type
+ * @param type the class type
+ * @returns the corresponding letter, or "bug" if one doesn't exist
+ */
 function classType(type) {
 	switch (type) {
 	case "Lecture": return "L";

@@ -1,7 +1,14 @@
-jQuery(document).ready(function($){
+/**
+ * Functions for searching courses through the search bar
+ */
 
+jQuery(document).ready(function($){
+	/**
+	 * After every button pressed, searches the database for that term
+	 * by what type they searching and their currently selected term
+	 */
 	$('.live-search-box').on('keyup focus', function(){
-		var searchType = $('#searchtype').val();
+		var searchType = $('#searchtype').val(); 
 		var searchTerm = $(this).val().toLowerCase();
 		var termYear = $('#term').val();
 		if (searchTerm.length > 1) {
@@ -14,40 +21,55 @@ jQuery(document).ready(function($){
 		}
 	});
 	
+	/**
+	 * Changing a the term clears the current schedule
+	 */
 	$('#term').on('change', function(){
 	    if ($("#schedule > tbody:last-child").html().trim().length && confirm("This will clear your current schedule")) {
 	    	$("#schedule > tbody:last-child").html('');
 	    }
 	});
 	
+	/**
+	 * Always tries to set the parameters if the user comes from a modify schedule button
+	 */
 	setParameters();
 });
 
+/**
+ * hides the search terms
+ */
 function hide() {
 	$('#search').html('');
 }
 
+/**
+ * Reads URL for search parameters if there are any and sets the schedule and search restrictions
+ */
 function setParameters() {
 	var params = window.location.search.substr(1);
-	if (params.length == 0) {
+	if (params.length == 0) { //if there are no restrictions, stop
 		return;
 	}
-	params = params.split('&');
+	params = params.split('&'); //split the restrictions
 	var i;
-	for (i = 1; i < 8; i++) { 
+	
+	for (i = 1; i < 8; i++) { //choose the time and day restrictions
 		var val = params[i].split('=');
 		$('[name="' + val[0] + '"]').val(val[1]); 
 		$('[name="' + val[0] + '"]').selectpicker('refresh');
 	}
-	var days = [];
+	var days = []; //set freeDay restrictions
 	for (i; i < params.length; i++) {
 		days[i-8] = params[i].split('=')[1];
 	}
 	$('[name="free"]').val(days);
 	$('[name="free"]').selectpicker('refresh');
 	var classList = params[0].split('=')[1].split('%7E');
-	if (classList[0].length != 0) {
-		for (i = 0; i < classList.length; i++) {
+	
+	
+	if (classList[0].length != 0) { //check if there are any classes
+		for (i = 0; i < classList.length; i++) { //for every class
 			var str = classList[i];
 			var split = str.split('-');
 			var index = 0;
@@ -60,6 +82,7 @@ function setParameters() {
 			var types = [];
 			var profs = [];
 			try {
+				//get search table term and adds the schedule parameters to arrays
 				if (split[0].length == 5 && !isNaN(parseInt(split[0], 10))) {
 					$.ajax({
 						async: false,
@@ -90,11 +113,13 @@ function setParameters() {
 					types[types.length] = split[0].substring(0, 1);
 					profs[profs.length] = split[1];
 				}
+				//if there were CRNs, add them 
 				for (var k = 0; k < crns.length; k++) {
 					addClass($(crns[k]).children('button'));
 					$($($('#schedule tbody tr:last').children('td').get(0)).children()[0]).val(crnNum[k]);
 					crnCheck($($($('#schedule tbody tr:last').children('td').get(0)).children()[0]));
 				}
+				//if there were courses, add them
 				for (var j = 0; j < courses.length; j++) {
 					addClass($(courses[j]).children('button'));
 					var cTypeSelect = $($($('#schedule tbody tr:last').children('td').get(3)).children()[0]);
@@ -116,7 +141,7 @@ function setParameters() {
 					};
 				}
 				
-			} catch(err) {
+			} catch(err) { //if there was an error, skips adding that class
 				continue;
 			}		
 		}

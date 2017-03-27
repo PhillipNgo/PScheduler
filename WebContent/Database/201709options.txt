@@ -1088,6 +1088,8 @@ ART 4894 - Senior Studio / Lecture / SW Paterson / 80939
 ART 3484 - Baroque Art and Arch / Lecture / MY Moseley Christian / 89345
 80944 / ART 4974H - Independent Study / Independent Study / Staff
 ART 4974H - Independent Study / Independent Study / Staff / 80944
+89422 / ART 2984 - SS: Gateway to Art and Design / Lecture / JL Hand / M 6:30PM - 7:30PM
+ART 2984 - SS: Gateway to Art and Design / Lecture / JL Hand / 89422
 80902 / ART 2664 - Digital Photography / Lecture / M Borowski / MW 12:20PM - 3:05PM
 ART 2664 - Digital Photography / Lecture / M Borowski / 80902
 80909 / ART 3554 - TS:Intermediate Sculpture / Lecture / SP Blanchard / TR 12:30PM - 3:15PM
@@ -5971,20 +5973,26 @@ GEOS 6304 - Adv Topics Paleont / Lecture / BW Romans / 84440
 GEOS 5974 - Independent Study / Independent Study / NL Ross / 84437
 84441 / GEOS 6404 - TS: Active Tectonics / Lecture / JA Spotila
 GEOS 6404 - TS: Active Tectonics / Lecture / JA Spotila / 84441
+89419 / GEOS 6604 - Biogeochemical Cycles / Lecture / BC Gill / T 2:00PM - 5:00PM
+89414 / GEOS 6604 - Simulation & Modeling in Geos / Lecture / R Weiss / T 2:00PM - 5:00PM
+GEOS 6604 - Biogeochemical Cycles / Lecture / R Weiss, BC Gill / 89414, 89419
 88954 / GEOS 5814 - Num Mod Groundwater / Lecture / TJ Burbey / TR 9:30AM - 10:45AM
 GEOS 5814 - Num Mod Groundwater / Lecture / TJ Burbey / 88954
 84427 / GEOS 4994H - Undergraduate Research / Research / NL Ross
 84426 / GEOS 4994H - Undergraduate Research / Research / NL Ross
 84425 / GEOS 4994H - Undergraduate Research / Research / NL Ross
 GEOS 4994H - Undergraduate Research / Research / NL Ross / 84425, 84426, 84427
+89420 / GEOS 6804 - Basin Scale Hydro Processes / Lecture / TJ Burbey
+GEOS 6804 - Basin Scale Hydro Processes / Lecture / TJ Burbey / 89420
 88952 / GEOS 4164 - Potential Field Geoph / Lecture / JA Hole / TR 9:30AM - 10:45AM / F 11:15AM - 2:05PM
 GEOS 4164 - Potential Field Geoph / Lecture / JA Hole / 88952
 84444 / GEOS 7994 - Research and Dissertation / Research / NL Ross
 GEOS 7994 - Research and Dissertation / Research / NL Ross / 84444
 88953 / GEOS 5014 - Earth System History / Lecture / S Xiao / M 6:00PM - 9:00PM
 GEOS 5014 - Earth System History / Lecture / S Xiao / 88953
+89418 / GEOS 5714G - Advanced Volcanic Processes / Lecture / E Gazel
 84434 / GEOS 5714G - Advanced Volcanic Processes / Lecture / E Gazel / M 4:00PM - 6:00PM / T 9:00AM - 12:00PM
-GEOS 5714G - Advanced Volcanic Processes / Lecture / E Gazel / 84434
+GEOS 5714G - Advanced Volcanic Processes / Lecture / E Gazel / 84434, 89418
 88956 / GEOS 6104 - TS:Subsurface Strtigrphic Mds / Lecture / BW Romans / M 2:30PM - 4:00PM
 GEOS 6104 - TS:Subsurface Strtigrphic Mds / Lecture / BW Romans / 88956
 88951 / GEOS 4124 - Seismic Stratigraphy / Lecture / BW Romans / M 2:30PM - 4:00PM / T 11:00AM - 2:25PM
@@ -6046,8 +6054,9 @@ GEOS 4974 - Independent Study / Independent Study / NL Ross / 84421
 GEOS 4634 - Environmental Geochemistry / Lecture / BC Gill / 84416
 89249 / GEOS 4954 - Study Abroad / Lecture / RJ Bodnar
 GEOS 4954 - Study Abroad / Lecture / RJ Bodnar / 89249
+89417 / GEOS 4714 - Volcanic Processes / Lecture / E Gazel
 84417 / GEOS 4714 - Volcanic Processes / Lecture / E Gazel / M 4:00PM - 6:00PM / T 9:00AM - 12:00PM
-GEOS 4714 - Volcanic Processes / Lecture / E Gazel / 84417
+GEOS 4714 - Volcanic Processes / Lecture / E Gazel / 84417, 89417
 84460 / GER 4154 - Adv Comp and Style / Lecture / DL Stoudt / MW 5:30PM - 6:45PM
 GER 4154 - Adv Comp and Style / Lecture / DL Stoudt / 84460
 84462 / GER 4794 - Senior Tutorial / Lecture / Staff
@@ -8912,14 +8921,15 @@ NR 6104 - Adv Topics in Remote Sensing / Lecture / Y Shao / 86575
 NR 4014 - Natural Resources Economics / Lecture / GS Amacher / 86557
 86562 / NR 5114 - Global Issues Natural Resource / Online / S Elouardighi
 NR 5114 - Global Issues Natural Resource / Online / S Elouardighi / 86562
+89415 / NR 5884 - TS: Food Polc & Sustainability / Online / Staff
 86570 / NR 5884 - TS: Human-Wildlife Conflicts / Online / MM Draheim
 86569 / NR 5884 - TS: Water and Conflict / Online / DK DiMauro
 86568 / NR 5884 - TS:Landscape Systm & Strategy / Online / DJ Marcucci
 86567 / NR 5884 - TS: Inter'l Envir Law & Policy / Online / JK Wills
 86566 / NR 5884 - TS:Watershed Stewardship / Online / JA Egenrieder
-NR 5884 - TS: Human-Wildlife Conflicts / Online / JA Egenrieder, JK Wills, DJ Marcucci, DK DiMauro, MM Draheim / 86566, 86567, 86568, 86569, 86570
-89413 / NR 5194 - Environmental Ethics / Online / Staff
-NR 5194 - Environmental Ethics / Online / Staff / 89413
+NR 5884 - TS: Food Polc & Sustainability / Online / JA Egenrieder, JK Wills, DJ Marcucci, DK DiMauro, MM Draheim, Staff / 86566, 86567, 86568, 86569, 86570, 89415
+89413 / NR 5194 - Environmental Ethics / Online / JL Lawrence
+NR 5194 - Environmental Ethics / Online / JL Lawrence / 89413
 86550 / NR 1115 - Seeking Sustainability / Lecture / TD Baird / MW 2:30PM - 3:45PM
 NR 1115 - Seeking Sustainability / Lecture / TD Baird / 86550
 86556 / NR 2974 - Independent Study / Independent Study / Staff
@@ -10131,6 +10141,8 @@ RLCL 1024 - Judaism, Christianity, Islam / Lecture / Staff, SJ Kessler / 87511, 
 RLCL 4994 - Undergraduate Research / Research / Staff / 87544
 88464 / RLCL 5104 - Mat Cult & Pub Hum Theory / Lecture / A Ansell / W 2:00PM - 4:45PM
 RLCL 5104 - Mat Cult & Pub Hum Theory / Lecture / A Ansell / 88464
+89421 / RLCL 5984 - SS: Foundations of Rel Freedom / Online / Staff
+RLCL 5984 - SS: Foundations of Rel Freedom / Online / Staff / 89421
 87543 / RLCL 4974 - Independent Study / Independent Study / Staff
 RLCL 4974 - Independent Study / Independent Study / Staff / 87543
 87519 / RLCL 1904 - Religion and Culture In Asia / Lecture / PL Schmitthenner / MWF 11:15AM - 12:05PM
