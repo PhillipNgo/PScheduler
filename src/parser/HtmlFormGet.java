@@ -1,4 +1,4 @@
-package scheduler;
+package parser;
 import java.util.List;
 
 /**

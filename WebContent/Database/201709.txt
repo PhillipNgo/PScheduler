@@ -2506,10 +2506,12 @@ Data and Algorithm Analysis	CS	4104	LS Heath	82576	3	L	TORG 1060	T R	9:30AM	10:4
 TS: Prog Anomaly Detect/Lrng	CS	6204	GV Back	82639	3	L	MCB 230	T R	11:00AM	12:15PM
 Intro Data Analytics & Visual	CS	3654	S Sengupta	82569	3	L	LITRV 1760	T R	11:00AM	12:15PM
 Intro Data Analytics & Visual	CS	3654	C Lucero	82568	3	L	HUTCH 204	M W F	1:25PM	2:15PM
+Advanced Topics HCI	CS	6724	Staff	89409	3	L	MCB 304	T R	5:00PM	6:15PM
 TS:Critical & Cultural Comp	CS	6724	K Luther	82643	3	L	MCB 226	M W	2:30PM	3:45PM
 Intro to Urban Computing	CS	5834	N Ramakrishnan	88950	3	L	DURHM 261	W	4:00PM	6:45PM
 Computer Organization	CS	4504	Staff	88974	3	L	MCB 134	T R	2:00PM	3:15PM
 Seminar	CS	4944	CJ Ribbens	82588	1	L	NCB 260	T	5:00PM	5:50PM
+Adv Tops Data & Info	CS	6604	Staff	89410	3	L	WHIT 349	M W	4:00PM	5:15PM
 TS: Instructional Design in CS	CS	6604	G Wang	82641	3	L	MCB 226	T R	3:30PM	4:45PM
 Machine Learning	CS	4824	B Huang	89309	3	L	MCB 113	T R	9:30AM	10:45AM
 Software Engineering Capstone	CS	4704	Staff	82584	3	L	MCB 307	M W	5:30PM	6:45PM
@@ -3361,7 +3363,6 @@ Research and Dissertation	ENGE	7994	ED McNair	83644	1	R
 Research and Dissertation	ENGE	7994	MC Paretti	83643	1	R
 Found Engineering Education	ENGE	5014	MC Paretti	83634	3	L	GOODW 241	M	12:30PM	3:15PM
 Research and Thesis	ENGE	5994	Staff	83641	1	R
-Managing Tech Commercializatn	ENGE	4094	M Junkunc	83631	3	L	NCB 210	T R	5:00PM	6:15PM
 Foundations of Engineering	ENGE	1216	Staff	89118	2	L	RAND 316	T R	3:30PM	4:45PM
 Foundations of Engineering	ENGE	1216	Staff	89117	2	L	RAND 316	T R	2:00PM	3:15PM
 Foundations of Engineering	ENGE	1216	Staff	89116	2	L	RAND 316	T R	12:30PM	1:45PM
@@ -3670,6 +3671,7 @@ Technical Writing	ENGL	3764	EA Lautenschlager	83859	3	L	MCB 328	T R	11:00AM	12:1
 Technical Writing	ENGL	3764	CN Bean	83858	3	L	PAM 3028	M W F	11:15AM	12:05PM
 Independent Study	ENGL	4974	VC Fowler	83917	1	I
 Wrtng, Research, Study Abroad	ENGL	4854	JA Wemhoener	83913	3	L	SHANK 340	W	4:00PM	6:50PM
+Studies in Rhetoric	ENGL	6514	KE Pender	89411	3	L	GOODW 244	W	4:00PM	6:50PM
 Harry Potter Phenomenon	ENGL	1704	Staff	83802	3	L	MCB 129	T R	2:00PM	3:15PM
 Harry Potter Phenomenon	ENGL	1704	SJ Baker	83801	3	L	PAM 2030	M W F	9:05AM	9:55AM
 Writing and Digital Media	ENGL	3844	Staff	88665	3	L	SHANK 360	T R	8:00AM	9:15AM
@@ -4306,18 +4308,15 @@ Earth's Dynamic Systems	GEOS	2024	SJ Nesbitt	84388	8	L	DER 3076	M W	12:45PM	2:15
 Environmental Geosciences	GEOS	3014	RJ Tracy	84395	3	L	DER 4069	T R	12:30PM	1:45PM
 Adv Topics Paleont	GEOS	6304	BW Romans	84440	1	L	DER 4052	R	5:00PM	6:00PM
 Independent Study	GEOS	5974	NL Ross	84437	1	I
-Advanced Topics in Mineralogy	GEOS	6504	Staff	84443	3	L
-Adv Topics Struc/Tec	GEOS	6404	Staff	84442	3	L
 TS: Active Tectonics	GEOS	6404	JA Spotila	84441	3	L
-Chemical Hydrogeology	GEOS	5834	Staff	88955	3	L
 Num Mod Groundwater	GEOS	5814	TJ Burbey	88954	3	L	DER 3040	T R	9:30AM	10:45AM
 Undergraduate Research	GEOS	4994H	NL Ross	84427	1	R
 Undergraduate Research	GEOS	4994H	NL Ross	84426	1	R
 Undergraduate Research	GEOS	4994H	NL Ross	84425	1	R
 Potential Field Geoph	GEOS	4164	JA Hole	88952	4	L	DER 4069	T R	9:30AM	10:45AM	DER 2068	F	11:15AM	2:05PM
 Research and Dissertation	GEOS	7994	NL Ross	84444	1	R
-Earth System History	GEOS	5014	S Xiao	88953	3	L	DER 4052	M	1:30PM	4:00PM
-Advanced Volcanic Processes	GEOS	5714G	E Gazel	84434	3	L
+Earth System History	GEOS	5014	S Xiao	88953	3	L	DER 4052	M	6:00PM	9:00PM
+Advanced Volcanic Processes	GEOS	5714G	E Gazel	84434	3	L	DER 4069	M	4:00PM	6:00PM	TBA	T	9:00AM	12:00PM
 TS:Subsurface Strtigrphic Mds	GEOS	6104	BW Romans	88956	3	L	DER 2068	M	2:30PM	4:00PM
 Seismic Stratigraphy	GEOS	4124	BW Romans	88951	3	L	DER 2068	M	2:30PM	4:00PM	DER 2068	T	11:00AM	2:25PM
 Research and Thesis	GEOS	5994	NL Ross	84438	1	R
@@ -4361,10 +4360,8 @@ Undergraduate Research	GEOS	4994	NL Ross	84423	1	R
 Undergraduate Research	GEOS	4994	NL Ross	84422	1	R
 Independent Study	GEOS	4974	NL Ross	84421	1	I
 Environmental Geochemistry	GEOS	4634	BC Gill	84416	3	L	DER 3076	M W F	10:10AM	11:00AM
-Study Abroad	GEOS	4954	Staff	89294	1	L
-Study Abroad	GEOS	4954	RJ Bodnar	89293	1	L
-Study Abroad	GEOS	4954	RJ Bodnar	89249	1	L
-Volcanic Processes	GEOS	4714	E Gazel	84417	3	L
+Study Abroad	GEOS	4954	RJ Bodnar	89249	4	L
+Volcanic Processes	GEOS	4714	E Gazel	84417	3	L	DER 4069	M	4:00PM	6:00PM	TBA	T	9:00AM	12:00PM
 Adv Comp and Style	GER	4154	DL Stoudt	84460	3	L	WAL 244	M W	5:30PM	6:45PM
 Senior Tutorial	GER	4794	Staff	84462	1	L
 Research and Thesis	GER	5994	Staff	84470	1	R
@@ -4778,7 +4775,6 @@ Undergraduate Research	HUM	4994H	Staff	84888	1	R
 ProPrac & Entrepreneurship	IDS	4044	B Kennedy	84911	2	L	CO 400	T R	5:00PM	7:30PM
 Human Factors	IDS	2044	Staff	84893	3	L	CO 400	T R	9:30AM	10:45AM
 Design Visualization	IDS	2065	Staff	84894	2	L	BURCH 000	W	10:10AM	12:05PM
-Managing Tech Commercializatn	IDS	4094	Staff	84912	3	L	NCB 210	T R	5:00PM	6:15PM
 Computer Aided Ind Design	IDS	2304	ML Sullivan	84896	3	L	MCB 216	T R	12:30PM	1:45PM
 Design Research	IDS	3514	Staff	84908	3	L	CO 400	M	5:30PM	8:00PM
 Independent Study	IDS	2974	RJ Dunay	84899	6	I
@@ -5866,7 +5862,6 @@ Diversity Intern & Prof Dev	MGT	3464	KA Carlson	86048	3	L
 Cornerstones Entrepreneurship	MGT	3064	Staff	86026	3	L	ROB 103	T	4:00PM	7:00PM
 Cornerstones Entrepreneurship	MGT	3064	Staff	86025	3	L	WMS 120	M	4:00PM	7:00PM
 Cornerstones Entrepreneurship	MGT	3064	Staff	86024	3	L	WMS 120	W	4:00PM	7:00PM
-Managing Tech Commercializatn	MGT	4094	M Junkunc	86060	3	L	NCB 210	T R	5:00PM	6:15PM
 Adv Professional Dev for Cdts	MGT	3935	E Humphrey	86053	2	L	WLH 340	T	3:30PM	4:45PM
 Strategy Competition Analytics	MGT	3614	A Seth	86051	3	L	WMS 209	T	5:30PM	8:30PM
 Field Study	MGT	2964	KA Carlson	86022	1	L
@@ -6372,6 +6367,7 @@ Undergraduate Research	NEUR	4994	I Kimbrough	86540	1	R
 Synaptic Structure & Function	NEUR	4544	S Clinton	86538	3	L	TBA	T R	9:30AM	10:45AM
 SS: Nutritional Neuroscience	NEUR	4984	ER Gilbert	89372	3	L	NCB 270	T R	12:30PM	1:45PM
 SS: Neuroscience of the Law	NEUR	4984	HW Sontheimer	89278	3	L	TORG 1100C	M	1:25PM	3:55PM
+`	NR	5014	DP Robertson	89412	3	O
 Adv Topics in Remote Sensing	NR	6104	Y Shao	86575	3	L	MAJWM 102	W	4:00PM	6:50PM
 Natural Resources Economics	NR	4014	GS Amacher	86557	3	L	SMYTH 331	T R	9:30AM	10:45AM
 Global Issues Natural Resource	NR	5114	S Elouardighi	86562	3	O
@@ -6380,6 +6376,7 @@ TS: Water and Conflict	NR	5884	DK DiMauro	86569	3	O
 TS:Landscape Systm & Strategy	NR	5884	DJ Marcucci	86568	3	O
 TS: Inter'l Envir Law & Policy	NR	5884	JK Wills	86567	3	O
 TS:Watershed Stewardship	NR	5884	JA Egenrieder	86566	3	O
+Environmental Ethics	NR	5194	Staff	89413	3	O
 Seeking Sustainability	NR	1115	TD Baird	86550	3	L	NCB 120	M W	2:30PM	3:45PM
 Independent Study	NR	2974	Staff	86556	1	I
 FYE Nat Resources & Environ	NR	1234	JB Mesa Cruz	86554	3	L	SMYTH 146	M W	4:00PM	4:50PM	JCH 317A	T	3:30PM	4:45PM
@@ -6394,7 +6391,7 @@ Leadership Natural Resources	NR	4105	Staff	89087	3	L	TBA	T	6:30PM	8:30PM
 Leadership Natural Resources	NR	4105	BH Bond	86558	3	L
 Independent Study	NR	4974	Staff	86560	1	I
 Field Study	NR	4964	AO De Soto	86559	1	L
-Study Abroad-China	NR	5954	DJ Marcucci	86572	3	O
+Study Abroad-Morocco	NR	5954	S Elouardighi	86572	3	O
 Conservation Ecology	NR	5724	MM Draheim	86564	3	O
 Project and Report	NSEG	5904	MA Pierson	86602	1	O
 Project and Report	NSEG	5904	Staff	86601	1	O

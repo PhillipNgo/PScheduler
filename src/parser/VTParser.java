@@ -1,4 +1,4 @@
-package scheduler;
+package parser;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -13,6 +13,11 @@ import java.util.Scanner;
 import com.gargoylesoftware.htmlunit.html.HtmlForm;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
+
+import scheduler.LinkedList;
+import scheduler.VTCourse;
+import time.Time;
+import time.TimeException;
 
 /**
  * VTParser parses the VT database by putting the data into data structures or outputting file data

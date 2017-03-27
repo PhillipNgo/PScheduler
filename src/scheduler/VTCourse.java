@@ -1,5 +1,8 @@
 package scheduler;
 
+import time.Time;
+import time.TimeException;
+
 /**
  * Course represents a college course at Virginia Tech
  * 

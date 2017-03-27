@@ -11,7 +11,7 @@
   </welcome-file-list>
   <servlet>
     <servlet-name>ModifyForm</servlet-name>
-    <servlet-class>scheduler.ModifyForm</servlet-class>
+    <servlet-class>serv.ModifyForm</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ModifyForm</servlet-name>
@@ -19,7 +19,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>ScheduleGen</servlet-name>
-    <servlet-class>scheduler.ScheduleGen</servlet-class>
+    <servlet-class>serv.ScheduleGen</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ScheduleGen</servlet-name>
@@ -27,7 +27,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>LiveSearch</servlet-name>
-    <servlet-class>scheduler.LiveSearch</servlet-class>
+    <servlet-class>serv.LiveSearch</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LiveSearch</servlet-name>
@@ -35,7 +35,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>ExcelDownload</servlet-name>
-    <servlet-class>scheduler.ExcelDownload</servlet-class>
+    <servlet-class>serv.ExcelDownload</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ExcelDownload</servlet-name>

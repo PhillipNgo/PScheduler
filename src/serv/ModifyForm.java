@@ -1,4 +1,4 @@
-package scheduler;
+package serv;
 
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;

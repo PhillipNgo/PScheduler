@@ -3,6 +3,10 @@ package scheduler;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
 
+import parser.VTParser;
+import time.Time;
+import time.TimeException;
+
 /**
  * ScheduleMaker generates a list of schedules
  * can only be called in a static way

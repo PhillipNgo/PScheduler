@@ -3424,16 +3424,18 @@ CS 6204 - TS: Prog Anomaly Detect/Lrng / Lecture / GV Back / 82639
 82569 / CS 3654 - Intro Data Analytics & Visual / Lecture / S Sengupta / TR 11:00AM - 12:15PM
 82568 / CS 3654 - Intro Data Analytics & Visual / Lecture / C Lucero / MWF 1:25PM - 2:15PM
 CS 3654 - Intro Data Analytics & Visual / Lecture / C Lucero, S Sengupta / 82568, 82569
+89409 / CS 6724 - Advanced Topics HCI / Lecture / Staff / TR 5:00PM - 6:15PM
 82643 / CS 6724 - TS:Critical & Cultural Comp / Lecture / K Luther / MW 2:30PM - 3:45PM
-CS 6724 - TS:Critical & Cultural Comp / Lecture / K Luther / 82643
+CS 6724 - Advanced Topics HCI / Lecture / K Luther, Staff / 82643, 89409
 88950 / CS 5834 - Intro to Urban Computing / Lecture / N Ramakrishnan / W 4:00PM - 6:45PM
 CS 5834 - Intro to Urban Computing / Lecture / N Ramakrishnan / 88950
 88974 / CS 4504 - Computer Organization / Lecture / Staff / TR 2:00PM - 3:15PM
 CS 4504 - Computer Organization / Lecture / Staff / 88974
 82588 / CS 4944 - Seminar / Lecture / CJ Ribbens / T 5:00PM - 5:50PM
 CS 4944 - Seminar / Lecture / CJ Ribbens / 82588
+89410 / CS 6604 - Adv Tops Data & Info / Lecture / Staff / MW 4:00PM - 5:15PM
 82641 / CS 6604 - TS: Instructional Design in CS / Lecture / G Wang / TR 3:30PM - 4:45PM
-CS 6604 - TS: Instructional Design in CS / Lecture / G Wang / 82641
+CS 6604 - Adv Tops Data & Info / Lecture / G Wang, Staff / 82641, 89410
 89309 / CS 4824 - Machine Learning / Lecture / B Huang / TR 9:30AM - 10:45AM
 CS 4824 - Machine Learning / Lecture / B Huang / 89309
 82584 / CS 4704 - Software Engineering Capstone / Lecture / Staff / MW 5:30PM - 6:45PM
@@ -4602,8 +4604,6 @@ ENGE 7994 - Research and Dissertation / Research / MC Paretti, ED McNair, CT Ame
 ENGE 5014 - Found Engineering Education / Lecture / MC Paretti / 83634
 83641 / ENGE 5994 - Research and Thesis / Research / Staff
 ENGE 5994 - Research and Thesis / Research / Staff / 83641
-83631 / ENGE 4094 - Managing Tech Commercializatn / Lecture / M Junkunc / TR 5:00PM - 6:15PM
-ENGE 4094 - Managing Tech Commercializatn / Lecture / M Junkunc / 83631
 89118 / ENGE 1216 - Foundations of Engineering / Lecture / Staff / TR 3:30PM - 4:45PM
 89117 / ENGE 1216 - Foundations of Engineering / Lecture / Staff / TR 2:00PM - 3:15PM
 89116 / ENGE 1216 - Foundations of Engineering / Lecture / Staff / TR 12:30PM - 1:45PM
@@ -4964,6 +4964,8 @@ ENGL 3764 - Technical Writing / Lecture, Online / CN Bean, AB Hutchison, BE Covi
 ENGL 4974 - Independent Study / Independent Study / VC Fowler / 83917
 83913 / ENGL 4854 - Wrtng, Research, Study Abroad / Lecture / JA Wemhoener / W 4:00PM - 6:50PM
 ENGL 4854 - Wrtng, Research, Study Abroad / Lecture / JA Wemhoener / 83913
+89411 / ENGL 6514 - Studies in Rhetoric / Lecture / KE Pender / W 4:00PM - 6:50PM
+ENGL 6514 - Studies in Rhetoric / Lecture / KE Pender / 89411
 83802 / ENGL 1704 - Harry Potter Phenomenon / Lecture / Staff / TR 2:00PM - 3:15PM
 83801 / ENGL 1704 - Harry Potter Phenomenon / Lecture / SJ Baker / MWF 9:05AM - 9:55AM
 ENGL 1704 - Harry Potter Phenomenon / Lecture / SJ Baker, Staff / 83801, 83802
@@ -5967,13 +5969,8 @@ GEOS 3014 - Environmental Geosciences / Lecture / RJ Tracy / 84395
 GEOS 6304 - Adv Topics Paleont / Lecture / BW Romans / 84440
 84437 / GEOS 5974 - Independent Study / Independent Study / NL Ross
 GEOS 5974 - Independent Study / Independent Study / NL Ross / 84437
-84443 / GEOS 6504 - Advanced Topics in Mineralogy / Lecture / Staff
-GEOS 6504 - Advanced Topics in Mineralogy / Lecture / Staff / 84443
-84442 / GEOS 6404 - Adv Topics Struc/Tec / Lecture / Staff
 84441 / GEOS 6404 - TS: Active Tectonics / Lecture / JA Spotila
-GEOS 6404 - Adv Topics Struc/Tec / Lecture / JA Spotila, Staff / 84441, 84442
-88955 / GEOS 5834 - Chemical Hydrogeology / Lecture / Staff
-GEOS 5834 - Chemical Hydrogeology / Lecture / Staff / 88955
+GEOS 6404 - TS: Active Tectonics / Lecture / JA Spotila / 84441
 88954 / GEOS 5814 - Num Mod Groundwater / Lecture / TJ Burbey / TR 9:30AM - 10:45AM
 GEOS 5814 - Num Mod Groundwater / Lecture / TJ Burbey / 88954
 84427 / GEOS 4994H - Undergraduate Research / Research / NL Ross
@@ -5984,9 +5981,9 @@ GEOS 4994H - Undergraduate Research / Research / NL Ross / 84425, 84426, 84427
 GEOS 4164 - Potential Field Geoph / Lecture / JA Hole / 88952
 84444 / GEOS 7994 - Research and Dissertation / Research / NL Ross
 GEOS 7994 - Research and Dissertation / Research / NL Ross / 84444
-88953 / GEOS 5014 - Earth System History / Lecture / S Xiao / M 1:30PM - 4:00PM
+88953 / GEOS 5014 - Earth System History / Lecture / S Xiao / M 6:00PM - 9:00PM
 GEOS 5014 - Earth System History / Lecture / S Xiao / 88953
-84434 / GEOS 5714G - Advanced Volcanic Processes / Lecture / E Gazel
+84434 / GEOS 5714G - Advanced Volcanic Processes / Lecture / E Gazel / M 4:00PM - 6:00PM / T 9:00AM - 12:00PM
 GEOS 5714G - Advanced Volcanic Processes / Lecture / E Gazel / 84434
 88956 / GEOS 6104 - TS:Subsurface Strtigrphic Mds / Lecture / BW Romans / M 2:30PM - 4:00PM
 GEOS 6104 - TS:Subsurface Strtigrphic Mds / Lecture / BW Romans / 88956
@@ -6047,11 +6044,9 @@ GEOS 4994 - Undergraduate Research / Research / NL Ross / 84422, 84423, 84424
 GEOS 4974 - Independent Study / Independent Study / NL Ross / 84421
 84416 / GEOS 4634 - Environmental Geochemistry / Lecture / BC Gill / MWF 10:10AM - 11:00AM
 GEOS 4634 - Environmental Geochemistry / Lecture / BC Gill / 84416
-89294 / GEOS 4954 - Study Abroad / Lecture / Staff
-89293 / GEOS 4954 - Study Abroad / Lecture / RJ Bodnar
 89249 / GEOS 4954 - Study Abroad / Lecture / RJ Bodnar
-GEOS 4954 - Study Abroad / Lecture / RJ Bodnar, Staff / 89249, 89293, 89294
-84417 / GEOS 4714 - Volcanic Processes / Lecture / E Gazel
+GEOS 4954 - Study Abroad / Lecture / RJ Bodnar / 89249
+84417 / GEOS 4714 - Volcanic Processes / Lecture / E Gazel / M 4:00PM - 6:00PM / T 9:00AM - 12:00PM
 GEOS 4714 - Volcanic Processes / Lecture / E Gazel / 84417
 84460 / GER 4154 - Adv Comp and Style / Lecture / DL Stoudt / MW 5:30PM - 6:45PM
 GER 4154 - Adv Comp and Style / Lecture / DL Stoudt / 84460
@@ -6748,8 +6743,6 @@ IDS 4044 - ProPrac & Entrepreneurship / Lecture / B Kennedy / 84911
 IDS 2044 - Human Factors / Lecture / Staff / 84893
 84894 / IDS 2065 - Design Visualization / Lecture / Staff / W 10:10AM - 12:05PM
 IDS 2065 - Design Visualization / Lecture / Staff / 84894
-84912 / IDS 4094 - Managing Tech Commercializatn / Lecture / Staff / TR 5:00PM - 6:15PM
-IDS 4094 - Managing Tech Commercializatn / Lecture / Staff / 84912
 84896 / IDS 2304 - Computer Aided Ind Design / Lecture / ML Sullivan / TR 12:30PM - 1:45PM
 IDS 2304 - Computer Aided Ind Design / Lecture / ML Sullivan / 84896
 84908 / IDS 3514 - Design Research / Lecture / Staff / M 5:30PM - 8:00PM
@@ -8151,8 +8144,6 @@ MGT 3464 - Diversity Intern & Prof Dev / Lecture / KA Carlson / 86048
 86025 / MGT 3064 - Cornerstones Entrepreneurship / Lecture / Staff / M 4:00PM - 7:00PM
 86024 / MGT 3064 - Cornerstones Entrepreneurship / Lecture / Staff / W 4:00PM - 7:00PM
 MGT 3064 - Cornerstones Entrepreneurship / Lecture / Staff / 86024, 86025, 86026
-86060 / MGT 4094 - Managing Tech Commercializatn / Lecture / M Junkunc / TR 5:00PM - 6:15PM
-MGT 4094 - Managing Tech Commercializatn / Lecture / M Junkunc / 86060
 86053 / MGT 3935 - Adv Professional Dev for Cdts / Lecture / E Humphrey / T 3:30PM - 4:45PM
 MGT 3935 - Adv Professional Dev for Cdts / Lecture / E Humphrey / 86053
 86051 / MGT 3614 - Strategy Competition Analytics / Lecture / A Seth / T 5:30PM - 8:30PM
@@ -8913,6 +8904,8 @@ NEUR 4544 - Synaptic Structure & Function / Lecture / S Clinton / 86538
 89372 / NEUR 4984 - SS: Nutritional Neuroscience / Lecture / ER Gilbert / TR 12:30PM - 1:45PM
 89278 / NEUR 4984 - SS: Neuroscience of the Law / Lecture / HW Sontheimer / M 1:25PM - 3:55PM
 NEUR 4984 - SS: Nutritional Neuroscience / Lecture / HW Sontheimer, ER Gilbert / 89278, 89372
+89412 / NR 5014 - ` / Online / DP Robertson
+NR 5014 - ` / Online / DP Robertson / 89412
 86575 / NR 6104 - Adv Topics in Remote Sensing / Lecture / Y Shao / W 4:00PM - 6:50PM
 NR 6104 - Adv Topics in Remote Sensing / Lecture / Y Shao / 86575
 86557 / NR 4014 - Natural Resources Economics / Lecture / GS Amacher / TR 9:30AM - 10:45AM
@@ -8925,6 +8918,8 @@ NR 5114 - Global Issues Natural Resource / Online / S Elouardighi / 86562
 86567 / NR 5884 - TS: Inter'l Envir Law & Policy / Online / JK Wills
 86566 / NR 5884 - TS:Watershed Stewardship / Online / JA Egenrieder
 NR 5884 - TS: Human-Wildlife Conflicts / Online / JA Egenrieder, JK Wills, DJ Marcucci, DK DiMauro, MM Draheim / 86566, 86567, 86568, 86569, 86570
+89413 / NR 5194 - Environmental Ethics / Online / Staff
+NR 5194 - Environmental Ethics / Online / Staff / 89413
 86550 / NR 1115 - Seeking Sustainability / Lecture / TD Baird / MW 2:30PM - 3:45PM
 NR 1115 - Seeking Sustainability / Lecture / TD Baird / 86550
 86556 / NR 2974 - Independent Study / Independent Study / Staff
@@ -8949,8 +8944,8 @@ NR 4105 - Leadership Natural Resources / Lecture / BH Bond, Staff / 86558, 89087
 NR 4974 - Independent Study / Independent Study / Staff / 86560
 86559 / NR 4964 - Field Study / Lecture / AO De Soto
 NR 4964 - Field Study / Lecture / AO De Soto / 86559
-86572 / NR 5954 - Study Abroad-China / Online / DJ Marcucci
-NR 5954 - Study Abroad-China / Online / DJ Marcucci / 86572
+86572 / NR 5954 - Study Abroad-Morocco / Online / S Elouardighi
+NR 5954 - Study Abroad-Morocco / Online / S Elouardighi / 86572
 86564 / NR 5724 - Conservation Ecology / Online / MM Draheim
 NR 5724 - Conservation Ecology / Online / MM Draheim / 86564
 86602 / NSEG 5904 - Project and Report / Online / MA Pierson

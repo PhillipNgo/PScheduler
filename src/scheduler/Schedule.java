@@ -1,5 +1,8 @@
 package scheduler;
 
+import time.Time;
+import time.TimeException;
+
 /**
  * Schedule represents a list of classes and a timetable that holds their times
  * 

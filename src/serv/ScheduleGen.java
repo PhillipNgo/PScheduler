@@ -1,4 +1,4 @@
-package scheduler;
+package serv;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,6 +13,13 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import scheduler.LinkedList;
+import scheduler.Schedule;
+import scheduler.ScheduleMaker;
+import scheduler.VTCourse;
+import time.Time;
+import time.TimeException;
 
 /**
  * Servlet implementation class ScheduleGen

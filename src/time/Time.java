@@ -1,4 +1,4 @@
-package scheduler;
+package time;
 
 /**
  * Time represents a slot of time defined by a start time and an end time.

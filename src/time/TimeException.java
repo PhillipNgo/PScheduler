@@ -1,4 +1,4 @@
-package scheduler;
+package time;
 
 @SuppressWarnings("serial")
 public class TimeException extends Exception {
