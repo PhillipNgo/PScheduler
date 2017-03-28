@@ -3312,8 +3312,7 @@ CS 2506 - Intro to Computer Organization / Lecture / WD McQuain, Staff / 82552, 
 82550 / CS 2505 - Intro Computer Organization / Lecture / WD McQuain / TR 2:00PM - 3:15PM
 CS 2505 - Intro Computer Organization / Lecture / WD McQuain, Staff / 82550, 82551
 82572 / CS 3714 - Mobile Software Development / Lecture / O Balci / TR 2:00PM - 3:15PM
-82571 / CS 3714 - Mobile Software Development / Lecture / Staff / MW 2:30PM - 3:45PM
-CS 3714 - Mobile Software Development / Lecture / Staff, O Balci / 82571, 82572
+CS 3714 - Mobile Software Development / Lecture / O Balci / 82572
 82579 / CS 4264 - Principles Computer Security / Lecture / D Yao / TR 3:30PM - 4:45PM
 CS 4264 - Principles Computer Security / Lecture / D Yao / 82579
 82601 / CS 5474 - Finite Difference Mth / Lecture / Staff / TR 2:00PM - 3:15PM
@@ -3393,7 +3392,7 @@ CS 5565 - Network Arch and Protocols / Lecture / Y Yang / 82610
 CS 1044 - Intro Prog in C / Lecture / Staff / 82499, 82500
 82554 / CS 2964 - Field Study / Lecture / Staff
 CS 2964 - Field Study / Lecture / Staff / 82554
-82564 / CS 3414 - Numerical Methods / Lecture / LT Watson / TR 9:30AM - 10:45AM
+82564 / CS 3414 - Numerical Methods / Lecture / LT Watson / TR 11:00AM - 12:15PM
 CS 3414 - Numerical Methods / Lecture / LT Watson / 82564
 88947 / CS 1114 - Intro to Software Design / Lab / Staff / R 9:30AM - 11:30AM
 88894 / CS 1114 - Intro to Software Design / Lab / Staff
@@ -3421,13 +3420,13 @@ CS 1114 - Intro to Software Design / Lecture, Lab / SH Edwards, Staff / 82511, 8
 CS 3214 - Computer Systems / Lecture / WD McQuain, Staff / 82560, 82561
 82576 / CS 4104 - Data and Algorithm Analysis / Lecture / LS Heath / TR 9:30AM - 10:45AM
 CS 4104 - Data and Algorithm Analysis / Lecture / LS Heath / 82576
-82639 / CS 6204 - TS: Prog Anomaly Detect/Lrng / Lecture / GV Back / TR 11:00AM - 12:15PM
-CS 6204 - TS: Prog Anomaly Detect/Lrng / Lecture / GV Back / 82639
+82639 / CS 6204 - Advanced Topics in Systems / Lecture / GV Back / TR 11:00AM - 12:15PM
+CS 6204 - Advanced Topics in Systems / Lecture / GV Back / 82639
 82569 / CS 3654 - Intro Data Analytics & Visual / Lecture / S Sengupta / TR 11:00AM - 12:15PM
 82568 / CS 3654 - Intro Data Analytics & Visual / Lecture / C Lucero / MWF 1:25PM - 2:15PM
 CS 3654 - Intro Data Analytics & Visual / Lecture / C Lucero, S Sengupta / 82568, 82569
 89409 / CS 6724 - Advanced Topics HCI / Lecture / Staff / TR 5:00PM - 6:15PM
-82643 / CS 6724 - TS:Critical & Cultural Comp / Lecture / K Luther / MW 2:30PM - 3:45PM
+82643 / CS 6724 - Advanced Topics HCI / Lecture / K Luther / MW 2:30PM - 3:45PM
 CS 6724 - Advanced Topics HCI / Lecture / K Luther, Staff / 82643, 89409
 88950 / CS 5834 - Intro to Urban Computing / Lecture / N Ramakrishnan / W 4:00PM - 6:45PM
 CS 5834 - Intro to Urban Computing / Lecture / N Ramakrishnan / 88950
@@ -3436,7 +3435,7 @@ CS 4504 - Computer Organization / Lecture / Staff / 88974
 82588 / CS 4944 - Seminar / Lecture / CJ Ribbens / T 5:00PM - 5:50PM
 CS 4944 - Seminar / Lecture / CJ Ribbens / 82588
 89410 / CS 6604 - Adv Tops Data & Info / Lecture / Staff / MW 4:00PM - 5:15PM
-82641 / CS 6604 - TS: Instructional Design in CS / Lecture / G Wang / TR 3:30PM - 4:45PM
+82641 / CS 6604 - Adv Tops Data & Info / Lecture / G Wang / TR 3:30PM - 4:45PM
 CS 6604 - Adv Tops Data & Info / Lecture / G Wang, Staff / 82641, 89410
 89309 / CS 4824 - Machine Learning / Lecture / B Huang / TR 9:30AM - 10:45AM
 CS 4824 - Machine Learning / Lecture / B Huang / 89309
@@ -3462,8 +3461,9 @@ CS 4124 - Theory of Computation / Lecture / LT Watson / 82577
 82502 / CS 1054 - Intro to Programming in Java / Lab / JA Lewis / M 10:10AM - 12:10PM
 82501 / CS 1054 - Intro to Programming in Java / Lab / JA Lewis / M 12:20PM - 2:20PM
 CS 1054 - Intro to Programming in Java / Lecture, Lab / JA Lewis / 82501, 82502, 82503, 82504, 82505, 82506, 82507, 82508, 82509
+89426 / CS 3704 - Intermed Software Des / Lecture / Staff / MW 2:30PM - 3:45PM
 82570 / CS 3704 - Intermed Software Des / Lecture / O Balci / TR 11:00AM - 12:15PM
-CS 3704 - Intermed Software Des / Lecture / O Balci / 82570
+CS 3704 - Intermed Software Des / Lecture / O Balci, Staff / 82570, 89426
 88901 / CS 2974 - Independent Study / Independent Study / Staff
 88900 / CS 2974 - Independent Study / Independent Study / Staff
 88899 / CS 2974 - Independent Study / Independent Study / Staff
@@ -3499,7 +3499,7 @@ CS 3744 - Intro GUI Programming/Graphics / Lecture / D Gracanin / 82574
 CS 5724 - Models of HCI / Lecture / DS McCrickard / 82617
 82613 / CS 5604 - Info Storage and Ret / Lecture / EA Fox / TR 3:30PM - 4:45PM
 CS 5604 - Info Storage and Ret / Lecture / EA Fox / 82613
-89358 / CS 3824 - Intro Comp Bio Bioinformatics / Lecture / Staff / TR 11:00AM - 12:15PM
+89358 / CS 3824 - Intro Comp Bio Bioinformatics / Lecture / Staff / TR 9:30AM - 10:45AM
 CS 3824 - Intro Comp Bio Bioinformatics / Lecture / Staff / 89358
 82676 / CSES 5124 - Topics in Soil Genesis / Lab / JM Galbraith
 CSES 5124 - Topics in Soil Genesis / Lab / JM Galbraith / 82676
@@ -5434,6 +5434,8 @@ ESM 6974 - Independent Study / Independent Study / Staff / 84083
 84086 / FA 2004 - Creativity & the Artistic Exp / Lecture / A Weinstein / W 12:20PM - 1:10PM
 84085 / FA 2004 - Creativity & the Artistic Exp / Lecture / A Weinstein / M 12:20PM - 1:10PM
 FA 2004 - Creativity & the Artistic Exp / Lecture / A Weinstein / 84085, 84086
+89427 / FCS 4974H - IS:Basic Cooking&Food Sel / Independent Study / Staff
+FCS 4974H - IS:Basic Cooking&Food Sel / Independent Study / Staff / 89427
 88527 / FCS 4964 - Field Work/Practicum / Lecture / JO Beamish
 FCS 4964 - Field Work/Practicum / Lecture / JO Beamish / 88527
 89359 / FIN 4274 - Equity Securities / Lecture / P Ye / MW 2:30PM - 3:45PM
@@ -6239,8 +6241,6 @@ HD 4964 - Field Study / Lecture / ES Stachelski, Staff, ME Verdu / 84590, 84591,
 HD 5514 - Research Methods / Lecture / Staff / 84601
 88268 / HD 6404 - Advanced Systems Therapy / Lecture / Staff / R 9:00AM - 11:50AM
 HD 6404 - Advanced Systems Therapy / Lecture / Staff / 88268
-84603 / HD 5614 - Human Dev Theory & Application / Lecture / Staff / T 9:00AM - 11:50AM
-HD 5614 - Human Dev Theory & Application / Lecture / Staff / 84603
 89379 / HD 5254 - Social Epi & Health Inequal / Lecture / Staff / R 5:30PM - 8:20PM
 HD 5254 - Social Epi & Health Inequal / Lecture / Staff / 89379
 84625 / HD 7994 - Research And Dissertation / Research / Staff
@@ -6284,6 +6284,8 @@ HD 4974 - Independent Study / Independent Study / Staff / 84594, 84595
 84611 / HD 5964 - TS: HD Research Team / Lecture / Staff
 84610 / HD 5964 - TS: MFT Supervision / Lecture / J Case Pease / T 1:00PM - 3:50PM
 HD 5964 - TS: HD Research Team / Lecture / J Case Pease, Staff / 84610, 84611
+89423 / HD 5624 - Professional Practices in HD / Lecture / Staff / T 9:00AM - 11:50AM
+HD 5624 - Professional Practices in HD / Lecture / Staff / 89423
 88269 / HD 6514 - Adv Research Methods / Lecture / Staff / M 3:00PM - 5:50PM
 HD 6514 - Adv Research Methods / Lecture / Staff / 88269
 84589 / HD 4714 - Senior Capstone Seminar / Lecture / Staff / MW 4:00PM - 5:15PM
@@ -7545,7 +7547,7 @@ MATH 3144 - Linear Algebra I / Lecture / Staff / 85502, 85503, 85504
 MATH 2204 - Intro Multivariable Calculus / Lecture / Staff / 85441, 85442, 85443, 85444, 85445, 85446, 85447, 85448, 85449, 85450, 85451, 85452, 85453, 85454, 85455, 85456, 85457, 85458, 85459, 85460, 85461, 85462, 85463
 85485 / MATH 2644 - Mathematics Tutoring / Lecture / Staff / F 1:00PM - 1:50PM
 MATH 2644 - Mathematics Tutoring / Lecture / Staff / 85485
-85511 / MATH 3414 - Numerical Methods / Lecture / LT Watson / TR 9:30AM - 10:45AM
+85511 / MATH 3414 - Numerical Methods / Lecture / LT Watson / TR 11:00AM - 12:15PM
 MATH 3414 - Numerical Methods / Lecture / LT Watson / 85511
 85347 / MATH 1114 - Elementary Linear Algebra / Online / ND Gildersleeve
 85346 / MATH 1114 - Elementary Linear Algebra / Emporium / ND Gildersleeve
@@ -8921,13 +8923,14 @@ NR 6104 - Adv Topics in Remote Sensing / Lecture / Y Shao / 86575
 NR 4014 - Natural Resources Economics / Lecture / GS Amacher / 86557
 86562 / NR 5114 - Global Issues Natural Resource / Online / S Elouardighi
 NR 5114 - Global Issues Natural Resource / Online / S Elouardighi / 86562
-89415 / NR 5884 - TS: Food Polc & Sustainability / Online / Staff
+89424 / NR 5884 - TS:Infrastructure for Resilnce / Online / CE Kimmel
+89415 / NR 5884 - TS: Food Polc & Sustainability / Online / JL Jones
 86570 / NR 5884 - TS: Human-Wildlife Conflicts / Online / MM Draheim
 86569 / NR 5884 - TS: Water and Conflict / Online / DK DiMauro
 86568 / NR 5884 - TS:Landscape Systm & Strategy / Online / DJ Marcucci
 86567 / NR 5884 - TS: Inter'l Envir Law & Policy / Online / JK Wills
 86566 / NR 5884 - TS:Watershed Stewardship / Online / JA Egenrieder
-NR 5884 - TS: Food Polc & Sustainability / Online / JA Egenrieder, JK Wills, DJ Marcucci, DK DiMauro, MM Draheim, Staff / 86566, 86567, 86568, 86569, 86570, 89415
+NR 5884 - TS:Infrastructure for Resilnce / Online / JA Egenrieder, JK Wills, DJ Marcucci, DK DiMauro, MM Draheim, JL Jones, CE Kimmel / 86566, 86567, 86568, 86569, 86570, 89415, 89424
 89413 / NR 5194 - Environmental Ethics / Online / JL Lawrence
 NR 5194 - Environmental Ethics / Online / JL Lawrence / 89413
 86550 / NR 1115 - Seeking Sustainability / Lecture / TD Baird / MW 2:30PM - 3:45PM

@@ -2429,7 +2429,6 @@ Intro to Computer Organization	CS	2506	WD McQuain	82552	3	L	TORG 3100	T R	11:00A
 Intro Computer Organization	CS	2505	Staff	82551	3	L	TORG 3100	T R	3:30PM	4:45PM
 Intro Computer Organization	CS	2505	WD McQuain	82550	3	L	TORG 2150	T R	2:00PM	3:15PM
 Mobile Software Development	CS	3714	O Balci	82572	3	L	TORG 1010	T R	2:00PM	3:15PM
-Mobile Software Development	CS	3714	Staff	82571	3	L	SURGE 109	M W	2:30PM	3:45PM
 Principles Computer Security	CS	4264	D Yao	82579	3	L	NCB 160	T R	3:30PM	4:45PM
 Finite Difference Mth	CS	5474	Staff	82601	3	L	MCB 233	T R	2:00PM	3:15PM
 Human-Computer Interact Capstn	CS	4784	DG Tatar	82585	3	L	TORG 1020	R	3:30PM	6:15PM
@@ -2480,7 +2479,7 @@ Network Arch and Protocols	CS	5565	Y Yang	82610	3	L	RAND 129	T R	2:00PM	3:15PM
 Intro Prog in C	CS	1044	Staff	82500	3	L	TORG 2150	M W	5:30PM	6:45PM
 Intro Prog in C	CS	1044	Staff	82499	3	L	TORG 2150	T R	5:00PM	6:15PM
 Field Study	CS	2964	Staff	82554	1	L
-Numerical Methods	CS	3414	LT Watson	82564	3	L	MCB 302	T R	9:30AM	10:45AM
+Numerical Methods	CS	3414	LT Watson	82564	3	L	MCB 232	T R	11:00AM	12:15PM
 Intro to Software Design	CS	1114	Staff	88947	0	B	MCB 218	R	9:30AM	11:30AM
 Intro to Software Design	CS	1114	Staff	88894	0	B
 Intro to Software Design	CS	1114	Staff	82530	0	B	MCB 230	F	2:30PM	4:30PM
@@ -2504,16 +2503,16 @@ Intro to Software Design	CS	1114	Staff	82511	0	B	SURGE 109	F	11:15AM	1:15PM
 Computer Systems	CS	3214	Staff	82561	3	L	SURGE 104C	M W	2:30PM	3:45PM
 Computer Systems	CS	3214	WD McQuain	82560	3	L	SURGE 104B	T R	9:30AM	10:45AM
 Data and Algorithm Analysis	CS	4104	LS Heath	82576	3	L	TORG 1060	T R	9:30AM	10:45AM
-TS: Prog Anomaly Detect/Lrng	CS	6204	GV Back	82639	3	L	MCB 230	T R	11:00AM	12:15PM
+Advanced Topics in Systems	CS	6204	GV Back	82639	3	L	MCB 230	T R	11:00AM	12:15PM
 Intro Data Analytics & Visual	CS	3654	S Sengupta	82569	3	L	LITRV 1760	T R	11:00AM	12:15PM
 Intro Data Analytics & Visual	CS	3654	C Lucero	82568	3	L	HUTCH 204	M W F	1:25PM	2:15PM
 Advanced Topics HCI	CS	6724	Staff	89409	3	L	MCB 304	T R	5:00PM	6:15PM
-TS:Critical & Cultural Comp	CS	6724	K Luther	82643	3	L	MCB 226	M W	2:30PM	3:45PM
+Advanced Topics HCI	CS	6724	K Luther	82643	3	L	MCB 226	M W	2:30PM	3:45PM
 Intro to Urban Computing	CS	5834	N Ramakrishnan	88950	3	L	DURHM 261	W	4:00PM	6:45PM
 Computer Organization	CS	4504	Staff	88974	3	L	MCB 134	T R	2:00PM	3:15PM
 Seminar	CS	4944	CJ Ribbens	82588	1	L	NCB 260	T	5:00PM	5:50PM
 Adv Tops Data & Info	CS	6604	Staff	89410	3	L	WHIT 349	M W	4:00PM	5:15PM
-TS: Instructional Design in CS	CS	6604	G Wang	82641	3	L	MCB 226	T R	3:30PM	4:45PM
+Adv Tops Data & Info	CS	6604	G Wang	82641	3	L	MCB 226	T R	3:30PM	4:45PM
 Machine Learning	CS	4824	B Huang	89309	3	L	MCB 113	T R	9:30AM	10:45AM
 Software Engineering Capstone	CS	4704	Staff	82584	3	L	MCB 307	M W	5:30PM	6:45PM
 Systems & Networking Capstone	CS	4284	A Butt	82580	3	L	MCB 231	T R	12:30PM	1:45PM
@@ -2530,6 +2529,7 @@ Intro to Programming in Java	CS	1054	JA Lewis	82504	0	B	TORG 1020	T	2:00PM	4:00P
 Intro to Programming in Java	CS	1054	JA Lewis	82503	0	B	TORG 1020	M	4:00PM	6:00PM
 Intro to Programming in Java	CS	1054	JA Lewis	82502	0	B	TORG 1020	M	10:10AM	12:10PM
 Intro to Programming in Java	CS	1054	JA Lewis	82501	0	B	TORG 1020	M	12:20PM	2:20PM
+Intermed Software Des	CS	3704	Staff	89426	3	L	SURGE 109	M W	2:30PM	3:45PM
 Intermed Software Des	CS	3704	O Balci	82570	3	L	GOODW 145	T R	11:00AM	12:15PM
 Independent Study	CS	2974	Staff	88901	1	I
 Independent Study	CS	2974	Staff	88900	1	I
@@ -2555,7 +2555,7 @@ Data Analytics	CS	5525	C Reddy	82606	3	L	HUTCH 204	M W F	8:00AM	8:50AM
 Intro GUI Programming/Graphics	CS	3744	D Gracanin	82574	3	L	SURGE 109	T R	8:00AM	9:15AM
 Models of HCI	CS	5724	DS McCrickard	82617	3	L	MCB 218	T	3:30PM	6:15PM
 Info Storage and Ret	CS	5604	EA Fox	82613	3	L	MCB 230	T R	3:30PM	4:45PM
-Intro Comp Bio Bioinformatics	CS	3824	Staff	89358	3	L	MCB 232	T R	11:00AM	12:15PM
+Intro Comp Bio Bioinformatics	CS	3824	Staff	89358	3	L	MCB 302	T R	9:30AM	10:45AM
 Topics in Soil Genesis	CSES	5124	JM Galbraith	82676	1	B
 Soil Description and Interp	CSES	3144	JM Galbraith	82664	3	L	SMYTH 246B	F	3:45PM	6:45PM
 Field Study	CSES	2964	EH Ervin	82654	1	R
@@ -3992,6 +3992,7 @@ Undergraduate Research	ESM	4994	Staff	84063	1	R
 Independent Study	ESM	6974	Staff	84083	1	I
 Creativity & the Artistic Exp	FA	2004	A Weinstein	84086	1	L	SQUIR COLNL	W	12:20PM	1:10PM
 Creativity & the Artistic Exp	FA	2004	A Weinstein	84085	1	L	SQUIR COLNL	M	12:20PM	1:10PM
+IS:Basic Cooking&Food Sel	FCS	4974H	Staff	89427	3	I
 Field Work/Practicum	FCS	4964	JO Beamish	88527	1	L
 Equity Securities	FIN	4274	P Ye	89359	3	L	PAM 3010	M W	2:30PM	3:45PM
 Equity Securities	FIN	4274	RS Billingsley	88967	3	L	PAM 3004	M W	2:30PM	3:45PM
@@ -4473,7 +4474,6 @@ Field Study	HD	4964	ME Verdu	84591	1	L
 Field Study	HD	4964	ES Stachelski	84590	1	L	LITRV 1770	M	1:25PM	2:15PM
 Research Methods	HD	5514	Staff	84601	3	L	LITRV 1770	M W	5:30PM	6:45PM
 Advanced Systems Therapy	HD	6404	Staff	88268	3	L	WAL 407	R	9:00AM	11:50AM
-Human Dev Theory & Application	HD	5614	Staff	84603	3	L	WAL 407	T	9:00AM	11:50AM
 Social Epi & Health Inequal	HD	5254	Staff	89379	3	L	ENGEL 219	R	5:30PM	8:20PM
 Research And Dissertation	HD	7994	Staff	84625	1	R
 Research And Thesis	HD	5994	Staff	84619	1	R
@@ -4504,6 +4504,7 @@ Independent Study	HD	4974	Staff	84595	1	I
 Independent Study	HD	4974	Staff	84594	1	I
 TS: HD Research Team	HD	5964	Staff	84611	1	L
 TS: MFT Supervision	HD	5964	J Case Pease	84610	1	L	PWCOM 101A	T	1:00PM	3:50PM
+Professional Practices in HD	HD	5624	Staff	89423	3	L	WAL 407	T	9:00AM	11:50AM
 Adv Research Methods	HD	6514	Staff	88269	3	L	WAL 407	M	3:00PM	5:50PM
 Senior Capstone Seminar	HD	4714	Staff	84589	3	L	LITRV 1770	M W	4:00PM	5:15PM
 Senior Capstone Seminar	HD	4714	Staff	84588	3	L	LITRV 1770	T R	9:30AM	10:45AM
@@ -5340,7 +5341,7 @@ Intro Multivariable Calculus	MATH	2204	Staff	85443	3	L	MCB 113	T R	2:00PM	3:15PM
 Intro Multivariable Calculus	MATH	2204	Staff	85442	3	L	SURGE 118B	M W F	2:30PM	3:20PM
 Intro Multivariable Calculus	MATH	2204	Staff	85441	3	L	GOODW 125	T R	9:30AM	10:45AM
 Mathematics Tutoring	MATH	2644	Staff	85485	1	L	EMPOR 126	F	1:00PM	1:50PM
-Numerical Methods	MATH	3414	LT Watson	85511	3	L	MCB 302	T R	9:30AM	10:45AM
+Numerical Methods	MATH	3414	LT Watson	85511	3	L	MCB 232	T R	11:00AM	12:15PM
 Elementary Linear Algebra	MATH	1114	ND Gildersleeve	85347	2	O
 Elementary Linear Algebra	MATH	1114	ND Gildersleeve	85346	2	E
 Elementary Linear Algebra	MATH	1114	ND Gildersleeve	85345	2	E
@@ -6377,7 +6378,8 @@ SS: Neuroscience of the Law	NEUR	4984	HW Sontheimer	89278	3	L	TORG 1100C	M	1:25P
 Adv Topics in Remote Sensing	NR	6104	Y Shao	86575	3	L	MAJWM 102	W	4:00PM	6:50PM
 Natural Resources Economics	NR	4014	GS Amacher	86557	3	L	SMYTH 331	T R	9:30AM	10:45AM
 Global Issues Natural Resource	NR	5114	S Elouardighi	86562	3	O
-TS: Food Polc & Sustainability	NR	5884	Staff	89415	1	O
+TS:Infrastructure for Resilnce	NR	5884	CE Kimmel	89424	3	O
+TS: Food Polc & Sustainability	NR	5884	JL Jones	89415	3	O
 TS: Human-Wildlife Conflicts	NR	5884	MM Draheim	86570	3	O
 TS: Water and Conflict	NR	5884	DK DiMauro	86569	3	O
 TS:Landscape Systm & Strategy	NR	5884	DJ Marcucci	86568	3	O
