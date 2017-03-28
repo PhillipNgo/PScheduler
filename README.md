@@ -5,13 +5,13 @@ The website can be found [here](http://pscheduler.com/)
 
 ## Description
 
-Using the course data found on the [Virginia Tech Course Timetable](https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_DispRequest), a user can input the classes they want to take for a chosen semester and the program will generate all possible schedules for the set of classes. The generated courses are visualized in both a text format and a five day hourly format.
+Using the course data found on the [Virginia Tech Course Timetable](https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_DispRequest), a user can input the classes they want to take for a chosen semester and the program will generate all possible schedules for the set of classes. The generated courses are visualized in both a colored text format and a colored five day hourly format.
 
 Image of schedule restrictions page:
-![Image of schedule restrictions page](http://imgur.com/oQIaa6K)
+![Image of schedule restrictions page](http://i.imgur.com/oQIaa6K.png)
 
 Image of generated schedules:
-![Image of generated schedules](http://imgur.com/ovfwhSa)
+![Image of generated schedules](http://i.imgur.com/ovfwhSa.png)
 
 ## Features
 
