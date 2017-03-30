@@ -52,7 +52,7 @@ public class ScheduleMaker {
     }
     
     /**
-     * Listings found for the classes inputted
+     * Listings found for the classes inputed
      * @return listings
      */
     public HashMap<String, LinkedList<VTCourse>> getListings() {

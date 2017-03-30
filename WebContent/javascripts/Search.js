@@ -27,6 +27,7 @@ jQuery(document).ready(function($){
 	$('#term').on('change', function(){
 	    if ($("#schedule > tbody:last-child").html().trim().length && confirm("This will clear your current schedule")) {
 	    	$("#schedule > tbody:last-child").html('');
+	    	hide();
 	    }
 	});
 	
