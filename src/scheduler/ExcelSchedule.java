@@ -157,37 +157,26 @@ public class ExcelSchedule {
      * @param colorInd the color to fill
      */
     private void addClass(HSSFSheet sheet, int sheetStartTime, VTCourse c, int colorInd) {
-        if (c.getTimeSlot() == null) {
-            return;
-        }
-        int startTime = Time.timeNumber(c.getTimeSlot().getStart())/5;
-        int endTime = Time.timeNumber(c.getTimeSlot().getEnd())/5;
-        String[] days = c.getDays();
-        for (String d : days) {
-            HSSFCell cell = sheet.getRow(startTime - sheetStartTime*12 + 1).createCell(Schedule.DAYS.indexOf(d) + 1);
-            cell.setCellType(HSSFCell.CELL_TYPE_FORMULA);
-            cell.setCellFormula(classString(c, false));
-            cell.setCellStyle(classStyles[colorInd]);
-            CellRangeAddress cellRange = new CellRangeAddress(startTime - sheetStartTime*12 + 1, endTime - sheetStartTime*12, 
-                    Schedule.DAYS.indexOf(d) + 1, Schedule.DAYS.indexOf(d) + 1);
-            setMergeBorder(sheet, cellRange, true, true, true, true);
-            sheet.addMergedRegion(cellRange);
-        }
-        if (c.getAdditionalTime() != null && c.getAdditionalDays() != null && c.getAdditionalDays().length > 0) {
-            days = c.getAdditionalDays();
-            startTime = Time.timeNumber(c.getAdditionalTime().getStart())/5;
-            endTime = Time.timeNumber(c.getAdditionalTime().getEnd())/5;
-            for (String d : days) {
-                HSSFCell cell = sheet.getRow(startTime - sheetStartTime*12 + 1).createCell(Schedule.DAYS.indexOf(d) + 1);
-                cell.setCellType(HSSFCell.CELL_TYPE_FORMULA);
-                cell.setCellFormula(classString(c, true));
-                cell.setCellStyle(classStyles[colorInd]);
-                CellRangeAddress cellRange = new CellRangeAddress(startTime - sheetStartTime*12 + 1, endTime - sheetStartTime*12, 
-                        Schedule.DAYS.indexOf(d) + 1, Schedule.DAYS.indexOf(d) + 1);
-                setMergeBorder(sheet, cellRange, true, true, true, true);
-                sheet.addMergedRegion(cellRange);
+        
+        for (int i = 0; i < c.getTimes().size(); i++) {
+            Time t = c.getTimes().get(i);
+            String[] days = c.getDays().get(i);
+            if (t != null) {
+                int startTime = Time.timeNumber(t.getStart())/5;
+                int endTime = Time.timeNumber(t.getEnd())/5;
+                for (String d : days) {
+                    HSSFCell cell = sheet.getRow(startTime - sheetStartTime*12 + 1).createCell(Schedule.DAYS.indexOf(d) + 1);
+                    cell.setCellType(HSSFCell.CELL_TYPE_FORMULA);
+                    cell.setCellFormula(classString(c, i));
+                    cell.setCellStyle(classStyles[colorInd]);
+                    CellRangeAddress cellRange = new CellRangeAddress(startTime - sheetStartTime*12 + 1, endTime - sheetStartTime*12, 
+                            Schedule.DAYS.indexOf(d) + 1, Schedule.DAYS.indexOf(d) + 1);
+                    setMergeBorder(sheet, cellRange, true, true, true, true);
+                    sheet.addMergedRegion(cellRange);
+                }
             }
         }
+        
     }
     
     /**
@@ -197,20 +186,19 @@ public class ExcelSchedule {
      * @param additional if the class has an additional time
      * @return the text of the class
      */
-    private String classString(VTCourse c, boolean additional) {
+    private String classString(VTCourse c, int timeIndex) {
         String s = "";
         String br = "&CHAR(10)&";
         s += "\"" + c.getSubject() + " " + c.getNum() + "\"" + br +
              "\"" + c.getCRN() + "\"" + br;   
-        if (additional) {
-            s += "\"" + c.getAdditionalTime().getStart() + " - " + c.getAdditionalTime().getEnd() + "\"" + br +
-                 "\"" + c.getAdditionalLocation() + "\"" + br; 
-        }
-        else {
-            s += "\"" + c.getTimeSlot().getStart() + " - " + c.getTimeSlot().getEnd() + "\"" + br +
-                 "\"" + c.getLocation() + "\"" + br;
-        }
-        s += "\"" + c.getProf() + "\"";
+        
+        Time t = c.getTimes().get(timeIndex);
+        String location = c.getLocations().get(timeIndex);
+        
+        s += "\"" + t.getStart() + " - " + t.getEnd() + "\"" + br + 
+             "\"" + location + "\"" + br +
+             "\"" + c.getProf() + "\""; 
+        
         return s;
     }
     

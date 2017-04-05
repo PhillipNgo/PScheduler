@@ -9,7 +9,7 @@ jQuery(document).ready(function($){
 	 */
 	$('.live-search-box').on('keyup focus', function(){
 		var searchType = $('#searchtype').val(); 
-		var searchTerm = $(this).val().toLowerCase();
+		var searchTerm = $(this).val().toLowerCase().replaceAll("[\\s-]", "");
 		var termYear = $('#term').val();
 		if (searchTerm.length > 1) {
 			$.get('LiveSearch', {search:searchTerm, type:searchType, term:termYear}, function(response) {
@@ -36,6 +36,17 @@ jQuery(document).ready(function($){
 	 */
 	setParameters();
 });
+
+/**
+ * Replaces all occurrences of a regular expression with a new string
+ * @param search the regex
+ * @param replacement what to replace
+ * @returns the string with the regex replaced
+ */
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.replace(new RegExp(search, 'g'), replacement);
+};
 
 /**
  * hides the search terms

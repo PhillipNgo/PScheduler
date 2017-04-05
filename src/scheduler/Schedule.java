@@ -85,11 +85,10 @@ public class Schedule extends LinkedList<VTCourse> {
         int early = 1500;
         for (VTCourse curr : this) {
             int min = 1500;
-            if (curr.getTimeSlot() != null) {
-                min = Math.min(Time.timeNumber(curr.getTimeSlot().getStart()), min);
-            }
-            if (curr.getAdditionalTime() != null) {
-                min = Math.min(Time.timeNumber(curr.getAdditionalTime().getStart()), min);
+            for (Time t : curr.getTimes()) {
+                if (t != null) {
+                    min = Math.min(t.getStartNum(), min);
+                }
             }
             early = Math.min(min, early);
         }
@@ -108,11 +107,10 @@ public class Schedule extends LinkedList<VTCourse> {
         int late = -1;
         for (VTCourse curr : this) {
             int max = -1;
-            if (curr.getTimeSlot() != null) {
-                max = Math.max(Time.timeNumber(curr.getTimeSlot().getEnd()), max);
-            }
-            if (curr.getAdditionalTime() != null) {
-                max = Math.max(Time.timeNumber(curr.getAdditionalTime().getEnd()), max);
+            for (Time t : curr.getTimes()) {
+                if (t != null) {
+                   max = Math.max(t.getEndNum(), max);
+                }
             }
             late = Math.max(max, late);
         }
@@ -127,21 +125,12 @@ public class Schedule extends LinkedList<VTCourse> {
      */
     public boolean isBusy(int day, int time) {
         for (VTCourse c : this) {
-            if (c.getTimeSlot() != null) {
-                for (String d : c.getDays()) {
-                    if (day == DAYS.indexOf(d)) {
-                        if (time >= c.getTimeSlot().getStartNum() && time <= c.getTimeSlot().getEndNum()-5) {
-                            return true;
-                        }
-                    }
-                }
-            }
-            if (c.getAdditionalTime() != null) {
-                for (String d : c.getAdditionalDays()) {
-                    if (day == DAYS.indexOf(d)) {
-                        if (time >= c.getAdditionalTime().getStartNum() && time <= c.getAdditionalTime().getEndNum()-5) {
-                            return true;
-                        }
+            for (int i = 0; i < c.getDays().size(); i++) {
+                Time t = c.getTimes().get(i);
+                String[] days = c.getDays().get(i);
+                for (String d : days) {
+                    if (day == DAYS.indexOf(d) && time >= t.getStartNum() && time <= t.getEndNum()-5) {
+                        return true;
                     }
                 }
             }

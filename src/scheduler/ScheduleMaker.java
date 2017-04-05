@@ -229,8 +229,7 @@ public class ScheduleMaker {
      */
     private boolean checkRestrictions(VTCourse course, String start, String end, String type, String[] freeDays,
                                              String prof) throws TimeException {
-        Time time = course.getTimeSlot();
-         
+        
         if (!type.equals("A") && !type.equals(course.getClassType())) {
             return false;
         }
@@ -239,44 +238,29 @@ public class ScheduleMaker {
             return false;
         }
         
-        if (time == null) {
-            return true;
-        }      
-        int startTime = Time.timeNumber(start);
-        int endTime = Time.timeNumber(end);
-        if (freeDays != null) {
-            for (String d : freeDays) {
-                for (String d2 : course.getDays()) {
-                    if (d.equals(d2)) {
-                        return false;
+        for (int i = 0; i < course.getTimes().size(); i++) {
+            Time time = course.getTimes().get(i);
+            String[] days = course.getDays().get(i);
+            
+            if (time != null) {
+                if (freeDays != null) {
+                    for (String d : freeDays) {
+                        for (String d2 : days) {
+                            if (d.equals(d2)) {
+                                return false;
+                            }
+                        }
                     }
                 }
+                
+                int startTime = Time.timeNumber(start);
+                int endTime = Time.timeNumber(end);
+                if (time.getStartNum() < startTime || time.getEndNum() > endTime) {
+                    return false;
+                }
             }
-        }
-
-        if (time.getStartNum() < startTime || time.getEndNum() > endTime) {
-            return false;
         }
         
-        time = course.getAdditionalTime();
-        if (time == null) {
-            return true;
-        }
-        startTime = Time.timeNumber(start);
-        endTime = Time.timeNumber(end);
-        if (freeDays != null) {
-            for (String d : freeDays) {
-                for (String d2 : course.getAdditionalDays()) {
-                    if (d.equals(d2)) {
-                        return false;
-                    }
-                }
-            }
-        }
-        if (time.getStartNum() < startTime || time.getEndNum() > endTime) {
-            return false;
-        }
-
         return true;
     }
 }

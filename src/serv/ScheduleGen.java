@@ -412,51 +412,51 @@ public class ScheduleGen extends HttpServlet {
      * @return html string for the class
      */
     private String textClass(VTCourse c, boolean color, int colorInd) {
-        String html = "<tr class='left'";
-        if (color && c.getTimeSlot() != null) {
-            html += " style='background-color:" + colors[colorInd] + " !important;'";
-        }
-        html += "><td class='text'>" + c.getCRN() + "</td>";
-        html += "<td class='text'>" + c.getSubject() + " " + c.getNum() + "</td>";
-        html += "<td class='text pad'>" + c.getName() + "</td>";
-        html += "<td class='text'>" + classType(c.getClassType()) + "</td>";
-        html += "<td class='text'>" + c.getCredits() + "</td>";
-        html += "<td class='text'>" + c.getProf() + "</td>";             
-        Time t = c.getTimeSlot();
-        if (t != null) {
-            String[] days = c.getDays();
-            String day = "";
-            for (int k = 0; k < days.length; k++) {
-                day += days[k];
-            }
-            html += "<td  class='text'>" + day + "</td>";
-            html += "<td  class='text'>" + t.getStart() + " - " + t.getEnd() + "</td>";
-            html += "<td  class='text pad'>" + c.getLocation() + "</td>";
-            html += "</tr>";
-            if (c.getAdditionalDays() != null && c.getAdditionalTime() != null && c.getAdditionalLocation() != null) {
-                html += "<tr ";
-                if (color) {
-                    html += "style='background-color:" + colors[colorInd] + " !important;'";
-                }
-                html += "><td></td><td></td><td></td><td></td><td></td><td></td>";
-                days = c.getAdditionalDays();
-                String addedDays = "";
-                for (int k = 0; k < days.length; k++) {
-                    addedDays += days[k];
-                }
-                html += "<td class='text'>" + addedDays + "</td>";
-                html += "<td class='text'>" + c.getAdditionalTime().getStart() + " - " + c.getAdditionalTime().getEnd() + "</td>";
-                html += "<td class='text pad'>" + c.getAdditionalLocation() + "</td>";
-                html += "</tr>";
+        boolean hasTime = false;
+        for (int i = 0; i < c.getTimes().size() && hasTime == false; i++) {
+            if (c.getTimes().get(i) != null) {
+                hasTime = true;
             }
         }
-        else {
-            html += "<td class='text'>N/A</td>";
-            html += "<td class='text'>N/A</td>";
-            html += "<td class='text pad'>N/A</td>";
-            html += "</tr>";
+        StringBuilder html = new StringBuilder("<tr class='left'");
+        if (color && hasTime) {
+            html.append(" style='background-color:" + colors[colorInd] + " !important;'");
         }
-        return html;
+        html.append("><td class='text'>" + c.getCRN() + "</td>");
+        html.append("<td class='text'>" + c.getSubject() + " " + c.getNum() + "</td>");
+        html.append("<td class='text pad'>" + c.getName() + "</td>");
+        html.append("<td class='text'>" + classType(c.getClassType()) + "</td>");
+        html.append("<td class='text'>" + c.getCredits() + "</td>");
+        html.append("<td class='text'>" + c.getProf() + "</td>");       
+        
+        for (int i = 0; i < c.getTimes().size(); i++) {
+            if (i != 0) {
+                html.append("<tr ");
+                if (color && hasTime) {
+                    html.append("style='background-color:" + colors[colorInd] + " !important;'");
+                }
+                html.append("><td></td><td></td><td></td><td></td><td></td><td></td>");
+            }
+            
+            Time t = c.getTimes().get(i);
+            String[] days = c.getDays().get(i);
+            if (t != null) {
+                html.append("<td class='text'>");
+                for (String d : days) {
+                    html.append(d);
+                }
+                html.append("</td><td  class='text'>" + t.getStart() + " - " + t.getEnd() + "</td>");
+                html.append("<td class='text pad'>" + c.getLocations().get(i) + "</td>");
+            } else {
+                html.append("<td class='text'>N/A</td>");
+                html.append("<td class='text'>N/A</td>");
+                html.append("<td class='text pad'>N/A</td>");
+                html.append("</tr>");
+            }
+            html.append("</tr>");
+        }
+        
+        return html.toString();
     }
     
     /**
@@ -805,45 +805,26 @@ public class ScheduleGen extends HttpServlet {
     private String getHTMLSchedule(Schedule schedule, int day, String startTime) {
         StringBuilder html = new StringBuilder();
         for (VTCourse c : schedule) {
-            String[] days = c.getDays();
-            if (days != null) {
-                for (String d : days) {
-                    if (Schedule.DAYS.indexOf(d) == day) {
-                        Time t = c.getTimeSlot();
-                        if (t.getStart().equals(startTime)) {
-                            html.append(c.getSubject() + " " + c.getNum() + "<br>");
-                            //html.append(c.getCRN() + "<br>");
-                            html.append(t.getStart() + " - " + t.getEnd() + "<br>");
-                            html.append(c.getLocation() + "<br>");
-                            html.append(c.getProf());
-                            int start = Time.timeNumber(t.getStart())/5;
-                            int end = Time.timeNumber(t.getEnd())/5;
-                            html.append("--" + (end-start));
-                            html.append("--" + colors[schedule.indexOf(c)]);
-                            return html.toString();
+            for (int i = 0; i < c.getTimes().size(); i++) {
+                Time t = c.getTimes().get(i);
+                String[] days = c.getDays().get(i);
+                if (t != null) {
+                    for (String d : days) {
+                        if (Schedule.DAYS.indexOf(d) == day) {
+                            if (t.getStart().equals(startTime)) {
+                                html.append(c.getSubject() + " " + c.getNum() + "<br>");
+                                //html.append(c.getCRN() + "<br>");
+                                html.append(t.getStart() + " - " + t.getEnd() + "<br>");
+                                html.append(c.getLocations().get(i) + "<br>");
+                                html.append(c.getProf());
+                                int start = Time.timeNumber(t.getStart())/5;
+                                int end = Time.timeNumber(t.getEnd())/5;
+                                html.append("--" + (end-start));
+                                html.append("--" + colors[schedule.indexOf(c)]);
+                                return html.toString();
+                            }
+                            break;
                         }
-                        break;
-                    }
-                }
-            }
-            if (c.getAdditionalDays() != null) {
-                days = c.getAdditionalDays();
-                for (String d : days) {
-                    if (Schedule.DAYS.indexOf(d) == day) {
-                        Time t = c.getAdditionalTime();
-                        if (c.getAdditionalTime().getStart().equals(startTime)) {
-                            html.append(c.getSubject() + " " + c.getNum() + "<br>");
-                            //html.append(c.getCRN() + "<br>");
-                            html.append(t.getStart() + " - " + t.getEnd() + "<br>");
-                            html.append(c.getAdditionalLocation() + "<br>");
-                            html.append(c.getProf());
-                            int start = Time.timeNumber(t.getStart())/5;
-                            int end = Time.timeNumber(t.getEnd())/5;
-                            html.append("--" + (end-start));
-                            html.append("--" + colors[schedule.indexOf(c)]);
-                            return html.toString();
-                        }
-                        break;
                     }
                 }
             }

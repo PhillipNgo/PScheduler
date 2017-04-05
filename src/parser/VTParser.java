@@ -8,6 +8,8 @@ import java.io.Writer;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.logging.Level;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.Scanner;
 
 import com.gargoylesoftware.htmlunit.html.HtmlForm;
@@ -29,6 +31,9 @@ public class VTParser {
     private HtmlFormGet vtForm;
     private String[] terms;
     private String[] subjects;
+    
+    //regex for extracting the next course from the web scraped data
+    private final Pattern PATTERN = Pattern.compile("\\d{5}[\\S\\s]*?(?=[ \\t\\r]*\\n[ \\t\\r]+\\d{5}|\\r\\nThis )");
     
     /**
      * Default constructor instantiates the web form without filling any values
@@ -230,171 +235,70 @@ public class VTParser {
      */
     private HashMap<String, LinkedList<VTCourse>> parseCourseListing() throws TimeException, Exception {
         HashMap<String, LinkedList<VTCourse>> map = new HashMap<>();
-        String text = getPrinterFriendly();
-        String[] values = text.split("\t");
-        int length = values.length;
-        int count = 1;
-        String name, subject, num, prof, location, crn, start, end, type, addStart, addEnd, addLoc;
-        name = subject = num = prof = location = crn = start = end = type = addStart = addEnd = addLoc = null;
-        boolean hasTime = true;
-        String[] days, addDays;
-        days = addDays = null;
-        int credits = 0;
-        int i = 0;
-        while (i < values.length && length != 1) {
-            while (count < 12 && i < length) {
-                while (i < length && ((values[i].trim().length() == 0) || (values[i].trim().charAt(0) == '*') ||
-                       (count == 1 && values[i].trim().length() < 5))) {
-                    while (values[i].trim().length() == 0) {
-                        i++;
-                    }
-                    if (values[i].trim().charAt(0) == '*') {
-                        if(Time.isTime(values[i + 2]) && Time.isTime(values[i + 3])) {
-                            addDays = values[i + 1].split(" ");
-                            addStart = values[i + 2];
-                            addEnd = values[i + 3];
-                            addLoc = values[i + 4];
-                            i += 1;
-                        }
-                        else {
-                            if (type.equals("L")) {
-                                type = "H";
-                            }
-                            else {
-                                //throw new Exception("A class with type " + type + " has an additional time that is arr");
-                            }
-                        }
-                        i += 4;
-                    }
-                    if (count == 1 && values[i].trim().length() < 5) {
-                        i++;
-                    }
-                    
-                }
-                
-                if ((!hasTime || location != null) && count == 1) {
-                    this.addClass(map, crn, subject, num, name, type, credits, prof, days, start, end, location, addStart,
-                                  addEnd, addLoc, addDays, hasTime);
-                    name = subject = num = prof = location = crn = start = end = type = addStart = addEnd = addLoc = null;
-                    days = addDays = null;
-                    hasTime = true;
-                }
-                
-                if (i >= length - 1) {
-                    return map;
-                }
-           
-                String currString = values[i].trim();
-                switch (count) {
-                    case 1: crn = currString.substring(currString.length()-5, currString.length());
-                            break;
-                    case 2: String[] split = currString.split("-");
-                            subject = split[0];
-                            num = split[1];
-                            //System.out.println(subject + " " + crn); //debugging
-                            break;                            
-                    case 3: name = currString;
-                            break;
-                    case 4: type = currString.substring(0, 1);
-                            try {
-                                if (!Time.isTime(values[i+5])) {
-                                    if (values[i+6].contains("EMPO")) {
-                                        type = "E";
-                                    }
-                                    hasTime = false;
-                                }
-                            }
-                            catch (ArrayIndexOutOfBoundsException e) {
-                                hasTime = false;
-                            }         
-                            break;
-                    case 5: credits = Integer.parseInt(currString.substring(0, 1));
-                            break;
-                    case 6: break;
-                    case 7: prof = currString;
-                            if (!hasTime) {
-                                count = 12;
-                                try {
-                                    Integer.parseInt(values[i].substring(currString.length()-5, currString.length()));
-                                    String[] profCRN = currString.split("\r\n");
-                                    prof = profCRN[0];
-                                    i--;
-                                }
-                                catch (Exception e) {
-                                    i += 3;
-                                }
-                            }
-                            break;
-                    case 8: days = currString.split(" ");
-                            break;
-                    case 9: start = currString;
-                            break;
-                    case 10: end = currString;
-                             break;
-                    case 11: location = currString;
-                             break;
-                }
-                count++;
-                i++;
+        Matcher matcher = PATTERN.matcher(getPrinterFriendly());
+        while (matcher.find()) {
+            VTCourse course = makeClass(matcher.group());
+            if (!map.containsKey(course.getNum())) {
+                map.put(course.getNum(), new LinkedList<VTCourse>());
             }
-            count = 1;
-            
-            /*// debugging 
-            if (crn.equals("80300")) {
-                System.out.print(""); 
-            }
-            */
+            map.get(course.getNum()).add(course);
         }
-        if (crn != null) {
-            this.addClass(map, crn, subject, num, name, type, credits, prof, days, start, end, location, addStart,
-                          addEnd, addLoc, addDays, hasTime);
-        }
+        
         return map;
     }
     
-    /**
-     * Helper method to add a class to the map
-     * @param map the map to be added to 
-     * @param crn the course request number
-     * @param subject the course subject
-     * @param num the course number
-     * @param name the name of the course
-     * @param type the type of course
-     * @param credits amount of credits the course is
-     * @param prof the professor
-     * @param days the days the class is on
-     * @param start the start time of the course
-     * @param end the end time of the course
-     * @param location the location of the course
-     * @param addStart additional start time 
-     * @param addEnd additional end time
-     * @param addLoc additional location
-     * @param addDays additional days
-     * @param hasTime boolean to tell whether or not there is a valid time
-     * @throws TimeException
-     * @throws Exception
-     */
-    private void addClass(HashMap<String, LinkedList<VTCourse>> map, String crn, String subject, String num,
-                          String name, String type, int credits, String prof, String[] days, String start, String end,
-                          String location, String addStart, String addEnd, String addLoc, String[] addDays, boolean hasTime) 
-                          throws TimeException, Exception {
-        if (!map.containsKey(num)) {
-            map.put(num, new LinkedList<VTCourse>());
-        }
-        if (hasTime) {
-            if (addDays != null) {
-                map.get(num).add(new VTCourse(name, subject, num, prof, location, crn, days, start,
-                        end, credits, type, addDays, addStart, addEnd, addLoc));
+    public static VTCourse makeClass(String listing) throws Exception {
+        String[] values = listing.split("(?<=\\S)\\s*[\\t\\n]\\s*(?=\\S)"); //split listings based on category
+        //System.out.println("Parsing: " + Arrays.toString(values)); //Debugging
+        String crn = values[0];
+        String[] subNum = values[1].split("-");
+        String subject = subNum[0];
+        String number = subNum[1];
+        String name = values[2];
+        String type = values[3].substring(0, 1);
+        int credits = Integer.parseInt(values[4].substring(0, 1));
+        String prof = values[6];
+        LinkedList<String[]> days = new LinkedList<>();
+        LinkedList<Time> times = new LinkedList<>();
+        LinkedList<String> locs = new LinkedList<>();
+        
+        int ind = 6;
+        if (values.length > 7) {
+            while (ind < values.length) {
+                ind++;
+                if (values[ind].contains("ARR")) {
+                    days.add(null);
+                } else {
+                    days.add(values[ind].split(" "));
+                }
+                ind++;
+                if (values[ind].contains("ARR")) {
+                    times.add(null);
+                } else {
+                    try {
+                        times.add(new Time(values[ind], values[ind+1]));
+                        ind++;
+                    } catch (TimeException te) {
+                        times.add(null);
+                        System.out.println("Parsing time failed: making null");
+                    }
+                }
+                ind++;
+                locs.add(values[ind]);
+                ind++;
+                if (ind <= 11) {
+                    ind++;
+                }
             }
-            else {
-                map.get(num).add(new VTCourse(name, subject, num, prof, location, crn, days, start,
-                                 end, credits, type));
-            }
-        }
-        else {
-            map.get(num).add(new VTCourse(name, subject, num, prof, crn, credits, type));
         }
         
+        if (days.size() == 0) {
+            days.add(null);
+            times.add(null);
+            locs.add("(ARR)");
+        }
+        
+        return new VTCourse(crn, subject, number, name, type, credits, prof, days, times, locs);
     }
     
     /**
@@ -407,25 +311,12 @@ public class VTParser {
         HtmlForm form;
         try {
             form = vtForm.pressButton("FIND class sections").getForms().get(1);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             return "";
         }
         HtmlSubmitInput button = form.getInputByValue("Printer Friendly List");
         HtmlPage printerFriendly = button.click();
-        String printerText = printerFriendly.asText();
-        
-        if (printerText.substring(0, 80).contains("Spring") ||
-                printerText.substring(0, 80).contains("Winter")) {
-            return printerText.substring(154, printerText.length() - 110);
-        }
-        else if (printerText.substring(0, 80).contains("Summer")) {
-            if (printerText.substring(0, 80).contains("II")) {
-                return printerText.substring(158, printerText.length() - 110);
-            }
-            return printerText.substring(157, printerText.length() - 110);
-        }
-        return printerText.substring(153, printerText.length() - 110);
+        return printerFriendly.asText();
     }
     
     /**
@@ -445,104 +336,53 @@ public class VTParser {
                 if (list != null) {
                     for (String key : list.keySet()) {
                         for (VTCourse course : list.get(key)) {
-                            writer.write(course.getName() + "\t" + course.getSubject() + "\t" + course.getNum()+ "\t" + course.getProf() +
-                                         "\t" + course.getCRN() + "\t" + course.getCredits() + "\t" + course.getClassType());
-                            if (course.getTimeSlot() != null) {
-                                writer.write("\t" + course.getLocation() + "\t" + arrString(course.getDays()) + "\t" + 
-                                             course.getTimeSlot().getStart() + "\t" + course.getTimeSlot().getEnd());
-                            }
-                            if (course.getAdditionalDays() != null) {
-                                writer.write("\t" + course.getAdditionalLocation() + "\t" + arrString(course.getAdditionalDays()) + "\t" + 
-                                        course.getAdditionalTime().getStart() + "\t" + course.getAdditionalTime().getEnd());
+                            writer.write(course.getCRN() + "\t" + course.getSubject() + "-" + course.getNum() + "\t" +
+                                         course.getName() + "\t" + course.getClassType() + "\t" + course.getCredits() + "\t" +
+                                         "cap" + "\t" + course.getProf());
+                            for (int i = 0; i < course.getTimes().size(); i++) {
+                                writer.write("\t");
+                                
+                                String[] days = course.getDays().get(i);
+                                if (days != null) {
+                                    for (int d = 0; d < days.length; d++) {
+                                        writer.write(days[d]);
+                                        if (d < days.length - 1) {
+                                            writer.write(" ");
+                                        }
+                                    }
+                                } else {
+                                    writer.write("(ARR)");
+                                }
+                                writer.write("\t");
+                                
+                                Time time = course.getTimes().get(i);
+                                if (time != null) {
+                                    writer.write(time.getStart() + "\t" + time.getEnd());
+                                } else {
+                                    writer.write("(ARR)");
+                                }
+                                writer.write("\t");
+                                
+                                String loc = course.getLocations().get(i);
+                                if (loc == null) {
+                                    writer.write("(ARR)");
+                                } else {
+                                    writer.write(loc);
+                                }
+                                
+                                if (i == 0) {
+                                    writer.write("\texam");
+                                }
+                                
+                                if (i < course.getTimes().size() - 1) {
+                                    writer.write("\tfill");
+                                }
                             }
                             writer.write("\r\n");
                         }
                     }
                 }
             }
-        }
-        
-        try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-                new FileOutputStream("WebContent/Database/" + termYear + "options.txt"), "utf-8"))) {
-            for (String subject : subjects) {
-                if (subject.equals("%")) {
-                    continue;
-                }
-                HashMap<String, LinkedList<VTCourse>> classes = map.get(subject);
-                if (classes == null) {
-                    continue;
-                }
-                for (String s : classes.keySet()) {
-                    LinkedList<String> types = new LinkedList<>();
-                    LinkedList<String> profs = new LinkedList<>();
-                    LinkedList<String> crns = new LinkedList<>();
-                    String name = null;
-                    for (VTCourse c : classes.get(s)) {
-                        crns.add(c.getCRN());
-                        if (types.indexOf(c.getClassType()) < 0) {
-                            types.add(c.getClassType());
-                        }
-                        if (profs.indexOf(c.getProf()) < 0) {
-                            profs.add(c.getProf());
-                        }
-                        if (name == null) {
-                            name = c.getName();
-                        }
-                        writer.write(c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " - " + c.getName() + " / " + longClassType(c.getClassType()) + " / " + c.getProf());
-                        Time t = c.getTimeSlot();
-                        if (t != null) {
-                            String[] days = c.getDays();
-                            writer.write(" / ");
-                            for (int i = 0; i < days.length; i++) {
-                                writer.write(days[i]);
-                            }
-                            writer.write(" " + t.getStart() + " - " + t.getEnd());
-                            t = c.getAdditionalTime();
-                            if (t != null) {
-                                days = c.getAdditionalDays();
-                                writer.write(" / ");
-                                for (int i = 0; i < days.length; i++) {
-                                    writer.write(days[i]);
-                                }
-                                writer.write(" " + t.getStart() + " - " + t.getEnd());
-                            }
-                        }
-                        writer.write("\r\n");
-                    }
-                    writer.write(subject + " " + s + " - " + name + " / " + longClassType(types.get(0)));
-                    for (int i = 1; i < types.size(); i++) {
-                        writer.write(", " + longClassType(types.get(i)));
-                    }
-                    writer.write(" / " + profs.get(0));
-                    for (int i = 1; i < profs.size(); i++) {
-                        writer.write(", " + profs.get(i));
-                    }
-                    writer.write(" / " + crns.get(0));
-                    for (int i = 1; i < crns.size(); i++) {
-                        writer.write(", " + crns.get(i));
-                    }
-                    writer.write("\r\n");
-                }
-            }
-        }
-    }
-    
-    /**
-     * Converts a class type letter into its long for
-     * @param type the class type
-     * @return the long form
-     */
-    private static String longClassType(String type) {
-        switch (type) {
-            case "L": return "Lecture";
-            case "B": return "Lab";
-            case "C": return "Recitation";
-            case "H": return "Hybrid";
-            case "E": return "Emporium";
-            case "O": return "Online";
-            case "I": return "Independent Study";
-            case "R": return "Research";
-            default:  return "bug";
         }
     }
     
@@ -563,19 +403,11 @@ public class VTParser {
         }
         Scanner scan = new Scanner(file);
         while (scan.hasNextLine()) {
-            String[] data = scan.nextLine().split("\t");
-            VTCourse course;
-            if (data.length == 7) {
-                course = new VTCourse(data[0], data[1], data[2], data[3], data[4], Integer.parseInt(data[5]), data[6]);
-            }
-            else if (data.length == 11) {
-                course = new VTCourse(data[0], data[1], data[2], data[3], data[7], data[4], data[8].split(" "),
-                                      data[9], data[10], Integer.parseInt(data[5]), data[6]);
-            }
-            else {
-                course = new VTCourse(data[0], data[1], data[2], data[3], data[7], data[4], data[8].split(" "), data[9], data[10], 
-                                      Integer.parseInt(data[5]), data[6], data[12].split(" "), data[13], data[14], data[11]);
-            }
+            // Printing for debugging 
+            /*String line = scan.nextLine();
+            System.out.println("Parsing: " + Arrays.toString(line.split("\t")));
+            VTCourse course = makeClass(line); */
+            VTCourse course = makeClass(scan.nextLine());
             
             HashMap<String, LinkedList<VTCourse>> subjList;
             String subj = course.getSubject();
@@ -603,24 +435,9 @@ public class VTParser {
         return map;
     }
     
-    /**
-     * Helper method for outputFile() that puts a day arr formatted with spaces between entries
-     * @param arr the array to separate
-     * @return the string containing the separated entries
-     */
-    private static String arrString(String[] arr) {
-        String s = "";
-        for (String str : arr) {
-            s += str;
-            if (!str.equals(arr[arr.length - 1])) {
-                s += " ";
-            }
-        }
-        return s;
-    }
-    
     public static void main(String[] args) throws Exception {
         //VTParser.outputTermDataFiles("201701");
         VTParser.outputTermDataFiles("201709");
+        //VTParser.parseTermFile("201709");
     }
 }
