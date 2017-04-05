@@ -32,17 +32,19 @@ public class ExcelDownload extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	    //set up response
 	    OutputStream out = response.getOutputStream();
 	    response.setContentType("application/xls");
         response.setHeader("Content-disposition", "attachment; filename=schedules.xls");
 
 	    try {
+	        //Creates the excel sheet and writes it to the response
 	        LinkedList<Schedule> schedules = getSchedules(request);
             ExcelSchedule excel = new ExcelSchedule(schedules);
             excel.getWorkbook().write(out);
         }
         catch (Exception e) {
-            try {
+            try { //if there was a problem, just output an empty excel schedule
                 LinkedList<Schedule> schedules = new LinkedList<Schedule>();
                 schedules.add(new Schedule());
                 ExcelSchedule excel = new ExcelSchedule(schedules);
@@ -54,7 +56,7 @@ public class ExcelDownload extends HttpServlet {
 	}
 	
 	/**
-	 * Creates the schedules
+	 * Creates the schedules using the same schedule restrictions that were searched
 	 * @param request the request holding schedule parameters
 	 * @return the list of valid schedules
 	 * @throws Exception

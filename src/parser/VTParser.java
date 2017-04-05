@@ -22,7 +22,7 @@ import time.Time;
 import time.TimeException;
 
 /**
- * VTParser parses the VT database by putting the data into data structures or outputting file data
+ * The VTParser is the I/O handler for reading data from the timetable or parsing data from our database
  * 
  * @author Phillip Ngo
  */
@@ -32,7 +32,7 @@ public class VTParser {
     private String[] terms;
     private String[] subjects;
     
-    //regex for extracting the next course from the web scraped data
+    //regex for extracting the next course from the database/timetable
     private final Pattern PATTERN = Pattern.compile("\\d{5}[\\S\\s]*?(?=[ \\t\\r]*\\n[ \\t\\r]+\\d{5}|\\r\\nThis )");
     
     /**
@@ -247,8 +247,15 @@ public class VTParser {
         return map;
     }
     
+    /**
+     * Creates a VTCourse from a string listing that has been extracted using the PATTERN variable
+     * 
+     * @param listing the string to be parsed
+     * @return
+     * @throws Exception
+     */
     public static VTCourse makeClass(String listing) throws Exception {
-        String[] values = listing.split("(?<=\\S)\\s*[\\t\\n]\\s*(?=\\S)"); //split listings based on category
+        String[] values = listing.split("(?<=\\S)\\s*[\\t\\n]\\s*(?=\\S)"); //split listings based on column
         //System.out.println("Parsing: " + Arrays.toString(values)); //Debugging
         String crn = values[0];
         String[] subNum = values[1].split("-");
@@ -324,7 +331,7 @@ public class VTParser {
      * @param termYear the term value
      * @throws Exception
      */
-    public static void outputTermDataFiles(String termYear) throws Exception {
+    public static void outputTermDataFile(String termYear) throws Exception {
         VTParser parser = new VTParser(termYear);
         HashMap<String, HashMap<String, LinkedList<VTCourse>>> map = parser.parseTerm();
         String[] subjects = parser.getSubjectValues();
@@ -435,9 +442,13 @@ public class VTParser {
         return map;
     }
     
+    /**
+     * Manually update the database
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         //VTParser.outputTermDataFiles("201701");
-        VTParser.outputTermDataFiles("201709");
-        //VTParser.parseTermFile("201709");
+        VTParser.outputTermDataFile("201709");
     }
 }

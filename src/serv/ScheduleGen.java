@@ -2,11 +2,7 @@ package serv;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-//import java.util.ArrayList;
-//import java.util.Collections;
 import java.util.HashMap;
-//import java.util.HashSet;
-//import java.util.Set;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -34,17 +30,20 @@ public class ScheduleGen extends HttpServlet {
     private static String[] colors = new String[]{"orange", "lightseagreen", "antiquewhite", "gold", "lightskyblue", 
                                                   "lightsalmon", "lightgreen", "lightblue", "lightyellow", 
                                                   "silver", "peachpuff", "pink"};
-    private ScheduleMaker generator;
-    private String start;
-    private String end;
-    private String free;
-    private LinkedList<String> subjects;
+    private ScheduleMaker generator; //used to create all the schedules
+    private String start; //the start time
+    private String end; //the end time
+    private String free; 
+    
+    //These represent the criteria searched for by the users, each index corresponds to a different criteria
+    private LinkedList<String> subjects; 
     private LinkedList<String> numbers;
     private LinkedList<String> types;
     private LinkedList<String> crns;
     private LinkedList<String> profs;
-    private StringBuilder html;
-    private StringBuilder fullConflicts;
+    
+    private StringBuilder html; //stores the html being generated
+    private StringBuilder fullConflicts; //stores criteria in html if there were no possible schedules
                                                
     /**
      * @see HttpServlet#HttpServlet()
@@ -64,25 +63,25 @@ public class ScheduleGen extends HttpServlet {
         LinkedList<Schedule> schedules;
         
         try {
-            schedules = getSchedules(request);
+            schedules = getSchedules(request); //create the schedules
         }
         catch (Exception e) {
-            schedules = null;
+            schedules = null; //something went wrong when generating schedules
         }
         fullConflicts = new StringBuilder();
-        String restrictions = "";
-        String stats = "";
-        String conflicts = "";
-        String courseSearch = "";
-        if (schedules != null) {
-            restrictions = this.getRestrictions();
-            stats = this.getScheduleStats();
-            conflicts = "This feature has been temporarily disabled.";
+        String restrictions = ""; //holds html for search restrictions
+        String stats = ""; //holds html for search statistics
+        String conflicts = ""; //holds html for search conflicts
+        String courseSearch = ""; //holds html for the courses found on the timetable
+        if (schedules != null) { //if there were no problems generating schedules
+            restrictions = this.getRestrictions(); //get the restrictions
+            stats = this.getScheduleStats(); //get the stats
+            conflicts = "This feature has been temporarily disabled."; //large schedule amounts slowed down the website
             try {
-                //conflicts = this.getConflicts();
+                //conflicts = this.getConflicts(); //get the conflicts
             }
             catch (Exception e) {}
-            courseSearch = this.getCourseSearch();
+            courseSearch = this.getCourseSearch(); //get the course search
         }
         
         
@@ -115,7 +114,7 @@ public class ScheduleGen extends HttpServlet {
         // -- HEAD END -- //
 
         
-        // -- HEADER START -- // header bar on top
+        // -- HEADER START -- // header banner
         html.append("<body style='background-color: #FFFAFA'>");
         html.append("<div id='header' style='background-color: DarkSlateGray; border-bottom: 1px solid darkorange;'>");
         html.append("<div class='container-fluid header'>");
@@ -129,6 +128,7 @@ public class ScheduleGen extends HttpServlet {
         // -- HEADER END -- //
         
         // -- BODY START -- // schedules and search data
+        //create info and buttons bar
         html.append("<div id='content' class='container-fluid'>");
         html.append("<div style='padding-top: 10px;' class='row'>");
         html.append("<div style='padding-left: 12.5px; padding-right: 12.5px;' class='col-sm-12'>");
@@ -171,6 +171,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("<div style='text-align:right' role='group' class='btn-group col-sm-5' aria-label='...'>");
         
+        //Set an invisible select for the modify form button
         html.append("<form action='modify' style='padding-right:12px'>");
         html.append("<button type='button' class='btn btn-default' onclick='printerFriendly()'>Print Page</button>");
         html.append("<a class='btn btn-default' id='download' href='download' onclick='dlHref()'>Download as Excel</a>");
@@ -191,13 +192,13 @@ public class ScheduleGen extends HttpServlet {
             }
         }
         html.append("<button type='button' class='btn btn-default' onclick='togglePanel()'>Search Data</button>");
-        
         html.append("</form>");
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
-        html.append("<div id='tablebody' style='padding-top:0px' class='panel-body'>");
         
+        //Append the schedules
+        html.append("<div id='tablebody' style='padding-top:0px' class='panel-body'>");
         try {
             if (schedules == null) {
                 html.append("Sorry, something went wrong when trying to generate your schedules.");
@@ -230,7 +231,7 @@ public class ScheduleGen extends HttpServlet {
         
         html.append("</div>");
         html.append("</div>");
-        //search data start
+        //search data starts here
         html.append("<div id='data-panel' class='collapse panel panel-default outline'>");
         html.append("<div style='background-color: white;' class='panel-heading center'>");
         html.append("<div class='row'>");
@@ -245,9 +246,9 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("</div>");
         
-        //
         html.append("<div class='panel-body panel-group'>");
         
+        //The restrictions 
         html.append("<div style='padding-bottom:10px;' class='row'>");
         html.append("<div class='col-sm-5'>");
         html.append("<div class='panel panel-default'>");
@@ -262,6 +263,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("</div>");
         
+        //The stats
         html.append("<div style='padding:0 0 0 0;' class='col-sm-2'>");
         html.append("<div class='panel panel-default'>");
         html.append("<div data-toggle='collapse' href='#collapseFour' class='panel-heading' role='button'>");
@@ -275,6 +277,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("</div>");
         
+        //The conflicts
         html.append("<div class='col-sm-5'>");
         html.append("<div class='panel panel-default'>");
         html.append("<div data-toggle='collapse' href='#collapseThree' class='panel-heading' role='button'>");
@@ -289,6 +292,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         html.append("</div>");
         
+        //The course search
         html.append("<div class='panel panel-default'>");
         html.append("<div data-toggle='collapse' href='#collapseTwo' class='panel-heading' role='button'>");
         html.append("<h3 class='panel-title'><b>Courses Found on Timetable</b></h3>");
@@ -301,18 +305,19 @@ public class ScheduleGen extends HttpServlet {
         html.append("</div>");
         
         html.append("</div>");
-        //
         html.append("</div>");
         //search data end
+        
         html.append("</div>");
         html.append("</div>");
         html.append("</div>");
         // -- BODY END -- //
         
-        // -- FOOTER START -- //
+
         html.append("</body>");
-        html.append("</html>");
+        // -- FOOTER START -- //
         // -- FOOTER END -- //
+        html.append("</html>");
         
         printer.print(html.toString());
         printer.flush();
@@ -459,125 +464,6 @@ public class ScheduleGen extends HttpServlet {
         return html.toString();
     }
     
-    /**
-     * Create html conflict data from the generator
-     * @throws Exception
-     
-    private String getConflicts() throws Exception {
-        StringBuilder html = new StringBuilder();
-        HashMap<String, LinkedList<VTCourse>> pass = generator.getPassed();
-        HashMap<String, LinkedList<VTCourse>> copy = new HashMap<>();
-        for (String key : pass.keySet()) {
-            copy.put(key, pass.get(key));
-        }
-        for (VTCourse c : generator.getCrns()) {
-            LinkedList<VTCourse> crn = new LinkedList<>();
-            crn.add(c);
-            copy.put(c.getClassType() + c.getSubject() + " " + c.getNum(), crn);
-        }
-        ArrayList<Double> conflicts = new ArrayList<>();
-        ArrayList<Set<String>> name = new ArrayList<>();
-        for (Set<String> set : powerSet(copy.keySet())) {
-            LinkedList<LinkedList<VTCourse>> list = new LinkedList<>();
-            int total = 1;
-            for (String key : set) {
-                total *= copy.get(key).size();
-                list.add(copy.get(key));        
-            }
-            
-            if (set.size() > 1 && total > 0) {
-                conflicts.add((1.0 - (double) getConflicts(list, new Schedule(), 0, 0)/total)*100);
-                name.add(set);
-            }
-        }
-        
-        for (int i = 0; i < name.size() - 1; i++) {
-            for (int j = i + 1; j < name.size(); j++) {
-                if (conflicts.get(i).equals(conflicts.get(j))) {
-                    if (name.get(i).containsAll(name.get(j))) {
-                        name.remove(i);
-                        conflicts.remove(i);
-                        i--;
-                        break;
-                    }
-                    else if (name.get(j).containsAll(name.get(i))) {
-                        name.remove(j);
-                        conflicts.remove(j);
-                        j--;
-                    }
-                }
-            }
-        }
-        
-        for (int i = 0; i < 5; i++) {
-            double max = Collections.max(conflicts);
-            int ind = conflicts.indexOf(max);
-            String s = "";
-            for (String key : name.get(ind)) {
-                s += key.substring(1) + " " + key.substring(0, 1) + ", ";
-            }
-            html.append("<b>[ " + s.substring(0, s.length()-2) + " ]</b> conflicts " + String.format("%.2f", max) + "% of the time<br>");
-            if (max == 100.0) {
-                fullConflicts.append("<b>[ " + s.substring(0, s.length()-2) + " ]</b> conflicts " + String.format("%.2f", max) + "% of the time<br>");
-            }
-            name.remove(ind);
-            conflicts.remove(ind);
-        }
-        return html.toString();
-    }*/
-    
-    /**
-     * Returns the total amount of classes that do not conflict together for a given list of classes
-     * @param classListings the classes to create permutations from
-     * @param schedule schedule to test conflicts
-     * @param classIndex the current class index in classListings
-     * @param total the total amount that pass
-     * @return total
-     * @throws Exception
-     
-    private int getConflicts(LinkedList<LinkedList<VTCourse>> classListings, Schedule schedule, int classIndex, int total) throws Exception { 
-        for (VTCourse course : classListings.get(classIndex)) {
-            try {
-                schedule.add(course);
-            }
-            catch (TimeException e) {
-                continue;
-            }
-
-            if (classIndex == classListings.size() - 1) {
-                total++;
-            }
-            else {
-                total += getConflicts(classListings, schedule, classIndex + 1, 0);
-            }
-            schedule.remove(course);
-        }
-        return total;
-    } */
-    
-    /**
-     * Creates the power set of a set
-     * @param originalSet the set to create the powerset from
-     * @return the power set
-     
-    private Set<Set<String>> powerSet(Set<String> originalSet) {
-        Set<Set<String>> sets = new HashSet<Set<String>>();
-        if (originalSet.isEmpty()) {
-            sets.add(new HashSet<String>());
-            return sets;
-        }
-        ArrayList<String> list = new ArrayList<String>(originalSet);
-        String head = list.get(0);
-        Set<String> rest = new HashSet<String>(list.subList(1, list.size())); 
-        for (Set<String> set : powerSet(rest)) {
-            Set<String> newSet = new HashSet<String>();
-            newSet.add(head);
-            newSet.addAll(set);
-            sets.add(newSet);
-            sets.add(set);
-        }
-        return sets;
-    }  */
     
     /**
      * Creates HTML schedule statistics like total credits and permutations 

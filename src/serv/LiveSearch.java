@@ -22,7 +22,8 @@ import time.Time;
 @WebServlet("/LiveSearch")
 public class LiveSearch extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private StringBuilder html;
+	private StringBuilder html; //holds the html response
+	private final int MAX_OPTIONS = 5; //max number of options to search for
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -33,28 +34,34 @@ public class LiveSearch extends HttpServlet {
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 * Searches options.txt for classes that match the search term and creates a list of 10 options to display
+	 * Searches the database for classes that match the search term and creates a list of MAX_OPTIONS options to display
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	    //Set up
 	    html = new StringBuilder();
 	    response.setContentType("text/html");
-	    String searchTerm = request.getParameter("search");
-	    String searchType = request.getParameter("type");
-	    String termYear = request.getParameter("term");
+	    //Get search information
+	    String searchTerm = request.getParameter("search"); //the search term
+	    String searchType = request.getParameter("type"); //the type of course to search
+	    String termYear = request.getParameter("term"); //the school term to search
 	    
+	    //create the hide search button
 	    html.append("<li id='hide' class='list-group-item'><button onclick='hide()' id='hideb' type='button' class='btn btn-default form-control'>Hide Search</button></li>");
-	    Scanner scan;
+	    Scanner scan; //scanner to read from database
 	    try {
             scan = new Scanner(new File("webapps/ROOT/Database/" + termYear + ".txt"));
         } catch (Exception e) {
             scan = new Scanner(new File("WebContent/Database/" + termYear + ".txt"));
         }
-	    int count = 0;
+	    
+	    int count = 0; //counts how many options that have been found
 	    String next = null;
 	    try {
             next = scan.nextLine();
         } catch (Exception e) {}
-	    while (count < 5 && next != null) {
+	    
+	    while (count < MAX_OPTIONS && next != null) {
+	        //searches database for the term
 	        if (next.toLowerCase().replaceAll("[\\s-]", "").contains(searchTerm)) {
 	            VTCourse c;
 	            try {
@@ -62,8 +69,8 @@ public class LiveSearch extends HttpServlet {
                 } catch (Exception e1) {
                     continue;
                 }
-	            
-	            if (searchType.equals("crn")) {
+	            //if a match was found create either a crn or course listing based on the search type
+	            if (searchType.equals("crn")) { //create crn listing
 	                html.append("<li class='list-group-item'><button onclick='addCRN($(this));hide();' name='" + c.getCRN() + 
 	                        "' class='btn btn-default btn-sm' type='button'>Add</button> ");
 	                html.append(c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " - " + c.getName() + " / " + classType(c.getClassType()));
@@ -84,7 +91,7 @@ public class LiveSearch extends HttpServlet {
                     } catch (NoSuchElementException nsee){next = null;}
                       catch (Exception e) {}
 	                html.append("</li>");
-	            } else {
+	            } else { //create search listing
 	                html.append("<li class='list-group-item'><button onclick='addClass($(this));hide();' name='" + c.getSubject() + 
 	                        c.getNum() + "' class='btn btn-default btn-sm' type='button'>Add</button> ");
 	                html.append(c.getSubject() + " " + c.getNum() + " - " + c.getName());

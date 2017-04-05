@@ -4,7 +4,7 @@ import time.Time;
 import time.TimeException;
 
 /**
- * Course represents a college course at Virginia Tech
+ * Course represents a class at Virginia Tech
  * 
  * @author Phillip Ngo
  */
@@ -22,13 +22,14 @@ public class VTCourse {
     //class type - Lecture (L), Lab (B), Recitation (C), Online (O), Independent Study(I), Empo (E), Research (R), Hyrbrid (H)
     private String type; 
     
+    // Indeces of times, days, and locs, correspond to a main or additional time
     private LinkedList<Time> times;
     private LinkedList<String[]> days;
     private LinkedList<String> locs;
     
   //Constructors ------------------------------------------------------------------------
     /**
-     * Constructor for a class with a day and time
+     * Constructor for a course
      * 
      * @param name name of class (Ex: Intro to Programming)
      * @param subject abbreviation of what college it is in (Ex: CS)
@@ -209,6 +210,11 @@ public class VTCourse {
         }
     }
     
+    /**
+     * A String representing course information
+     * @return the crn, subject and number
+     */
+    @Override
     public String toString() {
         return crn + " - " + subj + " " + num; 
     }

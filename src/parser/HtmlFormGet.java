@@ -23,7 +23,7 @@ public class HtmlFormGet {
     private HtmlForm form;
     
     /**
-     * Constructor that take the url page a form is on and the name of the form
+     * Constructor that take the url of a page that contains a form
      * 
      * @param url link to the html page
      * @param formName name of the html form

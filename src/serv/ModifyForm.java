@@ -25,6 +25,7 @@ public class ModifyForm extends HttpServlet {
 
 	/**
 	 * Redirects the submitted form data back to index.html to modify the schedule
+	 * The javascript will then handle that data from the url and re input the classes
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

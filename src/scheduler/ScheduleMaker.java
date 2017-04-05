@@ -8,21 +8,21 @@ import time.Time;
 import time.TimeException;
 
 /**
- * ScheduleMaker generates a list of schedules
- * can only be called in a static way
+ * ScheduleMaker generates a list of schedules based on given restrictions
  * 
  * @author Phillip Ngo
  */
 public class ScheduleMaker {
     
-    private LinkedList<Schedule> schedules;
-    private HashMap<String, LinkedList<VTCourse>> listings;
-    private HashMap<String, LinkedList<VTCourse>> pass;
-    private HashMap<String, LinkedList<VTCourse>> fail;
-    private LinkedList<VTCourse> crnCourses;
+    private LinkedList<Schedule> schedules; //the final list that holds the schedules
+    private HashMap<String, LinkedList<VTCourse>> listings; //holds the courses that were found on the time table
+    private HashMap<String, LinkedList<VTCourse>> pass; //holds the courses from the timtable that also passed the restrictions
+    private HashMap<String, LinkedList<VTCourse>> fail; //holds the courses from the timetable that did not pass the restrictions
+    private LinkedList<VTCourse> crnCourses; //holds the courses that were specifically requested by crn
+    public static final int MAX_SCHEDULES = 200; //sets a limit to how many schedules can be generated
     
     /**
-     * Constructor creates all schedule combinations and compiles data
+     * Constructor creates all schedule combinations and compiles data when created
      * @param term the term to parse
      * @param subjects subjects of the classes. index corresponds to numbers, types, and profs
      * @param numbers numbers of the classes. index corresponds to subjects, types, and profs
@@ -85,6 +85,7 @@ public class ScheduleMaker {
     
     /**
      * Generates all possible schedules with the given parameter
+     * Also stores data about the courses within the listings, pass, and fail field members as it generates
      * 
      * @param term the term value
      * @param subjects array of subjects where the indices correspond to the indices of numbers
@@ -205,7 +206,8 @@ public class ScheduleMaker {
             }
             
             if (classIndex == classListings.size() - 1) {
-                if (schedules.size() >= 201) {
+                // If there are too many schedules, exits the stack by throwing an exception
+                if (schedules.size() >= MAX_SCHEDULES) { 
                     throw new Exception("Too Many Schedules");
                 }
                 schedules.add(copy);
