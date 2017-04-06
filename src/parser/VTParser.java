@@ -264,11 +264,12 @@ public class VTParser {
         String name = values[2];
         String type = values[3].substring(0, 1);
         int credits = Integer.parseInt(values[4].substring(0, 1));
+        int capacity = Integer.parseInt(values[5]);
         String prof = values[6];
         LinkedList<String[]> days = new LinkedList<>();
         LinkedList<Time> times = new LinkedList<>();
         LinkedList<String> locs = new LinkedList<>();
-        
+        String exam = "00X"; //default value if there is no exam code
         int ind = 6;
         if (values.length > 7) {
             while (ind < values.length) {
@@ -294,6 +295,7 @@ public class VTParser {
                 locs.add(values[ind]);
                 ind++;
                 if (ind <= 11) {
+                    exam = values[ind];
                     ind++;
                 }
             }
@@ -305,7 +307,7 @@ public class VTParser {
             locs.add("(ARR)");
         }
         
-        return new VTCourse(crn, subject, number, name, type, credits, prof, days, times, locs);
+        return new VTCourse(crn, subject, number, name, type, credits, capacity, prof, days, times, locs, exam);
     }
     
     /**
@@ -345,7 +347,7 @@ public class VTParser {
                         for (VTCourse course : list.get(key)) {
                             writer.write(course.getCRN() + "\t" + course.getSubject() + "-" + course.getNum() + "\t" +
                                          course.getName() + "\t" + course.getClassType() + "\t" + course.getCredits() + "\t" +
-                                         "cap" + "\t" + course.getProf());
+                                         course.getCapacity() + "\t" + course.getProf());
                             for (int i = 0; i < course.getTimes().size(); i++) {
                                 writer.write("\t");
                                 
@@ -378,7 +380,7 @@ public class VTParser {
                                 }
                                 
                                 if (i == 0) {
-                                    writer.write("\texam");
+                                    writer.write("\t" + course.getExam());
                                 }
                                 
                                 if (i < course.getTimes().size() - 1) {
@@ -448,7 +450,7 @@ public class VTParser {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        //VTParser.outputTermDataFiles("201701");
+        VTParser.outputTermDataFile("201701");
         VTParser.outputTermDataFile("201709");
     }
 }

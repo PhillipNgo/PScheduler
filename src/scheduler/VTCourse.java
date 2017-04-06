@@ -18,6 +18,7 @@ public class VTCourse {
     private String prof; 
     private String crn; //course request number
     private int credits; 
+    private int capacity;
     
     //class type - Lecture (L), Lab (B), Recitation (C), Online (O), Independent Study(I), Empo (E), Research (R), Hyrbrid (H)
     private String type; 
@@ -27,35 +28,41 @@ public class VTCourse {
     private LinkedList<String[]> days;
     private LinkedList<String> locs;
     
+    //Holds the exam code
+    private String exam;
+    
   //Constructors ------------------------------------------------------------------------
     /**
      * Constructor for a course
-     * 
-     * @param name name of class (Ex: Intro to Programming)
-     * @param subject abbreviation of what college it is in (Ex: CS)
-     * @param num the number that is associated with the class (Ex: 1114 in 'CS 1114')
-     * @param prof name of the professor
-     * @param loc building and room number
-     * @param crn unique code for specific class
-     * @param days what days the class meets
-     * @param start what time the class starts 
-     * @param end what time the class ends
-     * @param credits how many credits the class is
-     * @param type (Ex: Lab, Recitation, Lecture)
-     * @throws TimeException when an invalid time is inputed
+     * @param crn The course request number
+     * @param subject the college the course is within (CS, PHYS, MKTG)
+     * @param number the course number (2114, 1114, 1000)
+     * @param name the name of the course
+     * @param type the types of course (L (Lecture), O (Online), ...)
+     * @param credits the amount of credits
+     * @param capacity the capacity of the course
+     * @param prof the professor
+     * @param days list of days with indices corresponding to the times and locs
+     * @param times list of times with indices corresponding to the days and locs
+     * @param locs the list of locations with indices corresponding to the days and times
+     * @param exam the exam time and location code
+     * @throws TimeException
      */
-    public VTCourse(String crn, String subject, String number, String name, String type, int credits, 
-                    String prof, LinkedList<String[]> days, LinkedList<Time> times, LinkedList<String> locs) throws TimeException {
+    public VTCourse(String crn, String subject, String number, String name, String type, int credits, int capacity, 
+                    String prof, LinkedList<String[]> days, LinkedList<Time> times, LinkedList<String> locs, String exam)
+                            throws TimeException {
         this.crn = crn;
         this.subj = subject;
         this.num = number;
         this.name = name;
         this.type = type;
         this.credits = credits;
+        this.capacity = capacity;
         this.prof = prof;
         this.days = days;
         this.times = times;
         this.locs = locs;
+        this.exam = exam;
     }
     
 //Getter Methods ------------------------------------------------------------------------
@@ -142,12 +149,30 @@ public class VTCourse {
     }
     
     /**
+     * The max amount of people in a class
+     * 
+     * @return capacity
+     */
+    public int getCapacity() {
+        return capacity;
+    }
+    
+    /**
      * The type of class it is
      * 
      * @return classType
      */
     public String getClassType() {
         return type;
+    }
+    
+    /**
+     * The exam code
+     * 
+     * @return exam
+     */
+    public String getExam() {
+        return exam;
     }
     
     //Methods --------------------------------------------------------------------------
