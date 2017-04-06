@@ -34,6 +34,7 @@ li.active a {
 	font-family: 'Raleway', sans-serif;
 	background-color: DarkSlateGray;
 	margin-bottom:5px;
+	padding:10px 0 0 0;
 }
 
 .outline {
@@ -95,6 +96,23 @@ table {
 
 .position {
 	position: fixed;
+}
+
+#search {
+	position: absolute;
+	text-align: left;
+	width: 100%;
+	white-space: nowrap;
+	overflow-x: hidden;
+	padding-right: 30px
+}
+
+.list-group-item {
+	overflow-x:auto;
+}
+
+.list-group-item::-webkit-scrollbar { 
+    display: none; 
 }
 
 @media print {

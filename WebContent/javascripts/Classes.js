@@ -48,12 +48,13 @@ function addClass(button) {
 	
 	html.push(//finish class type column and create professor column with "Any" option
 			"</select></td>",
-			"<td><select style='margin-left:auto;margin-right:auto' class='form-control center'>"
+			"<td><select style='margin-left:auto;margin-right:auto' class='form-control center'>",
+			"<option value='A'>Any</option>"
 	);
 	
 	//append professor options
-	for (var i = 0; i < types.length; i++) {
-		html.push("<option value='" + classType(types[i]) + "'>" + types[i] + "</option>");
+	for (var i = 0; i < profs.length; i++) {
+		html.push("<option value='" + profs[i].replace(/-/g, "_").replace(/ /g, "_") + "'>" + profs[i] + "</option>");
 	};
 	
 	//finish professors column and add remove button on the last column
