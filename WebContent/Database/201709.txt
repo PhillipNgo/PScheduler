@@ -818,7 +818,7 @@
 80969	ART-5994	Research and Thesis	R	1	0	TJ Tucker	(ARR)	(ARR)	TBA	00X
 80968	ART-5994	Research and Thesis	R	1	0	LB Van Hook	(ARR)	(ARR)	TBA	00X
 89253	ART-3574	TS:Posters,Printing&Promotions	L	3	12	MA Dee	T R	10:20AM	12:15PM	HEND 203	10T
-80915	ART-3574	TS:Intro Web Design	L	3	15	P Finley	T R	9:30AM	12:15PM	HEND 208	09T
+80915	ART-3574	TS:Intro Web Design	L	3	0	P Finley	T R	9:30AM	12:15PM	HEND 208	09T
 80914	ART-3574	TS:Motion Graphics & Typog	L	3	15	SW Paterson	M W	12:20PM	2:15PM	LIBR 120	12M
 80913	ART-3574	TS: Environ. Graphic Design	L	3	15	K Meaney	T R	3:30PM	6:15PM	HEND 208	15T
 80952	ART-5564G	Exhibition Design & Display	L	3	3	DA Sim	T R	11:00AM	12:15PM	ARMRY 200	11T
@@ -1639,7 +1639,7 @@
 81821	CEE-5994	Research and Thesis	R	1	99	RA Green	(ARR)	(ARR)	TBA	00X
 81820	CEE-5994	Research and Thesis	R	1	99	I Koutromanos	(ARR)	(ARR)	TBA	00X
 81819	CEE-5994	Research and Thesis	R	1	99	H Zhang	(ARR)	(ARR)	TBA	00X
-81818	CEE-5994	Research and Thesis	R	1	12	JE Taylor	(ARR)	(ARR)	TBA	00X
+81818	CEE-5994	Research and Thesis	R	1	12	BJ Katz	(ARR)	(ARR)	TBA	00X
 81817	CEE-5994	Research and Thesis	R	1	0	PM Murray-Tuite	(ARR)	(ARR)	TBA	00X
 81816	CEE-5994	Research and Thesis	R	1	50	CG Olgun	(ARR)	(ARR)	TBA	00X
 81815	CEE-5994	Research and Thesis	R	1	50	A Rodriguez-Marek	(ARR)	(ARR)	TBA	00X
@@ -1829,7 +1829,7 @@
 81622	CEE-3304	Fluid Mech for CEE	B	0	30	RP Scardina	R	4:00PM	5:50PM	PAT 12	16R
 81621	CEE-3304	Fluid Mech for CEE	B	0	30	RP Scardina	T	4:00PM	5:50PM	PAT 12	16T
 81620	CEE-3304	Fluid Mech for CEE	B	0	30	RP Scardina	M	4:30PM	6:20PM	PAT 12	16M
-88739	CEE-3424	Reinf Concr Struct I	L	3	60	VA Mouras	M W F	11:15AM	12:05PM	NCB 210	11M
+88739	CEE-3424	Reinf Concr Struct I	L	3	60	CL Roberts-Wollmann	M W F	11:15AM	12:05PM	NCB 210	11M
 81633	CEE-3424	Reinf Concr Struct I	L	3	40	CL Roberts-Wollmann	M W F	9:05AM	9:55AM	PAT 207	09M
 81617	CEE-3104	Intro Environ Engr	L	3	60	AM Dietrich	T R	2:00PM	3:15PM	RAND 331	14T
 81616	CEE-3104	Intro Environ Engr	L	3	40	Staff	M W F	1:25PM	2:15PM	PAT 215	13M
@@ -3269,7 +3269,7 @@
 83470	EDHE-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 83467	EDHE-5304	Intro to Student Affairs Prof	L	3	20	Staff	R	4:00PM	6:50PM	NHW B18	16R
 83474	EDHE-7714	Internship in Education	L	1	25	Staff	(ARR)	(ARR)	TBA	00X
-89161	EDHE-6404	H Ed Research Proposal Design	L	3	24	Staff	T	1:00PM	3:50PM	TBA	13T
+89161	EDHE-6404	H Ed Research Proposal Design	L	3	24	CK Robbins	T	1:00PM	3:50PM	TBA	13T
 83478	EDIT-5164	Design for Learning	O	3	30	KR Potter	(ARR)	(ARR)	TBA	00X
 83481	EDIT-5274	Foundations Inst Design Tech	O	3	30	KR Potter	(ARR)	(ARR)	TBA	00X
 83480	EDIT-5274	Foundations Inst Design Tech	L	3	20	BB Lockee	R	1:00PM	3:50PM	GYM 400	13R
@@ -3754,6 +3754,43 @@
 88662	ENGL-6734	Creative Nonfiction Workshop	L	3	15	JM Vollmer	T R	2:00PM	3:15PM	SHANK 352	14T
 83907	ENGL-4714	Advanced Poetry	L	3	16	LH Roy	M W	4:00PM	5:15PM	AA 104	16M
 83895	ENGL-3824	Designing Documents for Print	L	3	22	JL Mooney	T R	12:30PM	1:45PM	SHANK 360	12T
+83969	ENGR-4064	Scieneering Capstone	L	3	0	JC Sible	(ARR)	(ARR)	TBA	00X
+83962	ENGR-2004S	Engineering Service Learning	I	0	0	Staff	(ARR)	(ARR)	TBA	00X
+83961	ENGR-2004R	Engr UG Exploratory Activity	I	0	0	Staff	(ARR)	(ARR)	TBA	00X
+89222	ENGR-5004	Syst Engr Process	O	3	10	Staff	T	7:00PM	9:45PM	TBA	19T
+89221	ENGR-5004	Syst Engr Process	L	3	0	Staff	T	7:00PM	9:45PM	TORG 1000	19T
+83979	ENGR-5994	Research and Thesis	R	1	9999	Staff	(ARR)	(ARR)	TBA	00X
+83959	ENGR-2004A	Engr International Activity	I	0	0	Staff	(ARR)	(ARR)	TBA	00X
+83957	ENGR-1054	First Year Galileo Seminar	L	2	0	S Arnold-Christian	T	7:00PM	7:50PM	MCB 100	14R	fill	R	2:00PM	3:15PM	HAN 209
+83956	ENGR-1054	First Year Galileo Seminar	L	2	0	S Arnold-Christian	T	7:00PM	7:50PM	MCB 100	09R	fill	R	9:30AM	10:45AM	HAN 209
+83955	ENGR-1054	First Year Galileo Seminar	L	2	0	S Arnold-Christian	T	7:00PM	7:50PM	MCB 100	15R	fill	R	3:30PM	4:45PM	HAN 209
+83954	ENGR-1054	First Year Galileo Seminar	L	2	0	S Arnold-Christian	T	7:00PM	7:50PM	MCB 100	09T	fill	T	9:30AM	10:45AM	HAN 209
+83953	ENGR-1054	First Year Galileo Seminar	L	2	0	S Arnold-Christian	T	7:00PM	7:50PM	MCB 100	15T	fill	T	3:30PM	4:45PM	TBA
+83952	ENGR-1054	First Year Galileo Seminar	L	2	0	S Arnold-Christian	T	7:00PM	7:50PM	MCB 100	13W	fill	W	1:25PM	2:40PM	HAN 209
+83951	ENGR-1054	First Year Galileo Seminar	L	2	0	S Arnold-Christian	T	7:00PM	7:50PM	MCB 100	09W	fill	W	9:05AM	10:20AM	HAN 209
+83950	ENGR-1054	First Year Galileo Seminar	L	2	0	S Arnold-Christian	T	7:00PM	7:50PM	MCB 100	15W	fill	W	3:00PM	4:15PM	HAN 209
+83949	ENGR-1054	First Year Galileo Seminar	L	2	0	S Arnold-Christian	T	7:00PM	7:50PM	MCB 100	12T	fill	T	12:30PM	1:45PM	HAN 209
+83963	ENGR-2044	Second Year Hypatia Seminar	L	1	60	S Arnold-Christian	T	7:00PM	7:50PM	GOODW 145	19T
+83965	ENGR-2164	Introduction to Scieneering	L	1	80	BA Watford	F	1:25PM	2:15PM	MCB 113	13F
+83964	ENGR-2064	Galileo Seminar for Sophomores	L	1	80	S Arnold-Christian	T	7:00PM	7:50PM	GOODW 115	19T
+83960	ENGR-2004E	Engr Experiential Learning	I	0	0	Staff	(ARR)	(ARR)	TBA	00X
+89075	ENGR-2984	SS: Intro to Computer Systems	L	3	20	JM Ernst	M W F	9:05AM	9:55AM	SEITZ 207	09M
+83943	ENGR-1014	Engineering Research Seminar	L	1	330	BA Watford	F	2:30PM	3:20PM	HAN 100	14F
+83966	ENGR-2994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
+83948	ENGR-1034	First Year Hypatia Seminar	L	2	0	S Arnold-Christian	T	7:00PM	7:50PM	MCB 100	15M	fill	M	3:35PM	4:50PM	HAN 209
+83947	ENGR-1034	First Year Hypatia Seminar	L	2	0	S Arnold-Christian	T	7:00PM	7:50PM	MCB 100	13M	fill	M	1:25PM	2:40PM	HAN 209
+83946	ENGR-1034	First Year Hypatia Seminar	L	2	0	S Arnold-Christian	T	7:00PM	7:50PM	MCB 100	12R	fill	R	12:30PM	1:45PM	HAN 209
+83945	ENGR-1034	First Year Hypatia Seminar	L	2	0	S Arnold-Christian	T	7:00PM	7:50PM	MCB 100	09M	fill	M	9:05AM	10:20AM	HAN 209
+83944	ENGR-1034	First Year Hypatia Seminar	L	2	0	S Arnold-Christian	T	7:00PM	7:50PM	MCB 100	15T	fill	T	3:30PM	4:45PM	HAN 209
+83968	ENGR-3124	Green Engineering	L	3	94	S McGinnis	M W	2:30PM	3:45PM	NCB 220	14M
+83967	ENGR-3124	Green Engineering	L	3	94	DT Scott	T R	8:00AM	9:15AM	NCB 220	08T
+83972	ENGR-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
+88824	ENGR-5204	Systems Engineering Projects	O	3	10	KP Triantis	M	4:00PM	6:45PM	TBA	16M
+88821	ENGR-5204	Systems Engineering Projects	L	3	20	KP Triantis	M	4:00PM	6:45PM	TORG 1030	16M
+83971	ENGR-4974	Independent Study	I	1	0	S McGinnis	(ARR)	(ARR)	TBA	00X
+83970	ENGR-4974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
+83958	ENGR-1814	Energy, Resrce & Envr	L	3	70	AK Louk	T R	12:30PM	1:45PM	GOODW 155	12T
+83973	ENGR-4994H	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 83991	ENSC-3604	Fund Environ Science	L	3	130	MK Steele	T R	8:00AM	9:15AM	SURGE 118C	08T
 83981	ENSC-2964	Field Study	R	1	0	EH Ervin	(ARR)	(ARR)	TBA	00X
 83982	ENSC-2974	Independent Study	I	1	0	EH Ervin	(ARR)	(ARR)	TBA	00X
@@ -5492,7 +5529,7 @@
 85615	ME-4006	Mechanical Engineering Lab	L	3	0	AA Kornhauser	M W	4:00PM	5:15PM	GOODW 190	14M	fill	M	2:00PM	3:50PM	GOODW 130
 85614	ME-4006	Mechanical Engineering Lab	L	3	20	AA Kornhauser	R	3:00PM	4:50PM	GOODW 130	16M	fill	M W	4:00PM	5:15PM	NCB 360
 85613	ME-4006	Mechanical Engineering Lab	L	3	20	AA Kornhauser	F	11:00AM	12:50PM	GOODW 130	16M	fill	M W	4:00PM	5:15PM	NCB 160
-85661	ME-4644	Rapid Prototyping	L	3	40	CB Williams	T R	9:30AM	10:45AM	GOODW 145	09T
+85661	ME-4644	Rapid Prototyping	L	3	30	CB Williams	T R	9:30AM	10:45AM	GOODW 145	09T
 85663	ME-4724	Engineering Acoustics	L	3	36	RA Burdisso	T R	3:30PM	4:45PM	RAND 206	15T
 85737	ME-5814	Energy Harvesting	L	3	20	L Zuo	T R	2:00PM	3:15PM	HUTCH 310	14T
 85713	ME-4994H	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -7700,7 +7737,40 @@
 88097	UH-3004	TS:Nutrition, Brain & Behavior	L	3	15	DM Denbow	T R	3:30PM	4:45PM	MAJWM 532	15T
 88094	UH-3004	TS:Exercises in Design Thnkng	L	3	15	SF Martin	T R	11:00AM	12:15PM	CO 400	11T
 88109	UH-4004	Honors Tutorial	L	3	0	PV Heilker	(ARR)	(ARR)	TBA	00X
-89465	UH-1054	Honors First-Year Seminar	L	2	0	Staff	(ARR)	(ARR)	(ARR)	00X
+89498	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	5:30PM	6:45PM	MCB 207	17W
+89497	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	5:30PM	6:45PM	MCB 207	17M
+89496	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	5:30PM	6:45PM	MAJWM 532	17W
+89495	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	5:30PM	6:45PM	MAJWM 532	17M
+89494	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	5:30PM	6:45PM	HOLD 303	17W
+89493	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	5:30PM	6:45PM	HOLD 303	17M
+89492	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	5:30PM	6:45PM	ENGEL 219	17W
+89491	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	5:30PM	6:45PM	ENGEL 219	17M
+89490	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	8:00AM	9:15AM	MCB 212	08T
+89489	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	4:00PM	5:15PM	MAJWM 532	16W
+89488	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	4:00PM	5:15PM	GOODW 244	16W
+89487	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	4:00PM	5:15PM	GYM 126	16M
+89486	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	4:00PM	5:15PM	AA 114	16M
+89485	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	4:00PM	5:15PM	MCB 212	16M
+89484	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	5:00PM	6:15PM	MAJWM 532	17R
+89483	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	5:00PM	6:15PM	MAJWM 532	17T
+89482	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	5:00PM	6:15PM	MCB 210	17R
+89481	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	5:00PM	6:15PM	MCB 210	17T
+89480	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	5:00PM	6:15PM	MCB 212	17R
+89479	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	5:00PM	6:15PM	MCB 212	17T
+89478	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	5:00PM	6:15PM	HOLD 303	17R
+89477	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	5:00PM	6:15PM	HOLD 303	17T
+89476	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	8:00AM	9:15AM	MCB 666	08R
+89475	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	8:00AM	9:15AM	MCB 666	08T
+89474	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	8:00AM	9:15AM	HOLD 303	08R
+89473	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	8:00AM	9:15AM	HOLD 303	08T
+89472	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	2:00PM	3:15PM	AJ E 2315	14T
+89471	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	2:00PM	3:15PM	AJ E 2315	14M
+89470	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	11:00AM	12:15PM	AJ E 2315	11R
+89469	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	11:00AM	12:15PM	AJ E 2315	11W
+89468	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	11:00AM	12:15PM	AJ E 2315	11T
+89467	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	11:00AM	12:15PM	AJ E 2315	11M
+89466	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	9:30AM	10:45AM	AJ E 2315	09R
+89465	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	9:30AM	10:45AM	AJ E 2315	09W
 89464	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	9:30AM	10:45AM	AJ E 2315	09T
 89463	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	9:30AM	10:45AM	AJ E 2315	09M
 88111	UH-4104	TS:First-yr Stu Teach Practicm	L	2	0	AZ Smith	(ARR)	(ARR)	TBA	00X

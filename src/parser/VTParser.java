@@ -450,7 +450,7 @@ public class VTParser {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        VTParser.outputTermDataFile("201701");
+        //VTParser.outputTermDataFile("201701");
         VTParser.outputTermDataFile("201709");
     }
 }
