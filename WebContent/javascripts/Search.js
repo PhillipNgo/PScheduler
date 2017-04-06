@@ -79,7 +79,6 @@ function setParameters() {
 	$('[name="free"]').selectpicker('refresh');
 	var classList = params[0].split('=')[1].split('%7E');
 	
-	
 	if (classList[0].length != 0) { //check if there are any classes
 		for (i = 0; i < classList.length; i++) { //for every class
 			var str = classList[i];
@@ -108,7 +107,8 @@ function setParameters() {
 					});
 				}
 				else {
-					var search = (split[0].substring(1, split[0].length-4-index) + " " + split[0].substring(split[0].length-4-index)).toLowerCase();
+					var search = (split[0].substring(1, split[0].length-4-index) + " " + 
+								split[0].substring(split[0].length-4-index)).toLowerCase().replaceAll("[\\s-]", "");
 					$.ajax({
 						 async: false,
 					     type: 'GET',
