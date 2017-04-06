@@ -185,6 +185,7 @@ public class ScheduleGen extends HttpServlet {
         html.append("<select style='display: none;' name='h2'><option value='" + request.getParameter("h2") + "'></option></select>");
         html.append("<select style='display: none;' name='m2'><option value='" + request.getParameter("m2") + "'></option></select>");
         html.append("<select style='display: none;' name='end'><option value='" + request.getParameter("end") + "'></option></select>");
+        html.append("<select style='display: none;' name='gap'><option value='" + request.getParameter("gap") + "'></option></select>");
         String[] freeDays = request.getParameterValues("free");
         if (freeDays != null) {
             for (String d : freeDays) {
@@ -361,6 +362,7 @@ public class ScheduleGen extends HttpServlet {
         
         String term = request.getParameter("term");
         String[] classes = request.getParameter("schedule").split("~");
+        int minGap = Integer.parseInt(request.getParameter("gap"));
         subjects = new LinkedList<>();
         numbers = new LinkedList<>();
         types = new LinkedList<>();
@@ -384,7 +386,7 @@ public class ScheduleGen extends HttpServlet {
             }
         }
 
-        generator = new ScheduleMaker(term, subjects, numbers, types, start, end, freeDays, crns, profs);
+        generator = new ScheduleMaker(term, subjects, numbers, types, start, end, freeDays, minGap, crns, profs);
         return generator.getSchedules();
     }
     

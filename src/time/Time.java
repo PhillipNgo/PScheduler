@@ -31,6 +31,28 @@ public class Time {
         this.start = start;
         this.end = end;
     }
+    
+    /**
+     * Creates a Time object with a beginning and end time
+     *
+     * @param start the minute time the slot starts
+     * @param end   the minute time the slot ends
+     */
+    public Time(int start, int end) throws TimeException {
+        if (start > end) {
+            throw new TimeException(start + " starts after " + end);
+        }
+        
+        if (start < 0 || start > 1440) {
+            throw new TimeException(start + " is an invalid minute number");
+        }
+        
+        if (end < 0 || end > 1440) {
+            throw new TimeException(end + " is na invalid minute number");
+        }
+        this.start = timeString(start);
+        this.end = timeString(end);
+    }
 
     // Methods
 

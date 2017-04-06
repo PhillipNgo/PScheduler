@@ -22,7 +22,8 @@ public class ScheduleMaker {
     public static final int MAX_SCHEDULES = 200; //sets a limit to how many schedules can be generated
     
     /**
-     * Constructor creates all schedule combinations and compiles data when created
+     * Constructor creates all schedule combinations and compiles data when created.
+     * The arguments represent the list of restrictions used to generate them
      * @param term the term to parse
      * @param subjects subjects of the classes. index corresponds to numbers, types, and profs
      * @param numbers numbers of the classes. index corresponds to subjects, types, and profs
@@ -35,12 +36,12 @@ public class ScheduleMaker {
      * @throws Exception
      */
     public ScheduleMaker(String term, LinkedList<String> subjects, LinkedList<String> numbers, LinkedList<String> types,   
-            String start, String end, String[] freeDays, LinkedList<String> crns, LinkedList<String> profs) throws Exception {
+            String start, String end, String[] freeDays, int minGap, LinkedList<String> crns, LinkedList<String> profs) throws Exception {
         listings = new HashMap<>();
         pass = new HashMap<>();
         fail = new HashMap<>();
         crnCourses = new LinkedList<>();
-        schedules = generateSchedule(term, subjects, numbers, types, start, end, freeDays, crns, profs);
+        schedules = generateSchedule(term, subjects, numbers, types, start, end, minGap, freeDays, crns, profs);
     }
     
     /**
@@ -100,7 +101,7 @@ public class ScheduleMaker {
      * @throws Exception
      */
     private LinkedList<Schedule> generateSchedule(String term, LinkedList<String> subjects, LinkedList<String> numbers, LinkedList<String> types,   
-                                                        String start, String end, String[] freeDays, LinkedList<String> crns, LinkedList<String> profs) throws Exception {
+                                                        String start, String end, int minGap, String[] freeDays, LinkedList<String> crns, LinkedList<String> profs) throws Exception {
         LinkedList<Schedule> schedules = new LinkedList<>();
         LinkedList<LinkedList<VTCourse>> classes = new LinkedList<>();
         HashMap<String, HashMap<String, LinkedList<VTCourse>>> map = null; 
@@ -176,7 +177,7 @@ public class ScheduleMaker {
             }
         }
         try {
-            createSchedules(classes, new Schedule(), 0, schedules);
+            createSchedules(classes, new Schedule(minGap), 0, schedules);
         } catch (Exception e) {}
         return schedules;
     }

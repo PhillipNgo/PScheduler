@@ -66,7 +66,7 @@ function setParameters() {
 	params = params.split('&'); //split the restrictions
 	var i;
 	
-	for (i = 1; i < 8; i++) { //choose the time and day restrictions
+	for (i = 1; i < 9; i++) { //choose the time and day restrictions
 		var val = params[i].split('=');
 		$('[name="' + val[0] + '"]').val(val[1]); 
 		$('[name="' + val[0] + '"]').selectpicker('refresh');

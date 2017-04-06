@@ -12,6 +12,7 @@ public class Schedule extends LinkedList<VTCourse> {
     
     //Fields
     private int totalCredits;
+    private int minGap;
     
     /**
      * DAYS contains the names of days from monday to friday
@@ -20,18 +21,35 @@ public class Schedule extends LinkedList<VTCourse> {
     
     //Constructors
     /**
-     * Default constructor, creates the LinkedList and sets credits to 0
+     * Default constructor, creates the LinkedList and sets credits, minGap to 0
      */
     public Schedule() {
         super();
         totalCredits = 0;
+        minGap = 0;
     }
     
-    public Schedule(LinkedList<VTCourse> courses) throws Exception {
+    /**
+     * Creates an empty schedule with minimum gap times between courses
+     * @param minGap
+     */
+    public Schedule(int minGap) {
+        this();
+        this.minGap = minGap;
+    }
+    
+    /**
+     * Creates a schedule with a minimum gap time between classes and tries to add the courses
+     * @param courses
+     * @param minGap
+     * @throws Exception
+     */
+    public Schedule(LinkedList<VTCourse> courses, int minGap) throws Exception {
         this();
         for (VTCourse curr : courses) {
             this.add(curr);
         }
+        this.minGap = minGap;
     }
     
     //Methods
@@ -47,7 +65,7 @@ public class Schedule extends LinkedList<VTCourse> {
             throw new IllegalArgumentException("Course is null when adding to schedule");
         }
         for (VTCourse curr : this) {
-            if (curr.conflicts(c)) {
+            if (curr.conflicts(c, minGap)) {
                 throw new TimeException("Class conflicts with current schedule");
             }
         }
@@ -63,8 +81,19 @@ public class Schedule extends LinkedList<VTCourse> {
      */
     @Override
     public VTCourse remove(VTCourse c) {
-        totalCredits -= c.getCredits();
-        return super.remove(c);
+        VTCourse rm = super.remove(c);
+        if (rm != null) {
+            totalCredits -= rm.getCredits();
+        }
+        return rm;
+    }
+    
+    /**
+     * The minimum gap time (in minutes) between courses
+     * @return minGap
+     */
+    public int getMinGap() {
+        return minGap;
     }
     
     /**

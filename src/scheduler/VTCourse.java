@@ -182,8 +182,21 @@ public class VTCourse {
      * 
      * @param c the class to be compared
      * @return true if there is a time conflict
+     * @throws TimeException 
      */
-    public boolean conflicts(VTCourse other) {
+    public boolean conflicts(VTCourse other) throws TimeException {
+        return conflicts(other, 0);
+    }
+    
+    /**
+     * Checks if a Class has a time and day conflict with another Class
+     * 
+     * @param c the class to be compared
+     * @param minGap the minimum break time between the classes
+     * @return true if there is a time conflict
+     * @throws TimeException 
+     */
+    public boolean conflicts(VTCourse other, int minGap) throws TimeException {
         if (other == null) {
             return false;
         }
@@ -199,8 +212,11 @@ public class VTCourse {
                 if (thisTime != null && otherTime != null) { //if either of the times are null, they can't conflict
                     for (String td : thisDays) {
                         for (String od : otherDays) {
-                            if (td.equals(od) && thisTime.conflicts(otherTime)) {
-                                return true;
+                            if (td.equals(od)) {
+                                Time gapTime = new Time(thisTime.getStartNum() - minGap + 1, thisTime.getEndNum() + minGap - 1);
+                                if (gapTime.conflicts(otherTime)) {
+                                    return true;
+                                }
                             }
                         }
                     }
