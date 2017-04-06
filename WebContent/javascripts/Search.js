@@ -56,7 +56,7 @@ function hide() {
 }
 
 /**
- * Reads URL for search parameters if there are any and sets the schedule and search restrictions
+ * Reads URL for search parameters if there are any, it sets the schedule and search restrictions
  */
 function setParameters() {
 	var params = window.location.search.substr(1);

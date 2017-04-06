@@ -18,44 +18,51 @@ function addClass(button) {
 	var profs = text[2].split(", "); //professors located in text[2]
 	var name = text[0].split(" - "); //course name located in text[0]
 	
-	//create the new schedule table item 
-	var html =  "<tr><td>" + 
-	"<select style='margin-left:auto;margin-right:auto' class='form-control center' onchange='crnCheck($(this))'>";
-	html += "<option value='A'>Any</option>";
 	
-	//add crns to the first select
+	var html = [];
+	html.push( //create table row and crn "Any" option
+			"<tr><td>",
+			"<select style='margin-left:auto;margin-right:auto' class='form-control center' onchange='crnCheck($(this))'>",
+			"<option value='A'>Any</option>"
+	);
+	
+	//append the rest of the crns
 	for (var i = 0; i < crns.length; i++) {
-		html += "<option value='" + crns[i] + "'>" + crns[i] + "</option>";
+		html.push("<option value='" + crns[i] + "'>" + crns[i] + "</option>");
 	}
-	html += 	"</select>" +
-	"</td>" +
 	
-	//add the course name
-	"<td style='vertical-align:middle' value='" + (name[0].substring(4, name[0].length)).replace(' ', '') +
-	"'>" + name[0].substring(4, name[0].length) + "</td>" +
-	"<td style='vertical-align:middle'>" + name[1] + "</td>" +
-	"<td>" +
 	
-	//add the class types
-	"<select style='margin-left:auto;margin-right:auto' class='form-control center'>";
+	html.push( //add the course name and create class type column
+			"</select></td>",
+			"<td style='vertical-align:middle' value='" + (name[0].substring(4, name[0].length)).replace(' ', '') + "'>",
+			name[0].substring(4, name[0].length),
+			"</td>",
+			"<td style='vertical-align:middle'>" + name[1] + "</td>",
+			"<td><select style='margin-left:auto;margin-right:auto' class='form-control center'>"
+	);
+	
+	//append the class types
 	for (var i = 0; i < types.length; i++) {
-		html += "<option value='" + classType(types[i]) + "'>" + types[i] + "</option>";
+		html.push("<option value='" + classType(types[i]) + "'>" + types[i] + "</option>");
 	};
-	html += 	"</select>" +
-	"</td>" + 
-	"<td>" + 
 	
-	//add the professors
-	"<select style='margin-left:auto;margin-right:auto' class='form-control center'>";
-	html += "<option value='A'>Any</option>";
-	for (var i = 0; i < profs.length; i++) {
-		html += "<option value='" + profs[i].replace(/-/g, "_").replace(/ /g, "_") + "'>" + profs[i] + "</option>";
+	html.push(//finish class type column and create professor column with "Any" option
+			"</select></td>",
+			"<td><select style='margin-left:auto;margin-right:auto' class='form-control center'>"
+	);
+	
+	//append professor options
+	for (var i = 0; i < types.length; i++) {
+		html.push("<option value='" + classType(types[i]) + "'>" + types[i] + "</option>");
 	};
-	html += 	"</select>" +
-	"</td>" +
-	"<td><button class='btn btn-default' type='button' onClick='removeClass(this)'>Remove</button></td></tr>";
 	
-	$("#schedule > tbody:last-child").append(html); //add the table row to the schedule table
+	//finish professors column and add remove button on the last column
+	html.push(
+			"</select></td>",
+			"<td><button class='btn btn-default' type='button' onClick='removeClass(this)'>Remove</button></td></tr>"
+	);
+	
+	$("#schedule > tbody:last-child").append(html.join("")); //add the table row to the schedule table
 }
 
 /**
@@ -188,7 +195,7 @@ function sendData() {
 }
 
 /**
- * Gets the corressponding letter to a class type
+ * Gets the corresponding letter to a class type
  * @param type the class type
  * @returns the corresponding letter, or "bug" if one doesn't exist
  */
