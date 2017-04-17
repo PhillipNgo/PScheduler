@@ -73,28 +73,28 @@
 80129	ACIS-2116	Principles of Accounting	L	3	31	Staff	M W F	1:25PM	2:15PM	PAM 32	CTE
 80127	ACIS-2116	Principles of Accounting	L	3	31	Staff	M W F	1:25PM	2:15PM	GBJ 102	CTE
 88262	ACIS-1004	Accounting Foundations	O	3	300	Staff	(ARR)	(ARR)	TBA	00X
-89428	ACIS-2115	Principles of Accounting	L	3	43	Staff	M W F	8:00AM	8:50AM	PAM 2003	CTE
-80125	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	11:15AM	12:05PM	NCB 270
-80124	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	11:15AM	12:05PM	DER 3083
-80123	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	11:15AM	12:05PM	GBJ 104
-80122	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	10:10AM	11:00AM	DER 3081
-80121	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	1:25PM	2:15PM	GBJ 104
-80120	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	10:10AM	11:00AM	DER 3083
-80119	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	9:05AM	9:55AM	PAM 2003
-80118	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	12:20PM	1:10PM	DER 3081
-80117	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	9:05AM	9:55AM	PAM 32
-80116	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	11:15AM	12:05PM	GBJ 102
-80115	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	10:10AM	11:00AM	NCB 270
-80113	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	1:25PM	2:15PM	GBJ 100
-80112	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	1:25PM	2:15PM	DER 3083
-80110	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	9:05AM	9:55AM	GBJ 102
-80107	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	12:20PM	1:10PM	DER 3083
-80106	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	11:15AM	12:05PM	PAM 2003
-80105	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	12:20PM	1:10PM	GOODW 155
-80104	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	1:25PM	2:15PM	TORG 1060
-80102	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	1:25PM	2:15PM	WMS 120
-80101	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	12:20PM	1:10PM	NCB 270
-80100	ACIS-2115	Principles of Accounting	L	3	43	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	12:20PM	1:10PM	ROB 105
+89428	ACIS-2115	Principles of Accounting	L	3	30	Staff	M W F	8:00AM	8:50AM	PAM 2003	CTE
+80125	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	11:15AM	12:05PM	NCB 270
+80124	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	11:15AM	12:05PM	DER 3083
+80123	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	11:15AM	12:05PM	GBJ 104
+80122	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	10:10AM	11:00AM	DER 3081
+80121	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	1:25PM	2:15PM	GBJ 104
+80120	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	10:10AM	11:00AM	DER 3083
+80119	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	9:05AM	9:55AM	PAM 2003
+80118	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	12:20PM	1:10PM	DER 3081
+80117	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	9:05AM	9:55AM	PAM 32
+80116	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	11:15AM	12:05PM	GBJ 102
+80115	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	10:10AM	11:00AM	NCB 270
+80113	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	1:25PM	2:15PM	GBJ 100
+80112	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	1:25PM	2:15PM	DER 3083
+80110	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	9:05AM	9:55AM	GBJ 102
+80107	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	12:20PM	1:10PM	DER 3083
+80106	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	11:15AM	12:05PM	PAM 2003
+80105	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	12:20PM	1:10PM	GOODW 155
+80104	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	1:25PM	2:15PM	TORG 1060
+80102	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	1:25PM	2:15PM	WMS 120
+80101	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	12:20PM	1:10PM	NCB 270
+80100	ACIS-2115	Principles of Accounting	L	3	30	Staff	(ARR)	(ARR)	TBA	CTE	fill	M W F	12:20PM	1:10PM	ROB 105
 80147	ACIS-3564	Management Information Systems	L	3	5	Staff	T R	9:30AM	10:45AM	PAM 1003	09T
 80149	ACIS-4114	Advanced Financial Accounting	L	3	35	Staff	M W F	11:15AM	12:05PM	PAM 31	11M
 80148	ACIS-4114	Advanced Financial Accounting	L	3	35	Staff	M W F	10:10AM	11:00AM	PAM 31	10M
@@ -141,7 +141,7 @@
 80209	AFST-4994H	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 80221	AHRM-2404	Consumer Rights	O	3	125	PJ Fisher	(ARR)	(ARR)	TBA	00X
 80212	AHRM-1104	Introduction to AHRM	L	3	0	LR Gaskill	T R	2:00PM	3:15PM	WAL 100	14T
-80234	AHRM-3464	Appalachian Communities	L	3	40	AM Puckett	T R	12:30PM	1:45PM	LITRV 1760	12T
+80234	AHRM-3464	Appalachian Communities	L	3	45	AM Puckett	T R	12:30PM	1:45PM	LITRV 1760	12T
 80269	AINS-1104	Intro American Indian Studies	L	3	40	NM Copeland	T R	12:30PM	1:45PM	MCB 134	12T
 80268	AINS-1104	Intro American Indian Studies	L	3	40	Staff	M W	2:30PM	3:45PM	MCB 134	14M
 80267	AINS-1104	Intro American Indian Studies	L	3	40	SR Cook	M W F	12:20PM	1:10PM	MCB 134	12M
@@ -153,7 +153,7 @@
 88788	AINS-2804	Contemporary Native Amer Lits	L	3	40	SR Cook	M W F	10:10AM	11:00AM	MCB 240	10M
 80289	ALCE-5044	Program & Curr Design in ALCE	L	3	15	MK Spindler	W	9:05AM	11:50AM	LITRV 244	09W
 80282	ALCE-4034	Meth of Planning Ed Prog in Ag	O	3	35	DM Westfall-Rudd	(ARR)	(ARR)	TBA	00X
-80280	ALCE-4014	Intro to Cooperative Education	L	3	30	KA Vines	M W	2:30PM	3:45PM	WAL 244	14M
+80280	ALCE-4014	Intro to Cooperative Education	L	3	30	KA Vines	M W	2:30PM	3:45PM	FST 27	14M
 80275	ALCE-3014	Leadership Effective for Ag	L	3	30	RJ Rateau	T R	8:00AM	9:15AM	LITRV 200	08T
 80294	ALCE-5754	Internship in Ag&Extension Ed	L	1	0	Staff	(ARR)	(ARR)	TBA	00X
 80302	ALCE-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -192,11 +192,11 @@
 80305	ALCE-6415	Intro to Grad Teach Scholar	L	2	10	DM Westfall-Rudd	T	10:00AM	11:00AM	LITRV 250	10T
 80340	ALS-5064	Sem Mol Cell Biotech	L	1	50	CV Finkielstein	F	12:20PM	1:10PM	LITRV 1760	12F
 80324	ALS-2504	Animals in Society	L	3	45	L Bergamasco	M W F	8:00AM	8:50AM	LITRV 1800	08M
-80323	ALS-2304	Animal Physiology and Anatomy	L	4	20	DM Denbow	R	1:00PM	2:50PM	LITRV 280	11T	fill	T R	11:00AM	12:15PM	LITRV 1870
-80322	ALS-2304	Animal Physiology and Anatomy	L	4	20	DM Denbow	W	4:30PM	6:20PM	LITRV 280	11T	fill	T R	11:00AM	12:15PM	LITRV 1870
-80321	ALS-2304	Animal Physiology and Anatomy	L	4	20	DM Denbow	T	2:00PM	3:50PM	LITRV 280	11T	fill	T R	11:00AM	12:15PM	LITRV 1870
-80320	ALS-2304	Animal Physiology and Anatomy	L	4	20	DM Denbow	R	3:30PM	5:20PM	LITRV 280	11T	fill	T R	11:00AM	12:15PM	LITRV 1870
-80319	ALS-2304	Animal Physiology and Anatomy	L	4	20	DM Denbow	W	2:30PM	4:20PM	LITRV 280	11T	fill	T R	11:00AM	12:15PM	LITRV 1870
+80323	ALS-2304	Animal Physiology and Anatomy	L	4	18	DM Denbow	R	1:00PM	2:50PM	LITRV 280	11T	fill	T R	11:00AM	12:15PM	LITRV 1870
+80322	ALS-2304	Animal Physiology and Anatomy	L	4	18	DM Denbow	W	4:30PM	6:20PM	LITRV 280	11T	fill	T R	11:00AM	12:15PM	LITRV 1870
+80321	ALS-2304	Animal Physiology and Anatomy	L	4	18	DM Denbow	T	2:00PM	3:50PM	LITRV 280	11T	fill	T R	11:00AM	12:15PM	LITRV 1870
+80320	ALS-2304	Animal Physiology and Anatomy	L	4	18	DM Denbow	R	3:30PM	5:20PM	LITRV 280	11T	fill	T R	11:00AM	12:15PM	LITRV 1870
+80319	ALS-2304	Animal Physiology and Anatomy	L	4	18	DM Denbow	W	2:30PM	4:20PM	LITRV 280	11T	fill	T R	11:00AM	12:15PM	LITRV 1870
 80325	ALS-2964	Field Study	L	1	0	SS Sumner	(ARR)	(ARR)	TBA	00X
 80318	ALS-2204	Intro Civic Agriculture	L	3	25	KL Niewolny	F	11:15AM	2:00PM	SAUND 408	11F
 80333	ALS-3314	Physiology of Reproduction Lab	B	1	25	M Rhoads	T	2:00PM	4:50PM	LITRV 290	14T
@@ -222,8 +222,8 @@
 80345	ALS-5904	Project and Report	R	1	10	JE Jones	(ARR)	(ARR)	TBA	00X
 89263	ALS-3404	Ecological Agriculture	L	3	20	ME O'Rourke	M W F	10:10AM	11:00AM	PAM 2002	10M
 80326	ALS-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-80329	ALS-3304	Physiology of Reproduction	L	2	200	M Rhoads	T R	11:00AM	11:50AM	WHIT 300	11T
-80328	ALS-3204	Animal Nutrition and Feeding	L	3	55	TB Wilson	T R	8:00AM	9:15AM	LITRV 1760	08T
+80329	ALS-3304	Physiology of Reproduction	L	2	197	M Rhoads	T R	11:00AM	11:50AM	WHIT 300	11T
+80328	ALS-3204	Animal Nutrition and Feeding	L	3	50	TB Wilson	T R	8:00AM	9:15AM	LITRV 1760	08T
 80327	ALS-3104	Animal Breeding and Genetics	L	3	95	EA Dunnington	F	9:05AM	9:55AM	LITRV 1870	08M	fill	M W F	8:00AM	8:50AM	LITRV 1870
 80339	ALS-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 80344	ALS-5324	Research Ethics Ag & Life Sci	L	1	40	HH Scherer	M	5:30PM	6:20PM	NCB 130B	17M
@@ -287,7 +287,7 @@
 80440	AOE-5315	Naval Ship Design	O	3	10	AJ Brown	(ARR)	(ARR)	TBA	00X
 80439	AOE-5315	Naval Ship Design	L	3	20	AJ Brown	T R	3:30PM	4:45PM	NCB 110	15T
 80454	AOE-5914	Autonomous Systems Seminar	L	1	40	AJ Kurdila	F	2:30PM	3:45PM	RAND 208	14F
-89388	AOE-5074	Adv Ship Structural Analysis	O	3	10	Staff	(ARR)	(ARR)	TBA	00X
+89388	AOE-5074	Adv Ship Structural Analysis	O	3	10	CM Ikeda	(ARR)	(ARR)	TBA	00X
 89386	AOE-5074	Adv Ship Structural Analysis	L	3	80	CM Ikeda	M W F	9:05AM	9:55AM	NCB 110	09M
 80435	AOE-5174	Introduction to Space Plasmas	L	3	25	C Adams	T R	3:30PM	4:45PM	NCB 130B	15T
 80372	AOE-4065	Aircraft Design	L	3	95	P Raj	T R	3:30PM	4:45PM	NCB 360	15T
@@ -411,7 +411,7 @@
 89394	AOE-5104	Adv Aero Hydrody	O	3	20	M Kuester	(ARR)	(ARR)	TBA	00X
 80429	AOE-5104	Adv Aero Hydrody	L	3	60	M Kuester	M	5:30PM	6:30PM	RAND 331	09T	fill	T R	9:30AM	10:45AM	NCB 270
 80395	AOE-4434	Intro Comp Fluid Dynamics	L	3	20	SS Choi	M W F	9:05AM	9:55AM	RAND 221	09M
-80437	AOE-5204	Vehicle Dynamics and Control	O	3	20	C Sultan	(ARR)	(ARR)	TBA	00X
+89544	AOE-5204	Vehicle Dynamics and Control	L	3	45	ML Psiaki	(ARR)	(ARR)	TBA	00X
 80400	AOE-4974	Independent Study	I	1	0	B Srinivasan	(ARR)	(ARR)	TBA	00X
 80399	AOE-4974	Independent Study	I	1	0	A Borgoltz	(ARR)	(ARR)	TBA	00X
 80398	AOE-4974	Independent Study	I	1	0	WJ Devenport	(ARR)	(ARR)	TBA	00X
@@ -421,7 +421,7 @@
 80455	AOE-5944	Seminar	L	1	100	RK Kapania	M	4:00PM	5:15PM	SURGE 117A	16M
 80553	APS-4974H	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 80549	APS-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-80550	APS-3464	Appalachian Communities	L	3	40	AM Puckett	T R	12:30PM	1:45PM	LITRV 1760	12T
+80550	APS-3464	Appalachian Communities	L	3	45	AM Puckett	T R	12:30PM	1:45PM	LITRV 1760	12T
 80554	APS-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 80557	APS-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 80556	APS-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -456,7 +456,7 @@
 80596	APSC-4004	Issues in Animal Science	L	2	15	SW El-Kadi	R	9:00AM	10:50AM	LITRV 280	16M	fill	M	4:00PM	4:50PM	LITRV 1860
 80595	APSC-4004	Issues in Animal Science	L	2	15	JW Knight	W	12:20PM	2:20PM	LITRV 200	16M	fill	M	4:00PM	4:50PM	LITRV 1860
 80594	APSC-4004	Issues in Animal Science	L	2	15	AD Ealy	R	1:00PM	2:50PM	SEITZ 207	16M	fill	M	4:00PM	4:50PM	LITRV 1860
-89311	APSC-4984	SS: Animal Embryology	L	3	20	K Lee	W	12:20PM	2:10PM	WAL 407	08T	fill	T R	8:00AM	9:15AM	WAL 234
+89311	APSC-4984	SS: Animal Embryology	L	3	17	K Lee	W	12:20PM	2:10PM	WAL 407	08T	fill	T R	8:00AM	9:15AM	WAL 234
 89304	APSC-4984	SS: Equine Health & Disease	L	2	20	CM Leeth	M W	9:00AM	10:00AM	WAL 234	09M
 80614	APSC-5974	Independent Study	I	1	9999	Staff	(ARR)	(ARR)	TBA	00X
 80590	APSC-3754	Livestock Evaluation	L	2	15	TB Wilson	M W	4:00PM	6:00PM	WAL 234	16M
@@ -560,7 +560,7 @@
 80618	ARBC-1105	Elementary Arabic	L	3	22	A Azzam	M W F	2:30PM	3:20PM	MAJWM 532	14M
 80617	ARBC-1105	Elementary Arabic	L	3	15	R Nassereddine	M W F	10:10AM	11:00AM	MAJWM 327	10M
 80622	ARBC-2106	Intermediate Arabic	L	3	22	NA Sinno	T R	2:00PM	3:15PM	MCB 204	14T
-80621	ARBC-2105	Intermediate Arabic	L	3	24	R Nassereddine	M W F	2:30PM	3:20PM	MAJWM 327	14M
+80621	ARBC-2105	Intermediate Arabic	L	3	25	R Nassereddine	M W F	2:30PM	3:20PM	MAJWM 327	14M
 80623	ARBC-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 80625	ARBC-3304	Modern Arabic Lit in Tans	L	3	30	NA Sinno	T R	5:00PM	6:15PM	MCB 233	17T
 80624	ARBC-3105	Advanced Arabic	L	3	25	A Azzam	M W F	12:20PM	1:10PM	PAM 3008	12M
@@ -573,10 +573,12 @@
 80685	ARCH-4076	Building Structures	L	3	90	M Cortes	M W F	9:05AM	9:55AM	SURGE 117A	09M
 80683	ARCH-4055	Envir Bldg Systems	L	3	150	MG Ermann	T R	12:30PM	1:45PM	HAN 100	12T
 80783	ARCH-5045	Environmental Design Research	L	3	20	KA Black	T R	12:30PM	1:45PM	BUR 120A	12T
+89545	ARCH-4034	Building Cities	L	3	0	SR Thompson	(ARR)	(ARR)	TBA	00X
 80684	ARCH-4056	Envir Bldg Systems	L	3	0	MG Ermann	T R	12:30PM	1:45PM	HAN 100	12T
 80794	ARCH-5125	Hand Building With Clay	B	3	6	ML Sullivan	T R	11:00AM	12:15PM	BURCH 000	11T
 80810	ARCH-5565	Bldg Materials & Construction	L	3	32	J Bassett	T R	9:30AM	10:45AM	HAN 100	09T
 80809	ARCH-5565	Bldg Materials & Construction	L	3	40	VH Pittman	T R	3:30PM	4:45PM	CO 400	15T
+89546	ARCH-3046	Building Assemblies	L	2	0	SR Thompson	(ARR)	(ARR)	TBA	00X
 80657	ARCH-3045	Building Assemblies	L	2	150	J Bassett	T R	9:30AM	10:45AM	HAN 100	09T
 80781	ARCH-5044G	Professional Practice	L	3	6	KW Jones	T	9:00AM	12:00PM	BURCH 001	09T
 80780	ARCH-5044G	Professional Practice	L	3	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -602,6 +604,7 @@
 80629	ARCH-1015	Foundation Design Laboratory	B	6	0	SF Martin	M W F	8:00AM	11:50AM	CO 000	08M
 80628	ARCH-1015	Foundation Design Laboratory	B	6	0	CB Pritchett	M W F	8:00AM	11:50AM	CO 000	08M
 89070	ARCH-3116	History of Architecture	L	3	150	J Bedford	T R	11:00AM	12:15PM	HAN 100	11T
+89547	ARCH-3015	Architecture III	B	6	0	SR Thompson	(ARR)	(ARR)	TBA	00X
 80656	ARCH-3015	Architecture III	B	6	0	JH Wheeler	T R	3:30PM	4:50PM	CO 000	13M	fill	M W F	1:00PM	4:50PM	CO 000
 80655	ARCH-3015	Architecture III	B	6	0	PA Doan	T R	3:30PM	4:50PM	CO 000	13M	fill	M W F	1:00PM	4:50PM	CO 000
 80654	ARCH-3015	Architecture III	L	0	110	H Schnoedt	T R	2:00PM	3:15PM	HAN 100	14T
@@ -793,10 +796,10 @@
 80705	ARCH-4515	Architecture V	B	9	0	WU Galloway	T R	3:30PM	4:50PM	CO 000	13M	fill	M W F	1:00PM	4:50PM	CO 000
 80741	ARCH-4715	Qualifying Design Laboratory	B	9	30	HC Rott	M T W R F	1:00PM	5:00PM	CO 000	13B
 80813	ARCH-5705	Arch & Urban Seminar	L	3	50	HS Gartner	R	7:00PM	9:00PM	CO 300	19R
+89500	ART-5384	TS: Oceanic Art	L	3	0	Staff	T R	12:30PM	1:45PM	HEND 353	12T
 89258	ART-5384	TS:Censorship & Control in Art	L	3	5	MY Moseley Christian	T	3:30PM	6:15PM	HEND 353	15T
 89256	ART-5384	TS: Picasso	L	3	5	LB Van Hook	T R	2:00PM	3:15PM	HEND 353	14T
 89090	ART-5384	TS: Hist of Perf and New Media	L	3	5	K Concannon	M	3:20PM	6:05PM	HEND 353	15M
-80953	ART-5584	Oceanic Arts	L	3	5	MD Casto	T R	12:30PM	1:45PM	HEND 353	12T
 80936	ART-4575	Advanced Vis Com Design	L	3	16	MA Dee	M W	12:20PM	3:05PM	TBA	12M
 80939	ART-4894	Senior Studio	L	3	20	SW Paterson	M W	9:20AM	12:05PM	BRNCH A	09M
 89345	ART-3484	Baroque Art and Arch	L	3	30	MY Moseley Christian	T R	12:30PM	1:45PM	HEND 204	12T
@@ -818,7 +821,7 @@
 80969	ART-5994	Research and Thesis	R	1	0	TJ Tucker	(ARR)	(ARR)	TBA	00X
 80968	ART-5994	Research and Thesis	R	1	0	LB Van Hook	(ARR)	(ARR)	TBA	00X
 89253	ART-3574	TS:Posters,Printing&Promotions	L	3	12	MA Dee	T R	10:20AM	12:15PM	HEND 203	10T
-80915	ART-3574	TS:Intro Web Design	L	3	0	P Finley	T R	9:30AM	12:15PM	HEND 208	09T
+80915	ART-3574	TS:Intro Web Design	L	3	12	P Finley	T R	9:30AM	12:15PM	HEND 208	09T
 80914	ART-3574	TS:Motion Graphics & Typog	L	3	15	SW Paterson	M W	12:20PM	2:15PM	LIBR 120	12M
 80913	ART-3574	TS: Environ. Graphic Design	L	3	15	K Meaney	T R	3:30PM	6:15PM	HEND 208	15T
 80952	ART-5564G	Exhibition Design & Display	L	3	3	DA Sim	T R	11:00AM	12:15PM	ARMRY 200	11T
@@ -855,6 +858,7 @@
 80888	ART-1404	Drawing I	L	3	18	JL Hand	M W	12:20PM	3:05PM	ARMRY 103	12M
 80887	ART-1404	Drawing I	L	3	18	DH Bannan	M W	9:20AM	12:05PM	ARMRY 103	09M
 80886	ART-1404	Drawing I	L	3	18	T Head	T R	12:30PM	3:15PM	ARMRY 103	12T
+89508	ART-3704	TS:Intro to Creative Code	O	3	40	D Webster	(ARR)	(ARR)	TBA	00X
 89437	ART-3704	TS: Visual Heritage	L	0	0	Staff	T R	10:10AM	12:15PM	LIBR 120	10T
 80920	ART-3704	TS:Character Modeling	L	3	10	Staff	M W	4:40PM	6:35PM	LIBR 120	16M
 80919	ART-3704	TS: Gaming Topics	L	3	18	Staff	M W	2:30PM	4:25PM	LIBR 120	14M
@@ -1054,11 +1058,11 @@
 81260	BIOL-4964	Field Study	R	1	0	JA Evans	(ARR)	(ARR)	TBA	00X
 81275	BIOL-5734	Advanced Inflammation Biology	L	4	20	L Li	M	4:15PM	5:15PM	LFSCI 101	09T	fill	T R	9:30AM	10:45AM	DER 3081
 89262	BIOL-6704	TS: Euk Pathogen Host Interact	L	3	10	CB Lawrence	R	1:00PM	3:30PM	LFSCI 101	13R
-81254	BIOL-4724	Pathogenic Bacteriology Lab	B	2	20	KK Lasley	T R	8:00AM	9:50AM	HAHN N 216	08T
-81253	BIOL-4724	Pathogenic Bacteriology Lab	B	2	20	KK Lasley	T R	10:00AM	11:50AM	HAHN N 216	10T
-81252	BIOL-4724	Pathogenic Bacteriology Lab	B	2	20	KK Lasley	T R	2:00PM	3:50PM	HAHN N 216	14T
-81251	BIOL-4724	Pathogenic Bacteriology Lab	B	2	20	KK Lasley	T R	12:00PM	1:50PM	HAHN N 216	12T
-81223	BIOL-2704	Evolutionary Biology	L	3	126	MC Mims	M W F	10:10AM	11:00AM	SURGE 104C	10M
+81254	BIOL-4724	Pathogenic Bacteriology Lab	B	2	21	KK Lasley	T R	8:00AM	9:50AM	HAHN N 216	08T
+81253	BIOL-4724	Pathogenic Bacteriology Lab	B	2	21	KK Lasley	T R	10:00AM	11:50AM	HAHN N 216	10T
+81252	BIOL-4724	Pathogenic Bacteriology Lab	B	2	21	KK Lasley	T R	2:00PM	3:50PM	HAHN N 216	14T
+81251	BIOL-4724	Pathogenic Bacteriology Lab	B	2	21	KK Lasley	T R	12:00PM	1:50PM	HAHN N 216	12T
+81223	BIOL-2704	Evolutionary Biology	L	3	118	MC Mims	M W F	10:10AM	11:00AM	SURGE 104C	10M
 81265	BIOL-4994H	Undergraduate Research	R	1	0	RA Walker	(ARR)	(ARR)	TBA	00X
 88961	BIOL-5034	Ecosystem Dynamics	L	4	30	JE Barrett	T	3:30PM	5:30PM	DER 3094	14T	fill	T R	2:00PM	3:15PM	DER 3083
 81274	BIOL-5674	Adv Pathogenic Bacteriology	L	4	10	SB Melville	R	5:00PM	5:50PM	LFSCI 201	16M	fill	M W	4:00PM	5:15PM	LITRV 1870
@@ -1076,7 +1080,6 @@
 81242	BIOL-3404	Introductory Animal Physiology	L	3	94	IT Moore	M W F	11:15AM	12:05PM	TORG 3100	11M
 89146	BIOL-1984	SS: Biology of Sex	L	3	60	IT Moore	M W F	1:25PM	2:15PM	NCB 270	13M
 81231	BIOL-2994	Undergraduate Research	R	1	0	RA Walker	(ARR)	(ARR)	TBA	00X
-89142	BIOL-5984	SS: Microbial Ecology	L	3	15	M Strickland	T R	9:30AM	10:45AM	DER 3004	09T
 81261	BIOL-4974	Independent Study	I	1	0	RA Walker	(ARR)	(ARR)	TBA	00X
 81258	BIOL-4854	Cytogenetics	L	3	20	D Cimini	M W	2:30PM	3:45PM	DER 1076	14M
 81272	BIOL-5624	Advanced Microbial Genetics	L	4	10	Z Yang	F	9:05AM	9:55AM	LFSCI 201	08T	fill	T R	8:00AM	9:15AM	MCB 113
@@ -1156,34 +1159,34 @@
 81136	BIOL-1115	Principles of Biol Lab	B	1	24	W Lee	M	10:10AM	12:05PM	DER 1009	10M
 81135	BIOL-1115	Principles of Biol Lab	B	1	24	W Lee	M	8:00AM	9:55AM	DER 1009	08M
 81206	BIOL-2204	Plants and Civilization	L	3	80	KW Hilu	T R	12:30PM	1:45PM	GOODW 115	12T
-81204	BIOL-2004	Genetics	L	3	150	S Hauf	M W	2:30PM	3:45PM	TORG 3100	14M
+81204	BIOL-2004	Genetics	L	3	140	S Hauf	M W	2:30PM	3:45PM	TORG 3100	14M
 81203	BIOL-2004	Genetics	L	3	300	JO Falkinham	T R	8:00AM	9:15AM	TORG 2150	08T
 81233	BIOL-3014	Insect Biology	L	2	60	P Marek	T R	11:00AM	11:50AM	PRICE 220	11T
 81249	BIOL-4664	Virology	L	3	50	SL Paulson	M W F	9:05AM	9:55AM	PRICE 220	09M
-81243	BIOL-3774	Molecular Biology	L	3	70	CB Lawrence	M W F	1:25PM	2:15PM	DER 3081	13M
+81243	BIOL-3774	Molecular Biology	L	3	68	CB Lawrence	M W F	1:25PM	2:15PM	DER 3081	13M
 81281	BIOL-6404	TS:Integrative Organismal Biol	L	1	28	DM Hawley	R	12:30PM	1:30PM	DER 3094	12R
 81248	BIOL-4624	Microbial Genetics	L	3	80	Z Yang	T R	8:00AM	9:15AM	MCB 113	08T
-81226	BIOL-2804	Ecology	L	3	140	S Whitehead	T R	9:30AM	10:45AM	NCB 160	09T
-81225	BIOL-2804	Ecology	L	3	140	RF Sheppard	M W	4:00PM	5:15PM	SURGE 118C	16M
+81226	BIOL-2804	Ecology	L	3	134	S Whitehead	T R	9:30AM	10:45AM	NCB 160	09T
+81225	BIOL-2804	Ecology	L	3	138	RF Sheppard	M W	4:00PM	5:15PM	SURGE 118C	16M
 81210	BIOL-2604	General Microbiology	L	3	200	RW Seyler	M W F	8:00AM	8:50AM	HAN 100	08M
-81209	BIOL-2604	General Microbiology	L	3	260	RW Seyler	T R	3:30PM	4:45PM	TORG 2150	15T
+81209	BIOL-2604	General Microbiology	L	3	250	RW Seyler	T R	3:30PM	4:45PM	TORG 2150	15T
 81271	BIOL-5174	GS:Microbiology	L	1	32	B Scharf	T	5:00PM	6:00PM	FRALN 102	17T
 81270	BIOL-5174	GS: Intro to Grad Stud Bio Sc	L	1	25	IT Moore	M	12:20PM	1:10PM	TORG 1080	12M
 81269	BIOL-5174	GS:Ecol, Evol & Behavior	L	1	65	JW McGlothlin	R	3:30PM	4:45PM	DER 3083	15R
 81282	BIOL-7994	Research and Dissertation	R	1	9999	JR Walters	(ARR)	(ARR)	TBA	00X
 88960	BIOL-4564	Infectious Disease Ecology	L	3	20	DM Hawley	T R	2:00PM	3:15PM	DER 1076	14T
-81222	BIOL-2614	General Microbiology Lab	B	2	24	KK Lasley	M W	10:00AM	11:50AM	HAHN N 216	10M
-81221	BIOL-2614	General Microbiology Lab	B	2	24	KK Lasley	M W	2:00PM	3:50PM	HAHN N 206	14M
-81220	BIOL-2614	General Microbiology Lab	B	2	24	KK Lasley	M W	12:00PM	1:50PM	HAHN N 206	12M
-81219	BIOL-2614	General Microbiology Lab	B	2	24	KK Lasley	M W	10:00AM	11:50AM	HAHN N 206	10M
-81218	BIOL-2614	General Microbiology Lab	B	2	24	KK Lasley	M W	8:00AM	9:50AM	HAHN N 216	08M
-81217	BIOL-2614	General Microbiology Lab	B	2	24	KK Lasley	T R	10:00AM	11:50AM	HAHN N 206	10T
-81216	BIOL-2614	General Microbiology Lab	B	2	24	KK Lasley	T R	12:00PM	1:50PM	HAHN N 206	12T
-81215	BIOL-2614	General Microbiology Lab	B	2	24	KK Lasley	M W	8:00AM	9:50AM	HAHN N 206	08M
-81214	BIOL-2614	General Microbiology Lab	B	2	24	KK Lasley	M W	12:00PM	1:50PM	HAHN N 216	12M
-81213	BIOL-2614	General Microbiology Lab	B	2	24	KK Lasley	T R	2:00PM	3:50PM	HAHN N 206	14T
-81212	BIOL-2614	General Microbiology Lab	B	2	24	KK Lasley	M W	2:00PM	3:50PM	HAHN N 216	14M
-81211	BIOL-2614	General Microbiology Lab	B	2	24	KK Lasley	T R	8:00AM	9:50AM	HAHN N 206	08T
+81222	BIOL-2614	General Microbiology Lab	B	2	23	KK Lasley	M W	10:00AM	11:50AM	HAHN N 216	10M
+81221	BIOL-2614	General Microbiology Lab	B	2	23	KK Lasley	M W	2:00PM	3:50PM	HAHN N 206	14M
+81220	BIOL-2614	General Microbiology Lab	B	2	23	KK Lasley	M W	12:00PM	1:50PM	HAHN N 206	12M
+81219	BIOL-2614	General Microbiology Lab	B	2	23	KK Lasley	M W	10:00AM	11:50AM	HAHN N 206	10M
+81218	BIOL-2614	General Microbiology Lab	B	2	23	KK Lasley	M W	8:00AM	9:50AM	HAHN N 216	08M
+81217	BIOL-2614	General Microbiology Lab	B	2	23	KK Lasley	T R	10:00AM	11:50AM	HAHN N 206	10T
+81216	BIOL-2614	General Microbiology Lab	B	2	23	KK Lasley	T R	12:00PM	1:50PM	HAHN N 206	12T
+81215	BIOL-2614	General Microbiology Lab	B	2	23	KK Lasley	M W	8:00AM	9:50AM	HAHN N 206	08M
+81214	BIOL-2614	General Microbiology Lab	B	2	23	KK Lasley	M W	12:00PM	1:50PM	HAHN N 216	12M
+81213	BIOL-2614	General Microbiology Lab	B	2	23	KK Lasley	T R	2:00PM	3:50PM	HAHN N 206	14T
+81212	BIOL-2614	General Microbiology Lab	B	2	23	KK Lasley	M W	2:00PM	3:50PM	HAHN N 216	14M
+81211	BIOL-2614	General Microbiology Lab	B	2	23	KK Lasley	T R	8:00AM	9:50AM	HAHN N 206	08T
 81122	BIOL-1005	General Biology	L	3	380	MV Lipscomb	T R	11:00AM	12:15PM	GLCDB 64	11T
 81121	BIOL-1005	General Biology	L	3	380	MV Lipscomb	T R	12:30PM	1:45PM	GLCDB 64	12T
 81228	BIOL-2974	Independent Study	I	1	0	RA Walker	(ARR)	(ARR)	TBA	00X
@@ -1200,7 +1203,6 @@
 81309	BIT-3464	Enterprise Planning & Control	L	3	60	Staff	T R	9:30AM	10:45AM	PAM 31	09T
 81308	BIT-3464	Enterprise Planning & Control	L	3	50	Staff	T R	2:00PM	3:15PM	PAM 2003	14T
 81288	BIT-2405	Quantitative Methods	L	3	160	Staff	T R	2:00PM	3:15PM	WHIT 300	CTE
-81287	BIT-2405	Quantitative Methods	L	3	125	Staff	T R	8:00AM	9:15AM	NCB 160	CTE
 81286	BIT-2405	Quantitative Methods	L	3	125	Staff	T R	8:00AM	9:15AM	NCB 260	CTE
 81285	BIT-2405	Quantitative Methods	L	3	110	Staff	M W F	12:20PM	1:10PM	NCB 160	CTE
 81284	BIT-2405	Quantitative Methods	L	3	45	Staff	T R	9:30AM	10:45AM	WMS 120	CTE
@@ -1214,13 +1216,12 @@
 81304	BIT-3434	Adv Modeling for Bus Analytics	L	3	70	Staff	T R	2:00PM	3:15PM	DER 3081	14T
 81303	BIT-3434	Adv Modeling for Bus Analytics	L	3	70	Staff	T R	11:00AM	12:15PM	DER 3083	11T
 81302	BIT-3434	Adv Modeling for Bus Analytics	L	3	50	Staff	T R	8:00AM	9:15AM	PAM 2003	08T
-81307	BIT-3454	Business Process Improvement	L	3	75	Staff	T R	8:00AM	9:15AM	NCB 120	08T
+81307	BIT-3454	Business Process Improvement	L	3	80	Staff	T R	8:00AM	9:15AM	NCB 120	08T
 81314	BIT-4444	Web-Based DSS	L	3	90	Staff	T R	12:30PM	1:45PM	PAM 2030	12T
 81313	BIT-4444	Web-Based DSS	L	3	55	Staff	T R	8:00AM	9:15AM	PAM 32	08T
 89163	BIT-5534	Applied Bus Intel & Analytics	L	3	25	Staff	T R	5:00PM	6:15PM	PAM 1010	17T
 81348	BIT-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 81325	BIT-4524	Systems Development	L	3	70	Staff	T R	12:30PM	1:45PM	DER 3081	12T
-81324	BIT-4524	Systems Development	L	3	60	Staff	T R	8:00AM	9:15AM	DER 3083	08T
 81323	BIT-4524	Systems Development	L	3	60	Staff	T R	2:00PM	3:15PM	PAM 32	14T
 88724	BIT-2406	Quantitative Methods	L	3	50	Staff	T R	8:00AM	9:15AM	PAM 31	CTE
 88720	BIT-2406	Quantitative Methods	L	3	50	Staff	T R	11:00AM	12:15PM	NCB 110	CTE
@@ -1441,7 +1442,7 @@
 88992	BMVS-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 88985	BMVS-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 88984	BMVS-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
-88983	BMVS-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	(ARR)	00X
+88983	BMVS-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 88982	BMVS-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 81443	BMVS-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 81444	BMVS-5005	Emerging Infectious Diseases	L	1	125	X Meng	R	3:00PM	3:50PM	VM 3 102	15R
@@ -1592,7 +1593,7 @@
 81708	CEE-5594	Geological Engineering	L	3	32	M Mauldon	T R	11:00AM	12:15PM	PAT 305	11T
 81660	CEE-4264	Sustainable Land Development	L	3	52	RL Dymond	T R	3:30PM	4:45PM	GOODW 155	15T
 81700	CEE-5430	Intermed Design Steel Bldgs	L	3	40	RT Leon	T R	8:00AM	9:15AM	PAT 207	08T
-88756	CEE-5474	Adv Reinforced Conc	L	3	40	CL Roberts-Wollmann	M W F	11:15AM	12:05PM	RAND 208	11M
+88756	CEE-5474	Adv Reinforced Conc	L	3	40	CL Roberts-Wollmann	M W F	8:00AM	8:50AM	PAT 207	08M
 88754	CEE-5354	Num Mod Groundwater	L	3	12	TJ Burbey	T R	9:30AM	10:45AM	DER 3040	09T
 81721	CEE-5794	Env Engr Principles	L	3	60	JC Little	M W F	9:05AM	9:55AM	DURHM 261	09M
 81654	CEE-4024	Const Control Tech	L	3	80	JM de la Garza	T R	12:30PM	1:45PM	SURGE 118B	12T
@@ -1651,8 +1652,8 @@
 81809	CEE-5994	Research and Thesis	R	1	99	MM Flint	(ARR)	(ARR)	TBA	00X
 81808	CEE-5994	Research and Thesis	R	1	9999	RL Dymond	(ARR)	(ARR)	TBA	00X
 88744	CEE-5194	Environ Engr Micro	L	0	40	AJ Pruden-Bagchi	M W	2:30PM	3:45PM	RAND 110	14M
-88740	CEE-3604	Intro Transport Engr	L	3	48	AA Trani	M W F	9:05AM	9:55AM	PAT 215	09M
-81642	CEE-3604	Intro Transport Engr	L	3	48	S Hotle	M W	4:00PM	5:15PM	WLH 335	16M
+88740	CEE-3604	Intro Transport Engr	L	3	43	AA Trani	M W F	9:05AM	9:55AM	PAT 215	09M
+81642	CEE-3604	Intro Transport Engr	L	3	43	S Hotle	M W	4:00PM	5:15PM	WLH 335	16M
 81773	CEE-5904	Project and Report	R	1	50	CL Roberts-Wollmann	(ARR)	(ARR)	TBA	00X
 81772	CEE-5904	Project and Report	R	1	99	FA Charney	(ARR)	(ARR)	TBA	00X
 81771	CEE-5904	Project and Report	R	1	10	I Koutromanos	(ARR)	(ARR)	TBA	00X
@@ -1702,7 +1703,7 @@
 81727	CEE-5904	Project and Report	R	1	99	MH Hebdon	(ARR)	(ARR)	TBA	00X
 81651	CEE-3804	Computer Applications for CEE	L	3	60	F Jazizadeh Karimi	T R	8:00AM	9:15AM	GOODW 155	08T
 81650	CEE-3804	Computer Applications for CEE	L	3	60	DL Gallagher	M W F	11:15AM	12:05PM	GOODW 125	11M
-81632	CEE-3404	Theory of Structures	L	3	60	M Shakiba	T R	11:00AM	12:15PM	GOODW 125	11T
+81632	CEE-3404	Theory of Structures	L	3	55	M Shakiba	T R	11:00AM	12:15PM	GOODW 125	11T
 81631	CEE-3404	Theory of Structures	L	3	60	I Koutromanos	M W F	11:15AM	12:05PM	SEITZ 313	11M
 81611	CEE-2994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 81610	CEE-2994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -1730,8 +1731,8 @@
 81691	CEE-5125	Environ Engr Design	L	3	28	Z He	T	5:30PM	8:15PM	WHIT 281	17T
 88812	CEE-5084	IT for Infrastructure	O	3	10	SK Sinha	T	5:00PM	7:45PM	TBA	17T
 88742	CEE-5084	IT for Infrastructure	L	3	38	SK Sinha	T	5:00PM	7:45PM	TORG 1050	17T
-81613	CEE-3014	Construction Management	L	3	75	DE Dickerson	T R	11:00AM	12:15PM	GOODW 115	11T
-81612	CEE-3014	Construction Management	L	3	75	JM de la Garza	T R	9:30AM	10:45AM	WLH 340	09T
+81613	CEE-3014	Construction Management	L	3	70	DE Dickerson	T R	11:00AM	12:15PM	GOODW 115	11T
+81612	CEE-3014	Construction Management	L	3	70	JM de la Garza	T R	9:30AM	10:45AM	WLH 340	09T
 81669	CEE-4664	Pavement Design	L	3	25	L Wang	T R	11:00AM	12:15PM	PAT 12	11T
 88733	CEE-5874	Coastal and Marine Geotechnics	L	3	30	N Stark	M W F	9:05AM	9:55AM	PAT 12	09M
 81656	CEE-4104	Water & Wastewater	L	3	35	WR Knocke	T R	9:30AM	10:45AM	PAT 207	09T
@@ -1814,7 +1815,7 @@
 81885	CEE-7994	Research and Dissertation	R	1	9999	JM de la Garza	(ARR)	(ARR)	TBA	00X
 88816	CEE-5134	Engr Aspts Water Qual	O	3	10	JC Little	W	5:30PM	8:15PM	TBA	17W
 81692	CEE-5134	Engr Aspts Water Qual	L	3	25	JC Little	W	5:30PM	8:15PM	WHIT 281	17W
-81670	CEE-4684	Transportation Safety	L	3	48	BJ Katz	M W	4:00PM	5:15PM	PAT 215	16M
+81670	CEE-4684	Transportation Safety	L	3	47	BJ Katz	M W	4:00PM	5:15PM	PAT 215	16M
 81699	CEE-5410	Intermediate R/C Structures	L	3	40	Staff	M W F	9:05AM	9:55AM	RAND 222	09M
 81724	CEE-5894	Final Examination	R	3	0	Staff	(ARR)	(ARR)	TBA	00X
 88752	CEE-5334	Quantitative Hydrology	L	3	8	RL Dymond	T R	11:00AM	12:15PM	PAT 207	11T
@@ -1822,15 +1823,15 @@
 81618	CEE-3274	Intro Land Development	L	3	65	CM White	M W	2:30PM	3:45PM	RAND 331	14M
 81688	CEE-5094	CII Best Practices	L	3	40	Staff	F	12:00PM	4:00PM	TORG 1030	12F
 81608	CEE-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-81626	CEE-3304	Fluid Mech for CEE	L	3	40	JL Irish	T R	11:00AM	12:15PM	GYM 219	11T
+89503	CEE-3304	Fluid Mech for CEE	B	0	30	RP Scardina	T	6:00PM	7:50PM	PAT 12	18T
+81626	CEE-3304	Fluid Mech for CEE	L	3	39	JL Irish	T R	11:00AM	12:15PM	GYM 219	11T
 81625	CEE-3304	Fluid Mech for CEE	B	0	30	RP Scardina	W	4:30PM	6:20PM	PAT 12	16W
-81624	CEE-3304	Fluid Mech for CEE	L	3	40	Staff	M W F	9:05AM	9:55AM	RAND 208	09M
-81623	CEE-3304	Fluid Mech for CEE	L	3	40	RP Scardina	M W F	12:20PM	1:10PM	PAT 207	12M
-81622	CEE-3304	Fluid Mech for CEE	B	0	30	RP Scardina	R	4:00PM	5:50PM	PAT 12	16R
-81621	CEE-3304	Fluid Mech for CEE	B	0	30	RP Scardina	T	4:00PM	5:50PM	PAT 12	16T
+81624	CEE-3304	Fluid Mech for CEE	L	3	40	Staff	M W F	9:05AM	9:55AM	PAT 207	09M
+81623	CEE-3304	Fluid Mech for CEE	L	3	69	RP Scardina	M W F	12:20PM	1:10PM	GYM 124	12M
+81622	CEE-3304	Fluid Mech for CEE	B	0	29	RP Scardina	R	4:00PM	5:50PM	PAT 12	16R
+81621	CEE-3304	Fluid Mech for CEE	B	0	29	RP Scardina	T	4:00PM	5:50PM	PAT 12	16T
 81620	CEE-3304	Fluid Mech for CEE	B	0	30	RP Scardina	M	4:30PM	6:20PM	PAT 12	16M
 88739	CEE-3424	Reinf Concr Struct I	L	3	60	CL Roberts-Wollmann	M W F	11:15AM	12:05PM	NCB 210	11M
-81633	CEE-3424	Reinf Concr Struct I	L	3	40	CL Roberts-Wollmann	M W F	9:05AM	9:55AM	PAT 207	09M
 81617	CEE-3104	Intro Environ Engr	L	3	60	AM Dietrich	T R	2:00PM	3:15PM	RAND 331	14T
 81616	CEE-3104	Intro Environ Engr	L	3	40	Staff	M W F	1:25PM	2:15PM	PAT 215	13M
 81615	CEE-3104	Intro Environ Engr	L	3	40	Staff	M W F	11:15AM	12:05PM	PAT 207	11M
@@ -1860,7 +1861,7 @@
 81601	CEE-2814	CEE Measurements	L	4	0	KD Young	F	2:30PM	5:15PM	PAT 316	11M	fill	M W F	11:15AM	12:05PM	WHIT 300
 81723	CEE-5804	Engr Ethics and the Public	L	3	38	MA Edwards	R	4:00PM	6:45PM	TORG 1050	16R
 81964	CEM-2104	Intro to Construction Eng Mgt	L	2	60	AL Johnson	T R	11:00AM	12:15PM	NCB 210	11T
-89443	CEM-3024	Cnst Estimating and Scheduling	L	3	0	Staff	T R	11:00AM	12:15PM	BFH 230	11T
+89443	CEM-3024	Cnst Estimating and Scheduling	L	3	60	RW Muir	T R	11:00AM	12:15PM	BFH 230	11T
 81970	CEM-4994	Undergraduate Research	R	1	0	BM Kleiner	(ARR)	(ARR)	TBA	00X
 81969	CEM-4994	Undergraduate Research	R	1	0	DR Simmons	(ARR)	(ARR)	TBA	00X
 81968	CEM-4994	Undergraduate Research	R	1	0	DE Dickerson	(ARR)	(ARR)	TBA	00X
@@ -1872,10 +1873,10 @@
 89099	CEM-3084	Construction Economy	L	3	60	AL Johnson	T R	12:30PM	1:45PM	NCB 210	12T
 81986	CHE-5044	Engineering Mathematics	L	3	40	RS Senger	M W F	11:15AM	12:05PM	GOODW 155	11M
 81989	CHE-5144	Advanced Thermodynamics	L	3	20	SA Deshmukh	T R	11:00AM	12:15PM	GOODW 241	11T
-81991	CHE-5564	Non-Newtonian Fluid Mechanics	L	3	20	DG Baird	M W F	9:05AM	9:55AM	MCB 212	09M
 81988	CHE-5125	Transport Phenomena	L	3	28	RM Davis	T R	2:00PM	3:15PM	GOODW 241	14T
 81981	CHE-4904	Project and Report	R	1	5	DF Cox	(ARR)	(ARR)	TBA	00X
 81975	CHE-3114	Fluid Transport	L	3	120	AS Goldstein	M W F	10:10AM	11:00AM	NCB 320	10M
+89538	CHE-4224	Intro Polymer Process	L	3	20	DG Baird	M W F	9:05AM	9:55AM	MCB 212	09M
 81977	CHE-4104	Process Materials	L	3	120	E Kiran	T R	2:00PM	3:15PM	SURGE 118C	14T
 81980	CHE-4544	Protein Separation Engineering	L	3	55	C Zhang	T R	9:30AM	10:45AM	SEITZ 313	09T
 81994	CHE-5974	Independent Study	I	1	10	DF Cox	(ARR)	(ARR)	TBA	00X
@@ -2199,7 +2200,7 @@
 82283	CHEM-5524	Molecular Structure Detn	L	4	20	HC Dorn	T R	9:30AM	10:45AM	HAHN N 402	09T
 82281	CHEM-5404	Advanced Inorganic Chemistry	L	3	15	F Lin	M W F	10:10AM	11:00AM	HAHN N 402	10M
 82224	CHEM-4514	Green Chemistry	L	3	0	Staff	M W F	10:10AM	11:00AM	ROB 122	10M
-82303	CHN-1106	Elementary Chinese	L	3	25	XZ Moore	M W F	10:10AM	11:00AM	JCH 317A	10M
+82303	CHN-1106	Elementary Chinese	L	3	25	Staff	M W F	9:05AM	9:55AM	MCB 218	09M
 82310	CHN-4974H	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 82302	CHN-1105	Elementary Chinese	L	3	25	Staff	M W F	11:15AM	12:05PM	SMYTH 232	11M
 82301	CHN-1105	Elementary Chinese	L	3	15	Staff	M W F	10:10AM	11:00AM	MCB 212	10M
@@ -2255,17 +2256,17 @@
 82347	CNST-5974	Independent Study	I	1	0	YJ Beliveau	(ARR)	(ARR)	TBA	00X
 82346	CNST-5944	Seminar	L	1	40	J Iorio	M	11:15AM	12:05PM	BFH 132	11M
 82345	CNST-5944	Seminar	L	1	40	J Iorio	W	11:15AM	12:05PM	BFH 132	11W
-88698	COMM-4254	Topics in Media Writing	L	3	60	WB Roth	M W	4:00PM	5:15PM	RAND 331	16M
 88696	COMM-4254	Topics in Media Writing	L	3	55	WB Roth	T R	12:30PM	1:45PM	SEITZ 313	12T
 82466	COMM-5024	Communication Research Methods	L	3	15	JD Ivory	W	2:30PM	5:15PM	SHANK 043	14W
-82421	COMM-2034	Visual Media	L	3	24	Staff	M W	12:15PM	1:30PM	SHANK 180	12M
-82420	COMM-2034	Visual Media	L	3	24	MA Horning	T R	2:00PM	3:15PM	SHANK 180	14T
-82419	COMM-2034	Visual Media	L	3	24	JM Woolly	M W	2:30PM	3:45PM	SHANK 160	14M
-82418	COMM-2034	Visual Media	L	3	24	MA Bond	M W F	9:05AM	9:55AM	SHANK 043	09M
+82421	COMM-2034	Visual Media	L	3	22	Staff	M W	12:15PM	1:30PM	SHANK 180	12M
+82420	COMM-2034	Visual Media	L	3	22	MA Horning	T R	2:00PM	3:15PM	SHANK 180	14T
+82419	COMM-2034	Visual Media	L	3	22	JM Woolly	M W	2:30PM	3:45PM	SHANK 160	14M
+82418	COMM-2034	Visual Media	L	3	22	MA Bond	M W F	9:05AM	9:55AM	SHANK 043	09M
 82417	COMM-2034	Visual Media	L	3	0	Staff	T R	11:00AM	12:15PM	SHANK 180	11T
-82416	COMM-2034	Visual Media	L	3	24	DJ Tamul	T R	9:30AM	10:45AM	SHANK 160	09T
+82416	COMM-2034	Visual Media	L	3	22	DJ Tamul	T R	9:30AM	10:45AM	SHANK 160	09T
 82448	COMM-3244	Political Communication	L	3	40	CE Jewitt	T R	9:30AM	10:45AM	RAND 318	09T
 82432	COMM-3044	Oral Comm Center Practicum	L	1	0	B Quesenberry	(ARR)	(ARR)	TBA	00X
+89550	COMM-2074	Introduction to Sports Media	L	3	60	WB Roth	M W	4:00PM	5:15PM	RAND 331	16M
 88471	COMM-1015	Communication Skills	L	3	0	HL Shinault	M W	2:30PM	3:45PM	MCB 316	14M
 88470	COMM-1015	Communication Skills	L	3	0	DS Conner	M W	4:00PM	5:15PM	RAND 206	16M
 82382	COMM-1015	Communication Skills	L	3	0	N Sowder	T R	3:30PM	4:45PM	PAT 215	15T
@@ -2294,8 +2295,8 @@
 82358	COMM-1015	Communication Skills	L	3	0	EL Tydings	M W F	12:20PM	1:10PM	MCB 329	12M
 82357	COMM-1015	Communication Skills	L	3	0	N Sowder	M W	4:00PM	5:15PM	MCB 204	16M
 82356	COMM-1015	Communication Skills	L	3	0	DS Conner	T R	11:00AM	12:15PM	MCB 223	11T
-89442	COMM-3314	Sports Journalism	L	3	21	WB Roth	M W	1:00PM	2:15PM	MAC 157	13M
-82449	COMM-3314	Sports Journalism	L	3	21	AR Allegretta	T	4:30PM	7:00PM	MAC 157	16T
+89442	COMM-3314	Sports Journalism	L	3	20	WB Roth	M W	1:00PM	2:15PM	MAC 157	13M
+82449	COMM-3314	Sports Journalism	L	3	20	AR Allegretta	T	4:30PM	7:00PM	MAC 157	16T
 82355	COMM-1014	Introduction to Communication	L	3	180	BW Howell	M W	4:00PM	5:15PM	WHIT 300	16M
 89319	COMM-3114	Video Production: Studio	L	0	22	JM Woolly	T R	11:00AM	12:45PM	MAC 153	11T
 82415	COMM-2024	Media Writing	L	3	20	DM Jenkins	M W	4:00PM	5:15PM	SHANK 160	16M
@@ -2315,15 +2316,15 @@
 82467	COMM-5034	Teaching Practicum	L	1	8	B Quesenberry	R	1:00PM	2:15PM	SHANK 043	13R
 82451	COMM-4024	Communication Law	L	3	75	WW Hopkins	M W	4:00PM	5:15PM	WLH 340	16M
 82477	COMM-5994	Research and Thesis	R	1	15	BM Waggenspack	(ARR)	(ARR)	TBA	00X
-88473	COMM-2044	Principles of Public Relations	L	3	40	DF Cannon	M W F	12:20PM	1:10PM	MCB 318	12M
-88472	COMM-2044	Principles of Public Relations	L	3	40	DF Cannon	M W F	10:10AM	11:00AM	MCB 308	10M
-82422	COMM-2044	Principles of Public Relations	L	3	40	DF Cannon	M W F	9:05AM	9:55AM	MCB 308	09M
+88473	COMM-2044	Principles of Public Relations	L	3	35	DF Cannon	M W F	12:20PM	1:10PM	MCB 318	12M
+88472	COMM-2044	Principles of Public Relations	L	3	35	DF Cannon	M W F	10:10AM	11:00AM	MCB 308	10M
+82422	COMM-2044	Principles of Public Relations	L	3	35	DF Cannon	M W F	9:05AM	9:55AM	MCB 308	09M
 82444	COMM-3174	Advanced Multimedia Reporting	L	3	20	JM Woolly	M W	4:00PM	6:00PM	MAC 157	16M
 82443	COMM-3174	Advanced Multimedia Reporting	L	3	20	JM Woolly	T R	2:00PM	4:00PM	MAC 157	14T
-82424	COMM-2084	Media and Society	L	3	150	JB Mackay	T R	9:30AM	10:45AM	TORG 3100	09T
+82424	COMM-2084	Media and Society	L	3	125	JB Mackay	T R	9:30AM	10:45AM	TORG 3100	09T
 82475	COMM-5904	Project and Report	R	1	0	BM Waggenspack	(ARR)	(ARR)	TBA	00X
 82474	COMM-5904	Project and Report	R	1	0	BM Waggenspack	(ARR)	(ARR)	TBA	00X
-82447	COMM-3204	Multicultural Communication	L	3	35	Staff	M W	2:30PM	3:45PM	MCB 231	14M
+82447	COMM-3204	Multicultural Communication	L	3	40	Staff	M W	2:30PM	3:45PM	MCB 231	14M
 82446	COMM-3204	Multicultural Communication	L	3	40	Staff	T R	8:00AM	9:15AM	MCB 134	08T
 82445	COMM-3204	Multicultural Communication	L	3	40	Staff	M W	4:00PM	5:15PM	MCB 230	16M
 82434	COMM-3124	Interpersonal Communication	L	3	60	JA Kuypers	T R	2:00PM	3:15PM	WMS 120	14T
@@ -2364,8 +2365,8 @@
 82387	COMM-2004	Public Speaking	L	3	42	B Quesenberry	M W F	10:10AM	11:00AM	RAND 318	10M
 82386	COMM-2004	Public Speaking	L	3	42	B Quesenberry	M W F	10:10AM	11:00AM	MCB 332	10M
 82385	COMM-2004	Public Speaking	L	3	38	B Quesenberry	M W F	9:05AM	9:55AM	MCB 328	09M
-88465	COMM-2124	Intro Comm Research	L	3	59	K Haenschen	T R	12:30PM	1:45PM	PAM 31	12T
-82425	COMM-2124	Intro Comm Research	L	3	59	JC Tedesco	M W	4:00PM	5:15PM	WLH 350	16M
+88465	COMM-2124	Intro Comm Research	L	3	60	K Haenschen	T R	12:30PM	1:45PM	PAM 31	12T
+82425	COMM-2124	Intro Comm Research	L	3	60	JC Tedesco	M W	4:00PM	5:15PM	WLH 350	16M
 82430	COMM-3014	Public Relations Cases	L	3	75	SA Smith	T R	2:00PM	3:15PM	PAM 2030	14T
 88490	COMM-4304	Public Relations Campaigns	L	3	25	BA Watkins	T R	11:00AM	12:15PM	WLH 335	11T
 82459	COMM-4304	Public Relations Campaigns	L	3	25	JC Tedesco	M W	2:30PM	3:45PM	MCB 302	14M
@@ -2382,7 +2383,7 @@
 82354	COMM-1004	First-Semester Experience COMM	O	1	0	SC Stinson	(ARR)	(ARR)	TBA	00X
 82353	COMM-1004	First-Semester Experience COMM	L	1	0	SC Stinson	M	1:25PM	2:15PM	MCB 224	13M
 82352	COMM-1004	First-Semester Experience COMM	L	1	0	BW Howell	M	1:25PM	2:15PM	SURGE 117A	13M
-82454	COMM-4114	Photojournalism	L	3	24	DJ Tamul	T R	11:00AM	12:15PM	MAC 157	11T
+82454	COMM-4114	Photojournalism	L	3	22	DJ Tamul	T R	11:00AM	12:15PM	MAC 157	11T
 82464	COMM-4994	Undergraduate Research	R	1	0	MM Preston	(ARR)	(ARR)	TBA	00X
 89325	COMM-4314	Comm & Issues of Diversity	L	3	45	Staff	M W	4:00PM	5:15PM	MCB 209	16M
 88481	CONS-3504	Resource Mgt Indiv/Families	O	3	30	PJ Fisher	(ARR)	(ARR)	TBA	00X
@@ -2412,48 +2413,48 @@
 82492	CRIM-4424	Juvenile Delinquency	O	3	45	DJ Shoemaker	(ARR)	(ARR)	TBA	00X
 82494	CRIM-4754	Internship	L	1	0	DA Sedgwick	(ARR)	(ARR)	TBA	00X
 82495	CRIM-4964	Field Study	L	1	0	Staff	(ARR)	(ARR)	TBA	00X
-82600	CS-5465	Numerical Analysis	L	3	30	Staff	M W F	11:15AM	12:05PM	PAT 305	11M
+82600	CS-5465	Numerical Analysis	L	3	30	JT Borggaard	M W F	11:15AM	12:05PM	PAT 305	11M
 82510	CS-1064	Intro to Programming in Python	L	3	300	AC Bart	M W F	12:20PM	1:10PM	MCB 100	12M
-82535	CS-2104	Intro to Problem Solving in CS	L	3	70	ND Barnette	T R	9:30AM	10:45AM	NCB 230	09T
-82534	CS-2104	Intro to Problem Solving in CS	L	3	70	Staff	M W F	11:15AM	12:05PM	NCB 170	11M
-82533	CS-2104	Intro to Problem Solving in CS	L	3	70	ND Barnette	M W F	10:10AM	11:00AM	NCB 170	10M
-88946	CS-1014	Intro Computational Thinking	L	3	72	DG Kafura	T R	9:30AM	10:45AM	NCB 210	09T
-88893	CS-1014	Intro Computational Thinking	L	3	72	AC Bart	M W	2:30PM	3:45PM	NCB 210	14M
-82559	CS-3114	Data Structures and Algorithms	L	3	140	Y Cao	T R	11:00AM	12:15PM	SURGE 118C	11T
-82558	CS-3114	Data Structures and Algorithms	L	3	100	Staff	M W	2:30PM	3:45PM	TORG 1060	14M
-82557	CS-3114	Data Structures and Algorithms	L	3	150	Staff	T R	12:30PM	1:45PM	TORG 3100	12T
+82535	CS-2104	Intro to Problem Solving in CS	L	3	60	ND Barnette	T R	9:30AM	10:45AM	NCB 230	09T
+82534	CS-2104	Intro to Problem Solving in CS	L	3	65	Staff	M W F	11:15AM	12:05PM	NCB 170	11M
+82533	CS-2104	Intro to Problem Solving in CS	L	3	65	ND Barnette	M W F	10:10AM	11:00AM	NCB 170	10M
+88946	CS-1014	Intro Computational Thinking	L	3	35	DG Kafura	T R	9:30AM	10:45AM	NCB 210	09T
+88893	CS-1014	Intro Computational Thinking	L	3	35	AC Bart	M W	2:30PM	3:45PM	NCB 210	14M
+82559	CS-3114	Data Structures and Algorithms	L	3	100	Y Cao	T R	11:00AM	12:15PM	SURGE 118C	11T
+82558	CS-3114	Data Structures and Algorithms	L	3	0	Staff	M W	2:30PM	3:45PM	TORG 1060	14M
+82557	CS-3114	Data Structures and Algorithms	L	3	110	Staff	T R	12:30PM	1:45PM	TORG 3100	12T
 82627	CS-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-82583	CS-4644	Creative Computing Studio	L	3	60	Staff	F	1:00PM	4:00PM	GOODW 145	13F
+82583	CS-4644	Creative Computing Studio	L	3	30	Staff	T R	2:00PM	3:15PM	NCB 170	14T
 82589	CS-4964	Field Study	L	1	0	Staff	(ARR)	(ARR)	TBA	00X
-82553	CS-2506	Intro to Computer Organization	L	3	150	Staff	T R	2:00PM	3:15PM	NCB 360	14T
-82552	CS-2506	Intro to Computer Organization	L	3	150	WD McQuain	T R	11:00AM	12:15PM	TORG 3100	11T
-82551	CS-2505	Intro Computer Organization	L	3	150	Staff	T R	3:30PM	4:45PM	TORG 3100	CTE
-82550	CS-2505	Intro Computer Organization	L	3	300	WD McQuain	T R	2:00PM	3:15PM	TORG 2150	CTE
-82572	CS-3714	Mobile Software Development	L	3	60	O Balci	T R	2:00PM	3:15PM	TORG 1010	14T
-82579	CS-4264	Principles Computer Security	L	3	120	D Yao	T R	3:30PM	4:45PM	NCB 160	15T
-82601	CS-5474	Finite Difference Mth	L	3	35	Staff	T R	2:00PM	3:15PM	MCB 233	14T
+82553	CS-2506	Intro to Computer Organization	L	3	85	Staff	T R	2:00PM	3:15PM	NCB 360	14T
+82552	CS-2506	Intro to Computer Organization	L	3	85	WD McQuain	T R	11:00AM	12:15PM	TORG 3100	11T
+82551	CS-2505	Intro Computer Organization	L	3	75	Staff	T R	3:30PM	4:45PM	TORG 3100	CTE
+82550	CS-2505	Intro Computer Organization	L	3	125	WD McQuain	T R	2:00PM	3:15PM	TORG 2150	CTE
+82572	CS-3714	Mobile Software Development	L	3	50	O Balci	T R	2:00PM	3:15PM	TORG 1010	14T
+82579	CS-4264	Principles Computer Security	L	3	90	D Yao	T R	3:30PM	4:45PM	NCB 160	15T
+82601	CS-5474	Finite Difference Mth	L	3	35	P Wapperom	T R	2:00PM	3:15PM	MCB 233	14T
 82585	CS-4784	Human-Computer Interact Capstn	L	3	25	DG Tatar	R	3:30PM	6:15PM	TORG 1020	15R
 88911	CS-5114	Theory of Algorithms	L	3	40	S Raghvendra	M W	4:00PM	5:15PM	MCB 226	16M
-82604	CS-5510	Multiprocessor Programming	L	3	40	D Lee	T R	2:00PM	3:15PM	NCB 170	14T
+82604	CS-5510	Multiprocessor Programming	L	3	40	D Lee	T R	2:00PM	3:15PM	TBA	14T
 82633	CS-5994	Research and Thesis	R	1	999	Staff	(ARR)	(ARR)	TBA	00X
-82567	CS-3604	Professionalism in Computing	L	3	75	DR Dunlap	T R	2:00PM	3:15PM	SURGE 109	14T
-82565	CS-3604	Professionalism in Computing	L	3	75	DR Dunlap	T R	11:00AM	12:15PM	SURGE 109	11T
+82567	CS-3604	Professionalism in Computing	L	3	60	DR Dunlap	T R	2:00PM	3:15PM	SURGE 109	14T
+82565	CS-3604	Professionalism in Computing	L	3	60	DR Dunlap	T R	11:00AM	12:15PM	SURGE 109	11T
 82624	CS-5904	Project and Report	R	1	999	Staff	(ARR)	(ARR)	TBA	00X
-88949	CS-2114	Softw Des & Data Structures	B	0	40	MO Ellis	R	8:00AM	10:00AM	WHIT 349	CTE
-88948	CS-2114	Softw Des & Data Structures	B	0	40	MO Ellis	R	8:00AM	10:00AM	TORG 1040	CTE
-88896	CS-2114	Softw Des & Data Structures	B	0	40	MO Ellis	F	10:15AM	12:15PM	MCB 218	CTE
-82549	CS-2114	Softw Des & Data Structures	B	0	40	MO Ellis	F	8:45AM	10:45AM	MCB 134	CTE
-82548	CS-2114	Softw Des & Data Structures	B	0	40	MO Ellis	R	3:30PM	5:30PM	MCB 224	CTE
-82547	CS-2114	Softw Des & Data Structures	B	0	40	MO Ellis	F	2:30PM	4:30PM	MCB 134	CTE
-82545	CS-2114	Softw Des & Data Structures	B	0	40	MO Ellis	F	12:20PM	2:20PM	MCB 224	CTE
-82544	CS-2114	Softw Des & Data Structures	B	0	40	MO Ellis	F	3:45PM	5:45PM	MCB 218	CTE
-82543	CS-2114	Softw Des & Data Structures	B	0	40	MO Ellis	F	8:00AM	10:00AM	TORG 1020	CTE
-82542	CS-2114	Softw Des & Data Structures	B	0	40	MO Ellis	R	8:00AM	10:00AM	ROB 103	CTE
-82541	CS-2114	Softw Des & Data Structures	B	0	40	MO Ellis	F	2:30PM	4:30PM	MCB 226	CTE
-82539	CS-2114	Softw Des & Data Structures	L	3	150	MO Ellis	M W	10:10AM	11:00AM	TORG 3100	CTE
-82538	CS-2114	Softw Des & Data Structures	L	3	300	MO Ellis	M W	11:15AM	12:05PM	TORG 2150	CTE
-82537	CS-2114	Softw Des & Data Structures	B	0	40	MO Ellis	F	4:00PM	6:00PM	TORG 1020	CTE
-82536	CS-2114	Softw Des & Data Structures	B	0	40	MO Ellis	F	10:10AM	12:10PM	TORG 1020	CTE
+88949	CS-2114	Softw Des & Data Structures	B	0	24	MO Ellis	R	8:00AM	10:00AM	WHIT 349	CTE
+88948	CS-2114	Softw Des & Data Structures	B	0	24	MO Ellis	R	8:00AM	10:00AM	TORG 1040	CTE
+88896	CS-2114	Softw Des & Data Structures	B	0	24	MO Ellis	F	10:15AM	12:15PM	MCB 218	CTE
+82549	CS-2114	Softw Des & Data Structures	B	0	24	MO Ellis	F	8:45AM	10:45AM	MCB 134	CTE
+82548	CS-2114	Softw Des & Data Structures	B	0	24	MO Ellis	R	3:30PM	5:30PM	MCB 224	CTE
+82547	CS-2114	Softw Des & Data Structures	B	0	24	MO Ellis	F	2:30PM	4:30PM	MCB 134	CTE
+82545	CS-2114	Softw Des & Data Structures	B	0	24	MO Ellis	F	12:20PM	2:20PM	MCB 224	CTE
+82544	CS-2114	Softw Des & Data Structures	B	0	24	MO Ellis	F	3:45PM	5:45PM	MCB 218	CTE
+82543	CS-2114	Softw Des & Data Structures	B	0	24	MO Ellis	F	8:00AM	10:00AM	TORG 1020	CTE
+82542	CS-2114	Softw Des & Data Structures	B	0	24	MO Ellis	R	8:00AM	10:00AM	ROB 103	CTE
+82541	CS-2114	Softw Des & Data Structures	B	0	24	MO Ellis	F	2:30PM	4:30PM	MCB 226	CTE
+82539	CS-2114	Softw Des & Data Structures	L	3	100	MO Ellis	M W	10:10AM	11:00AM	TORG 3100	CTE
+82538	CS-2114	Softw Des & Data Structures	L	3	200	MO Ellis	M W	11:15AM	12:05PM	TORG 2150	CTE
+82537	CS-2114	Softw Des & Data Structures	B	0	24	MO Ellis	F	4:00PM	6:00PM	TORG 1020	CTE
+82536	CS-2114	Softw Des & Data Structures	B	0	24	MO Ellis	F	10:10AM	12:10PM	TORG 1020	CTE
 89159	CS-4654	Intermed Data Analytics & ML	L	3	0	Staff	T R	3:30PM	4:45PM	MCB 232	15T
 88905	CS-4974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 88904	CS-4974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -2465,82 +2466,81 @@
 82581	CS-4414	Issues in Scientific Computing	L	3	35	Staff	M W F	12:20PM	1:10PM	MCB 219	12M
 82603	CS-5504	Computer Architecture	O	3	40	JM Paul	(ARR)	(ARR)	TBA	00X
 82625	CS-5944	Graduate Seminar	L	1	300	DS McCrickard	F	11:15AM	12:30PM	TORG 2150	11F
-82621	CS-5824	Advanced Machine Learning	L	3	45	B Huang	T R	9:30AM	10:45AM	MCB 113	09T
+82621	CS-5824	Advanced Machine Learning	L	3	45	B Huang	T R	9:30AM	10:45AM	TORG 1060	09T
 82573	CS-3724	Human-Computr Intrctn	L	3	90	DA Bowman	T R	11:00AM	12:15PM	SURGE 104C	11T
 82616	CS-5704	Software Engineering	O	3	75	GW Kulczycki	(ARR)	(ARR)	TBA	00X
 82615	CS-5704	Software Engineering	L	3	40	FJ Servant Cortes	M W	5:30PM	6:45PM	MCB 134	17M
 82532	CS-1944	Computer Science 1st Yr Sem	L	1	200	ND Barnette	T	5:00PM	5:50PM	GOODW 190	17T
-82608	CS-5560	Fundamentals of Info Security	O	3	40	J Park	T	4:00PM	6:45PM	TBA	16T
+82608	CS-5560	Fundamentals of Info Security	O	3	40	Staff	T	4:00PM	6:45PM	TBA	16T
 82594	CS-5044	Object-Oriented Pgmming Java	O	3	75	GW Kulczycki	(ARR)	(ARR)	TBA	00X
 89357	CS-5045	Computation for Life Sciences	L	3	30	L Zhang	T R	11:00AM	12:15PM	MCB 231	11T
 82602	CS-5485	Numer Analy and Softw	L	3	40	Staff	T R	9:30AM	10:45AM	MCB 308	09T
 82599	CS-5244	Internet Software	O	3	50	GW Kulczycki	(ARR)	(ARR)	TBA	00X
 82578	CS-4234	Parallel Computation	L	3	45	W Feng	M W	2:30PM	3:45PM	MCB 307	14M
 82610	CS-5565	Network Arch and Protocols	L	3	49	Y Yang	T R	2:00PM	3:15PM	RAND 129	14T
-82500	CS-1044	Intro Prog in C	L	3	300	Staff	M W	5:30PM	6:45PM	TORG 2150	CTE
+82500	CS-1044	Intro Prog in C	L	3	0	Staff	M W	5:30PM	6:45PM	TORG 2150	CTE
 82499	CS-1044	Intro Prog in C	L	3	300	Staff	T R	5:00PM	6:15PM	TORG 2150	CTE
 82554	CS-2964	Field Study	L	1	0	Staff	(ARR)	(ARR)	TBA	00X
 82564	CS-3414	Numerical Methods	L	3	36	LT Watson	M W	2:30PM	3:45PM	MCB 226	14M
-88947	CS-1114	Intro to Software Design	B	0	40	Staff	R	9:30AM	11:30AM	MCB 218	CTE
-88894	CS-1114	Intro to Software Design	B	0	40	Staff	(ARR)	(ARR)	(ARR)	00X
-82530	CS-1114	Intro to Software Design	B	0	40	Staff	F	2:30PM	4:30PM	MCB 230	CTE
-82529	CS-1114	Intro to Software Design	B	0	40	Staff	F	2:30PM	4:30PM	MCB 231	CTE
-82528	CS-1114	Intro to Software Design	B	0	40	Staff	F	9:05AM	11:05AM	MCB 226	CTE
-82527	CS-1114	Intro to Software Design	B	0	40	Staff	R	11:00AM	1:00PM	MCB 226	CTE
-82525	CS-1114	Intro to Software Design	B	0	40	Staff	F	8:00AM	10:00AM	MCB 332	CTE
-82524	CS-1114	Intro to Software Design	B	0	40	Staff	R	8:00AM	10:00AM	ROB 101	CTE
-82523	CS-1114	Intro to Software Design	B	0	40	Staff	R	12:30PM	2:30PM	MCB 224	CTE
-82522	CS-1114	Intro to Software Design	L	3	120	Staff	M W	9:05AM	9:55AM	SURGE 104B	CTE
-82521	CS-1114	Intro to Software Design	B	0	40	Staff	F	10:10AM	12:10PM	MCB 230	CTE
-82520	CS-1114	Intro to Software Design	B	0	40	Staff	F	1:30PM	3:30PM	MCB 218	CTE
-82519	CS-1114	Intro to Software Design	B	0	40	Staff	F	2:30PM	4:30PM	PAM 3004	CTE
-82518	CS-1114	Intro to Software Design	B	0	40	Staff	F	2:30PM	4:30PM	MCB 232	CTE
-82517	CS-1114	Intro to Software Design	B	0	40	Staff	R	3:30PM	5:30PM	MCB 218	CTE
-82516	CS-1114	Intro to Software Design	L	3	300	SH Edwards	M W	10:10AM	11:00AM	TORG 2150	CTE
+88947	CS-1114	Intro to Software Design	B	0	15	Staff	R	9:30AM	11:30AM	MCB 218	CTE
+82530	CS-1114	Intro to Software Design	B	0	15	Staff	F	2:30PM	4:30PM	MCB 230	CTE
+82529	CS-1114	Intro to Software Design	B	0	15	Staff	F	2:30PM	4:30PM	MCB 231	CTE
+82528	CS-1114	Intro to Software Design	B	0	15	Staff	F	9:05AM	11:05AM	MCB 226	CTE
+82527	CS-1114	Intro to Software Design	B	0	15	Staff	R	11:00AM	1:00PM	MCB 226	CTE
+82525	CS-1114	Intro to Software Design	B	0	15	Staff	F	8:00AM	10:00AM	MCB 332	CTE
+82524	CS-1114	Intro to Software Design	B	0	15	Staff	R	8:00AM	10:00AM	ROB 101	CTE
+82523	CS-1114	Intro to Software Design	B	0	15	Staff	R	12:30PM	2:30PM	MCB 224	CTE
+82522	CS-1114	Intro to Software Design	L	3	60	Staff	M W	9:05AM	9:55AM	SURGE 104B	CTE
+82521	CS-1114	Intro to Software Design	B	0	15	Staff	F	10:10AM	12:10PM	MCB 230	CTE
+82520	CS-1114	Intro to Software Design	B	0	15	Staff	F	1:30PM	3:30PM	MCB 218	CTE
+82519	CS-1114	Intro to Software Design	B	0	15	Staff	F	2:30PM	4:30PM	PAM 3004	CTE
+82518	CS-1114	Intro to Software Design	B	0	15	Staff	F	2:30PM	4:30PM	MCB 232	CTE
+82517	CS-1114	Intro to Software Design	B	0	15	Staff	R	3:30PM	5:30PM	MCB 218	CTE
+82516	CS-1114	Intro to Software Design	L	3	110	SH Edwards	M W	10:10AM	11:00AM	TORG 2150	CTE
 82515	CS-1114	Intro to Software Design	L	3	0	Staff	T R	2:00PM	3:15PM	SURGE 104B	CTE
-82513	CS-1114	Intro to Software Design	B	0	40	Staff	F	12:20PM	2:20PM	TORG 1020	CTE
-82512	CS-1114	Intro to Software Design	B	0	40	Staff	F	2:30PM	4:30PM	TORG 1040	CTE
-82511	CS-1114	Intro to Software Design	B	0	40	Staff	F	11:15AM	1:15PM	SURGE 109	CTE
-82561	CS-3214	Computer Systems	L	3	125	Staff	M W	2:30PM	3:45PM	SURGE 104C	14M
-82560	CS-3214	Computer Systems	L	3	125	WD McQuain	T R	9:30AM	10:45AM	SURGE 104B	09T
-82576	CS-4104	Data and Algorithm Analysis	L	3	100	LS Heath	T R	9:30AM	10:45AM	TORG 1060	09T
+82513	CS-1114	Intro to Software Design	B	0	15	Staff	F	12:20PM	2:20PM	TORG 1020	CTE
+82512	CS-1114	Intro to Software Design	B	0	15	Staff	F	2:30PM	4:30PM	TORG 1040	CTE
+82511	CS-1114	Intro to Software Design	B	0	15	Staff	F	11:15AM	1:15PM	SURGE 109	CTE
+82561	CS-3214	Computer Systems	L	3	125	WD McQuain	M W	2:30PM	3:45PM	SURGE 104C	14M
+82560	CS-3214	Computer Systems	L	3	0	Staff	T R	9:30AM	10:45AM	SURGE 104B	09T
+82576	CS-4104	Data and Algorithm Analysis	L	3	80	LS Heath	T R	9:30AM	10:45AM	MCB 113	09T
 82639	CS-6204	Advanced Topics in Systems	L	3	40	GV Back	T R	11:00AM	12:15PM	MCB 230	11T
 82569	CS-3654	Intro Data Analytics & Visual	L	3	50	S Sengupta	T R	11:00AM	12:15PM	LITRV 1760	11T
 82568	CS-3654	Intro Data Analytics & Visual	L	3	48	C Lucero	M W F	1:25PM	2:15PM	HUTCH 204	13M
 89409	CS-6724	Advanced Topics HCI	L	3	40	SR Harrison	T R	5:00PM	6:15PM	MCB 304	17T
-82643	CS-6724	Advanced Topics HCI	L	3	40	K Luther	T R	11:00AM	12:15PM	MCB 232	11T
+82643	CS-6724	Advanced Topics HCI	L	3	0	K Luther	T R	11:00AM	12:15PM	MCB 232	11T
 88950	CS-5834	Intro to Urban Computing	L	3	40	N Ramakrishnan	W	4:00PM	6:45PM	DURHM 261	16W
 88974	CS-4504	Computer Organization	L	3	45	Staff	T R	2:00PM	3:15PM	RAND 220	14T
 82588	CS-4944	Seminar	L	1	150	CJ Ribbens	T	5:00PM	5:50PM	NCB 260	17T
 89410	CS-6604	Adv Tops Data & Info	L	3	40	BA Prakash	M W	4:00PM	5:15PM	WHIT 349	16M
 82641	CS-6604	Adv Tops Data & Info	L	3	40	G Wang	T R	3:30PM	4:45PM	MCB 226	15T
-89309	CS-4824	Machine Learning	L	3	45	B Huang	T R	9:30AM	10:45AM	MCB 113	09T
+89309	CS-4824	Machine Learning	L	3	30	B Huang	T R	9:30AM	10:45AM	TORG 1060	09T
 82584	CS-4704	Software Engineering Capstone	L	3	45	E Tilevich	M W	5:30PM	6:45PM	MCB 307	17M
 82580	CS-4284	Systems & Networking Capstone	L	3	40	A Butt	T R	12:30PM	1:45PM	MCB 231	12T
 82645	CS-7994	Research and Dissertation	R	1	999	Staff	(ARR)	(ARR)	TBA	00X
 82593	CS-5014	Research Meth in CS	L	3	40	Staff	M W	4:00PM	5:15PM	MCB 224	16M
 82623	CS-5894	Final Examination	R	3	999	Staff	(ARR)	(ARR)	TBA	00X
 82577	CS-4124	Theory of Computation	L	3	75	LT Watson	M W	4:00PM	5:15PM	NCB 320	16M
-82509	CS-1054	Intro to Programming in Java	B	0	40	JA Lewis	T	4:00PM	6:00PM	TORG 1010	16T
+82509	CS-1054	Intro to Programming in Java	B	0	20	JA Lewis	T	4:00PM	6:00PM	TORG 1010	16T
 82508	CS-1054	Intro to Programming in Java	L	3	500	JA Lewis	W F	10:10AM	11:00AM	MCB 100	10W
-82507	CS-1054	Intro to Programming in Java	B	0	40	JA Lewis	T	8:00AM	10:00AM	TORG 1040	08T
-82506	CS-1054	Intro to Programming in Java	B	0	40	JA Lewis	T	3:30PM	5:30PM	TORG 1040	15T
-82505	CS-1054	Intro to Programming in Java	B	0	40	JA Lewis	M	8:00AM	10:00AM	TORG 1020	08M
-82504	CS-1054	Intro to Programming in Java	B	0	40	JA Lewis	T	2:00PM	4:00PM	TORG 1020	14T
-82503	CS-1054	Intro to Programming in Java	B	0	40	JA Lewis	M	4:00PM	6:00PM	TORG 1020	16M
-82502	CS-1054	Intro to Programming in Java	B	0	40	JA Lewis	M	10:10AM	12:10PM	TORG 1020	10M
-82501	CS-1054	Intro to Programming in Java	B	0	40	JA Lewis	M	12:20PM	2:20PM	TORG 1020	12M
+82507	CS-1054	Intro to Programming in Java	B	0	20	JA Lewis	T	8:00AM	10:00AM	TORG 1040	08T
+82506	CS-1054	Intro to Programming in Java	B	0	20	JA Lewis	T	3:30PM	5:30PM	TORG 1040	15T
+82505	CS-1054	Intro to Programming in Java	B	0	20	JA Lewis	M	8:00AM	10:00AM	TORG 1020	08M
+82504	CS-1054	Intro to Programming in Java	B	0	20	JA Lewis	T	2:00PM	4:00PM	TORG 1020	14T
+82503	CS-1054	Intro to Programming in Java	B	0	20	JA Lewis	M	4:00PM	6:00PM	TORG 1020	16M
+82502	CS-1054	Intro to Programming in Java	B	0	20	JA Lewis	M	10:10AM	12:10PM	TORG 1020	10M
+82501	CS-1054	Intro to Programming in Java	B	0	20	JA Lewis	M	12:20PM	2:20PM	TORG 1020	12M
 89426	CS-3704	Intermed Software Des	L	3	50	KR Edmison	M W	2:30PM	3:45PM	SURGE 109	14M
-82570	CS-3704	Intermed Software Des	L	3	72	O Balci	T R	11:00AM	12:15PM	GOODW 145	11T
+82570	CS-3704	Intermed Software Des	L	3	50	O Balci	T R	11:00AM	12:15PM	GOODW 145	11T
 88901	CS-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 88900	CS-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 88899	CS-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 88898	CS-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 88897	CS-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	(ARR)	00X
 82556	CS-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-82555	CS-2974	Independent Study	I	1	0	GV Back	(ARR)	(ARR)	TBA	00X
-82563	CS-3304	Comparative Languages	L	3	120	E Tilevich	M W	4:00PM	5:15PM	SURGE 104C	16M
-82562	CS-3304	Comparative Languages	L	3	120	N Meng	T R	12:30PM	1:45PM	SURGE 104B	12T
+82555	CS-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
+82563	CS-3304	Comparative Languages	L	3	75	E Tilevich	M W	4:00PM	5:15PM	SURGE 104C	16M
+82562	CS-3304	Comparative Languages	L	3	75	N Meng	T R	12:30PM	1:45PM	SURGE 104B	12T
 88910	CS-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 88909	CS-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 88908	CS-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -2553,7 +2553,7 @@
 82614	CS-5644	Machine Learning with Big Data	O	3	50	N Ramakrishnan	(ARR)	(ARR)	TBA	00X
 82582	CS-4634	Design Of Information	L	3	60	SR Harrison	T R	12:30PM	1:45PM	SURGE 109	12T
 82606	CS-5525	Data Analytics	L	3	40	Staff	M W F	8:00AM	8:50AM	HUTCH 204	08M
-82574	CS-3744	Intro GUI Programming/Graphics	L	3	75	D Gracanin	T R	8:00AM	9:15AM	SURGE 109	08T
+82574	CS-3744	Intro GUI Programming/Graphics	L	3	90	D Gracanin	T R	8:00AM	9:15AM	HOLD AUD	08T
 82617	CS-5724	Models of HCI	L	3	40	DS McCrickard	T	3:30PM	6:15PM	MCB 218	15T
 82613	CS-5604	Info Storage and Ret	L	3	40	EA Fox	T R	3:30PM	4:45PM	MCB 230	15T
 89358	CS-3824	Intro Comp Bio Bioinformatics	L	3	30	L Zhang	T R	9:30AM	10:45AM	MCB 302	09T
@@ -2629,7 +2629,7 @@
 82715	ECE-2274	Elctrnc Netwks Lab I	B	1	16	RF Cooper	W	8:00AM	10:50AM	WHIT 251	08W
 82714	ECE-2274	Elctrnc Netwks Lab I	B	1	16	RF Cooper	M	8:00AM	10:50AM	WHIT 251	08M
 88335	ECE-2074	Electic Circuit Analysis Lab	B	1	125	Staff	W	4:00PM	5:15PM	ENGEL 223	16W
-82711	ECE-2074	Electic Circuit Analysis Lab	B	1	250	Staff	R	5:00PM	6:15PM	GOODW 190	17R
+82711	ECE-2074	Electic Circuit Analysis Lab	B	1	200	Staff	R	5:00PM	6:15PM	GOODW 190	17R
 82731	ECE-2504	Intro Computer Engr	L	3	70	Staff	M W F	8:00AM	8:50AM	WLH 330	08M
 82730	ECE-2504	Intro Computer Engr	L	3	70	Staff	M W F	11:15AM	12:05PM	SURGE 103A	11M
 82729	ECE-2504	Intro Computer Engr	L	3	70	Staff	M W F	10:10AM	11:00AM	SURGE 103A	10M
@@ -2637,7 +2637,7 @@
 82727	ECE-2504	Intro Computer Engr	L	3	70	Staff	M W F	1:25PM	2:15PM	SURGE 103A	13M
 82802	ECE-4805	Senior Design Project	L	3	150	Staff	T R	8:00AM	9:15AM	TORG 3100	08T
 88337	ECE-4806	Senior Design Project	L	3	150	Staff	T R	8:00AM	9:15AM	TORG 3100	08T
-82726	ECE-2500	Computer Org & Architecture	L	3	75	Staff	T R	5:00PM	6:15PM	SURGE 118B	17T
+82726	ECE-2500	Computer Org & Architecture	L	3	100	Staff	T R	5:00PM	6:15PM	SURGE 104B	17T
 82705	ECE-1574	Engr Problem Solving with C++	O	3	100	Staff	(ARR)	(ARR)	TBA	CTE
 82704	ECE-1574	Engr Problem Solving with C++	L	3	45	Staff	T	5:00PM	6:50PM	RAND 220	CTE	fill	M W	11:15AM	12:05PM	HAN 100
 82703	ECE-1574	Engr Problem Solving with C++	L	3	45	Staff	T	5:00PM	6:50PM	RAND 320	CTE	fill	M W	11:15AM	12:05PM	HAN 100
@@ -2657,18 +2657,18 @@
 82984	ECE-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 82983	ECE-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 82982	ECE-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-82981	ECE-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-82782	ECE-4205	Electronic Circuit Design	L	3	35	Staff	M W F	2:30PM	3:20PM	RAND 121	14M
+82981	ECE-5974	Independent Study	I	1	0	DS Ha	(ARR)	(ARR)	TBA	00X
+82782	ECE-4205	Electronic Circuit Design	L	3	50	Staff	M W F	2:30PM	3:20PM	NCB 250	14M
 82790	ECE-4525	Video Game Design and Eng	L	3	45	Staff	M W	5:30PM	6:45PM	RAND 220	17M
 82786	ECE-4405	Control Systems	L	3	49	Staff	M W F	10:10AM	11:00AM	DURHM 261	10M
 82742	ECE-2704	Signals and Systems	L	3	80	Staff	T R	11:00AM	12:15PM	RAND 221	11T
-82741	ECE-2704	Signals and Systems	L	3	80	Staff	T R	8:00AM	9:15AM	RAND 221	08T
+82741	ECE-2704	Signals and Systems	L	3	100	Staff	T R	8:00AM	9:15AM	ROB 210	08T
 82799	ECE-4605	Radio Engineering	O	3	30	Staff	(ARR)	(ARR)	TBA	00X
 82796	ECE-4540	VLSI Circuit Design	L	3	34	Staff	T R	5:00PM	6:15PM	RAND 121	17T
 82825	ECE-5104G	ADV Microwave & RF Engineering	L	3	20	M Manteghi	M W F	10:10AM	11:00AM	WLH 335	10M
 82836	ECE-5234	EMI Noise Reduction	L	3	30	Staff	T R	8:00AM	9:15AM	RAND 206A	08T
 82863	ECE-5674	Software Radios	L	3	30	Staff	M W	4:00PM	5:15PM	RAND 318	16M
-82846	ECE-5510	Multiprocessor Programming	L	3	40	Staff	T R	2:00PM	3:15PM	NCB 170	14T
+82846	ECE-5510	Multiprocessor Programming	L	3	40	Staff	T R	2:00PM	3:15PM	TBA	14T
 82848	ECE-5554	Computer Vision	L	3	70	Staff	T R	3:30PM	4:45PM	SURGE 104C	15T
 83099	ECE-5994	Research and Thesis	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 83098	ECE-5994	Research and Thesis	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -2770,12 +2770,12 @@
 83002	ECE-5994	Research and Thesis	R	1	99	S Rahman	(ARR)	(ARR)	TBA	00X
 83001	ECE-5994	Research and Thesis	R	1	99	W Zhou	(ARR)	(ARR)	TBA	00X
 83000	ECE-5994	Research and Thesis	R	1	99	TC Poon	(ARR)	(ARR)	TBA	00X
-88710	ECE-3574	Applied Software Design	L	3	80	Staff	T R	12:30PM	1:45PM	RAND 221	12T
-82773	ECE-3574	Applied Software Design	L	3	80	Staff	T R	11:00AM	12:15PM	SURGE 104A	11T
+88710	ECE-3574	Applied Software Design	L	3	100	Staff	T R	12:30PM	1:45PM	SURGE 118C	12T
+82773	ECE-3574	Applied Software Design	L	3	100	Staff	T R	11:00AM	12:15PM	SURGE 104A	11T
 82760	ECE-3254	Industrial Electronics	L	3	140	Staff	M W F	9:05AM	9:55AM	SURGE 118C	09M
 82759	ECE-3254	Industrial Electronics	L	3	135	Staff	M W F	11:15AM	12:05PM	SURGE 118C	11M
 82753	ECE-3054	Electrical Theory	L	3	120	Staff	M W F	12:20PM	1:10PM	SURGE 104B	12M
-82752	ECE-3054	Electrical Theory	L	3	120	Staff	M W F	12:20PM	1:10PM	SURGE 104C	12M
+82752	ECE-3054	Electrical Theory	L	3	75	Staff	M W F	12:20PM	1:10PM	WLH 340	12M
 82833	ECE-5194	Remote Sensing Prin & Tech	L	3	20	Staff	M W F	12:20PM	1:10PM	RAND 121	12M
 82965	ECE-5904	Project and Report	R	1	99	WA Scales	(ARR)	(ARR)	TBA	00X
 82964	ECE-5904	Project and Report	R	1	99	GQ Lu	(ARR)	(ARR)	TBA	00X
@@ -2874,9 +2874,14 @@
 82871	ECE-5904	Project and Report	R	1	99	WG Odendaal	(ARR)	(ARR)	TBA	00X
 82870	ECE-5904	Project and Report	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 82758	ECE-3204	Analog Electronics	L	3	80	Staff	M W	2:30PM	3:45PM	SURGE 104D	14M
-82751	ECE-3004	AC Circuit Analysis	L	3	49	Staff	T R	9:30AM	10:45AM	RAND 129	09T
+82751	ECE-3004	AC Circuit Analysis	L	3	60	Staff	T R	9:30AM	10:45AM	MCB 129	09T
 82750	ECE-3004	AC Circuit Analysis	L	3	80	Staff	T R	9:30AM	10:45AM	SURGE 118B	09T
-82785	ECE-4334	Pwr Syst Ana & Cntrl	L	3	35	Staff	T R	11:00AM	12:15PM	RAND 121	11T
+82785	ECE-4334	Pwr Syst Ana & Cntrl	L	3	35	Staff	T R	8:00AM	9:15AM	RAND 208	08T
+89536	ECE-5984	SS: Adv Certified Program	O	3	20	B Ravindran	M W	5:30PM	6:45PM	TBA	17M
+89535	ECE-5984	SS:Adv Linus Kernel Programmng	O	3	20	B Ravindran	T R	11:00AM	12:15PM	TBA	11T
+89529	ECE-5984	SS: Adv Linux Kernel Prgrm	L	3	19	B Ravindran	T R	11:00AM	12:15PM	TBA	11T
+89528	ECE-5984	SS: Adv Certified Program	L	3	19	B Ravindran	M W	5:30PM	6:45PM	TORG 1050	17M
+89511	ECE-5984	SS:Cybersecurity and the IOT	O	3	65	KE Giles	(ARR)	(ARR)	TBA	00X
 88728	ECE-6634	Multi-Channel Communications	L	3	30	Staff	T R	9:30AM	10:45AM	RAND 206A	09T
 82827	ECE-5105	Electromagnetic Waves	O	3	20	Staff	(ARR)	(ARR)	TBA	00X
 82826	ECE-5105	Electromagnetic Waves	L	3	25	Staff	T R	9:30AM	10:45AM	TORG 1050	09T
@@ -2905,7 +2910,7 @@
 82843	ECE-5484	Fundamentals Computer Systems	O	3	50	KE Giles	(ARR)	(ARR)	TBA	00X
 88368	ECE-5485	Networks and Protocols	O	3	50	Y Yang	(ARR)	(ARR)	TBA	00X
 82834	ECE-5200	Semiconductor Heterostructures	L	3	30	LJ Guido	T R	5:00PM	6:15PM	MCB 216	17T
-82840	ECE-5424G	Advanced Machine Learning	L	3	45	B Huang	T R	9:30AM	10:45AM	MCB 113	09T
+82840	ECE-5424G	Advanced Machine Learning	L	3	45	B Huang	T R	9:30AM	10:45AM	TORG 1060	09T
 82851	ECE-5565	Network Arch and Protocols	L	3	49	Staff	T R	2:00PM	3:15PM	RAND 129	14T
 82710	ECE-2054	Applied Electrical Theory	L	3	200	Staff	M W F	10:10AM	11:00AM	WHIT 300	10M
 82774	ECE-3614	Intro Comm Systems	L	3	80	Staff	T R	9:30AM	10:45AM	RAND 221	09T
@@ -2914,15 +2919,17 @@
 82712	ECE-2204	Electronics	L	3	100	Staff	M W F	11:15AM	12:05PM	SURGE 117A	11M
 82707	ECE-2004	Electric Circuit Analysis	L	3	126	Staff	M W F	9:05AM	9:55AM	SURGE 104C	09M
 82706	ECE-2004	Electric Circuit Analysis	L	3	140	Staff	M W F	12:20PM	1:10PM	SURGE 118C	12M
-82783	ECE-4224	Power Electronics	L	3	40	Staff	M W	4:00PM	5:15PM	RAND 208	16M
+82783	ECE-4224	Power Electronics	L	3	50	Staff	M W	4:00PM	5:15PM	ROB 105	16M
 88706	ECE-4664	Analog/Dig Comm Lab	B	1	16	Staff	W	6:00PM	8:50PM	WHIT 619	18W
 82778	ECE-4104	Microwave and RF Engineering	L	4	15	Staff	M W F	10:10AM	11:00AM	WLH 335	10M
+89531	ECE-4984	SS: Linux Kernel Programming	L	3	19	B Ravindran	T R	11:00AM	12:15PM	TBA	11T
+89530	ECE-4984	SS: Certified Programming	L	3	19	B Ravindran	M W	5:30PM	6:45PM	TBA	17M
 89079	ECE-4984	SS:Multimedia Signal Processng	L	3	20	J Xuan	R	4:00PM	6:45PM	WHIT 281	16R
 89078	ECE-4984	SS: Network Science	L	3	20	W Saad	T R	3:30PM	4:45PM	GOODW 241	15T
 82839	ECE-5314	Pwr Sys Oper and Ctrl	L	3	25	Staff	T R	5:00PM	6:15PM	RAND 222	17T
 82866	ECE-5754	Applied Linear Systems	O	3	15	SC Southward	(ARR)	(ARR)	TBA	00X
 82865	ECE-5754	Applied Linear Systems	L	3	55	SC Southward	T R	11:00AM	12:15PM	DURHM 261	11T
-82787	ECE-4424	Machine Learning	L	3	45	B Huang	T R	9:30AM	10:45AM	MCB 113	09T
+82787	ECE-4424	Machine Learning	L	3	30	B Huang	T R	9:30AM	10:45AM	TORG 1060	09T
 82784	ECE-4304	Design in Power Engineering	L	3	24	Staff	M W	2:30PM	3:45PM	ROB 116	14M
 88736	ECE-5635	Radar Systems Design	O	3	30	Staff	T R	5:00PM	6:15PM	TBA	17T
 88732	ECE-5635	Radar Systems Design	L	3	38	Staff	T R	5:00PM	6:15PM	TORG 1000	17T
@@ -3051,11 +3058,11 @@
 82766	ECE-3354	Power Laboratory	B	1	16	RF Cooper	T	8:00AM	10:50AM	WHIT 430	08T
 82764	ECE-3274	Elctrnc Circuits Lab II	B	1	16	RF Cooper	R	12:30PM	3:20PM	WHIT 253	12R
 82763	ECE-3274	Elctrnc Circuits Lab II	B	1	16	RF Cooper	T	12:30PM	3:20PM	WHIT 253	12T
-82762	ECE-3274	Elctrnc Circuits Lab II	B	1	16	RF Cooper	R	8:00AM	10:50AM	WHIT 253	08R
+82762	ECE-3274	Elctrnc Circuits Lab II	B	1	16	RF Cooper	R	12:30PM	3:20PM	WHIT 251	12R
 82761	ECE-3274	Elctrnc Circuits Lab II	B	1	16	RF Cooper	T	8:00AM	10:50AM	WHIT 253	08T
 82828	ECE-5134G	ADV Fiber Optics & Application	L	3	15	Staff	T R	2:00PM	3:15PM	RAND 222	14T
 88336	ECE-3074	AC Circuit Analysis Laboratory	B	1	120	Staff	T	5:00PM	6:15PM	TORG 3100	17T
-88711	ECE-3704	Cont and Disc Systems	L	3	80	Staff	M W F	1:25PM	2:15PM	RAND 221	13M
+88711	ECE-3704	Cont and Disc Systems	L	3	100	Staff	M W F	1:25PM	2:15PM	ROB 210	13M
 88705	ECE-3704	Cont and Disc Systems	O	3	40	Staff	T R	2:00PM	3:15PM	TORG 1030	14T
 82737	ECE-2534	Microcontroller Interfacing	L	4	42	Staff	(ARR)	(ARR)	TBA	13M	fill	M W F	1:25PM	2:15PM	RAND 116
 82736	ECE-2534	Microcontroller Interfacing	L	4	42	Staff	T R	8:00AM	9:15AM	RAND 318	08T
@@ -3078,7 +3085,7 @@
 82770	ECE-3544	Digital Design I	L	4	49	Staff	M W F	12:20PM	1:10PM	NCB 250	12M
 82709	ECE-2014	Engr Professionalism ECE	L	2	140	Staff	T R	9:30AM	10:20AM	SURGE 118C	09T
 82708	ECE-2014	Engr Professionalism ECE	L	2	150	Staff	T R	12:30PM	1:20PM	WHIT 300	12T
-82740	ECE-2574	Data Structures and Algorithms	L	3	75	Staff	M W F	12:20PM	1:10PM	WLH 340	12M
+82740	ECE-2574	Data Structures and Algorithms	L	3	75	Staff	M W F	12:20PM	1:10PM	SURGE 104C	12M
 82739	ECE-2574	Data Structures and Algorithms	L	3	75	Staff	M W F	2:30PM	3:20PM	WLH 320	14M
 82797	ECE-4554	Intro to Computer Vision	L	3	50	Staff	T R	3:30PM	4:45PM	SURGE 104C	15T
 82824	ECE-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -3230,6 +3237,7 @@
 83398	EDCO-7994	Research and Dissertation	R	1	25	Staff	(ARR)	(ARR)	TBA	00X
 89266	EDCO-6304	Clinical Supervision	L	3	20	LE Welfare	W	1:00PM	3:50PM	TBA	13W
 83394	EDCO-6524	Doctoral Internship	L	1	10	LE Welfare	R	9:00AM	11:50AM	TBA	09R
+89551	EDCO-6534	DSM Application in Counseling	L	3	0	Staff	(ARR)	(ARR)	TBA	00X
 89265	EDCO-6404	Adv Theory & Cultural Implic	L	3	20	NE Bodenhorn	T	1:00PM	3:50PM	GYM 234	13T
 83403	EDCT-5274	Internship in Business	L	3	15	WT Price	(ARR)	(ARR)	TBA	00X
 83414	EDCT-7994	Research and Dissertation	R	1	20	WT Price	(ARR)	(ARR)	TBA	00X
@@ -3333,7 +3341,7 @@
 83548	EDRE-6654	Mult Stat App Ed Prob	L	3	20	Staff	R	1:00PM	3:50PM	GYM 220G	13R
 83540	EDRE-6524	Qual Res II	L	3	20	Staff	M	9:00AM	11:50AM	GYM 234	09M
 83547	EDRE-6634	Adv Stat for Educ	L	3	15	Staff	W	4:00PM	6:50PM	GYM 220G	16W
-83553	EDRE-6744	Mxd Method Research Dsgn	L	3	20	Staff	T	1:00PM	3:50PM	TBA	13T
+83553	EDRE-6744	Mxd Method Research Dsgn	L	3	20	Staff	T	1:00PM	3:50PM	GYM 220F	13T
 83536	EDRE-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 83555	EDRE-7964	Field Studies in Education	L	1	25	Staff	(ARR)	(ARR)	TBA	00X
 83539	EDRE-6504	Qualitative Res I	L	3	20	SF Hein	M	4:00PM	6:50PM	GYM 220L	16M
@@ -3341,11 +3349,8 @@
 83554	EDRE-7714	Internship in Education	L	1	25	Staff	(ARR)	(ARR)	TBA	00X
 89373	EDRE-6605	Quan Res Methods in Educ I	O	3	20	Staff	(ARR)	(ARR)	TBA	00X
 83543	EDRE-6605	Quan Res Methods in Educ I	L	3	20	DJ Kniola	M	1:00PM	3:50PM	GYM 234	13M
-83542	EDRE-6605	Quan Res Methods in Educ I	L	3	20	Staff	T	4:00PM	6:50PM	TBA	16T
 83541	EDRE-6605	Quan Res Methods in Educ I	L	3	20	DJ Kniola	T	9:00AM	11:50AM	GYM 234	09T
-83552	EDRE-6704	Eval Meth in Ed	L	3	20	PL Burge	R	4:00PM	6:50PM	GYM 234	16R
-83551	EDRE-6704	Eval Meth in Ed	L	3	20	DJ Kniola	W	1:00PM	3:50PM	GYM 400	13W
-83546	EDRE-6606	Quan Res Methods in Educ II	L	3	20	Staff	W	1:00PM	3:50PM	GYM 220F	13W
+83551	EDRE-6704	Eval Meth in Ed	L	3	20	DJ Kniola	W	1:00PM	3:50PM	GYM 220G	13W
 83559	EDTE-5974	Independent Study	O	1	0	JG Wells	(ARR)	(ARR)	TBA	00X
 83558	EDTE-5974	Independent Study	I	1	0	JG Wells	F	10:00AM	12:50PM	GYM 118	10F
 83657	ENGE-7994	Research and Dissertation	R	1	10	CB Williams	(ARR)	(ARR)	TBA	00X
@@ -3365,18 +3370,18 @@
 83643	ENGE-7994	Research and Dissertation	R	1	10	MC Paretti	(ARR)	(ARR)	TBA	00X
 83634	ENGE-5014	Found Engineering Education	L	3	20	MC Paretti	M	12:30PM	3:15PM	GOODW 241	12M
 83641	ENGE-5994	Research and Thesis	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
-89118	ENGE-1216	Foundations of Engineering	L	2	30	Staff	T R	3:30PM	4:45PM	RAND 316	CTE
+89118	ENGE-1216	Foundations of Engineering	L	2	0	Staff	T R	3:30PM	4:45PM	RAND 316	CTE
 89117	ENGE-1216	Foundations of Engineering	L	2	30	Staff	T R	2:00PM	3:15PM	RAND 316	CTE
 89116	ENGE-1216	Foundations of Engineering	L	2	30	Staff	T R	12:30PM	1:45PM	RAND 316	CTE
 89115	ENGE-1216	Foundations of Engineering	L	2	30	Staff	T R	11:00AM	12:15PM	RAND 316	CTE
 89114	ENGE-1216	Foundations of Engineering	L	2	30	Staff	T R	9:30AM	10:45AM	RAND 316	CTE
-89113	ENGE-1216	Foundations of Engineering	L	2	30	Staff	T R	8:00AM	9:15AM	RAND 316	CTE
+89113	ENGE-1216	Foundations of Engineering	L	2	0	Staff	T R	8:00AM	9:15AM	RAND 316	CTE
 89112	ENGE-1216	Foundations of Engineering	L	2	30	Staff	M W	4:00PM	5:15PM	RAND 316	CTE
 89111	ENGE-1216	Foundations of Engineering	L	2	30	Staff	M W	2:30PM	3:45PM	RAND 316	CTE
 89110	ENGE-1216	Foundations of Engineering	L	2	30	Staff	M W	1:00PM	2:15PM	RAND 316	CTE
 89109	ENGE-1216	Foundations of Engineering	L	2	30	Staff	M W	11:15AM	12:30PM	RAND 316	CTE
-89108	ENGE-1216	Foundations of Engineering	L	2	30	Staff	M W	9:45AM	11:00AM	RAND 316	CTE
-89107	ENGE-1216	Foundations of Engineering	L	2	30	Staff	M W	8:00AM	9:15AM	RAND 316	CTE
+89108	ENGE-1216	Foundations of Engineering	L	2	0	Staff	M W	9:45AM	11:00AM	RAND 316	CTE
+89107	ENGE-1216	Foundations of Engineering	L	2	0	Staff	M W	8:00AM	9:15AM	RAND 316	CTE
 83627	ENGE-1216	Foundations of Engineering	L	2	0	Staff	R	11:00AM	12:15PM	TORG 1020	CTE	fill	T	9:30AM	10:45AM	RAND 120
 83626	ENGE-1216	Foundations of Engineering	L	2	0	Staff	W	2:30PM	3:45PM	SURGE 104A	CTE	fill	M	2:30PM	3:45PM	GOODW 244
 83625	ENGE-1216	Foundations of Engineering	L	2	0	Staff	W	11:15AM	12:30PM	RAND 120	CTE	fill	M	2:30PM	3:45PM	SURGE 107
@@ -3458,7 +3463,7 @@
 83632	ENGE-4974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 83635	ENGE-5504	Practicum in Engr Classroom	L	1	20	RM Goff	T	12:30PM	3:15PM	GOODW 244	12T
 83636	ENGE-5604	Engr Education Rsrch Mthds	L	3	20	JR Grohs	W	12:30PM	3:15PM	GOODW 241	12W
-83642	ENGE-6714	TS:Race, Class, Gender&Beyond	L	3	15	MC Paretti	R	12:30PM	3:15PM	GOODW 244	12R
+89555	ENGE-6714	Topics in Engr Ed Res and Prac	L	3	0	Staff	R	12:30PM	3:15PM	GOODW 244	12R
 83637	ENGE-5704	EngE Graduate Seminar	L	1	30	VK Lohani	F	10:30AM	12:00PM	GOODW 145	10F
 83633	ENGE-4994H	Undergraduate Research	R	1	3	MC Paretti	(ARR)	(ARR)	TBA	00X
 88664	ENGL-5064	Topics in Language	L	3	15	AJ Walker	M	4:00PM	6:50PM	SHANK 242	16M
@@ -3474,7 +3479,7 @@
 88629	ENGL-2744	Intro Creative Writ	L	3	0	Staff	M W F	1:25PM	2:15PM	MCB 316	13M
 83836	ENGL-2744	Intro Creative Writ	L	3	22	JR Scallorns	T R	2:00PM	3:15PM	WHIT 349	14T
 83835	ENGL-2744	Intro Creative Writ	L	3	0	Staff	M W F	9:05AM	9:55AM	AA 101	09M
-83833	ENGL-2744	Intro Creative Writ	L	3	22	G Voros	M W F	10:10AM	11:00AM	AA 101	10M
+83833	ENGL-2744	Intro Creative Writ	L	3	22	Staff	M W F	10:10AM	11:00AM	AA 101	10M
 83832	ENGL-2744	Intro Creative Writ	L	3	0	Staff	T R	12:30PM	1:45PM	MAJWM 334	12T
 83830	ENGL-2744	Intro Creative Writ	L	3	22	JR Scallorns	T R	3:30PM	4:45PM	HOLD 114	15T
 83829	ENGL-2744	Intro Creative Writ	L	3	22	CN Bean	M W F	9:05AM	9:55AM	MCB 233	09M
@@ -3548,7 +3553,7 @@
 83739	ENGL-1106	First-Year Writing	L	3	20	LC Skinner	M W F	9:05AM	9:55AM	WHIT 349	09M
 83737	ENGL-1106	First-Year Writing	L	3	20	MS Smith	T R	11:00AM	12:15PM	GOODW 244	11T
 83736	ENGL-1106	First-Year Writing	L	3	20	SR Conaway	M W F	9:05AM	9:55AM	AA 109	09M
-83893	ENGL-3804	Technical Editing and Style	L	3	22	C Commer	T R	2:00PM	3:15PM	AA 104A	14T
+83893	ENGL-3804	Technical Editing and Style	L	3	22	MR Armstrong	T R	2:00PM	3:15PM	AA 104A	14T
 88885	ENGL-1105	First-Year Writing	L	3	20	JT Truscello	M W F	11:15AM	12:05PM	AA 114	11M
 88884	ENGL-1105	First-Year Writing	L	3	20	JT Truscello	M W F	10:10AM	11:00AM	WMS 320	10M
 88883	ENGL-1105	First-Year Writing	L	3	20	R Uren	M W F	10:10AM	11:00AM	WMS 134	10M
@@ -3638,10 +3643,10 @@
 83661	ENGL-0014	Oral Comm International TAs	L	1	11	SL Prater	T R	3:30PM	4:45PM	MCB 207	15T
 83660	ENGL-0014	Oral Comm International TAs	L	1	14	SL Prater	M W	2:30PM	3:45PM	HOLD 303	14M
 83659	ENGL-0014	Oral Comm International TAs	L	1	12	SL Prater	M W	4:00PM	5:15PM	HOLD 303	16M
-89435	ENGL-3324	Acts of Interpretation	L	3	35	J Sano-Franchini	T R	12:30PM	1:45PM	MCB 322	12T
+89435	ENGL-3324	Acts of Interpretation	L	3	35	C Commer	T R	12:30PM	1:45PM	MCB 322	12T
 83844	ENGL-3324	Acts of Interpretation	L	3	35	GE Chandler-Smith	T R	12:30PM	1:45PM	RAND 206	12T
 88633	ENGL-4214	Milton	L	3	35	K Cleland	T R	3:30PM	4:45PM	MCB 316	15T
-88658	ENGL-3764	Technical Writing	O	3	0	Staff	(ARR)	(ARR)	TBA	00X
+88658	ENGL-3764	Technical Writing	O	3	0	J Sano-Franchini	(ARR)	(ARR)	TBA	00X
 88652	ENGL-3764	Technical Writing	O	3	0	Staff	(ARR)	(ARR)	TBA	00X
 83885	ENGL-3764	Technical Writing	O	3	0	Staff	(ARR)	(ARR)	TBA	00X
 83884	ENGL-3764	Technical Writing	O	3	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -3657,7 +3662,7 @@
 83874	ENGL-3764	Technical Writing	O	3	22	MR Armstrong	(ARR)	(ARR)	TBA	00X
 83873	ENGL-3764	Technical Writing	O	3	22	MR Armstrong	(ARR)	(ARR)	TBA	00X
 83872	ENGL-3764	Technical Writing	O	3	22	MR Armstrong	(ARR)	(ARR)	TBA	00X
-83871	ENGL-3764	Technical Writing	O	3	22	MR Armstrong	(ARR)	(ARR)	TBA	00X
+83871	ENGL-3764	Technical Writing	O	3	22	Staff	(ARR)	(ARR)	TBA	00X
 83870	ENGL-3764	Technical Writing	L	3	22	EA Lautenschlager	T R	9:30AM	10:45AM	MCB 322	09T
 83866	ENGL-3764	Technical Writing	L	3	22	AM Kulak	M W F	9:05AM	9:55AM	HOLD 212	09M
 83865	ENGL-3764	Technical Writing	L	3	22	BE Covington	M W F	11:15AM	12:05PM	PAM 1003	11M
@@ -3719,7 +3724,7 @@
 83888	ENGL-3774	Business Writing	O	3	22	J Barton	(ARR)	(ARR)	TBA	00X
 88793	ENGL-2804	Contemporary Native Amer Lits	L	3	40	SR Cook	M W F	10:10AM	11:00AM	MCB 240	10M
 83856	ENGL-3734	Community Writing	L	3	22	A Murphy	T R	5:00PM	6:15PM	AA 101	17T
-88642	ENGL-4504	Modern Poetry	L	3	35	TM Gardner	T R	12:30PM	1:45PM	WHIT 277	12T
+88642	ENGL-4504	Modern Poetry	L	3	35	G Voros	T R	12:30PM	1:45PM	WHIT 277	12T
 88646	ENGL-2604	Intro to Critical Reading	L	3	22	PW Graham	T R	11:00AM	12:15PM	RAND 206	11T
 83819	ENGL-2604	Intro to Critical Reading	L	3	22	NA Metz	T R	2:00PM	3:15PM	WMS 320	14T
 83818	ENGL-2604	Intro to Critical Reading	L	3	22	NA Metz	T R	9:30AM	10:45AM	MCB 126	09T
@@ -3889,7 +3894,7 @@
 88537	ESM-5994	Research and Thesis	R	1	9999	AT Asbeck	(ARR)	(ARR)	TBA	00X
 88536	ESM-5994	Research and Thesis	R	1	9999	A Onufriev	(ARR)	(ARR)	TBA	00X
 88534	ESM-5994	Research and Thesis	R	1	9999	NT Abaid	(ARR)	(ARR)	TBA	00X
-88533	ESM-5994	Research and Thesis	R	1	0	Staff	(ARR)	(ARR)	(ARR)	00X
+88533	ESM-5994	Research and Thesis	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 84081	ESM-5994	Research and Thesis	R	1	9999	Staff	(ARR)	(ARR)	TBA	00X
 84046	ESM-3054	Mech Behavior of Materials	L	3	75	Staff	T R	9:30AM	10:45AM	SURGE 109	09T
 84069	ESM-5245G	Mechanics Animal Locomotion	L	3	10	Staff	M W	4:00PM	5:15PM	HOLD 110	16M
@@ -3982,8 +3987,8 @@
 84017	ESM-2014	Professnl Dvlpmnt Seminar ESM	L	1	100	RC Batra	T	2:00PM	3:15PM	SURGE 104A	14T
 84063	ESM-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 84083	ESM-6974	Independent Study	I	1	9999	Staff	(ARR)	(ARR)	TBA	00X
-84086	FA-2004	Creativity & the Artistic Exp	L	1	0	A Weinstein	W	12:20PM	1:10PM	SQUIR COLNL	12W
-84085	FA-2004	Creativity & the Artistic Exp	L	1	0	A Weinstein	M	12:20PM	1:10PM	SQUIR COLNL	12M
+84086	FA-2004	Creativity & the Artistic Exp	L	1	530	A Weinstein	W	12:20PM	1:10PM	SQUIR COLNL	12W
+84085	FA-2004	Creativity & the Artistic Exp	L	1	530	A Weinstein	M	12:20PM	1:10PM	SQUIR COLNL	12M
 89427	FCS-4974H	IS:Basic Cooking&Food Sel	I	3	0	Staff	(ARR)	(ARR)	TBA	00X
 88527	FCS-4964	Field Work/Practicum	L	1	0	JO Beamish	(ARR)	(ARR)	TBA	00X
 89359	FIN-4274	Equity Securities	L	3	40	P Ye	M W	2:30PM	3:45PM	PAM 3010	14M
@@ -3998,13 +4003,14 @@
 84146	FIN-4234	Venture Cap & Inv Banking	L	3	40	MT Kender	T R	9:30AM	10:45AM	PAM 3001	09T
 84125	FIN-3144	Investments: Debt-Equity-Deriv	L	3	40	T Wang	T R	11:00AM	12:15PM	AA 114	11T
 84124	FIN-3144	Investments: Debt-Equity-Deriv	L	3	40	H Li	T R	12:30PM	1:45PM	PAM 2028	12T
-84123	FIN-3144	Investments: Debt-Equity-Deriv	L	3	40	Staff	T R	3:30PM	4:45PM	PAM 1008	15T
+84123	FIN-3144	Investments: Debt-Equity-Deriv	L	3	40	T Wang	T R	3:30PM	4:45PM	PAM 1008	15T
 84122	FIN-3144	Investments: Debt-Equity-Deriv	L	3	34	T Wang	T R	2:00PM	3:15PM	PAM 2002	14T
 84120	FIN-3144	Investments: Debt-Equity-Deriv	L	3	0	Staff	T R	12:30PM	1:45PM	MCB 240	12T
 84144	FIN-4224	Fixed Income Securities	L	3	34	Staff	M W	4:00PM	5:15PM	PAM 2002	16M
 84143	FIN-4224	Fixed Income Securities	L	3	40	Staff	M W	2:30PM	3:45PM	PAM 2028	14M
 84133	FIN-4104	Retirement Planning	L	3	30	DD Klock	T R	3:30PM	4:45PM	WHIT 349	15T
 84132	FIN-4104	Retirement Planning	L	3	30	DD Klock	T R	11:00AM	12:15PM	DER 1084	11T
+89499	FIN-4984	SS:Commodity Invest Portfolios	L	3	35	CA Spicer	M W	2:30PM	3:45PM	PAM 3001	14M
 84145	FIN-4226	Analytics Fixed Inc. Port Mgmt	L	3	20	GE Morgan	W	7:00PM	9:00PM	PAM 2001	19W
 88962	FIN-4264	Managing Risk with Derivatives	L	3	30	CA Spicer	T R	2:00PM	3:15PM	PAM 1002	14T
 84151	FIN-4264	Managing Risk with Derivatives	L	3	40	CA Spicer	T R	12:30PM	1:45PM	PAM 3010	12T
@@ -4012,7 +4018,8 @@
 84172	FIN-7994	Research and Dissertation	R	1	0	J Xu	(ARR)	(ARR)	TBA	00X
 84171	FIN-7994	Research and Dissertation	R	1	0	GB Kadlec	(ARR)	(ARR)	TBA	00X
 84170	FIN-7994	Research and Dissertation	R	1	0	V Singal	(ARR)	(ARR)	TBA	00X
-84169	FIN-7994	Research and Dissertation	R	1	9999	JC Easterwood	(ARR)	(ARR)	TBA	00X
+84169	FIN-7994	Research and Dissertation	R	1	0	JC Easterwood	(ARR)	(ARR)	TBA	00X
+89510	FIN-4144	Int Fin Mgt	L	3	0	Staff	T R	3:30PM	4:45PM	PAM 2003	15T
 84138	FIN-4144	Int Fin Mgt	L	3	40	DM Patterson	T R	2:00PM	3:15PM	PAM 3010	14T
 84137	FIN-4144	Int Fin Mgt	L	3	60	DM Patterson	T R	11:00AM	12:15PM	PAM 31	11T
 84149	FIN-4244	Asset Valuation & Governance	L	3	40	Staff	T R	12:30PM	1:45PM	PAM 1003	12T
@@ -4039,8 +4046,8 @@
 84094	FIN-2164	Survey of Finance and Careers	L	1	46	MT Kender	W	4:00PM	4:50PM	DER 1084	16W
 84093	FIN-2164	Survey of Finance and Careers	L	1	50	MT Kender	W	2:30PM	3:20PM	DER 3081	14W
 88870	FIN-3154	Corporate Finance	L	3	45	J Xu	T R	11:00AM	12:15PM	DER 3092	11T
-88869	FIN-3154	Corporate Finance	L	3	45	Staff	T R	11:00AM	12:15PM	TBA	11T
-84128	FIN-3154	Corporate Finance	L	3	0	Staff	T R	2:00PM	3:15PM	DER 3092	14T
+88869	FIN-3154	Corporate Finance	L	3	0	Staff	T R	11:00AM	12:15PM	TBA	11T
+84128	FIN-3154	Corporate Finance	L	3	47	Y Xie	T R	2:00PM	3:15PM	DER 3092	14T
 84127	FIN-3154	Corporate Finance	L	3	40	J Xu	T R	2:00PM	3:15PM	PAM 2028	14T
 84126	FIN-3154	Corporate Finance	L	3	40	J Xu	T R	9:30AM	10:45AM	PAM 3010	09T
 84107	FIN-3054	Legal & Ethical Env Bus	L	3	90	JT Showalter	T R	3:30PM	4:45PM	PAM 2030	15T
@@ -4057,12 +4064,10 @@
 84091	FIN-2114	Invest & Financial Literacy	L	3	50	CB Carter	M W	4:00PM	5:15PM	DER 3081	16M
 84090	FIN-2114	Invest & Financial Literacy	L	3	50	Staff	T R	11:00AM	12:15PM	GBJ 104	11T
 84089	FIN-2114	Invest & Financial Literacy	L	3	48	TB Reilly	T R	2:00PM	3:15PM	DER 1090	14T
-84088	FIN-2114	Invest & Financial Literacy	L	3	0	Staff	T R	3:30PM	4:45PM	PAM 2003	15T
 88977	FIN-3104	Introduction to Finance	L	3	560	AJ Keown	T R	11:00AM	12:15PM	SQUIR COLNL	11T
 84109	FIN-3104	Introduction to Finance	L	3	525	AJ Keown	T R	9:30AM	10:45AM	SQUIR COLNL	09T
 84110	FIN-3124	Fin Planning for Professionals	L	3	40	Staff	M W	2:30PM	3:45PM	PAM 1004	14M
 84134	FIN-4114	Fin Plan Technology & Modeling	L	3	25	DD Klock	M W	4:00PM	5:15PM	HUTCH 302	16M
-88980	FIN-4214	Financial Modeling in Excel	L	3	0	Staff	M W	2:30PM	3:45PM	PAM 3001	14M
 84141	FIN-4214	Financial Modeling in Excel	L	3	30	CA Spicer	T R	9:30AM	10:45AM	BUR 116	09T
 84188	FIW-5004	GS:Global Change Seminar	L	1	15	JR Walters	(ARR)	(ARR)	TBA	00X
 84187	FIW-5004	GS:Graduate Seminar	L	1	15	SM Karpanty	M	10:10AM	11:00AM	JCH 132	10M
@@ -4078,7 +4083,7 @@
 89350	FIW-5534G	Adv Wetland Ecology & Mgmt	L	3	5	JA Parkhurst	T	2:00PM	4:45PM	JCH 132	10M	fill	M W	10:10AM	11:00AM	JCH 212
 84183	FIW-4464	Human Dimensions F&W	L	3	70	AA Dayer	M W F	1:25PM	2:15PM	JCH 317BC	13M
 84192	FIW-5894	Final Examination	L	3	9999	Staff	(ARR)	(ARR)	TBA	00X
-89453	FIW-5114	Conservation Genetics	L	3	0	Staff	T R	4:00PM	5:15PM	JCH 133	16T
+89453	FIW-5114	Conservation Genetics	L	3	0	EM Hallerman	T R	4:00PM	5:15PM	JCH 133	16T
 84194	FIW-5994	Research and Thesis	R	1	9999	Staff	(ARR)	(ARR)	TBA	00X
 89201	FIW-6004	Topics:Pedagogy for Sciences	L	0	24	BR Murphy	W	4:00PM	7:00PM	JCH 317A	16W
 84196	FIW-6004	Topics: Fisheries & Wildlife	L	0	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -4132,18 +4137,16 @@
 84237	FR-4974H	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 84217	FR-1105	Elementary French	L	3	28	Staff	M W F	12:20PM	1:10PM	PAM 2001	12M
 84216	FR-1105	Elementary French	L	3	28	Staff	M W F	10:10AM	11:00AM	MCB 204	10M
-84215	FR-1105	Elementary French	L	3	28	Staff	M W F	11:15AM	12:05PM	GOODW 241	11M
+84215	FR-1105	Elementary French	L	3	28	FG Teulon	M W F	11:15AM	12:05PM	GOODW 241	11M
 84221	FR-2964	Field Study	L	1	0	Staff	(ARR)	(ARR)	TBA	00X
-88717	FR-3305	Survey of French Literature	L	3	25	A Dickow	T R	11:00AM	12:15PM	PAM 1003	11T
-84219	FR-2105	Intermediate French	L	3	28	S Mishra	M W F	10:10AM	11:00AM	GOODW 241	10M
-84218	FR-2105	Intermediate French	L	3	28	S Mishra	M W F	11:15AM	12:05PM	MCB 219	11M
-84222	FR-2974	Independent Study	I	1	0	NL Ross	(ARR)	(ARR)	TBA	00X
-84229	FR-3205	French Culture & Civ	L	3	22	Staff	T R	2:00PM	3:15PM	ROB 122	14T
-84228	FR-3205	French Culture & Civ	L	3	22	A Dickow	T R	12:30PM	1:45PM	GYM 219	12T
+89501	FR-2105	Intermediate French	L	3	20	Staff	M W F	12:20PM	1:10PM	WHIT 277	12M
+84219	FR-2105	Intermediate French	L	3	20	S Mishra	M W F	10:10AM	11:00AM	GOODW 241	10M
+84218	FR-2105	Intermediate French	L	3	15	S Mishra	M W F	11:15AM	12:05PM	MCB 219	11M
+84222	FR-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
+84228	FR-3205	French Culture & Civ	L	3	30	A Dickow	T R	12:30PM	1:45PM	GYM 219	12T
 84230	FR-3304	Intro French Lit	L	3	25	S Mishra	T R	11:00AM	12:15PM	JCH 317A	11T
-84225	FR-3105	Gram/Comp/Con	L	3	20	C Noirot	M W F	12:20PM	1:10PM	WHIT 277	12M
-84224	FR-3105	Gram/Comp/Con	L	3	20	FG Teulon	M W F	10:10AM	11:00AM	HUTCH 409	10M
-84223	FR-3105	Gram/Comp/Con	L	3	20	C Noirot	M W F	11:15AM	12:05PM	MAJWM 532	11M
+84224	FR-3105	Gram/Comp/Con	L	3	22	C Noirot	M W F	10:10AM	11:00AM	HUTCH 409	10M
+84223	FR-3105	Gram/Comp/Con	L	3	22	C Noirot	M W F	11:15AM	12:05PM	MAJWM 532	11M
 84231	FR-3314	Intro to Francophone Studies	L	3	25	S Mishra	T R	9:30AM	10:45AM	SEITZ 207	09T
 84226	FR-3125	French for Oral Proficiency	L	3	20	FG Teulon	M W F	12:20PM	1:10PM	WHIT 349	12M
 84238	FR-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -4172,14 +4175,13 @@
 84263	FREC-3754	Watersheds and Water Quality	L	3	25	DL McLaughlin	T R	12:30PM	1:45PM	JCH 220	12T
 84264	FREC-3954	Study Abroad	L	1	0	Staff	(ARR)	(ARR)	TBA	00X
 89433	FREC-3714	Forest Harvesting	L	0	25	Staff	T R	8:00AM	8:50AM	JCH 218	14R	fill	R	2:00PM	4:50PM	JCH 217
-84262	FREC-3714	Forest Harvesting	L	3	25	JA Vinson	T	2:00PM	5:50PM	JCH 317BC	12M	fill	M W	12:20PM	1:10PM	JCH 133
 84278	FREC-5374	Advanced Forest Ecology	L	3	15	CA Copenheaver	M W F	11:15AM	12:05PM	JCH 317A	11M
 89205	FREC-5034	Ecosystem Dynamics	L	4	30	Staff	T	3:30PM	5:30PM	DER 3094	14T	fill	T R	2:00PM	3:15PM	DER 3083
 84286	FREC-7994	Research and Dissertation	R	1	9999	Staff	(ARR)	(ARR)	TBA	00X
 88628	FREC-4364	Advanced Silviculture	L	3	30	TR Fox	F	1:30PM	4:30PM	JCH 212	13F
 84270	FREC-4464	Water Resources Policy & Econ	L	3	24	KM Cobourn	M W	2:30PM	3:45PM	JCH 132	14M
 84281	FREC-5894	Final Examination	L	3	9999	Staff	(ARR)	(ARR)	TBA	00X
-89086	FREC-5114	Geospatial PROG Analyt Methods	L	3	0	Staff	(ARR)	(ARR)	(ARR)	00X
+89086	FREC-5114	Geospatial PROG Analyt Methods	L	3	0	Staff	(ARR)	(ARR)	TBA	00X
 84285	FREC-5994	Research and Thesis	R	1	9999	Staff	(ARR)	(ARR)	TBA	00X
 88657	FREC-3354	Trees in the Built Environment	L	3	32	PE Wiseman	T R	11:00AM	12:15PM	JCH 212	11T
 84261	FREC-3574	Enviro Education Service Learn	L	3	17	MJ Stern	T	9:30AM	10:45AM	JCH 133	09T
@@ -4187,10 +4189,10 @@
 84282	FREC-5904	Project and Report	L	1	9999	Staff	(ARR)	(ARR)	TBA	00X
 84250	FREC-2314	Forest Biology and Dendrology	L	2	105	JR Seiler	M W	11:15AM	12:05PM	LITRV 1870	11M
 84255	FREC-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-84249	FREC-2214	Intr Land & Field Measurements	L	3	21	PJ Radtke	W	2:30PM	5:20PM	JCH 220	12W	fill	W F	12:20PM	1:10PM	LITRV 1870
-84248	FREC-2214	Intr Land & Field Measurements	L	3	21	PJ Radtke	R	2:00PM	4:50PM	JCH 220	12W	fill	W F	12:20PM	1:10PM	LITRV 1870
-84247	FREC-2214	Intr Land & Field Measurements	L	3	21	PJ Radtke	T	3:15PM	6:05PM	JCH 220	12W	fill	W F	12:20PM	1:10PM	LITRV 1870
-89232	FREC-2114	Ecology of Appalachian Forests	L	3	95	Staff	M W F	9:05AM	9:55AM	NCB 120	09M
+84249	FREC-2214	Intr Land & Field Measurements	L	3	26	PJ Radtke	W	2:30PM	5:20PM	JCH 220	12W	fill	W F	12:20PM	1:10PM	LITRV 1870
+84248	FREC-2214	Intr Land & Field Measurements	L	3	26	PJ Radtke	R	2:00PM	4:50PM	JCH 220	12W	fill	W F	12:20PM	1:10PM	LITRV 1870
+84247	FREC-2214	Intr Land & Field Measurements	L	3	26	PJ Radtke	T	3:15PM	6:05PM	JCH 220	12W	fill	W F	12:20PM	1:10PM	LITRV 1870
+89232	FREC-2114	Ecology of Appalachian Forests	L	3	95	JR Seiler	M W F	9:05AM	9:55AM	NCB 120	09M
 84253	FREC-2554	Nature and American Values	L	3	110	RB Hull	T R	9:30AM	10:45AM	ENGEL 223	09T
 89210	FREC-2994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 84260	FREC-3564	Outdoor Recreation Planning	L	3	30	MG Sorice	T R	12:30PM	1:45PM	SMYTH 331	12T
@@ -4222,8 +4224,7 @@
 84297	FST-4534	Food Chemistry Lab	B	1	20	C Fernandez-Fraguas	T	2:00PM	4:50PM	FST 17	14T
 84299	FST-4974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 89285	FST-4304	Food Processing	L	4	25	H Huang	W	2:30PM	5:15PM	FST 132	10M	fill	M W F	10:10AM	11:00AM	FST 27
-89180	FST-4304	Food Processing	L	4	25	H Huang	M	2:30PM	5:15PM	FST 27	10M	fill	M W F	10:10AM	11:00AM	FST 27
-84305	FST-5404	Food Packaging	L	3	0	JE Marcy	M W F	1:25PM	2:15PM	FST 132	13M
+89180	FST-4304	Food Processing	L	4	25	H Huang	M	2:30PM	5:15PM	FST 132	10M	fill	M W F	10:10AM	11:00AM	FST 27
 88344	FST-5624	Appl Food Micro & Sanitation	O	3	50	JD Eifert	(ARR)	(ARR)	TBA	00X
 84296	FST-4504	Food Chemistry	L	3	60	C Fernandez-Fraguas	T R	12:30PM	1:45PM	FST 27	12T
 84320	GBCB-7994	Research and Dissertation	R	1	45	DR Bevan	(ARR)	(ARR)	TBA	00X
@@ -4236,7 +4237,7 @@
 84347	GEOG-4354	Introduction to Remote Sensing	L	3	35	JB Campbell	M F	2:00PM	3:15PM	TORG 1010	08M	fill	M W	8:00AM	8:50AM	TORG 3100
 84354	GEOG-5004	Current Geographic Research	L	1	30	LW Carstensen	F	12:20PM	1:10PM	MCB 136	12F
 84360	GEOG-5444	Topics in Physical Geography	L	3	10	LM Kennedy	W	12:30PM	3:00PM	MCB 207	12W
-84342	GEOG-3464	Appalachian Communities	L	3	40	AM Puckett	T R	12:30PM	1:45PM	LITRV 1760	12T
+84342	GEOG-3464	Appalachian Communities	L	3	45	AM Puckett	T R	12:30PM	1:45PM	LITRV 1760	12T
 84330	GEOG-2054	Introduction to World Politics	L	3	250	CI Thomas	M W	4:00PM	5:15PM	MCB 100	16M
 84329	GEOG-2054	Introduction to World Politics	L	3	20	Staff	T R	11:00AM	12:15PM	PAM 3001	11T
 84356	GEOG-5074G	Advanced Medical Geography	L	3	15	KN Kolivras	T R	12:30PM	1:45PM	MCB 129	12T
@@ -4245,7 +4246,7 @@
 84336	GEOG-2964	Field Study	L	1	0	MM Deisinger	(ARR)	(ARR)	TBA	00X
 84324	GEOG-1115	Seeking Sustainability	L	3	90	TD Baird	M W	2:30PM	3:45PM	NCB 120	14M
 89081	GEOG-2984	SS: Intro to Earth's Climate	L	3	50	A Ellis	T R	3:30PM	4:45PM	TORG 1060	15T
-84341	GEOG-3314	Cartography	L	3	48	SA Scales	M W	4:00PM	5:15PM	TORG 1010	12M	fill	M W	12:20PM	1:10PM	MCB 136
+84341	GEOG-3314	Cartography	L	3	45	SA Scales	M W	4:00PM	5:15PM	TORG 1010	12M	fill	M W	12:20PM	1:10PM	MCB 136
 89168	GEOG-1014	World Regions	L	3	500	JD Boyer	T R	5:00PM	6:15PM	MCB 100	17T
 84322	GEOG-1014	World Regions	O	3	2000	JD Boyer	(ARR)	(ARR)	TBA	00X
 84327	GEOG-2004	Intro Water Resources	L	3	40	L Juran	T R	9:30AM	10:45AM	MCB 136	09T
@@ -4267,11 +4268,11 @@
 84358	GEOG-5354G	Advanced Remote Sensing	L	3	5	JB Campbell	M F	12:20PM	1:35PM	TORG 1010	08M	fill	M W	8:00AM	8:50AM	TORG 3100
 84332	GEOG-2064	Global Econ and World Politics	L	3	20	Staff	M W F	12:20PM	1:10PM	MCB 232	12M
 84331	GEOG-2064	Global Econ and World Politics	L	3	20	Staff	T R	3:30PM	4:45PM	AA 7	15T
-89292	GEOG-2084	Principles of GIS	L	3	30	LW Carstensen	F	11:15AM	12:05PM	TORG 1080	13M	fill	M W	1:25PM	2:15PM	TORG 3100
-89291	GEOG-2084	Principles of GIS	L	3	50	LW Carstensen	F	8:00AM	8:50AM	TORG 1010	13M	fill	M W	1:25PM	2:15PM	TORG 3100
-89290	GEOG-2084	Principles of GIS	L	3	30	LW Carstensen	R	7:00PM	7:50PM	TORG 1080	13M	fill	M W	1:25PM	2:15PM	TORG 3100
-89289	GEOG-2084	Principles of GIS	L	3	30	LW Carstensen	R	6:00PM	6:50PM	TORG 1080	13M	fill	M W	1:25PM	2:15PM	TORG 3100
-89288	GEOG-2084	Principles of GIS	L	3	30	LW Carstensen	R	5:00PM	5:50PM	TORG 1080	13M	fill	M W	1:25PM	2:15PM	TORG 3100
+89292	GEOG-2084	Principles of GIS	L	3	25	LW Carstensen	F	11:15AM	12:05PM	TORG 1080	13M	fill	M W	1:25PM	2:15PM	TORG 3100
+89291	GEOG-2084	Principles of GIS	L	3	40	LW Carstensen	F	8:00AM	8:50AM	TORG 1010	13M	fill	M W	1:25PM	2:15PM	TORG 3100
+89290	GEOG-2084	Principles of GIS	L	3	25	LW Carstensen	R	7:00PM	7:50PM	TORG 1080	13M	fill	M W	1:25PM	2:15PM	TORG 3100
+89289	GEOG-2084	Principles of GIS	L	3	25	LW Carstensen	R	6:00PM	6:50PM	TORG 1080	13M	fill	M W	1:25PM	2:15PM	TORG 3100
+89288	GEOG-2084	Principles of GIS	L	3	25	LW Carstensen	R	5:00PM	5:50PM	TORG 1080	13M	fill	M W	1:25PM	2:15PM	TORG 3100
 84363	GEOG-5904	Project and Report	R	1	9999	KN Kolivras	(ARR)	(ARR)	TBA	00X
 84334	GEOG-2314	Maps and Mapping	L	3	85	SA Scales	M W	2:30PM	3:45PM	MCB 113	14M
 84337	GEOG-2974	Independent Study	I	1	0	MM Deisinger	(ARR)	(ARR)	TBA	00X
@@ -4282,26 +4283,26 @@
 84353	GEOG-4994	Undergraduate Research	R	1	0	MM Deisinger	(ARR)	(ARR)	TBA	00X
 84352	GEOG-4974	Independent Study	I	1	0	MM Deisinger	(ARR)	(ARR)	TBA	00X
 84325	GEOG-1504	Survey of Meteorology	L	1	30	DF Carroll	F	11:15AM	12:05PM	MCB 136	11F
-84433	GEOS-5634G	Adv Environmental Geochemistry	L	3	8	BC Gill	M W F	10:10AM	11:00AM	DER 3076	10M
+84433	GEOS-5634G	Adv Environmental Geochemistry	L	3	5	BC Gill	M W F	10:10AM	11:00AM	DER 3076	10M
 84428	GEOS-5024	Prof Develop & Ethics Geosci	L	1	16	JA Spotila	F	2:30PM	3:45PM	DER 4069	14F
 84436	GEOS-5804G	Advanced Groundwater Hydrology	L	3	5	R Pollyea	R	2:00PM	4:50PM	DER 2052	11M	fill	M W	11:15AM	12:05PM	DER 4069
-84435	GEOS-5804G	Advanced Groundwater Hydrology	L	3	2	R Pollyea	R	11:00AM	1:50PM	DER 2052	11M	fill	M W	11:15AM	12:05PM	DER 4069
+84435	GEOS-5804G	Advanced Groundwater Hydrology	L	3	5	R Pollyea	R	11:00AM	1:50PM	DER 2052	11M	fill	M W	11:15AM	12:05PM	DER 4069
 84415	GEOS-4354	Introduction to Remote Sensing	L	3	35	JB Campbell	M F	12:20PM	1:35PM	TORG 1010	08M	fill	M W	8:00AM	8:50AM	TORG 3100
 84414	GEOS-4354	Introduction to Remote Sensing	L	3	35	JB Campbell	M F	2:00PM	3:15PM	TORG 1010	08M	fill	M W	8:00AM	8:50AM	TORG 3100
-89434	GEOS-5124	Geodynamics	L	3	0	Staff	T R	9:30AM	10:45AM	DER 4052	09T
-84420	GEOS-4804	Groundwater Hydrology	L	3	20	R Pollyea	R	11:00AM	1:50PM	DER 2052	11M	fill	M W	11:15AM	12:05PM	DER 4069
-84419	GEOS-4804	Groundwater Hydrology	L	3	18	R Pollyea	R	2:00PM	4:50PM	DER 2052	11M	fill	M W	11:15AM	12:05PM	DER 4069
+89434	GEOS-5124	Geodynamics	L	3	10	SD King	T R	9:30AM	10:45AM	DER 4052	09T
+84420	GEOS-4804	Groundwater Hydrology	L	3	15	R Pollyea	R	11:00AM	1:50PM	DER 2052	11M	fill	M W	11:15AM	12:05PM	DER 4069
+84419	GEOS-4804	Groundwater Hydrology	L	3	15	R Pollyea	R	2:00PM	4:50PM	DER 2052	11M	fill	M W	11:15AM	12:05PM	DER 4069
 84405	GEOS-3614	Soils	L	3	137	WL Daniels	T R	12:30PM	1:45PM	NCB 160	12T
 84394	GEOS-2964	Field Study	L	1	0	NL Ross	(ARR)	(ARR)	TBA	00X
 84393	GEOS-2104	Elements of Geology	L	3	23	R Weiss	R	2:00PM	4:50PM	DER 2068	14M	fill	M W F	2:30PM	3:20PM	LITRV 1870
 84392	GEOS-2104	Elements of Geology	L	3	23	R Weiss	R	5:00PM	7:50PM	DER 2068	14M	fill	M W F	2:30PM	3:20PM	LITRV 1870
 84391	GEOS-2104	Elements of Geology	L	3	23	R Weiss	W	11:15AM	2:05PM	DER 2068	14M	fill	M W F	2:30PM	3:20PM	LITRV 1870
 84390	GEOS-2104	Elements of Geology	L	3	23	R Weiss	R	11:00AM	1:50PM	DER 2068	14M	fill	M W F	2:30PM	3:20PM	LITRV 1870
-84389	GEOS-2104	Elements of Geology	L	3	24	R Weiss	T	5:00PM	7:50PM	DER 2068	14M	fill	M W F	2:30PM	3:20PM	LITRV 1870
+84389	GEOS-2104	Elements of Geology	L	3	23	R Weiss	T	5:00PM	7:50PM	DER 2068	14M	fill	M W F	2:30PM	3:20PM	LITRV 1870
 89248	GEOS-1034	Earth's Natural Hazards	L	3	80	DS Stamps	M W F	12:20PM	1:10PM	DER 4069	12M
 84375	GEOS-1034	Earth's Natural Hazards	O	3	175	Y Zhou	(ARR)	(ARR)	TBA	00X
 84374	GEOS-1034	Earth's Natural Hazards	L	3	127	NE Johnson	T R	8:00AM	9:15AM	LITRV 1870	08T
-84388	GEOS-2024	Earth's Dynamic Systems	L	8	21	SJ Nesbitt	T R	2:00PM	4:50PM	DER 2060	12M	fill	F	12:45PM	3:45PM	DER 3076	fill	M W	12:45PM	2:15PM	DER 3076
+84388	GEOS-2024	Earth's Dynamic Systems	L	8	0	SJ Nesbitt	T R	2:00PM	4:50PM	DER 2060	12M	fill	F	12:45PM	3:45PM	DER 3076	fill	M W	12:45PM	2:15PM	DER 3076
 84395	GEOS-3014	Environmental Geosciences	L	3	70	RJ Tracy	T R	12:30PM	1:45PM	DER 4069	12T
 84440	GEOS-6304	Adv Topics Paleont	L	1	15	BW Romans	R	5:00PM	6:00PM	DER 4052	17R
 84437	GEOS-5974	Independent Study	I	1	0	NL Ross	(ARR)	(ARR)	TBA	00X
@@ -4324,7 +4325,7 @@
 84430	GEOS-5354G	Advanced Remote Sensing	L	3	5	JB Campbell	M F	12:20PM	1:35PM	TORG 1010	08M	fill	M W	8:00AM	8:50AM	TORG 3100
 84403	GEOS-3504	Mineralogy	L	3	12	FM Michel	R	5:30PM	8:20PM	DER 4045	10M	fill	M W	10:10AM	11:00AM	DER 4069
 84402	GEOS-3504	Mineralogy	L	3	12	FM Michel	M	2:30PM	5:20PM	DER 4045	10M	fill	M W	10:10AM	11:00AM	DER 4069
-84400	GEOS-3404	Elements of Structural Geology	L	3	21	RD Law	W	2:30PM	5:20PM	DER 3045	11T	fill	T R	11:00AM	11:50AM	DER 4069
+84400	GEOS-3404	Elements of Structural Geology	L	3	15	RD Law	W	2:30PM	5:20PM	DER 3045	11T	fill	T R	11:00AM	11:50AM	DER 4069
 84399	GEOS-3404	Elements of Structural Geology	L	3	15	RD Law	F	11:15AM	2:05PM	DER 3045	11T	fill	T R	11:00AM	11:50AM	DER 4069
 84412	GEOS-3624	Soils Laboratory	B	1	15	WL Daniels	T	2:00PM	4:45PM	SMYTH 246B	14T
 84411	GEOS-3624	Soils Laboratory	B	1	15	WL Daniels	R	9:30AM	12:15PM	SMYTH 246B	09R
@@ -4334,18 +4335,17 @@
 84407	GEOS-3624	Soils Laboratory	B	1	15	WL Daniels	R	2:00PM	4:45PM	SMYTH 246B	14R
 84406	GEOS-3624	Soils Laboratory	B	1	15	WL Daniels	W	1:25PM	4:10PM	SMYTH 246B	13W
 84382	GEOS-1104	Physical Geology Laboratory	B	1	16	JA Chermak	R	8:00AM	10:50AM	DER 2060	08R
-84381	GEOS-1104	Physical Geology Laboratory	B	1	19	JA Chermak	M	8:00AM	10:50AM	DER 2060	08M
-84380	GEOS-1104	Physical Geology Laboratory	B	1	20	JA Chermak	T	11:00AM	1:50PM	DER 2060	11T
-84379	GEOS-1104	Physical Geology Laboratory	B	1	18	JA Chermak	W	8:00AM	10:50AM	DER 2060	08W
-84378	GEOS-1104	Physical Geology Laboratory	B	1	17	JA Chermak	W	2:30PM	5:20PM	DER 2060	14W
+84381	GEOS-1104	Physical Geology Laboratory	B	1	16	JA Chermak	M	8:00AM	10:50AM	DER 2060	08M
+84380	GEOS-1104	Physical Geology Laboratory	B	1	16	JA Chermak	T	11:00AM	1:50PM	DER 2060	11T
+84379	GEOS-1104	Physical Geology Laboratory	B	1	16	JA Chermak	W	8:00AM	10:50AM	DER 2060	08W
+84378	GEOS-1104	Physical Geology Laboratory	B	1	16	JA Chermak	W	2:30PM	5:20PM	DER 2060	14W
 84377	GEOS-1104	Physical Geology Laboratory	B	1	16	JA Chermak	W	11:15AM	2:05PM	DER 2060	11W
 84376	GEOS-1104	Physical Geology Laboratory	B	1	16	JA Chermak	M	11:15AM	2:05PM	DER 2060	11M
-84369	GEOS-1004	Physical Geology	O	3	176	L Fedele	(ARR)	(ARR)	TBA	00X
+84369	GEOS-1004	Physical Geology	O	3	175	L Fedele	(ARR)	(ARR)	TBA	00X
 84368	GEOS-1004	Physical Geology	L	3	75	NE Johnson	M W	2:30PM	3:45PM	DER 4069	14M
 84367	GEOS-1004	Physical Geology	L	3	320	JA Spotila	M W F	1:25PM	2:15PM	HAN 100	13M
 84398	GEOS-3204	Sedimentology-Stratigraphy	L	3	15	BW Romans	R	12:30PM	3:20PM	DER 4045	09M	fill	M W	9:05AM	9:55AM	DER 4069
-84397	GEOS-3204	Sedimentology-Stratigraphy	L	3	16	BW Romans	W	12:20PM	3:10PM	DER 4045	09M	fill	M W	9:05AM	9:55AM	DER 4069
-84396	GEOS-3204	Sedimentology-Stratigraphy	L	3	0	KA Eriksson	(ARR)	(ARR)	TBA	00X
+84397	GEOS-3204	Sedimentology-Stratigraphy	L	3	15	BW Romans	W	12:20PM	3:10PM	DER 4045	09M	fill	M W	9:05AM	9:55AM	DER 4069
 84386	GEOS-1124	Resources Geol Lab	B	1	16	JA Chermak	M	8:00PM	10:50PM	DER 2052	20M
 84385	GEOS-1124	Resources Geol Lab	B	1	16	JA Chermak	W	2:30PM	5:20PM	DER 2052	14W
 84384	GEOS-1124	Resources Geol Lab	B	1	16	JA Chermak	T	8:00AM	10:50AM	DER 2052	08T
@@ -4359,7 +4359,7 @@
 84423	GEOS-4994	Undergraduate Research	R	1	0	NL Ross	(ARR)	(ARR)	TBA	00X
 84422	GEOS-4994	Undergraduate Research	R	1	0	NL Ross	(ARR)	(ARR)	TBA	00X
 84421	GEOS-4974	Independent Study	I	1	0	NL Ross	(ARR)	(ARR)	TBA	00X
-84416	GEOS-4634	Environmental Geochemistry	L	3	27	BC Gill	M W F	10:10AM	11:00AM	DER 3076	10M
+84416	GEOS-4634	Environmental Geochemistry	L	3	15	BC Gill	M W F	10:10AM	11:00AM	DER 3076	10M
 89249	GEOS-4954	Study Abroad	L	4	0	RJ Bodnar	(ARR)	(ARR)	TBA	00X
 89417	GEOS-4714	Volcanic Processes	L	3	20	E Gazel	R	9:00AM	12:00PM	DER 4045	16M	fill	M	4:00PM	6:00PM	DER 4069
 84417	GEOS-4714	Volcanic Processes	L	3	20	E Gazel	T	9:00AM	12:00PM	DER 4045	16M	fill	M	4:00PM	6:00PM	DER 4069
@@ -4370,7 +4370,6 @@
 84468	GER-5154G	Comp, Style, & Verbal Analysis	L	3	5	DL Stoudt	M W	5:30PM	6:45PM	WAL 244	17M
 84457	GER-3306	Survey of German Literature	L	3	20	EK Bauer	M W	4:00PM	5:15PM	WMS 134	16M
 84465	GER-4974H	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-84449	GER-1105	Elementary German	L	3	18	Staff	M W F	1:25PM	2:15PM	HOLD 303	13M
 84448	GER-1105	Elementary German	L	3	20	JM Layne	M W F	9:05AM	9:55AM	HUTCH 209	09M
 84447	GER-1105	Elementary German	L	3	20	JC Orr	M W F	11:15AM	12:05PM	MCB 212	11M
 84446	GER-1105	Elementary German	L	3	20	JM Layne	M W F	12:20PM	1:10PM	HUTCH 207	12M
@@ -4380,7 +4379,7 @@
 84450	GER-2105	Intermediate German	L	3	15	JM Layne	M W F	10:10AM	11:00AM	HOLD 303	10M
 84453	GER-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 84455	GER-3105	Gram/Comp/Convers	L	3	15	EK Bauer	M W	2:30PM	3:45PM	HUTCH 207	14M
-84454	GER-3105	Gram/Comp/Convers	L	3	15	S Hofer	T R	3:30PM	4:45PM	WHIT 277	15T
+84454	GER-3105	Gram/Comp/Convers	L	3	15	S Hofer	T R	12:30PM	1:45PM	RAND 220	12T
 84456	GER-3125	German Oral Proficiency	L	3	15	JC Orr	M W	4:00PM	5:15PM	WMS 320	16M
 84466	GER-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 84469	GER-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	(ARR)	00X
@@ -4411,7 +4410,6 @@
 84501	GR-1105	Class and NT Greek	L	3	15	AS Becker	T R	2:00PM	3:15PM	MAJWM 327	14T
 84505	GR-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 84504	GR-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-84503	GR-2104	Greek New Testament	L	3	20	AS Becker	(ARR)	(ARR)	TBA	00X
 84510	GR-4994	Undergraduate Research	R	1	0	AS Becker	(ARR)	(ARR)	TBA	00X
 84512	GR-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 84508	GR-4974	Independent Study	I	1	0	AS Becker	(ARR)	(ARR)	TBA	00X
@@ -4437,7 +4435,7 @@
 84536	GRAD-5904	Project and Report	R	3	2	SD Ross	(ARR)	(ARR)	TBA	00X
 84517	GRAD-5104	Preparing Future Professoriate	L	3	55	KP DePauw	M	6:00PM	9:00PM	TORG 1060	18M
 84531	GRAD-5214	Diversity for Global Society	L	3	25	KP DePauw	T	5:30PM	8:30PM	TORG 1020	17T
-84530	GRAD-5204	Citizen Scholar Seminar	L	3	40	R Blieszner	W	10:10AM	12:05PM	TBA	10W
+84530	GRAD-5204	Citizen Scholar Seminar	L	3	40	Staff	W	10:10AM	12:05PM	TBA	10W
 84533	GRAD-5314	Future Indus Prof Sci Engineer	L	3	25	SR Turner	M	2:30PM	5:15PM	TBA	14M
 84543	GRAD-5974	IT:Micro Lab Rotation	I	1	0	KP DePauw	(ARR)	(ARR)	TBA	00X
 84542	GRAD-5974	Independent Study	I	1	0	KP DePauw	(ARR)	(ARR)	TBA	00X
@@ -4446,7 +4444,7 @@
 84539	GRAD-5954	Study Abroad	L	1	9999	KP DePauw	(ARR)	(ARR)	TBA	00X
 84535	GRAD-5515	Molec Plant Sci Lab Rotation	B	3	6	EA Grabau	(ARR)	(ARR)	TBA	00X
 89187	HD-5344	Pers Human Sexuality	L	3	20	Staff	W	9:00AM	11:50AM	WAL 407	09W
-84584	HD-3464	Appalachian Communities	L	3	40	AM Puckett	T R	12:30PM	1:45PM	LITRV 1760	12T
+84584	HD-3464	Appalachian Communities	L	3	45	AM Puckett	T R	12:30PM	1:45PM	LITRV 1760	12T
 84564	HD-2304	Family Relationships	O	3	80	Staff	(ARR)	(ARR)	TBA	00X
 84563	HD-2304	Family Relationships	L	3	125	Staff	T R	2:00PM	3:15PM	NCB 320	14T
 84562	HD-2004	Human Development II	O	3	80	Staff	(ARR)	(ARR)	TBA	00X
@@ -4476,14 +4474,14 @@
 84570	HD-2314	Human Sexuality	O	3	80	Staff	(ARR)	(ARR)	TBA	00X
 84569	HD-2314	Human Sexuality	O	3	80	Staff	(ARR)	(ARR)	TBA	00X
 84568	HD-2314	Human Sexuality	L	3	125	Staff	T R	3:30PM	4:45PM	LITRV 1870	15T
-84567	HD-2314	Human Sexuality	L	3	225	Staff	T R	12:30PM	1:45PM	LITRV 1670	12T
+84567	HD-2314	Human Sexuality	L	3	125	Staff	T R	12:30PM	1:45PM	LITRV 1670	12T
 84566	HD-2314	Human Sexuality	L	3	125	Staff	M W F	1:25PM	2:15PM	LITRV 1870	13M
 84565	HD-2314	Human Sexuality	L	3	0	Staff	T R	11:00AM	12:15PM	SMYTH 146	11T
-84575	HD-2336	Principles of Human Services	L	3	49	Staff	T R	11:00AM	12:15PM	WAL 244	11T
-84574	HD-2336	Principles of Human Services	L	3	49	Staff	T R	9:30AM	10:45AM	WAL 244	09T
-84573	HD-2336	Principles of Human Services	L	3	0	Staff	T R	2:00PM	3:15PM	LITRV 1760	14T
+84575	HD-2336	Principles of Human Services	L	3	40	Staff	T R	11:00AM	12:15PM	WAL 244	11T
+84574	HD-2336	Principles of Human Services	L	3	40	Staff	T R	9:30AM	10:45AM	WAL 244	09T
+84573	HD-2336	Principles of Human Services	L	3	40	Staff	T R	2:00PM	3:15PM	LITRV 1760	14T
 89167	HD-1004	Human Development I	L	3	49	Staff	T R	5:00PM	6:15PM	WAL 234	17T
-88271	HD-1004	Human Development I	L	3	80	Staff	M W	4:00PM	5:15PM	ROB 210	16M
+88271	HD-1004	Human Development I	L	3	125	Staff	M W	4:00PM	5:15PM	ROB 210	16M
 88263	HD-1004	Human Development I	L	3	99	Staff	T R	9:30AM	10:45AM	ROB 210	09T
 84559	HD-1004	Human Development I	O	3	80	Staff	(ARR)	(ARR)	TBA	00X
 84558	HD-1004	Human Development I	O	3	80	Staff	(ARR)	(ARR)	TBA	00X
@@ -4508,7 +4506,7 @@
 84629	HEB-4994H	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 88430	HIST-3084	Recent America, 1917-Present	L	3	35	NL Shumsky	M W F	9:05AM	9:55AM	MAJWM 334	09M
 88415	HIST-1216	Intro to World History	L	3	40	Staff	M W F	1:25PM	2:15PM	MCB 226	13M
-88454	HIST-3914	Crit Reading/Analysis in Hist	L	3	25	Staff	T R	2:00PM	3:15PM	MCB 219	14T
+88454	HIST-3914	Crit Reading/Analysis in Hist	L	3	25	RF Hirsh	T R	2:00PM	3:15PM	MCB 219	14T
 88444	HIST-3914	Crit Reading/Analysis in Hist	L	3	25	EJ Gitre	T R	9:30AM	10:45AM	WLH 350	09T
 84683	HIST-4974H	Independent Study	I	1	0	Staff	(ARR)	(ARR)	(ARR)	00X
 89166	HIST-1215	Intro to World History	O	3	75	MJ Alexander	(ARR)	(ARR)	TBA	00X
@@ -4521,7 +4519,7 @@
 88428	HIST-3314	The Later Roman Empire	L	3	40	GR Bugh	T R	12:30PM	1:45PM	MCB 318	12T
 88429	HIST-2345	History of the Middle East	L	3	50	Staff	T R	11:00AM	12:15PM	HOLD 110	11T
 89132	HIST-5534	Imperialism	L	3	15	CM Gitre	M	2:00PM	4:50PM	MAJWM 427	14M
-88851	HIST-5534	Imperialism	L	3	15	Staff	(ARR)	(ARR)	(ARR)	00X
+88851	HIST-5534	Imperialism	L	3	15	Staff	(ARR)	(ARR)	TBA	00X
 84696	HIST-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 84695	HIST-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 84681	HIST-4964	Field Study	L	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -4529,7 +4527,7 @@
 88844	HIST-5154	Writing Skills Prof Historian	L	2	15	MS Dufour	T	2:00PM	3:50PM	ROB 101	14T
 84699	HIST-5994	Research and Thesis	R	1	20	Staff	(ARR)	(ARR)	TBA	00X
 84653	HIST-2364	History of Japan	L	3	40	HM Schneider	M W	4:00PM	5:15PM	MCB 232	16M
-88478	HIST-3176	Afro-American History	L	3	40	PR Wallenstein	M W	4:00PM	5:15PM	MCB 238	16M
+88478	HIST-3176	Afro-American History	L	3	0	PR Wallenstein	M W	4:00PM	5:15PM	MCB 238	16M
 88746	HIST-3054	The American Civil War	L	3	75	TH Edmondson	M W F	1:25PM	2:15PM	WLH 340	13M
 88423	HIST-3175	Afro-American History	O	3	50	B Bunch-Lyons	(ARR)	(ARR)	TBA	00X
 84693	HIST-5904	Project and Report	R	1	10	Staff	(ARR)	(ARR)	TBA	00X
@@ -4554,6 +4552,7 @@
 84649	HIST-2054	Engineering Cultures	O	3	30	Staff	(ARR)	(ARR)	TBA	00X
 84648	HIST-2054	Engineering Cultures	O	3	30	Staff	(ARR)	(ARR)	TBA	00X
 88479	HIST-3064	Modern US, 1877-1917	O	3	50	B Bunch-Lyons	(ARR)	(ARR)	TBA	00X
+89537	HIST-1116	History of the United States	O	3	75	RV Shelton	(ARR)	(ARR)	TBA	00X
 88446	HIST-1116	History of the United States	L	3	40	D Halpin	M W	4:00PM	5:15PM	MCB 231	16M
 88414	HIST-1116	History of the United States	L	3	25	LC Winling	F	11:15AM	12:05PM	WLH 320	11M	fill	M W	11:15AM	12:05PM	WLH 320
 88403	HIST-1116	History of the United States	L	3	25	LC Winling	F	11:15AM	12:05PM	RAND 209	11M	fill	M W	11:15AM	12:05PM	WLH 320
@@ -4564,10 +4563,10 @@
 88400	HIST-1115	History of the United States	L	3	25	MA Kiechle	F	10:10AM	11:00AM	RAND 209	10M	fill	M W	10:10AM	11:00AM	WLH 320
 88399	HIST-1115	History of the United States	L	3	25	MA Kiechle	F	10:10AM	11:00AM	RAND 210	10M	fill	M W	10:10AM	11:00AM	WLH 320
 88419	HIST-2004	Historical Methods	L	3	15	Staff	T R	12:30PM	1:45PM	MAJWM 532	12T
-88418	HIST-2004	Historical Methods	L	3	15	HL Gumbert	T R	2:00PM	3:15PM	MAJWM 532	14T
+88418	HIST-2004	Historical Methods	L	3	15	PR Wallenstein	T R	2:00PM	3:15PM	MAJWM 532	14T
 88417	HIST-2004	Historical Methods	L	3	15	AR Ekirch	T R	9:30AM	10:45AM	MCB 210	09T
 89215	HIST-2124	Issues in World History	L	3	25	ET Ewing	W	6:00PM	8:00PM	LANE 134	10M	fill	M W	10:10AM	11:00AM	LANE 134
-88440	HIST-2124	Issues in World History	L	3	40	BL Shadle	T R	12:30PM	1:45PM	MCB 329	12T
+88440	HIST-2124	Issues in World History	L	3	0	BL Shadle	T R	12:30PM	1:45PM	MCB 329	12T
 88476	HIST-3654	The Arab-Israeli Dispute	L	3	40	Staff	T R	3:30PM	4:45PM	MCB 240	15T
 88439	HIST-3734	History of Modern Biology	L	3	35	MV Barrow	T R	3:30PM	4:45PM	MCB 233	15T
 84692	HIST-5894	Final Examination	R	3	9999	Staff	(ARR)	(ARR)	TBA	00X
@@ -4578,7 +4577,7 @@
 88437	HIST-4914	History Research Seminar	L	3	20	P Quigley	T R	11:00AM	12:15PM	MCB 204	11T
 84656	HIST-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 84630	HIST-1004	Introduction to History	L	3	0	GH Becker	T R	11:00AM	12:15PM	MCB 318	11T
-84671	HIST-3544	World War II	L	3	50	EJ Gitre	T R	2:00PM	3:15PM	WLH 350	14T
+84671	HIST-3544	World War II	L	3	50	Staff	T R	2:00PM	3:15PM	WLH 350	14T
 84666	HIST-3224	History of Virginia	L	3	35	EK Cherry	M W	4:00PM	5:15PM	MCB 219	16M
 84684	HIST-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 84689	HIST-5205	Hist Sci & Tech	L	3	20	MR Goodrum	W	2:00PM	4:45PM	SURGE 101A	14W
@@ -4586,18 +4585,18 @@
 89194	HIST-3744	Social History of Film	L	3	35	HL Gumbert	T R	3:30PM	4:45PM	WLH 335	15T
 88689	HNFE-4174	Nutr and Phys Perform	L	3	45	MS Rockwell	T R	11:00AM	12:15PM	FST 27	11T
 84760	HNFE-5684	Prog Dev in Health Ed	O	3	45	KJ Redican	(ARR)	(ARR)	TBA	00X
-84713	HNFE-2254	Exer Ldrship-Group Fit Instr	L	3	35	KN Gwilliam	T R	9:30AM	10:45AM	ENGEL 219	09T
+84713	HNFE-2254	Exer Ldrship-Group Fit Instr	L	3	35	KN Gwilliam	(ARR)	(ARR)	TBA	09T	fill	T R	9:30AM	10:45AM	ENGEL 219
 84720	HNFE-3024	Science of Food Prep Lab	L	2	15	N Girmes-Grieco	R	11:00AM	1:45PM	WAL 403	12M	fill	M	12:20PM	1:10PM	LITRV 1860
 84719	HNFE-3024	Science of Food Prep Lab	L	2	15	N Girmes-Grieco	T	11:00AM	1:45PM	WAL 403	12M	fill	M	12:20PM	1:10PM	LITRV 1860
 84718	HNFE-3024	Science of Food Prep Lab	L	2	15	N Girmes-Grieco	W	12:20PM	3:05PM	WAL 403	12M	fill	M	12:20PM	1:10PM	LITRV 1860
-84758	HNFE-5125G	Adv Medical Nutrition Therapy	L	3	10	VE Hedrick	T R	8:00AM	9:15AM	NCB 230	08T
+84758	HNFE-5125G	Adv Medical Nutrition Therapy	L	3	10	VE Hedrick	T R	8:00AM	9:15AM	WAL 340	08T
 84712	HNFE-2014H	Nutrition Across the Life Span	L	3	8	N Girmes-Grieco	M W F	9:05AM	9:55AM	HAN 100	09M
 84709	HNFE-1214	TS:Life Activ: Rec Basketball	B	1	25	DJ Preston	T R	9:30AM	10:45AM	TBA	09T
-84708	HNFE-1214	TS:Lifetime Activ: Rec Swim	B	1	0	G Marquez	T R	9:30AM	10:45AM	GYM 1	09T
-84707	HNFE-1214	TS:Lifetime Activ: Weight Trng	B	1	40	SA Trotter	T R	8:00AM	9:15AM	LITRV 1770	08T
-84706	HNFE-1214	TS:Lifetime Activ: Weight Trng	B	1	40	SA Trotter	T R	9:30AM	10:45AM	DER 1084	09T
-84705	HNFE-1214	TS:Life Activ: Mindful & Mvmt	B	1	20	AA Cross	T R	11:00AM	12:15PM	MAJWM 532	11T
-84704	HNFE-1214	TS:Life Activ:Intro/Canoeing	B	1	14	D Goodman	T R	9:30AM	10:45AM	TBA	09T
+84708	HNFE-1214	TS:Lifetime Activ: Rec Swim	B	1	20	G Marquez	T R	9:30AM	10:45AM	GYM 1	09T
+84707	HNFE-1214	TS:Lifetime Activ: Weight Trng	B	1	40	KN Gwilliam	T R	8:00AM	9:15AM	MCCOM 93	08T
+84706	HNFE-1214	TS:Lifetime Activ: Weight Trng	B	1	40	KN Gwilliam	T R	9:30AM	10:45AM	MCCOM 93	09T
+84705	HNFE-1214	TS:Life Activ: Mindful & Mvmt	B	1	20	SL Rasnick	T R	11:00AM	12:15PM	TBA	11T
+84704	HNFE-1214	TS:Life Activ:Intro/Canoeing	B	1	14	Staff	T R	9:30AM	10:45AM	TBA	09T
 84703	HNFE-1114	Orientation to HNFE	L	1	66	RS Eaton	R	9:30AM	10:45AM	NCB 120	09R
 84702	HNFE-1114	Orientation to HNFE	L	1	66	RS Eaton	T	9:30AM	10:45AM	NCB 120	09T
 84714	HNFE-2544	Functional Foods for Health	L	3	68	AP Neilson	M W F	9:05AM	9:55AM	FST 27	09M
@@ -4607,18 +4606,18 @@
 84732	HNFE-4004	Seminar HNFE Writing&Discourse	L	3	27	WE Barbeau	M W	1:25PM	2:40PM	WAL 340	13M
 84731	HNFE-4004	Seminar HNFE Writing&Discourse	L	3	27	YH Ju	M W	8:30AM	9:45AM	WAL 340	08M
 84730	HNFE-4004	Seminar HNFE Writing&Discourse	L	3	27	Staff	M W	11:15AM	12:30PM	WAL 340	11M
-84736	HNFE-4125	Medical Nutrition Therapy	L	3	38	VE Hedrick	T R	8:00AM	9:15AM	NCB 230	08T
+84736	HNFE-4125	Medical Nutrition Therapy	L	3	38	VE Hedrick	T R	8:00AM	9:15AM	WAL 340	08T
 84762	HNFE-5754	Internship Hum Foods & Nutr	L	1	30	Staff	(ARR)	(ARR)	TBA	00X
 84765	HNFE-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-84740	HNFE-4644	Health Counseling	L	3	130	KM Chang	T R	3:30PM	4:45PM	SURGE 118C	15T
+84740	HNFE-4644	Health Counseling	L	3	100	KM Chang	T R	3:30PM	4:45PM	SURGE 118C	15T
 84741	HNFE-4645	Applic In Nutr Counseling	L	2	15	CB Papillon	W	12:20PM	2:50PM	WAL 332	12W
 84748	HNFE-4964	Field Study	L	1	0	CB Papillon	(ARR)	(ARR)	TBA	00X
-84747	HNFE-4964	Field Study	L	1	120	SH Nelson	F	2:30PM	3:20PM	ENGEL 223	14F
-84746	HNFE-4964	Field Study	L	1	48	RS Eaton	F	1:30PM	2:20PM	WAL 340	13F
-84727	HNFE-3634	Epi Hlth and Disease	L	3	80	PA Ray	T R	12:30PM	1:45PM	ENGEL 223	12T
+84747	HNFE-4964	Field Study	L	1	120	SH Nelson	F	11:15AM	12:05PM	ENGEL 223	11F
+84746	HNFE-4964	Field Study	L	1	48	RS Eaton	F	12:20PM	1:10PM	WAL 340	12F
+84727	HNFE-3634	Epi Hlth and Disease	L	3	50	PA Ray	T R	12:30PM	1:45PM	ENGEL 223	12T
 84739	HNFE-4624	Community Nutrition	L	3	51	SA Misyak	M W F	9:05AM	9:55AM	LITRV 1760	09M
 84742	HNFE-4646	Applic in Nutr Counseling	L	2	0	CB Papillon	W	12:20PM	2:50PM	WAL 332	12W
-84715	HNFE-2804	Exercise and Health	L	3	165	WB Zuti	M W F	1:25PM	2:15PM	LITRV 1670	13M
+84715	HNFE-2804	Exercise and Health	L	3	150	WB Zuti	M W F	1:25PM	2:15PM	LITRV 1670	13M
 84716	HNFE-2824	Athletic Injuries	L	2	100	MW Goforth	M W	10:10AM	11:00AM	SURGE 118C	10M
 84756	HNFE-4994H	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 88692	HNFE-6064	TS: Food & Nutr Toxicology	L	3	10	YH Ju	M W	2:30PM	3:45PM	LITRV 1800	14M
@@ -4632,15 +4631,15 @@
 84724	HNFE-3034	Methods Human Hlth Assessment	L	2	35	BM Davy	W	3:00PM	5:45PM	WAL 228	00X	fill	(ARR)	(ARR)	TBA
 84723	HNFE-3034	Methods Human Hlth Assessment	L	2	35	BM Davy	T	11:00AM	1:45PM	WAL 228	00X	fill	(ARR)	(ARR)	TBA
 84722	HNFE-3034	Methods Human Hlth Assessment	L	2	35	BM Davy	R	2:00PM	4:45PM	WAL 228	00X	fill	(ARR)	(ARR)	TBA
-84728	HNFE-3804	Exercise Physiology	L	3	180	RW Grange	T R	2:00PM	3:15PM	LITRV 1670	14T
+89502	HNFE-5174G	Adv Nutrition and Phys Perform	O	3	20	MS Rockwell	(ARR)	(ARR)	TBA	00X
+84728	HNFE-3804	Exercise Physiology	L	3	150	RW Grange	T R	2:00PM	3:15PM	LITRV 1670	14T
 84717	HNFE-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 84701	HNFE-1004	Foods, Nutrition And Exercise	L	3	100	MD Lewis	M W F	9:05AM	9:55AM	LITRV 1670	09M
 84700	HNFE-1004	Foods, Nutrition And Exercise	L	3	100	MD Lewis	M W F	1:25PM	2:15PM	WHIT 300	13M
 84711	HNFE-2014	Nutrition Across the Life Span	L	3	240	N Girmes-Grieco	M W F	9:05AM	9:55AM	HAN 100	09M
 84721	HNFE-3025	Metabolic Nutrition	L	3	280	MW Hulver	M W F	10:10AM	11:00AM	HAN 100	10M
 89083	HNFE-4774	Advanced Topics in HNFE	L	1	0	Staff	(ARR)	(ARR)	TBA	00X
-88688	HNFE-4774	Advanced Topics in HNFE	L	3	45	RS Eaton	T R	8:00AM	9:15AM	WAL 340	08T
-88686	HNFE-4774	Advanced Topics in HNFE	L	3	60	Staff	T	11:00AM	1:45PM	LITRV 1860	14T	fill	T R	2:00PM	3:15PM	LITRV 1860
+88688	HNFE-4774	Advanced Topics in HNFE	L	3	0	Staff	T R	8:00AM	9:15AM	NCB 230	08T
 84745	HNFE-4774	TS: Food&Nutrition Toxicology	L	3	35	YH Ju	M W	2:30PM	3:45PM	LITRV 1800	14M
 84744	HNFE-4774	TS: Nutritional Genomics	L	3	15	DJ Good	M W F	8:00AM	8:50AM	LITRV 1770	08M
 84743	HNFE-4774	TS: Exercise and Aging	L	3	20	WB Zuti	T R	11:00AM	12:15PM	TBA	11T
@@ -4652,7 +4651,7 @@
 84753	HNFE-4974	Independent Study	I	1	40	RS Eaton	M	4:00PM	5:00PM	WAL 244	16M
 88693	HNFE-5964	Sports Nutrition Practicum	L	1	0	MS Rockwell	(ARR)	(ARR)	TBA	00X
 84764	HNFE-5964	Field Work/Practicum	L	1	0	MS Rockwell	(ARR)	(ARR)	TBA	00X
-84729	HNFE-3824	Kinesiology	L	3	180	JH Williams	T R	9:30AM	10:45AM	LITRV 1670	09T
+84729	HNFE-3824	Kinesiology	L	3	150	JH Williams	T R	9:30AM	10:45AM	LITRV 1670	09T
 88691	HNFE-5804	Exercise Physiology	L	3	30	MI Frisard	W	10:10AM	12:40PM	ILSB 1040	10W
 84808	HORT-5654G	Advanced Viticulture	O	3	10	AK Wolf	(ARR)	(ARR)	TBA	00X
 84803	HORT-4794	Medicinal Plants and Herbs	L	3	45	GE Welbaum	M W F	1:25PM	2:15PM	GH 100	13M
@@ -4698,6 +4697,7 @@
 84807	HORT-5524	Adv Plant Phy Met I	L	3	20	EP Beers	M W F	9:05AM	9:55AM	PRICE 400	09M
 84848	HTM-5024	International Service Mgt	L	3	12	MA Khan	(ARR)	(ARR)	TBA	00X
 84836	HTM-4354	IT & Social Media in HTM	L	3	30	Z Xiang	T R	5:00PM	6:15PM	WAL 407	17T
+89549	HTM-5564	HTM IT & Business Analytics	O	3	99	Staff	(ARR)	(ARR)	TBA	00X
 84843	HTM-4454	Hospitality Revenue Management	L	3	20	RR Perdue	M W	5:00PM	6:15PM	WAL 340	17M
 84842	HTM-4454	Hospitality Revenue Management	L	3	30	Staff	M W	2:30PM	3:45PM	PAM 2001	14M
 84821	HTM-2474	Intro Mtgs Mgt	L	3	36	H Feiertag	T R	9:30AM	10:45AM	WAL 234	09T
@@ -4746,7 +4746,7 @@
 84854	HTM-5944	Graduate Seminar	L	1	25	HJ Kang	F	10:00AM	12:00PM	WAL 364	10F
 88729	HUM-5584	Topics in Public Humanities	L	3	10	KR Precoda	M	10:10AM	12:45PM	MCB 202	10M
 84891	HUM-5994	Research and Thesis	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
-84884	HUM-3464	Appalachian Communities	L	3	40	AM Puckett	T R	12:30PM	1:45PM	LITRV 1760	12T
+84884	HUM-3464	Appalachian Communities	L	3	45	AM Puckett	T R	12:30PM	1:45PM	LITRV 1760	12T
 88455	HUM-3034	Theories of Pop Culture	L	3	40	MB Saffle	T R	2:00PM	3:15PM	MCB 238	14T
 84879	HUM-2504	Intro Amer Studies	L	3	40	D Christensen	T R	3:30PM	4:45PM	MCB 308	15T
 84890	HUM-5904	Project and Report	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -4755,7 +4755,7 @@
 84880	HUM-2974	Independent Study	I	1	9999	Staff	(ARR)	(ARR)	TBA	00X
 84883	HUM-3204	Multicultural Communication	L	3	40	KK Dhillon	T R	8:00AM	9:15AM	MCB 134	08T
 84882	HUM-3204	Multicultural Communication	L	3	40	KK Dhillon	M W	4:00PM	5:15PM	MCB 230	16M
-84881	HUM-3204	Multicultural Communication	L	3	35	KK Dhillon	M W	2:30PM	3:45PM	MCB 231	14M
+84881	HUM-3204	Multicultural Communication	L	3	40	KK Dhillon	M W	2:30PM	3:45PM	MCB 231	14M
 84887	HUM-4994	Undergraduate Research	R	1	9999	Staff	(ARR)	(ARR)	TBA	00X
 88463	HUM-5104	Mat Cult & Pub Hum Theory	L	3	30	A Ansell	W	2:00PM	4:45PM	LANE 132	14W
 84886	HUM-4974	Independent Study	I	1	9999	Staff	(ARR)	(ARR)	TBA	00X
@@ -4784,6 +4784,7 @@
 84901	IDS-3016	Industrial Design Lab III	B	6	0	WR Green	M W F	1:00PM	4:50PM	BURCH 000	13M
 84900	IDS-3015	Industrial Design Lab III	B	6	42	WR Green	M W F	1:00PM	4:50PM	BURCH 000	13M
 84905	IDS-3224	TS:Workshop	L	1	30	Staff	T R	8:00AM	9:15AM	BURCH 000	08T
+89552	IDS-3234	TS: African Influences (2)	L	1	15	WR Green	T R	11:00AM	12:15PM	BURCH 000	11T
 84906	IDS-3234	TS:Studio Collective	L	1	0	CB Pritchett	(ARR)	(ARR)	TBA	00X
 84909	IDS-4015	Industrial Design Lab IV	B	6	40	Staff	M W F	1:00PM	4:50PM	BURCH 000	13M
 84910	IDS-4016	Industrial Design Lab IV	B	6	0	WR Green	M W F	1:00PM	4:50PM	BURCH 000	13M
@@ -4926,7 +4927,7 @@
 85115	ISE-7994	Research and Dissertation	R	1	99	JA Camelio	(ARR)	(ARR)	TBA	00X
 85114	ISE-7994	Research and Dissertation	R	1	99	RH Sturges	(ARR)	(ARR)	TBA	00X
 85113	ISE-7994	Research and Dissertation	R	1	99	DR Bish	(ARR)	(ARR)	TBA	00X
-89276	ISE-5134	Management Information Systems	O	3	10	Staff	R	5:00PM	9:45PM	TBA	17R
+89276	ISE-5134	Management Information Systems	O	3	10	Staff	R	7:00PM	9:45PM	TBA	19R
 89275	ISE-5134	Management Information Systems	L	3	25	Staff	R	7:00PM	9:45PM	WHIT 281	19R
 88860	ISE-6024	Adv Topics in Mgt Systems Engr	L	3	20	KP Triantis	W	4:00PM	6:45PM	TORG 1030	16W
 85033	ISE-5015	Mgt Orgl Sys	L	3	24	N Hosseinichimeh	R	4:00PM	6:45PM	TORG 1100C	16R
@@ -4978,7 +4979,7 @@
 84985	ISE-2014	Engineering Economy	L	2	5	CP Koelling	M W F	8:00AM	8:50AM	GOODW 190	CTE
 84984	ISE-2014	Engineering Economy	L	2	200	CP Koelling	M W	5:30PM	6:45PM	WHIT 300	CTE
 84983	ISE-2014	Engineering Economy	L	2	295	CP Koelling	M W F	8:00AM	8:50AM	GOODW 190	CTE
-85015	ISE-4015	Management Systems	L	3	60	Staff	T R	2:00PM	3:15PM	NCB 270	14T
+85015	ISE-4015	Management Systems	L	3	60	Staff	T R	3:30PM	4:45PM	LITRV 1860	15T
 85030	ISE-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85029	ISE-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85028	ISE-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -4989,15 +4990,18 @@
 85023	ISE-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85022	ISE-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85020	ISE-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
+89534	ISE-5984	SS: Dec Analysis for Engineers	O	3	10	A Salado Diez	T R	11:00AM	12:15PM	TBA	11T
+89527	ISE-5984	SS: Additive Biomanufacturing	L	3	20	B Johnson	M W	8:40AM	9:55AM	WHIT 518	08M
+89526	ISE-5984	SS: Dec Analysis for Engineers	L	3	20	A Salado Diez	T R	11:00AM	12:15PM	TORG 1030	11T
 85054	ISE-5204	Manuf Systems Eng	L	3	60	R Jin	T R	3:30PM	4:45PM	DURHM 261	15T
-85063	ISE-5424	Simulation I	L	3	32	Staff	T R	11:00AM	12:15PM	RAND 116	11T
-85062	ISE-5424	Simulation I	L	3	8	Staff	T R	11:00AM	12:15PM	RAND 116	11T
+85063	ISE-5424	Simulation I	L	3	32	Staff	M W	2:30PM	3:45PM	RAND 320	14M
+85062	ISE-5424	Simulation I	L	3	8	Staff	M W	2:30PM	3:45PM	RAND 320	14M
 88863	ISE-6514	Advanced Math Program	L	3	20	Staff	T R	8:00AM	9:15AM	WHIT 518	08T
 85061	ISE-5405	Optimization	L	3	12	Staff	T R	9:30AM	10:45AM	GOODW 115	09T
 85060	ISE-5405	Optimization	L	3	68	Staff	T R	9:30AM	10:45AM	GOODW 115	09T
 85068	ISE-5604	Human Information Processing	L	3	25	JL Gabbard	M W F	10:10AM	11:00AM	WHIT 518	10M
 85069	ISE-5605	Human Factors System Design	L	3	25	JG Casali	T R	2:00PM	3:15PM	WHIT 518	14T
-85149	ITAL-1106	Elementary Italian	L	3	25	M Sguerri	M W F	10:10AM	11:00AM	HUTCH 207	10M
+85149	ITAL-1106	Elementary Italian	L	3	25	M Sguerri	M W F	10:10AM	11:00AM	PAM 3028	10M
 85158	ITAL-4974H	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85148	ITAL-1105	Elementary Italian	L	3	0	Staff	(ARR)	(ARR)	TBA	00X
 85147	ITAL-1105	Elementary Italian	L	3	28	M Sguerri	M W F	12:20PM	1:10PM	PAM 1002	12M
@@ -5005,7 +5009,7 @@
 85145	ITAL-1105	Elementary Italian	L	3	28	M Sguerri	M W F	1:25PM	2:15PM	MCB 210	13M
 85150	ITAL-1204	Italian Language and Cultures	L	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85152	ITAL-2964	Field Study	L	1	0	Staff	(ARR)	(ARR)	TBA	00X
-85151	ITAL-2105	Intermediate Italian	L	3	25	MA Coburn	M W F	10:10AM	11:00AM	SEITZ 207	10M
+85151	ITAL-2105	Intermediate Italian	L	3	25	MA Coburn	M W F	10:10AM	11:00AM	HUTCH 207	10M
 85154	ITAL-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85153	ITAL-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 88618	ITAL-3106	Italian Culture Comp and Conv	L	3	20	MA Coburn	M W F	11:15AM	12:05PM	HUTCH 204	11M
@@ -5032,17 +5036,17 @@
 85168	ITDS-3175	Building Systems for ID	L	3	40	HS Renard	T R	12:30PM	1:45PM	BUR 224A	12T
 85172	ITDS-4964	Field Study	L	1	0	LM Tucker	(ARR)	(ARR)	TBA	00X
 85190	JPN-4974H	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-88725	JPN-1105	Elementary Japanese	L	3	25	TU Mercer	M W F	12:20PM	1:10PM	PAM 1004	12M
-85182	JPN-1105	Elementary Japanese	L	3	25	Y Younos	M W F	1:25PM	2:15PM	RAND 110	13M
-85181	JPN-1105	Elementary Japanese	L	3	25	TU Mercer	M W F	1:25PM	2:15PM	PAT 305	13M
-85180	JPN-1105	Elementary Japanese	L	3	25	Y Younos	M W F	10:10AM	11:00AM	LITRV 1770	10M
-85179	JPN-1105	Elementary Japanese	L	3	25	TU Mercer	M W F	11:15AM	12:05PM	SEITZ 207	11M
-85178	JPN-1105	Elementary Japanese	L	3	25	Y Younos	M W F	12:20PM	1:10PM	MAJWM 334	12M
+88725	JPN-1105	Elementary Japanese	L	3	20	TU Mercer	M W F	12:20PM	1:10PM	PAM 1004	12M
+85182	JPN-1105	Elementary Japanese	L	3	15	Y Younos	M W F	1:25PM	2:15PM	RAND 110	13M
+85181	JPN-1105	Elementary Japanese	L	3	15	TU Mercer	M W F	1:25PM	2:15PM	PAT 305	13M
+85180	JPN-1105	Elementary Japanese	L	3	20	Y Younos	M W F	10:10AM	11:00AM	LITRV 1770	10M
+85179	JPN-1105	Elementary Japanese	L	3	20	TU Mercer	M W F	11:15AM	12:05PM	SEITZ 207	11M
+85178	JPN-1105	Elementary Japanese	L	3	20	Y Younos	M W F	12:20PM	1:10PM	MAJWM 334	12M
 85185	JPN-2964	Field Study	L	1	0	Staff	(ARR)	(ARR)	TBA	00X
-85184	JPN-2105	Intermediate Japanese	L	3	25	Y Kumazawa	M W F	11:15AM	12:05PM	HUTCH 207	11M
-85183	JPN-2105	Intermediate Japanese	L	3	25	Y Younos	M W F	9:05AM	9:55AM	PAM 1002	09M
+89509	JPN-2105	Intermediate Japanese	L	3	20	Y Kumazawa	M W F	9:05AM	9:55AM	BUR 116	09M
+85184	JPN-2105	Intermediate Japanese	L	3	20	Y Kumazawa	M W F	11:15AM	12:05PM	HUTCH 207	11M
+85183	JPN-2105	Intermediate Japanese	L	3	20	Y Younos	M W F	9:05AM	9:55AM	PAM 1002	09M
 85186	JPN-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-88727	JPN-3105	Advanced Japanese	L	3	22	Y Kumazawa	M W F	9:05AM	9:55AM	BUR 116	09M
 85187	JPN-3105	Advanced Japanese	L	3	22	Y Kumazawa	M W F	10:10AM	11:00AM	HUTCH 209	10M
 85191	JPN-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85193	JPN-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -5137,10 +5141,12 @@
 85288	LDRS-1015	Exploring Citizen Leadership	L	3	30	Staff	T R	2:00PM	3:15PM	PAYNE 1003	14T
 85287	LDRS-1015	Exploring Citizen Leadership	L	3	30	Staff	T R	9:30AM	10:45AM	PAYNE 1003	09T
 85301	LDRS-3104	The Dynamics of Leadership	L	3	40	CR Friedel	T R	2:00PM	3:15PM	WAL 244	14T
+89548	LDRS-2014	Principles of Peer Leadership	L	3	20	CR Friedel	W	1:25PM	2:15PM	TBA	13W
 89429	LDRS-2014	Principles of Peer Leadership	L	3	0	CR Friedel	W	8:00PM	9:00PM	NCB 320	20W
 85297	LDRS-2014	Principles of Peer Leadership	O	3	0	CR Friedel	(ARR)	(ARR)	TBA	00X
 85296	LDRS-2014	Principles of Peer Leadership	O	3	200	CR Friedel	(ARR)	(ARR)	TBA	00X
 85307	LDRS-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
+89556	LDRS-5534	Cognit Prob Slvg Pref for Chng	O	3	10	JC Anderson	R	5:00PM	7:45PM	TBA	17R
 89156	LDRS-5534	Cognit Prob Slvg Pref for Chng	O	3	10	JC Anderson	(ARR)	(ARR)	TBA	00X
 89155	LDRS-5534	Cognit Prob Slvg Pref for Chng	L	3	10	JC Anderson	R	5:00PM	7:45PM	LITRV 244	17R
 85312	LDRS-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -5159,7 +5165,7 @@
 85534	MATH-4574	Vector/Complex Analysis	L	3	40	Staff	T R	11:00AM	12:15PM	RAND 129	11T
 85533	MATH-4574	Vector/Complex Analysis	L	3	40	Staff	M W F	11:15AM	12:05PM	HOLD 110	11M
 85547	MATH-5344	TS: Smooth Manifolds	L	3	20	Staff	M W F	11:15AM	12:05PM	MCB 204	11M
-85554	MATH-5465	Numerical Analysis	L	3	30	Staff	M W F	11:15AM	12:05PM	PAT 305	11M
+85554	MATH-5465	Numerical Analysis	L	3	30	JT Borggaard	M W F	11:15AM	12:05PM	PAT 305	11M
 85419	MATH-1535	Geom & Math of Design	O	3	30	NP Robbins	(ARR)	(ARR)	TBA	EE
 85418	MATH-1535	Geom & Math of Design	L	3	100	NP Robbins	(ARR)	(ARR)	EMPOR 100	EE
 85417	MATH-1535	Geom & Math of Design	L	3	100	NP Robbins	(ARR)	(ARR)	EMPOR 100	EE
@@ -5179,22 +5185,23 @@
 85318	MATH-1014	Precalc With Transcendental	L	3	100	J Clemons	(ARR)	(ARR)	EMPOR 100	EE
 85317	MATH-1014	Precalc With Transcendental	L	3	100	J Clemons	(ARR)	(ARR)	EMPOR 100	EE
 85421	MATH-2024	Intermediate Calculus	L	3	30	Staff	M W F	12:20PM	1:10PM	MCB 209	12M
-85527	MATH-4445	Intro to Numer Analysis	L	3	30	Staff	T R	3:30PM	4:45PM	MCB 307	15T
+89506	MATH-4445	Intro to Numer Analysis	L	3	25	Staff	T R	3:30PM	4:45PM	MCB 204	15T
+85527	MATH-4445	Intro to Numer Analysis	L	3	20	Staff	T R	3:30PM	4:45PM	MCB 307	15T
 85526	MATH-4445	Intro to Numer Analysis	L	3	30	Staff	M W F	11:15AM	12:05PM	MCB 209	11M
 85561	MATH-5974	Independent Study	I	1	0	PE Haskell	(ARR)	(ARR)	TBA	00X
 85560	MATH-5974	Independent Study	I	1	1	PE Haskell	(ARR)	(ARR)	TBA	00X
-85536	MATH-4644	Secondary Math w/ Tech	L	3	30	Staff	M W	11:15AM	12:30PM	EMPOR 126	11M
-89313	MATH-5414	TS:Partial Diffrntl Equations	L	3	25	Staff	M W	4:00PM	5:15PM	MCB 318	16M
-85550	MATH-5414	TS: Finite Elements	L	3	30	Staff	M W F	9:05AM	9:55AM	PAT 305	09M
-85549	MATH-5414	TS: Finite Elements & GPU Comp	L	3	30	Staff	T R	3:30PM	4:45PM	MCB 216	15T
-85548	MATH-5414	TS: Reduced Ordr Mdling Fluids	L	3	30	Staff	M W	2:30PM	3:45PM	ROB 122	14M
-85559	MATH-5614	Patterns, Functions & Algebra	L	3	85	BC Kreye	(ARR)	(ARR)	TBA	00X
+85536	MATH-4644	Secondary Math w/ Tech	L	3	30	AH Norton	M W	11:15AM	12:30PM	EMPOR 126	11M
+89313	MATH-5414	TS:Partial Diffrntl Equations	L	3	25	M Renardy	M W	4:00PM	5:15PM	MCB 318	16M
+85550	MATH-5414	TS: Finite Elements	L	3	30	T Lin	M W F	9:05AM	9:55AM	PAT 305	09M
+85549	MATH-5414	TS: Finite Elements & GPU Comp	L	3	30	T Warburton	T R	3:30PM	4:45PM	MCB 216	15T
+85548	MATH-5414	TS: Reduced Ordr Mdling Fluids	L	3	30	T Iliescu	M W	2:30PM	3:45PM	ROB 122	14M
+85559	MATH-5614	Probability and Statistics	L	3	85	BC Kreye	(ARR)	(ARR)	TBA	00X
 85479	MATH-2214H	Intro Diff Equations	L	3	15	Staff	M W F	12:20PM	1:10PM	MCB 212	12M
-85420	MATH-1614	Num & Comp for Teach	L	4	25	Staff	T R	10:00AM	11:45AM	EMPOR 126	10T
+85420	MATH-1614	Num & Comp for Teach	L	4	25	ND Gildersleeve	T R	10:00AM	11:45AM	EMPOR 126	10T
 85542	MATH-4994H	Undergraduate Research	R	1	0	PE Haskell	(ARR)	(ARR)	TBA	00X
-85555	MATH-5474	Finite Difference Mth	L	3	35	Staff	T R	2:00PM	3:15PM	MCB 233	14T
-85545	MATH-5235	Complex Analysis	L	3	20	Staff	M W F	12:20PM	1:10PM	MCB 210	12M
+85555	MATH-5474	Finite Difference Mth	L	3	35	P Wapperom	T R	2:00PM	3:15PM	MCB 233	14T
 85562	MATH-5994	Research and Thesis	R	1	9999	PE Haskell	(ARR)	(ARR)	TBA	00X
+89505	MATH-3134	Applied Combinatorics	L	3	20	Staff	M W F	12:20PM	1:10PM	MCB 210	12M
 85501	MATH-3134	Applied Combinatorics	L	3	20	Staff	M W F	11:15AM	12:05PM	MCB 126	11M
 85500	MATH-3134	Applied Combinatorics	L	3	20	Staff	M W F	9:05AM	9:55AM	WLH 335	09M
 85499	MATH-3134	Applied Combinatorics	L	3	20	Staff	M W F	1:25PM	2:15PM	MCB 307	13M
@@ -5259,12 +5266,12 @@
 85350	MATH-1225	Calculus of a Single Variable	L	4	15	Staff	T	2:00PM	2:50PM	MCB 321	CTE	fill	M W F	2:30PM	3:20PM	RAND 220
 85349	MATH-1225	Calculus of a Single Variable	L	4	15	Staff	M W F	12:20PM	1:10PM	GOODW 135	CTE	fill	T	12:30PM	1:20PM	RAND 320
 85348	MATH-1225	Calculus of a Single Variable	L	4	15	Staff	R	11:00AM	11:50AM	MCB 126	CTE	fill	M W F	11:15AM	12:05PM	PAM 3004
-85343	MATH-1026	Elementary Calculus	L	3	30	CA Stephens	T	4:30PM	5:45PM	EMPOR 100	EE
-85342	MATH-1026	Elementary Calculus	L	3	30	CA Stephens	T	3:30PM	4:45PM	EMPOR 100	EE
-85341	MATH-1026	Elementary Calculus	L	3	30	CA Stephens	T	2:30PM	3:45PM	EMPOR 100	EE
-85340	MATH-1026	Elementary Calculus	L	3	30	CA Stephens	T	1:30PM	2:45PM	EMPOR 100	EE
-85339	MATH-1026	Elementary Calculus	L	3	30	CA Stephens	T	12:30PM	1:45PM	EMPOR 100	EE
-85338	MATH-1026	Elementary Calculus	L	3	30	CA Stephens	T	11:30AM	12:45PM	EMPOR 100	EE
+85343	MATH-1026	Elementary Calculus	L	3	33	CA Stephens	T	4:30PM	5:45PM	EMPOR 100	EE
+85342	MATH-1026	Elementary Calculus	L	3	33	CA Stephens	T	3:30PM	4:45PM	EMPOR 100	EE
+85341	MATH-1026	Elementary Calculus	L	3	33	CA Stephens	T	2:30PM	3:45PM	EMPOR 100	EE
+85340	MATH-1026	Elementary Calculus	L	3	33	CA Stephens	T	1:30PM	2:45PM	EMPOR 100	EE
+85339	MATH-1026	Elementary Calculus	L	3	33	CA Stephens	T	12:30PM	1:45PM	EMPOR 100	EE
+85338	MATH-1026	Elementary Calculus	L	3	33	CA Stephens	T	11:30AM	12:45PM	EMPOR 100	EE
 85337	MATH-1025	Elementary Calculus	O	3	50	CA Stephens	(ARR)	(ARR)	TBA	EE
 85335	MATH-1025	Elementary Calculus	L	3	100	CA Stephens	(ARR)	(ARR)	EMPOR 100	EE
 85334	MATH-1025	Elementary Calculus	L	3	100	CA Stephens	(ARR)	(ARR)	EMPOR 100	EE
@@ -5273,94 +5280,92 @@
 85331	MATH-1025	Elementary Calculus	L	3	100	CA Stephens	(ARR)	(ARR)	EMPOR 100	EE
 85330	MATH-1025	Elementary Calculus	L	3	0	SG Anderson	M T W R F	10:10AM	11:00AM	MCB 224	EE
 85329	MATH-1025	Elementary Calculus	L	3	100	CA Stephens	(ARR)	(ARR)	EMPOR 100	EE
-85439	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	M W F	1:25PM	2:15PM	SURGE 104D	CTE
-85438	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	M W F	9:05AM	9:55AM	SURGE 103A	CTE
-85437	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	T R	9:30AM	10:45AM	PAM 32	CTE
-85436	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	M W F	11:15AM	12:05PM	GBJ 100	CTE
-85435	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	T R	8:00AM	9:15AM	GOODW 145	CTE
-85434	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	M W F	11:15AM	12:05PM	HOLD AUD	CTE
-85433	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	T R	2:00PM	3:15PM	HOLD AUD	CTE
-85432	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	T R	12:30PM	1:45PM	GBJ 100	CTE
-85431	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	M W F	10:10AM	11:00AM	ROB 210	CTE
-85430	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	T R	11:00AM	12:15PM	SURGE 104D	CTE
-85429	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	T R	12:30PM	1:45PM	HOLD AUD	CTE
-85428	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	M W F	1:25PM	2:15PM	SURGE 104B	CTE
-85427	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	T R	9:30AM	10:45AM	DURHM 261	CTE
-85426	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	M W F	12:20PM	1:10PM	SURGE 104A	CTE
-85425	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	M W F	8:00AM	8:50AM	SURGE 109	CTE
-85424	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	M W F	3:35PM	4:25PM	SURGE 103A	CTE
-85423	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	M W F	10:10AM	11:00AM	GBJ 100	CTE
-85422	MATH-2114	Introduction to Linear Algebra	L	3	30	Staff	T R	3:30PM	4:45PM	MCB 129	CTE
+85439	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	M W F	1:25PM	2:15PM	SURGE 104D	CTE
+85438	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	M W F	9:05AM	9:55AM	SURGE 103A	CTE
+85437	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	T R	9:30AM	10:45AM	PAM 32	CTE
+85436	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	M W F	11:15AM	12:05PM	GBJ 100	CTE
+85435	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	T R	8:00AM	9:15AM	GOODW 145	CTE
+85434	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	M W F	11:15AM	12:05PM	HOLD AUD	CTE
+85433	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	T R	2:00PM	3:15PM	HOLD AUD	CTE
+85432	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	T R	12:30PM	1:45PM	GBJ 100	CTE
+85431	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	M W F	10:10AM	11:00AM	ROB 210	CTE
+85430	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	T R	11:00AM	12:15PM	SURGE 104D	CTE
+85429	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	T R	12:30PM	1:45PM	HOLD AUD	CTE
+85428	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	M W F	1:25PM	2:15PM	SURGE 104B	CTE
+85427	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	T R	9:30AM	10:45AM	DURHM 261	CTE
+85426	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	M W F	12:20PM	1:10PM	SURGE 104A	CTE
+85425	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	M W F	8:00AM	8:50AM	SURGE 109	CTE
+85424	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	M W F	3:35PM	4:25PM	SURGE 103A	CTE
+85423	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	M W F	10:10AM	11:00AM	GBJ 100	CTE
+85422	MATH-2114	Introduction to Linear Algebra	L	3	35	Staff	T R	3:30PM	4:45PM	MCB 129	CTE
 85487	MATH-2994	Undergraduate Research	R	1	0	PE Haskell	(ARR)	(ARR)	TBA	00X
 85496	MATH-3124	Modern Algebra	L	3	20	Staff	M W F	11:15AM	12:05PM	MCB 307	11M
 85495	MATH-3124	Modern Algebra	L	3	20	Staff	M W F	9:05AM	9:55AM	MCB 307	09M
 85494	MATH-3124	Modern Algebra	L	3	20	Staff	M W F	12:20PM	1:10PM	WLH 335	12M
-85523	MATH-4334	College Geometry	L	3	30	Staff	M W	2:30PM	3:45PM	EMPOR 126	14M
+85523	MATH-4334	College Geometry	L	3	30	SM Hagen	M W	2:30PM	3:45PM	EMPOR 126	14M
 85544	MATH-5225	Real Analysis	L	3	20	Staff	M W F	10:10AM	11:00AM	MCB 210	10M
-85480	MATH-2405H	Math in Computational Context	L	5	25	Staff	T R	8:00AM	9:15AM	MCB 218	08M	fill	M W	8:00AM	8:50AM	MCB 134
-85558	MATH-5545	Calculus of Variation	L	3	20	Staff	T R	11:00AM	12:15PM	MCB 210	11T
+85480	MATH-2405H	Math in Computational Context	L	5	25	J Chung	T R	8:00AM	9:15AM	MCB 218	08M	fill	M W	8:00AM	8:50AM	MCB 134
+85558	MATH-5545	Calculus of Variation	L	3	20	JA Burns	T R	11:00AM	12:15PM	MCB 210	11T
 85539	MATH-4974	Independent Study	I	1	0	PE Haskell	(ARR)	(ARR)	TBA	00X
 85551	MATH-5425	Ap Par Dif Equa	L	3	25	Staff	M W	2:30PM	3:45PM	GBJ 102	14M
 85524	MATH-4414	Issues in Scientific Computing	L	3	35	Staff	M W F	12:20PM	1:10PM	MCB 219	12M
 85556	MATH-5485	Numer Analy and Softw	L	3	40	Staff	T R	9:30AM	10:45AM	MCB 308	09T
-85563	MATH-6255	Functional Analysis	L	3	20	Staff	T R	9:30AM	10:45AM	MCB 204	09T
+85563	MATH-6255	Functional Analysis	L	3	20	M Klaus	T R	9:30AM	10:45AM	MCB 204	09T
 85546	MATH-5245	Differential Eqns	L	3	20	Staff	T R	12:30PM	1:45PM	MCB 204	12T
-85543	MATH-5125	Abstract Algebra	L	3	20	Staff	M W F	9:05AM	9:55AM	MCB 210	09M
-85552	MATH-5444	Num Methods for ODE	L	3	20	Staff	T R	3:30PM	4:45PM	MCB 204	15T
+85543	MATH-5125	Abstract Algebra	L	3	20	PA Linnell	M W F	9:05AM	9:55AM	MCB 210	09M
 85504	MATH-3144	Linear Algebra I	L	3	25	Staff	T R	9:30AM	10:45AM	MCB 328	09T
 85503	MATH-3144	Linear Algebra I	L	3	25	Staff	T R	2:00PM	3:15PM	MCB 302	14T
 85502	MATH-3144	Linear Algebra I	L	3	25	Staff	M W F	11:15AM	12:05PM	MCB 302	11M
-85463	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	M W F	1:25PM	2:15PM	MCB 129	CTE
-85462	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	T R	9:30AM	10:45AM	GOODW 135	CTE
-85461	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	T R	5:00PM	6:15PM	MCB 113	CTE
-85460	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	M W	4:00PM	5:15PM	SURGE 118B	CTE
-85459	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	T R	8:00AM	9:15AM	SURGE 117A	CTE
-85458	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	M W F	9:05AM	9:55AM	MCB 129	CTE
-85457	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	M W F	10:10AM	11:00AM	MCB 129	CTE
-85456	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	M W F	10:10AM	11:00AM	PAM 30	CTE
-85455	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	M W F	12:20PM	1:10PM	MCB 129	CTE
-85454	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	M W F	8:00AM	8:50AM	SURGE 118B	CTE
-85453	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	M W	2:30PM	3:45PM	MCB 129	CTE
-85452	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	M W F	9:05AM	9:55AM	SURGE 118B	CTE
-85451	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	M W F	8:00AM	8:50AM	MCB 113	CTE
-85450	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	T R	8:00AM	9:15AM	MCB 129	CTE
-85449	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	M W F	10:10AM	11:00AM	HOLD AUD	CTE
-85448	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	T R	2:00PM	3:15PM	SURGE 118B	CTE
-85447	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	M W F	12:20PM	1:10PM	MCB 113	CTE
-85446	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	M W F	4:00PM	4:50PM	PAM 32	CTE
-85445	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	M W F	11:15AM	12:05PM	MCB 113	CTE
-85444	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	T R	3:30PM	4:45PM	SURGE 118B	CTE
-85443	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	T R	2:00PM	3:15PM	MCB 113	CTE
-85442	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	M W F	2:30PM	3:20PM	SURGE 118B	CTE
-85441	MATH-2204	Intro Multivariable Calculus	L	3	35	Staff	T R	9:30AM	10:45AM	GOODW 125	CTE
+85463	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	M W F	1:25PM	2:15PM	MCB 129	CTE
+85462	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	T R	9:30AM	10:45AM	GOODW 135	CTE
+85461	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	T R	5:00PM	6:15PM	MCB 113	CTE
+85460	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	M W	4:00PM	5:15PM	SURGE 118B	CTE
+85459	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	T R	8:00AM	9:15AM	SURGE 117A	CTE
+85458	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	M W F	9:05AM	9:55AM	MCB 129	CTE
+85457	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	M W F	10:10AM	11:00AM	MCB 129	CTE
+85456	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	M W F	10:10AM	11:00AM	PAM 30	CTE
+85455	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	M W F	12:20PM	1:10PM	MCB 129	CTE
+85454	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	M W F	8:00AM	8:50AM	SURGE 118B	CTE
+85453	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	M W	2:30PM	3:45PM	MCB 129	CTE
+85452	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	M W F	9:05AM	9:55AM	SURGE 118B	CTE
+85451	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	M W F	8:00AM	8:50AM	MCB 113	CTE
+85450	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	T R	8:00AM	9:15AM	MCB 129	CTE
+85449	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	M W F	10:10AM	11:00AM	HOLD AUD	CTE
+85448	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	T R	2:00PM	3:15PM	SURGE 118B	CTE
+85447	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	M W F	12:20PM	1:10PM	MCB 113	CTE
+85446	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	M W F	4:00PM	4:50PM	PAM 32	CTE
+85445	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	M W F	11:15AM	12:05PM	MCB 113	CTE
+85444	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	T R	3:30PM	4:45PM	SURGE 118B	CTE
+85443	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	T R	2:00PM	3:15PM	MCB 113	CTE
+85442	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	M W F	2:30PM	3:20PM	SURGE 118B	CTE
+85441	MATH-2204	Intro Multivariable Calculus	L	3	45	Staff	T R	9:30AM	10:45AM	GOODW 125	CTE
 85485	MATH-2644	Mathematics Tutoring	L	1	25	Staff	F	1:00PM	1:50PM	EMPOR 126	13F
 85511	MATH-3414	Numerical Methods	L	3	36	LT Watson	M W	2:30PM	3:45PM	MCB 226	14M
 85347	MATH-1114	Elementary Linear Algebra	O	2	50	ND Gildersleeve	(ARR)	(ARR)	TBA	EE
 85346	MATH-1114	Elementary Linear Algebra	L	2	100	ND Gildersleeve	(ARR)	(ARR)	EMPOR 100	EE
 85345	MATH-1114	Elementary Linear Algebra	L	2	100	ND Gildersleeve	(ARR)	(ARR)	EMPOR 100	EE
 85344	MATH-1114	Elementary Linear Algebra	L	2	100	ND Gildersleeve	(ARR)	(ARR)	EMPOR 100	EE
-85508	MATH-3214	Calculus of Several Variables	L	3	25	Staff	M W F	1:25PM	2:15PM	MCB 238	13M
-85507	MATH-3214	Calculus of Several Variables	L	3	25	Staff	M W F	12:20PM	1:10PM	MCB 230	12M
-85506	MATH-3214	Calculus of Several Variables	L	3	25	Staff	T R	11:00AM	12:15PM	MCB 321	11T
-85505	MATH-3214	Calculus of Several Variables	L	3	25	Staff	T R	3:30PM	4:45PM	MCB 318	15T
-85537	MATH-4664	Senior Math Education Seminar	L	2	30	Staff	M	4:00PM	6:00PM	EMPOR 126	16M
-85521	MATH-4225	Elementary Real Analysis	L	3	12	Staff	M W F	10:10AM	11:00AM	MCB 238	10M
-85520	MATH-4225	Elementary Real Analysis	L	3	12	Staff	M W F	10:10AM	11:00AM	MCB 232	10M
-85525	MATH-4425	Fourier Series PDE	L	3	30	Staff	T R	12:30PM	1:45PM	MCB 304	12T
-85464	MATH-2204H	Intro Multivariable Calculus	L	3	25	Staff	M W F	9:05AM	9:55AM	MCB 231	09M
+85508	MATH-3214	Calculus of Several Variables	L	3	25	NA Loehr	M W F	1:25PM	2:15PM	MCB 238	13M
+85507	MATH-3214	Calculus of Several Variables	L	3	25	WJ Floyd	M W F	12:20PM	1:10PM	MCB 230	12M
+85506	MATH-3214	Calculus of Several Variables	L	3	25	LD Kay	T R	11:00AM	12:15PM	MCB 321	11T
+85505	MATH-3214	Calculus of Several Variables	L	3	25	EA Palsson	T R	3:30PM	4:45PM	MCB 318	15T
+85537	MATH-4664	Senior Math Education Seminar	L	2	30	E Johnson	M	4:00PM	6:00PM	EMPOR 126	16M
+85521	MATH-4225	Elementary Real Analysis	L	3	15	Staff	M W F	10:10AM	11:00AM	MCB 238	10M
+85520	MATH-4225	Elementary Real Analysis	L	3	15	Staff	M W F	10:10AM	11:00AM	MCB 232	10M
+85525	MATH-4425	Fourier Series PDE	L	3	30	RC Rogers	T R	12:30PM	1:45PM	MCB 304	12T
+85464	MATH-2204H	Intro Multivariable Calculus	L	3	25	P Wapperom	M W F	9:05AM	9:55AM	MCB 231	09M
 85557	MATH-5515	Model and Sim of Bio Systems	L	3	35	Staff	T R	9:30AM	10:45AM	MCB 219	09T
-85535	MATH-4625	Math for Secondary Teachers	L	3	30	Staff	T R	3:30PM	4:45PM	EMPOR 126	15T
-85513	MATH-4044	History of Mathematics	L	3	30	Staff	T R	2:00PM	3:15PM	MCB 308	14T
+85535	MATH-4625	Math for Secondary Teachers	L	3	30	SM Hagen	T R	3:30PM	4:45PM	EMPOR 126	15T
+85513	MATH-4044	History of Mathematics	L	3	30	AH Norton	T R	2:00PM	3:15PM	MCB 308	14T
 85564	MATH-7994	Research and Dissertation	R	1	9999	PE Haskell	(ARR)	(ARR)	TBA	00X
-85553	MATH-5454	Graph Theory	L	3	25	Staff	T R	12:30PM	1:45PM	PAM 1002	12T
-85515	MATH-4124	Intr Abstract Algebra	L	3	25	Staff	M W F	9:05AM	9:55AM	MCB 209	09M
-85514	MATH-4124	Intr Abstract Algebra	L	3	25	Staff	M W F	9:05AM	9:55AM	MCB 126	09M
-85522	MATH-4245	Intermediate Differential Equa	L	3	25	Staff	T R	3:30PM	4:45PM	MCB 219	15T
-85532	MATH-4564	Operational Methods	L	3	55	Staff	T R	5:00PM	6:15PM	SURGE 107	17T
-85531	MATH-4564	Operational Methods	L	3	55	Staff	M W F	9:05AM	9:55AM	SURGE 107	09M
-85530	MATH-4564	Operational Methods	L	3	55	Staff	M W F	11:15AM	12:05PM	SURGE 107	11M
-85529	MATH-4564	Operational Methods	L	3	55	Staff	M W F	1:25PM	2:15PM	SURGE 107	13M
-85528	MATH-4564	Operational Methods	L	3	55	Staff	T R	11:00AM	12:15PM	SURGE 107	11T
+85553	MATH-5454	Graph Theory	L	3	28	Staff	T R	12:30PM	1:45PM	PAM 1002	12T
+85515	MATH-4124	Intr Abstract Algebra	L	3	25	MM Shimozono	M W F	9:05AM	9:55AM	MCB 209	09M
+85514	MATH-4124	Intr Abstract Algebra	L	3	25	DD Orr	M W F	9:05AM	9:55AM	MCB 126	09M
+85532	MATH-4564	Operational Methods	L	3	55	JC Turner	T R	5:00PM	6:15PM	SURGE 107	17T
+85531	MATH-4564	Operational Methods	L	3	65	JC Turner	M W F	9:05AM	9:55AM	SURGE 107	09M
+85530	MATH-4564	Operational Methods	L	3	65	WE Kohler	M W F	11:15AM	12:05PM	SURGE 107	11M
+85529	MATH-4564	Operational Methods	L	3	65	JC Turner	M W F	1:25PM	2:15PM	SURGE 107	13M
+85528	MATH-4564	Operational Methods	L	3	65	WE Kohler	T R	11:00AM	12:15PM	SURGE 107	11T
 85492	MATH-3034	Introduction to Proofs	L	3	20	Staff	M W F	11:15AM	12:05PM	MCB 224	11M
 85491	MATH-3034	Introduction to Proofs	L	3	20	Staff	M W F	9:05AM	9:55AM	MCB 230	09M
 85490	MATH-3034	Introduction to Proofs	L	3	20	Staff	M W F	12:20PM	1:10PM	MCB 226	12M
@@ -5374,27 +5379,28 @@
 85406	MATH-1525	Calc With Matrices	L	3	100	JH England	(ARR)	(ARR)	EMPOR 100	EE
 85405	MATH-1525	Calc With Matrices	L	3	100	JH England	(ARR)	(ARR)	EMPOR 100	EE
 85404	MATH-1525	Calc With Matrices	L	3	100	JH England	(ARR)	(ARR)	EMPOR 100	EE
+89507	MATH-2534	Intro Discrete Math	L	3	65	Staff	T R	3:30PM	4:45PM	MCB 113	15T
 85484	MATH-2534	Intro Discrete Math	L	3	75	Staff	M W	2:30PM	3:45PM	SURGE 104B	14M
-85483	MATH-2534	Intro Discrete Math	L	3	75	Staff	T R	3:30PM	4:45PM	SURGE 104B	15T
+85483	MATH-2534	Intro Discrete Math	L	3	65	Staff	T R	3:30PM	4:45PM	SURGE 104B	15T
 85482	MATH-2534	Intro Discrete Math	L	3	75	Staff	M W	4:00PM	5:15PM	SURGE 104B	16M
 85481	MATH-2534	Intro Discrete Math	L	3	75	Staff	T R	12:30PM	1:45PM	SURGE 104C	12T
 85486	MATH-2974	Independent Study	I	1	0	PE Haskell	(ARR)	(ARR)	TBA	00X
-85478	MATH-2214	Intro Diff Equations	L	3	25	Staff	M W F	1:25PM	2:15PM	MCB 231	CTE
-85477	MATH-2214	Intro Diff Equations	L	3	40	Staff	M W F	12:20PM	1:10PM	WLH 330	CTE
-85476	MATH-2214	Intro Diff Equations	L	3	40	Staff	T R	2:00PM	3:15PM	WLH 340	CTE
-85475	MATH-2214	Intro Diff Equations	L	3	40	Staff	M W F	12:20PM	1:10PM	WLH 320	CTE
-85474	MATH-2214	Intro Diff Equations	L	3	40	Staff	M W	2:30PM	3:45PM	WLH 350	CTE
-85473	MATH-2214	Intro Diff Equations	L	3	40	Staff	M W F	1:25PM	2:15PM	WLH 320	CTE
-85472	MATH-2214	Intro Diff Equations	L	3	40	Staff	M W	2:30PM	3:45PM	WLH 340	CTE
-85471	MATH-2214	Intro Diff Equations	L	3	40	Staff	T R	3:30PM	4:45PM	WLH 330	CTE
-85470	MATH-2214	Intro Diff Equations	L	3	40	Staff	M W	4:00PM	5:15PM	WLH 330	CTE
-85469	MATH-2214	Intro Diff Equations	L	3	40	Staff	M W F	10:10AM	11:00AM	WLH 330	CTE
-85468	MATH-2214	Intro Diff Equations	L	3	40	Staff	M W F	1:25PM	2:15PM	WLH 330	CTE
-85467	MATH-2214	Intro Diff Equations	L	3	40	Staff	T R	8:00AM	9:15AM	WLH 320	CTE
-85466	MATH-2214	Intro Diff Equations	L	3	40	Staff	M W F	9:05AM	9:55AM	WLH 330	CTE
-85465	MATH-2214	Intro Diff Equations	L	3	40	Staff	T R	12:30PM	1:45PM	WLH 340	CTE
-85510	MATH-3224	Advanced Calculus	L	3	25	Staff	M W F	10:10AM	11:00AM	MCB 219	10M
-85509	MATH-3224	Advanced Calculus	L	3	25	Staff	M W F	1:25PM	2:15PM	MCB 219	13M
+85478	MATH-2214	Intro Diff Equations	L	3	30	Staff	M W F	1:25PM	2:15PM	MCB 231	CTE
+85477	MATH-2214	Intro Diff Equations	L	3	50	Staff	M W F	12:20PM	1:10PM	WLH 330	CTE
+85476	MATH-2214	Intro Diff Equations	L	3	50	Staff	T R	2:00PM	3:15PM	WLH 340	CTE
+85475	MATH-2214	Intro Diff Equations	L	3	50	Staff	M W F	12:20PM	1:10PM	WLH 320	CTE
+85474	MATH-2214	Intro Diff Equations	L	3	50	Staff	M W	2:30PM	3:45PM	WLH 350	CTE
+85473	MATH-2214	Intro Diff Equations	L	3	50	Staff	M W F	1:25PM	2:15PM	WLH 320	CTE
+85472	MATH-2214	Intro Diff Equations	L	3	50	Staff	M W	2:30PM	3:45PM	WLH 340	CTE
+85471	MATH-2214	Intro Diff Equations	L	3	50	Staff	T R	3:30PM	4:45PM	WLH 330	CTE
+85470	MATH-2214	Intro Diff Equations	L	3	50	Staff	M W	4:00PM	5:15PM	WLH 330	CTE
+85469	MATH-2214	Intro Diff Equations	L	3	50	Staff	M W F	10:10AM	11:00AM	WLH 330	CTE
+85468	MATH-2214	Intro Diff Equations	L	3	50	Staff	M W F	1:25PM	2:15PM	WLH 330	CTE
+85467	MATH-2214	Intro Diff Equations	L	3	50	Staff	T R	8:00AM	9:15AM	WLH 320	CTE
+85466	MATH-2214	Intro Diff Equations	L	3	50	Staff	M W F	9:05AM	9:55AM	WLH 330	CTE
+85465	MATH-2214	Intro Diff Equations	L	3	50	Staff	T R	12:30PM	1:45PM	WLH 340	CTE
+85510	MATH-3224	Advanced Calculus	L	3	25	WE Kohler	M W F	10:10AM	11:00AM	MCB 219	10M
+85509	MATH-3224	Advanced Calculus	L	3	25	WE Kohler	M W F	1:25PM	2:15PM	MCB 219	13M
 85541	MATH-4994	Undergraduate Research	R	1	0	PE Haskell	(ARR)	(ARR)	TBA	00X
 85538	MATH-4754	Internship	L	1	0	PE Haskell	(ARR)	(ARR)	TBA	00X
 85414	MATH-1526	Calc With Matrices	L	3	125	JH England	(ARR)	(ARR)	EMPOR 100	EE
@@ -5529,9 +5535,9 @@
 85615	ME-4006	Mechanical Engineering Lab	L	3	0	AA Kornhauser	M W	4:00PM	5:15PM	GOODW 190	14M	fill	M	2:00PM	3:50PM	GOODW 130
 85614	ME-4006	Mechanical Engineering Lab	L	3	20	AA Kornhauser	R	3:00PM	4:50PM	GOODW 130	16M	fill	M W	4:00PM	5:15PM	NCB 360
 85613	ME-4006	Mechanical Engineering Lab	L	3	20	AA Kornhauser	F	11:00AM	12:50PM	GOODW 130	16M	fill	M W	4:00PM	5:15PM	NCB 160
-85661	ME-4644	Rapid Prototyping	L	3	30	CB Williams	T R	9:30AM	10:45AM	GOODW 145	09T
+85661	ME-4644	Rapid Prototyping	L	3	25	CB Williams	T R	9:30AM	10:45AM	GOODW 145	09T
 85663	ME-4724	Engineering Acoustics	L	3	36	RA Burdisso	T R	3:30PM	4:45PM	RAND 206	15T
-85737	ME-5814	Energy Harvesting	L	3	20	L Zuo	T R	2:00PM	3:15PM	HUTCH 310	14T
+85737	ME-5814	Energy Harvesting	L	3	20	L Zuo	T R	2:00PM	3:15PM	RAND 100L	14T
 85713	ME-4994H	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85712	ME-4994H	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85711	ME-4994H	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -5661,7 +5667,6 @@
 85637	ME-4015	Engineering Design and Project	B	0	49	RL West	T R	5:00PM	6:15PM	RAND 129	17T
 85636	ME-4015	Engineering Design and Project	B	0	40	JM Kennedy	T R	9:30AM	10:45AM	RAND 208	09T
 85635	ME-4015	Engineering Design and Project	L	3	540	KB Kochersberger	M	2:30PM	3:45PM	MCB 100	08M	fill	M W	8:00AM	8:50AM	TBA
-85714	ME-5104	Thermodynamics: Found/Applic	L	3	30	MR von Spakovsky	M W F	11:15AM	12:05PM	RAND 100L	11M
 85725	ME-5544	Linear Systems Theory	L	3	45	Staff	T R	11:00AM	12:15PM	RAND 220	11T
 85676	ME-4974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85675	ME-4974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -5677,7 +5682,7 @@
 85719	ME-5304	Conduction Heat Transfer	O	3	5	R Pitchumani	(ARR)	(ARR)	TBA	00X
 85718	ME-5304	Conduction Heat Transfer	L	3	24	R Pitchumani	M	9:30AM	12:30PM	TORG 1000	09M
 85747	ME-5944	ME Graduate Seminar	L	1	310	MR Paul	(ARR)	(ARR)	TBA	00X
-85664	ME-4735	Mechatronics	L	3	70	AT Asbeck	M W F	9:05AM	9:55AM	GOODW 115	09M
+85664	ME-4735	Mechatronics	L	3	40	AT Asbeck	M W F	9:05AM	9:55AM	GOODW 115	09M
 85585	ME-2974H	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85584	ME-2974H	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85583	ME-2974H	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -5695,7 +5700,7 @@
 85662	ME-4664	Intro Global Coll Engr Design	L	3	7	JH Bohn	M W F	9:00AM	9:50AM	RAND 114E	09M
 85723	ME-5434	Adv Intro Comp Fluid Dynamics	O	3	20	SS Choi	(ARR)	(ARR)	TBA	00X
 85722	ME-5434	Adv Intro Comp Fluid Dynamics	L	3	55	SS Choi	M W F	9:05AM	9:55AM	RAND 221	09M
-88343	ME-4544	Automotive Engineering	L	3	75	JB Ferris	T R	12:30PM	1:45PM	WLH 330	12T
+88343	ME-4544	Automotive Engineering	L	3	50	JB Ferris	T R	12:30PM	1:45PM	WLH 330	12T
 85665	ME-4864	Micro/Nano-Robotics	L	3	0	B Behkam	T R	9:30AM	10:45AM	GOODW 244	09T
 88989	ME-5634	Fin Elem in Mach Des	O	3	0	Staff	(ARR)	(ARR)	TBA	00X
 88988	ME-5634	Fin Elem in Mach Des	L	3	0	Staff	T	5:00PM	7:30PM	TORG 1030	17T
@@ -5805,15 +5810,15 @@
 85650	ME-4124	CAD of Fluid-Thermal Sys	B	0	0	MW Ellis	F	11:00AM	12:55PM	RAND 120	11F
 85649	ME-4124	CAD of Fluid-Thermal Sys	B	0	34	MW Ellis	R	12:30PM	2:25PM	RAND 110	12R
 85648	ME-4124	CAD of Fluid-Thermal Sys	B	0	34	MW Ellis	R	3:00PM	4:55PM	RAND 117A	15R
-85647	ME-4124	CAD of Fluid-Thermal Sys	L	3	150	MW Ellis	M W	1:25PM	2:15PM	GOODW 190	13M
-85646	ME-4124	CAD of Fluid-Thermal Sys	L	3	150	MW Ellis	M W	12:20PM	1:10PM	GOODW 190	12M
+85647	ME-4124	CAD of Fluid-Thermal Sys	L	3	170	MW Ellis	M W	1:25PM	2:15PM	GOODW 190	13M
+85646	ME-4124	CAD of Fluid-Thermal Sys	L	3	170	MW Ellis	M W	12:20PM	1:10PM	GOODW 190	12M
 85645	ME-4124	CAD of Fluid-Thermal Sys	B	0	34	MW Ellis	F	9:00AM	10:55AM	RAND 110	09F
 85644	ME-4124	CAD of Fluid-Thermal Sys	B	0	34	MW Ellis	R	3:00PM	4:55PM	RAND 110	15R
 85643	ME-4124	CAD of Fluid-Thermal Sys	B	0	34	MW Ellis	R	9:00AM	10:55AM	RAND 110	09R
 85582	ME-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85581	ME-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85580	ME-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-85659	ME-4554	Adv Technology Motor Vehicles	L	3	60	DJ Nelson	T R	2:00PM	3:15PM	GOODW 125	14T
+85659	ME-4554	Adv Technology Motor Vehicles	L	3	45	DJ Nelson	T R	2:00PM	3:15PM	GOODW 125	14T
 85704	ME-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85703	ME-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85702	ME-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -5825,7 +5830,7 @@
 85696	ME-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85695	ME-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85694	ME-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
-85693	ME-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	(ARR)	00X
+85693	ME-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85692	ME-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85691	ME-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 85690	ME-4994	Undergraduate Research	R	1	0	A Nain	(ARR)	(ARR)	TBA	00X
@@ -5859,15 +5864,15 @@
 86067	MGT-4354	Leadership Skills	L	3	40	KA Carlson	T R	5:00PM	6:15PM	NCB 130A	17T
 86085	MGT-5124	Business Research Methods	L	3	30	DJ Beal	S	8:30AM	11:30AM	PAM 2002	08
 86048	MGT-3464	Diversity Intern & Prof Dev	L	3	0	KA Carlson	(ARR)	(ARR)	TBA	00X
-86026	MGT-3064	Cornerstones Entrepreneurship	L	3	30	Staff	T	4:00PM	7:00PM	ROB 103	16T
-86025	MGT-3064	Cornerstones Entrepreneurship	L	3	30	Staff	M	4:00PM	7:00PM	WMS 120	16M
+86026	MGT-3064	Cornerstones Entrepreneurship	L	3	40	Staff	T	4:00PM	7:00PM	ROB 103	16T
+86025	MGT-3064	Cornerstones Entrepreneurship	L	3	40	Staff	M	4:00PM	7:00PM	WMS 120	16M
 86024	MGT-3064	Cornerstones Entrepreneurship	L	3	0	Staff	W	4:00PM	7:00PM	WMS 120	16W
 86053	MGT-3935	Adv Professional Dev for Cdts	L	2	75	E Humphrey	T	3:30PM	4:45PM	WLH 340	15T
 86051	MGT-3614	Strategy Competition Analytics	L	3	30	A Seth	T	5:30PM	8:30PM	WMS 209	17T
 86022	MGT-2964	Field Study	L	1	0	KA Carlson	(ARR)	(ARR)	TBA	00X
 86021	MGT-2964	Field Study	L	1	0	KA Carlson	(ARR)	(ARR)	TBA	00X
 86042	MGT-3314	International Business	L	3	30	P Thakur Wernz	T R	11:00AM	12:15PM	GYM 124	11T
-86041	MGT-3314	International Business	L	3	40	P Thakur Wernz	M W	4:00PM	5:15PM	PAM 3001	16M
+86041	MGT-3314	International Business	L	3	25	P Thakur Wernz	M W	4:00PM	5:15PM	PAM 3001	16M
 86045	MGT-3334	Managing Human Resources	L	3	35	Staff	T R	12:30PM	1:45PM	PAM 1001	12T
 86023	MGT-3014	MGT Career Planning Strategy	L	3	40	BL O'Donnell	M W	2:30PM	3:45PM	PAM 1008	14M
 86103	MGT-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
@@ -5884,7 +5889,7 @@
 86058	MGT-4064	Developing Entrep Ventures	L	3	0	Staff	M W	5:30PM	6:45PM	NCB 130A	17M
 86057	MGT-4064	Developing Entrep Ventures	L	3	35	SJ Collins	M W	4:00PM	5:15PM	NCB 130A	16M
 86106	MGT-7994	Research and Dissertation	R	1	0	DJ Beal	(ARR)	(ARR)	TBA	00X
-86066	MGT-4344	Prod and Qual Leader	L	3	42	ME Deck	M W	5:00PM	6:15PM	PAM 32	17M
+86066	MGT-4344	Prod and Qual Leader	L	3	42	ME Deck	T R	2:00PM	3:15PM	PAM 1003	14T
 86065	MGT-4344	Prod and Qual Leader	L	3	28	ME Deck	T R	3:30PM	4:45PM	WMS 134	15T
 86105	MGT-5994	Research and Thesis	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 86050	MGT-3604	Managerial Analytics	L	3	35	SE Markham	T R	11:00AM	12:15PM	PAM 2003	11T
@@ -5900,9 +5905,10 @@
 86008	MGT-1104	Foundations of Business	L	3	0	R Kennedy	M W F	9:05AM	9:55AM	NCB 220	09M
 86007	MGT-1104	Foundations of Business	L	3	0	DR Lohr	M W F	9:05AM	9:55AM	PAM 31	09M
 86006	MGT-1104	Foundations of Business	L	3	0	SJ Skripak	M W F	9:05AM	9:55AM	WMS 120	09M
-86005	MGT-1104	Foundations of Business	L	3	0	Staff	M W F	12:20PM	1:10PM	PAM 32	12M
-86004	MGT-1104	Foundations of Business	L	3	0	R Kennedy	M W F	12:20PM	1:10PM	PAM 2030	12M
+86005	MGT-1104	Foundations of Business	L	3	0	DR Lohr	M W F	12:20PM	1:10PM	PAM 32	12M
+86004	MGT-1104	Foundations of Business	L	3	0	Staff	M W F	12:20PM	1:10PM	PAM 2030	12M
 86003	MGT-1104	Foundations of Business	L	3	0	AH Cortes	M W F	10:10AM	11:00AM	WMS 120	10M
+89532	MGT-3304	Mgt Th & Lead Pract	L	3	120	ME Deck	T R	9:30AM	10:45AM	LITRV 1870	09T
 86040	MGT-3304	Mgt Th & Lead Pract	O	3	130	AT Cobb	(ARR)	(ARR)	TBA	00X
 86039	MGT-3304	Mgt Th & Lead Pract	O	3	130	AT Cobb	(ARR)	(ARR)	TBA	00X
 86038	MGT-3304	Mgt Th & Lead Pract	L	3	0	Staff	F	12:20PM	1:10PM	ROB 122	12F
@@ -5913,13 +5919,13 @@
 86033	MGT-3304	Mgt Th & Lead Pract	L	3	40	SC Matuszak	W	11:15AM	12:05PM	PAM 1008	11W
 86032	MGT-3304	Mgt Th & Lead Pract	L	3	40	SC Matuszak	W	10:10AM	11:00AM	NCB 130B	10W
 86031	MGT-3304	Mgt Th & Lead Pract	L	3	120	AK Ward Bartlett	T R	3:30PM	4:45PM	ROB 210	15T
-86030	MGT-3304	Mgt Th & Lead Pract	L	3	120	ME Deck	M W	5:30PM	6:45PM	SURGE 104B	17M
+86030	MGT-3304	Mgt Th & Lead Pract	L	3	120	AH Cortes	M W	5:30PM	6:45PM	SURGE 104B	17M
 86029	MGT-3304	Mgt Th & Lead Pract	L	3	40	SC Matuszak	M	12:20PM	1:10PM	PAM 2028	12M
 86028	MGT-3304	Mgt Th & Lead Pract	L	3	0	Staff	F	11:15AM	12:05PM	PAM 1008	11F
 86027	MGT-3304	Mgt Th & Lead Pract	L	3	40	SC Matuszak	W	12:20PM	1:10PM	ROB 122	12W
 86044	MGT-3324	Organization Behavior	L	3	45	JP Flynn	T R	2:00PM	3:15PM	WLH 345	14T
-86043	MGT-3324	Organization Behavior	L	3	40	JP Flynn	M W	4:00PM	5:15PM	PAM 3010	16M
-86047	MGT-3344	Employee & Labor Relations	L	3	35	Staff	T R	12:30PM	1:45PM	PAM 3008	12T
+86043	MGT-3324	Organization Behavior	L	3	20	JP Flynn	M W	4:00PM	5:15PM	PAM 3010	16M
+86047	MGT-3344	Employee & Labor Relations	L	3	35	JP Flynn	T R	12:30PM	1:45PM	PAM 3008	12T
 86046	MGT-3344	Employee & Labor Relations	L	3	35	Staff	T R	11:00AM	12:15PM	PAM 1001	11T
 86064	MGT-4334	Ethical Leadership	L	3	45	Staff	T R	11:00AM	12:15PM	WLH 345	11T
 86063	MGT-4334	Ethical Leadership	L	3	45	RE Wokutch	T R	12:30PM	1:45PM	WLH 345	12T
@@ -5936,7 +5942,7 @@
 86079	MGT-4935	Cadet Citizen Leader Practicum	L	2	116	E Humphrey	T	3:30PM	4:45PM	PAM 30	15T
 86099	MGT-5804	Leader Tech-Based Org	O	3	75	D Townsend	(ARR)	(ARR)	TBA	00X
 88259	MINE-6034	Chemistry of Flotation	L	3	20	RH Yoon	R	8:00AM	9:15AM	MCB 658	08R
-88258	MINE-6034	Chemistry of Flotation	L	3	0	Staff	(ARR)	(ARR)	(ARR)	00X
+88258	MINE-6034	Chemistry of Flotation	L	3	0	Staff	(ARR)	(ARR)	TBA	00X
 86151	MINE-7994	Research and Dissertation	R	1	9999	NS Ripepi	(ARR)	(ARR)	TBA	00X
 86150	MINE-7994	Research and Dissertation	R	1	9999	EA Sarver	(ARR)	(ARR)	TBA	00X
 86149	MINE-7994	Research and Dissertation	R	1	9999	ME Karmis	(ARR)	(ARR)	TBA	00X
@@ -6293,7 +6299,7 @@
 86359	MUS-1005	Theory/Fundamentals	O	3	150	JN Paglialonga	(ARR)	(ARR)	TBA	00X
 86358	MUS-1005	Theory/Fundamentals	O	3	150	WE Easter	(ARR)	(ARR)	TBA	00X
 86357	MUS-1005	Theory/Fundamentals	O	3	150	J Irrera	(ARR)	(ARR)	TBA	00X
-89088	MUS-2534	Individual Applied Violin	L	1	0	Staff	(ARR)	(ARR)	(ARR)	00X
+89088	MUS-2534	Individual Applied Violin	L	1	0	Staff	(ARR)	(ARR)	TBA	00X
 86393	MUS-2534	Individual Applied Violin	L	1	20	WJ Glazebrook	T R	2:00PM	3:15PM	TBA	14T
 86414	MUS-2974	Independent Study	I	1	9999	TE Cowden	(ARR)	(ARR)	TBA	00X
 86356	MUS-1004	Perf Arts First Year Exper	L	1	75	DM McKee	R	8:00AM	9:15AM	SQUIR 243	08R
@@ -6330,23 +6336,32 @@
 88892	NANO-4314	Nanomedicine	L	4	12	CV Finkielstein	T R	5:30PM	7:30PM	NCB 310	08T	fill	T R	8:00AM	9:15AM	DER 3076
 86509	NANO-4314	Nanomedicine	L	4	12	CV Finkielstein	T R	5:30PM	7:30PM	NCB 330	08T	fill	T R	8:00AM	9:15AM	DER 3076
 88351	NANO-4964	Field Study	L	1	0	JR Heflin	(ARR)	(ARR)	TBA	00X
-89237	NEUR-4044	Neuroscience Senior Seminar	L	3	30	GE Hodes	W	4:00PM	6:30PM	WAL 407	16W
-89062	NEUR-4044	Neuroscience Senior Seminar	L	3	30	JM Bowers	M	4:00PM	6:30PM	LITRV 1760	16M
+89237	NEUR-4044	Neuroscience Senior Seminar	L	3	20	GE Hodes	W	4:00PM	6:30PM	WAL 407	16W
+89062	NEUR-4044	Neuroscience Senior Seminar	L	3	20	JM Bowers	M	4:00PM	6:30PM	LITRV 1760	16M
 89061	NEUR-4044	Neuroscience Senior Seminar	L	3	20	Staff	T R	2:00PM	3:15PM	ROB 116	14T
-89060	NEUR-4044	Neuroscience Senior Seminar	L	3	30	C Thompson	M W	4:00PM	5:15PM	GOODW 115	16M
-86539	NEUR-4594	Clinical Neuro in Practice	L	3	20	HW Sontheimer	(ARR)	(ARR)	TBA	09T	fill	T	9:30AM	10:45AM	TORG 1010
+89060	NEUR-4044	Neuroscience Senior Seminar	L	3	20	C Thompson	M W	4:00PM	5:15PM	GOODW 115	16M
+86539	NEUR-4594	Clinical Neuro in Practice	L	3	20	HW Sontheimer	(ARR)	(ARR)	TBA	09T	fill	T	9:30AM	10:45AM	PAT 215
 86537	NEUR-4454	Neuroeconomics	L	3	72	SB Ball	M W	2:30PM	3:45PM	NCB 230	14M
-89236	NEUR-3144	Mech Learning & Memory	L	3	50	ML Olsen	M W	2:30PM	3:45PM	LITRV 1760	14M
-86534	NEUR-3044	Cell Molecular Neuroscience	L	3	60	ER Gilbert	T R	8:00AM	9:15AM	LITRV 1860	08T
+89236	NEUR-3144	Mech Learning & Memory	L	3	57	ML Olsen	M W	2:30PM	3:45PM	LITRV 1760	14M
+86534	NEUR-3044	Cell Molecular Neuroscience	L	3	74	ER Gilbert	T R	8:00AM	9:15AM	GOODW 125	08T
 86527	NEUR-2974	Independent Study	I	1	0	I Kimbrough	(ARR)	(ARR)	TBA	00X
-86519	NEUR-1004	Neur Orientation Seminar	L	1	152	HW Sontheimer	M	9:05AM	9:55AM	NCB 260	09M
+86519	NEUR-1004	Neur Orientation Seminar	L	1	0	HW Sontheimer	M	9:05AM	9:55AM	NCB 260	09M
+89520	NEUR-2994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
+89519	NEUR-2994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
+89518	NEUR-2994	Undergraduate Research	R	1	0	K Sewall	(ARR)	(ARR)	TBA	00X
+89517	NEUR-2994	Undergraduate Research	R	1	0	ML Olsen	(ARR)	(ARR)	TBA	00X
+89516	NEUR-2994	Undergraduate Research	R	1	0	GE Hodes	(ARR)	(ARR)	TBA	00X
+89515	NEUR-2994	Undergraduate Research	R	1	0	ER Gilbert	(ARR)	(ARR)	TBA	00X
+89514	NEUR-2994	Undergraduate Research	R	1	0	MA Cline	(ARR)	(ARR)	TBA	00X
+89513	NEUR-2994	Undergraduate Research	R	1	0	M Buczynski	(ARR)	(ARR)	TBA	00X
+89512	NEUR-2994	Undergraduate Research	R	1	0	JM Bowers	(ARR)	(ARR)	TBA	00X
 86533	NEUR-2994	Undergraduate Research	R	1	0	S Clinton	(ARR)	(ARR)	TBA	00X
 86532	NEUR-2994	Undergraduate Research	R	1	0	C Thompson	(ARR)	(ARR)	TBA	00X
 86531	NEUR-2994	Undergraduate Research	R	1	0	S Robel	(ARR)	(ARR)	TBA	00X
-86530	NEUR-2994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
-86529	NEUR-2994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
-86528	NEUR-2994	Undergraduate Research	R	1	0	HW Sontheimer	(ARR)	(ARR)	TBA	00X
-86520	NEUR-2025	Introduction to Neuroscience	L	3	200	MA Cline	T R	8:00AM	9:15AM	LITRV 1670	08T
+86530	NEUR-2994	Undergraduate Research	R	1	0	YW Lee	(ARR)	(ARR)	TBA	00X
+86529	NEUR-2994	Undergraduate Research	R	1	0	S DeLuca	(ARR)	(ARR)	TBA	00X
+86528	NEUR-2994	Undergraduate Research	R	1	0	S Campbell	(ARR)	(ARR)	TBA	00X
+86520	NEUR-2025	Introduction to Neuroscience	L	3	180	MA Cline	T R	8:00AM	9:15AM	LITRV 1670	08T
 86536	NEUR-3554	Neur Research and Practice	L	3	34	Staff	M W	4:00PM	5:15PM	SEITZ 207	16M
 86526	NEUR-2035	Neuroscience Laboratory	B	1	28	I Kimbrough	F	9:05AM	11:55AM	NCB 350	09F
 86525	NEUR-2035	Neuroscience Laboratory	B	1	28	I Kimbrough	M	10:10AM	12:55PM	NCB 350	10M
@@ -6354,6 +6369,11 @@
 86523	NEUR-2035	Neuroscience Laboratory	B	1	28	I Kimbrough	F	1:25PM	4:10PM	NCB 350	13F
 86522	NEUR-2035	Neuroscience Laboratory	B	1	28	I Kimbrough	W	1:25PM	4:10PM	NCB 350	13W
 86521	NEUR-2035	Neuroscience Laboratory	B	1	28	I Kimbrough	W	8:00AM	10:45AM	NCB 350	08W
+89525	NEUR-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
+89524	NEUR-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
+89523	NEUR-4994	Undergraduate Research	R	1	0	K Sewall	(ARR)	(ARR)	TBA	00X
+89522	NEUR-4994	Undergraduate Research	R	1	0	M Buczynski	(ARR)	(ARR)	TBA	00X
+89521	NEUR-4994	Undergraduate Research	R	1	0	GE Hodes	(ARR)	(ARR)	TBA	00X
 86549	NEUR-4994	Undergraduate Research	R	1	0	AM Brown	(ARR)	(ARR)	TBA	00X
 86548	NEUR-4994	Undergraduate Research	R	1	0	SB Ball	(ARR)	(ARR)	TBA	00X
 86547	NEUR-4994	Undergraduate Research	R	1	0	S Campbell	(ARR)	(ARR)	TBA	00X
@@ -6363,22 +6383,22 @@
 86543	NEUR-4994	Undergraduate Research	R	1	0	MA Cline	(ARR)	(ARR)	TBA	00X
 86542	NEUR-4994	Undergraduate Research	R	1	0	JM Bowers	(ARR)	(ARR)	TBA	00X
 86541	NEUR-4994	Undergraduate Research	R	1	0	G Valdez	(ARR)	(ARR)	TBA	00X
-86540	NEUR-4994	Undergraduate Research	R	1	0	I Kimbrough	(ARR)	(ARR)	TBA	00X
-86538	NEUR-4544	Synaptic Structure & Function	L	3	25	S Clinton	T R	9:30AM	10:45AM	TBA	09T
+86540	NEUR-4994	Undergraduate Research	R	1	0	ML Olsen	(ARR)	(ARR)	TBA	00X
+86538	NEUR-4544	Synaptic Structure & Function	L	3	49	S Clinton	T R	9:30AM	10:45AM	DER 1084	09T
 89372	NEUR-4984	SS: Nutritional Neuroscience	L	3	30	ER Gilbert	T R	12:30PM	1:45PM	NCB 270	12T
 89278	NEUR-4984	SS: Neuroscience of the Law	L	3	20	HW Sontheimer	T R	2:00PM	3:15PM	TORG 1000	14T
-89412	NR-5014	`	O	3	0	DP Robertson	(ARR)	(ARR)	TBA	00X
-86575	NR-6104	Adv Topics in Remote Sensing	L	3	10	Y Shao	W	4:00PM	6:50PM	MAJWM 102	16W
+89412	NR-5014	Constructing Sustainability	O	3	0	DP Robertson	(ARR)	(ARR)	TBA	00X
+86575	NR-6104	Adv Topics in Remote Sensing	L	3	0	Y Shao	W	4:00PM	6:50PM	MAJWM 102	16W
 86557	NR-4014	Natural Resources Economics	L	3	49	GS Amacher	T R	9:30AM	10:45AM	SMYTH 331	09T
 86562	NR-5114	Global Issues Natural Resource	O	3	0	S Elouardighi	(ARR)	(ARR)	TBA	00X
-89424	NR-5884	TS:Infrastructure for Resilnce	O	3	0	CE Kimmel	(ARR)	(ARR)	TBA	00X
-89415	NR-5884	TS: Food Polc & Sustainability	O	3	0	JL Jones	(ARR)	(ARR)	TBA	00X
-86570	NR-5884	TS: Human-Wildlife Conflicts	O	3	15	MM Draheim	(ARR)	(ARR)	TBA	00X
-86569	NR-5884	TS: Water and Conflict	O	3	0	DK DiMauro	(ARR)	(ARR)	TBA	00X
+89424	NR-5884	TS:Infrastructure for Resilnce	O	3	18	CE Kimmel	(ARR)	(ARR)	TBA	00X
+89415	NR-5884	TS: Food Polc & Sustainability	O	3	18	JL Jones	(ARR)	(ARR)	TBA	00X
+86570	NR-5884	TS: Human-Wildlife Conflicts	O	3	18	MM Draheim	(ARR)	(ARR)	TBA	00X
+86569	NR-5884	TS: Water and Conflict	O	3	18	DK DiMauro	(ARR)	(ARR)	TBA	00X
 86568	NR-5884	TS:Landscape Systm & Strategy	O	3	0	DJ Marcucci	(ARR)	(ARR)	TBA	00X
 86567	NR-5884	TS: Inter'l Envir Law & Policy	O	3	0	JK Wills	(ARR)	(ARR)	TBA	00X
-86566	NR-5884	TS:Watershed Stewardship	O	3	0	JA Egenrieder	(ARR)	(ARR)	TBA	00X
-89413	NR-5194	Environmental Ethics	O	3	0	JL Lawrence	(ARR)	(ARR)	TBA	00X
+86566	NR-5884	TS:Watershed Stewardship	O	3	18	JA Egenrieder	(ARR)	(ARR)	TBA	00X
+89413	NR-5194	Environmental Ethics	O	3	18	JL Lawrence	(ARR)	(ARR)	TBA	00X
 86550	NR-1115	Seeking Sustainability	L	3	90	TD Baird	M W	2:30PM	3:45PM	NCB 120	14M
 86556	NR-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 86554	NR-1234	FYE Nat Resources & Environ	L	3	0	JB Mesa Cruz	T	3:30PM	4:45PM	JCH 317A	16M	fill	M W	4:00PM	4:50PM	SMYTH 146
@@ -6412,9 +6432,9 @@
 86616	NSEG-7994	Research and Thesis	O	1	10	Y Liu	(ARR)	(ARR)	TBA	00X
 86615	NSEG-7994	Research and Thesis	O	1	10	A Haghighat	(ARR)	(ARR)	TBA	00X
 86589	NSEG-5134	Monte Carlo Particle Transport	O	3	5	A Haghighat	(ARR)	(ARR)	TBA	00X
-86588	NSEG-5134	Monte Carlo Particle Transport	L	3	15	A Haghighat	M W	12:30PM	1:45PM	BUR 123A	12M
+86588	NSEG-5134	Monte Carlo Particle Transport	L	3	15	A Haghighat	M W	12:45PM	2:00PM	BUR 123A	12M
 86586	NSEG-5124	Nuclear Reactor Analysis	O	3	20	A Haghighat	(ARR)	(ARR)	TBA	00X
-86585	NSEG-5124	Nuclear Reactor Analysis	L	3	15	A Haghighat	M W	11:00AM	12:15PM	BUR 123A	11M
+86585	NSEG-5124	Nuclear Reactor Analysis	L	3	15	A Haghighat	M W	11:15AM	12:30PM	BUR 123A	11M
 86584	NSEG-5114	Nuclear Eng Fundamentals	O	3	20	MA Pierson	(ARR)	(ARR)	TBA	00X
 86583	NSEG-5114	Nuclear Eng Fundamentals	L	3	15	MA Pierson	T R	2:00PM	3:15PM	MCB 207	14T
 86614	NSEG-5994	Research and Thesis	O	1	10	Staff	(ARR)	(ARR)	TBA	00X
@@ -6574,21 +6594,21 @@
 86853	PHS-5044	Public Health Administration	O	3	40	KJ Redican	(ARR)	(ARR)	TBA	00X
 86852	PHS-5034	Health Behav & Health Ed	L	3	45	KW Hosig	W	4:00PM	5:50PM	SMYTH 331	16W
 89380	PHS-5254	Social Epi & Health Inequal	L	3	20	Staff	R	5:30PM	8:20PM	ENGEL 219	17R
-86861	PHS-5354	Modeling Infectious Diseases	L	3	14	KM Abbas	W	9:15AM	12:00PM	WAL 244	09W
-86851	PHS-5025	Epi & Quant Meth Publ Hlth	L	3	45	Staff	T R	8:00AM	9:15AM	LITRV 1800	08T
-86850	PHS-5004	Fundamentals Public Health	L	3	60	SW Marmagas	M	5:30PM	8:20PM	NCB 230	17M
+86861	PHS-5354	Modeling Infectious Diseases	L	3	14	KM Abbas	W	1:00PM	3:45PM	TBA	13W
+86851	PHS-5025	Epi & Quant Meth Publ Hlth	L	3	45	ES Bill	T R	8:00AM	9:15AM	TBA	08T
+86850	PHS-5004	Fundamentals Public Health	L	3	60	SW Marmagas	M W	10:00AM	11:30AM	TBA	10M
 86856	PHS-5224	Comp Health Systems	O	3	30	KJ Redican	(ARR)	(ARR)	TBA	00X
 86860	PHS-5334	Principles Infectious Diseases	L	3	35	AS Bertke	T R	9:45AM	11:00AM	VMIA 220	09T
 86848	PHS-1514	Personal Health	O	3	500	AH Smith	(ARR)	(ARR)	TBA	00X
 86866	PHS-5904	Project and Report	R	1	0	SW Marmagas	(ARR)	(ARR)	TBA	00X
 86849	PHS-3534	Drug Education	O	3	500	AH Smith	(ARR)	(ARR)	TBA	00X
 86855	PHS-5214	Prog Dev in Health Ed	O	3	45	KJ Redican	(ARR)	(ARR)	TBA	00X
-86854	PHS-5214	Prog Dev in Health Ed	L	3	45	KJ Redican	R	2:00PM	4:00PM	FST 132	14R
+86854	PHS-5214	Prog Dev in Health Ed	L	3	45	KJ Redican	R	2:00PM	4:00PM	VMIA 220	14R
 86859	PHS-5324	Pub Hlth Infect Contrl & Prev	L	3	35	FW Pierson	W	5:30PM	8:20PM	VMIA 220	17W
-89452	PHS-5984	SS:Neg & Emrgng Infectious Dis	L	3	30	AS Bertke	T	5:30PM	8:20PM	TBA	17T
+89452	PHS-5984	SS:Neg & Emrgng Infectious Dis	L	3	30	AS Bertke	T	5:30PM	8:20PM	VMIA 220	17T
 89451	PHS-5984	SS:Grntwrtng for Public Health	L	1	35	SW Marmagas	W	12:00PM	12:50PM	TBA	12W
-89450	PHS-5984	SS: Epid&Quant Mthds in PH Lab	L	1	45	Staff	T	11:30AM	1:50PM	TBA	11T
-86863	PHS-5644	Program Evaluation	L	3	20	KW Hosig	M	3:30PM	5:20PM	FST 132	15M
+89450	PHS-5984	SS: Epid&Quant Mthds in PH Lab	L	1	45	ES Bill	T	11:30AM	1:50PM	TBA	11T
+86863	PHS-5644	Program Evaluation	L	3	20	KW Hosig	M	3:30PM	5:20PM	VMIA 220	15M
 86870	PHS-5974	Independent Study	I	1	0	SW Marmagas	(ARR)	(ARR)	TBA	00X
 86865	PHS-5834	Public Health Seminar	L	1	60	KM Abbas	R	12:00PM	12:50PM	VM 3 102	12R
 86864	PHS-5714	Health of the Elderly	O	3	20	KJ Redican	(ARR)	(ARR)	TBA	00X
@@ -6842,7 +6862,7 @@
 87103	PHYS-3324	Modern Physics	B	0	20	RB Vogelaar	R	8:30AM	10:20AM	HAHN N 110	08R
 87102	PHYS-3324	Modern Physics	B	0	20	RB Vogelaar	M	1:25PM	3:10PM	HAHN N 110	13M
 87101	PHYS-3324	Modern Physics	B	0	20	RB Vogelaar	T	9:30AM	11:20AM	HAHN N 110	09T
-87100	PHYS-3324	Modern Physics	B	0	0	RB Vogelaar	T	2:30PM	4:20PM	HAHN N 110	14T
+87100	PHYS-3324	Modern Physics	B	0	20	RB Vogelaar	T	2:30PM	4:20PM	HAHN N 110	14T
 87099	PHYS-3324	Modern Physics	B	0	0	RB Vogelaar	F	12:20PM	2:10PM	HAHN N 110	12F
 87098	PHYS-3324	Modern Physics	B	0	0	RB Vogelaar	R	11:00AM	12:50PM	HAHN N 110	11R
 87097	PHYS-3324	Modern Physics	B	0	20	RB Vogelaar	W	3:30PM	5:20PM	HAHN N 110	15W
@@ -7178,7 +7198,7 @@
 87454	PSYC-2084	Social Psychology	L	3	48	Staff	M W F	11:15AM	12:05PM	WMS 320	11M
 87453	PSYC-2084	Social Psychology	L	3	60	Staff	T R	12:30PM	1:45PM	LIBR 100S	12T
 87452	PSYC-2084	Social Psychology	L	3	60	Staff	T R	3:30PM	4:45PM	WMS 220	15T
-89089	PSYC-1524	Language and the Mind	L	3	35	AJ Walker	T R	3:30PM	3:45PM	PAM 1004	15T
+89089	PSYC-1524	Language and the Mind	L	3	35	AJ Walker	T R	3:30PM	4:45PM	PAM 1004	15T
 87456	PSYC-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 87407	PSYC-1004	Introductory Psychology	L	3	500	BB DeVore	T R	12:30PM	1:45PM	SQUIR COLNL	CTE
 87406	PSYC-1004	Introductory Psychology	L	3	100	BB DeVore	M W	2:30PM	3:45PM	WHIT 300	CTE
@@ -7217,11 +7237,10 @@
 88799	RLCL-3144	Language & Ethnicity in the US	L	3	35	K Carmichael	T R	12:30PM	1:45PM	MCB 233	12T
 87532	RLCL-2504	Intro Amer Studies	L	3	40	D Christensen	T R	3:30PM	4:45PM	MCB 308	15T
 89200	RLCL-1904H	Religion and Culture in Asia	L	3	32	A Abeysekara	T R	11:00AM	12:15PM	LANE 132	11T
-87517	RLCL-1214	Medieval	L	3	40	MR Gabriele	M W	2:30PM	3:45PM	MCB 318	14M
+87517	RLCL-1214	The Medieval World	L	3	40	MR Gabriele	M W	2:30PM	3:45PM	MCB 318	14M
 87524	RLCL-2204	Race & Gender in Rel & Cult	L	3	40	MC Deramo	T R	3:30PM	4:45PM	MCB 231	15T
-89316	RLCL-2424	New Testament	L	3	40	Staff	T R	12:30PM	1:45PM	MCB 332	12T
-87526	RLCL-2424	New Testament	L	3	45	Staff	T R	9:30AM	10:45AM	TORG 1020	09T
-87538	RLCL-3414	Jesus and The Gospels	L	3	0	Staff	T R	12:30PM	1:45PM	HUTCH 207	12T
+89316	RLCL-2424	New Testament	L	3	40	S Patel	T R	12:30PM	1:45PM	MCB 332	12T
+87526	RLCL-2424	New Testament	L	3	45	S Patel	T R	9:30AM	10:45AM	TORG 1020	09T
 87530	RLCL-2444	Greek and Roman Mythology	L	3	100	RL Phillips	M W F	9:05AM	9:55AM	TORG 1060	09M
 87529	RLCL-2444	Greek and Roman Mythology	L	3	100	RL Phillips	M W F	10:10AM	11:00AM	TORG 1060	10M
 87516	RLCL-1134	Ancient Mediterranean World	L	3	40	CE Steer	M W F	11:15AM	12:05PM	MCB 231	11M
@@ -7239,10 +7258,10 @@
 87547	RLCL-5904	Project and Report	I	1	0	A Ansell	(ARR)	(ARR)	TBA	00X
 87525	RLCL-2414	Hebrew Bible/Old Testament	L	3	40	BM Britt	T R	11:00AM	12:15PM	MCB 209	11T
 87510	RLCL-1004	Investig in Religion & Culture	L	3	95	A Ansell	M W F	9:05AM	9:55AM	ROB 210	09M
-87536	RLCL-3204	Multicultural Communication	L	3	35	KK Dhillon	M W	2:30PM	3:45PM	MCB 231	14M
+87536	RLCL-3204	Multicultural Communication	L	3	40	KK Dhillon	M W	2:30PM	3:45PM	MCB 231	14M
 87535	RLCL-3204	Multicultural Communication	L	3	40	KK Dhillon	T R	8:00AM	9:15AM	MCB 134	08T
 87534	RLCL-3204	Multicultural Communication	L	3	40	KK Dhillon	M W	4:00PM	5:15PM	MCB 230	16M
-88616	RLCL-1024	Judaism, Christianity, Islam	L	3	50	SJ Kessler	T R	9:30AM	10:45AM	GBJ 104	09T
+88616	RLCL-1024	Judaism, Christianity, Islam	L	3	75	SJ Kessler	T R	9:30AM	10:45AM	SAUND 409	09T
 87511	RLCL-1024	Judaism, Christianity, Islam	L	3	40	Staff	M W	2:30PM	3:15PM	PAT 207	14M
 87544	RLCL-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 88464	RLCL-5104	Mat Cult & Pub Hum Theory	L	3	30	A Ansell	W	2:00PM	4:45PM	LANE 132	14W
@@ -7260,8 +7279,8 @@
 87560	RUS-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 88731	RUS-3304	Survey 19th Century Rus Lit	L	3	25	RO Efird	M W	2:30PM	3:45PM	GYM 124	14M
 87556	RUS-1114	Accelerated Elementary Russian	L	6	15	K Rutsala	T R	12:30PM	1:45PM	MCB 207	10M	fill	M W F	10:10AM	11:00AM	MCB 207
-87562	RUS-3105	Gram/Composition/Conv	L	3	15	RO Efird	M W F	1:25PM	2:15PM	PAM 2001	13M
-87561	RUS-3105	Gram/Composition/Conv	L	3	15	K Rutsala	M W F	11:15AM	12:05PM	MCB 207	11M
+87562	RUS-3105	Gram/Composition/Conv	L	3	20	RO Efird	M W F	1:25PM	2:15PM	PAM 2001	13M
+87561	RUS-3105	Gram/Composition/Conv	L	3	20	K Rutsala	M W F	11:15AM	12:05PM	MCB 207	11M
 87563	RUS-3124	Russian for Oral Proficiency	L	3	15	N Milman-Miller	T R	9:30AM	10:45AM	MAJWM 327	09T
 87570	RUS-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
 87565	RUS-4204	Topics Russian Civ	L	3	16	Y Minkova	T R	12:30PM	1:45PM	MCB 212	12T
@@ -7269,39 +7288,40 @@
 87567	RUS-4974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 87566	RUS-4964	Field Study	L	1	0	Staff	(ARR)	(ARR)	TBA	00X
 87571	RUS-4994H	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
-87598	SBIO-7994	Research and Dissertation	R	1	9999	Staff	(ARR)	(ARR)	TBA	00X
-87585	SBIO-4024	Packaging Design Global Dist	L	3	24	L Horvath	T	3:15PM	6:05PM	BROOK 102	11M	fill	M W	11:15AM	12:05PM	BROOK 102
 87592	SBIO-5124	Wood Material Science	L	4	24	A Zink-Sharp	M	1:25PM	2:15PM	JCH 213	11M	fill	M W F	11:15AM	12:05PM	JCH 213
-87594	SBIO-5894	Final Examination	L	3	9999	Staff	(ARR)	(ARR)	TBA	00X
-87597	SBIO-5994	Research and Thesis	R	1	9999	Staff	(ARR)	(ARR)	TBA	00X
 87582	SBIO-3284	Packaging Polymers & Prod	L	3	25	YT Kim	M	2:30PM	4:30PM	JCH 317A	14T	fill	T R	2:00PM	3:00PM	JCH 212
-87579	SBIO-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 87574	SBIO-2104	Principles of Packaging	L	3	25	RJ Bush	F	9:05AM	11:00AM	BROOK 116B	09M	fill	M W	9:05AM	9:55AM	JCH 317BC
 87573	SBIO-2104	Principles of Packaging	L	3	25	RJ Bush	F	1:00PM	3:00PM	BROOK 116B	09M	fill	M W	9:05AM	9:55AM	JCH 317BC
 87572	SBIO-1234	Intro Wood Desgn & Crftsmanshp	L	3	22	DE Kline	W	4:30PM	6:15PM	BROOK 102	15M	fill	W	3:30PM	4:20PM	BROOK 102	fill	M	3:30PM	4:20PM	JCH 218
-89209	SBIO-2994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
-87583	SBIO-3324	Green Building Systems	L	3	60	DP Hindman	M W F	11:15AM	12:05PM	JCH 317BC	11M
-87584	SBIO-3445	Wood Design and Innovation	L	3	20	DE Kline	T	2:00PM	4:45PM	BROOK 116B	09T	fill	T R	9:30AM	10:20AM	BROOK 116B
 87577	SBIO-2124	Struct & Prop of Sust Biomatls	L	3	22	A Zink-Sharp	W	2:30PM	5:15PM	JCH 213	11T	fill	T R	11:00AM	11:50AM	JCH 317BC
 87576	SBIO-2124	Struct & Prop of Sust Biomatls	L	3	22	A Zink-Sharp	R	2:00PM	4:45PM	JCH 213	11T	fill	T R	11:00AM	11:50AM	JCH 317BC
 87575	SBIO-2124	Struct & Prop of Sust Biomatls	L	3	22	A Zink-Sharp	T	2:00PM	4:45PM	JCH 213	11T	fill	T R	11:00AM	11:50AM	JCH 317BC
 87578	SBIO-2784	Global Forest Sustainability	L	3	80	AL Hammett	T R	9:30AM	10:45AM	JCH 317BC	09T
-87580	SBIO-3004	Sust Nature-Based Enterprise	L	3	25	AL Hammett	T R	12:30PM	1:45PM	JCH 218	12T
-87581	SBIO-3224	Packaging Distribution Systems	L	3	24	L Horvath	M W	1:00PM	2:15PM	BROOK 102	13M
 87588	SBIO-4444	Sust Biomatl Composites	L	4	20	CE Frazier	T	11:00AM	1:50PM	JCH 213	10M	fill	M W F	10:10AM	11:00AM	JCH 213
-87591	SBIO-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
-87586	SBIO-4214	Food and Health Care Packaging	L	3	25	YT Kim	T	10:45AM	12:30PM	JCH 132	09T	fill	T R	9:30AM	10:30AM	JCH 132
 87596	SBIO-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 87595	SBIO-5974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
+87593	SBIO-5614	FPR Mktg & Mgt	L	3	10	RL Smith	M	2:30PM	5:30PM	BROOK 105	14M
+87598	SBIO-7994	Research and Dissertation	R	1	9999	Staff	(ARR)	(ARR)	TBA	00X
+87585	SBIO-4024	Packaging Design Global Dist	L	3	24	L Horvath	T	3:15PM	6:05PM	BROOK 102	11M	fill	M W	11:15AM	12:05PM	BROOK 102
+87594	SBIO-5894	Final Examination	L	3	9999	Staff	(ARR)	(ARR)	TBA	00X
+89559	SBIO-5114	Prof Skills SBIO Grad Students	L	2	0	RJ Bush	T R	9:30AM	10:45AM	TBA	09T
+87597	SBIO-5994	Research and Thesis	R	1	9999	Staff	(ARR)	(ARR)	TBA	00X
+87579	SBIO-2974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
+89209	SBIO-2994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
+87583	SBIO-3324	Green Building Systems	L	3	60	DP Hindman	M W F	11:15AM	12:05PM	JCH 317BC	11M
+87584	SBIO-3445	Wood Design and Innovation	L	3	20	DE Kline	T	2:00PM	4:45PM	BROOK 116B	09T	fill	T R	9:30AM	10:20AM	BROOK 116B
+87580	SBIO-3004	Sust Nature-Based Enterprise	L	3	25	AL Hammett	T R	12:30PM	1:45PM	JCH 218	12T
+87581	SBIO-3224	Packaging Distribution Systems	L	3	24	L Horvath	M W	1:00PM	2:15PM	BROOK 102	13M
+87591	SBIO-4994	Undergraduate Research	R	1	0	Staff	(ARR)	(ARR)	TBA	00X
+87586	SBIO-4214	Food and Health Care Packaging	L	3	25	YT Kim	T	10:45AM	12:30PM	JCH 132	09T	fill	T R	9:30AM	10:30AM	JCH 132
 87587	SBIO-4314	Design of Wood Structures	L	3	40	DP Hindman	M W F	1:25PM	2:15PM	JCH 218	13M
 87590	SBIO-4974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-87593	SBIO-5614	FPR Mktg & Mgt	L	3	10	RL Smith	M	2:30PM	5:30PM	BROOK 105	14M
 87589	SBIO-4715	Wood House	L	3	24	BH Bond	M W F	9:05AM	9:55AM	JCH 213	09M
 87631	SOC-4194	Senior Seminar	L	3	30	DA Sedgwick	T R	9:30AM	10:45AM	WLH 345	09T
 88777	SOC-4034	Sociology of Education	L	3	40	S Ovink	M W	4:00PM	5:15PM	MCB 308	16M
 89185	SOC-4014	Sociology of the Family	O	3	60	AS Vogt Yuan	(ARR)	(ARR)	TBA	00X
 87616	SOC-2034	Diversity Community Engagement	L	3	40	S Ovink	M W	2:30PM	3:45PM	MCB 329	14M
-87629	SOC-3464	Appalachian Communities	L	3	40	AM Puckett	T R	12:30PM	1:45PM	LITRV 1760	12T
+87629	SOC-3464	Appalachian Communities	L	3	45	AM Puckett	T R	12:30PM	1:45PM	LITRV 1760	12T
 88807	SOC-3144	Language & Ethnicity in the US	L	3	35	K Carmichael	T R	12:30PM	1:45PM	MCB 233	12T
 88452	SOC-4094	Appalachian Community Research	L	3	15	AM Puckett	W	7:00PM	9:30PM	SOL 101	19W
 87620	SOC-2404	Deviant Behavior	L	3	40	KM Boyle	T R	12:30PM	1:45PM	HOLD 110	12T
@@ -7362,7 +7382,7 @@
 87688	SPAN-3484	Mod Andean/S Cone Cult Lit	L	3	20	G Montero	T R	2:00PM	3:15PM	PAM 1010	14T
 87687	SPAN-3484	Mod Andean/S Cone Cult Lit	L	3	20	G Montero	T R	3:30PM	4:45PM	RAND 220	15T
 87696	SPAN-4974H	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
-89459	SPAN-2106	Intermediate Spanish	L	3	0	Staff	M W F	11:15AM	12:05PM	PAM 1002	11M
+89459	SPAN-2106	Intermediate Spanish	L	3	22	Staff	M W F	11:15AM	12:05PM	PAM 1002	11M
 87664	SPAN-2106	Intermediate Spanish	L	3	22	NP Lopez-Romero	M W F	10:10AM	11:00AM	PAM 2001	10M
 87667	SPAN-2964	Field Study	L	1	0	Staff	(ARR)	(ARR)	TBA	00X
 89458	SPAN-2105	Intermediate Spanish	L	3	15	Staff	M W F	12:20PM	1:10PM	WMS 134	12M
@@ -7392,7 +7412,6 @@
 87676	SPAN-3106	Gram/Composition/Conv	L	3	20	EL Austin	M W F	11:15AM	12:05PM	PAM 1010	11M
 87675	SPAN-3106	Gram/Composition/Conv	L	3	20	EL Austin	M W F	10:10AM	11:00AM	PAM 1010	10M
 88604	SPAN-3304	Intro Hispanic Lit	L	3	23	A Hesp	M W F	9:05AM	9:55AM	PAM 2001	09M
-87683	SPAN-3304	Intro Hispanic Lit	L	3	0	S Sierra	M W F	1:25PM	2:15PM	RAND 318	13M
 87682	SPAN-3304	Intro Hispanic Lit	L	3	23	A Hesp	M W F	10:10AM	11:00AM	BUR 116	10M
 87681	SPAN-3304	Intro Hispanic Lit	L	3	23	S Sierra	M W F	11:15AM	12:05PM	BUR 116	11M
 87680	SPAN-3304	Intro Hispanic Lit	L	3	23	S Sierra	M W F	12:20PM	1:10PM	WMS 334	12M
@@ -7432,15 +7451,13 @@
 87778	STAT-5904	Project and Report	R	1	20	Staff	(ARR)	(ARR)	TBA	00X
 87722	STAT-3006	Statistical Methods	L	3	100	Staff	M W F	12:20PM	1:10PM	TORG 1060	12M
 87721	STAT-3005	Statistical Methods	L	3	130	HC Tavera	M W F	11:15AM	12:05PM	SMYTH 146	11M
-87759	STAT-5104	Prob Distrib Theory	L	3	42	Staff	M W F	1:25PM	2:15PM	HUTCH 209	13M
+87759	STAT-5104	Prob Distrib Theory	L	3	42	Staff	M W F	10:10AM	11:00AM	HUTCH 204	10M
 87770	STAT-5544	Spatial Statistics	L	3	30	Staff	T R	11:00AM	12:15PM	HUTCH 207	11T
 87784	STAT-6634	Adv Stat for Educ	L	3	15	JM Cohen	W	4:00PM	6:50PM	GYM 220G	16W
 87745	STAT-4214	Methods of Regression Analysis	L	3	28	Staff	T R	12:30PM	1:45PM	HUTCH 204	12T
 89158	STAT-4654	Intermed Data Analytics & Ml	L	3	0	Staff	T R	3:30PM	4:45PM	MCB 232	15T
 87754	STAT-4974	Independent Study	I	1	0	Staff	(ARR)	(ARR)	TBA	00X
 89164	STAT-5504	Multivariate Methods	L	3	35	Staff	T R	5:00PM	6:15PM	HUTCH 204	17T
-89096	STAT-5504	Multivariate Methods	L	3	40	Staff	M W	4:00PM	5:15PM	SMYTH 232	16M
-87767	STAT-5504	Multivariate Methods	L	3	32	X Deng	M W	5:30PM	6:45PM	HUTCH 207	17M
 87758	STAT-5044	Regression and ANOVA	L	3	39	Staff	T R	11:00AM	12:15PM	HUTCH 310	11T
 87764	STAT-5364	Hierarchial Modeling	L	3	45	Staff	T R	12:30PM	1:45PM	HUTCH 209	12T
 87763	STAT-5214G	Adv Method Regression	L	3	14	Staff	T R	12:30PM	1:45PM	HUTCH 204	12T
@@ -7566,6 +7583,7 @@
 87851	TA-3014	Theatre Production Lab	B	1	3	CS Russo	W F	1:00PM	2:30PM	SQUIR 132	13W
 87850	TA-3014	Theatre Production Lab	B	1	3	CS Russo	W F	2:30PM	4:00PM	SQUIR 132	14W
 87849	TA-3014	Theatre Production Lab	B	1	3	CS Russo	W F	4:00PM	5:30PM	SQUIR 132	16W
+89543	TA-5435	Production Studio III	L	2	0	Staff	(ARR)	(ARR)	TBA	00X
 87912	TA-5435	Production Studio III	L	2	5	CS Russo	(ARR)	(ARR)	TBA	00X
 87911	TA-5435	Production Studio III	L	2	5	JF Ambrosone	(ARR)	(ARR)	TBA	00X
 87910	TA-5435	Production Studio III	L	2	5	JA Stein	(ARR)	(ARR)	TBA	00X
@@ -7577,6 +7595,7 @@
 87924	TA-5974	Independent Study	I	1	10	KR Precoda	M	10:10AM	12:45PM	MCB 202	10M
 87881	TA-4304	Theatre Outreach	R	1	10	SC Rinehart	(ARR)	(ARR)	TBA	00X
 87885	TA-4964	Field Study	L	1	0	SC Rinehart	(ARR)	(ARR)	TBA	00X
+89541	TA-5415	Production Studio I	L	2	0	Staff	(ARR)	(ARR)	TBA	00X
 87898	TA-5415	Production Studio I	L	2	5	Staff	(ARR)	(ARR)	TBA	00X
 87897	TA-5415	Production Studio I	L	2	5	SC Rinehart	(ARR)	(ARR)	TBA	00X
 87896	TA-5415	Production Studio I	L	2	5	JA Stein	(ARR)	(ARR)	TBA	00X
@@ -7612,6 +7631,7 @@
 87869	TA-3124	TS:Advanced Costume Design	L	3	10	JA Stein	M W	11:00AM	12:15PM	HEND 112	11M
 87887	TA-4994	Undergraduate Research	R	1	0	SC Rinehart	(ARR)	(ARR)	TBA	00X
 87886	TA-4974	Independent Study	I	1	0	SC Rinehart	(ARR)	(ARR)	TBA	00X
+89542	TA-5425	Production Studio II	L	2	0	Staff	(ARR)	(ARR)	TBA	00X
 87905	TA-5425	Production Studio II	L	2	5	JF Ambrosone	(ARR)	(ARR)	TBA	00X
 87904	TA-5425	Production Studio II	L	2	5	JA Stein	(ARR)	(ARR)	TBA	00X
 87903	TA-5425	Production Studio II	L	2	5	RH Leonard	(ARR)	(ARR)	TBA	00X
@@ -7667,7 +7687,7 @@
 88010	UAP-5784	TS:Fiscal Resilience	L	3	20	DS Bieri	M	12:30PM	3:15PM	AA 107	12M
 87994	UAP-5224	Quant Techs in Planng	L	4	24	Y Zhang	R	12:30PM	1:45PM	AA 1	12T	fill	T	12:30PM	2:45PM	AA 1
 87966	UAP-3024	Urban and Regional Analysis	L	3	50	Staff	M W F	10:10AM	11:00AM	AA 7	10M
-87971	UAP-3464	Appalachian Communities	L	3	40	AM Puckett	T R	12:30PM	1:45PM	LITRV 1760	12T
+87971	UAP-3464	Appalachian Communities	L	3	45	AM Puckett	T R	12:30PM	1:45PM	LITRV 1760	12T
 87967	UAP-3264	Contemporary Urban Issues	L	3	36	RB Meyers	M W F	11:15AM	12:05PM	GOODW 244	11M
 88361	UAP-3434	Public Administration	L	3	40	BS Faulkner	M W F	10:10AM	11:00AM	MCB 329	10M
 89239	UAP-3014	Urban Policy and Planning	L	3	30	DL Zahm	M W	8:00AM	9:15AM	MCB 226	08M
@@ -7737,42 +7757,42 @@
 88097	UH-3004	TS:Nutrition, Brain & Behavior	L	3	15	DM Denbow	T R	3:30PM	4:45PM	MAJWM 532	15T
 88094	UH-3004	TS:Exercises in Design Thnkng	L	3	15	SF Martin	T R	11:00AM	12:15PM	CO 400	11T
 88109	UH-4004	Honors Tutorial	L	3	0	PV Heilker	(ARR)	(ARR)	TBA	00X
-89498	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	5:30PM	6:45PM	MCB 207	17W
-89497	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	5:30PM	6:45PM	MCB 207	17M
-89496	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	5:30PM	6:45PM	MAJWM 532	17W
-89495	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	5:30PM	6:45PM	MAJWM 532	17M
-89494	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	5:30PM	6:45PM	HOLD 303	17W
-89493	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	5:30PM	6:45PM	HOLD 303	17M
-89492	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	5:30PM	6:45PM	ENGEL 219	17W
-89491	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	5:30PM	6:45PM	ENGEL 219	17M
-89490	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	8:00AM	9:15AM	MCB 212	08T
-89489	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	4:00PM	5:15PM	MAJWM 532	16W
-89488	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	4:00PM	5:15PM	GOODW 244	16W
-89487	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	4:00PM	5:15PM	GYM 126	16M
-89486	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	4:00PM	5:15PM	AA 114	16M
-89485	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	4:00PM	5:15PM	MCB 212	16M
-89484	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	5:00PM	6:15PM	MAJWM 532	17R
-89483	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	5:00PM	6:15PM	MAJWM 532	17T
-89482	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	5:00PM	6:15PM	MCB 210	17R
-89481	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	5:00PM	6:15PM	MCB 210	17T
-89480	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	5:00PM	6:15PM	MCB 212	17R
-89479	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	5:00PM	6:15PM	MCB 212	17T
-89478	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	5:00PM	6:15PM	HOLD 303	17R
-89477	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	5:00PM	6:15PM	HOLD 303	17T
-89476	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	8:00AM	9:15AM	MCB 666	08R
-89475	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	8:00AM	9:15AM	MCB 666	08T
-89474	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	8:00AM	9:15AM	HOLD 303	08R
-89473	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	8:00AM	9:15AM	HOLD 303	08T
-89472	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	2:00PM	3:15PM	AJ E 2315	14T
-89471	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	2:00PM	3:15PM	AJ E 2315	14M
-89470	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	11:00AM	12:15PM	AJ E 2315	11R
-89469	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	11:00AM	12:15PM	AJ E 2315	11W
-89468	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	11:00AM	12:15PM	AJ E 2315	11T
-89467	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	11:00AM	12:15PM	AJ E 2315	11M
-89466	UH-1054	Honors First-Year Seminar	L	2	0	Staff	R	9:30AM	10:45AM	AJ E 2315	09R
-89465	UH-1054	Honors First-Year Seminar	L	2	0	Staff	W	9:30AM	10:45AM	AJ E 2315	09W
-89464	UH-1054	Honors First-Year Seminar	L	2	0	Staff	T	9:30AM	10:45AM	AJ E 2315	09T
-89463	UH-1054	Honors First-Year Seminar	L	2	0	Staff	M	9:30AM	10:45AM	AJ E 2315	09M
+89498	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	W	5:30PM	6:45PM	MCB 207	17W
+89497	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	M	5:30PM	6:45PM	MCB 207	17M
+89496	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	W	5:30PM	6:45PM	MAJWM 532	17W
+89495	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	M	5:30PM	6:45PM	MAJWM 532	17M
+89494	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	W	5:30PM	6:45PM	HOLD 303	17W
+89493	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	M	5:30PM	6:45PM	HOLD 303	17M
+89492	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	W	5:30PM	6:45PM	ENGEL 219	17W
+89491	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	M	5:30PM	6:45PM	ENGEL 219	17M
+89490	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	T	8:00AM	9:15AM	MCB 212	08T
+89489	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	W	4:00PM	5:15PM	MAJWM 532	16W
+89488	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	W	4:00PM	5:15PM	GOODW 244	16W
+89487	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	M	4:00PM	5:15PM	GYM 126	16M
+89486	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	M	4:00PM	5:15PM	AA 114	16M
+89485	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	M	4:00PM	5:15PM	MCB 212	16M
+89484	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	R	5:00PM	6:15PM	MAJWM 532	17R
+89483	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	T	5:00PM	6:15PM	MAJWM 532	17T
+89482	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	R	5:00PM	6:15PM	MCB 210	17R
+89481	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	T	5:00PM	6:15PM	MCB 210	17T
+89480	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	R	5:00PM	6:15PM	MCB 212	17R
+89479	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	T	5:00PM	6:15PM	MCB 212	17T
+89478	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	R	5:00PM	6:15PM	HOLD 303	17R
+89477	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	T	5:00PM	6:15PM	HOLD 303	17T
+89476	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	R	8:00AM	9:15AM	MCB 666	08R
+89475	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	T	8:00AM	9:15AM	MCB 666	08T
+89474	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	R	8:00AM	9:15AM	HOLD 303	08R
+89473	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	T	8:00AM	9:15AM	HOLD 303	08T
+89472	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	T	2:00PM	3:15PM	AJ E 2315	14T
+89471	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	M	2:00PM	3:15PM	AJ E 2315	14M
+89470	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	R	11:00AM	12:15PM	AJ E 2315	11R
+89469	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	W	11:00AM	12:15PM	AJ E 2315	11W
+89468	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	T	11:00AM	12:15PM	AJ E 2315	11T
+89467	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	M	11:00AM	12:15PM	AJ E 2315	11M
+89466	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	R	9:30AM	10:45AM	AJ E 2315	09R
+89465	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	W	9:30AM	10:45AM	AJ E 2315	09W
+89464	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	T	9:30AM	10:45AM	AJ E 2315	09T
+89463	UH-1054	Honors First-Year Seminar	L	2	10	AZ Smith	M	9:30AM	10:45AM	AJ E 2315	09M
 88111	UH-4104	TS:First-yr Stu Teach Practicm	L	2	0	AZ Smith	(ARR)	(ARR)	TBA	00X
 88110	UH-4104	TS:Readng Sem Stu Teach Prctcm	L	2	0	PV Heilker	(ARR)	(ARR)	TBA	00X
 89399	UH-4504	Topics Honors Dis Inn Studios	L	3	15	D Simundza	T R	3:30PM	4:45PM	TBA	15T
@@ -7870,7 +7890,7 @@
 88218	VM-9764	Independent Study/Research	L	4	95	VE Ragan	(ARR)	(ARR)	TBA	00X
 88217	VM-9764	Independent Study/Research	L	0	0	Staff	(ARR)	(ARR)	TBA	00X
 88216	VM-9764	Independent Study/Research	L	4	80	VE Ragan	(ARR)	(ARR)	TBA	00X
-88137	VM-5004	Fundamentals Public Health	L	3	60	KJ Redican	M	5:30PM	8:20PM	LITRV 1860	17M
+88137	VM-5004	Fundamentals Public Health	L	3	60	KJ Redican	M W	10:00AM	11:30AM	TBA	10M
 88162	VM-8434	Veterinary Public Health	L	1	130	KD Pelzer	(ARR)	(ARR)	VM 3 102	00X
 88174	VM-8874	Ferret Medicine and Surgery	L	1	80	JL Hodgson	(ARR)	(ARR)	VM 3 102	00X
 88204	VM-9644	Small An Priv Pract Clerkship	L	4	80	JM Pelzer	(ARR)	(ARR)	TBA	00X
