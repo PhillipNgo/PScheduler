@@ -69,6 +69,7 @@ public class ExcelDownload extends HttpServlet {
         
         String term = request.getParameter("term");
         String[] classes = request.getParameter("schedule").split("~");
+        int minGap = Integer.parseInt(request.getParameter("gap"));
         LinkedList<String> subjects = new LinkedList<>();
         LinkedList<String> numbers = new LinkedList<>();
         LinkedList<String> types = new LinkedList<>();
@@ -92,7 +93,7 @@ public class ExcelDownload extends HttpServlet {
             }
         }
 
-        ScheduleMaker generator = new ScheduleMaker(term, subjects, numbers, types, start, end, freeDays, crns, profs);
+        ScheduleMaker generator = new ScheduleMaker(term, subjects, numbers, types, start, end, freeDays, minGap, crns, profs);
         return generator.getSchedules();
     }
 
