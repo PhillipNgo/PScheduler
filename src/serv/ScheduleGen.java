@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import scheduler.LinkedList;
+import ds.LinkedList;
 import scheduler.Schedule;
 import scheduler.ScheduleMaker;
 import scheduler.VTCourse;

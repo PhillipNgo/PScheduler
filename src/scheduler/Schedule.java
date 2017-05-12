@@ -1,5 +1,6 @@
 package scheduler;
 
+import ds.LinkedList;
 import time.Time;
 import time.TimeException;
 

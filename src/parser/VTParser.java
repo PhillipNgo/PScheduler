@@ -16,7 +16,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlForm;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
 
-import scheduler.LinkedList;
+import ds.LinkedList;
 import scheduler.VTCourse;
 import time.Time;
 import time.TimeException;
