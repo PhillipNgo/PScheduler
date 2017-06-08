@@ -36,7 +36,17 @@ body {
 @media (max-width: 767px) {
 	#header {
 		font-size: 3vh;
-	}	
+	}
+	
+	.table-condensed {
+		margin:0px !important;
+    	table-layout:fixed;  
+	}
+	
+	.table-condensed td {
+		padding-bottom: 0px !important;  
+    	overflow:hidden;
+	}
 }
 
 @media (min-width: 768px) {
@@ -61,6 +71,7 @@ body {
     .col-sm-10-5 {
         width: 87.5%;
         overflow-y: scroll;
+        overflow-x: scroll;
         height:100vh;
     }
 }
@@ -107,7 +118,7 @@ body {
 	text-align: center;
 	background-color:darkslategray;
 	min-height:100vh;
-	padding-top: 2.5vh;
+	padding-top: 5vh;
 }
 
 .logo {
