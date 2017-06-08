@@ -158,9 +158,11 @@ public class Schedule extends LinkedList<VTCourse> {
             for (int i = 0; i < c.getDays().size(); i++) {
                 Time t = c.getTimes().get(i);
                 String[] days = c.getDays().get(i);
-                for (String d : days) {
-                    if (day == DAYS.indexOf(d) && time >= t.getStartNum() && time <= t.getEndNum()-5) {
-                        return true;
+                if (days != null) {
+                    for (String d : days) {
+                        if (day == DAYS.indexOf(d) && time >= t.getStartNum() && time <= t.getEndNum()-5) {
+                            return true;
+                        }
                     }
                 }
             }
