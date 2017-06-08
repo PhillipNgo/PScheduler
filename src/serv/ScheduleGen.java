@@ -142,31 +142,29 @@ public class ScheduleGen extends HttpServlet {
         
             // -- HEADER START -- //
             html.append(
-                "<div id='header' class='col-sm-1 new-width'>" +
-                    "<div class='header'>" +
-                        "<nav class='menu'>" +
-                            "<ul class='menu-secondary'>" +
-                                "<li id='gentab'><a href='#generator' onclick='changeSecondaryTab(this)'>Modify Search</a></li>" +
-                                "<li id='schedtab' class='current'><a href='#schedules' onclick='changeSecondaryTab(this)'>Schedules</a></li>" +
-                                "<li id='restab'><a href='#results' onclick='changeSecondaryTab(this)'>Timetable Results</a></li>" +
-                            "</ul>" +
-                            "<div></div>" +
-                        "</nav>" +
-                        "<nav class='menu bottom'>" +
-                            "<ul class='menu-primary'>" +
-                                "<li id='maingentab' class='current'><a href='#generator' onclick='changeTab(this)'>GENERATOR</a></li>" +
-                                "<li id='timetab'><a href='#timetable' onclick='changeTab(this)'>TIMETABLE</a></li>" +
-                                "<li id='abouttab'><a href='#about' onclick='changeTab(this)'>ABOUT</a></li>" +
-                            "</ul>" +
-                            "<a href='http://www.pscheduler.com'><img class='logo' src='logo.jpg'></a>" +
-                       " </nav>" +
-                    "</div>" +
+                "<div id='header' class='col-sm-1-5'>" +
+                    "<nav>" +
+                        "<ul class='menu-secondary'>" +
+                            "<li id='gentab'><a href='#generator' onclick='changeSecondaryTab(this)'>Modify Search</a></li>" +
+                            "<li id='schedtab' class='current'><a href='#schedules' onclick='changeSecondaryTab(this)'>Schedules</a></li>" +
+                            "<li id='restab'><a href='#results' onclick='changeSecondaryTab(this)'>Timetable Results</a></li>" +
+                        "</ul>" +
+                        "<div></div>" +
+                    "</nav>" +
+                    "<nav class='bottom'>" +
+                        "<ul class='menu-primary'>" +
+                            "<li id='maingentab' class='current'><a href='#generator' onclick='changeTab(this)'>GENERATOR</a></li>" +
+                               "<li id='timetab'><a href='#timetable' onclick='changeTab(this)'>TIMETABLE</a></li>" +
+                               "<li id='abouttab'><a href='#about' onclick='changeTab(this)'>ABOUT</a></li>" +
+                        "</ul>" +
+                        "<a href='http://www.pscheduler.com'><img class='logo' src='logo.jpg'></a>" +
+                    "</nav>" +
                 "</div>");
             // -- HEADER END -- //
 
             // -- SCHEDULES START -- //
             html.append(
-                "<div id='schedules' class='col-sm-11'>" +
+                "<div id='schedules' class='col-sm-10-5'>" +
                     "<div class='main'>" +
                         "<div class='row'>" +
                             "<div class='col-sm-1'>" +
@@ -250,7 +248,7 @@ public class ScheduleGen extends HttpServlet {
                 
                 // -- TIMETABLE RESULTS START -- //
                 html.append(
-                    "<div style='display:none' id='results' class='col-sm-11'>" +
+                    "<div style='display:none' id='results' class='col-sm-10-5'>" +
                         "<div class='main'>" +
                             "<h3 class='o'><b>Your Restrictions</b></h3>");
                             html.append(restrictions.toString() + 
@@ -264,7 +262,7 @@ public class ScheduleGen extends HttpServlet {
                 
             // -- GENERATOR START -- //
             html.append(
-                "<div id='generator' class='col-sm-11' style='display:none'>" +
+                "<div id='generator' class='col-sm-10-5' style='display:none'>" +
                     "<div class='main'>" +
                         "<form id='form' class='panel panel-default' action='generate'>" +
                             "<div class='panel-heading'>" +

@@ -28,16 +28,41 @@ body {
 	margin: 0;
 }
 
-.col-sm-1, .col-sm-11 {
-	padding: 0;
+.col-sm-1-5, .col-sm-10-5 {
+    position: relative;
+    min-height: 1px;
 }
 
-.col-sm-11 {
-	width: 87.5%;
+@media (max-width: 767px) {
+	#header {
+		font-size: 3vh;
+	}	
 }
 
-.new-width {
-	width: 12.5% !important;
+@media (min-width: 768px) {
+	
+	nav a {
+		font-size: 1.5vh;
+	}
+
+	.bottom {
+		position: absolute;
+		bottom: 0;
+	}
+	
+    .col-sm-1-5, .col-sm-10-5 {
+        float: left;
+    }
+    
+    .col-sm-1-5 {
+        width: 12.5%;
+    }
+    
+    .col-sm-10-5 {
+        width: 87.5%;
+        overflow-y: scroll;
+        height:100vh;
+    }
 }
 
 .description {
@@ -75,27 +100,22 @@ body {
 	position: absolute;
 }
 
-.header {
+
+#header {
 	font-family: 'Raleway', sans-serif;
-	min-height: 100%;
-	text-align: center;
-	background-color: darkslategray;
 	color: white;
-	position:fixed;
-	width:12.5%;
+	text-align: center;
+	background-color:darkslategray;
+	min-height:100vh;
+	padding-top: 2.5vh;
 }
 
 .logo {
 	width: 75%;
 }
 
-.menu {
-	position: fixed;
-	width: 12.5%;
-}
-
 .bottom {
-	bottom: 0%;
+	width: 100%;
 }
 
 .current {
@@ -105,12 +125,11 @@ body {
 }
 
 .menu-primary {
+	padding: 0;
 	font-weight: bold;
 }
 
 .menu-secondary {
-	padding-top: 10% !important;
-	padding-bottom: 10% !important;
 	font-weight: bold;
 	text-align: right;
 	padding-left:20% !important;
@@ -135,7 +154,6 @@ nav a {
 	padding-bottom: 5%;
 	color: white;
 	text-decoration: none !important;
-	font-size: 1.5vh;
 }
 
 a:visited {
