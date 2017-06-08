@@ -1,194 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>PScheduler | Schedule Creation</title>
-<link rel='shortcut icon' href='favicon.ico' type='image/icon'>
-<link rel='icon' href='favicon.ico' type='image/icon'>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
-<link rel="stylesheet" href="stylesheets/styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
-<script type="text/javascript" src="javascripts/Search.js"></script>
-<script type="text/javascript" src="javascripts/Classes.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-86032292-1', 'auto');
-  ga('send', 'pageview');
-</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Title and Favicon -->
+	<title>PScheduler | Schedule Creation</title>
+	<link rel='shortcut icon' href='favicon.ico' type='image/icon'>
+	<link rel='icon' href='favicon.ico' type='image/icon'>
+	
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	
+	<!-- Bootstrap 3 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- Bootstrap Select -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+	
+	<!-- Style Sheet -->
+	<link rel="stylesheet" href="stylesheets/styles.css">
+	
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+	
+	<!-- Scripts -->
+	<script type="text/javascript" src="javascripts/Search.js"></script>
+	<script type="text/javascript" src="javascripts/Classes.js"></script>
+	
+	<!-- Google Analytics -->
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-86032292-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 </head>
-<body>
-	<div class="header">
-		<div style='padding-bottom:10px' class="container-fluid">
-			<h1 style="font-size:350%">
-				<a href='http://www.pscheduler.com' style='text-decoration:none'>
-				<span style="color: darkorange">P</span><span style="color: white;">Scheduler</span></a>
-				<small style="color: darkorange"> Virginia Tech Schedule Creation</small>
-			</h1>
-		</div>
-		<ul class="nav nav-tabs">
-			<li role="presentation" class="active"><a href="http://www.pscheduler.com">Schedule Generator</a></li>
-			<li role="presentation" class="tab"><a href="about.html">Contact</a></li>
-			<!--<li role="presentation"><a href="#">About Me</a></li>-->
-		</ul>
-	</div>
-	<div class="container-fluid">
-		<div style="padding-left: 5px;padding-right: 25px" class="row">
-			<div class="col-sm-3">
-			<form id="form" class="panel panel-default outline" action="generate">
-				<div style="background-color: white" class="panel-heading">
-					<h3 style="color:darkorange">Restrictions</h3>
+<body class='row'>
+	
+	<div id='home' class='home col-sm-12'>
+		<a class='contact' href='#about'>Contact</a>
+		<div class='jumbotron'>
+			<h1><span class='o'>P</span>Scheduler</h1>
+			<h2>Virginia Tech Schedule Generation and Course Lookup</h2>
+			<div class='row'>
+				<div class='col-sm-6 description'>
+					<span class="glyphicon glyphicon-calendar"></span>
+					<p><br>Know what classes you want to take?<br>We'll create up to 200 schedules for you to choose from!<br></p>
+					<button class='btn btn-default home-button' onClick='gen()'>Create Schedules</button>
 				</div>
-				<div class="panel-body">
-					<div style="padding-bottom: 10px">
-						<h4>Term</h4>
-						<select name="term" id="term" class="selectpicker form-control">
-							<option value="201709">Fall 2017</option>
-							<option value="201701">Spring 2017</option>
-						</select>
-					</div>
-					<h4>Start Time</h4>
-					<div style="padding-bottom: 10px" class="row">
-						<div class="col-sm-4">
-							<select name="h1" class="form-control selectpicker">
-								<option value="01">01</option>
-					      		<option value="02">02</option>
-					      		<option value="03">03</option>
-					      		<option value="04">04</option>
-					      		<option value="05">05</option>
-					      		<option value="06">06</option>
-					      		<option value="07">07</option>
-					      		<option value="08" selected="selected">08</option>
-					      		<option value="09">09</option>
-					      		<option value="10">10</option>
-					      		<option value="11">11</option>
-					      		<option value="12">12</option>
-							</select>
-						</div>
-						<div class="col-sm-4">
-							<select name="m1" class="form-control selectpicker">
-								<option value="00">00</option>
-					      		<option value="05">05</option>
-					      		<option value="10">10</option>
-					      		<option value="15">15</option>
-					      		<option value="20">20</option>
-					      		<option value="25">25</option>
-					      		<option value="30">30</option>
-					      		<option value="35">35</option>
-					      		<option value="40">40</option>
-					      		<option value="45">45</option>
-					      		<option value="50">50</option>
-					      		<option value="55">55</option>
-							</select>
-						</div>
-						<div class="col-sm-4">
-							<select name="start" class="form-control selectpicker">
-								<option value="am">AM</option>
-      							<option value="pm">PM</option>
-							</select>
-						</div>
-					</div>
-					<h4>End Time</h4>
-					<div style="padding-bottom:10px" class="row">
-						<div class="col-sm-4">
-							<select name="h2" class="form-control selectpicker">
-								<option value="01">01</option>
-					      		<option value="02">02</option>
-					      		<option value="03">03</option>
-					      		<option value="04">04</option>
-					      		<option value="05">05</option>
-					      		<option value="06">06</option>
-					      		<option value="07">07</option>
-					      		<option value="08" selected="selected">08</option>
-					      		<option value="09">09</option>
-					      		<option value="10">10</option>
-					      		<option value="11">11</option>
-					      		<option value="12">12</option>
-							</select>
-						</div>
-						<div class="col-sm-4">
-							<select name="m2" class="form-control selectpicker">
-								<option value="00">00</option>
-					      		<option value="05">05</option>
-					      		<option value="10">10</option>
-					      		<option value="15">15</option>
-					      		<option value="20">20</option>
-					      		<option value="25">25</option>
-					      		<option value="30">30</option>
-					      		<option value="35">35</option>
-					      		<option value="40">40</option>
-					      		<option value="45">45</option>
-					      		<option value="50">50</option>
-					      		<option value="55">55</option>
-							</select>
-						</div>
-						<div class="col-sm-4">
-							<select name="end" class="form-control selectpicker">
-								<option value="am">AM</option>
-      							<option value="pm" selected="selected">PM</option>
+				<div class='col-sm-6 description'>
+					<span class="glyphicon glyphicon-list-alt"></span>
+					<p><br>Looking for classes?<br>Try this HokieSpa Timetable alternative!<br></p>
+					<button class='btn btn-default home-button'>Easy Timetable</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id='header' class='col-sm-1 new-width' style='display:none'>
+		<div class='header'>
+			<nav class='menu bottom'>
+				<ul class='menu-primary'>
+					<li id='maingentab' class='current'><a href='#generator' onclick='changeTab(this)'>GENERATOR</a></li>
+                    <li id='timetab'><a href='#timetable' onclick='changeTab(this)'>TIMETABLE</a></li>
+                    <li id='abouttab'><a href='#about' onclick='changeTab(this)'>ABOUT</a></li>
+				</ul>
+				<a href='http://www.pscheduler.com'><img class='logo' src='logo.jpg'></a>
+			</nav>
+		</div>
+	</div>
+
+	<div id='generator' class='col-sm-11' style='display:none'>
+		<div class='main'>
+			<form id="form" class="panel panel-default outline" action="generate">
+				<div class="panel-heading">
+					<h2 class='o title'>Restrictions</h2>
+				</div>
+				<div class='panel-body'>
+					<div class='row'>
+						<div class='col-sm-2'>
+							<h4>Term</h4>
+							<select name="term" id="term" class="selectpicker form-control">
+								<option value="201709">Fall 2017</option>
+								<option value="201701">Spring 2017</option>
 							</select>
 						</div>
 					</div>
 					
+					<div class='row'>
+						<div class='col-sm-3 no-pad'>
+							<h4 class='pad-left'>Start Time</h4>
+							<div class="row">
+								<div class="col-sm-4">
+									<select name="h1" class="selectpicker form-control">
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+										<option value="07">07</option>
+										<option value="08" selected="selected">08</option>
+										<option value="09">09</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+									</select>
+								</div>
+								<div class="col-sm-4">
+									<select name="m1" class="selectpicker form-control">
+										<option value="00">00</option>
+										<option value="05">05</option>
+										<option value="10">10</option>
+										<option value="15">15</option>
+										<option value="20">20</option>
+										<option value="25">25</option>
+										<option value="30">30</option>
+										<option value="35">35</option>
+										<option value="40">40</option>
+										<option value="45">45</option>
+										<option value="50">50</option>
+										<option value="55">55</option>
+									</select>
+								</div>
+								<div class="col-sm-4">
+									<select name="start" class="selectpicker form-control">
+										<option value="am">AM</option>
+										<option value="pm">PM</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class='col-sm-3 no-pad'>
+							<h4 class='pad-left'>End Time</h4>
+							<div class="row">
+								<div class="col-sm-4">
+									<select name="h2" class="selectpicker form-control">
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+										<option value="07">07</option>
+										<option value="08" selected="selected">08</option>
+										<option value="09">09</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+									</select>
+								</div>
+								<div class="col-sm-4">
+									<select name="m2" class="selectpicker form-control">
+										<option value="00">00</option>
+										<option value="05">05</option>
+										<option value="10">10</option>
+										<option value="15">15</option>
+										<option value="20">20</option>
+										<option value="25">25</option>
+										<option value="30">30</option>
+										<option value="35">35</option>
+										<option value="40">40</option>
+										<option value="45">45</option>
+										<option value="50">50</option>
+										<option value="55">55</option>
+									</select>
+								</div>
+								<div class="col-sm-4">
+									<select name="end" class="selectpicker form-control">
+										<option value="am">AM</option>
+										<option value="pm" selected="selected">PM</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="row">
-						<div class="col-sm-6">
+						<div class='col-sm-2'>
+							<h4>Gap Time</h4>
+							<select name="gap" class="selectpicker form-control">
+								<option value="5">5</option>
+								<option value="10">10</option>
+								<option value="15" selected="selected">15 mins</option>
+								<option value="20">20</option>
+								<option value="25">25</option>
+								<option value="30">30</option>
+								<option value="35">35</option>
+								<option value="40">40</option>
+								<option value="45">45</option>
+								<option value="50">50</option>
+								<option value="55">55</option>
+								<option value="60">1:00 hr</option>
+								<option value="65">1:05</option>
+								<option value="70">1:10</option>
+								<option value="75">1:15</option>
+								<option value="80">1:20</option>
+								<option value="85">1:25</option>
+								<option value="90">1:30</option>
+								<option value="95">1:35</option>
+								<option value="100">1:40</option>
+								<option value="105">1:45</option>
+								<option value="110">1:50</option>
+								<option value="115">1:55</option>
+								<option value="120">2:00</option>
+							</select>
+						</div>
+						<div class='col-sm-2'>
 							<h4>Free Days</h4>
 							<select name="free" class="selectpicker form-control" multiple>
 								<option value="M">Monday</option>
-	      						<option value="T">Tuesday</option>
-					      		<option value="W">Wednesday</option>
-					      		<option value="R">Thursday</option>
-					      		<option value="F">Friday</option>
-							</select>
-						</div>
-						<div class="col-sm-6">
-							<h4>Gap Time</h4>
-							<select name="gap" class="form-control selectpicker">
-								<option value="5">5</option>
-						      	<option value="10">10</option>
-						      	<option value="15" selected="selected">15 mins</option>
-						      	<option value="20">20</option>
-						      	<option value="25">25</option>
-						      	<option value="30">30</option>
-						      	<option value="35">35</option>
-						      	<option value="40">40</option>
-						      	<option value="45">45</option>
-						      	<option value="50">50</option>
-						      	<option value="55">55</option>
-						      	<option value="60">1:00 hr</option>
-						      	<option value="65">1:05</option>
-						      	<option value="70">1:10</option>
-						      	<option value="75">1:15</option>
-						      	<option value="80">1:20</option>
-						      	<option value="85">1:25</option>
-						      	<option value="90">1:30</option>
-						      	<option value="95">1:35</option>
-						      	<option value="100">1:40</option>
-						      	<option value="105">1:45</option>
-						      	<option value="110">1:50</option>
-						      	<option value="115">1:55</option>
-						      	<option value="120">2:00</option>
+								<option value="T">Tuesday</option>
+								<option value="W">Wednesday</option>
+								<option value="R">Thursday</option>
+								<option value="F">Friday</option>
 							</select>
 						</div>
 					</div>
+					<div>
+						<h4>Current Schedule</h4>
+						<table id="schedule" class="table border">
+							<thead class="thead-inverse">
+								<tr>
+									<td>CRN</td>
+									<td>Course</td>
+									<td>Title</td>
+									<td>Class Type</td>
+									<td>Professor</td>
+									<td></td>
+								</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+					</div>
 				</div>
-				<div style="background-color:white;padding-bottom:10px" class="panel-footer">
-						<button style="color:darkorange;width:100%" class="btn btn-default btn-lg" type="button" onClick="sendData()">Create Schedules</button>
+				<div class='panel-footer'>
+					<button class="btn btn-default btn-lg" type="button"
+						onClick="sendData()">Create Schedules</button>
+					<span class='pad-left'><input name="color" type="checkbox" checked>Colored Output</span>
 				</div>
 			</form>
-			*Specific CRNs Ignore Time and Day Restrictions
-			</div>
-      		
-			<div style="text-align: center;" class="col-sm-9">
-				<div>
+			<div class='outline'>
+				<h3 class='o title pad'>Course/CRN Search</h3>
 				<div class="input-group">
 					<div class="input-group-btn">
 						<select id="searchtype" class="selectpicker" data-width="auto">
@@ -201,25 +264,7 @@
 							placeholder="Search a Course, CRN, or Professor to add (PHYS 2305, 85124, Boyer, etc.)">
 					</div>
 				</div>
-				<ul id="search" class="list-group live-search-list">
-				</ul>
-				</div>
-				<h3 style="color:darkorange">Current Schedule</h3>
-				<table id="schedule" class="table border" style="background-color:white;">
-					<thead class="thead-inverse">
-						<tr style="font-weight: bold;">
-							<td>CRN</td>
-							<td>Course</td>
-							<td>Title</td>
-							<td>Class Type</td>
-							<td>Professor</td>
-							<td></td>
-						</tr>
-					</thead>
-					<tbody>
-						
-					</tbody>
-				</table>
+				<ul id="search" class="list-group live-search-list"></ul>
 			</div>
 		</div>
 	</div>

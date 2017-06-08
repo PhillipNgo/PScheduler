@@ -21,9 +21,10 @@ import time.Time;
  */
 @WebServlet("/LiveSearch")
 public class LiveSearch extends HttpServlet {
+    
 	private static final long serialVersionUID = 1L;
 	private StringBuilder html; //holds the html response
-	private final int MAX_OPTIONS = 5; //max number of options to search for
+	private final int MAX_OPTIONS = 10; //max number of options to search for
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -45,8 +46,6 @@ public class LiveSearch extends HttpServlet {
 	    String searchType = request.getParameter("type"); //the type of course to search
 	    String termYear = request.getParameter("term"); //the school term to search
 	    
-	    //create the hide search button
-	    html.append("<li id='hide' class='list-group-item'><button onclick='hide()' id='hideb' type='button' class='btn btn-default form-control'>Hide Search</button></li>");
 	    Scanner scan; //scanner to read from database
 	    try {
             scan = new Scanner(new File("webapps/ROOT/Database/" + termYear + ".txt"));
@@ -71,7 +70,7 @@ public class LiveSearch extends HttpServlet {
                 }
 	            //if a match was found create either a crn or course listing based on the search type
 	            if (searchType.equals("crn")) { //create crn listing
-	                html.append("<li class='list-group-item'><button onclick='addCRN($(this));hide();' name='" + c.getCRN() + 
+	                html.append("<li class='list-group-item'><button onclick='addCRN($(this))' name='" + c.getCRN() + 
 	                        "' class='btn btn-default btn-sm' type='button'>Add</button> ");
 	                html.append(c.getCRN() + " / " + c.getSubject() + " " + c.getNum() + " - " + c.getName() + " / " + classType(c.getClassType()));
 	                html.append(" / " + c.getProf());
@@ -92,7 +91,7 @@ public class LiveSearch extends HttpServlet {
                       catch (Exception e) {}
 	                html.append("</li>");
 	            } else { //create search listing
-	                html.append("<li class='list-group-item'><button onclick='addClass($(this));hide();' name='" + c.getSubject() + 
+	                html.append("<li class='list-group-item'><button onclick='addClass($(this))' name='" + c.getSubject() + 
 	                        c.getNum() + "' class='btn btn-default btn-sm' type='button'>Add</button> ");
 	                html.append(c.getSubject() + " " + c.getNum() + " - " + c.getName());
 	                

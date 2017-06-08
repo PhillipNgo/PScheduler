@@ -100,7 +100,7 @@ function addCRN(button) {
  */
 function crnCheck(select) {
 	var row = select.parent().parent().children('td');
-	//if a crn is selected, choose the correct professor and class type and disable thos selects
+	//if a crn is selected, choose the correct professor and class type and disable those selects
 	if (select.val() !== 'A') {
 		$.ajax({
 		     async: false,
@@ -108,11 +108,11 @@ function crnCheck(select) {
 		     url: 'LiveSearch',
 		     data: {search:select.val(), type:"crn", term:$('#term').val()},
 		     success: function(response) {
-		    	 var text = $($($.parseHTML(response)).get(1)).text().split(' / ');
-					$($(row.get(3)).children()[0]).val(classType(text[2]));
-					$($(row.get(4)).children()[0]).val(text[3].replace(/ /g, '_'));
-					$($(row.get(3)).children()[0]).prop('disabled', true);
-					$($(row.get(4)).children()[0]).prop('disabled', true);
+		    	 var text = $($($.parseHTML(response)).get(0)).text().split(' / ');
+				 $($(row.get(3)).children()[0]).val(classType(text[2]));
+				 $($(row.get(4)).children()[0]).val(text[3].replace(/ /g, '_'));
+				 $($(row.get(3)).children()[0]).prop('disabled', true);
+				 $($(row.get(4)).children()[0]).prop('disabled', true);
 		     }
 		});
 	}
@@ -213,3 +213,37 @@ function classType(type) {
 	default:  return "bug";
 	}
 }
+
+function gen() {
+	$('#header').fadeIn('slow');
+	$('#home').fadeOut('slow', function() {
+		$('#generator').fadeIn('slow');
+	});
+	
+}
+
+function changeTab(button) {
+	$('#maingentab').attr('class', '');
+	
+	$('#about').hide();
+	$('#abouttab').attr('class', '');
+	
+	$('#timetable').hide();
+	$('#timetab').attr('class', '');
+	
+	$('#generator').hide();
+	$('#schedules').hide();
+	$('#results').hide();
+	
+	$($(button).attr('href')).show();
+	$(button).parent().attr('class', 'current');
+
+	if (!$('#maingentab').hasClass('current')) {
+		$('.menu-secondary').hide();
+	} else {
+		$('.menu-secondary').show();
+	}
+}
+
+
+

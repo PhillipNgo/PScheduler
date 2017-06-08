@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
 	});
 	
 	/**
-	 * Changing a the term clears the current schedule
+	 * Changing the term clears the current schedule
 	 */
 	$('#term').on('change', function(){
 	    if ($("#schedule > tbody:last-child").html().trim().length && confirm("This will clear your current schedule")) {
@@ -32,7 +32,7 @@ jQuery(document).ready(function($){
 	});
 	
 	/**
-	 * Always tries to set the parameters if the user comes from a modify schedule button
+	 * set the parameters if the user comes from a modify schedule button
 	 */
 	setParameters();
 });
@@ -66,18 +66,18 @@ function setParameters() {
 	params = params.split('&'); //split the restrictions
 	var i;
 	
-	for (i = 1; i < 9; i++) { //choose the time and day restrictions
+	for (i = 0; i < 8; i++) { //choose the time and day restrictions
 		var val = params[i].split('=');
 		$('[name="' + val[0] + '"]').val(val[1]); 
 		$('[name="' + val[0] + '"]').selectpicker('refresh');
 	}
 	var days = []; //set freeDay restrictions
-	for (i; i < params.length; i++) {
+	for (i += 1; i < params.length - 2; i++) {
 		days[i-8] = params[i].split('=')[1];
 	}
 	$('[name="free"]').val(days);
 	$('[name="free"]').selectpicker('refresh');
-	var classList = params[0].split('=')[1].split('%7E');
+	var classList = params[params.length-1].split('=')[1].split('%7E');
 	
 	if (classList[0].length != 0) { //check if there are any classes
 		for (i = 0; i < classList.length; i++) { //for every class
@@ -101,7 +101,7 @@ function setParameters() {
 						url: 'LiveSearch',
 						data: {search:split[0], type:"course", term:$('#term').val()},
 						success: function(response) {
-							crns[crns.length] = $($($($.parseHTML(response)).get(1)));
+							crns[crns.length] = $($($($.parseHTML(response)).get(0)));
 							crnNum[crnNum.length] = split[0];
 						}
 					});
@@ -115,9 +115,9 @@ function setParameters() {
 					     url: 'LiveSearch',
 					     data: {search:search, type:"course", term:$('#term').val()},
 					     success: function(response) {
-					    	 var temp = $($($($.parseHTML(response)).get(1)));
+					    	 var temp = $($($($.parseHTML(response)).get(0)));
 					    	 if (temp.children().get(0).name.endsWith('H') && index == 0) {
-					    		 temp = $($($($.parseHTML(response)).get(2)));
+					    		 temp = $($($($.parseHTML(response)).get(1)));
 					    	 }
 					    	 courses[courses.length] = temp;
 					     }

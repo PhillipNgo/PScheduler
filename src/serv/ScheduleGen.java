@@ -70,12 +70,10 @@ public class ScheduleGen extends HttpServlet {
         }
         fullConflicts = new StringBuilder();
         String restrictions = ""; //holds html for search restrictions
-        String stats = ""; //holds html for search statistics
         String conflicts = ""; //holds html for search conflicts
         String courseSearch = ""; //holds html for the courses found on the timetable
         if (schedules != null) { //if there were no problems generating schedules
             restrictions = this.getRestrictions(); //get the restrictions
-            stats = this.getScheduleStats(); //get the stats
             conflicts = "This feature has been temporarily disabled."; //large schedule amounts slowed down the website
             try {
                 //conflicts = this.getConflicts(); //get the conflicts
@@ -86,240 +84,381 @@ public class ScheduleGen extends HttpServlet {
         
         
         // -- HEAD START -- // Imports, favicon, scripts
-        html.append("<!DOCTYPE html>");
-        html.append("<html lang='en'>");
-        html.append("<head>");
-        html.append("<title>PScheduler | search</title>");
-        html.append("<link rel='shortcut icon' href='favicon.ico' type='image/icon'>");
-        html.append("<link rel='icon' href='favicon.ico' type='image/icon'>");
-        html.append("<meta charset='utf-8'>");
-        html.append("<meta name='viewport' content='width=device-width, initial-scale=1'>");
-        html.append("<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>");
-        html.append("<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>");
-        html.append("<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>");
-        html.append("<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css'>");
-        html.append("<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js'></script>");
-        html.append("<link rel='stylesheet' href='stylesheets/styles.css'>");
-        html.append("<script type='text/javascript' src='javascripts/Schedules.js'");
-        html.append("<script>");
-        html.append("(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){");
-        html.append("(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),");
-        html.append("m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)");
-        html.append("})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');");
-        html.append("ga('create', 'UA-86032292-1', 'auto');");
-        html.append("ga('send', 'pageview');");
-        html.append("</script>");
-        html.append("<link href='https://fonts.googleapis.com/css?family=Raleway|Roboto' rel='stylesheet'>");
-        html.append("</head>");
+        html.append(
+            "<!DOCTYPE html>" +
+            "<html lang='en'>" +
+            "<head>" +
+                "<meta charset='utf-8'>" +
+                "<meta name='viewport' content='width=device-width, initial-scale=1'>" +
+                
+                "<!-- Title and Favicon -->" +
+                "<title>PScheduler | Schedule Creation</title>" +
+                "<link rel='shortcut icon' href='favicon.ico' type='image/icon'>" +
+                "<link rel='icon' href='favicon.ico' type='image/icon'>" +
+                
+                "<!-- JQuery -->" +
+                "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>" +
+                
+                "<!-- Bootstrap 3 -->" +
+                "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>" +
+                "<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>" +
+                
+                "<!-- Bootstrap Select -->" +
+                "<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css'>" +
+                "<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js'></script>" +
+                
+                "<!-- Style Sheet -->" +
+                "<link rel='stylesheet' href='stylesheets/styles.css'>" +
+                
+                "<!-- Fonts -->" +
+                "<link href='https://fonts.googleapis.com/css?family=Raleway|Roboto' rel='stylesheet'>" +
+                
+                "<!-- Scripts -->" +
+                "<script type='text/javascript' src='javascripts/Schedules.js'></script>" +
+                "<script type='text/javascript' src='javascripts/Classes.js'></script>" +
+                "<script type='text/javascript' src='javascripts/Search.js'></script>" +
+                
+                "<!-- Google Analytics -->" +
+                "<script>" +
+                    "(function(i, s, o, g, r, a, m) {" +
+                        "i['GoogleAnalyticsObject'] = r;" +
+                        "i[r] = i[r] || function() {" +
+                            "(i[r].q = i[r].q || []).push(arguments)" +
+                        "}, i[r].l = 1 * new Date();" +
+                        "a = s.createElement(o), m = s.getElementsByTagName(o)[0];" +
+                        "a.async = 1;" +
+                        "a.src = g;" +
+                        "m.parentNode.insertBefore(a, m)" +
+                    "})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');" +
+                    "ga('create', 'UA-86032292-1', 'auto');" +
+                    "ga('send', 'pageview');" +
+                "</script>" +
+            "</head>");
         // -- HEAD END -- //
 
         
-        // -- HEADER START -- // header banner
-        html.append("<body style='background-color: #FFFAFA'>");
-        html.append("<div id='header' style='background-color: DarkSlateGray; border-bottom: 1px solid darkorange;'>");
-        html.append("<div class='container-fluid header'>");
-        html.append("<h1>");
-        html.append("<a href='http://www.pscheduler.com' style='text-decoration:none'>");
-        html.append("<span style='color: darkorange'>P</span><span style='color: white'>Scheduler</span></a>");
-        html.append("<small style='color: darkorange'> Virginia Tech Schedule Creation</small>");
-        html.append("</h1>");
-        html.append("</div>");
-        html.append("</div>");
-        // -- HEADER END -- //
+        // -- BODY START -- //
+        html.append("<body class='row'>");
         
-        // -- BODY START -- // schedules and search data
-        //create info and buttons bar
-        html.append("<div id='content' class='container-fluid'>");
-        html.append("<div style='padding-top: 10px;' class='row'>");
-        html.append("<div style='padding-left: 12.5px; padding-right: 12.5px;' class='col-sm-12'>");
-        html.append("<div id='schedule-panel' class=' collapse in panel panel-default outline'>");
-        html.append("<div style='background-color: white;' class='panel-heading center'>");
-        html.append("<div class='row'>");
-        html.append("<div class='col-sm-5'>");
-        html.append("<div class='input-group'>");
-        html.append("<div class='row'>");
-        html.append("<div style='padding:0 0 0 5px;' class='col-sm-4'>");
-        html.append("<span class='input-group-btn'>");
-        html.append("<button type='button' class='btn btn-default glyphicon glyphicon-chevron-left form-control' onclick='changeSchedule(-1)'></button>");
-        html.append("</span>");
-        html.append("</div>");
-        html.append("<div style='padding:1px 0 0 0;' class='col-sm-4'>");
-        html.append("<input id='changet' class='form-control' type='text' value='try keyboard arrows'> ");
-        html.append("</div>");
-        html.append("<div style='padding:0 3px 0 2px;' class='col-sm-4'>");
-        html.append("<span class='input-group-btn'>");
-        html.append("<button type='button' class='btn btn-default glyphicon glyphicon-chevron-right form-control' onclick='changeSchedule(1)'></button>");
-        html.append("</span>");
-        html.append("</div>");
-        html.append("</div>");
-        html.append("</div>");
-        html.append("</div>");
-        html.append("<div class='col-sm-2'>");
-        
-        html.append("<h4 id='title'><b>");
-        if (schedules == null || schedules.size() == 0) {
-            html.append("0 Schedules");
-        }
-        else if (schedules.size() > 200) {
-            html.append("Schedule 1 of 200+");
-        }
-        else {
-            html.append("Schedule 1 of " + schedules.size());
-        }
-        html.append("</b></h4>");
-        
-        html.append("</div>");
-        html.append("<div style='text-align:right' role='group' class='btn-group col-sm-5' aria-label='...'>");
-        
-        //Set an invisible select for the modify form button
-        html.append("<form action='modify' style='padding-right:12px'>");
-        html.append("<button type='button' class='btn btn-default' onclick='printerFriendly()'>Print Page</button>");
-        html.append("<a class='btn btn-default' id='download' href='download' onclick='dlHref()'>Download as Excel</a>");
-        html.append("<button type='button' class='btn btn-default hidetb'>Hide Table</button>");
-        html.append("<button type='submit' class='btn btn-default'>Modify Search</button>");
-        html.append("<select style='display: none;' name='classes'><option value='" + request.getParameter("schedule") + "'></option></select>");
-        html.append("<select style='display: none;' name='term'><option value='" + request.getParameter("term") + "'></option></select>");
-        html.append("<select style='display: none;' name='h1'><option value='" + request.getParameter("h1") + "'></option></select>");
-        html.append("<select style='display: none;' name='m1'><option value='" + request.getParameter("m1") + "'></option></select>");
-        html.append("<select style='display: none;' name='start'><option value='" + request.getParameter("start") + "'></option></select>");
-        html.append("<select style='display: none;' name='h2'><option value='" + request.getParameter("h2") + "'></option></select>");
-        html.append("<select style='display: none;' name='m2'><option value='" + request.getParameter("m2") + "'></option></select>");
-        html.append("<select style='display: none;' name='end'><option value='" + request.getParameter("end") + "'></option></select>");
-        html.append("<select style='display: none;' name='gap'><option value='" + request.getParameter("gap") + "'></option></select>");
-        String[] freeDays = request.getParameterValues("free");
-        if (freeDays != null) {
-            for (String d : freeDays) {
-                html.append("<select style='display: none;' name='free'><option value='" + d + "'></option></select>");
-            }
-        }
-        html.append("<button type='button' class='btn btn-default' onclick='togglePanel()'>Search Data</button>");
-        html.append("</form>");
-        html.append("</div>");
-        html.append("</div>");
-        html.append("</div>");
-        
-        //Append the schedules
-        html.append("<div id='tablebody' style='padding-top:0px' class='panel-body'>");
-        try {
-            if (schedules == null) {
-                html.append("Sorry, something went wrong when trying to generate your schedules.");
-            }
-            else if (schedules.size() == 0) {
-                html.append("No Schedules Matched Your Parameters. See below or 'Search Data' for more information. This may be caused by classes always conflicting.<br><br>");
-                
-                html.append("<div class='row'>");
-                html.append("<div class='col-sm-4'>");
-                html.append("<p><b>Your Restrictions</b><p>");
-                html.append(restrictions);
-                html.append("</div>");
-                html.append("</div><br>");
-                html.append("<p><b>Courses Found on Timetable</b><p>");
-                html.append(courseSearch.toString());
-            }
-            else {
-                html.append("<ul class='collapse in' style='padding-left:0' id='textschedules' name='0'>");
-                appendTextSchedules(schedules);
-                html.append("</ul>");
-           
-                html.append("<ul style='padding-top:5px; padding-left:0' id='tableschedules' name='0'>");
-                appendTableSchedules(schedules);
-                html.append("</ul>");
-            }
-        }
-        catch (Exception e) {
-            html.append("There was an error when displaying your schedules!<br>");
-        }
-        
-        html.append("</div>");
-        html.append("</div>");
-        //search data starts here
-        html.append("<div id='data-panel' class='collapse panel panel-default outline'>");
-        html.append("<div style='background-color: white;' class='panel-heading center'>");
-        html.append("<div class='row'>");
-        html.append("<div class='col-sm-1'>");
-        html.append("</div>");
-        html.append("<div class='center col-sm-10'>");
-        html.append("<h4><b>Search Data</b></h4>");
-        html.append("</div>");
-        html.append("<div class='col-sm-1'>");
-        html.append("<button type='button' class='btn btn-default' onclick='togglePanel()'>Schedules</button>");
-        html.append("</div>");
-        html.append("</div>");
-        html.append("</div>");
-        
-        html.append("<div class='panel-body panel-group'>");
-        
-        //The restrictions 
-        html.append("<div style='padding-bottom:10px;' class='row'>");
-        html.append("<div class='col-sm-5'>");
-        html.append("<div class='panel panel-default'>");
-        html.append("<div data-toggle='collapse' href='#collapseOne' class='panel-heading' role='button'>");
-        html.append("<h3 class='panel-title'><b>Your Restrictions</b></h3>");
-        html.append("</div>");
-        html.append("<div id='collapseOne' class='panel-collapse collapse in' role='tabpanel'>");
-        html.append("<div class='panel-body'>");
-        html.append(restrictions);
-        html.append("</div>");
-        html.append("</div>");
-        html.append("</div>");
-        html.append("</div>");
-        
-        //The stats
-        html.append("<div style='padding:0 0 0 0;' class='col-sm-2'>");
-        html.append("<div class='panel panel-default'>");
-        html.append("<div data-toggle='collapse' href='#collapseFour' class='panel-heading' role='button'>");
-        html.append("<h3 class='panel-title'><b>Search Statistics</b></h3>");
-        html.append("</div>");
-        html.append("<div id='collapseFour' class='panel-collapse collapse in' role='tabpanel'>");
-        html.append("<div class='panel-body'>");
-        html.append(stats);
-        html.append("</div>");
-        html.append("</div>");
-        html.append("</div>");
-        html.append("</div>");
-        
-        //The conflicts
-        html.append("<div class='col-sm-5'>");
-        html.append("<div class='panel panel-default'>");
-        html.append("<div data-toggle='collapse' href='#collapseThree' class='panel-heading' role='button'>");
-        html.append("<h3 class='panel-title'><b>Conflicts</b></h3>");
-        html.append("</div>");
-        html.append("<div id='collapseThree' class='panel-collapse collapse in' role='tabpanel'>");
-        html.append("<div class='panel-body'>");
-        html.append(conflicts);
-        html.append("</div>");
-        html.append("</div>");
-        html.append("</div>");
-        html.append("</div>");
-        html.append("</div>");
-        
-        //The course search
-        html.append("<div class='panel panel-default'>");
-        html.append("<div data-toggle='collapse' href='#collapseTwo' class='panel-heading' role='button'>");
-        html.append("<h3 class='panel-title'><b>Courses Found on Timetable</b></h3>");
-        html.append("</div>");
-        html.append("<div id='collapseTwo' class='panel-collapse collapse in' role='tabpanel'>");
-        html.append("<div class='panel-body'>");
-        html.append(courseSearch);
-        html.append("</div>");
-        html.append("</div>");
-        html.append("</div>");
-        
-        html.append("</div>");
-        html.append("</div>");
-        //search data end
-        
-        html.append("</div>");
-        html.append("</div>");
-        html.append("</div>");
-        // -- BODY END -- //
-        
+            // -- HEADER START -- //
+            html.append(
+                "<div id='header' class='col-sm-1 new-width'>" +
+                    "<div class='header'>" +
+                        "<nav class='menu'>" +
+                            "<ul class='menu-secondary'>" +
+                                "<li id='gentab'><a href='#generator' onclick='changeSecondaryTab(this)'>Modify Search</a></li>" +
+                                "<li id='schedtab' class='current'><a href='#schedules' onclick='changeSecondaryTab(this)'>Schedules</a></li>" +
+                                "<li id='restab'><a href='#results' onclick='changeSecondaryTab(this)'>Timetable Results</a></li>" +
+                            "</ul>" +
+                            "<div></div>" +
+                        "</nav>" +
+                        "<nav class='menu bottom'>" +
+                            "<ul class='menu-primary'>" +
+                                "<li id='maingentab' class='current'><a href='#generator' onclick='changeTab(this)'>GENERATOR</a></li>" +
+                                "<li id='timetab'><a href='#timetable' onclick='changeTab(this)'>TIMETABLE</a></li>" +
+                                "<li id='abouttab'><a href='#about' onclick='changeTab(this)'>ABOUT</a></li>" +
+                            "</ul>" +
+                            "<a href='http://www.pscheduler.com'><img class='logo' src='logo.jpg'></a>" +
+                       " </nav>" +
+                    "</div>" +
+                "</div>");
+            // -- HEADER END -- //
 
+            // -- SCHEDULES START -- //
+            html.append(
+                "<div id='schedules' class='col-sm-11'>" +
+                    "<div class='main'>" +
+                        "<div class='row'>" +
+                            "<div class='col-sm-1'>" +
+                                "<input id='changet' style='text-align: center' type='text' class='form-control' value='1'>" +
+                            "</div>" +
+                            "<div class='col-sm-10 schedule-header'><h4 id='title'><b>");
+                            
+                            if (schedules == null || schedules.size() == 0) {
+                                html.append("0 Schedules");
+                            }
+                            else if (schedules.size() > 200) {
+                                html.append("Schedule 1 of 200+");
+                            }
+                            else {
+                                html.append("Schedule 1 of " + schedules.size());
+                            }
+                            
+                            html.append("</b></h4></div>" +
+
+                            "<div class='col-sm-1 media-group'>" +
+                                "<div class='input-group-btn'>" +
+                                    "<a id='download' href='download' onclick='dlHref()' type='button' class='btn btn-default'>" +
+                                        "<span class='glyphicon glyphicon-download-alt'></span>" +
+                                    "</a>" +
+                                    "<button onclick='printerFriendly()' type='button' class='btn btn-default'>" +
+                                        "<span class='glyphicon glyphicon-print'></span>" +
+                                    "</button>" +
+                                    "<button type='button' class='btn btn-default hidetb'>" +
+                                        "<span id='hidetb-but' class='glyphicon glyphicon-triangle-top'></span>" +
+                                    "</button>" +
+                                "</div>" +
+                            "</div>" +
+                        "</div>");
+                        
+                        try {
+                            if (schedules == null) {
+                                html.append("Sorry, something went wrong when trying to generate your schedules.");
+                            }
+                            else if (schedules.size() == 0) {
+                                html.append("<div class='panel panel-warning'><div class='panel-heading'>No Schedules Matched Your Parameters. Look below for more information.</div>");
+                                html.append("<div class='panel panel-body'><h3 class='o'><b>Your Restrictions</b></h3>");
+                                html.append(restrictions);
+                                html.append("<br>");
+                                html.append("<h3 class='o'><b>Courses Found on Timetable</b></h3>");
+                                html.append(courseSearch.toString() + "</div></div>");
+                            }
+                            else {
+                                html.append(
+                                "<div id='schedlist' class='carousel'>" +
+                                    "<div class='carousel-inner'>");
+                                for (Schedule s : schedules) {
+                                    html.append("<div class='item");
+                                    if (s.equals(schedules.get(0))) {
+                                        html.append(" active");
+                                    }
+                                    html.append("'>");
+                                    appendTextSchedule(s);
+                                    html.append("<br>");
+                                    appendTableSchedule(s);
+                                    html.append("</div>");
+                                }
+                                html.append(
+                                    "</div><a class='left carousel-control' href='#schedlist' onclick='changeSchedule(\"prev\")'>" +
+                                      "<span style='left:1vw;color:darkslategray' class='glyphicon glyphicon-chevron-left'></span>" +
+                                      "<span class='sr-only'>Previous</span>" +
+                                    "</a>" +
+                                    "<a class='right carousel-control' href='#schedlist' onclick='changeSchedule(\"next\")'>" +
+                                      "<span style='right:1vw;color:darkslategray' class='glyphicon glyphicon-chevron-right'></span>" +
+                                      "<span class='sr-only'>Next</span>" +
+                                    "</a>" +
+                                "</div>");
+                            }
+                        }
+                        catch (Exception e) {
+                            html.append("There was an error when displaying your schedules!<br>");
+                        }    
+                            
+                       html.append("</div>" +
+                    "</div>");
+                // -- SCHEDULES END -- //
+                
+                // -- TIMETABLE RESULTS START -- //
+                html.append(
+                    "<div style='display:none' id='results' class='col-sm-11'>" +
+                        "<div class='main'>" +
+                            "<h3 class='o'><b>Your Restrictions</b></h3>");
+                            html.append(restrictions.toString() + 
+                            "<br>");
+                            html.append("<h3 class='o'><b>Timetable Results</b></h3>" +
+                            courseSearch.toString());
+                            html.append(
+                        "</div>" +
+                    "</div>");
+                // -- TIMETABLE RESULTS END -- //
+                
+            // -- GENERATOR START -- //
+            html.append(
+                "<div id='generator' class='col-sm-11' style='display:none'>" +
+                    "<div class='main'>" +
+                        "<form id='form' class='panel panel-default' action='generate'>" +
+                            "<div class='panel-heading'>" +
+                                "<h2 class='o title'>Restrictions</h2>" +
+                            "</div>" +
+                            "<div class='panel-body'>" +
+                                "<div class='row'>" +
+                                    "<div class='col-sm-2'>" +
+                                        "<h4>Term</h4>" +
+                                        "<select name='term' id='term' class='selectpicker form-control'>" +
+                                            "<option value='201709'>Fall 2017</option>" +
+                                            "<option value='201701'>Spring 2017</option>" +
+                                        "</select>" +
+                                    "</div>" +
+                                "</div>" +
+                                
+                                "<div class='row'>" +
+                                    "<div class='col-sm-3 no-pad'>" +
+                                        "<h4 class='pad-left'>Start Time</h4>" +
+                                        "<div class='row'>" +
+                                            "<div class='col-sm-4'>" +
+                                                "<select name='h1' class='selectpicker form-control'>" +
+                                                    "<option value='01'>01</option>" +
+                                                    "<option value='02'>02</option>" +
+                                                    "<option value='03'>03</option>" +
+                                                    "<option value='04'>04</option>" +
+                                                    "<option value='05'>05</option>" +
+                                                    "<option value='06'>06</option>" +
+                                                    "<option value='07'>07</option>" +
+                                                    "<option value='08' selected='selected'>08</option>" +
+                                                    "<option value='09'>09</option>" +
+                                                    "<option value='10'>10</option>" +
+                                                    "<option value='11'>11</option>" +
+                                                    "<option value='12'>12</option>" +
+                                                "</select>" +
+                                            "</div>" +
+                                            "<div class='col-sm-4'>" +
+                                                "<select name='m1' class='selectpicker form-control'>" +
+                                                    "<option value='00'>00</option>" +
+                                                    "<option value='05'>05</option>" +
+                                                    "<option value='10'>10</option>" +
+                                                    "<option value='15'>15</option>" +
+                                                    "<option value='20'>20</option>" +
+                                                    "<option value='25'>25</option>" +
+                                                    "<option value='30'>30</option>" +
+                                                    "<option value='35'>35</option>" +
+                                                    "<option value='40'>40</option>" +
+                                                    "<option value='45'>45</option>" +
+                                                    "<option value='50'>50</option>" +
+                                                    "<option value='55'>55</option>" +
+                                                "</select>" +
+                                            "</div>" +
+                                            "<div class='col-sm-4'>" +
+                                                "<select name='start' class='selectpicker form-control'>" +
+                                                    "<option value='am'>AM</option>" +
+                                                    "<option value='pm'>PM</option>" +
+                                                "</select>" +
+                                            "</div>" +
+                                        "</div>" +
+                                    "</div>" +
+                                    "<div class='col-sm-3 no-pad'>" +
+                                        "<h4 class='pad-left'>End Time</h4>" +
+                                        "<div class='row'>" +
+                                            "<div class='col-sm-4'>" +
+                                                "<select name='h2' class='selectpicker form-control'>" +
+                                                    "<option value='01'>01</option>" +
+                                                    "<option value='02'>02</option>" +
+                                                    "<option value='03'>03</option>" +
+                                                    "<option value='04'>04</option>" +
+                                                    "<option value='05'>05</option>" +
+                                                    "<option value='06'>06</option>" +
+                                                    "<option value='07'>07</option>" +
+                                                    "<option value='08' selected='selected'>08</option>" +
+                                                    "<option value='09'>09</option>" +
+                                                    "<option value='10'>10</option>" +
+                                                    "<option value='11'>11</option>" +
+                                                    "<option value='12'>12</option>" +
+                                                "</select>" +
+                                            "</div>" +
+                                            "<div class='col-sm-4'>" +
+                                                "<select name='m2' class='selectpicker form-control'>" +
+                                                    "<option value='00'>00</option>" +
+                                                    "<option value='05'>05</option>" +
+                                                    "<option value='10'>10</option>" +
+                                                    "<option value='15'>15</option>" +
+                                                    "<option value='20'>20</option>" +
+                                                    "<option value='25'>25</option>" +
+                                                    "<option value='30'>30</option>" +
+                                                    "<option value='35'>35</option>" +
+                                                    "<option value='40'>40</option>" +
+                                                    "<option value='45'>45</option>" +
+                                                    "<option value='50'>50</option>" +
+                                                    "<option value='55'>55</option>" +
+                                                "</select>" +
+                                            "</div>" +
+                                            "<div class='col-sm-4'>" +
+                                                "<select name='end' class='selectpicker form-control'>" +
+                                                    "<option value='am'>AM</option>" +
+                                                    "<option value='pm' selected='selected'>PM</option>" +
+                                                "</select>" +
+                                            "</div>" +
+                                        "</div>" +
+                                    "</div>" +
+                                "</div>" +
+                                "<div class='row'>" +
+                                    "<div class='col-sm-2'>" +
+                                        "<h4>Gap Time</h4>" +
+                                        "<select name='gap' class='selectpicker form-control'>" +
+                                            "<option value='5'>5</option>" +
+                                            "<option value='10'>10</option>" +
+                                            "<option value='15' selected='selected'>15 mins</option>" +
+                                            "<option value='20'>20</option>" +
+                                            "<option value='25'>25</option>" +
+                                            "<option value='30'>30</option>" +
+                                            "<option value='35'>35</option>" +
+                                            "<option value='40'>40</option>" +
+                                            "<option value='45'>45</option>" +
+                                            "<option value='50'>50</option>" +
+                                            "<option value='55'>55</option>" +
+                                            "<option value='60'>1:00 hr</option>" +
+                                            "<option value='65'>1:05</option>" +
+                                            "<option value='70'>1:10</option>" +
+                                            "<option value='75'>1:15</option>" +
+                                            "<option value='80'>1:20</option>" +
+                                            "<option value='85'>1:25</option>" +
+                                            "<option value='90'>1:30</option>" +
+                                            "<option value='95'>1:35</option>" +
+                                            "<option value='100'>1:40</option>" +
+                                            "<option value='105'>1:45</option>" +
+                                            "<option value='110'>1:50</option>" +
+                                            "<option value='115'>1:55</option>" +
+                                            "<option value='120'>2:00</option>" +
+                                        "</select>" +
+                                    "</div>" +
+                                    "<div class='col-sm-2'>" +
+                                        "<h4>Free Days</h4>" +
+                                        "<select name='free' class='selectpicker form-control' multiple>" +
+                                            "<option value='M'>Monday</option>" +
+                                            "<option value='T'>Tuesday</option>" +
+                                            "<option value='W'>Wednesday</option>" +
+                                            "<option value='R'>Thursday</option>" +
+                                            "<option value='F'>Friday</option>" +
+                                        "</select>" +
+                                    "</div>" +
+                                "</div>" +
+                                "<div>" +
+                                    "<h4>Current Schedule</h4>" +
+                                    "<table id='schedule' class='table border'>" +
+                                        "<thead class='thead-inverse'>" +
+                                            "<tr>" +
+                                                "<td>CRN</td>" +
+                                                "<td>Course</td>" +
+                                                "<td>Title</td>" +
+                                                "<td>Class Type</td>" +
+                                                "<td>Professor</td>" +
+                                                "<td></td>" +
+                                            "</tr>" +
+                                        "</thead>" +
+                                        "<tbody></tbody>" +
+                                    "</table>" +
+                                "</div>" +
+                            "</div>" +
+                            "<div class='panel-footer'>" +
+                                "<button class='btn btn-default btn-lg' type='button'" +
+                                    "onClick='sendData()'>Create Schedules</button>" +
+                                "<span class='pad-left'><input name='color' type='checkbox' checked>Colored Output</span>" +
+                            "</div>" +
+                        "</form>" +
+                        "<div>" +
+                            "<h3 class='o title pad'>Course/CRN Search</h3>" +
+                            "<div class='input-group'>" +
+                                "<div class='input-group-btn'>" +
+                                    "<select id='searchtype' class='selectpicker' data-width='auto'>" +
+                                        "<option value='course'>Course</option>" +
+                                        "<option value='crn'>CRN</option>" +
+                                    "</select>" +
+                                "</div>" +
+                                "<div>" +
+                                    "<input type='text' class='form-control live-search-box'" +
+                                        "placeholder='Search a Course, CRN, or Professor to add (PHYS 2305, 85124, Boyer, etc.)'>" +
+                                "</div>" +
+                            "</div>" +
+                            "<ul id='search' class='list-group live-search-list'></ul>" +
+                        "</div>" +
+                    "</div>" +
+                "</div>");
+            //-- GENERATOR END --//
+            
         html.append("</body>");
-        // -- FOOTER START -- //
-        // -- FOOTER END -- //
+        // -- BODY END -- //
+         
         html.append("</html>");
-        
+        // -- END -- //
+         
         printer.print(html.toString());
         printer.flush();
     }
@@ -466,39 +605,6 @@ public class ScheduleGen extends HttpServlet {
         return html.toString();
     }
     
-    
-    /**
-     * Creates HTML schedule statistics like total credits and permutations 
-     */
-    private String getScheduleStats() {
-        HashMap<String, LinkedList<VTCourse>> list = generator.getListings();
-        StringBuilder html = new StringBuilder();
-        int perm = 1;
-        for (String key : list.keySet()) {
-            perm *= list.get(key).size();
-        }
-        html.append("<b>Total # of Permutations: </b>" + perm + "<br>");
-        list = generator.getPassed();
-        perm = 1;
-        for (String key : list.keySet()) {
-            perm *= list.get(key).size();
-        }
-        html.append("<b># Passing the Restrictions: </b>" + perm + "<br>");
-        LinkedList<Schedule> scheds = generator.getSchedules();
-        html.append("<b># Possible (no conflicts):</b> ");
-        if (generator.getSchedules().size() > 500) {
-            html.append(">");
-        }
-        html.append(generator.getSchedules().size() + "<br>");
-        if (scheds.size() == 0) {
-            html.append("<b>Total Credits:</b> N/A");
-        }
-        else {
-            html.append("<b>Total Credits:</b> " + generator.getSchedules().get(0).totalCredits());
-        }
-        return html.toString();
-    }
-    
     /**
      * Creates HTML representing the search restrictions 
      */
@@ -608,25 +714,16 @@ public class ScheduleGen extends HttpServlet {
      * Creates html tables for a list of schedule, all but the first are hidden
      * @param schedules the schedules to create
      */
-    private void appendTextSchedules(LinkedList<Schedule> schedules) {
-        int i = 0;
-        for (Schedule schedule : schedules) {
-            if (i != 0) {
-                html.append("<table id='" + (i++) + "' style='display: none;' class='text table table-condensed'>");
-            }
-            else {
-                html.append("<table id='" + (i++) + "' class='text table table table-condensed'>");
-            }
-            html.append("<tr style='font-weight:bold'><td class='text'>CRN</td> <td  class='text'>Course</td> <td  class='text'>Title</td>"
-                    + "<td class='text'>Type</td><td  class='text'>Credits (" + schedules.get(0).totalCredits() + ")</td><td  class='text'>Instructor</td>"
-                    + "<td class='text'>Days</td> <td  class='text'>Time</td> <td  class='text'>Location</td></tr>");
-            int j = 0;
-            for (VTCourse c : schedule) {
-                html.append(textClass(c, true, j));
-                j++;
-            }
-            html.append("</table>");
-        }      
+    private void appendTextSchedule(Schedule schedule) {
+        html.append("<table class='text table table-condensed'><tr style='font-weight:bold'><td class='text'>CRN</td> <td  class='text'>Course</td> <td  class='text'>Title</td>"
+                + "<td class='text'>Type</td><td  class='text'>Credits (" + schedule.totalCredits() + ")</td><td  class='text'>Instructor</td>"
+                + "<td class='text'>Days</td> <td  class='text'>Time</td> <td  class='text'>Location</td></tr>");
+        int j = 0;
+        for (VTCourse c : schedule) {
+            html.append(textClass(c, true, j));
+            j++;
+        }
+        html.append("</table>");  
     }
     
     /**
@@ -634,53 +731,44 @@ public class ScheduleGen extends HttpServlet {
      * @param schedules the schedues
      * @throws TimeException
      */
-    private void appendTableSchedules(LinkedList<Schedule> schedules) throws TimeException {
-        int i = 0;
-        for (Schedule schedule : schedules) {
-            if (i != 0) {
-                html.append("<table class='outline' id='" + (i++) + "' style='display:none;text-align:center;'>");
-            }
-            else {
-                html.append("<table class='outline' id='" + (i++) + "' style='text-align:center;'>");
-            }
-            
-            html.append("<tr>");
-            html.append("<td class='center' style='width:100pt; height:35pt;'>" + "</td>");
-            html.append("<td class='outline center' style='width:200pt; height:35pt;'>Monday</td>");
-            html.append("<td class='outline center' style='width:200pt; height:35pt;'>Tuesday</td>");
-            html.append("<td class='outline center' style='width:200pt; height:35pt;'>Wednesday</td>");
-            html.append("<td class='outline center' style='width:200pt; height:35pt;'>Thursday</td>");
-            html.append("<td class='outline center' style='width:200pt; height:35pt;'>Friday</td>");
-            html.append("</tr>");
-            
-            int early = schedule.earliestTime()/60;
-            int late = schedule.lastestTime()/60;
-            for (int time = 0; time < late - early + 1; time++) {
-                for (int row = 0; row < 12; row++) {
-                    if (row == 0) {
-                        html.append("<tr class='small'><td class='outline time' rowspan='12'>" + Time.timeString(early*60 + time*60) + "</td>");
-                    }
-                    else {
-                        html.append("<tr class='small'>");
-                    }
-                    for (int col = 0; col < 5; col++) {
-                        String c = getHTMLSchedule(schedule, col, Time.timeString(early*60 + time*60 + row*5));
-                        if (c != null) {
-                            String[] s = c.split("--");
-                            html.append("<td " + "class='outline fill center' rowspan='" + s[1] + "' style='" +
-                                        "background-color:" + s[2] + " !important;'>");
-                            html.append(s[0]);
-                            html.append("</td>");
-                        }
-                        else if (!schedule.isBusy(col, (early*60 + time*60 + row*5))) {
-                            html.append("<td></td>");
-                        }
-                    }
-                    html.append("</tr>");
+    private void appendTableSchedule(Schedule schedule) throws TimeException {
+        html.append("<table class='outline' style='text-align:center;width:100%'>");
+        html.append("<tr>");
+        html.append("<td class='center' style='width:9.09%; height:5vh;'>" + "</td>");
+        html.append("<td class='outline center' style='width:18.18%;'>Monday</td>");
+        html.append("<td class='outline center' style='width:18.18%;'>Tuesday</td>");
+        html.append("<td class='outline center' style='width:18.18%;'>Wednesday</td>");
+        html.append("<td class='outline center' style='width:18.18%;'>Thursday</td>");
+        html.append("<td class='outline center' style='width:18.18%;'>Friday</td>");
+        html.append("</tr>");
+        
+        int early = schedule.earliestTime()/60;
+        int late = schedule.lastestTime()/60;
+        for (int time = 0; time < late - early + 1; time++) {
+            for (int row = 0; row < 12; row++) {
+                if (row == 0) {
+                    html.append("<tr class='small'><td class='outline time' rowspan='12'>" + Time.timeString(early*60 + time*60) + "</td>");
                 }
+                else {
+                    html.append("<tr class='small'>");
+                }
+                for (int col = 0; col < 5; col++) {
+                    String c = getHTMLSchedule(schedule, col, Time.timeString(early*60 + time*60 + row*5));
+                    if (c != null) {
+                        String[] s = c.split("--");
+                        html.append("<td " + "class='outline fill center' rowspan='" + s[1] + "' style='" +
+                                    "background-color:" + s[2] + " !important;'>");
+                        html.append(s[0]);
+                        html.append("</td>");
+                    }
+                    else if (!schedule.isBusy(col, (early*60 + time*60 + row*5))) {
+                        html.append("<td></td>");
+                    }
+                }
+                html.append("</tr>");
             }
-            html.append("</table>");
         }
+        html.append("</table>");
     }
     
     /**

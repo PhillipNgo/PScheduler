@@ -8,13 +8,10 @@ jQuery(document).ready(function($){
 	 * Hides the text table of schedules
 	 */
 	$('.hidetb').on('click', function(){
-		$('#textschedules').collapse('toggle');
-		if ($(this).text() === 'Hide Table') {
-			$(this).text('Show Table');
-		}
-		else {
-			$(this).text('Hide Table');
-		}
+		$('#hidetb-but').toggleClass('glyphicon-triangle-top glyphicon-triangle-bottom');	
+		$('.table-condensed').each(function() {
+		    $(this).toggle();
+		});
 	});
 	
 	/**
@@ -23,9 +20,9 @@ jQuery(document).ready(function($){
 	$("#changet").on('keyup', function(e) {
 	    if (e.keyCode == 13) {
 	    	var num = parseInt($(this).val()) - 1;
-	        if (!isNaN(num)) {
-	        	changeSchedule(num - parseInt($('#tableschedules').attr('name')));
-	        }
+	    	if (!isNaN(num)) {
+	    		changeSchedule(num);
+	    	}
 	    }
 	});
 	
@@ -36,16 +33,23 @@ jQuery(document).ready(function($){
 	 */
 	$(document).keydown(function(e) {
 	    switch(e.which) {
-	        case 37: changeSchedule(-1);
+	        case 37: changeSchedule('prev');
 	        		 break; 
-	        case 39: changeSchedule(1);
+	        case 39: changeSchedule('next');
 	        		 break;
 	        default: return; 
 	    }
 	    e.preventDefault();
 	});
 	
+	/**
+	 * Disable auto carousel slide
+	 */
+	$('#schedlist').carousel({
+	    interval: false
+	}); 
 	
+	setGenHref();
 });
 
 /**
@@ -53,16 +57,15 @@ jQuery(document).ready(function($){
  */
 function printerFriendly() {
 	$('#header').hide();
-	$('#content').hide();
-	$('#footer').hide();
+	$('#schedules').hide();
 	$('body').append("<div id='printerFriendly'>" +
 						"<span class='no-print'>" +
 					 		"<button class='btn btn-default' onclick='exitPrinter()'><span class='glyphicon glyphicon-circle-arrow-left' style='vertical-align:top'> Return</span></button>" +
 					 		"<button class='btn btn-default' onclick='togglePrint(1)'>Toggle Text</button>" +
-					 		"<button class='btn btn-default' onclick='togglePrint(2)'>Toggle Visual</button>" +
-					 		"<button class='btn btn-default' onclick='window.print()'><span class='glyphicon glyphicon-print' style='vertical-align:top'> Print</span></button>" +
+					 		"<button class='btn btn-default' onclick='togglePrint(3)'>Toggle Visual</button>" +
+					 		"<button class='btn btn-default' onclick='window.print()'><span class='glyphicon glyphicon-print' style='vertical-align:top'></span></button>" +
 					    "</span>" +
-					    $('#tablebody').html() + 
+					    $('.item.active').html() + 
 					 "</div>");
 	window.print();
 }
@@ -72,6 +75,7 @@ function printerFriendly() {
  * @param index
  */
 function togglePrint(index) {
+	$($('#printerFriendly').children()[2]).toggle();
 	$($('#printerFriendly').children()[index]).toggle();
 }
 
@@ -80,8 +84,7 @@ function togglePrint(index) {
  */
 function exitPrinter() {
 	$('#header').show();
-	$('#content').show();
-	$('#footer').show();
+	$('#schedules').show();
 	$('#printerFriendly').remove();
 }
 
@@ -109,27 +112,38 @@ function changeIcon(button) {
 	$(button).toggleClass('glyphicon-plus glyphicon-minus');	
 }
 
+function setGenHref() {
+	$($('#maingentab').children().get(0)).attr('href', $($('.current').children().get(0)).attr('href'));
+}
+
+/**
+ * Changes the tab and content based on the secondary menu
+ * @param button the tab pressed
+ */
+function changeSecondaryTab(button) {
+	$('#generator').hide();
+	$('#gentab').attr('class', '');
+	
+	$('#results').hide();
+	$('#restab').attr('class', '');
+	
+	$('#schedules').hide();
+	$('#schedtab').attr('class', '');
+	
+	$($(button).attr('href')).show();
+	$(button).parent().attr('class', 'current');
+	setGenHref();
+}
+
 /**
  * Changes the displayed schedule by the increment
  * @param inc the increment
  */
-function changeSchedule(inc) {
-	var list = document.getElementById("tableschedules");
-	var currNum = parseInt(list.attributes["name"].value);
-	var listItem = list.getElementsByTagName("table");
-	var list2 = document.getElementById("textschedules");
-	var listItem2 = list2.getElementsByTagName("table");
-	if (currNum + inc >= 0 && currNum + inc < Math.min(listItem.length, 500)) {
-		listItem[currNum].style.display = "none";
-		listItem[currNum + inc].style.display = "table";
-		list.attributes["name"].value = listItem[currNum + inc].id;
-		listItem2[currNum].style.display = "none";
-		listItem2[currNum + inc].style.display = "table";
-		list2.attributes["name"].value = listItem[currNum + inc].id;
-		$('#changet').val(currNum + inc + 1);
-		var title = document.getElementById('title');
-		var split = title.innerText.split(' ');
-		split[1] = (parseInt(split[1]) + inc) + "";
-		title.innerHTML = "<b>" + split[0] + " " + split[1] + " " + split[2] + " " + split[3] + "</b>";
-	}
+function changeSchedule(index) {
+	$('#schedlist').carousel(index);
+	var title = document.getElementById('title');
+	var split = title.innerText.split(' ');
+	var newIndex = $('#schedlist .active').index('#schedlist .item') + 1
+	title.innerHTML = "<b>" + split[0] + " " + newIndex + " " + split[2] + " " + split[3] + "</b>";
+	$('#changet').val(newIndex);
 }
