@@ -23,30 +23,31 @@ import time.TimeException;
 
 /**
  * The VTParser is the I/O handler for reading data from the timetable or parsing data from our database
- * 
+ *
  * @author Phillip Ngo
  */
 public class VTParser {
-    
+
     private HtmlFormGet vtForm;
     private String[] terms;
     private String[] subjects;
-    
+
     //regex for extracting the next course from the database/timetable
     private final Pattern PATTERN = Pattern.compile("\\d{5}[\\S\\s]*?(?=[ \\t\\r]*\\n[ \\t\\r]+\\d{5}|\\r\\nThis )");
-    
+
     /**
      * Default constructor instantiates the web form without filling any values
+     *
      * @throws Exception
      */
     public VTParser() throws Exception {
         init();
         subjects = new String[0];
     }
-    
+
     /**
      * Constructor that instantiates the web form and fills out the term year
-     * 
+     *
      * @param termValue the html value to be selected
      * @throws Exception
      */
@@ -54,10 +55,10 @@ public class VTParser {
         init();
         this.setTerm(termValue);
     }
-    
+
     /**
      * Selects the given term on the form
-     * 
+     *
      * @param termValue the html value of the form
      */
     public void setTerm(String termValue) {
@@ -67,71 +68,71 @@ public class VTParser {
                 i++;
             }
             vtForm.fillSelectField("TERMYEAR", i);
-        }
-        else {
+        } else {
             vtForm.fillSelectField("TERMYEAR", termValue);
         }
         subjects = vtForm.getSelectOptionValues("subj_code");
     }
-    
+
     /**
      * A list of all subjects for the selected term
-     * 
+     *
      * @return a string array with all the subject names alphabetized
      */
     public String[] getSubjects() {
         return vtForm.getSelectOptions("subj_code");
     }
-    
+
     /**
      * A list of all terms
-     * 
+     *
      * @return a string array with all the term names
      */
     public String[] getTerms() {
         return vtForm.getSelectOptions("TERMYEAR");
     }
-    
+
     /**
      * A list of the subject values for the selected term
-     * 
+     *
      * @return a string array of all subject values
      */
     public String[] getSubjectValues() {
         return subjects;
     }
-    
+
     /**
      * A list of all term values
-     * 
-     * @return a string array with all term values 
+     *
+     * @return a string array with all term values
      */
     public String[] getTermValues() {
-        String[] newTerms = new String[terms.length-1];
-        for (int i = 0; i < newTerms.length;i++) {
-            newTerms[i] = terms[i+1];
+        String[] newTerms = new String[terms.length - 1];
+        for (int i = 0; i < newTerms.length; i++) {
+            newTerms[i] = terms[i + 1];
         }
         return newTerms;
     }
-    
+
     /**
      * Initializes the web form and gets the term values
+     *
      * @throws Exception
      */
     private void init() throws Exception {
-        java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF); 
+        java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
         System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.NoOpLog");
         vtForm = new HtmlFormGet("https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_ProcRequest", "ttform");
         terms = vtForm.getSelectOptionValues("TERMYEAR");
     }
-    
+
     /**
      * Parses a subject for the current selected term
      * Sorted in a hashmap by course number
      * For example: CS 2114
      * Key = 2114
      * Linked list contains all 2114 courses
-     * 
+     *
      * @param subj the subject to parse for
      * @return map of classes
      * @throws Exception
@@ -142,12 +143,12 @@ public class VTParser {
         HashMap<String, LinkedList<VTCourse>> list = parseCourseListing();
         return list;
     }
-    
+
     /**
      * Parses for a specific subject and course number
-     * 
+     *
      * @param subj the subject
-     * @param num the course number
+     * @param num  the course number
      * @return linked list of all classes with the subject and course number
      * @throws Exception
      */
@@ -157,10 +158,10 @@ public class VTParser {
         vtForm.fillTextField("CRSE_NUMBER", num);
         return this.parseCourseListing().get(num);
     }
-    
+
     /**
      * Parses for a specific crn
-     * 
+     *
      * @param crn the course request number
      * @return the VTCourse corresponding to the crn
      * @throws TimeException
@@ -173,18 +174,18 @@ public class VTParser {
         VTCourse c = null;
         try {
             c = map.get(map.keySet().iterator().next()).get(0);
+        } catch (Exception e) {
         }
-        catch (Exception e) {}
         return c;
     }
-    
+
     /**
      * The list of classes for a semester in a HashMap in the form
      * HashMap<K, HashMap<S, LinkedList<VTCourse>>> 0
      * Where the key, K, is the course subject (for example: ECE, AAEC, CS)
      * and holds another HashMap who's key, S, is course numbers (for example: 2014, 4763, 1114)
      * which holds a list of courses that have subject K and course number S (for example: ECE 2014, AAEC 4763, CS 1114)
-     * 
+     *
      * @return the HashMap of Classes
      * @throws Exception
      */
@@ -201,8 +202,7 @@ public class VTParser {
                     list.put(subjects[i], parseCourseListing());
                     exc = null;
                     failCount = 0;
-                }
-                catch (com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException e) {
+                } catch (com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException e) {
                     System.out.println("connection failed, trying again");
                     exc = e;
                     failCount++;
@@ -215,7 +215,7 @@ public class VTParser {
         }
         return list;
     }
-    
+
     /**
      * Resets all the form fields except term year
      */
@@ -224,11 +224,10 @@ public class VTParser {
         vtForm.fillTextField("crn", "");
         vtForm.fillTextField("CRSE_NUMBER", "");
     }
-    
+
     /**
      * Parses the text from the printer friendly string taken from a course listing
-     * 
-     * @param text the text to parse
+     *
      * @return returns a map of subjects and their courses
      * @throws TimeException
      * @throws Exception
@@ -243,13 +242,13 @@ public class VTParser {
             }
             map.get(course.getNum()).add(course);
         }
-        
+
         return map;
     }
-    
+
     /**
      * Creates a VTCourse from a string listing that has been extracted using the PATTERN variable
-     * 
+     *
      * @param listing the string to be parsed
      * @return
      * @throws Exception
@@ -284,7 +283,7 @@ public class VTParser {
                     times.add(null);
                 } else {
                     try {
-                        times.add(new Time(values[ind], values[ind+1]));
+                        times.add(new Time(values[ind], values[ind + 1]));
                         ind++;
                     } catch (TimeException te) {
                         times.add(null);
@@ -300,19 +299,19 @@ public class VTParser {
                 }
             }
         }
-        
+
         if (days.size() == 0) {
             days.add(null);
             times.add(null);
             locs.add("(ARR)");
         }
-        
+
         return new VTCourse(crn, subject, number, name, type, credits, capacity, prof, days, times, locs, exam);
     }
-    
+
     /**
      * submits form and obtains the printer friendly page
-     * 
+     *
      * @return a string containing the html page as text
      * @throws Exception
      */
@@ -327,9 +326,10 @@ public class VTParser {
         HtmlPage printerFriendly = button.click();
         return printerFriendly.asText();
     }
-    
+
     /**
      * Outputs class data and search options into an output files
+     *
      * @param termYear the term value
      * @throws Exception
      */
@@ -337,7 +337,7 @@ public class VTParser {
         VTParser parser = new VTParser(termYear);
         HashMap<String, HashMap<String, LinkedList<VTCourse>>> map = parser.parseTerm();
         String[] subjects = parser.getSubjectValues();
-        
+
         try (Writer writer = new BufferedWriter(new OutputStreamWriter(
                 new FileOutputStream("WebContent/Database/" + termYear + ".txt"), "utf-8"))) {
             for (String subject : subjects) {
@@ -346,11 +346,11 @@ public class VTParser {
                     for (String key : list.keySet()) {
                         for (VTCourse course : list.get(key)) {
                             writer.write(course.getCRN() + "\t" + course.getSubject() + "-" + course.getNum() + "\t" +
-                                         course.getName() + "\t" + course.getClassType() + "\t" + course.getCredits() + "\t" +
-                                         course.getCapacity() + "\t" + course.getProf());
+                                    course.getName() + "\t" + course.getClassType() + "\t" + course.getCredits() + "\t" +
+                                    course.getCapacity() + "\t" + course.getProf());
                             for (int i = 0; i < course.getTimes().size(); i++) {
                                 writer.write("\t");
-                                
+
                                 String[] days = course.getDays().get(i);
                                 if (days != null) {
                                     for (int d = 0; d < days.length; d++) {
@@ -363,7 +363,7 @@ public class VTParser {
                                     writer.write("(ARR)");
                                 }
                                 writer.write("\t");
-                                
+
                                 Time time = course.getTimes().get(i);
                                 if (time != null) {
                                     writer.write(time.getStart() + "\t" + time.getEnd());
@@ -371,18 +371,18 @@ public class VTParser {
                                     writer.write("(ARR)");
                                 }
                                 writer.write("\t");
-                                
+
                                 String loc = course.getLocations().get(i);
                                 if (loc == null) {
                                     writer.write("(ARR)");
                                 } else {
                                     writer.write(loc);
                                 }
-                                
+
                                 if (i == 0) {
                                     writer.write("\t" + course.getExam());
                                 }
-                                
+
                                 if (i < course.getTimes().size() - 1) {
                                     writer.write("\tfill");
                                 }
@@ -394,9 +394,10 @@ public class VTParser {
             }
         }
     }
-    
+
     /**
      * Parses a term file that was created by the ouputFile() method
+     *
      * @param termYear the term file name
      * @return a HashMap holding the subjects and classes for the term
      * @throws Exception
@@ -404,10 +405,9 @@ public class VTParser {
     public static HashMap<String, HashMap<String, LinkedList<VTCourse>>> parseTermFile(String termYear) throws Exception {
         HashMap<String, HashMap<String, LinkedList<VTCourse>>> map = new HashMap<>();
         File file;
-        if (new File("WebContent").exists()) { 
+        if (new File("WebContent").exists()) {
             file = new File("WebContent/Database/" + termYear + ".txt");
-        }
-        else {
+        } else {
             file = new File("webapps/ROOT/Database/" + termYear + ".txt");
         }
         Scanner scan = new Scanner(file);
@@ -417,35 +417,34 @@ public class VTParser {
             System.out.println("Parsing: " + Arrays.toString(line.split("\t")));
             VTCourse course = makeClass(line); */
             VTCourse course = makeClass(scan.nextLine());
-            
+
             HashMap<String, LinkedList<VTCourse>> subjList;
             String subj = course.getSubject();
             if (!map.containsKey(subj)) {
                 subjList = new HashMap<String, LinkedList<VTCourse>>();
                 map.put(subj, subjList);
-            }
-            else {
+            } else {
                 subjList = map.get(subj);
             }
-            
+
             LinkedList<VTCourse> list;
             String num = course.getNum();
             if (!subjList.containsKey(num)) {
                 list = new LinkedList<>();
                 subjList.put(num, list);
-            }
-            else {
+            } else {
                 list = subjList.get(num);
             }
-            
+
             list.add(course);
         }
         scan.close();
         return map;
     }
-    
+
     /**
      * Manually update the database
+     *
      * @param args
      * @throws Exception
      */
