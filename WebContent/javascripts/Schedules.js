@@ -140,6 +140,9 @@ function changeSecondaryTab(button) {
  * @param inc the increment
  */
 function changeSchedule(index) {
+	if (!$('#schedlist').length) {
+		return
+	}
 	$('#schedlist').carousel(index);
 	var title = document.getElementById('title');
 	var split = title.innerText.split(' ');

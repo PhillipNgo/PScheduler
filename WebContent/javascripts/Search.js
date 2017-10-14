@@ -77,8 +77,7 @@ function setParameters() {
 	}
 	$('[name="free"]').val(days);
 	$('[name="free"]').selectpicker('refresh');
-	var classList = params[params.length-1].split('=')[1].split('~');
-	console.log(params, classList)
+	var classList = params[params.length-1].split('=')[1].split(/%7E|~/);
 	
 	if (classList[0].length != 0) { //check if there are any classes
 		for (i = 0; i < classList.length; i++) { //for every class	
