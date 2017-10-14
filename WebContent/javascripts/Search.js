@@ -75,14 +75,13 @@ function setParameters() {
 	for (; i < params.length - 1; i++) {
 		days[i-8] = params[i].split('=')[1];
 	}
-	console.log(params);
-	console.log(days);
 	$('[name="free"]').val(days);
 	$('[name="free"]').selectpicker('refresh');
-	var classList = params[params.length-1].split('=')[1].split('%7E');
+	var classList = params[params.length-1].split('=')[1].split('~');
+	console.log(params, classList)
 	
 	if (classList[0].length != 0) { //check if there are any classes
-		for (i = 0; i < classList.length; i++) { //for every class
+		for (i = 0; i < classList.length; i++) { //for every class	
 			var str = classList[i];
 			var split = str.split('-');
 			var index = 0;
