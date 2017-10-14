@@ -71,7 +71,6 @@ body {
     .col-sm-10-5 {
         width: 87.5%;
         overflow-y: scroll;
-        overflow-x: scroll;
         height:100vh;
     }
 }
@@ -84,7 +83,7 @@ body {
 .jumbotron {
 	padding: 0;
 	margin: 0;
-	padding-top: 15vh;
+	padding-top: 15vh;	
 	background-color: darkslategray;
 }
 
@@ -101,6 +100,14 @@ body {
 	font-weight: bold;
 	font-size: 120%;
 	text-decoration: none !important;
+}
+
+.no-hover {
+	text-decoration: none !important;
+}
+
+.hover-color:hover {
+	color: orange;
 }
 
 .home .glyphicon {
@@ -250,6 +257,10 @@ thead {
 	color: darkslategray;
 }
 
+.w {
+	color: white;
+}
+
 .pad {
 	padding: 10px;
 }
@@ -264,6 +275,14 @@ thead {
 
 .pad-right {
 	padding-right: 15px;
+}
+
+.pad-top {
+	padding-top: 15px;
+}
+
+.pad-bottom {
+	padding-bottom: 15px;
 }
 
 #form > div > .row {

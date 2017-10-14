@@ -72,9 +72,11 @@ function setParameters() {
 		$('[name="' + val[0] + '"]').selectpicker('refresh');
 	}
 	var days = []; //set freeDay restrictions
-	for (i += 1; i < params.length - 2; i++) {
+	for (; i < params.length - 1; i++) {
 		days[i-8] = params[i].split('=')[1];
 	}
+	console.log(params);
+	console.log(days);
 	$('[name="free"]').val(days);
 	$('[name="free"]').selectpicker('refresh');
 	var classList = params[params.length-1].split('=')[1].split('%7E');
@@ -84,7 +86,7 @@ function setParameters() {
 			var str = classList[i];
 			var split = str.split('-');
 			var index = 0;
-			if (split[0].charAt(split[0].length-1) == 'H') {
+			if ("HG".includes(split[0].charAt(split[0].length-1))) {
 				index = 1;
 			}
 			var crns = [];
@@ -116,7 +118,8 @@ function setParameters() {
 					     data: {search:search, type:"course", term:$('#term').val()},
 					     success: function(response) {
 					    	 var temp = $($($($.parseHTML(response)).get(0)));
-					    	 if (temp.children().get(0).name.endsWith('H') && index == 0) {
+					    	 if ((temp.children().get(0).name.endsWith('H') || temp.children().get(0).name.endsWith('G')) 
+					    			 && index == 0) {
 					    		 temp = $($($($.parseHTML(response)).get(1)));
 					    	 }
 					    	 courses[courses.length] = temp;

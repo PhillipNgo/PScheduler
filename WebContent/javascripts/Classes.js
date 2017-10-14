@@ -1,7 +1,9 @@
-/**
- * Button functions for use on the home page.
- */
-
+jQuery(document).ready(function($){
+	switch(location.hash) {
+		case '#generator':
+			fade(location.hash)
+	}
+})
 
 /**
  * Adds a searched course to the schedule
@@ -214,19 +216,18 @@ function classType(type) {
 	}
 }
 
-function gen() {
+function fade(id) {
 	$('#header').fadeIn('slow');
 	$('#home').fadeOut('slow', function() {
-		$('#generator').fadeIn('slow');
+		$(id).fadeIn('slow');
 	});
-	
 }
 
 function changeTab(button) {
 	$('#maingentab').attr('class', '');
 	
-	$('#about').hide();
-	$('#abouttab').attr('class', '');
+	$('#contact').hide();
+	$('#contacttab').attr('class', '');
 	
 	$('#timetable').hide();
 	$('#timetab').attr('class', '');

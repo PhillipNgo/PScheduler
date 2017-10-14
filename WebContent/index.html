@@ -49,20 +49,27 @@
 <body class='row'>
 	
 	<div id='home' class='home col-sm-12'>
-		<a class='contact' href='#about'>Contact</a>
 		<div class='jumbotron'>
 			<h1><span class='o'>P</span>Scheduler</h1>
-			<h2>Virginia Tech Schedule Generation and Course Lookup</h2>
+			<h2>Virginia Tech Schedule Creation</h2>
 			<div class='row'>
-				<div class='col-sm-6 description'>
-					<span class="glyphicon glyphicon-calendar"></span>
-					<p><br>Know what classes you want to take?<br>We'll create up to 200 schedules for you to choose from!<br></p>
-					<button class='btn btn-default home-button' onClick='gen()'>Create Schedules</button>
+				<div class='col-sm-4 description'>
+					<a class='w no-hover hover-color'>
+						<span style="margin-left:-3%" class="glyphicon glyphicon-list-alt"></span>
+						<h3 class='pad-top'>Improved Course Timetable<br>(COMING SOON)</h3>
+					</a>
 				</div>
-				<div class='col-sm-6 description'>
-					<span class="glyphicon glyphicon-list-alt"></span>
-					<p><br>Looking for classes?<br>Try this HokieSpa Timetable alternative!<br></p>
-					<button class='btn btn-default home-button'>Easy Timetable</button>
+				<div class='col-sm-4 description'>
+					<a class='w no-hover hover-color' href="#generator" onClick="fade('#generator')">
+						<span style="margin-right:-3%" class="glyphicon glyphicon-calendar"></span>
+						<h3 class='pad-top'>Schedule Generation</h3>
+					</a>
+				</div>
+				<div class='col-sm-4 description'>
+					<a class='w no-hover hover-color'>
+						<span  class="glyphicon glyphicon-hand-up"></span>
+						<h3 class='pad-top'>Schedule Builder<br>(COMING SOON)</h3>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -72,8 +79,7 @@
 		<nav class='bottom'>
 			<ul class='menu-primary'>
 				<li id='maingentab' class='current'><a href='#generator' onclick='changeTab(this)'>GENERATOR</a></li>
-                   <li id='timetab'><a href='#timetable' onclick='changeTab(this)'>TIMETABLE</a></li>
-                   <li id='abouttab'><a href='#about' onclick='changeTab(this)'>ABOUT</a></li>
+                <li id='contacttab'><a href='#contact' onclick='changeTab(this)'>CONTACT</a></li>
 			</ul>
 			<a href='http://www.pscheduler.com'><img class='logo' src='logo.jpg'></a>
 		</nav>
@@ -81,7 +87,7 @@
 
 	<div id='generator' class='col-sm-10-5' style='display:none'>
 		<div class='main'>
-			<form id="form" class="panel panel-default outline" action="generate">
+			<form id="form" class="panel panel-default" action="generate">
 				<div class="panel-heading">
 					<h2 class='o title'>Restrictions</h2>
 				</div>
@@ -90,6 +96,7 @@
 						<div class='col-sm-2'>
 							<h4>Term</h4>
 							<select name="term" id="term" class="selectpicker form-control">
+								<option value="201801">Spring 2018</option>
 								<option value="201709">Fall 2017</option>
 								<option value="201701">Spring 2017</option>
 							</select>
@@ -97,10 +104,10 @@
 					</div>
 					
 					<div class='row'>
-						<div class='col-sm-3 no-pad'>
-							<h4 class='pad-left'>Start Time</h4>
+						<div class='col-sm-3'>
+							<h4>Start Time</h4>
 							<div class="row">
-								<div class="col-sm-4">
+								<div class="col-sm-4 no-pad">
 									<select name="h1" class="selectpicker form-control">
 										<option value="01">01</option>
 										<option value="02">02</option>
@@ -116,7 +123,7 @@
 										<option value="12">12</option>
 									</select>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-sm-4 no-pad">
 									<select name="m1" class="selectpicker form-control">
 										<option value="00">00</option>
 										<option value="05">05</option>
@@ -132,7 +139,7 @@
 										<option value="55">55</option>
 									</select>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-sm-4 no-pad">
 									<select name="start" class="selectpicker form-control">
 										<option value="am">AM</option>
 										<option value="pm">PM</option>
@@ -140,10 +147,10 @@
 								</div>
 							</div>
 						</div>
-						<div class='col-sm-3 no-pad'>
-							<h4 class='pad-left'>End Time</h4>
+						<div class='col-sm-3'>
+							<h4>End Time</h4>
 							<div class="row">
-								<div class="col-sm-4">
+								<div class="col-sm-4 no-pad">
 									<select name="h2" class="selectpicker form-control">
 										<option value="01">01</option>
 										<option value="02">02</option>
@@ -159,7 +166,7 @@
 										<option value="12">12</option>
 									</select>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-sm-4 no-pad">
 									<select name="m2" class="selectpicker form-control">
 										<option value="00">00</option>
 										<option value="05">05</option>
@@ -175,7 +182,7 @@
 										<option value="55">55</option>
 									</select>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-sm-4 no-pad">
 									<select name="end" class="selectpicker form-control">
 										<option value="am">AM</option>
 										<option value="pm" selected="selected">PM</option>
@@ -227,7 +234,7 @@
 					</div>
 					<div>
 						<h4>Current Schedule</h4>
-						<table id="schedule" class="table border">
+						<table id="schedule" class="table">
 							<thead class="thead-inverse">
 								<tr>
 									<td>CRN</td>
@@ -245,10 +252,10 @@
 				<div class='panel-footer'>
 					<button class="btn btn-default btn-lg" type="button"
 						onClick="sendData()">Create Schedules</button>
-					<span class='pad-left'><input name="color" type="checkbox" checked>Colored Output</span>
+					<!--  span class='pad-left'><input name="color" type="checkbox" checked>Colored Output</span> -->
 				</div>
 			</form>
-			<div class='outline'>
+			<div>
 				<h3 class='o title pad'>Course/CRN Search</h3>
 				<div class="input-group">
 					<div class="input-group-btn">
@@ -265,6 +272,27 @@
 				<ul id="search" class="list-group live-search-list"></ul>
 			</div>
 		</div>
+	</div>
+	<div id='contact' class='col-sm-10-5 pad-left pad-right' style='display:none'>
+		<div class="page-header"><h1>Contact</h1></div>
+		<p>Thanks for using the site!</p>
+		<p>If you run into any problems or have any ideas I could implement, feel free to email me!</p>
+		<p>Email: <a href="mailto:ngophill@vt.edu?Subject=PScheduler">ngophill@vt.edu</a><br>
+		Github: <a href="https://github.com/PhillipNgo/pScheduler">https://github.com/PhillipNgo/pScheduler</a></p>
+		<div class="page-header"><h1>Upcoming Features</h1></div>
+		<ul>
+			<li>Manual Schedule Building</li>
+			<li>Improved Timetable</li>
+			<li>Generator
+				<ul>
+					<li>Choose multiple professors</li>
+					<li>Add specific break times</li>
+					<li>Ability to choose Lecture+Lab/Recitation rather than adding two seperate classes</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="page-header"><h1>Bug Reports</h1></div>
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc65OlYTvNx6xnITbyxOoo-ocGoGZECAfP3yjNf3LrRNNGOSQ/viewform?embedded=true" overflow="hidden" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 	</div>
 </body>
 </html>

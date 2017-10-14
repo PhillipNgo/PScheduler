@@ -154,8 +154,7 @@ public class ScheduleGen extends HttpServlet {
                     "<nav class='bottom'>" +
                         "<ul class='menu-primary'>" +
                             "<li id='maingentab' class='current'><a href='#generator' onclick='changeTab(this)'>GENERATOR</a></li>" +
-                               "<li id='timetab'><a href='#timetable' onclick='changeTab(this)'>TIMETABLE</a></li>" +
-                               "<li id='abouttab'><a href='#about' onclick='changeTab(this)'>ABOUT</a></li>" +
+                            "<li id='contacttab'><a href='#contact' onclick='changeTab(this)'>CONTACT</a></li>" +
                         "</ul>" +
                         "<a href='http://www.pscheduler.com'><img class='logo' src='logo.jpg'></a>" +
                     "</nav>" +
@@ -167,10 +166,11 @@ public class ScheduleGen extends HttpServlet {
                 "<div id='schedules' class='col-sm-10-5'>" +
                     "<div class='main'>" +
                         "<div class='row'>" +
-                            "<div class='col-sm-1'>" +
+                            "<div class='col-sm-1 no-pad'>" +
                                 "<input id='changet' style='text-align: center' type='text' class='form-control' value='1'>" +
                             "</div>" +
-                            "<div class='col-sm-10 schedule-header'><h4 id='title'><b>");
+                            "<div class='col-sm-1'></div>" +
+                            "<div class='col-sm-8 schedule-header'><h4 id='title'><b>");
                             
                             if (schedules == null || schedules.size() == 0) {
                                 html.append("0 Schedules");
@@ -184,8 +184,8 @@ public class ScheduleGen extends HttpServlet {
                             
                             html.append("</b></h4></div>" +
 
-                            "<div class='col-sm-1 media-group'>" +
-                                "<div class='input-group-btn'>" +
+                            "<div class='col-sm-2 media-group no-pad'>" +
+                                "<div class='input-group-btn' style='text-align:right'>" +
                                     "<a id='download' href='download' onclick='dlHref()' type='button' class='btn btn-default'>" +
                                         "<span class='glyphicon glyphicon-download-alt'></span>" +
                                     "</a>" +
@@ -201,7 +201,8 @@ public class ScheduleGen extends HttpServlet {
                         
                         try {
                             if (schedules == null) {
-                                html.append("Sorry, something went wrong when trying to generate your schedules.");
+                                html.append("Sorry, something went wrong when trying to generate your schedules.<br>");
+                                html.append("Please head over to the contact tab and submit this link to our bug report form, thanks!");
                             }
                             else if (schedules.size() == 0) {
                                 html.append("<div class='panel panel-warning'><div class='panel-heading'>No Schedules Matched Your Parameters. Look below for more information.</div>");
@@ -273,6 +274,7 @@ public class ScheduleGen extends HttpServlet {
                                     "<div class='col-sm-2'>" +
                                         "<h4>Term</h4>" +
                                         "<select name='term' id='term' class='selectpicker form-control'>" +
+                                            "<option value='201801'>Spring 2018</option>" +
                                             "<option value='201709'>Fall 2017</option>" +
                                             "<option value='201701'>Spring 2017</option>" +
                                         "</select>" +
@@ -280,10 +282,10 @@ public class ScheduleGen extends HttpServlet {
                                 "</div>" +
                                 
                                 "<div class='row'>" +
-                                    "<div class='col-sm-3 no-pad'>" +
-                                        "<h4 class='pad-left'>Start Time</h4>" +
+                                    "<div class='col-sm-3'>" +
+                                        "<h4>Start Time</h4>" +
                                         "<div class='row'>" +
-                                            "<div class='col-sm-4'>" +
+                                            "<div class='col-sm-4 no-pad'>" +
                                                 "<select name='h1' class='selectpicker form-control'>" +
                                                     "<option value='01'>01</option>" +
                                                     "<option value='02'>02</option>" +
@@ -299,7 +301,7 @@ public class ScheduleGen extends HttpServlet {
                                                     "<option value='12'>12</option>" +
                                                 "</select>" +
                                             "</div>" +
-                                            "<div class='col-sm-4'>" +
+                                            "<div class='col-sm-4 no-pad'>" +
                                                 "<select name='m1' class='selectpicker form-control'>" +
                                                     "<option value='00'>00</option>" +
                                                     "<option value='05'>05</option>" +
@@ -315,7 +317,7 @@ public class ScheduleGen extends HttpServlet {
                                                     "<option value='55'>55</option>" +
                                                 "</select>" +
                                             "</div>" +
-                                            "<div class='col-sm-4'>" +
+                                            "<div class='col-sm-4 no-pad'>" +
                                                 "<select name='start' class='selectpicker form-control'>" +
                                                     "<option value='am'>AM</option>" +
                                                     "<option value='pm'>PM</option>" +
@@ -323,10 +325,10 @@ public class ScheduleGen extends HttpServlet {
                                             "</div>" +
                                         "</div>" +
                                     "</div>" +
-                                    "<div class='col-sm-3 no-pad'>" +
-                                        "<h4 class='pad-left'>End Time</h4>" +
+                                    "<div class='col-sm-3'>" +
+                                        "<h4>End Time</h4>" +
                                         "<div class='row'>" +
-                                            "<div class='col-sm-4'>" +
+                                            "<div class='col-sm-4 no-pad'>" +
                                                 "<select name='h2' class='selectpicker form-control'>" +
                                                     "<option value='01'>01</option>" +
                                                     "<option value='02'>02</option>" +
@@ -342,7 +344,7 @@ public class ScheduleGen extends HttpServlet {
                                                     "<option value='12'>12</option>" +
                                                 "</select>" +
                                             "</div>" +
-                                            "<div class='col-sm-4'>" +
+                                            "<div class='col-sm-4 no-pad'>" +
                                                 "<select name='m2' class='selectpicker form-control'>" +
                                                     "<option value='00'>00</option>" +
                                                     "<option value='05'>05</option>" +
@@ -358,7 +360,7 @@ public class ScheduleGen extends HttpServlet {
                                                     "<option value='55'>55</option>" +
                                                 "</select>" +
                                             "</div>" +
-                                            "<div class='col-sm-4'>" +
+                                            "<div class='col-sm-4 no-pad'>" +
                                                 "<select name='end' class='selectpicker form-control'>" +
                                                     "<option value='am'>AM</option>" +
                                                     "<option value='pm' selected='selected'>PM</option>" +
@@ -410,7 +412,7 @@ public class ScheduleGen extends HttpServlet {
                                 "</div>" +
                                 "<div>" +
                                     "<h4>Current Schedule</h4>" +
-                                    "<table id='schedule' class='table border'>" +
+                                    "<table id='schedule' class='table'>" +
                                         "<thead class='thead-inverse'>" +
                                             "<tr>" +
                                                 "<td>CRN</td>" +
@@ -428,7 +430,7 @@ public class ScheduleGen extends HttpServlet {
                             "<div class='panel-footer'>" +
                                 "<button class='btn btn-default btn-lg' type='button'" +
                                     "onClick='sendData()'>Create Schedules</button>" +
-                                "<span class='pad-left'><input name='color' type='checkbox' checked>Colored Output</span>" +
+                                //"<span class='pad-left'><input name='color' type='checkbox' checked>Colored Output</span>" +
                             "</div>" +
                         "</form>" +
                         "<div>" +
@@ -451,6 +453,32 @@ public class ScheduleGen extends HttpServlet {
                 "</div>");
             //-- GENERATOR END --//
             
+            //-- CONTACT START --//
+            html.append(
+            "<div id='contact' class='col-sm-10-5 pad-left pad-right' style='display:none'>" +
+            "<div class='page-header'><h1>Contact</h1></div>" +
+            "<p>Thanks for using the site!</p>" +
+            "<p>If you run into any problems or have any ideas I could implement, feel free to email me!</p>" +
+            "<p>Email: <a href='mailto:ngophill@vt.edu?Subject=PScheduler'>ngophill@vt.edu</a><br>" +
+            "Github: <a href='https://github.com/PhillipNgo/pScheduler'>https://github.com/PhillipNgo/pScheduler</a></p>" +
+            "<div class='page-header'><h1>Upcoming Features</h1></div>" +
+            "<ul>" +
+                "<li>Manual Schedule Building</li>" +
+                "<li>Improved Timetable</li>" +
+                "<li>Generator" +
+                    "<ul>" +
+                        "<li>Choose multiple professors</li>" +
+                        "<li>Add specific break times</li>" +
+                        "<li>Ability to choose Lecture+Lab/Recitation rather than adding two seperate classes</li>" +
+                    "</ul>" +
+                "</li>" +
+            "</ul>" +
+            "<div class='page-header'><h1>Bug Reports</h1></div>" +
+            "<iframe src='https://docs.google.com/forms/d/e/1FAIpQLSc65OlYTvNx6xnITbyxOoo-ocGoGZECAfP3yjNf3LrRNNGOSQ/viewform?embedded=true'" +
+              "overflow='hidden' width='100%' height='100%' frameborder='0' marginheight='0' marginwidth='0'>Loading...</iframe>" +
+            "</div>");
+            
+            //-- CONTACT END --//
         html.append("</body>");
         // -- BODY END -- //
          
@@ -513,7 +541,7 @@ public class ScheduleGen extends HttpServlet {
             else {
                 String[] split = classes[i].split("-");
                 int index = 0;
-                if (split[0].charAt(split[0].length()-1) == 'H') {
+                if ("HG".contains(split[0].charAt(split[0].length()-1) + "")) {
                     index = 1;
                 }
                 types.add(split[0].substring(0, 1));
