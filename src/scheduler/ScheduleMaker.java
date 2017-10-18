@@ -20,7 +20,7 @@ public class ScheduleMaker {
     private HashMap<String, LinkedList<VTCourse>> pass; //holds the courses from the timtable that also passed the restrictions
     private HashMap<String, LinkedList<VTCourse>> fail; //holds the courses from the timetable that did not pass the restrictions
     private LinkedList<VTCourse> crnCourses; //holds the courses that were specifically requested by crn
-    public static final int MAX_SCHEDULES = 200; //sets a limit to how many schedules can be generated
+    public static final int MAX_SCHEDULES = 100; //sets a limit to how many schedules can be generated
     
     /**
      * Constructor creates all schedule combinations and compiles data when created.

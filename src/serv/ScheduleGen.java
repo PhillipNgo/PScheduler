@@ -114,9 +114,9 @@ public class ScheduleGen extends HttpServlet {
                 "<link href='https://fonts.googleapis.com/css?family=Raleway|Roboto' rel='stylesheet'>" +
                 
                 "<!-- Scripts -->" +
-                "<script type='text/javascript' src='javascripts/Schedules.js'></script>" +
-                "<script type='text/javascript' src='javascripts/Classes.js'></script>" +
-                "<script type='text/javascript' src='javascripts/Search.js'></script>" +
+                "<script type='text/javascript' src='javascripts/Schedules.js?5'></script>" +
+                "<script type='text/javascript' src='javascripts/Classes.js?5'></script>" +
+                "<script type='text/javascript' src='javascripts/Search.js?5'></script>" +
                 
                 "<!-- Google Analytics -->" +
                 "<script>" +
@@ -175,8 +175,8 @@ public class ScheduleGen extends HttpServlet {
                             if (schedules == null || schedules.size() == 0) {
                                 html.append("0 Schedules");
                             }
-                            else if (schedules.size() > 200) {
-                                html.append("Schedule 1 of 200+");
+                            else if (schedules.size() >= 100) {
+                                html.append("Schedule 1 of 100+");
                             }
                             else {
                                 html.append("Schedule 1 of " + schedules.size());
@@ -430,11 +430,13 @@ public class ScheduleGen extends HttpServlet {
                             "<div class='panel-footer'>" +
                                 "<button class='btn btn-default btn-lg' type='button'" +
                                     "onClick='sendData()'>Create Schedules</button>" +
+                                    "<span class='pad-left'>The number of schedules generated is now capped at 100</span>" +
                                 //"<span class='pad-left'><input name='color' type='checkbox' checked>Colored Output</span>" +
                             "</div>" +
                         "</form>" +
                         "<div>" +
                             "<h3 class='o title pad'>Course/CRN Search</h3>" +
+                            "<p>Real time search has been disabled. Please press 'enter' after your search or press the search button.</p>" + 
                             "<div class='input-group'>" +
                                 "<div class='input-group-btn'>" +
                                     "<select id='searchtype' class='selectpicker' data-width='auto'>" +
@@ -445,6 +447,9 @@ public class ScheduleGen extends HttpServlet {
                                 "<div>" +
                                     "<input type='text' class='form-control live-search-box'" +
                                         "placeholder='Search a Course, CRN, or Professor to add (PHYS 2305, 85124, Boyer, etc.)'>" +
+                                "</div>" +
+                                "<div class='input-group-btn'>" +
+                                    "<button class='btn btn-default' onclick='search()'>Search</button>" +
                                 "</div>" +
                             "</div>" +
                             "<ul id='search' class='list-group live-search-list'></ul>" +

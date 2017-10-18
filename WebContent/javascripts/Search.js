@@ -6,7 +6,7 @@ jQuery(document).ready(function($){
 	/**
 	 * After every button pressed, searches the database for that term
 	 * by what type they searching and their currently selected term
-	 */
+	 *//*
 	$('.live-search-box').on('keyup focus', function(){
 		var searchType = $('#searchtype').val(); 
 		var searchTerm = $(this).val().toLowerCase().replaceAll("[\\s-]", "");
@@ -19,7 +19,13 @@ jQuery(document).ready(function($){
 		else { 
 			hide();
 		}
-	});
+	});*/
+	$('.live-search-box').on('keypress', function(e) {
+		var code = e.keyCode || e.which;
+		if (code == 13) {
+			search();
+		}
+	})
 	
 	/**
 	 * Changing the term clears the current schedule
@@ -36,6 +42,20 @@ jQuery(document).ready(function($){
 	 */
 	setParameters();
 });
+
+function search() {
+	var searchType = $('#searchtype').val(); 
+	var searchTerm = $('.live-search-box').val().toLowerCase().replaceAll("[\\s-]", "");
+	var termYear = $('#term').val();
+	if (searchTerm.length > 1) {
+		$.get('LiveSearch', {search:searchTerm, type:searchType, term:termYear}, function(response) {
+			$('#search').html(response);
+		});
+	}
+	else { 
+		hide();
+	}
+}
 
 /**
  * Replaces all occurrences of a regular expression with a new string
