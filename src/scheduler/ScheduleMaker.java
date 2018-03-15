@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 import ds.LinkedList;
 import parser.VTParser;
+import parser.ClassData;
 import time.Time;
 import time.TimeException;
 
@@ -109,7 +110,7 @@ public class ScheduleMaker {
         VTParser parser = null;
         try {
             //throw new FileNotFoundException(); //debugging
-            map = VTParser.parseTermFile(term);
+            map = ClassData.getTermClasses(term);
         }
         catch (FileNotFoundException e) {
             parser = new VTParser(term);

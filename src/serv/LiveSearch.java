@@ -2,6 +2,8 @@ package serv;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
@@ -12,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import parser.VTParser;
+import parser.ClassData;
 import scheduler.VTCourse;
 import time.Time;
 
@@ -45,18 +48,13 @@ public class LiveSearch extends HttpServlet {
 	    String searchTerm = request.getParameter("search"); //the search term
 	    String searchType = request.getParameter("type"); //the type of course to search
 	    String termYear = request.getParameter("term"); //the school term to search
-	    
-	    Scanner scan; //scanner to read from database
-	    try {
-            scan = new Scanner(new File("webapps/ROOT/Database/" + termYear + ".txt"));
-        } catch (Exception e) {
-            scan = new Scanner(new File("WebContent/Database/" + termYear + ".txt"));
-        }
+	    ArrayList<String> searchList = ClassData.getTermSearchList(termYear);
+	    Iterator<String> scan = searchList.iterator();
 	    
 	    int count = 0; //counts how many options that have been found
 	    String next = null;
 	    try {
-            next = scan.nextLine();
+            next = scan.next();
         } catch (Exception e) {}
 	    
 	    while (count < MAX_OPTIONS && next != null) {
@@ -86,7 +84,7 @@ public class LiveSearch extends HttpServlet {
 	                    } 
 	                }
 	                try {
-                        next = scan.nextLine();
+                        next = scan.next();
                     } catch (NoSuchElementException nsee){next = null;}
                       catch (Exception e) {}
 	                html.append("</li>");
@@ -119,7 +117,7 @@ public class LiveSearch extends HttpServlet {
 	                    }
 	                    crns  += c.getCRN();
 	                    try {
-	                        next = scan.nextLine();
+	                        next = scan.next();
                             c = VTParser.makeClass(next);
                         } catch (NoSuchElementException nsee){
                             next = null;
@@ -132,13 +130,12 @@ public class LiveSearch extends HttpServlet {
 	            count++;
 	        } else {
 	            try {
-                    next = scan.nextLine();
+                    next = scan.next();
                 } catch (NoSuchElementException nsee){next = null;}
                   catch (Exception e) {}
 	        }
 	    }
 	    response.getWriter().write(html.toString());
-	    scan.close();
 	}
 
 	/**

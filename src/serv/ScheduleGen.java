@@ -274,6 +274,7 @@ public class ScheduleGen extends HttpServlet {
                                     "<div class='col-sm-2'>" +
                                         "<h4>Term</h4>" +
                                         "<select name='term' id='term' class='selectpicker form-control'>" +
+                                            "<option value='201809'>Fall 2018</option>" +
                                             "<option value='201801'>Spring 2018</option>" +
                                             "<option value='201709'>Fall 2017</option>" +
                                             "<option value='201701'>Spring 2017</option>" +
