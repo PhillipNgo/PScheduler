@@ -1,3 +1,7 @@
+# Currently being rewritten!
+
+Check out [PScheduler-Rewrite](https://github.com/PhillipNgo/PScheduler-Rewrite) where the site is being rebuilt from scratch as the current site has many performance issues and is not very maintainable!
+
 # PScheduler
 
 This repo represents the PScheduler website that creates schedule permutations for Virginia Tech courses.
