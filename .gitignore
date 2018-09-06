@@ -1,0 +1,17 @@
+/build/
+/out/
+/node_modules/
+src/main/resources/static/bundle.js
+
+/.idea/
+**.iml
+
+.classpath
+/.project
+/.settings/
+/.vscode/
+/bin/
+
+.gradle
+
+/src/main/js/constants/apiUrl.js

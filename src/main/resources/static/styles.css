@@ -1,0 +1,406 @@
+html {
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    height:100%;
+    font-family: 'Roboto', sans-serif;
+    -webkit-print-color-adjust: exact !important;
+}
+
+#side-nav {
+    width: 12.5%;
+    height: 100vh;
+    float: left;
+    text-align: center;
+    transition: width 1s;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: darkslategray;
+    box-shadow: 1px 0 4px lightgrey;
+}
+
+.side-nav-min {
+    width: 7% !important;
+}
+
+#logo {
+    display: block;
+    background-image: url("logo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+    height: 15vh;
+    padding: 10px 0 10px 0;
+    transition: height 1s;
+}
+
+.logo-min {
+    height: 8vh !important;
+}
+
+#content-page {
+    height: 100vh;
+    overflow-x: hidden
+}
+
+.home {
+    font-family: 'Raleway', sans-serif;
+    padding: 1vh 1vw 1vh 1vw;
+    background-color: darkslategray;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.row {
+    margin: 0;
+}
+
+.col-sm-1-5, .col-sm-10-5 {
+    position: relative;
+    min-height: 1px;
+}
+
+.jumbotron {
+    padding: 15vh 0 0 0;
+    margin: 0;
+    background-color: darkslategray;
+}
+
+#about {
+    height: 100%;
+}
+
+.popover {
+    position: fixed;
+    white-space: pre-wrap;
+    max-width: fit-content;
+}
+
+.dropdown-menu {
+    min-width: fit-content;
+}
+
+.dropdown-menu > li {
+    cursor: pointer;
+}
+
+.contact {
+    float: right;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.home .glyphicon {
+    font-size: 20vh;
+}
+
+.o {
+    color: darkorange;
+}
+
+.g {
+    color: darkslategray;
+}
+
+.w {
+    color: white;
+}
+
+.pad {
+    padding: 10px;
+}
+
+.no-pad {
+    padding: 0;
+}
+
+.no-pad-left {
+    padding-left: 0;
+}
+
+.no-pad-right {
+    padding-right: 0;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.pad-left {
+    padding-left: 15px;
+}
+
+.pad-right {
+    padding-right: 15px;
+}
+
+.pad-top {
+   padding-top: 15px;
+}
+
+.pad-bottom {
+    padding-bottom: 15px;
+}
+
+.pad-top-large {
+   padding-top: 10vh;
+}
+
+.margin-right {
+    margin-right: 20px;
+}
+
+.border-top {
+    border-top: 1px solid #ccc;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+form h4 {
+    /* font-style: italic; */
+    font-size: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.bottom {
+    position: absolute;
+    width: inherit;
+    bottom: 0;
+}
+
+.menu {
+    font-weight: bold;
+    padding: 0;
+    list-style: none;
+}
+
+.menu > li > a {
+    text-decoration: none !important;
+    color: white;
+    background-color: darkslategray;
+    display: block;
+    font-size: 1.5vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.menu > li > a:hover {
+    color: darkslategray;
+    background-color: white;
+}
+
+#menu-secondary {
+    text-align: right;
+    padding-left: 20% !important;
+}
+
+#menu-secondary > li > a {
+    padding-left: 10%;
+    padding-right: 10%;
+    cursor: pointer;
+}
+
+.active {
+    color: darkslategray !important;
+    background-color: white !important;
+    pointer-events: none;
+}
+
+#nav-button {
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    cursor: pointer;
+}
+
+#nav-button:hover {
+    background-color: #2a4747;
+}
+
+.glyph {
+    color: white;
+    text-decoration: none !important;
+}
+
+.glyph:hover {
+    color: orange !important;
+}
+
+.glyph:visited {
+    color: white;
+}
+
+.loader-sm {
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid darkorange;
+    width: 15px;
+    height: 15px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.flex-container {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-container-spaced {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-table tr, .text-table td, .text-table th {
+    /* border: none !important; */
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.text-table h4 {
+    text-align: left;
+    font-weight: bold;
+}
+
+.visual-table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.visual-table .time-column {
+    width: 9.09%;
+}
+
+.visual-table .day-column {
+    width: 18.18%;
+}
+
+.visual-table tr {
+    height: 7px;
+}
+
+.visual-table th {
+    height: 5vh;
+}
+
+.visual-table th, .visual-table td {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.visual-table .bordered, .visual-table th {
+    border: 1px solid #ccc !important;
+}
+
+.visual-table .meeting-cell {
+    font-size: 85%;
+}
+
+#schedules-bar {
+    padding: 10px;
+    border-bottom: solid 1px #ccc;
+}
+
+#schedules-bar > * {
+    flex: 1
+}
+
+#schedules-bar h4 {
+    font-weight: bold;
+    text-align: center;
+}
+
+#schedules-bar > div:last-child {
+    text-align: right;
+}
+
+.page-loader {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.page-loader > h1 {
+    margin-bottom: 20px;
+}
+
+#generator-search {
+    position: relative;
+}
+
+#generator-search > ul {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.carousel-control.left > span {
+    left: 1vw;
+}
+
+.carousel-control.right > span {
+    right: 1vw;
+}
+
+.carousel-control > span {
+    color: darkslategray;
+}
+
+.carousel-control {
+	width: 50%;
+}
+
+.carousel-control:hover {
+	cursor: pointer;
+}
+
+@media print {
+    #content-page {
+        overflow: hidden !important;
+    }
+
+	.no-print, .no-print * {
+		display: none !important;
+    }
+    
+    table, table tr, table td {
+        -webkit-print-color-adjust: exact !important;
+    }
+}
