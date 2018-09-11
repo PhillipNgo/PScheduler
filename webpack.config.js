@@ -44,6 +44,9 @@ var config = {
   devServer: {
     port: frontendServerPort,
     contentBase: CONTENT_DIR,
+    historyApiFallback: {
+      index: 'index.html'
+    }
   },
 };
 

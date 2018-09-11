@@ -46,6 +46,15 @@ class SearchList extends React.Component {
     }
   }
 
+  inputPressEnter(e) {
+    const { fetchCourses } = this.props;
+    if (e.keyCode === 13) {
+      const { timer } = this.state;
+      clearTimeout(timer);
+      fetchCourses(e.target.value);
+    }
+  }
+
   addClass(courses, course = null) {
     const { addToSchedule } = this.props;
     addToSchedule(courses, course);
@@ -68,6 +77,7 @@ class SearchList extends React.Component {
           name="class_search"
           type="input"
           onChange={(e, value) => this.searchOnChange(value)}
+          onKeyUp={(e) => this.inputPressEnter(e)}
           onFocus={this.showSearch}
           placeholder="Search a Course (PHYS 2305, CS 1054), CRN (12345), or Course Name (Foundations of Physics, Intro to Programming)"
         />

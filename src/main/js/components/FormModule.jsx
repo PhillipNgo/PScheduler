@@ -7,6 +7,7 @@ const FormModule = ({
   onBlur,
   onChange,
   onFocus,
+  onKeyUp,
   autocomplete,
   placeholder,
   className = '',
@@ -26,6 +27,7 @@ const FormModule = ({
           onBlur={onBlur}
           onChange={onChange}
           onFocus={onFocus}
+          onKeyUp={onKeyUp}
           type="text"
           autoComplete={(autocomplete ? 'on' : 'off')}
           placeholder={placeholder}

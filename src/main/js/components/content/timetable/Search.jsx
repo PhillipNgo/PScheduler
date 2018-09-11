@@ -35,8 +35,17 @@ class Search extends React.Component {
     }
   }
 
+  inputPressEnter(e) {
+    const { fetchCourses } = this.props;
+    if (e.keyCode === 13) {
+      const { timer } = this.state;
+      clearTimeout(timer);
+      fetchCourses(e.target.value);
+    }
+  }
+
   render() {
-    const { courses, isFetching } = this.props;
+    const { courses, isFetching, handleSubmit } = this.props;
     const flatCourses = [];
     Object.keys(courses).forEach((key) => {
       courses[key].forEach((course) => {
@@ -44,7 +53,11 @@ class Search extends React.Component {
       });
     });
     return (
-      <form id="generator-search" className="pad-top">
+      <form
+        id="generator-search"
+        className="pad-top"
+        onSubmit={handleSubmit(() => {})}
+      >
         <div className="pad-bottom">
           <FormModule
             type="select"
@@ -57,6 +70,7 @@ class Search extends React.Component {
           name="class_search"
           type="input"
           onChange={(e, value) => this.searchOnChange(value)}
+          onKeyUp={(e) => this.inputPressEnter(e)}
           onFocus={this.showSearch}
           placeholder="Search a Course (PHYS 2305, CS 1054) or Course Name (Foundations of Physics, Intro to Programming)"
         />
