@@ -1,3 +1,4 @@
+import { stringify } from 'query-string';
 import filterCourses from './filter';
 import {
   startGenerating,
@@ -9,8 +10,13 @@ import ScheduleMaker from './ScheduleMaker';
 
 const generateSchedules = values => (dispatch, getState) => {
   const { courseList } = getState().courses;
+  const querystring = stringify({ ...values, courses: JSON.stringify(values.courses) });
   if (courseList.length !== 0) {
-    dispatch(startRedirect({ pathname: '/generator', hash: '#schedules' }));
+    dispatch(startRedirect({
+      pathname: '/generator',
+      hash: '#schedules',
+      search: querystring,
+    }));
     dispatch(startGenerating());
     const filteredResults = filterCourses(values, courseList);
     dispatch(filteredCourses(filteredResults));
@@ -25,7 +31,11 @@ const generateSchedules = values => (dispatch, getState) => {
         dispatch(endGenerating(e));
       }
     } else {
-      dispatch(startRedirect({ pathname: '/generator', hash: '#timetable' }));
+      dispatch(startRedirect({
+        pathname: '/generator',
+        hash: '#timetable',
+        search: querystring,
+      }));
       dispatch(endGenerating([]));
     }
   }

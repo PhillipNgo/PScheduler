@@ -11,6 +11,7 @@ class SideNav extends React.Component {
     super(props);
     this.state = {
       minimized: false,
+      querystrings: {},
     };
   }
 
@@ -21,7 +22,7 @@ class SideNav extends React.Component {
   }
 
   render() {
-    const { minimized } = this.state;
+    const { minimized, querystrings } = this.state;
     const { menu } = this.props;
     return (
       <div id="side-nav" className={`no-print ${minimized ? 'side-nav-min' : ''}`}>
@@ -43,6 +44,7 @@ class SideNav extends React.Component {
                         to={{
                           pathname: tab.path,
                           hash: subTab.hash,
+                          search: location.search,
                         }}
                         isActive={(match, location) => location.hash === subTab.hash}
                       >
@@ -60,9 +62,16 @@ class SideNav extends React.Component {
             { menu.map(tab => (
               <li key={tab.title}>
                 <NavLink
+                  onClick={() => this.setState({
+                    querystrings: {
+                      ...querystrings,
+                      [location.pathname]: location.search,
+                    }
+                  })}
                   to={{
                     pathname: tab.path,
                     hash: tab.subMenu.length > 0 ? tab.subMenu[0].hash : '',
+                    search: querystrings[tab.path],
                   }}
                 >
                   {tab.title}
