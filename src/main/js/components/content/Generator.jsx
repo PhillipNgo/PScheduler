@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 import { ClipLoader } from 'react-spinners';
 import SearchForm from '../../containers/content/generator/SearchForm';
 import Schedules from '../../containers/content/generator/Schedules';
@@ -11,12 +12,10 @@ const Generator = ({ isGenerating, location }) => {
   switch (location.hash) {
     case '#schedules': return <Schedules />;
     case '#timetable': return <TimetableResults />;
-    case '#search':
-    default:
-      location.hash = '#search';
-      return <SearchForm />;
+    case '#search': return <SearchForm />;
+    default: return <Redirect to={{ pathname: '/generator', hash: '#search' }} />;
   }
-}
+};
 
 Generator.LoadingScreen = () => (
   <div className="page-loader">
