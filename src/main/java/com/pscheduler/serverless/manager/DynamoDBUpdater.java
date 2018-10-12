@@ -12,7 +12,8 @@ public class DynamoDBUpdater {
 
     @SuppressWarnings("unchecked")
     public static void main(String[] args) throws Exception {
-        int[] terms = new int[]{201701, 201709, 201801, 201809};
+//        int[] terms = new int[]{201701, 201709, 201801, 201809};
+        int[] terms = new int[]{201901};
         for (int term : terms) {
             VTParser parser = new VTParser(Course.class, term);
             List<com.pscheduler.util.Course> courseListGeneric;

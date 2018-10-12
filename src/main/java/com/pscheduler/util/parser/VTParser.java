@@ -248,8 +248,7 @@ public class VTParser {
         this.courseBuilderFactory.reset();
         String[] values = listing.split(SPLIT_PATTERN); //split listings based on column
         String[] subNum = values[1].split("-");
-//        System.out.println("Parsing: " + Arrays.toString(values)); //Debugging
-
+        System.out.println("Parsing: " + Arrays.toString(values)); //Debugging
         this.courseBuilderFactory
             .term(this.term)
             .crn(Integer.parseInt(values[0]))
