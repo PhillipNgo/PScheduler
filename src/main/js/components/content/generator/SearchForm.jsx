@@ -63,6 +63,11 @@ class SearchForm extends React.Component {
           <h1 className="o">
             Restrictions
           </h1>
+          <div className="alert alert-warning no-margin-bottom pad" role="alert">
+            Generator links/URLs are being reworked and should be implemented soon.
+            There isn&#39;t a way right now to return a previous search,
+            sorry for the inconvenience!
+          </div>
         </div>
         <div className="pad-bottom">
           <div className="pad-top">

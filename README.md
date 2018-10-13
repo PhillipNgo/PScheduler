@@ -72,7 +72,7 @@ The default port for the api is 8080. To change the port, edit `var backendServe
 
 To start the server
 ```
-gradlew bootRun                // Bash
+./gradlew bootRun              // Bash
 .\gradlew.bat bootRun          // Windows CMD
 ```
 

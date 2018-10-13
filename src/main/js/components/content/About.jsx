@@ -29,7 +29,7 @@ const About = () => (
       </h1>
     </div>
     <p>
-      PScheduler has been completeley rewritten from the ground up! Performance should
+      PScheduler has been completeley rewritten from the ground up! Performance problems should
       be minimized as the site is now static and no longer relies on a server to generate HTML.
     </p>
     <p>
