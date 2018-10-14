@@ -44,7 +44,7 @@ class SideNav extends React.Component {
                         to={{
                           pathname: tab.path,
                           hash: subTab.hash,
-                          search: location.search,
+                          search: window.location.search,
                         }}
                         isActive={(match, location) => location.hash === subTab.hash}
                       >
@@ -65,8 +65,8 @@ class SideNav extends React.Component {
                   onClick={() => this.setState({
                     querystrings: {
                       ...querystrings,
-                      [location.pathname]: location.search,
-                    }
+                      [window.location.pathname]: window.location.search,
+                    },
                   })}
                   to={{
                     pathname: tab.path,

@@ -1,10 +1,16 @@
 import {
+  START_FIRST_RENDER,
   START_GENERATING,
   END_GENERATING,
   FILTERED_COURSES,
   START_REDIRECT,
   END_REDIRECT,
 } from './types';
+
+export const startFirstRender = formValues => ({
+  type: START_FIRST_RENDER,
+  payload: formValues,
+});
 
 export const startGenerating = () => ({
   type: START_GENERATING,

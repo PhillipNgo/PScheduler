@@ -15,9 +15,8 @@ const filterInstructors = (instructors = [], course) => (
 );
 
 const filterFreeDays = (freeDays = [], course) => (
-  freeDays.length === 0
-    || !course.meetings.some(meeting => meeting.days)
-      .some(day => freeDays.find(free => day.toLowerCase() === free.toLowerCase()))
+  freeDays.length === 0 || !course.meetings.some(meeting => meeting.days.some(day => (
+    freeDays.find(free => day.toLowerCase() === free.toLowerCase()))))
 );
 
 const filterTime = (start, end, course) => {

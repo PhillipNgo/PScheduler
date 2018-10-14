@@ -2,16 +2,17 @@ import queryString from 'query-string';
 import courseSearchUrl from '../constants/resources';
 import 'whatwg-fetch';
 
-const getCourseSearch = (values, requestAction, receiveAction) => (dispatch) => {
-  dispatch(requestAction());
-  const resource = `${courseSearchUrl}?${queryString.stringify({ ...values, size: 1000 })}`;
-  fetch(resource)
+export const getCourseList = values => (
+  fetch(`${courseSearchUrl}?${queryString.stringify({ ...values, size: 1000 })}`)
     .then(response => response.json())
-    .then((json) => {
+    .then(json => (process.env.NODE_ENV === 'production' ? json : json._embedded.courses)) // eslint-disable-line no-underscore-dangle
+    .catch(error => error)
+);
+
+export const getCourseMap = values => (
+  getCourseList(values)
+    .then((courseList) => {
       const courses = {};
-      const courseList = process.env.NODE_ENV === 'production'
-        ? json
-        : json._embedded.courses; // eslint-disable-line no-underscore-dangle
       courseList.some((course) => {
         const courseId = course.subject + course.courseNumber;
         if (!(courseId in courses)) {
@@ -23,9 +24,13 @@ const getCourseSearch = (values, requestAction, receiveAction) => (dispatch) => 
         courses[courseId].push(course);
         return false;
       });
-      dispatch(receiveAction(courses));
+      return courses;
     })
+);
+
+export const getCourseMapWithDispatch = (values, requestAction, receiveAction) => (dispatch) => {
+  dispatch(requestAction());
+  getCourseMap(values)
+    .then(courseMap => dispatch(receiveAction(courseMap)))
     .catch(error => dispatch(receiveAction(error)));
 };
-
-export default getCourseSearch;
