@@ -44,7 +44,7 @@ public class CourseController {
     ) {
         try {
             if (query != null) {
-                query = query.toLowerCase();
+                query = query.toLowerCase().replaceAll(" ", "");
             }
             Sort sort = sorts == null ? null : new Sort(Sort.Direction.ASC, sorts);
             Pageable pageRequest = new PageRequest(page.getPageNumber(), page.getPageSize(), sort);
