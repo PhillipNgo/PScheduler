@@ -26,7 +26,7 @@ public class VTParser {
     private String[] subjects;
 
     // regex for extracting the next course from the database/timetable
-    private final Pattern COURSE_PATTERN = Pattern.compile("\\d{5}[\\S\\s]*?(?=[ \\t\\r]*\\n[ \\t\\r]+\\d{5}|\\r\\nThis )");
+    private final Pattern COURSE_PATTERN = Pattern.compile("\\d{5}[\\S\\s]*?(?=[ \\t\\r]*\\n[ \\t\\r]+\\d{5}|\\s*This )");
 
     // regex for splitting a given COURSE_PATTERN's data
     private final String SPLIT_PATTERN = "(?<=\\S)\\s*[\\t\\n]\\s*(?=\\S)";
@@ -154,7 +154,7 @@ public class VTParser {
      */
     public List<Course> parseCourse(String subj, String num) throws Exception {
         this.resetFields();
-        vtForm.fillSelectField("subj          _code", subj);
+        vtForm.fillSelectField("subj_code", subj);
         vtForm.fillTextField("CRSE_NUMBER", num);
         return this.parseCourseListing();
     }
@@ -249,7 +249,6 @@ public class VTParser {
         String[] values = listing.split(SPLIT_PATTERN); //split listings based on column
         String[] subNum = values[1].split("-");
 //        System.out.println("Parsing: " + Arrays.toString(values)); //Debugging
-
         this.courseBuilderFactory
             .term(this.term)
             .crn(Integer.parseInt(values[0]))
@@ -269,18 +268,20 @@ public class VTParser {
                 String endTime;
                 String location;
 
-                ind++;
-                days = values[ind];
-                ind++;
-                if (values[ind].contains("ARR")) {
+                days = values[ind + 1];
+                ind += 2;
+
+                if (values[ind].contains("ARR") || days.contains("ARR")) {
                     startTime = "ARR";
                     endTime = "ARR";
+                    do {
+                        ind++;
+                    } while (values[ind].endsWith("AM") || values[ind].endsWith("PM"));
                 } else {
                     startTime = values[ind];
                     endTime = values[ind + 1];
-                    ind++;
+                    ind += 2;
                 }
-                ind++;
                 location = values[ind];
                 if (days != null) {
                     List<String> daysList = Arrays.asList(days.split(" "));
