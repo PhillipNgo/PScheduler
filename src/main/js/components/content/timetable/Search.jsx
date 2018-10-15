@@ -46,12 +46,6 @@ class Search extends React.Component {
 
   render() {
     const { courses, isFetching, handleSubmit } = this.props;
-    const flatCourses = [];
-    Object.keys(courses).forEach((key) => {
-      courses[key].forEach((course) => {
-        flatCourses.push(course);
-      });
-    });
     return (
       <form
         id="generator-search"
@@ -70,7 +64,7 @@ class Search extends React.Component {
           name="class_search"
           type="input"
           onChange={(e, value) => this.searchOnChange(value)}
-          onKeyUp={(e) => this.inputPressEnter(e)}
+          onKeyUp={e => this.inputPressEnter(e)}
           onFocus={this.showSearch}
           placeholder="Search a Course (PHYS 2305, CS 1054) or Course Name (Foundations of Physics, Intro to Programming)"
         />
@@ -83,7 +77,7 @@ class Search extends React.Component {
               <ClipLoader size={200} color="darkorange" />
             </div>
           ) : (
-            <CourseTable courses={flatCourses} header />
+            <CourseTable courses={courses} header />
           )
         }
       </form>

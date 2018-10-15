@@ -34,3 +34,10 @@ export const getCourseMapWithDispatch = (values, requestAction, receiveAction) =
     .then(courseMap => dispatch(receiveAction(courseMap)))
     .catch(error => dispatch(receiveAction(error)));
 };
+
+export const getCourseListWithDispatch = (values, requestAction, receiveAction) => (dispatch) => {
+  dispatch(requestAction());
+  getCourseList(values)
+    .then(courseList => dispatch(receiveAction(courseList)))
+    .catch(error => dispatch(receiveAction(error)));
+};

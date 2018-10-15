@@ -19,7 +19,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         isFetching: false,
-        searchList: action.error ? {} : action.payload,
+        searchList: action.error ? [] : action.payload.sort((a, b) => a.crn - b.crn),
       };
     default:
       return state;
