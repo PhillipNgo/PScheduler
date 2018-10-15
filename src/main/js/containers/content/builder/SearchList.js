@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import SearchList from '../../../components/SearchList';
-import getCourseSearch from '../../../utils/search';
+import { getCourseMapWithDispatch } from '../../../utils/search';
 import {
   requestBuilderSearch,
   receiveBuilderSearch,
@@ -18,7 +18,11 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   fetchCourses: query => dispatch((thunkDispatch, getState) => {
     const { term } = getState().form.builder_form.values;
-    thunkDispatch(getCourseSearch({ query, term }, requestBuilderSearch, receiveBuilderSearch));
+    thunkDispatch(getCourseMapWithDispatch(
+      { query, term },
+      requestBuilderSearch,
+      receiveBuilderSearch,
+    ));
   }),
   addToSchedule: (courses, course) => dispatch((thunkDispatch, getState) => {
     let id = 0;

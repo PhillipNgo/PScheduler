@@ -1,5 +1,4 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
 import { FormSection } from 'redux-form';
 import { ClipLoader } from 'react-spinners';
 import FormModule from '../../FormModule';
@@ -8,19 +7,9 @@ import formDefaults from '../../../constants/formDefaults';
 
 class SearchForm extends React.Component {
   componentWillMount() {
-    const { firstRender, initialize } = this.props;
+    const { firstRender, initialize, formValues } = this.props;
     if (firstRender) {
-      initialize({
-        term: formDefaults.termValue,
-        h1: '08',
-        m1: '00',
-        start: 'am',
-        h2: '08',
-        m2: '00',
-        end: 'pm',
-        gap: '15',
-        free: [],
-      });
+      initialize(formValues);
     }
   }
 
@@ -32,11 +21,6 @@ class SearchForm extends React.Component {
     $('.selectpicker').selectpicker('refresh');
   }
 
-  componentWillUnmount() {
-    const { redirected } = this.props;
-    redirected();
-  }
-
   render() {
     const {
       schedule,
@@ -45,11 +29,7 @@ class SearchForm extends React.Component {
       resetForm,
       removeCourse,
       isFetching,
-      redirect,
     } = this.props;
-    if (redirect) {
-      return <Redirect to={redirect} />;
-    }
     return (
       <form
         onSubmit={handleSubmit(submit)}
@@ -63,11 +43,6 @@ class SearchForm extends React.Component {
           <h1 className="o">
             Restrictions
           </h1>
-          <div className="alert alert-warning no-margin-bottom pad" role="alert">
-            Generator links/URLs are being reworked and should be implemented soon.
-            There isn&#39;t a way right now to return a previous search,
-            sorry for the inconvenience!
-          </div>
         </div>
         <div className="pad-bottom">
           <div className="pad-top">

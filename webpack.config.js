@@ -9,13 +9,14 @@ var APP_DIR = path.resolve(__dirname, 'src/main/js');
 
 var frontendServerPort = 3000;
 var backendServerPort = 8080;
+var version = '1.0.0';
 
 var config = {
   mode: 'development',
   entry: APP_DIR + '/index.jsx',
   output: {
     path: CONTENT_DIR,
-      filename: 'bundle.js',
+      filename: 'bundle' + version + '.js',
   },
   module: {
     rules: [{

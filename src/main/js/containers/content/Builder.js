@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 import Builder from '../../components/content/Builder';
-import getCourseSearch from '../../utils/search';
+import { getCourseMapWithDispatch } from '../../utils/search';
 import { requestBuilderSearch, receiveBuilderSearch, resetBuilder } from '../../actions/builder';
 
 const mapStateToProps = (state) => {
@@ -16,7 +16,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = dispatch => ({
   fetchCourses: query => dispatch((thunkDispatch, getState) => {
     const { term } = getState().form.builder_form.values;
-    thunkDispatch(getCourseSearch(
+    thunkDispatch(getCourseMapWithDispatch(
       { query, term },
       requestBuilderSearch,
       receiveBuilderSearch,

@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { reduxForm, change } from 'redux-form';
 import SearchList from '../../../components/SearchList';
-import getCourseSearch from '../../../utils/search';
+import { getCourseMapWithDispatch } from '../../../utils/search';
 import {
   addToSchedule,
   requestCourseSearch,
@@ -17,7 +17,11 @@ const idExists = (courseList, courseName, id) => courseList.find(list => `${list
 const mapDispatchToProps = dispatch => ({
   fetchCourses: query => dispatch((thunkDispatch, getState) => {
     const { term } = getState().form.generator_form.values;
-    thunkDispatch(getCourseSearch({ query, term }, requestCourseSearch, receiveCourseSearch));
+    thunkDispatch(getCourseMapWithDispatch(
+      { query, term },
+      requestCourseSearch,
+      receiveCourseSearch,
+    ));
   }),
   addToSchedule: (courses, course) => dispatch((thunkDispatch, getState) => {
     let id = 0;

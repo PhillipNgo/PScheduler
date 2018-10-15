@@ -1,4 +1,5 @@
 import {
+  START_FIRST_RENDER,
   START_GENERATING,
   END_GENERATING,
   FILTERED_COURSES,
@@ -11,10 +12,16 @@ const initialState = {
   schedules: [],
   filteredCourses: [],
   redirect: null,
+  initialValues: null,
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case START_FIRST_RENDER:
+      return {
+        ...state,
+        initialValues: action.payload,
+      };
     case START_GENERATING:
       return {
         ...state,

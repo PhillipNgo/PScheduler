@@ -12,6 +12,7 @@ export const RESET_SCHEDULE = 'RESET_SCHEDULE';
 export const REMOVE_COURSE = 'REMOVE_COURSE';
 
 // generator actions
+export const START_FIRST_RENDER = 'START_FIRST_RENDER';
 export const START_GENERATING = 'START_GENERATING';
 export const END_GENERATING = 'END_GENERATING';
 export const FILTERED_COURSES = 'FILTERED_COURSES';
