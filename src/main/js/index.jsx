@@ -18,7 +18,7 @@ const store = createStore(reducer, applyMiddleware(...middleware));
 ReactDOM.render(
   <Provider store={store}>
     <Router>
-      <App maintenance={false} />
+      <App maintenance={true} />
     </Router>
   </Provider>,
   document.getElementById('root'),

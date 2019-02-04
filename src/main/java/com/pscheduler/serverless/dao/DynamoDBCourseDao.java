@@ -9,7 +9,8 @@ import com.pscheduler.serverless.pojo.Course;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class DynamoDBCourseDao implements CourseDao {
 
@@ -49,16 +50,22 @@ public class DynamoDBCourseDao implements CourseDao {
         eav.put(":term", new AttributeValue().withN("" + term));
 
         DynamoDBQueryExpression<Course> query = new DynamoDBQueryExpression<Course>()
-            .withExpressionAttributeValues(eav)
             .withKeyConditionExpression("term = :term");
+        
+        Matcher subjectCourseRegex = Pattern.compile("(.{1,5}?)(\\d{1,4}h?)").matcher(filter);
+        if (subjectCourseRegex.matches()) {
+            subjectCourseRegex.find();
+            eav.put(":subject" , new AttributeValue().withS(subjectCourseRegex.group(0)));
+            eav.put(":courseNumber" , new AttributeValue().withS(subjectCourseRegex.group(1)));
+            query = query
+                .withFilterExpression("subject = :subject")
+                .withFilterExpression("begins_with(courseNumber, :courseNumber)");
+        } else {
+            eav.put(":name" , new AttributeValue().withS(filter));
+            query = query.withFilterExpression("contains(searchName, :name)");
+        }
 
-        return mapper.query(Course.class, query)
-                .stream()
-                .filter(course -> 
-                    (course.getSubject() + course.getCourseNumber()).toLowerCase().contains(filter)
-                    || course.getName().replaceAll(" ", "").toLowerCase().contains(filter)
-                )
-                .collect(Collectors.toList());
+        return mapper.query(Course.class, query.withExpressionAttributeValues(eav));
     }
 
     @Override

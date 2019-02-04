@@ -19,6 +19,7 @@ public class Course implements com.pscheduler.util.Course {
     private String instructor;
     private List<Meeting> meetings;
     private String exam;
+    private String searchName;
 
     public Course() {}
 
@@ -49,6 +50,7 @@ public class Course implements com.pscheduler.util.Course {
             this.meetings.add((Meeting) meeting);
         }
         this.exam = exam;
+        this.searchName = (subject + courseNumber + " " + name.replaceAll(" ", "")).replaceAll("[\\w ]", "").toLowerCase();
     }
 
     @DynamoDBHashKey(attributeName = "term")
@@ -148,6 +150,15 @@ public class Course implements com.pscheduler.util.Course {
 
     public void setExam(String exam) {
         this.exam = exam;
+    }
+
+    @DynamoDBAttribute(attributeName = "searchName")
+    public String getSearchName() {
+        return searchName;
+    }
+
+    public void setSearchName(String searchName) {
+        this.searchName = searchName;
     }
 
     @DynamoDBDocument
