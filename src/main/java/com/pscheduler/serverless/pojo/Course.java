@@ -50,7 +50,7 @@ public class Course implements com.pscheduler.util.Course {
             this.meetings.add((Meeting) meeting);
         }
         this.exam = exam;
-        this.searchName = (subject + courseNumber + " " + name.replaceAll(" ", "")).replaceAll("[\\w ]", "").toLowerCase();
+        this.searchName = (subject + courseNumber + " " + name.replaceAll("\\W", "")).toLowerCase();
     }
 
     @DynamoDBHashKey(attributeName = "term")

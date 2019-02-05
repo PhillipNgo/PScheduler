@@ -9,8 +9,6 @@ import com.pscheduler.serverless.pojo.Course;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class DynamoDBCourseDao implements CourseDao {
 
@@ -35,7 +33,7 @@ public class DynamoDBCourseDao implements CourseDao {
     @Override
     public List<Course> searchCourses(int term, String queryString) {
 
-        String search = queryString.trim().replaceAll(" ", "");
+        String search = queryString.replaceAll("\\W", "");
         try {
             Course searchCrn = mapper.load(Course.class, term, Integer.parseInt(queryString));
             if (searchCrn != null) {
@@ -48,28 +46,27 @@ public class DynamoDBCourseDao implements CourseDao {
 
         Map<String, AttributeValue> eav = new HashMap<>();
         eav.put(":term", new AttributeValue().withN("" + term));
+        eav.put(":filter", new AttributeValue().withS(filter));
 
         DynamoDBQueryExpression<Course> query = new DynamoDBQueryExpression<Course>()
-            .withKeyConditionExpression("term = :term");
-        
-        Matcher subjectCourseRegex = Pattern.compile("(.{1,5}?)(\\d{1,4}h?)").matcher(filter);
-        if (subjectCourseRegex.matches()) {
-            subjectCourseRegex.find();
-            eav.put(":subject" , new AttributeValue().withS(subjectCourseRegex.group(0)));
-            eav.put(":courseNumber" , new AttributeValue().withS(subjectCourseRegex.group(1)));
-            query = query
-                .withFilterExpression("subject = :subject")
-                .withFilterExpression("begins_with(courseNumber, :courseNumber)");
-        } else {
-            eav.put(":name" , new AttributeValue().withS(filter));
-            query = query.withFilterExpression("contains(searchName, :name)");
-        }
+            .withExpressionAttributeValues(eav)
+            .withKeyConditionExpression("term = :term")
+            .withFilterExpression("contains(searchName, :filter)");
 
-        return mapper.query(Course.class, query.withExpressionAttributeValues(eav));
+        return mapper.query(Course.class, query);
     }
 
     @Override
     public void saveCourses(List<Course> courses) {
         mapper.batchSave(courses);
+    }
+
+    public void deleteCoursesForTerm(int term) {
+        Map<String, AttributeValue> eav = new HashMap<>();
+        eav.put(":term", new AttributeValue().withN("" + term));
+        DynamoDBQueryExpression<Course> query = new DynamoDBQueryExpression<Course>()
+            .withKeyConditionExpression("term = :term")
+            .withExpressionAttributeValues(eav);
+        mapper.batchDelete(mapper.query(Course.class, query));
     }
 }
