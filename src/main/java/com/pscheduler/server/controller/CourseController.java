@@ -61,7 +61,7 @@ public class CourseController {
             )).withSelfRel());
             return ResponseEntity.ok(resources);
         } catch (Exception ex) {
-            System.out.println(ex);
+            System.err.println(ex);
             return ResponseEntity.badRequest().build();
         }
     }
