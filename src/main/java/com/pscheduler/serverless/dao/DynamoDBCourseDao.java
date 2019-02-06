@@ -61,6 +61,7 @@ public class DynamoDBCourseDao implements CourseDao {
         mapper.batchSave(courses);
     }
 
+    @Override
     public void deleteCoursesForTerm(int term) {
         Map<String, AttributeValue> eav = new HashMap<>();
         eav.put(":term", new AttributeValue().withN("" + term));
