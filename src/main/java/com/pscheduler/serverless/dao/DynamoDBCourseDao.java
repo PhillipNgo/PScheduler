@@ -9,7 +9,6 @@ import com.pscheduler.serverless.pojo.Course;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class DynamoDBCourseDao implements CourseDao {
 
@@ -34,7 +33,7 @@ public class DynamoDBCourseDao implements CourseDao {
     @Override
     public List<Course> searchCourses(int term, String queryString) {
 
-        String search = queryString.trim().replaceAll(" ", "");
+        String search = queryString.replaceAll("\\W", "");
         try {
             Course searchCrn = mapper.load(Course.class, term, Integer.parseInt(queryString));
             if (searchCrn != null) {
@@ -47,22 +46,27 @@ public class DynamoDBCourseDao implements CourseDao {
 
         Map<String, AttributeValue> eav = new HashMap<>();
         eav.put(":term", new AttributeValue().withN("" + term));
+        eav.put(":filter", new AttributeValue().withS(filter));
 
         DynamoDBQueryExpression<Course> query = new DynamoDBQueryExpression<Course>()
             .withExpressionAttributeValues(eav)
-            .withKeyConditionExpression("term = :term");
+            .withKeyConditionExpression("term = :term")
+            .withFilterExpression("contains(searchName, :filter)");
 
-        return mapper.query(Course.class, query)
-                .stream()
-                .filter(course -> 
-                    (course.getSubject() + course.getCourseNumber()).toLowerCase().contains(filter)
-                    || course.getName().replaceAll(" ", "").toLowerCase().contains(filter)
-                )
-                .collect(Collectors.toList());
+        return mapper.query(Course.class, query);
     }
 
     @Override
     public void saveCourses(List<Course> courses) {
         mapper.batchSave(courses);
+    }
+
+    public void deleteCoursesForTerm(int term) {
+        Map<String, AttributeValue> eav = new HashMap<>();
+        eav.put(":term", new AttributeValue().withN("" + term));
+        DynamoDBQueryExpression<Course> query = new DynamoDBQueryExpression<Course>()
+            .withKeyConditionExpression("term = :term")
+            .withExpressionAttributeValues(eav);
+        mapper.batchDelete(mapper.query(Course.class, query));
     }
 }

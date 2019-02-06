@@ -15,7 +15,7 @@ public interface CourseRepository extends PagingAndSortingRepository<Course, Int
 
     @Query(
         "SELECT course FROM Course course"
-        + " WHERE (:query IS NULL OR LOWER(CONCAT(course.subject, course.courseNumber, course.name)) LIKE CONCAT('%', :query, '%'))"
+        + " WHERE (:query IS NULL OR LOWER(CONCAT(course.subject, course.courseNumber, ' ', course.name)) LIKE CONCAT('%', :query, '%'))"
         + " AND (:crn IS NULL OR course.crn = :crn)"
         + " AND (:subject IS NULL OR course.subject = :subject)"
         + " AND (:courseNumber IS NULL OR course.courseNumber = :courseNumber)"

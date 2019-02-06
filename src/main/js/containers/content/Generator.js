@@ -37,14 +37,12 @@ const mapDispatchToProps = dispatch => ({
         const courses = data.c ? data.c.map(course => JSON.parse(course)) : [];
         delete data.c;
         data.courses = {};
-        Promise.all(courses.map(course => getCourseMap({ query: course.name, term: data.term })))
-          .then((courseMaps) => {
-            courseMaps.forEach((courseMap, index) => {
-              if (!(courseMap instanceof Error)) {
-                dispatch(addToSchedule(courseMap[courses[index].name], index));
-                data.courses[`${courses[index].name}${index}`] = courses[index];
-                delete courses[index].name;
-              }
+        getCourseMap({ query: courses.map(course => course.name), term: data.term })
+          .then((courseMap) => {
+            courses.forEach((course, index) => {
+              dispatch(addToSchedule(courseMap[course.name], index));
+              data.courses[`${courses.name}${index}`] = course;
+              delete course.name;
             });
           })
           .then(() => {

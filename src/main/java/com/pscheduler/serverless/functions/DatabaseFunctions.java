@@ -15,7 +15,6 @@ public class DatabaseFunctions implements RequestHandler<CourseRequest, Void> {
 
     private static final DynamoDBCourseDao courseDao = DynamoDBCourseDao.instance();
 
-
     @Override
     @SuppressWarnings("unchecked")
     public Void handleRequest(CourseRequest request, Context context) {

@@ -88,10 +88,11 @@ class Schedules extends React.Component {
               type="number"
               className="form-control"
               onInput={e => this.changeScheduleIndex(e.target.value - 1)}
+              onChange={() => {}}
               placeholder="Schedule #"
               min={schedules.length === 0 ? 0 : 1}
               max={schedules.length}
-              defaultValue={schedules.length > 0 ? scheduleIndex + 1 : 0}
+              value={schedules.length > 0 ? scheduleIndex + 1 : 0}
               style={{ width: '75px' }}
             />
           </div>
