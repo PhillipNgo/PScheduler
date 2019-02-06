@@ -2,6 +2,7 @@ package com.pscheduler.server.controller;
 
 import com.pscheduler.server.model.Course;
 import com.pscheduler.server.repository.CourseRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
 import org.springframework.data.rest.webmvc.RepositoryRestController;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
@@ -29,7 +31,7 @@ public class CourseController {
 
     @RequestMapping(value = "/courses/search")
     public @ResponseBody ResponseEntity<?> getSearch(
-        @RequestParam(value="query", required = false) String query,
+        @RequestParam(value="query", required = false) List<String> query,
         @RequestParam(value="term", required = false) Integer term,
         @RequestParam(value="crn", required = false) Integer crn,
         @RequestParam(value="subject", required = false) String subject,
@@ -43,21 +45,23 @@ public class CourseController {
         Pageable page
     ) {
         try {
-            if (query != null) {
-                query = query.toLowerCase().replaceAll(" ", "");
-            }
             Sort sort = sorts == null ? null : new Sort(Sort.Direction.ASC, sorts);
             Pageable pageRequest = new PageRequest(page.getPageNumber(), page.getPageSize(), sort);
-            Page<Course> courses = courseRepo.searchAll(
-                query, crn, subject, number, type, instructor,
-                capacity, credits, name, term, pageRequest
-            );
-            PagedResources<Resource<Course>> resources = assembler.toResource(courses);
+            List<Course> courses = query.stream().flatMap(q -> {
+                String searchTerm = q.toLowerCase().replaceAll(" ", "");
+                return courseRepo.searchAll(
+                    searchTerm, crn, subject, number, type, instructor,
+                    capacity, credits, name, term, pageRequest
+                ).getContent().stream();
+            }).collect(Collectors.toList());
+            Page<Course> pagedCourses = new PageImpl<>(courses, pageRequest, courses.size());
+            PagedResources<Resource<Course>> resources = assembler.toResource(pagedCourses);
             resources.add(linkTo(methodOn(CourseController.class).getSearch(
                 query, term, crn, subject, number, type, instructor, capacity, credits, name, sorts, page
             )).withSelfRel());
             return ResponseEntity.ok(resources);
         } catch (Exception ex) {
+            System.out.println(ex);
             return ResponseEntity.badRequest().build();
         }
     }
