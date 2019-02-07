@@ -11,6 +11,8 @@ import {
 } from '../../actions/generator';
 import Generator from '../../components/content/Generator';
 import { getCourseMap } from '../../utils/search';
+import { retrieveShortUrl } from '../../constants/resources';
+import 'whatwg-fetch';
 
 const mapStateToProps = state => ({
   isGenerating: state.generator.isGenerating,
@@ -32,28 +34,32 @@ const mapDispatchToProps = dispatch => ({
       free: [],
     };
     if (query) {
-      try {
-        const data = parse(query, { arrayFormat: 'bracket' });
-        const courses = data.c ? data.c.map(course => JSON.parse(course)) : [];
-        delete data.c;
-        data.courses = {};
-        getCourseMap({ query: courses.map(course => course.name), term: data.term })
-          .then((courseMap) => {
-            courses.forEach((course, index) => {
-              dispatch(addToSchedule(courseMap[course.name], index));
-              data.courses[`${courses.name}${index}`] = course;
-              delete course.name;
+      fetch(`${retrieveShortUrl}/generator/${parse(query).q}`)
+        .then(response => response.json())
+        .then((json) => {
+          const data = { ...json };
+          const courses = data.c ? data.c.map(course => JSON.parse(course)) : [];
+          delete data.c;
+          data.courses = {};
+          getCourseMap({ query: courses.map(course => course.name), term: data.term })
+            .then((courseMap) => {
+              courses.forEach((course, index) => {
+                const copy = { ...course };
+                dispatch(addToSchedule(courseMap[copy.name], index));
+                data.courses[`${courses.name}${index}`] = copy;
+                delete copy.name;
+              });
+            })
+            .then(() => {
+              formValues = { ...formValues, ...data };
+              dispatch(generateSchedules(formValues, query));
+              dispatch(startFirstRender(formValues));
             });
-          })
-          .then(() => {
-            formValues = { ...formValues, ...data };
-            dispatch(generateSchedules(formValues));
-            dispatch(startFirstRender(formValues));
-          });
-      } catch (e) {
-        dispatch(startFirstRender(formValues));
-        dispatch(endGenerating());
-      }
+        })
+        .catch(() => {
+          dispatch(startFirstRender(formValues));
+          dispatch(endGenerating([]));
+        });
     } else {
       dispatch(startFirstRender(formValues));
     }

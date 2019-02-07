@@ -13,5 +13,3 @@ src/main/resources/static/bundle*.js
 /bin/
 
 .gradle
-
-/src/main/js/constants/apiUrl.js
