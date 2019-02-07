@@ -1,5 +1,6 @@
 import React from 'react';
 import { ClipLoader } from 'react-spinners';
+import { stringify } from 'query-string';
 import ScheduleVisualTable from '../ScheduleVisualTable';
 import CourseTable from '../../containers/content/builder/CourseTable';
 import SearchList from '../../containers/content/builder/SearchList';
@@ -22,7 +23,26 @@ class Schedules extends React.Component {
   }
 
   componentDidMount() {
+    const { firstRender, location, loadSchedule } = this.props;
+    if (firstRender) {
+      loadSchedule(location.search);
+    }
     $('.selectpicker').selectpicker('refresh');
+  }
+
+  componentDidUpdate(prevProps) {
+    const { courseList, term, history } = this.props;
+    if (prevProps.courseList !== courseList) {
+      const queryArray = courseList.map((list) => {
+        const { selected } = list;
+        return `${selected.subject}${selected.courseNumber}${selected.crn === 'None' ? '' : `+${selected.crn}`}`
+      });
+      history.push({
+        pathname: '/builder',
+        search: `?${stringify({ c: queryArray, term: term || formDefaults.termValue }, 
+          { encode: false, arrayFormat: 'bracket' })}`,
+      })
+    }
   }
 
   toggleTextTable() {
@@ -35,7 +55,7 @@ class Schedules extends React.Component {
 
   render() {
     const {
-      schedule,
+      courseList,
       isFetching,
       resetBuilder,
     } = this.props;
@@ -83,7 +103,7 @@ class Schedules extends React.Component {
         { showTextTable && (
           <CourseTable />
         )}
-        { showVisualTable && <ScheduleVisualTable schedule={schedule} /> }
+        { showVisualTable && <ScheduleVisualTable schedule={courseList.map(list => list.selected)} /> }
       </div>
     );
   }

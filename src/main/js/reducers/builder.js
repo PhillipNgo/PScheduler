@@ -14,6 +14,7 @@ const initialState = {
   courseList: [],
   searchList: {},
   schedule: new Schedule(0),
+  initialValues: null,
 };
 
 const createEmptyCourse = (subject, courseNumber) => ({
