@@ -9,7 +9,7 @@ var APP_DIR = path.resolve(__dirname, 'src/main/js');
 
 var frontendServerPort = 3000;
 var backendServerPort = 8080;
-var version = '1.0.2';
+var version = '1.1.0';
 
 var config = {
   mode: 'development',
