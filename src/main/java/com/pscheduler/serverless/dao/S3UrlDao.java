@@ -47,7 +47,7 @@ public class S3UrlDao implements UrlDao {
                 InputStream stream  = new ByteArrayInputStream(data.getBytes(StandardCharsets.UTF_8));
                 ObjectMetadata metadata = new ObjectMetadata();
                 metadata.setContentType("application/json");
-                metadata.setContentLength(key.length() + 1);
+                metadata.setContentLength(data.length());
                 PutObjectRequest request = new PutObjectRequest(BUCKET, prefix + "/" + key, stream, metadata)
                     .withCannedAcl(CannedAccessControlList.PublicRead);
                 s3.putObject(request);

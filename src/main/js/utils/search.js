@@ -1,5 +1,5 @@
 import queryString from 'query-string';
-import courseSearchUrl from '../constants/resources';
+import { courseSearchUrl } from '../constants/resources';
 import 'whatwg-fetch';
 
 export const getCourseList = values => (
