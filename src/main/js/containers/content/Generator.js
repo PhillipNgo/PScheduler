@@ -42,12 +42,13 @@ const mapDispatchToProps = dispatch => ({
           const courses = data.c ? data.c.map(course => JSON.parse(course)) : [];
           delete data.c;
           data.courses = {};
-          getCourseMap({ query: courses.map(course => course.name), term: data.term })
+          const q = courses.map(course => course.name);
+          getCourseMap({ query: process.env.NODE_ENV === 'production' ? JSON.stringify(q) : q, term: data.term })
             .then((courseMap) => {
               courses.forEach((course, index) => {
                 const copy = { ...course };
                 dispatch(addToSchedule(courseMap[copy.name], index));
-                data.courses[`${courses.name}${index}`] = copy;
+                data.courses[`${course.name}${index}`] = copy;
                 delete copy.name;
               });
             })
