@@ -13,6 +13,7 @@ const initialState = {
   filteredCourses: [],
   redirect: null,
   initialValues: null,
+  error: null,
 };
 
 export default (state = initialState, action) => {
@@ -25,12 +26,14 @@ export default (state = initialState, action) => {
     case START_GENERATING:
       return {
         ...state,
+        error: null,
         isGenerating: true,
       };
     case END_GENERATING:
       return {
         ...state,
         isGenerating: false,
+        error: action.error,
         schedules: action.error ? [] : action.payload,
       };
     case FILTERED_COURSES:

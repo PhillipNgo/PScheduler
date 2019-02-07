@@ -4,6 +4,7 @@ import { ClipLoader } from 'react-spinners';
 import SearchForm from '../../containers/content/generator/SearchForm';
 import Schedules from '../../containers/content/generator/Schedules';
 import TimetableResults from '../../containers/content/generator/TimetableResults';
+import ErrorPage from './generator/ErrorPage';
 
 class Generator extends React.Component {
   componentDidMount() {
@@ -26,6 +27,7 @@ class Generator extends React.Component {
       location,
       redirect,
       firstRender,
+      error,
     } = this.props;
     if (redirect && location.hash !== redirect.hash) {
       return <Redirect to={redirect} />;
@@ -41,8 +43,8 @@ class Generator extends React.Component {
       );
     }
     switch (location.hash) {
-      case '#schedules': return <Schedules />;
-      case '#timetable': return <TimetableResults />;
+      case '#schedules': return error ? <ErrorPage /> : <Schedules />;
+      case '#timetable': return error ? <ErrorPage /> : <TimetableResults />;
       case '#search': return <SearchForm />;
       default: return <Redirect to={{ pathname: '/generator', hash: '#search' }} />;
     }

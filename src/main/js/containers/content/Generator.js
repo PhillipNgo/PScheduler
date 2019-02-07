@@ -18,6 +18,7 @@ const mapStateToProps = state => ({
   isGenerating: state.generator.isGenerating,
   firstRender: !state.generator.initialValues,
   redirect: state.generator.redirect,
+  error: state.generator.error,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -54,11 +55,15 @@ const mapDispatchToProps = dispatch => ({
               formValues = { ...formValues, ...data };
               dispatch(generateSchedules(formValues, query));
               dispatch(startFirstRender(formValues));
+            })
+            .catch((e) => {
+              dispatch(startFirstRender(formValues));
+              dispatch(endGenerating(e));
             });
         })
-        .catch(() => {
+        .catch((e) => {
           dispatch(startFirstRender(formValues));
-          dispatch(endGenerating([]));
+          dispatch(endGenerating(e));
         });
     } else {
       dispatch(startFirstRender(formValues));
