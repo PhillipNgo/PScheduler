@@ -56,8 +56,9 @@ export const resetBuilder = () => ({
   type: RESET_BUILDER,
 });
 
-export const startBuilding = () => ({
+export const startBuilding = formValues => ({
   type: START_BUILDING,
+  payload: formValues,
 });
 
 export const endBuilding = () => ({

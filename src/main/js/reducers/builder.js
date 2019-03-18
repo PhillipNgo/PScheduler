@@ -42,6 +42,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         isBuilding: true,
+        initialValues: action.payload,
       };
     case END_BUILDING:
       return {

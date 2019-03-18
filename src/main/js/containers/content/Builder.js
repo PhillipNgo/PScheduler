@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 import { parse } from 'query-string';
 import Builder from '../../components/content/Builder';
+import formDefaults from '../../constants/formDefaults';
 import { getCourseMap, getCourseMapWithDispatch } from '../../utils/search';
 import {
   requestBuilderSearch,
@@ -31,36 +32,34 @@ const mapDispatchToProps = dispatch => ({
   }),
   resetBuilder: () => dispatch(resetBuilder()),
   loadSchedule: (query) => {
-    dispatch(startBuilding());
+    const formValues = {
+      term: formDefaults.termValue,
+      ...parse(query, { arrayFormat: 'bracket' }),
+    };
+    dispatch(startBuilding(formValues));
     if (query) {
-      const queryObject = parse(query, { arrayFormat: 'bracket' });
-      try {
-        const data = {};
-        queryObject.c.forEach((course) => {
-          const split = course.split(' ');
-          data[split[0]] = split.length === 2 ? split[1] : null;
-        });
-        const q = Object.keys(data);
-        getCourseMap({ query: process.env.NODE_ENV === 'production' ? JSON.stringify(q) : q, term: data.term })
-          .then((courseMap) => {
-            q.forEach((name, index) => {
-              const courses = courseMap[name];
-              if (courses) {
-                dispatch(addToBuilder(courses, index,
-                  courses.find(course => `${course.crn}` === data[name])));
-              }
-            });
-          })
-          .then(() => {
-            dispatch(endBuilding());
-          })
-          .catch((e) => {
-            dispatch(endBuilding());
-            // dispatch(endGenerating(e));
+      const data = {};
+      formValues.c.forEach((course) => {
+        const split = course.split(' ');
+        data[split[0]] = split.length === 2 ? split[1] : null;
+      });
+      const q = Object.keys(data);
+      getCourseMap({ query: process.env.NODE_ENV === 'production' ? JSON.stringify(q) : q, term: data.term })
+        .then((courseMap) => {
+          q.forEach((name, index) => {
+            const courses = courseMap[name];
+            if (courses) {
+              dispatch(addToBuilder(courses, index,
+                courses.find(course => `${course.crn}` === data[name])));
+            }
           });
-      } catch (err) {
-
-      }
+        })
+        .then(() => {
+          dispatch(endBuilding());
+        })
+        .catch(() => {
+          dispatch(endBuilding());
+        });
     } else {
       dispatch(endBuilding());
     }

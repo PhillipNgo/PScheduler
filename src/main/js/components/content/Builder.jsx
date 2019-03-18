@@ -35,13 +35,13 @@ class Schedules extends React.Component {
     if (prevProps.courseList !== courseList) {
       const queryArray = courseList.map((list) => {
         const { selected } = list;
-        return `${selected.subject}${selected.courseNumber}${selected.crn === 'None' ? '' : `+${selected.crn}`}`
+        return `${selected.subject}${selected.courseNumber}${selected.crn === 'None' ? '' : `+${selected.crn}`}`;
       });
       history.push({
         pathname: '/builder',
-        search: `?${stringify({ c: queryArray, term: term || formDefaults.termValue }, 
+        search: `?${stringify({ c: queryArray, term: term || formDefaults.termValue },
           { encode: false, arrayFormat: 'bracket' })}`,
-      })
+      });
     }
   }
 
@@ -115,7 +115,8 @@ class Schedules extends React.Component {
         { showTextTable && (
           <CourseTable />
         )}
-        { showVisualTable && <ScheduleVisualTable schedule={courseList.map(list => list.selected)} /> }
+        { showVisualTable
+            && <ScheduleVisualTable schedule={courseList.map(list => list.selected)} /> }
       </div>
     );
   }
