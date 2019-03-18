@@ -7,8 +7,7 @@ export const getCourseList = (values) => {
   return fetch(`${courseSearchUrl}?${
     queryString.stringify({
       ...values,
-      query: process.env.NODE_ENV === 'production'
-        ? JSON.stringify(query) : query,
+      query: process.env.NODE_ENV === 'production' ? JSON.stringify(query) : query,
       size: 1000,
     })}`)
     .then(response => response.json())
