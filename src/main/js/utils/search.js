@@ -6,12 +6,13 @@ export const getCourseList = values => (
   fetch(`${courseSearchUrl}?${
     queryString.stringify({
       ...values,
-      query: process.env.NODE_ENV === 'production' ? JSON.stringify(values.query) : values.query,
-      size: 1000 
+      query: process.env.NODE_ENV === 'production'
+        ? JSON.stringify([...new Set(values.query)]) : [...new Set(values.query)],
+      size: 1000,
     })}`)
     .then(response => response.json())
     .then(json => (process.env.NODE_ENV === 'production' ? json : json._embedded.courses)) // eslint-disable-line no-underscore-dangle
-    .catch(error => {console.log(values); return error})
+    .catch(error => error)
 );
 
 export const getCourseMap = values => (

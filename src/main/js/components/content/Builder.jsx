@@ -43,6 +43,7 @@ class Schedules extends React.Component {
           { encode: false, arrayFormat: 'bracket' })}`,
       });
     }
+    $('.selectpicker').selectpicker('refresh');
   }
 
   toggleTextTable() {

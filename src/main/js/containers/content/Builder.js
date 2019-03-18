@@ -38,19 +38,19 @@ const mapDispatchToProps = dispatch => ({
     };
     dispatch(startBuilding(formValues));
     if (query) {
-      const data = {};
+      const data = [];
       formValues.c.forEach((course) => {
         const split = course.split(' ');
-        data[split[0]] = split.length === 2 ? split[1] : null;
+        data.push({ name: split[0], crn: split.length === 2 ? split[1] : null });
       });
-      const q = Object.keys(data);
-      getCourseMap({ query: process.env.NODE_ENV === 'production' ? JSON.stringify(q) : q, term: data.term })
+      const q = data.map(val => val.name);
+      getCourseMap({ query: q, term: formValues.term })
         .then((courseMap) => {
-          q.forEach((name, index) => {
-            const courses = courseMap[name];
+          data.forEach((val, index) => {
+            const courses = courseMap[val.name];
             if (courses) {
               dispatch(addToBuilder(courses, index,
-                courses.find(course => `${course.crn}` === data[name])));
+                courses.find(course => `${course.crn}` === val.crn)));
             }
           });
         })
