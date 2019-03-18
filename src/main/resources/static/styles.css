@@ -38,11 +38,11 @@ body {
     .side-nav-min {
         float: initial !important;
         position: inherit !important;
-        height: 100px !important;
+        height: 75px !important;
         width: 100% !important;
     }
     
-    .side-nav-min > nav {
+    .side-nav-min > nav, .side-nav-min > .bottom {
         visibility: hidden;
     }
 }
@@ -83,7 +83,8 @@ body {
 }
 
 #content-page {
-    min-height: 100vh;
+    height: 100vh;
+    overflow-y: auto;
     overflow-x: hidden
 }
 
