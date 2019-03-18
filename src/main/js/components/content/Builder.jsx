@@ -1,5 +1,6 @@
 import React from 'react';
 import { ClipLoader } from 'react-spinners';
+import { stringify } from 'query-string';
 import ScheduleVisualTable from '../ScheduleVisualTable';
 import CourseTable from '../../containers/content/builder/CourseTable';
 import SearchList from '../../containers/content/builder/SearchList';
@@ -22,7 +23,26 @@ class Schedules extends React.Component {
   }
 
   componentDidMount() {
+    const { firstRender, location, loadSchedule } = this.props;
+    if (firstRender) {
+      loadSchedule(location.search);
+    }
     $('.selectpicker').selectpicker('refresh');
+  }
+
+  componentDidUpdate(prevProps) {
+    const { courseList, term, history } = this.props;
+    if (prevProps.courseList !== courseList) {
+      const queryArray = courseList.map((list) => {
+        const { selected } = list;
+        return `${selected.subject}${selected.courseNumber}${selected.crn === 'None' ? '' : `+${selected.crn}`}`;
+      });
+      history.push({
+        pathname: '/builder',
+        search: `?${stringify({ c: queryArray, term: term || formDefaults.termValue },
+          { encode: false, arrayFormat: 'bracket' })}`,
+      });
+    }
   }
 
   toggleTextTable() {
@@ -35,14 +55,26 @@ class Schedules extends React.Component {
 
   render() {
     const {
-      schedule,
+      courseList,
       isFetching,
+      isBuilding,
+      firstRender,
       resetBuilder,
     } = this.props;
     const {
       showTextTable,
       showVisualTable,
     } = this.state;
+    if (firstRender || isBuilding) {
+      return (
+        <div className="page-loader">
+          <h1>
+            Building schedules...
+          </h1>
+          <ClipLoader size={200} color="darkorange" />
+        </div>
+      );
+    }
     return (
       <div>
         <div id="schedules-bar" className="flex-container-spaced no-print">
@@ -69,6 +101,22 @@ class Schedules extends React.Component {
               Toggle Visual
             </button>
             <button
+              onClick={() => {
+                const text = document.createElement('textarea');
+                text.value = window.location.href;
+                text.style.left = '-9999px';
+                document.body.appendChild(text);
+                text.select();
+                document.execCommand('copy');
+                document.body.removeChild(text);
+              }}
+              type="button"
+              className="btn btn-default"
+              title="Copy Link"
+            >
+              <span className="glyphicon glyphicon-copy" />
+            </button>
+            <button
               onClick={window.print}
               type="button"
               className="btn btn-default"
@@ -83,7 +131,8 @@ class Schedules extends React.Component {
         { showTextTable && (
           <CourseTable />
         )}
-        { showVisualTable && <ScheduleVisualTable schedule={schedule} /> }
+        { showVisualTable
+            && <ScheduleVisualTable schedule={courseList.map(list => list.selected)} /> }
       </div>
     );
   }

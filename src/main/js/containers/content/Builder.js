@@ -1,17 +1,25 @@
 import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
+import { parse } from 'query-string';
 import Builder from '../../components/content/Builder';
-import { getCourseMapWithDispatch } from '../../utils/search';
-import { requestBuilderSearch, receiveBuilderSearch, resetBuilder } from '../../actions/builder';
+import formDefaults from '../../constants/formDefaults';
+import { getCourseMap, getCourseMapWithDispatch } from '../../utils/search';
+import {
+  requestBuilderSearch,
+  receiveBuilderSearch,
+  resetBuilder,
+  addToBuilder,
+  startBuilding,
+  endBuilding,
+} from '../../actions/builder';
 
-const mapStateToProps = (state) => {
-  const schedule = [...state.builder.schedule];
-  return {
-    isFetching: state.builder.isFetching,
-    schedule: state.builder.courseList
-      .map(list => schedule.find(course => course === list.selected)),
-  };
-};
+const mapStateToProps = state => ({
+  isFetching: state.builder.isFetching,
+  isBuilding: state.builder.isBuilding,
+  courseList: state.builder.courseList,
+  term: state.form.builder_form && state.form.builder_form.values.term,
+  firstRender: !state.builder.initialValues,
+});
 
 const mapDispatchToProps = dispatch => ({
   fetchCourses: query => dispatch((thunkDispatch, getState) => {
@@ -23,6 +31,39 @@ const mapDispatchToProps = dispatch => ({
     ));
   }),
   resetBuilder: () => dispatch(resetBuilder()),
+  loadSchedule: (query) => {
+    const formValues = {
+      term: formDefaults.termValue,
+      ...parse(query, { arrayFormat: 'bracket' }),
+    };
+    dispatch(startBuilding(formValues));
+    if (query) {
+      const data = {};
+      formValues.c.forEach((course) => {
+        const split = course.split(' ');
+        data[split[0]] = split.length === 2 ? split[1] : null;
+      });
+      const q = Object.keys(data);
+      getCourseMap({ query: process.env.NODE_ENV === 'production' ? JSON.stringify(q) : q, term: data.term })
+        .then((courseMap) => {
+          q.forEach((name, index) => {
+            const courses = courseMap[name];
+            if (courses) {
+              dispatch(addToBuilder(courses, index,
+                courses.find(course => `${course.crn}` === data[name])));
+            }
+          });
+        })
+        .then(() => {
+          dispatch(endBuilding());
+        })
+        .catch(() => {
+          dispatch(endBuilding());
+        });
+    } else {
+      dispatch(endBuilding());
+    }
+  },
 });
 
 const form = connect(
