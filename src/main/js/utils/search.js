@@ -22,7 +22,7 @@ export const getCourseMap = values => (
       courseList.some((course) => {
         const courseId = course.subject + course.courseNumber;
         if (!(courseId in courses)) {
-          if (Object.keys(courses).length === 6) {
+          if (Object.keys(courses).length === 12) {
             return true;
           }
           courses[courseId] = [];
