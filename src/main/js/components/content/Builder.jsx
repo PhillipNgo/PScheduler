@@ -101,6 +101,22 @@ class Schedules extends React.Component {
               Toggle Visual
             </button>
             <button
+              onClick={() => {
+                const text = document.createElement('textarea');
+                text.value = window.location.href;
+                text.style.left = '-9999px';
+                document.body.appendChild(text);
+                text.select();
+                document.execCommand('copy');
+                document.body.removeChild(text);
+              }}
+              type="button"
+              className="btn btn-default"
+              title="Copy Link"
+            >
+              <span className="glyphicon glyphicon-copy" />
+            </button>
+            <button
               onClick={window.print}
               type="button"
               className="btn btn-default"
