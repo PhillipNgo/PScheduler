@@ -11,7 +11,7 @@ public class DynamoDBUpdater {
     private static final DynamoDBCourseDao courseDao = DynamoDBCourseDao.instance();
 
     public static void main(String[] args) throws Exception {
-        int[] terms = new int[]{201901};
+        int[] terms = new int[]{201909};
         for (int term : terms) {
             updateTerm(term);
             // deleteTerm(term);
@@ -23,7 +23,7 @@ public class DynamoDBUpdater {
         VTParser parser = new VTParser(Course.class, term);
         List<com.pscheduler.util.Course> courseListGeneric;
         courseListGeneric = parser.parseTermFile("./src/main/resources/data/" + term + ".txt");
-        courseListGeneric = parser.parseTerm();
+        // courseListGeneric = parser.parseTerm();
         courseDao.saveCourses((List<Course>) (List<?>) courseListGeneric);
     }
 

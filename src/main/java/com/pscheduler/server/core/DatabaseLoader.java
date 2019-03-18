@@ -18,7 +18,7 @@ import java.util.List;
 public class DatabaseLoader implements ApplicationRunner {
     private final CourseRepository courses;
     private final MeetingRepository meetings;
-    private final int TERM = 201901;
+    private final int TERM = 201909;
 
     @Autowired
     public DatabaseLoader (CourseRepository courses, MeetingRepository meetings) {
