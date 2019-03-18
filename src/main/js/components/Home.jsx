@@ -21,9 +21,6 @@ const Home = () => (
           glyphicon="list-alt"
           description="Course Timetable"
           link="/timetable"
-          style={{
-            marginLeft: '-3%',
-          }}
         />
         <Glyph
           glyphicon="calendar"
@@ -51,7 +48,7 @@ const Glyph = ({
   hash = '',
   style,
 }) => (
-  <div className="col-sm-4 pad-top-large">
+  <div className="col-md-4 pad-top-large">
     <Link
       to={{
         pathname: link,
