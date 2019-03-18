@@ -6,6 +6,8 @@ import {
   SELECT_CRN,
   UNSELECT_CRN,
   RESET_BUILDER,
+  START_BUILDING,
+  END_BUILDING,
 } from './types';
 
 export const requestBuilderSearch = () => ({
@@ -52,4 +54,12 @@ export const unselectCrn = (subject, courseNumber, id) => ({
 
 export const resetBuilder = () => ({
   type: RESET_BUILDER,
+});
+
+export const startBuilding = () => ({
+  type: START_BUILDING,
+});
+
+export const endBuilding = () => ({
+  type: END_BUILDING,
 });

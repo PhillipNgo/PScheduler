@@ -6,11 +6,14 @@ import {
   SELECT_CRN,
   UNSELECT_CRN,
   RESET_BUILDER,
+  START_BUILDING,
+  END_BUILDING,
 } from '../actions/types';
 import Schedule from '../utils/Schedule';
 
 const initialState = {
   isFetching: false,
+  isBuilding: false,
   courseList: [],
   searchList: {},
   schedule: new Schedule(0),
@@ -35,6 +38,16 @@ const createEmptyCourse = (subject, courseNumber) => ({
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case START_BUILDING:
+      return {
+        ...state,
+        isBuilding: true,
+      };
+    case END_BUILDING:
+      return {
+        ...state,
+        isBuilding: false,
+      };
     case REQUEST_BUILDER_SEARCH:
       return {
         ...state,
@@ -52,7 +65,7 @@ export default (state = initialState, action) => {
       }
       const { courses, id, course } = action.payload;
       const newSchedule = new Schedule(state.schedule);
-      const selected = course === null || newSchedule.conflictsWith(course)
+      const selected = !course || newSchedule.conflictsWith(course)
         ? createEmptyCourse(courses[0].subject, courses[0].courseNumber) : course;
       newSchedule.add(selected);
       const courseList = [...state.courseList, {

@@ -8,10 +8,13 @@ import {
   receiveBuilderSearch,
   resetBuilder,
   addToBuilder,
+  startBuilding,
+  endBuilding,
 } from '../../actions/builder';
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   isFetching: state.builder.isFetching,
+  isBuilding: state.builder.isBuilding,
   courseList: state.builder.courseList,
   term: state.form.builder_form && state.form.builder_form.values.term,
   firstRender: !state.builder.initialValues,
@@ -28,32 +31,38 @@ const mapDispatchToProps = dispatch => ({
   }),
   resetBuilder: () => dispatch(resetBuilder()),
   loadSchedule: (query) => {
+    dispatch(startBuilding());
     if (query) {
-      const queryObject = parse(query, { arrayFormat: "bracket" });
-      const data = {};
-      queryObject.c.forEach((course) => {
-        const split = course.split('+');
-        data[split[0]] = split.length === 2 ? split[1] : null;
-      });
-      const q = Object.keys(data);
-      getCourseMap({ query: process.env.NODE_ENV === 'production' ? JSON.stringify(q) : q, term: data.term })
-        .then((courseMap) => {
-          q.forEach((name, index) => {
-            const courses = courseMap[name];
-            if (courses) {
-              dispatch(addToBuilder(courses, index, courses.find(course => course.crn === data[name])));
-            }
-          });
-        })
-        .then(() => {
-          // dispatch(startFirstRender({}));
-        })
-        .catch((e) => {
-          // dispatch(startFirstRender(formValues));
-          // dispatch(endGenerating(e));
+      const queryObject = parse(query, { arrayFormat: 'bracket' });
+      try {
+        const data = {};
+        queryObject.c.forEach((course) => {
+          const split = course.split(' ');
+          data[split[0]] = split.length === 2 ? split[1] : null;
         });
+        const q = Object.keys(data);
+        getCourseMap({ query: process.env.NODE_ENV === 'production' ? JSON.stringify(q) : q, term: data.term })
+          .then((courseMap) => {
+            q.forEach((name, index) => {
+              const courses = courseMap[name];
+              if (courses) {
+                dispatch(addToBuilder(courses, index,
+                  courses.find(course => `${course.crn}` === data[name])));
+              }
+            });
+          })
+          .then(() => {
+            dispatch(endBuilding());
+          })
+          .catch((e) => {
+            dispatch(endBuilding());
+            // dispatch(endGenerating(e));
+          });
+      } catch (err) {
+
+      }
     } else {
-      // dispatch(startFirstRender(formValues));
+      dispatch(endBuilding());
     }
   },
 });

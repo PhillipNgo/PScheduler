@@ -57,12 +57,24 @@ class Schedules extends React.Component {
     const {
       courseList,
       isFetching,
+      isBuilding,
+      firstRender,
       resetBuilder,
     } = this.props;
     const {
       showTextTable,
       showVisualTable,
     } = this.state;
+    if (firstRender || isBuilding) {
+      return (
+        <div className="page-loader">
+          <h1>
+            Building schedules...
+          </h1>
+          <ClipLoader size={200} color="darkorange" />
+        </div>
+      );
+    }
     return (
       <div>
         <div id="schedules-bar" className="flex-container-spaced no-print">
