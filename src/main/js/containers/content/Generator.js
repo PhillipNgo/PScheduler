@@ -43,7 +43,7 @@ const mapDispatchToProps = dispatch => ({
           delete data.c;
           data.courses = {};
           const q = courses.map(course => course.name);
-          getCourseMap({ query: process.env.NODE_ENV === 'production' ? JSON.stringify(q) : q, term: data.term })
+          getCourseMap({ query: q, term: data.term })
             .then((courseMap) => {
               courses.forEach((course, index) => {
                 const copy = { ...course };

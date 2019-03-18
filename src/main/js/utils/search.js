@@ -3,10 +3,15 @@ import { courseSearchUrl } from '../constants/resources';
 import 'whatwg-fetch';
 
 export const getCourseList = values => (
-  fetch(`${courseSearchUrl}?${queryString.stringify({ ...values, size: 1000 })}`)
+  fetch(`${courseSearchUrl}?${
+    queryString.stringify({
+      ...values,
+      query: process.env.NODE_ENV === 'production' ? JSON.stringify(values.query) : values.query,
+      size: 1000 
+    })}`)
     .then(response => response.json())
     .then(json => (process.env.NODE_ENV === 'production' ? json : json._embedded.courses)) // eslint-disable-line no-underscore-dangle
-    .catch(error => error)
+    .catch(error => {console.log(values); return error})
 );
 
 export const getCourseMap = values => (

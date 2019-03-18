@@ -1,6 +1,6 @@
 {
   "name": "pscheduler",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "src/main/js/index.jsx",
   "scripts": {
     "dev": "webpack-dev-server --hot --inline",
