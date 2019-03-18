@@ -252,7 +252,7 @@ class SearchForm extends React.Component {
             </div>
           </FormSection>
         </div>
-        <div className="pad-top border-top">
+        <div className="pad-top pad-bottom border-top">
           <button className="btn btn-default btn-lg" type="submit">
             Create Schedules
           </button>
