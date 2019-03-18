@@ -11,19 +11,58 @@ body {
 }
 
 #side-nav {
-    width: 12.5%;
-    height: 100vh;
+    z-index: 1000;
     float: left;
+    height: 100vh;
     text-align: center;
-    transition: width 1s;
-    font-family: 'Raleway', sans-serif;
     color: white;
+    font-family: 'Raleway', sans-serif;
     background-color: darkslategray;
     box-shadow: 1px 0 4px lightgrey;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
 }
 
-.side-nav-min {
-    width: 7% !important;
+#side-nav::-webkit-scrollbar {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    #side-nav {
+        position: absolute;
+        width: 75%;
+        transition: width 0s;
+    }
+    
+    .side-nav-min {
+        float: initial !important;
+        position: inherit !important;
+        height: 100px !important;
+        width: 100% !important;
+    }
+    
+    .side-nav-min > nav {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #side-nav {
+        position: inherit;
+        width: 12.5%;
+        transition: width 1s;
+    }
+
+    .side-nav-min {
+        width: 7% !important;
+    }
+
+    .bottom {
+        position: fixed;
+        width: inherit;
+        bottom: 0;
+    }
 }
 
 #logo {
@@ -31,10 +70,12 @@ body {
     background-image: url("logo.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 75%;
+    background-size: contain;
     height: 15vh;
     padding: 10px 0 10px 0;
+    margin: 0px 20px 0px 20px;
     transition: height 1s;
+    object-fit: contain;
 }
 
 .logo-min {
@@ -42,7 +83,7 @@ body {
 }
 
 #content-page {
-    height: 100vh;
+    min-height: 100vh;
     overflow-x: hidden
 }
 
@@ -180,12 +221,6 @@ form h4 {
     display: none;
 }
 
-.bottom {
-    position: absolute;
-    width: inherit;
-    bottom: 0;
-}
-
 .menu {
     font-weight: bold;
     padding: 0;
@@ -197,7 +232,6 @@ form h4 {
     color: white;
     background-color: darkslategray;
     display: block;
-    font-size: 1.5vh;
     padding-top: 5%;
     padding-bottom: 5%;
 }
