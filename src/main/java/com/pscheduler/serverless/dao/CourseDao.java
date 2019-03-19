@@ -8,4 +8,6 @@ public interface CourseDao {
     List<Course> searchCourses(int term, String query);
     void saveCourses(List<Course> courses);
     void deleteCoursesForTerm(int term);
+    List<Course> getCoursesForTerm(int term);
+    public void deleteCourses(List<Course> courses);
 }
