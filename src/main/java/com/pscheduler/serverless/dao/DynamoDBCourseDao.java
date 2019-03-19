@@ -57,6 +57,23 @@ public class DynamoDBCourseDao implements CourseDao {
     }
 
     @Override
+    public List<Course> getCoursesForTerm(int term) {
+        Map<String, AttributeValue> eav = new HashMap<>();
+        eav.put(":term", new AttributeValue().withN("" + term));
+
+        DynamoDBQueryExpression<Course> query = new DynamoDBQueryExpression<Course>()
+            .withExpressionAttributeValues(eav)
+            .withKeyConditionExpression("term = :term");
+
+        return mapper.query(Course.class, query);
+    }
+
+    @Override
+    public void deleteCourses(List<Course> courses) {
+        mapper.batchDelete(courses);
+    }
+
+    @Override
     public void saveCourses(List<Course> courses) {
         mapper.batchSave(courses);
     }
