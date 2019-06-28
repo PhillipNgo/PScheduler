@@ -18,6 +18,7 @@ public class CourseBuilderFactory {
     private List<Meeting> meetings;
     private String exam;
     private int term;
+    private double gpa;
 
     public CourseBuilderFactory(Class<?> factoryClass) {
         this.factoryClassName = factoryClass.getName();
@@ -36,6 +37,7 @@ public class CourseBuilderFactory {
         this.meetings = new ArrayList<>();
         this.exam = "00X";
         this.term = 0;
+        this.gpa = 0.00;
     }
 
     public CourseBuilderFactory crn(int crn) {
@@ -82,6 +84,11 @@ public class CourseBuilderFactory {
         if (meeting != null) {
             this.meetings.add(meeting);
         }
+        return this;
+    }
+
+    public CourseBuilderFactory gpa(double gpa) {
+        this.gpa = gpa;
         return this;
     }
 
@@ -141,7 +148,8 @@ public class CourseBuilderFactory {
                     capacity,
                     instructor,
                     meetings,
-                    exam
+                    exam,
+                    gpa
                 );
             case "com.pscheduler.serverless.pojo.Course":
                 return new com.pscheduler.serverless.pojo.Course(

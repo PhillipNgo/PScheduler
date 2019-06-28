@@ -1,6 +1,7 @@
 package com.pscheduler.util.parser;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -11,6 +12,12 @@ import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
 
 import com.pscheduler.util.CourseBuilderFactory;
 import com.pscheduler.util.Course;
+
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * The VTParser is the I/O handler for reading data from the timetable or parsing data from our database
@@ -30,6 +37,8 @@ public class VTParser {
 
     // regex for splitting a given COURSE_PATTERN's data
     private final String SPLIT_PATTERN = "(?<=\\S)\\s*[\\t\\n]\\s*(?=\\S)";
+
+    private BufferedWriter writer;
 
     /**
      * Default constructor instantiates the web form without filling any values
@@ -62,6 +71,7 @@ public class VTParser {
         this.terms = this.vtForm.getSelectOptionValues("TERMYEAR");
         this.term = 0;
         this.courseBuilderFactory = new CourseBuilderFactory(courseType);
+        this.writer = new BufferedWriter(new FileWriter("C:\\Users\\Francis Nguyen\\Desktop\\test.txt"));
     }
 
     /**
@@ -244,10 +254,11 @@ public class VTParser {
      * @param listing the string to be parsed
      * @return the parsed course
      */
-    private Course makeClass(String listing) {
+    private Course makeClass(String listing) throws IOException {
         this.courseBuilderFactory.reset();
         String[] values = listing.split(SPLIT_PATTERN); //split listings based on column
         String[] subNum = values[1].split("-");
+
 //        System.out.println("Parsing: " + Arrays.toString(values)); //Debugging
         this.courseBuilderFactory
             .term(this.term)
@@ -258,7 +269,8 @@ public class VTParser {
             .type(values[3].substring(0, 1))
             .credits(Integer.parseInt(values[4].substring(0, 1)))
             .capacity(Integer.parseInt(values[5]))
-            .instructor(values[6]);
+            .instructor(values[6])
+            .gpa(3.95);
 
         int ind = 6;
         if (values.length > 7) {
@@ -300,9 +312,11 @@ public class VTParser {
                     ind++;
                 }
             }
+        } else {
+            //writer.write("Parsing: " + Arrays.toString(values) + "\n");
         }
-
         return courseBuilderFactory.build();
+
     }
 
     /**
@@ -338,6 +352,7 @@ public class VTParser {
             courses.add(makeClass(scan.nextLine()));
         }
         scan.close();
+        writer.close();
         return courses;
     }
 }

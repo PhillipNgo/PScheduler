@@ -11,6 +11,8 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,8 +39,14 @@ public class DatabaseLoader implements ApplicationRunner {
             for (com.pscheduler.util.Meeting meeting : course.getMeetings()) {
                 Meeting serverMeeting = (Meeting) meeting;
                 meetings.save(serverMeeting);
+
             }
         }
         courses.save(courseList);
+
+        Iterable<Course> test = courses.findAll();
+        for(Course c : test) {
+            System.out.println("Crn: " + c.getGpa());
+        }
     }
 }

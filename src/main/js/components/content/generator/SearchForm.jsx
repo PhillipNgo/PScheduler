@@ -5,6 +5,14 @@ import FormModule from '../../FormModule';
 import SearchList from '../../../containers/content/generator/SearchList';
 import formDefaults from '../../../constants/formDefaults';
 
+function testFunc() {
+  console.log('hello');
+  fetch("http://localhost:8080/api")
+    .then(res => res.json())
+    .then(res => console.log('res: ', res))
+    .catch(err => err);
+}
+
 class SearchForm extends React.Component {
   componentWillMount() {
     const { firstRender, initialize, formValues } = this.props;
@@ -40,6 +48,7 @@ class SearchForm extends React.Component {
         }}
       >
         <div className="page-header no-margin-bottom">
+          <h1 onClick={() => testFunc()}>Francis Test</h1>
           <h1 className="o">
             Restrictions
           </h1>

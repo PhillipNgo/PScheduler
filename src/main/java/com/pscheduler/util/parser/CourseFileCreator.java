@@ -11,6 +11,7 @@ import com.pscheduler.server.model.Meeting;
 public class CourseFileCreator {
 
     public static void main(String[] args) throws Exception {
+        System.out.println("CourseFileCreator ran");
         outputTermDataFile(args[0]);
     }
 

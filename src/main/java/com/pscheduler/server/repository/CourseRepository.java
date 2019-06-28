@@ -25,6 +25,7 @@ public interface CourseRepository extends PagingAndSortingRepository<Course, Int
         + " AND (:credits IS NULL OR course.credits = :credits)"
         + " AND (:name IS NULL OR course.name = :name)"
         + " AND (:term IS NULL OR course.term = :term)"
+        + " AND (:gpa IS NULL OR course.gpa = :gpa)"
     )
     @RestResource(exported = false)
     Page<Course> searchAll(
@@ -38,6 +39,7 @@ public interface CourseRepository extends PagingAndSortingRepository<Course, Int
         @Param("credits") Integer credits,
         @Param("name") String name,
         @Param("term") Integer term,
+        @Param("gpa") Double gpa,
         Pageable page
     );
 }

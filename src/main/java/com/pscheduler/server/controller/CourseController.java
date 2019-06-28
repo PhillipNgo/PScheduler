@@ -42,6 +42,7 @@ public class CourseController {
         @RequestParam(value="credits", required = false) Integer credits,
         @RequestParam(value="name", required = false) String name,
         @RequestParam(value="sort", required = false) List<String> sorts,
+        @RequestParam(value="gpa", required = false) Double gpa,
         Pageable page
     ) {
         try {
@@ -51,13 +52,13 @@ public class CourseController {
                 String searchTerm = q.toLowerCase().replaceAll(" ", "");
                 return courseRepo.searchAll(
                     searchTerm, crn, subject, number, type, instructor,
-                    capacity, credits, name, term, pageRequest
+                    capacity, credits, name, term, gpa, pageRequest
                 ).getContent().stream();
             }).collect(Collectors.toList());
             Page<Course> pagedCourses = new PageImpl<>(courses, pageRequest, courses.size());
             PagedResources<Resource<Course>> resources = assembler.toResource(pagedCourses);
             resources.add(linkTo(methodOn(CourseController.class).getSearch(
-                query, term, crn, subject, number, type, instructor, capacity, credits, name, sorts, page
+                query, term, crn, subject, number, type, instructor, capacity, credits, name, sorts, gpa, page
             )).withSelfRel());
             return ResponseEntity.ok(resources);
         } catch (Exception ex) {

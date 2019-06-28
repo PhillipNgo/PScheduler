@@ -6,6 +6,7 @@ import ContentPage from './ContentPage';
 import menu from '../constants/menu';
 import MaintenancePage from './MaintenancePage';
 
+
 const App = ({ maintenance }) => (
   maintenance
     ? <Route path="/" component={MaintenancePage} /> : (

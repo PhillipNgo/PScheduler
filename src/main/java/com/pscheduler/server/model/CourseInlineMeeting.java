@@ -17,4 +17,5 @@ public interface CourseInlineMeeting {
     public String getInstructor();
     List<Meeting> getMeetings();
     public String getExam();
+    public Double getGpa();
 }

@@ -55,6 +55,11 @@ public class Course implements com.pscheduler.util.Course {
     @Max(value = 999999)
     private int term;
 
+    @NotNull
+    @Min(value = 0)
+    @Max(value = 10)
+    private double gpa;
+
     @Version
     private long version;
 
@@ -73,7 +78,8 @@ public class Course implements com.pscheduler.util.Course {
         int capacity,
         String instructor,
         List<com.pscheduler.util.Meeting> meetings,
-        String exam
+        String exam,
+        double gpa
     ) {
         this.crn = crn;
         this.subject = subject;
@@ -89,6 +95,7 @@ public class Course implements com.pscheduler.util.Course {
         }
         this.exam = exam;
         this.term = term;
+        this.gpa = gpa;
     }
 
     public int getCrn() {
@@ -142,4 +149,6 @@ public class Course implements com.pscheduler.util.Course {
     public void setTerm(int term) {
         this.term = term;
     }
+
+    public double getGpa() { return gpa; }
 }
