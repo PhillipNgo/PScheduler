@@ -1,9 +1,11 @@
 package com.pscheduler.server.core;
 
 import com.pscheduler.server.model.Course;
+import com.pscheduler.server.model.GpaCourse;
 import com.pscheduler.server.model.Meeting;
 import com.pscheduler.server.repository.CourseRepository;
 import com.pscheduler.server.repository.MeetingRepository;
+import com.pscheduler.server.repository.GPACourseRepository;
 import com.pscheduler.util.parser.VTParser;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,16 +23,18 @@ public class DatabaseLoader implements ApplicationRunner {
     private final CourseRepository courses;
     private final MeetingRepository meetings;
     private final int TERM = 201909;
+    private final GPACourseRepository gpa;
 
     @Autowired
-    public DatabaseLoader (CourseRepository courses, MeetingRepository meetings) {
+    public DatabaseLoader (CourseRepository courses, MeetingRepository meetings, GPACourseRepository gpa) {
         this.courses = courses;
         this.meetings = meetings;
+        this.gpa = gpa;
     }
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        VTParser parser = new VTParser(Course.class, TERM);
+        /*VTParser parser = new VTParser(Course.class, TERM);
 
         List<com.pscheduler.util.Course> courseListGeneric = parser.parseTermFile("./src/main/resources/data/" + TERM + ".txt");
         List<Course> courseList = new ArrayList<>();
@@ -47,6 +51,10 @@ public class DatabaseLoader implements ApplicationRunner {
         Iterable<Course> test = courses.findAll();
         for(Course c : test) {
             System.out.println("Crn: " + c.getGpa());
-        }
+        }*/
+
+        GpaCourse course = new GpaCourse();
+        System.out.println("working: "  + course.getSubject());
+        gpa.save(course);
     }
 }
