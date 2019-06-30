@@ -13,8 +13,6 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,7 +32,7 @@ public class DatabaseLoader implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        /*VTParser parser = new VTParser(Course.class, TERM);
+        VTParser parser = new VTParser(Course.class, TERM);
 
         List<com.pscheduler.util.Course> courseListGeneric = parser.parseTermFile("./src/main/resources/data/" + TERM + ".txt");
         List<Course> courseList = new ArrayList<>();
@@ -48,10 +46,6 @@ public class DatabaseLoader implements ApplicationRunner {
         }
         courses.save(courseList);
 
-        Iterable<Course> test = courses.findAll();
-        for(Course c : test) {
-            System.out.println("Crn: " + c.getGpa());
-        }*/
 
         GpaCourse course = new GpaCourse();
         System.out.println("working: "  + course.getSubject());

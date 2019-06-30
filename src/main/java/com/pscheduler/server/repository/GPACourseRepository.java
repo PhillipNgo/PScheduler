@@ -12,7 +12,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-@RepositoryRestResource(excerptProjection = GpaInline.class)
+@RepositoryRestResource(exported = true)
 public interface GPACourseRepository extends CrudRepository<GpaCourse, Integer> {
 
     /*@RestResource(exported = false)

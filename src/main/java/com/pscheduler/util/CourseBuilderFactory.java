@@ -148,8 +148,7 @@ public class CourseBuilderFactory {
                     capacity,
                     instructor,
                     meetings,
-                    exam,
-                    gpa
+                    exam
                 );
             case "com.pscheduler.serverless.pojo.Course":
                 return new com.pscheduler.serverless.pojo.Course(

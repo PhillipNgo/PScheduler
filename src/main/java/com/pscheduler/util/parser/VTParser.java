@@ -269,8 +269,7 @@ public class VTParser {
             .type(values[3].substring(0, 1))
             .credits(Integer.parseInt(values[4].substring(0, 1)))
             .capacity(Integer.parseInt(values[5]))
-            .instructor(values[6])
-            .gpa(3.95);
+            .instructor(values[6]);
 
         int ind = 6;
         if (values.length > 7) {
