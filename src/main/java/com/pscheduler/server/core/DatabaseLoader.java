@@ -41,11 +41,9 @@ public class DatabaseLoader implements ApplicationRunner {
             for (com.pscheduler.util.Meeting meeting : course.getMeetings()) {
                 Meeting serverMeeting = (Meeting) meeting;
                 meetings.save(serverMeeting);
-
             }
         }
         courses.save(courseList);
-
 
         GPACourse course = new GPACourse("Test");
         gpa.save(course);

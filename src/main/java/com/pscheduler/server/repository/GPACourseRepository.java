@@ -6,6 +6,5 @@ import org.springframework.data.repository.CrudRepository;
 
 
 @RepositoryRestResource(collectionResourceRel="gpa")
-public interface GPACourseRepository extends CrudRepository<GPACourse, Integer> {
+public interface GPACourseRepository extends CrudRepository<GPACourse, Integer> {}
 
-}
