@@ -12,9 +12,6 @@ import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
 import com.pscheduler.util.CourseBuilderFactory;
 import com.pscheduler.util.Course;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * The VTParser is the I/O handler for reading data from the timetable or parsing data from our database
  *
