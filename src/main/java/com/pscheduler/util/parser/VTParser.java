@@ -251,7 +251,6 @@ public class VTParser {
         this.courseBuilderFactory.reset();
         String[] values = listing.split(SPLIT_PATTERN); //split listings based on column
         String[] subNum = values[1].split("-");
-
 //        System.out.println("Parsing: " + Arrays.toString(values)); //Debugging
         this.courseBuilderFactory
             .term(this.term)
@@ -307,7 +306,6 @@ public class VTParser {
         }
 
         return courseBuilderFactory.build();
-
     }
 
     /**

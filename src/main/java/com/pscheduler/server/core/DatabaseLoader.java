@@ -47,9 +47,8 @@ public class DatabaseLoader implements ApplicationRunner {
         courses.save(courseList);
 
 
-        //GPACourse course = new GPACourse("Test");
-        //System.out.println("working: "  + course.getSubject());
-        //gpa.save(course);
+        GPACourse course = new GPACourse("Test");
+        gpa.save(course);
     }
 }
 
