@@ -4,7 +4,6 @@ import 'whatwg-fetch';
 
 export const getCourseList = (values) => {
   const query = [...new Set(Array.isArray(values.query) ? values.query : [values.query])];
-  console.log('GETTING COURSE LIST----------------------------------------------------------------', values);
   return fetch(`${courseSearchUrl}?${
     queryString.stringify({
       ...values,

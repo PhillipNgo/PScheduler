@@ -22,7 +22,6 @@ export default (state = initialState, action) => {
         isFetching: true,
       };
     case RECEIVE_COURSE_SEARCH:
-      console.log('GETTING RECEIVE_COURSE_SEARCH: ', action.payload);
       return {
         ...state,
         isFetching: false,
@@ -32,7 +31,6 @@ export default (state = initialState, action) => {
       if (state.courseList.length === 12) {
         return state;
       }
-      console.log('getting: ', action.payload);
       const { courses, id } = action.payload;
       const courseToAdd = [...courses];
       courseToAdd.id = id;

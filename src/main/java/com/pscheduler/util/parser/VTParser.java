@@ -1,7 +1,6 @@
 package com.pscheduler.util.parser;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -13,9 +12,6 @@ import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
 import com.pscheduler.util.CourseBuilderFactory;
 import com.pscheduler.util.Course;
 
-
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,8 +33,6 @@ public class VTParser {
 
     // regex for splitting a given COURSE_PATTERN's data
     private final String SPLIT_PATTERN = "(?<=\\S)\\s*[\\t\\n]\\s*(?=\\S)";
-
-    private BufferedWriter writer;
 
     /**
      * Default constructor instantiates the web form without filling any values
@@ -71,7 +65,6 @@ public class VTParser {
         this.terms = this.vtForm.getSelectOptionValues("TERMYEAR");
         this.term = 0;
         this.courseBuilderFactory = new CourseBuilderFactory(courseType);
-        this.writer = new BufferedWriter(new FileWriter("C:\\Users\\Francis Nguyen\\Desktop\\test.txt"));
     }
 
     /**
@@ -254,7 +247,7 @@ public class VTParser {
      * @param listing the string to be parsed
      * @return the parsed course
      */
-    private Course makeClass(String listing) throws IOException {
+    private Course makeClass(String listing) {
         this.courseBuilderFactory.reset();
         String[] values = listing.split(SPLIT_PATTERN); //split listings based on column
         String[] subNum = values[1].split("-");
@@ -311,9 +304,8 @@ public class VTParser {
                     ind++;
                 }
             }
-        } else {
-            //writer.write("Parsing: " + Arrays.toString(values) + "\n");
         }
+
         return courseBuilderFactory.build();
 
     }
@@ -351,7 +343,6 @@ public class VTParser {
             courses.add(makeClass(scan.nextLine()));
         }
         scan.close();
-        writer.close();
         return courses;
     }
 }

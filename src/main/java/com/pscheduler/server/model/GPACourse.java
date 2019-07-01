@@ -1,16 +1,15 @@
 package com.pscheduler.server.model;
 
-import javax.persistence.*;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Version;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.util.ArrayList;
-import java.util.List;
 
 
 @Entity
-public class GpaCourse {
+public class GPACourse {
 
     @Id
     @GeneratedValue
@@ -23,11 +22,10 @@ public class GpaCourse {
     @Version
     private long version;
 
-    public GpaCourse() {
-        this.subject = "hi";
+    public GPACourse() {
     }
 
-    public GpaCourse(String subject) {
+    public GPACourse(String subject) {
         this.subject = subject;
     }
 

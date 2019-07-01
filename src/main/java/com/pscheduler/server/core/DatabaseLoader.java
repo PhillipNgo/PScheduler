@@ -1,7 +1,7 @@
 package com.pscheduler.server.core;
 
 import com.pscheduler.server.model.Course;
-import com.pscheduler.server.model.GpaCourse;
+import com.pscheduler.server.model.GPACourse;
 import com.pscheduler.server.model.Meeting;
 import com.pscheduler.server.repository.CourseRepository;
 import com.pscheduler.server.repository.MeetingRepository;
@@ -21,13 +21,13 @@ public class DatabaseLoader implements ApplicationRunner {
     private final CourseRepository courses;
     private final MeetingRepository meetings;
     private final int TERM = 201909;
-    private final GPACourseRepository gpa;
+    //private final GPACourseRepository gpa;
 
     @Autowired
     public DatabaseLoader (CourseRepository courses, MeetingRepository meetings, GPACourseRepository gpa) {
         this.courses = courses;
         this.meetings = meetings;
-        this.gpa = gpa;
+        //this.gpa = gpa;
     }
 
     @Override
@@ -47,8 +47,9 @@ public class DatabaseLoader implements ApplicationRunner {
         courses.save(courseList);
 
 
-        GpaCourse course = new GpaCourse();
-        System.out.println("working: "  + course.getSubject());
-        gpa.save(course);
+        //GPACourse course = new GPACourse("Test");
+        //System.out.println("working: "  + course.getSubject());
+        //gpa.save(course);
     }
 }
+
