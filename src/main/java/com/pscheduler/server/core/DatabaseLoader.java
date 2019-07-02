@@ -45,7 +45,21 @@ public class DatabaseLoader implements ApplicationRunner {
         }
         courses.save(courseList);
 
-        CourseGPA course = new CourseGPA("Test");
+        CourseGPA course = new CourseGPA(
+            "CS",
+            "4704",
+            "Sooftware Engineering Capstone",
+            "Servant Cortes",
+            82731,
+            3,
+            4.00,
+            15,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0);
         gpa.save(course);
     }
 }
