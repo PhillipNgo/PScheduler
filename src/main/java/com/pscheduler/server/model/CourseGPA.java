@@ -75,8 +75,7 @@ public class CourseGPA {
     @Max(value = 1000)
     private int withdraws;
 
-    public CourseGPA() {
-    }
+    public CourseGPA() {}
 
     public CourseGPA(
         String subject,
@@ -118,56 +117,107 @@ public class CourseGPA {
         this.subject = subject;
     }
 
-    public String getCourseNumber() { return this.courseNumber; }
+    public String getCourseNumber() {
+        return this.courseNumber;
+    }
 
-    public void setCourseNumber(String courseNumber) { this.courseNumber = courseNumber; }
+    public void setCourseNumber(String courseNumber) {
+        this.courseNumber = courseNumber;
+    }
 
-    public String getName() { return this.name; }
+    public String getName() {
+        return this.name;
+    }
 
-    public void setName(String name) { this.name = name; }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public String getInstructor() { return this.instructor; }
+    public String getInstructor() {
+        return this.instructor;
+    }
 
-    public void setInstructor(String instructor) { this.instructor = instructor; }
+    public void setInstructor(String instructor) {
+        this.instructor = instructor;
+    }
 
-    public int getCrn() { return this.crn; }
+    public int getCrn() {
+        return this.crn;
+    }
 
-    public void setCrn(int crn) { this.crn = crn; }
+    public void setCrn(int crn) {
+        this.crn = crn;
+    }
 
-    public int getCredits() { return this.credits; }
+    public int getCredits() {
+        return this.credits;
+    }
 
-    public void setCredits(int credits) { this.credits = credits; }
+    public void setCredits(int credits) {
+        this.credits = credits;
+    }
 
-    public double getGpa() { return this.gpa; }
+    public double getGpa() {
+        return this.gpa;
+    }
 
-    public void setGpa(double gpa) { this.gpa = gpa; }
+    public void setGpa(double gpa) {
+        this.gpa = gpa;
+    }
 
-    public int getStudents() { return this.students; }
+    public int getStudents() {
+        return this.students;
+    }
 
-    public void setStudents(int students) { this.students = students; }
+    public void setStudents(int students) {
+        this.students = students;
+    }
 
-    public double getA() { return this.A; }
+    public double getA() {
+        return this.A;
+    }
 
-    public void setA(double A) { this.A = A; }
+    public void setA(double A) {
+        this.A = A;
+    }
 
-    public double getB() { return this.B; }
+    public double getB() {
+        return this.B;
+    }
 
-    public void setB(double B) { this.B = B; }
+    public void setB(double B) {
+        this.B = B;
+    }
 
-    public double getC() { return this.C; }
+    public double getC() {
+        return this.C;
+    }
 
-    public void setC(double C) { this.C = C; }
+    public void setC(double C) {
+        this.C = C;
+    }
 
-    public double getD() { return this.D; }
+    public double getD() {
+        return this.D;
+    }
 
-    public void setD(double D) { this.D = D; }
+    public void setD(double D) {
+        this.D = D;
+    }
 
-    public double getF() { return this.F; }
+    public double getF() {
+        return this.F;
+    }
 
-    public void setF(double F) { this.F = F; }
+    public void setF(double F) {
+        this.F = F;
+    }
 
-    public int getWithdraws() { return this.withdraws; }
+    public int getWithdraws() {
+        return this.withdraws;
+    }
 
-    public void setWithdraws(int withdraws) { this.withdraws = withdraws; }
-
+    public void setWithdraws(int withdraws) {
+        this.withdraws = withdraws;
+    }
 }

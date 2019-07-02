@@ -48,7 +48,7 @@ public class DatabaseLoader implements ApplicationRunner {
         CourseGPA course = new CourseGPA(
             "CS",
             "4704",
-            "Sooftware Engineering Capstone",
+            "Software Engineering Capstone",
             "Servant Cortes",
             82731,
             3,
