@@ -43,7 +43,7 @@ public class CourseGPA {
 
     @NotNull
     @Min(value = 0)
-    @Max(value = 1000)
+    @Max(value = 10000)
     private int students;
 
     @NotNull
@@ -74,9 +74,6 @@ public class CourseGPA {
     @Min(value = 0)
     @Max(value = 1000)
     private int withdraws;
-
-    @Version
-    private long version;
 
     public CourseGPA() {
     }
