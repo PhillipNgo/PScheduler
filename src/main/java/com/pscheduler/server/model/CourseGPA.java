@@ -7,9 +7,8 @@ import javax.persistence.Version;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-
 @Entity
-public class GPACourse {
+public class CourseGPA {
 
     @Id
     @GeneratedValue
@@ -22,10 +21,10 @@ public class GPACourse {
     @Version
     private long version;
 
-    public GPACourse() {
+    public CourseGPA() {
     }
 
-    public GPACourse(String subject) {
+    public CourseGPA(String subject) {
         this.subject = subject;
     }
 

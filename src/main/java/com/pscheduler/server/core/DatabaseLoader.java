@@ -1,11 +1,11 @@
 package com.pscheduler.server.core;
 
 import com.pscheduler.server.model.Course;
-import com.pscheduler.server.model.GPACourse;
+import com.pscheduler.server.model.CourseGPA;
 import com.pscheduler.server.model.Meeting;
 import com.pscheduler.server.repository.CourseRepository;
 import com.pscheduler.server.repository.MeetingRepository;
-import com.pscheduler.server.repository.GPACourseRepository;
+import com.pscheduler.server.repository.CourseGPARepository;
 import com.pscheduler.util.parser.VTParser;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,13 +21,13 @@ public class DatabaseLoader implements ApplicationRunner {
     private final CourseRepository courses;
     private final MeetingRepository meetings;
     private final int TERM = 201909;
-    //private final GPACourseRepository gpa;
+    private final CourseGPARepository gpa;
 
     @Autowired
-    public DatabaseLoader (CourseRepository courses, MeetingRepository meetings, GPACourseRepository gpa) {
+    public DatabaseLoader (CourseRepository courses, MeetingRepository meetings, CourseGPARepository gpa) {
         this.courses = courses;
         this.meetings = meetings;
-        //this.gpa = gpa;
+        this.gpa = gpa;
     }
 
     @Override
@@ -45,7 +45,7 @@ public class DatabaseLoader implements ApplicationRunner {
         }
         courses.save(courseList);
 
-        GPACourse course = new GPACourse("Test");
+        CourseGPA course = new CourseGPA("Test");
         gpa.save(course);
     }
 }
