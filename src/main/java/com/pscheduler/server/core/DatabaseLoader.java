@@ -3,9 +3,9 @@ package com.pscheduler.server.core;
 import com.pscheduler.server.model.Course;
 import com.pscheduler.server.model.CourseGPA;
 import com.pscheduler.server.model.Meeting;
+import com.pscheduler.server.repository.CourseGPARepository;
 import com.pscheduler.server.repository.CourseRepository;
 import com.pscheduler.server.repository.MeetingRepository;
-import com.pscheduler.server.repository.CourseGPARepository;
 import com.pscheduler.util.parser.VTParser;
 
 import org.springframework.beans.factory.annotation.Autowired;
