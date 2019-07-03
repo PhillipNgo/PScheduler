@@ -160,7 +160,7 @@ class ScheduleVisualTable extends React.Component {
 
 ScheduleVisualTable.CourseCell = ({ meetingData }) => (
   <td
-    className="bordered meeting-cell"
+    className="meeting-cell"
     rowSpan={(meetingData.timeSlot.endNum - meetingData.timeSlot.startNum) / 5}
     style={{ backgroundColor: meetingData.color }}
   >
