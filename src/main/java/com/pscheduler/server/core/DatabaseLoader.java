@@ -59,7 +59,8 @@ public class DatabaseLoader implements ApplicationRunner {
             0.0,
             0.0,
             0.0,
-            0);
+            0,
+            201912);
         gpa.save(course);
     }
 }
