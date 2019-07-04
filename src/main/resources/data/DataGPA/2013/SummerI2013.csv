@@ -1,0 +1,257 @@
+﻿department,course_number_1,course_title,faculty,course_ei,credit_hours,qca,number,As,Bs,Cs,Ds,Fs,Textbox10
+ACIS,1504,Intro Bus Info Sys,Barkhi,60067,3,2.92,17,17.6,64.7,11.8,5.9,0.0,0
+ACIS,2115,Principles of Accounting,Almond,60069,3,2.40,28,10.7,25.0,57.1,7.1,0.0,0
+ACIS,2115,Principles of Accounting,Almond,60070,3,2.50,24,12.5,45.8,25.0,16.7,0.0,0
+ACIS,2116,Principles of Accounting,Almond,60072,3,2.26,27,14.8,25.9,40.7,14.8,3.7,1
+ACIS,2116,Principles of Accounting,Almond,60073,3,1.81,27,3.7,18.5,55.6,14.8,7.4,0
+ACIS,2116,Principles of Accounting,Salbador,60074,3,2.78,11,9.1,54.5,36.4,0.0,0.0,0
+ACIS,3115,Intermediate Financial Acct,Easterwood,60077,3,2.16,36,13.9,30.6,22.2,22.2,11.1,0
+ACIS,3314,Tax Impact on Decisions,Seago,60079,3,2.91,25,16.0,64.0,12.0,4.0,4.0,0
+ACIS,3504,Acct Sys and Controls,Barkhi,60080,3,2.87,21,23.8,57.1,9.5,9.5,0.0,0
+ACIS,4214,Cost Planning and Control,Brown,60087,3,3.47,23,56.5,34.8,8.7,0.0,0.0,0
+ACIS,4314,Principles of Taxation,Seago,60088,3,3.20,17,41.2,41.2,17.6,0.0,0.0,0
+ACIS,4414,Financial Statement Auditing,Popova,60089,3,3.47,23,56.5,43.5,0.0,0.0,0.0,0
+ACIS,5614,Implementing Mgt Controls,Bhattacharjee,61665,2,3.64,11,63.6,36.4,0.0,0.0,0.0,0
+ACIS,2115,Principles of Accounting,Almond,62717,3,3.03,29,34.5,34.5,27.6,3.4,0.0,1
+ACIS,1504,Intro Bus Info Sys,Barkhi,62767,3,2.81,18,16.7,50.0,27.8,5.6,0.0,0
+AFST,1714,Intro African American Studies,Lee,62647,3,3.43,17,41.2,58.8,0.0,0.0,0.0,0
+AOE,2104,Intro to AE,Crede,61467,3,3.20,24,29.2,58.3,12.5,0.0,0.0,0
+AOE,3094,Materials for Aero & Ocean Eng,Corcoran,60122,3,3.04,10,30.0,60.0,0.0,10.0,0.0,0
+APSC,3954,Study Abroad,Wood,60169,3,3.59,17,70.6,17.6,11.8,0.0,0.0,0
+ARCH,4055,Envir Bldg Systems,Jones,60180,3,3.68,13,61.5,38.5,0.0,0.0,0.0,0
+ARCH,4076,Building Structures,Setareh,60181,3,3.54,13,61.5,30.8,7.7,0.0,0.0,0
+ARCH,5755,Advanced Design Laboratory,Weiner,60193,3,3.69,15,86.7,13.3,0.0,0.0,0.0,0
+ARCH,5776,Intermediate Bldg Systems,Setareh,60195,3,3.77,13,76.9,23.1,0.0,0.0,0.0,0
+ART,2385,Surv Hist West Art,Knoblauch,61474,3,2.73,27,37.0,29.6,11.1,11.1,11.1,0
+BC,1214,Intro to BC I,Mills,60215,3,3.37,19,52.6,42.1,0.0,5.3,0.0,0
+BC,1224,Intro to BC II,Mills,60216,3,3.46,19,47.4,47.4,0.0,5.3,0.0,0
+BCHM,2024,Concepts of Biochemistry,Kennelly,60222,3,2.89,42,28.6,38.1,31.0,2.4,0.0,0
+BIOL,1105,Principles of Biology,Buikema,60228,3,2.99,20,25.0,50.0,25.0,0.0,0.0,0
+BIOL,1115,Principles of Biol Lab,Sarmadi,60229,1,3.75,11,72.7,27.3,0.0,0.0,0.0,0
+BIOL,1115,Principles of Biol Lab,Sarmadi,60230,1,3.83,19,84.2,15.8,0.0,0.0,0.0,0
+BIOL,2004,Genetics,Shokraii,60231,3,3.02,17,29.4,47.1,17.6,5.9,0.0,0
+BIOL,2604,General Microbiology,Seyler,60232,3,2.75,24,33.3,33.3,16.7,16.7,0.0,1
+BIOL,2614,Gen Microbiology Lab,Rodgers,60234,1,3.78,10,90.0,10.0,0.0,0.0,0.0,1
+BIOL,4704,Immunology,Elgert,60241,3,2.44,18,11.1,50.0,16.7,16.7,5.6,0
+BIOL,1105,Principles of Biology,Rosenzweig,61475,3,2.63,47,14.9,44.7,27.7,10.6,2.1,1
+BIOL,2804,Ecology,Buikema,62651,3,2.60,24,12.5,45.8,29.2,12.5,0.0,0
+BIT,5604,Mod Decis Mkng for Comp Advntg,Ghandforoush,61674,2,3.73,15,86.7,13.3,0.0,0.0,0.0,0
+BIT,2405,Quantitative Methods,Major,62221,3,2.61,41,14.6,46.3,31.7,4.9,2.4,0
+BIT,2405,Quantitative Methods,Major,62222,3,2.09,33,3.0,36.4,33.3,21.2,6.1,1
+BIT,2406,Quantitative Methods,Nottingham,62223,3,2.56,63,9.5,49.2,33.3,6.3,1.6,0
+BIT,2406,Quantitative Methods,Nottingham,62224,3,2.80,61,18.0,45.9,31.1,3.3,1.6,0
+BIT,3414,Operations & Supply Chain Mgt,Russell,62225,3,3.15,62,27.4,56.5,16.1,0.0,0.0,0
+BIT,3414,Operations & Supply Chain Mgt,Russell,62226,3,3.18,63,36.5,50.8,9.5,3.2,0.0,0
+BIT,5564,Healthcare Information Tech,Khansa,62676,3,3.72,56,85.7,10.7,1.8,1.8,0.0,0
+BIT,3424,Intro Bus Analytics Modeling,Rakes,60255,3,3.06,16,31.3,56.3,6.3,0.0,6.3,0
+BIT,3434,Adv Modeling for Bus Analytics,Rakes,60256,3,2.85,12,16.7,50.0,25.0,8.3,0.0,0
+BIT,4454,Bus Analysis Seminar in IT,Rees,60259,3,3.91,22,90.9,9.1,0.0,0.0,0.0,0
+BMSP,2135,Human Anatomy & Physiology,Gillian,62657,3,2.69,78,24.4,38.5,24.4,7.7,5.1,2
+BMSP,2145,Human Anatomy & Physiology Lab,Gillian,62658,1,2.85,57,28.1,42.1,24.6,0.0,5.3,1
+CEE,3424,Reinf Concr Struct I,Mouras,62216,3,3.67,10,70.0,30.0,0.0,0.0,0.0,0
+CEE,4984,SS:Sustain Water Suppl & Reuse,Widdowson,62706,3,3.78,15,100.0,0.0,0.0,0.0,0.0,0
+CEE,3404,Theory of Structures,Rojiani,60282,3,3.12,11,36.4,45.5,9.1,9.1,0.0,0
+CEE,3804,Computer Applications for CEE,Rojiani,60283,3,3.27,11,27.3,72.7,0.0,0.0,0.0,0
+CEE,4674,Airport Planning and Design,Trani,60284,3,3.60,15,60.0,40.0,0.0,0.0,0.0,0
+CHE,4014,Chem Engr Laboratory,Martin,60295,5,3.50,35,48.6,51.4,0.0,0.0,0.0,0
+CHEM,1035,General Chemistry,Wilmsmeyer,60302,3,2.33,28,17.9,25.0,39.3,7.1,10.7,0
+CHEM,1036,General Chemistry,Wilmsmeyer,60303,3,2.51,42,16.7,42.9,23.8,7.1,9.5,0
+CHEM,1046,General Chemistry Lab,Long,60306,1,3.56,10,50.0,50.0,0.0,0.0,0.0,1
+CHEM,2114,Analytical Chemistry,Owens,60308,3,2.92,20,30.0,45.0,10.0,15.0,0.0,0
+CHEM,2124,Analytical Chem Lab,Owens,60309,1,2.76,14,28.6,42.9,14.3,7.1,7.1,0
+CHEM,2514,Survey of Organic Chemistry,Eaton,60311,3,2.75,25,40.0,16.0,28.0,16.0,0.0,0
+CHEM,2535,Organic Chemistry,Zhang,60312,3,2.85,97,18.6,53.6,25.8,1.0,1.0,2
+CHEM,2545,Organic Chemistry Laboratory,Santos,60313,1,2.91,13,30.8,38.5,30.8,0.0,0.0,1
+CHEM,2545,Organic Chemistry Laboratory,Santos,60314,1,2.71,15,26.7,33.3,33.3,0.0,6.7,1
+CHEM,2545,Organic Chemistry Laboratory,Santos,60315,1,3.12,19,26.3,57.9,15.8,0.0,0.0,0
+CHEM,3615,Physical Chemistry,Marand,60319,3,2.71,25,24.0,32.0,40.0,4.0,0.0,0
+CHEM,4615,Phys Chem Life Sci,Marand,61481,3,2.19,20,0.0,45.0,35.0,5.0,15.0,0
+CLA,3954,Ancient Rome & its Provinces,Becker,62257,3,4.00,16,100.0,0.0,0.0,0.0,0.0,0
+COMM,3064,Persuasion,Magee,62381,3,3.16,20,30.0,60.0,10.0,0.0,0.0,0
+COMM,1014,Intro to Comm Studies,Waggenspack,61482,3,2.23,19,0.0,63.2,15.8,5.3,15.8,0
+COMM,2084,Media Institutions,Kanter,61485,3,2.78,20,20.0,60.0,10.0,5.0,5.0,0
+COMM,2124,Intro Comm Research,Ivory,61486,3,2.91,19,31.6,47.4,5.3,10.5,5.3,0
+COMM,3124,Interpersonal Communication,Preston,61487,3,3.61,16,68.8,31.3,0.0,0.0,0.0,0
+COMM,4014,Media Effects,Ivory,61490,3,3.36,15,53.3,33.3,13.3,0.0,0.0,0
+COMM,4984,SS:Advertising Campaigns,Tedesco,62766,3,3.20,10,80.0,0.0,0.0,0.0,20.0,0
+COMM,4044,International Communication,Quesenberry,62750,3,3.24,11,81.8,0.0,9.1,0.0,9.1,0
+COMM,2004,Public Speaking,Jenkins,60339,3,3.07,17,35.3,58.8,0.0,0.0,5.9,0
+COMM,2004,Public Speaking,Kuypers,60341,3,3.40,14,35.7,64.3,0.0,0.0,0.0,0
+COMM,2004,Public Speaking,Shinault,60342,3,2.94,12,33.3,25.0,41.7,0.0,0.0,0
+COMM,4024,Communications Law and Ethics,Hopkins,60346,3,2.42,16,25.0,12.5,43.8,18.8,0.0,0
+CS,1044,Intro Prog in C,Monti,60352,3,2.89,29,37.9,41.4,3.4,6.9,10.3,0
+CS,1054,Intro to Programming in Java,Stevens,60353,3,3.01,18,38.9,27.8,22.2,11.1,0.0,0
+CS,1114,Intro to Software Design,Stevens,60354,3,3.28,22,45.5,45.5,0.0,4.5,4.5,1
+CS,2104,Intro to Problem Solving in CS,McQuain,60355,3,2.92,12,25.0,41.7,33.3,0.0,0.0,0
+CS,2114,Softw Des & Data Structures,Allevato,60356,3,3.65,18,66.7,33.3,0.0,0.0,0.0,0
+CS,2505,Intro Computer Organization,Monti,60357,3,2.53,36,25.0,38.9,11.1,16.7,8.3,1
+CS,3114,Data Structures and Algorithms,McQuain,60360,3,2.19,21,19.0,23.8,19.0,28.6,9.5,0
+CS,1604,Introduction to the Internet,Barnette,62681,1,2.97,15,40.0,26.7,20.0,13.3,0.0,0
+ECE,2504,Intro Computer Engr,Thweatt,60385,3,2.65,17,29.4,35.3,5.9,29.4,0.0,1
+ECE,3105,Electromagnetic Fields,Kees,60387,3,2.65,22,27.3,27.3,27.3,13.6,4.5,0
+ECE,3504,Digital Design I,Thweatt,60388,4,2.21,13,15.4,46.2,7.7,7.7,23.1,0
+ECE,3614,Intro Comm Systems,Kaminski,60389,3,2.08,14,14.3,14.3,42.9,28.6,0.0,0
+ECON,2005,Principles of Economics,Lee,60638,3,2.70,44,20.5,38.6,31.8,9.1,0.0,2
+ECON,2005,Principles of Economics,Taghvatalab,60639,3,2.38,26,26.9,23.1,23.1,11.5,15.4,0
+ECON,2006,Principles of Economics,Gebremariam,60640,3,3.11,19,47.4,31.6,15.8,0.0,5.3,0
+ECON,2006,Principles of Economics,Cothren,60641,3,2.46,18,33.3,16.7,27.8,5.6,16.7,0
+ECON,3104,Microeconomic Theory,Green-Armytage,60642,3,2.32,22,31.8,22.7,18.2,4.5,22.7,0
+ECON,3214,Money and Banking,Kwaramba,60643,3,3.15,31,41.9,41.9,16.1,0.0,0.0,0
+EDCI,5104,Schooling in American Society,Garrison,60654,3,4.00,10,100.0,0.0,0.0,0.0,0.0,0
+EDCI,5234,Adv C&I El/Mid Math,Kreye,60655,3,3.84,18,88.9,11.1,0.0,0.0,0.0,0
+EDCI,5414,Early Literacy Inst (PK-3),Barksdale,60657,3,3.97,18,100.0,0.0,0.0,0.0,0.0,0
+EDCI,5124,Behavioral Aspects of Music,Parkes,61502,3,3.72,12,83.3,8.3,8.3,0.0,0.0,0
+EDCI,5554,Educ Except Learners,Billingsley,61504,3,3.97,20,100.0,0.0,0.0,0.0,0.0,0
+EDCO,5354,Addictions Counseling,Lawson,61641,3,4.00,14,100.0,0.0,0.0,0.0,0.0,0
+EDCO,5354,Addictions Counseling,Lambert,61723,3,4.00,17,100.0,0.0,0.0,0.0,0.0,0
+EDCO,5254,Career Dev Info/Servs,Paredes,62675,3,3.39,14,57.1,28.6,14.3,0.0,0.0,0
+EDCO,5604,GS: Systems Counseling,Lambert,62660,3,3.98,17,100.0,0.0,0.0,0.0,0.0,0
+EDEL,6914,PR: Advanced School Finance,Salmon,62661,3,4.00,19,100.0,0.0,0.0,0.0,0.0,0
+EDEL,6914,PR: Qualitative Field Studies,Magliaro,62662,3,4.00,13,100.0,0.0,0.0,0.0,0.0,0
+EDEL,6914,PR: Qualitative Field Studies,Cash,62664,3,3.98,19,100.0,0.0,0.0,0.0,0.0,0
+EDEL,5604,GS:Instrctnl Strgty for Prncpl,Patrizio,61734,3,3.89,12,91.7,8.3,0.0,0.0,0.0,0
+EDEP,5154,Psych Foundations for Teachers,Jones,61511,3,3.54,22,59.1,40.9,0.0,0.0,0.0,0
+EDHE,6114,Staffing Practices in Edu,Janosik,61514,3,3.59,10,50.0,50.0,0.0,0.0,0.0,0
+EDIT,5564,TS: Education and the Web,Potter,61520,1,4.00,10,100.0,0.0,0.0,0.0,0.0,0
+EDIT,5564,TS: Intro to Computers,Potter,61521,1,4.00,10,100.0,0.0,0.0,0.0,0.0,0
+EDIT,5564,TS: Intro to IT,Potter,61522,1,4.00,10,100.0,0.0,0.0,0.0,0.0,0
+EDIT,5774,PR: Telecomm & Dist Learning,Potter,61538,1,3.56,10,50.0,50.0,0.0,0.0,0.0,0
+ENGE,1114,Exploration Engineering Design,Bey,62378,2,3.24,27,40.7,48.1,7.4,3.7,0.0,0
+ENGE,1104,Exploration of Digital Future,Allen,62380,2,3.35,19,47.4,42.1,10.5,0.0,0.0,0
+ENGE,1024,Engineering Exploration,Gregg,60723,2,2.72,19,10.5,63.2,15.8,10.5,0.0,0
+ENGE,1024,Engineering Exploration,Gregg,60724,2,2.30,22,0.0,36.4,59.1,4.5,0.0,0
+ENGE,1024,Engineering Exploration,Gregg,60725,2,2.10,21,9.5,19.0,52.4,19.0,0.0,0
+ENGE,1114,Exploration Engineering Design,Shoemaker,60726,2,3.10,21,28.6,52.4,19.0,0.0,0.0,0
+ENGL,1106,First-Year Writing,Lawrence,60729,3,3.57,12,66.7,33.3,0.0,0.0,0.0,0
+ENGL,1106,First-Year Writing,Carter-Tod,60730,3,3.07,15,26.7,60.0,6.7,6.7,0.0,0
+ENGL,4044,Language and Society,Dannenberg,60732,3,2.54,10,30.0,30.0,20.0,10.0,10.0,0
+ENGL,1624,Intro to Detective Fiction,Kinder,62654,3,3.56,42,61.9,35.7,2.4,0.0,0.0,0
+ENGL,1654,Intro to Science Fiction,Patton,61548,3,3.62,41,87.8,4.9,0.0,0.0,7.3,0
+ENGL,3764,Technical Writing,Combiths,61551,3,2.92,19,42.1,31.6,15.8,0.0,10.5,0
+ENGL,3764,Technical Writing,Kinder,61552,3,3.36,17,47.1,47.1,5.9,0.0,0.0,0
+ENGL,3764,Technical Writing,Heilker,61553,3,3.51,19,63.2,36.8,0.0,0.0,0.0,0
+ENGL,3764,Technical Writing,Mooney,61554,3,3.37,17,47.1,41.2,11.8,0.0,0.0,0
+ENGL,3764,Technical Writing,Mooney,61555,3,3.36,18,61.1,27.8,5.6,0.0,5.6,1
+ENGL,3774,Business Writing,Mengert,61556,3,3.36,18,61.1,22.2,16.7,0.0,0.0,0
+ESM,2104,Statics,Taha,60764,3,2.72,36,36.1,22.2,27.8,5.6,8.3,3
+ESM,2204,Mechanics of Deformable Bodies,Thangjitham,60765,3,1.90,41,9.8,22.0,29.3,24.4,14.6,1
+ESM,2304,Dynamics,Thangjitham,60766,3,1.72,32,9.4,12.5,31.3,31.3,15.6,1
+FIN,3104,Introduction to Finance,Li,60783,3,3.59,30,70.0,23.3,6.7,0.0,0.0,0
+FIN,3104,Introduction to Finance,Kender,60785,3,3.39,10,30.0,70.0,0.0,0.0,0.0,0
+FIN,3134,Finance Concepts and Skills,Amini Moghadam,60786,3,2.73,30,23.3,40.0,26.7,10.0,0.0,2
+FIN,5654,Principles of Financial Mgmt,Easterwood,61745,2,3.66,16,75.0,25.0,0.0,0.0,0.0,0
+FIN,5734,Legal/Ethical Issues in Tech,Hiller,61746,2,3.57,16,62.5,37.5,0.0,0.0,0.0,0
+FIN,3144,Investments: Debt-Equity-Deriv,Amini Moghadam,62725,3,2.69,16,25.0,43.8,18.8,6.3,6.3,0
+FIN,3055,Legal Environment of Business,Hiller,62728,3,2.85,27,22.2,51.9,18.5,3.7,3.7,0
+GEOG,1004,Intro Human Geography,Oliver,60841,3,3.61,17,64.7,35.3,0.0,0.0,0.0,0
+GEOG,3524,Meteorology Field Methods,Carroll,60845,3,4.00,28,100.0,0.0,0.0,0.0,0.0,0
+GER,2114,Accel Inter German,Lynn,60857,6,3.95,11,100.0,0.0,0.0,0.0,0.0,0
+GIA,5474,Global Governance,Peters,62748,3,3.87,15,86.7,13.3,0.0,0.0,0.0,0
+HD,1004,Human Development I,Fang,61566,3,3.15,21,47.6,38.1,4.8,4.8,4.8,1
+HD,1004,Human Development I,Day,61567,3,2.89,35,42.9,31.4,14.3,5.7,5.7,0
+HD,1004,Human Development I,Komelski,61568,3,3.56,39,64.1,28.2,7.7,0.0,0.0,0
+HD,2004,Human Development II,Liu,61569,3,3.53,27,55.6,37.0,7.4,0.0,0.0,0
+HD,2304,Family Relationships,Nutting,61570,3,2.80,22,22.7,50.0,13.6,13.6,0.0,0
+HD,2314,Human Sexuality,Cox,61572,3,3.18,24,66.7,16.7,4.2,4.2,8.3,0
+HD,2314,Human Sexuality,Cornwell,61573,3,2.89,13,23.1,46.2,23.1,7.7,0.0,0
+HD,2314,Human Sexuality,Chang,61574,3,3.27,21,47.6,28.6,23.8,0.0,0.0,0
+HD,2335,Principles of Human Services,Daniello,61575,3,3.44,20,60.0,30.0,10.0,0.0,0.0,0
+HD,4364,Gender And Family Diversity,Butner,61577,3,3.41,17,64.7,17.6,11.8,5.9,0.0,1
+HIST,1025,Intro European Civ,Alexander,61578,3,3.55,28,64.3,28.6,3.6,3.6,0.0,0
+HIST,3205,U.S. South,Shelton,62629,3,2.67,14,42.9,14.3,21.4,14.3,7.1,0
+HIST,1214,History of the Modern World,Hill,62630,3,3.16,17,41.2,35.3,23.5,0.0,0.0,0
+HNFE,1004,"Foods, Nutrition And Exercise",Lewis,62655,3,3.30,26,50.0,30.8,19.2,0.0,0.0,0
+HNFE,2664,Behav Nutrition Phys Activity,Harden,62656,3,3.18,31,22.6,67.7,9.7,0.0,0.0,0
+HTM,2454,Travel & Tourism Management,Singal,61587,3,3.08,27,40.7,33.3,25.9,0.0,0.0,0
+HTM,2464,Introduction to Service,Magnini,61589,3,3.47,17,52.9,41.2,5.9,0.0,0.0,0
+HTM,2954,HTM Study Abroad-Swizterland,Uysal,60919,3,3.70,11,100.0,0.0,0.0,0.0,0.0,0
+HTM,3954,HTM Study Abroad-Switzerland,Uysal,60924,3,3.41,11,27.3,72.7,0.0,0.0,0.0,0
+HTM,4424,Events MGT Study Abroad France,Couture,60925,3,4.00,10,100.0,0.0,0.0,0.0,0.0,0
+HUM,1704,Intro Appal Studies,Jackson,62228,3,3.55,17,76.5,11.8,5.9,0.0,5.9,0
+IDS,2214,IDS Studio for Minors,Green,60935,6,3.89,31,93.5,6.5,0.0,0.0,0.0,0
+ISE,2014,Engineering Economy,Schuh,60945,2,3.32,26,50.0,38.5,7.7,3.8,0.0,0
+ISE,2404,Deterministic Oper Research,Travis,60947,3,2.99,35,28.6,42.9,25.7,2.9,0.0,0
+ISE,3014,Work Meas & Meth Engr,Steeneck,60948,3,3.58,14,64.3,35.7,0.0,0.0,0.0,0
+ISE,3414,Probabilistic Operations Res,Fraticelli,60949,3,2.26,64,12.5,31.3,37.5,12.5,6.3,0
+ISE,3614,Human Factors Engr,Agnew,60950,3,3.18,13,30.8,61.5,7.7,0.0,0.0,0
+ITDS,3954,Study Abroad-Interior Design,Tew,60960,3,3.96,16,100.0,0.0,0.0,0.0,0.0,0
+LAHS,3004,Professional Seminar,Holloway,61596,1,3.64,11,63.6,36.4,0.0,0.0,0.0,0
+MATH,1114,Elementary Linear Algebra,England,61599,2,3.19,36,52.8,19.4,19.4,5.6,2.8,1
+MATH,1525,Calc With Matrices,Shugart,61600,3,2.63,28,32.1,32.1,17.9,3.6,14.3,0
+MATH,4564,Operational Methods,Kohler,61601,3,2.80,22,45.5,22.7,18.2,0.0,13.6,0
+MATH,3214,Calculus of Several Variables,Rogers,62256,3,2.62,19,52.6,0.0,21.1,10.5,15.8,0
+MATH,5614,TS:Geomtry & Msrmt for K-8 Tch,Kreye,61657,3,4.00,12,100.0,0.0,0.0,0.0,0.0,0
+MATH,1015,Calculus With Trig I,Saenz Maldonado,60990,3,1.82,18,11.1,22.2,22.2,27.8,16.7,2
+MATH,1016,Calculus With Trig I,Brock,60991,3,2.13,14,14.3,28.6,14.3,28.6,14.3,0
+MATH,1205,Calculus,Marx,60992,3,2.37,20,35.0,15.0,20.0,15.0,15.0,0
+MATH,1206,Calculus,Hester,60993,3,2.66,32,28.1,25.0,34.4,9.4,3.1,0
+MATH,1224,Vector Geometry,Li,60995,2,2.80,32,28.1,37.5,25.0,6.3,3.1,0
+MATH,1526,Calc With Matrices,Letona Bolivar,60996,3,2.85,32,40.6,28.1,18.8,0.0,12.5,0
+MATH,2214,Intro Diff Equations,Ordonez-Delgado,60997,3,2.21,21,23.8,23.8,19.0,19.0,14.3,0
+MATH,2214,Intro Diff Equations,Hagen,60998,3,2.80,30,36.7,16.7,36.7,6.7,3.3,1
+MATH,2214,Intro Diff Equations,Hagen,60999,3,2.99,43,39.5,34.9,16.3,7.0,2.3,1
+MATH,2224,Multivariable Calculus,Agud,61000,3,2.69,37,27.0,32.4,24.3,13.5,2.7,1
+MATH,2224,Multivariable Calculus,Chung,61001,3,2.70,31,32.3,29.0,25.8,3.2,9.7,0
+MATH,2534,Intro Discrete Math,Hester,61002,3,2.87,40,32.5,35.0,27.5,2.5,2.5,1
+MATH,3034,Introduction to Proofs,Arnold,61005,3,2.82,21,47.6,19.0,19.0,9.5,4.8,0
+MATH,3144,Linear Algebra I,Rossi,61006,3,2.49,15,40.0,13.3,20.0,13.3,13.3,1
+MATH,4445,Intro to Numer Analysis,Savel'ev,61008,3,1.98,11,27.3,18.2,18.2,9.1,27.3,0
+MATH,4564,Operational Methods,Kohler,61009,3,3.33,28,57.1,35.7,0.0,3.6,3.6,1
+MATH,4574,Vector/Complex Analysis,Prather,61010,3,4.00,17,100.0,0.0,0.0,0.0,0.0,1
+ME,3304,Heat and Mass Transfer,von Spakovsky,61018,3,2.31,44,9.1,38.6,36.4,11.4,4.5,0
+ME,3514,System Dynamics,Smith,61019,3,2.62,19,21.1,31.6,42.1,0.0,5.3,1
+MGT,3304,Mgt Th & Lead Pract,French,61152,3,3.50,39,51.3,48.7,0.0,0.0,0.0,0
+MGT,3304,Mgt Th & Lead Pract,Sayre,61153,3,3.98,40,100.0,0.0,0.0,0.0,0.0,0
+MGT,3304,Mgt Th & Lead Pract,Gnyawali,61154,3,3.36,10,30.0,70.0,0.0,0.0,0.0,0
+MGT,4334,Ethical Leadership,Sayre,61162,3,4.00,17,100.0,0.0,0.0,0.0,0.0,0
+MGT,4394,Business Policy and Strategy,Cortes,61163,3,3.09,33,24.2,66.7,9.1,0.0,0.0,0
+MGT,4394,Business Policy and Strategy,Cortes,61165,3,3.08,21,28.6,57.1,9.5,4.8,0.0,0
+MGT,5804,Leader Tech-Based Org,Hatfield,62758,3,3.59,19,57.9,42.1,0.0,0.0,0.0,0
+MGT,3604,e-Management,Midkiff,62669,3,3.45,13,53.8,46.2,0.0,0.0,0.0,0
+MGT,5804,Leader Tech-Based Org,Thornblad,62659,3,3.13,24,41.7,45.8,8.3,0.0,4.2,0
+MKTG,5104,Marketing Policy And Strategy,Khan,62261,3,3.66,30,80.0,20.0,0.0,0.0,0.0,0
+MKTG,5664,Managing MKTG Relationships,Newman,61890,2,3.27,11,27.3,72.7,0.0,0.0,0.0,0
+MKTG,3104,Marketing Management,Evans,61602,3,3.46,52,73.1,15.4,5.8,3.8,1.9,0
+MKTG,3104,Marketing Management,Evans,61603,3,3.40,49,67.3,22.4,6.1,2.0,2.0,0
+MKTG,4554,Buyer-Seller Relationships,Jester,61181,3,3.95,12,100.0,0.0,0.0,0.0,0.0,0
+MSE,2034,Elem of Materials Eng,Corcoran,61194,3,3.06,31,48.4,19.4,29.0,3.2,0.0,0
+MUS,1104,Music Appreciation,Cole,61604,3,3.46,257,61.5,31.9,5.1,1.6,0.0,1
+PAPA,6214,Public Policy Process,Denslow,62197,3,3.85,14,100.0,0.0,0.0,0.0,0.0,0
+PHIL,1204,Knowledge and Reality,Bernal,61611,3,3.06,22,22.7,59.1,18.2,0.0,0.0,0
+PHIL,1504,Language and Logic,Mccormack,61612,3,2.50,11,18.2,45.5,27.3,0.0,9.1,0
+PHIL,2304,Global Ethics,Hodges,61613,3,3.38,35,62.9,31.4,2.9,2.9,0.0,0
+PHS,1514,Personal Health,Smith,61614,3,3.64,64,73.4,20.3,4.7,0.0,1.6,0
+PHS,3534,Drug Education,Smith,61615,3,3.68,68,80.9,11.8,5.9,0.0,1.5,0
+PHS,5044,Public Health Administration,Redican,61616,3,4.00,15,100.0,0.0,0.0,0.0,0.0,0
+PHYS,2205,General Physics,Papavasiliou,61232,3,3.15,47,31.9,51.1,14.9,2.1,0.0,0
+PHYS,2206,General Physics,Papavasiliou,61233,3,3.07,22,40.9,40.9,13.6,0.0,4.5,0
+PHYS,2215,General Physics Laboratory,Halpin,61235,1,4.00,12,100.0,0.0,0.0,0.0,0.0,0
+PHYS,2215,General Physics Laboratory,Halpin,61237,1,3.89,17,94.1,5.9,0.0,0.0,0.0,0
+PHYS,2216,General Physics Laboratory,Halpin,61239,1,3.92,11,100.0,0.0,0.0,0.0,0.0,0
+PHYS,2305,Foundations of Physics I,Joyce,61247,4,3.05,16,43.8,31.3,18.8,6.3,0.0,0
+PHYS,2306,Foundations of Physics I,Joyce,61249,4,3.17,11,45.5,18.2,36.4,0.0,0.0,0
+PHYS,2306,Foundations of Physics I,Joyce,61250,4,3.06,11,45.5,18.2,36.4,0.0,0.0,0
+PSCI,1024,Comp Gov & Politics,Surak,61619,3,3.36,31,61.3,29.0,3.2,0.0,6.5,0
+PSCI,3615,International Relations,Via,61620,3,3.04,11,36.4,45.5,9.1,9.1,0.0,3
+PSCI,2014,Intro to Political Theory,Engel,62724,3,3.14,16,43.8,37.5,18.8,0.0,0.0,0
+PSYC,2004,Introductory Psychology,Harrison,61281,3,2.91,22,36.4,27.3,27.3,9.1,0.0,0
+PSYC,2064,Nervous Systems & Behavior,Harrison,61284,3,3.25,16,37.5,50.0,12.5,0.0,0.0,0
+PSYC,3014,Abnormal Psychology,Williams,61290,3,3.63,12,58.3,41.7,0.0,0.0,0.0,0
+PSYC,4024,Indust/Organiz Psych,Snead,61291,3,3.39,10,40.0,50.0,10.0,0.0,0.0,0
+PSYC,4354,TS:Sex Diff in Brain & Behavr,Harrison,61294,3,3.40,15,66.7,20.0,6.7,0.0,6.7,0
+REL,1024,"Judaism, Christianity, Islam",Taylor,62625,3,3.30,25,76.0,4.0,8.0,4.0,8.0,0
+RUS,2734,Intro Russian Civ,McKagen,62670,3,3.95,13,100.0,0.0,0.0,0.0,0.0,0
+SOC,1004,Introductory Sociology,Richardson,62648,3,3.84,31,93.5,3.2,0.0,0.0,3.2,0
+SOC,3004,Social Inequality,Wimberley,61628,3,3.22,24,37.5,54.2,4.2,0.0,4.2,0
+SOC,3504,Population Trends and Issues,Fuller,61630,3,2.97,15,46.7,20.0,26.7,6.7,0.0,0
+SOC,4014,Sociology of the Family,Vogt Yuan,61631,3,2.69,21,33.3,23.8,28.6,9.5,4.8,0
+SPAN,1105,Elementary Spanish,Lopez-Romero,61325,3,2.98,16,50.0,12.5,18.8,18.8,0.0,0
+STAT,3615,Biological Statistics,Zhang,61343,3,3.82,14,92.9,7.1,0.0,0.0,0.0,0
+STAT,4105,Theoretical Statistics,Terrell,61344,3,2.57,86,11.6,47.7,27.9,11.6,1.2,1
+STAT,4714,Prob & Stat for EE,Wang,61345,3,3.44,25,64.0,16.0,20.0,0.0,0.0,0
+STAT,5674,Methods in Biostatistics,Holtzman,62704,3,3.79,16,75.0,25.0,0.0,0.0,0.0,0
+TA,2014,Introduction to Theatre,Rinehart,61358,3,3.71,16,75.0,25.0,0.0,0.0,0.0,0
+TA,2024,Introduction to Acting,Rinehart,61360,3,3.83,16,93.8,0.0,0.0,6.3,0.0,0
+TA,2204,Creative Dance,Lepczyk,61361,3,3.94,28,96.4,3.6,0.0,0.0,0.0,0
+WGS,1824,Intro Women's & Gender Studies,Li,62650,3,3.36,26,61.5,23.1,7.7,3.8,3.8,0
+
