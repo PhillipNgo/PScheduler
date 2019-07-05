@@ -50,7 +50,7 @@ public class DatabaseLoader implements ApplicationRunner {
 
 
         GradeParser grader = new GradeParser();
-        grader.parseAllFiles(gpaDataPath);
+        List<CourseGPA> courseGrades = grader.parseTermFile(gpaDataPath + "/2019/Winter2019.csv");
 
 
         CourseGPA course = new CourseGPA(
