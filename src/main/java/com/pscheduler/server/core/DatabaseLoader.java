@@ -6,6 +6,7 @@ import com.pscheduler.server.model.Meeting;
 import com.pscheduler.server.repository.CourseGPARepository;
 import com.pscheduler.server.repository.CourseRepository;
 import com.pscheduler.server.repository.MeetingRepository;
+import com.pscheduler.util.parser.GradeParser;
 import com.pscheduler.util.parser.VTParser;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,12 +23,14 @@ public class DatabaseLoader implements ApplicationRunner {
     private final MeetingRepository meetings;
     private final int TERM = 201909;
     private final CourseGPARepository gpa;
+    private final String gpaDataPath;
 
     @Autowired
     public DatabaseLoader (CourseRepository courses, MeetingRepository meetings, CourseGPARepository gpa) {
         this.courses = courses;
         this.meetings = meetings;
         this.gpa = gpa;
+        this.gpaDataPath = "./src/main/resources/data/DataGPA";
     }
 
     @Override
@@ -44,6 +47,11 @@ public class DatabaseLoader implements ApplicationRunner {
             }
         }
         courses.save(courseList);
+
+
+        GradeParser grader = new GradeParser();
+        grader.parseAllFiles(gpaDataPath);
+
 
         CourseGPA course = new CourseGPA(
             "CS",
