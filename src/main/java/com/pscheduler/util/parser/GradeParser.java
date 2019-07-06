@@ -18,6 +18,9 @@ public class GradeParser {
 
     private GradeBuilderFactory gradeBuilderFactory;
 
+    // delimeter for splitting the line of data in the GPA Files
+    private final String SPLIT_DELIMETER = ",";
+
     /**
      * Default Constructor
      */
@@ -59,8 +62,34 @@ public class GradeParser {
      * @return the parsed course
      */
     private CourseGPA makeClass(String line, String term) {
-        int termYear = getTerm(term);
-        return null;
+        int termID = getTerm(term);
+
+        gradeBuilderFactory.reset();
+        String[] values = line.split(SPLIT_DELIMETER);
+
+        if (values.length != 14) {
+            System.out.println("bad line formatting: " + line);
+            return null;
+        }
+
+        gradeBuilderFactory
+                .subject(values[0])
+                .courseNumber(values[1])
+                .name(values[2])
+                .instructor(values[3])
+                .crn(Integer.parseInt(values[4]))
+                .credits(Integer.parseInt(values[5]))
+                .gpa(Double.parseDouble(values[6]))
+                .students(Integer.parseInt(values[7]))
+                .A(Double.parseDouble(values[8]))
+                .B(Double.parseDouble(values[9]))
+                .C(Double.parseDouble(values[10]))
+                .D(Double.parseDouble(values[11]))
+                .F(Double.parseDouble(values[12]))
+                .withdraws(Integer.parseInt(values[13]))
+                .term(termID);
+
+        return gradeBuilderFactory.build();
     }
 
 
@@ -81,8 +110,10 @@ public class GradeParser {
         String fileName = split[split.length - 1];
         String term = fileName.substring(0, fileName.length() - 4);
 
+        scanner.nextLine(); // Skip the first row which contain headers
         while (scanner.hasNextLine()) {
-            courses.add(makeClass(scanner.nextLine(), term));
+            CourseGPA grade = makeClass(scanner.nextLine(), term);
+            if (grade != null) courses.add(grade);
         }
         scanner.close();
         return courses;

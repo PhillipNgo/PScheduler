@@ -50,10 +50,15 @@ public class DatabaseLoader implements ApplicationRunner {
 
 
         GradeParser grader = new GradeParser();
+
+        // REMEMBER TO CHANGE THIS TO PARSEALLFILES
         List<CourseGPA> courseGrades = grader.parseTermFile(gpaDataPath + "/2019/Winter2019.csv");
+        for (CourseGPA grade : courseGrades) gpa.save(grade);
 
 
-        CourseGPA course = new CourseGPA(
+
+
+        /*CourseGPA course = new CourseGPA(
             "CS",
             "4704",
             "Software Engineering Capstone",
@@ -69,7 +74,7 @@ public class DatabaseLoader implements ApplicationRunner {
             0.0,
             0,
             201912);
-        gpa.save(course);
+        gpa.save(course);*/
     }
 }
 

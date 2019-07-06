@@ -1,5 +1,7 @@
 package com.pscheduler.util;
 
+import com.pscheduler.server.model.CourseGPA;
+
 public class GradeBuilderFactory {
 
     private String subject;
@@ -113,6 +115,26 @@ public class GradeBuilderFactory {
     public GradeBuilderFactory term(int term) {
         this.term = term;
         return this;
+    }
+
+    public CourseGPA build() {
+        return new CourseGPA(
+              subject,
+              courseNumber,
+              name,
+              instructor,
+              crn,
+              credits,
+              gpa,
+              students,
+              A,
+              B,
+              C,
+              D,
+              F,
+              withdraws,
+              term
+        );
     }
 
 
