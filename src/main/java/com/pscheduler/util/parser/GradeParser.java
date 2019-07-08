@@ -38,16 +38,24 @@ public class GradeParser {
         String semester = term.substring(0, term.length() - 4);
         int month = 0;
 
-        if (semester.equals("Spring")) {
-            month = 1;
-        } else if (semester.equals("SummerI")) {
-            month = 6;
-        } else if (semester.equals("SummerII")) {
-            month = 7;
-        } else if (semester.equals("Fall")) {
-            month = 9;
-        } else if (semester.equals("Winter")) {
-            month = 12;
+        switch (semester) {
+            case "Spring":
+                month = 1;
+                break;
+            case "SummerI":
+                month = 6;
+                break;
+            case "SummerII":
+                month = 7;
+                break;
+            case "Fall":
+                month = 9;
+                break;
+            case "Winter":
+                month = 12;
+                break;
+            default:
+                throw new IllegalArgumentException("Not a valid semester");
         }
 
         int year = Integer.parseInt(term.substring(term.length() - 4));
@@ -130,11 +138,11 @@ public class GradeParser {
         File folder = new File(path);
         File[] files = folder.listFiles();
 
-        for (int x = 0; x < files.length; x++) {
-            if (files[x].isDirectory()) {
-                courses.addAll(parseAllFiles(path + "/" + files[x].getName()));
-            } else if(files[x].isFile()) {
-                courses.addAll(parseTermFile(path + "/" + files[x].getName()));
+        for (File file : files ) {
+            if (file.isDirectory()) {
+                courses.addAll(parseAllFiles(path + "/" + file.getName()));
+            } else if(file.isFile()) {
+                courses.addAll(parseTermFile(path + "/" + file.getName()));
             }
         }
 
