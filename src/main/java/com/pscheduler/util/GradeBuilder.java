@@ -2,7 +2,7 @@ package com.pscheduler.util;
 
 import com.pscheduler.server.model.CourseGPA;
 
-public class GradeBuilderFactory {
+public class GradeBuilder {
 
     private String subject;
     private String courseNumber;
@@ -20,7 +20,7 @@ public class GradeBuilderFactory {
     private int withdraws;
     private int term;
 
-    public GradeBuilderFactory() {
+    public GradeBuilder() {
         this.reset();
     }
 
@@ -42,77 +42,77 @@ public class GradeBuilderFactory {
         this.term = 0;
     }
 
-    public GradeBuilderFactory subject(String subject) {
+    public GradeBuilder subject(String subject) {
         this.subject = subject;
         return this;
     }
 
-    public GradeBuilderFactory courseNumber(String courseNumber) {
+    public GradeBuilder courseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
         return this;
     }
 
-    public GradeBuilderFactory name(String name) {
+    public GradeBuilder name(String name) {
         this.name = name;
         return this;
     }
 
-    public GradeBuilderFactory instructor(String instructor) {
+    public GradeBuilder instructor(String instructor) {
         this.instructor = instructor;
         return this;
     }
 
-    public GradeBuilderFactory crn(int crn) {
+    public GradeBuilder crn(int crn) {
         this.crn = crn;
         return this;
     }
 
-    public GradeBuilderFactory credits(int credits) {
+    public GradeBuilder credits(int credits) {
         this.credits = credits;
         return this;
     }
 
-    public GradeBuilderFactory gpa(double gpa) {
+    public GradeBuilder gpa(double gpa) {
         this.gpa = gpa;
         return this;
     }
 
-    public GradeBuilderFactory students(int students) {
+    public GradeBuilder students(int students) {
         this.students = students;
         return this;
     }
 
-    public GradeBuilderFactory A(double A) {
+    public GradeBuilder A(double A) {
         this.A = A;
         return this;
     }
 
-    public GradeBuilderFactory B(double B) {
+    public GradeBuilder B(double B) {
         this.B = B;
         return this;
     }
 
-    public GradeBuilderFactory C(double C) {
+    public GradeBuilder C(double C) {
         this.C = C;
         return this;
     }
 
-    public GradeBuilderFactory D(double D) {
+    public GradeBuilder D(double D) {
         this.D = D;
         return this;
     }
 
-    public GradeBuilderFactory F(double F) {
+    public GradeBuilder F(double F) {
         this.F = F;
         return this;
     }
 
-    public GradeBuilderFactory withdraws(int withdraws) {
+    public GradeBuilder withdraws(int withdraws) {
         this.withdraws = withdraws;
         return this;
     }
 
-    public GradeBuilderFactory term(int term) {
+    public GradeBuilder term(int term) {
         this.term = term;
         return this;
     }
@@ -136,6 +136,4 @@ public class GradeBuilderFactory {
               term
         );
     }
-
-
 }

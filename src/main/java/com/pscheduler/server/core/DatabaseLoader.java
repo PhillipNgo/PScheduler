@@ -48,33 +48,8 @@ public class DatabaseLoader implements ApplicationRunner {
         }
         courses.save(courseList);
 
-
         GradeParser grader = new GradeParser();
-
-        // REMEMBER TO CHANGE THIS TO PARSEALLFILES
         List<CourseGPA> courseGrades = grader.parseTermFile(gpaDataPath + "/2019/Winter2019.csv");
         for (CourseGPA grade : courseGrades) gpa.save(grade);
-
-
-
-
-        /*CourseGPA course = new CourseGPA(
-            "CS",
-            "4704",
-            "Software Engineering Capstone",
-            "Servant Cortes",
-            82731,
-            3,
-            4.00,
-            15,
-            100.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0,
-            201912);
-        gpa.save(course);*/
     }
 }
-

@@ -228,7 +228,11 @@ public class CourseGPA {
         this.withdraws = withdraws;
     }
 
-    public int getTerm() { return this.term; }
+    public int getTerm() {
+    	return this.term;
+    }
 
-    public void setTerm(int term) { this.term = term; }
+    public void setTerm(int term) {
+    	this.term = term;
+    }
 }
