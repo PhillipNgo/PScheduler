@@ -75,8 +75,7 @@ public class GradeParser {
         gradeBuilder.reset();
         String[] values = line.split(SPLIT_DELIMETER);
 
-        if (values.length != 14) {
-            System.out.println("bad line formatting: " + line);
+        if (values.length == 1) {
             return null;
         }
 
