@@ -33,6 +33,7 @@ const mapDispatchToProps = dispatch => ({
       end: 'pm',
       gap: '15',
       free: [],
+      sortByGPA: 'Yes',
     };
     if (query) {
       fetch(`${retrieveShortUrl}/generator/${parse(query).q}`)
