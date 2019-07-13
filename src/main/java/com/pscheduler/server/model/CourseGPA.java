@@ -2,7 +2,6 @@ package com.pscheduler.server.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Version;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
