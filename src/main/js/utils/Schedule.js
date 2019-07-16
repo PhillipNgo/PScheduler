@@ -11,11 +11,31 @@ class Schedule extends Set {
       super(data);
       this.gap = data.gap;
       this.credits = data.credits;
+      this.gpa = 0.00;
     } else {
       super();
       this.gap = data;
       this.credits = 0;
+      this.gpa = 0.00;
     }
+  }
+
+  /**
+   * Function to calculate the estimated gpa of a schedule
+   */
+  calculateGPA() {
+    let weightedGPA = 0.00;
+    let totalCredits = 0;
+    this.forEach((course) => {
+      if (course.gpa > 0) {
+        weightedGPA += (course.gpa * course.credits);
+        totalCredits += course.credits;
+      }
+    });
+
+    const scheduleGPA = (weightedGPA === 0 || totalCredits === 0)
+      ? 0.00 : weightedGPA / totalCredits;
+    this.gpa = scheduleGPA.toFixed(2);
   }
 
   /**

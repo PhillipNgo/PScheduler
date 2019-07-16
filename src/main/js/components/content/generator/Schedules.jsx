@@ -99,6 +99,9 @@ class Schedules extends React.Component {
           <h4>
             {`Schedule ${schedules.length > 0 ? scheduleIndex + 1 : 0} of ${schedules.length}`}
           </h4>
+          <h4>
+            {`Estimated GPA: ${schedules[scheduleIndex].gpa}`}
+          </h4>
           <div>
             <button type="button" className="btn btn-default" onClick={this.toggleCarousel}>
               Toggle Nav

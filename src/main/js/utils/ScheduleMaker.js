@@ -25,6 +25,7 @@ class ScheduleMaker {
       const currSchedule = lastCourse ? new Schedule(schedule) : schedule;
       if (currSchedule.add(course)) {
         if (lastCourse) {
+          currSchedule.calculateGPA();
           this.schedules.push(currSchedule);
           // Reached MAX_SCHEDULES, forcibly quit recursion
           if (this.schedules.length === ScheduleMaker.MAX_SCHEDULES) {
