@@ -2,6 +2,7 @@ package com.pscheduler.server.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Version;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -74,11 +75,6 @@ public class CourseGPA {
     @Max(value = 1000)
     private int withdraws;
 
-    @NotNull
-    @Min(value = 100000)
-    @Max(value = 999999)
-    private int term;
-
     public CourseGPA() {}
 
     public CourseGPA(
@@ -95,8 +91,7 @@ public class CourseGPA {
         double C,
         double D,
         double F,
-        int withdraws,
-        int term
+        int withdraws
     ) {
         this.subject = subject;
         this.courseNumber = courseNumber;
@@ -112,7 +107,6 @@ public class CourseGPA {
         this.D = D;
         this.F = F;
         this.withdraws = withdraws;
-        this.term = term;
     }
 
     public String getSubject() {
@@ -225,13 +219,5 @@ public class CourseGPA {
 
     public void setWithdraws(int withdraws) {
         this.withdraws = withdraws;
-    }
-
-    public int getTerm() {
-    	return this.term;
-    }
-
-    public void setTerm(int term) {
-    	this.term = term;
     }
 }

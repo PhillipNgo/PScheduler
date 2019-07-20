@@ -6,7 +6,6 @@ import com.pscheduler.server.model.Meeting;
 import com.pscheduler.server.repository.CourseGPARepository;
 import com.pscheduler.server.repository.CourseRepository;
 import com.pscheduler.server.repository.MeetingRepository;
-import com.pscheduler.util.parser.GradeParser;
 import com.pscheduler.util.parser.VTParser;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,13 +18,10 @@ import java.util.List;
 
 @Component
 public class DatabaseLoader implements ApplicationRunner {
-
     private final CourseRepository courses;
     private final MeetingRepository meetings;
+    private final int TERM = 201909;
     private final CourseGPARepository gpa;
-
-    private final int TIMETABLE_TERM = 201909;
-    private final int GRADES_TERM = 201901;
 
     @Autowired
     public DatabaseLoader (CourseRepository courses, MeetingRepository meetings, CourseGPARepository gpa) {
@@ -36,13 +32,11 @@ public class DatabaseLoader implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        // Load TIMETABLE_TERM Courses
-        VTParser parser = new VTParser(Course.class, TIMETABLE_TERM);
-        List<com.pscheduler.util.Course> courseListGeneric = parser.parseTermFile("./src/main/resources/data/" + TIMETABLE_TERM + ".txt");
+        VTParser parser = new VTParser(Course.class, TERM);
+
+        List<com.pscheduler.util.Course> courseListGeneric = parser.parseTermFile("./src/main/resources/data/" + TERM + ".txt");
         List<Course> courseList = new ArrayList<>();
-        for (com.pscheduler.util.Course course : courseListGeneric) {
-            courseList.add((Course) course);
-        }
+        for (com.pscheduler.util.Course course : courseListGeneric) courseList.add((Course) course);
         for (Course course : courseList) {
             for (com.pscheduler.util.Meeting meeting : course.getMeetings()) {
                 Meeting serverMeeting = (Meeting) meeting;
@@ -51,9 +45,22 @@ public class DatabaseLoader implements ApplicationRunner {
         }
         courses.save(courseList);
 
-        // Load GRADES_TERM Course GPAs
-        GradeParser grader = new GradeParser();
-        List<CourseGPA> courseGrades = grader.parseTermFile(GRADES_TERM);
-        gpa.save(courseGrades);
+        CourseGPA course = new CourseGPA(
+            "CS",
+            "4704",
+            "Software Engineering Capstone",
+            "Servant Cortes",
+            82731,
+            3,
+            4.00,
+            15,
+            100.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0);
+        gpa.save(course);
     }
 }
+
