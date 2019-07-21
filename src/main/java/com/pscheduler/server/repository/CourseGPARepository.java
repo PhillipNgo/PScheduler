@@ -14,17 +14,17 @@ public interface CourseGPARepository extends PagingAndSortingRepository<CourseGP
     @Query(
         "SELECT course FROM CourseGPA course"
         + " WHERE (:query IS NULL OR LOWER(CONCAT(course.subject, course.courseNumber, ' ', course.name)) LIKE CONCAT('%', :query, '%'))"
-        + " AND (:subject IS NULL OR course.subject = :subject)"
-        + " AND (:courseNumber IS NULL OR course.courseNumber = :courseNumber)"
-        + " AND (:name IS NULL OR course.name = :name)"
-        + " AND (:instructor IS NULL OR course.instructor = :instructor)"
+        + " AND (:term IS NULL OR course.term = :term)"
+        + " AND (:subject IS NULL OR LOWER(course.subject) = LOWER(:subject))"
+        + " AND (:courseNumber IS NULL OR LOWER(course.courseNumber) = LOWER(:courseNumber))"
+        + " AND (:instructor IS NULL OR LOWER(course.instructor) = LOWER(:instructor))"
     )
     @RestResource(exported = false)
     Page<CourseGPA> searchAll(
             @Param("query") String query,
+            @Param("term") Integer term,
             @Param("subject") String subject,
             @Param("courseNumber") String courseNumber,
-            @Param("name") String name,
             @Param("instructor") String instructor,
             Pageable page
     );
