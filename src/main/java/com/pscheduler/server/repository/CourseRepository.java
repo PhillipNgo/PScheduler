@@ -16,28 +16,22 @@ public interface CourseRepository extends PagingAndSortingRepository<Course, Int
     @Query(
         "SELECT course FROM Course course"
         + " WHERE (:query IS NULL OR LOWER(CONCAT(course.subject, course.courseNumber, ' ', course.name)) LIKE CONCAT('%', :query, '%'))"
-        + " AND (:crn IS NULL OR course.crn = :crn)"
-        + " AND (:subject IS NULL OR course.subject = :subject)"
-        + " AND (:courseNumber IS NULL OR course.courseNumber = :courseNumber)"
-        + " AND (:type IS NULL OR course.type = :type)"
-        + " AND (:instructor IS NULL OR course.instructor = :instructor)"
-        + " AND (:capacity IS NULL OR course.capacity = :capacity)"
-        + " AND (:credits IS NULL OR course.credits = :credits)"
-        + " AND (:name IS NULL OR course.name = :name)"
         + " AND (:term IS NULL OR course.term = :term)"
+        + " AND (:crn IS NULL OR LOWER(course.crn) = LOWER(:crn))"
+        + " AND (:subject IS NULL OR LOWER(course.subject) = LOWER(:subject))"
+        + " AND (:courseNumber IS NULL OR LOWER(course.courseNumber) = LOWER(:courseNumber))"
+        + " AND (:type IS NULL OR LOWER(course.type) = LOWER(:type))"
+        + " AND (:instructor IS NULL OR LOWER(course.instructor) = LOWER(:instructor))"
     )
     @RestResource(exported = false)
     Page<Course> searchAll(
         @Param("query") String query,
+        @Param("term") Integer term,
         @Param("crn") Integer crn,
         @Param("subject") String subject,
         @Param("courseNumber") String courseNumber,
         @Param("type") String type,
         @Param("instructor") String instructor,
-        @Param("capacity") Integer capacity,
-        @Param("credits") Integer credits,
-        @Param("name") String name,
-        @Param("term") Integer term,
         Pageable page
     );
 }
