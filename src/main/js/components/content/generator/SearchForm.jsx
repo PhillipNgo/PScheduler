@@ -160,17 +160,6 @@ class SearchForm extends React.Component {
                 multiple
               />
             </div>
-            <div className="pad-top margin-right">
-              <h4>
-                Sort by GPA
-              </h4>
-              <FormModule
-                type="select"
-                name="sortByGPA"
-                width="auto"
-                values={['Yes', 'No']}
-              />
-            </div>
           </div>
         </div>
         <div className="no-pad">
