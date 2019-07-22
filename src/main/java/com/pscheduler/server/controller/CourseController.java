@@ -38,26 +38,29 @@ public class CourseController {
         @RequestParam(value="number", required = false) String number,
         @RequestParam(value="type", required = false) String type,
         @RequestParam(value="instructor", required = false) String instructor,
-        @RequestParam(value="capacity", required = false) Integer capacity,
-        @RequestParam(value="credits", required = false) Integer credits,
-        @RequestParam(value="name", required = false) String name,
         @RequestParam(value="sort", required = false) List<String> sorts,
         Pageable page
     ) {
         try {
             Sort sort = sorts == null ? null : new Sort(Sort.Direction.ASC, sorts);
             Pageable pageRequest = new PageRequest(page.getPageNumber(), page.getPageSize(), sort);
-            List<Course> courses = query.stream().flatMap(q -> {
-                String searchTerm = q.toLowerCase().replaceAll(" ", "");
-                return courseRepo.searchAll(
-                    searchTerm, crn, subject, number, type, instructor,
-                    capacity, credits, name, term, pageRequest
-                ).getContent().stream();
-            }).collect(Collectors.toList());
-            Page<Course> pagedCourses = new PageImpl<>(courses, pageRequest, courses.size());
+            Page<Course> pagedCourses;
+
+            if (query == null) {
+                pagedCourses = courseRepo.searchAll(null, term, crn, subject, number, type, instructor, pageRequest);
+            } else {
+                List<Course> courses; courses = query.stream().flatMap(q -> {
+                    String searchTerm = q.toLowerCase().replaceAll(" ", "");
+                    return courseRepo.searchAll(searchTerm, term, crn, subject, number, type, instructor, pageRequest)
+                            .getContent()
+                            .stream();
+                }).collect(Collectors.toList());
+                pagedCourses = new PageImpl<>(courses, pageRequest, courses.size());
+            }
+
             PagedResources<Resource<Course>> resources = assembler.toResource(pagedCourses);
             resources.add(linkTo(methodOn(CourseController.class).getSearch(
-                query, term, crn, subject, number, type, instructor, capacity, credits, name, sorts, page
+                query, term, crn, subject, number, type, instructor, sorts, page
             )).withSelfRel());
             return ResponseEntity.ok(resources);
         } catch (Exception ex) {
