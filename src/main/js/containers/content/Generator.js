@@ -35,6 +35,9 @@ const mapDispatchToProps = dispatch => ({
       free: [],
       sortByGPA: 'yes',
     };
+    if (process.env.NODE_ENV !== 'production') {
+      formValues.genURL = false;
+    }
     if (query) {
       fetch(`${retrieveShortUrl}/generator/${parse(query).q}`)
         .then(response => response.json())
