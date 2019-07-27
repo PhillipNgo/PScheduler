@@ -16,10 +16,10 @@ export const startGenerating = () => ({
   type: START_GENERATING,
 });
 
-export const endGenerating = schedules => ({
+export const endGenerating = scheduleMaker => ({
   type: END_GENERATING,
-  payload: schedules,
-  error: schedules instanceof Error,
+  payload: scheduleMaker,
+  error: scheduleMaker.schedules instanceof Error,
 });
 
 export const filteredCourses = courses => ({

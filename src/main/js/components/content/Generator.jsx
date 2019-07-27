@@ -8,9 +8,9 @@ import ErrorPage from './generator/ErrorPage';
 
 class Generator extends React.Component {
   componentDidMount() {
-    const { loadSchedule, location, firstRender } = this.props;
+    const { loadSchedules, location, firstRender } = this.props;
     if (firstRender) {
-      loadSchedule(location.search);
+      loadSchedules(location.search);
     }
   }
 

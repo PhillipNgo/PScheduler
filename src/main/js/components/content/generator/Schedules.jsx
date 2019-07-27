@@ -72,7 +72,7 @@ class Schedules extends React.Component {
   }
 
   render() {
-    const { schedules } = this.props;
+    const { loadMoreSchedules, schedules } = this.props;
     const {
       scheduleIndex,
       showTextTable,
@@ -100,6 +100,9 @@ class Schedules extends React.Component {
             {`Schedule ${schedules.length > 0 ? scheduleIndex + 1 : 0} of ${schedules.length}`}
           </h4>
           <div>
+            <button type="button" className="btn btn-default" onClick={loadMoreSchedules}>
+              Load More Schedules
+            </button>
             <button type="button" className="btn btn-default" onClick={this.toggleCarousel}>
               Toggle Nav
             </button>

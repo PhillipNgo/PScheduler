@@ -10,7 +10,7 @@ import ScheduleMaker from './ScheduleMaker';
 import 'whatwg-fetch';
 import { shortenUrl } from '../constants/resources';
 
-const generateSchedules = (values, loadQuery) => (dispatch, getState) => {
+export const generateSchedules = (values, loadQuery) => (dispatch, getState) => {
   const { courseList } = getState().courses;
   if (courseList.length !== 0) {
     dispatch(startGenerating());
@@ -18,13 +18,13 @@ const generateSchedules = (values, loadQuery) => (dispatch, getState) => {
     dispatch(filteredCourses(filteredResults));
     const filteredCourseList = filteredResults.map(result => (
       result.filtered));
-    let schedules = [];
+    let scheduleMaker = null;
     if (!filteredCourseList.find(list => list.length === 0)) {
-      const scheduleMaker = new ScheduleMaker(filteredCourseList, parseInt(values.gap, 10));
+      scheduleMaker = new ScheduleMaker(filteredCourseList, parseInt(values.gap, 10));
       try {
-        schedules = scheduleMaker.makeSchedules();
+        scheduleMaker.makeSchedules();
       } catch (e) {
-        schedules = e;
+        scheduleMaker.schedules = e;
       }
     }
     const queryObject = {
@@ -44,21 +44,32 @@ const generateSchedules = (values, loadQuery) => (dispatch, getState) => {
         const querystring = `q=${result}`;
         dispatch(startRedirect({
           pathname: '/generator',
-          hash: schedules.length > 0 ? '#schedules' : '#timetable',
+          hash: scheduleMaker.schedules.length > 0 ? '#schedules' : '#timetable',
           search: result ? querystring : '',
         }));
       })
       .catch(() => {
         dispatch(startRedirect({
           pathname: '/generator',
-          hash: schedules.length > 0 ? '#schedules' : '#timetable',
+          hash: scheduleMaker.schedules.length > 0 ? '#schedules' : '#timetable',
           search: '',
         }));
       })
       .then(() => {
-        dispatch(endGenerating(schedules));
+        console.log(scheduleMaker);
+        dispatch(endGenerating(scheduleMaker));
       });
   }
 };
 
-export default generateSchedules;
+export const generateMoreSchedules = () => (dispatch, getState) => {
+  dispatch(startGenerating());
+  const { scheduleMaker } = getState().generator;
+  try {
+    scheduleMaker.makeSchedules();
+  } catch (e) {
+    scheduleMaker.schedules = e;
+  }
+  console.log(scheduleMaker);
+  dispatch(endGenerating(scheduleMaker));
+};

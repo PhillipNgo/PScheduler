@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { parse } from 'query-string';
 import { addToSchedule } from '../../actions/courses';
 import formDefaults from '../../constants/formDefaults';
-import generateSchedules from '../../utils/generate';
+import { generateSchedules } from '../../utils/generate';
 import {
   endGenerating,
   endRedirect,
@@ -22,7 +22,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  loadSchedule: (query) => {
+  loadSchedules: (query) => {
     let formValues = {
       term: formDefaults.termValue,
       h1: '08',

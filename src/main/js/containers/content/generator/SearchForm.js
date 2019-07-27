@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { reduxForm, resetSection } from 'redux-form';
 import { resetSchedule, removeCourse } from '../../../actions/courses';
-import generateSchedules from '../../../utils/generate';
+import { generateSchedules } from '../../../utils/generate';
 import SearchForm from '../../../components/content/generator/SearchForm';
 
 const mapStateToProps = state => ({

@@ -9,7 +9,7 @@ import {
 
 const initialState = {
   isGenerating: false,
-  schedules: [],
+  scheduleMaker: null,
   filteredCourses: [],
   redirect: null,
   initialValues: null,
@@ -34,7 +34,7 @@ export default (state = initialState, action) => {
         ...state,
         isGenerating: false,
         error: action.error,
-        schedules: action.error ? [] : action.payload,
+        scheduleMaker: action.payload,
       };
     case FILTERED_COURSES:
       return {
