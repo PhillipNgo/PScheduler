@@ -172,6 +172,19 @@ class SearchForm extends React.Component {
               />
             </div>
           </div>
+          { process.env.NODE_ENV !== 'production' && (
+            <div className="flex-container">
+              <div className="pad-top margin-right">
+                <label className="checkbox-inline">
+                  <FormModule
+                    type="checkbox"
+                    name="genURL"
+                  />
+                  [dev-only] Generate URL
+                </label>
+              </div>
+            </div>
+          )}
         </div>
         <div className="no-pad">
           <div className="flex-container">

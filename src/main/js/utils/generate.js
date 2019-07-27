@@ -49,12 +49,12 @@ const redirectToGenerator = (schedules, search = '') => startRedirect({
   search: search.replace('==', '='),
 });
 
-const generateSchedules = (values, loadQuery) => (dispatch, getState) => {
+const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
   const { courseList } = getState().courses;
   if (courseList.length !== 0) {
     dispatch(startGenerating());
 
-    const shortCode = loadQuery ? Promise.resolve(loadQuery.substring(2))
+    const shortCode = loadQuery || !values.genURL ? Promise.resolve(loadQuery.substring(2))
       : fetchShortUrl(courseList, values);
 
     addGPA(courseList).then((res) => {
