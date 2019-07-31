@@ -27,3 +27,7 @@ export const UNSELECT_CRN = 'UNSELECT_CRN';
 export const RESET_BUILDER = 'RESET_BUILDER';
 export const START_BUILDING = 'START_BUILDING';
 export const END_BUILDING = 'END_BUILDING';
+
+// grades actions
+export const ADD_COURSEGPA = 'ADD_COURSEGPA';
+export const CLEAR_GRADES = 'CLEAR_GRADES';

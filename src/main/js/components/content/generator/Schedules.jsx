@@ -72,7 +72,7 @@ class Schedules extends React.Component {
   }
 
   render() {
-    const { schedules } = this.props;
+    const { schedules, gradeMap } = this.props;
     const {
       scheduleIndex,
       showTextTable,
@@ -98,9 +98,6 @@ class Schedules extends React.Component {
           </div>
           <h4>
             {`Schedule ${schedules.length > 0 ? scheduleIndex + 1 : 0} of ${schedules.length}`}
-          </h4>
-          <h4>
-            {`Estimated GPA: ${schedules[scheduleIndex].gpa}`}
           </h4>
           <div>
             <button type="button" className="btn btn-default" onClick={this.toggleCarousel}>
@@ -140,7 +137,7 @@ class Schedules extends React.Component {
         </div>
         <div className="carousel">
           <div className="carousel-inner">
-            { showTextTable && <CourseTable courses={schedule} colored header /> }
+            { showTextTable && <CourseTable courses={schedule} gradeMap={gradeMap} colored header /> }
             { showVisualTable && <ScheduleVisualTable schedule={schedule} /> }
           </div>
           { showCarousel && (

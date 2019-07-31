@@ -2,15 +2,16 @@
 import Schedule from './Schedule';
 
 class ScheduleMaker {
-  constructor(courseListings, gap) {
+  constructor(courseListings, gap, sort) {
     this.courseListings = courseListings;
     this.gap = gap;
+    this.sort = sort;
     this.schedules = [];
   }
 
   makeSchedules() {
     try {
-      this._makeSchedules(this.courseListings, new Schedule(this.gap), 0);
+      this._makeSchedules(this.courseListings, new Schedule(this.gap, this.sort), 0);
     } catch (e) {
       if (this.schedules.length !== ScheduleMaker.MAX_SCHEDULES) {
         return [];
@@ -22,10 +23,9 @@ class ScheduleMaker {
   _makeSchedules(courseListings, schedule, courseIndex) {
     courseListings[courseIndex].forEach((course) => {
       const lastCourse = courseIndex === courseListings.length - 1;
-      const currSchedule = lastCourse ? new Schedule(schedule) : schedule;
+      const currSchedule = lastCourse ? new Schedule(schedule, this.sort) : schedule;
       if (currSchedule.add(course)) {
         if (lastCourse) {
-          currSchedule.calculateGPA();
           this.schedules.push(currSchedule);
           // Reached MAX_SCHEDULES, forcibly quit recursion
           if (this.schedules.length === ScheduleMaker.MAX_SCHEDULES) {
