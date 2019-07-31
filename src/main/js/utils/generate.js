@@ -73,8 +73,7 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
     dispatch(filteredCourses(filteredResults));
     let filteredCourseList = filteredResults.map(result => result.filtered);
 
-    // REMEMBER TO CHANGE BELOW SO THAT IT CHECKS THE STRING AND NOT FALSELY
-    const gpasLoading = values.sortByGPA ? addGPA(filteredCourseList) : Promise.reject();
+    const gpasLoading = values.sortByGPA === 'yes' ? addGPA(filteredCourseList) : Promise.reject();
 
     gpasLoading
       .then((res) => {
