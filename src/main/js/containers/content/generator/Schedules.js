@@ -3,7 +3,8 @@ import Schedules from '../../../components/content/generator/Schedules';
 
 const mapStateToProps = state => ({
   schedules: state.generator.schedules,
-  gradeMap: state.grades,
+  gradeMap: state.grades.map,
+  sortByGPA: state.grades.sort,
 });
 
 const mapDispatchToProps = () => ({

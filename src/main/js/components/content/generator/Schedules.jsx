@@ -72,7 +72,7 @@ class Schedules extends React.Component {
   }
 
   render() {
-    const { schedules, gradeMap } = this.props;
+    const { schedules, gradeMap, sortByGPA } = this.props;
     const {
       scheduleIndex,
       showTextTable,
@@ -137,7 +137,7 @@ class Schedules extends React.Component {
         </div>
         <div className="carousel">
           <div className="carousel-inner">
-            { showTextTable && <CourseTable courses={schedule} gradeMap={gradeMap} colored header /> }
+            { showTextTable && <CourseTable courses={schedule} gradeMap={gradeMap} sortByGPA={sortByGPA} colored header /> }
             { showVisualTable && <ScheduleVisualTable schedule={schedule} /> }
           </div>
           { showCarousel && (

@@ -2,16 +2,15 @@
 import Schedule from './Schedule';
 
 class ScheduleMaker {
-  constructor(courseListings, gap, sort) {
+  constructor(courseListings, gap) {
     this.courseListings = courseListings;
     this.gap = gap;
-    this.sort = sort;
     this.schedules = [];
   }
 
   makeSchedules() {
     try {
-      this._makeSchedules(this.courseListings, new Schedule(this.gap, this.sort), 0);
+      this._makeSchedules(this.courseListings, new Schedule(this.gap), 0);
     } catch (e) {
       if (this.schedules.length !== ScheduleMaker.MAX_SCHEDULES) {
         return [];

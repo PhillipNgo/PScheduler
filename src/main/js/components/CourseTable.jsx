@@ -1,75 +1,38 @@
 import React from 'react';
 import colors from '../constants/colors';
 import Schedule from '../utils/Schedule';
+import { getInstructorLastName } from '../utils/grade';
 
-/**
-* As of Fall 2019, VT puts the instructor for timetables in the format of
-* 'X Y' where X is the first initial and Y is the instructor's last name
-* @param {String} instructor is the name of the instructor
-* @returns a String of the instructor's last name
-*/
-export const getInstructorLastName = (instructor) => {
-  const splitted = instructor.split(' ');
-  return splitted[splitted.length - 1];
-};
+class CourseTable extends React.Component {
+  /** Gets the gpa of a course */
+  getCourseGPA(course) {
+    const { gradeMap } = this.props;
 
-export const calculateGPA = (schedule, gradeMap) => {
-  if (!(schedule instanceof Schedule)) return 0.00;
-
-  let weightedGPA = 0.00;
-  let totalCredits = 0;
-
-  schedule.forEach((course) => {
     const name = `${course.subject}${course.courseNumber}`;
     const instructor = getInstructorLastName(course.instructor);
 
-    if (!gradeMap[name]) return;
-    if (!gradeMap[name][instructor]) return;
-
-    const sum = gradeMap[name][instructor].reduce((a, b) => a + b, 0);
-    weightedGPA += (sum / gradeMap[name][instructor].length) * course.credits;
-    totalCredits += course.credits;
-  });
-
-  const scheduleGPA = (weightedGPA === 0 || totalCredits === 0)
-    ? 0.00 : weightedGPA / totalCredits;
-  return scheduleGPA.toFixed(2);
-};
-
-/** Gets the gpa of a course */
-export const getCourseGPA = (course, gradeMap) => {
-  if (course.type === 'B') return 0.00;
-
-  const name = `${course.subject}${course.courseNumber}`;
-  const instructor = getInstructorLastName(course.instructor);
-
-  if (!gradeMap[name]) return 0.00;
-  if (!gradeMap[name][instructor]) return 0.00;
-  const sum = gradeMap[name][instructor].reduce((a, b) => a + b, 0);
-
-  return (sum / gradeMap[name][instructor].length).toFixed(2);
-};
-
-class CourseTable extends React.Component {
+    if (!gradeMap[name] || !gradeMap[name][instructor]) return 0.00;
+    return gradeMap[name][instructor].toFixed(2);
+  }
 
   /* eslint-disable react/no-array-index-key */
-  createRows(sort) {
-    const { courses, colored, gradeMap } = this.props;
+  createRows() {
+    const { courses, colored, sortByGPA } = this.props;
     let rows = [];
     [...courses].forEach((course, courseNum) => {
-      const courseRows = CourseTable.courseRows(course, courseNum, colored ? colors[courseNum] : '', sort, gradeMap);
+      const courseRows = CourseTable.courseRows(course, courseNum, colored ? colors[courseNum] : '', sortByGPA, this.getCourseGPA(course));
       rows = rows.concat(courseRows);
     });
     return rows;
   }
 
   render() {
-    const { courses, header, children = this.createRows(courses.sort), gradeMap } = this.props;
+    const { sortByGPA, courses, header, children = this.createRows(), gradeMap } = this.props;
     return (
       <div className="table-responsive">
         <table className="table table-condensed text-table">
           <tbody>
-            {header && <CourseTable.HeaderRow schedule={courses instanceof Schedule ? courses : null} gpa={calculateGPA(courses, gradeMap)} />}
+            {header && <CourseTable.HeaderRow schedule={courses instanceof Schedule ? courses : null} gradeMap={gradeMap} sortByGPA={sortByGPA} />}
             {children}
           </tbody>
         </table>
@@ -78,7 +41,7 @@ class CourseTable extends React.Component {
   }
 }
 
-CourseTable.HeaderRow = ({ schedule, gpa }) => (
+CourseTable.HeaderRow = ({ schedule, gradeMap, sortByGPA }) => (
   <tr>
     <th>
       CRN
@@ -89,9 +52,9 @@ CourseTable.HeaderRow = ({ schedule, gpa }) => (
     <th>
       Title
     </th>
-    {schedule.sort === 'yes' && (
+    {sortByGPA && (
       <th>
-        {`GPA${schedule ? ` (${gpa})` : ''}`}
+        {`GPA${schedule ? ` (${schedule.calculateGPA(gradeMap)})` : ''}`}
       </th>
     )}
     <th>
@@ -115,7 +78,7 @@ CourseTable.HeaderRow = ({ schedule, gpa }) => (
   </tr>
 );
 
-CourseTable.courseRows = (course, index, color = '', sort, gradeMap) => (
+CourseTable.courseRows = (course, index, color = '', sort, grade) => (
   course.meetings.map((meeting, meetingNum) => (
     <tr style={{ backgroundColor: color }} key={`${course.crn}${meetingNum}${index}`}>
       <td>
@@ -127,9 +90,9 @@ CourseTable.courseRows = (course, index, color = '', sort, gradeMap) => (
       <td>
         {meetingNum === 0 && course.name}
       </td>
-      {sort === 'yes' && (
+      {sort && (
         <th>
-          {`${getCourseGPA(course, gradeMap)}`}
+          {grade}
         </th>
       )}
       <td>

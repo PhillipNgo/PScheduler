@@ -33,7 +33,7 @@ const mapDispatchToProps = dispatch => ({
       end: 'pm',
       gap: '15',
       free: [],
-      sortByGPA: 'no',
+      sortByGPA: false,
       genURL: process.env.NODE_ENV === 'production',
     };
     if (query) {

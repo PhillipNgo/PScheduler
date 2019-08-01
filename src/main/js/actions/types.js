@@ -30,4 +30,4 @@ export const END_BUILDING = 'END_BUILDING';
 
 // grades actions
 export const ADD_COURSEGPA = 'ADD_COURSEGPA';
-export const CLEAR_GRADES = 'CLEAR_GRADES';
+export const SELECT_SORTBYGPA = 'SELECT_SORTBYGPA';

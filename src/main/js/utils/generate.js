@@ -6,32 +6,18 @@ import {
   filteredCourses,
   startRedirect,
 } from '../actions/generator';
-import addGPA from './grade';
+import getGPAMap, { getInstructorLastName } from './grade';
 import ScheduleMaker from './ScheduleMaker';
 import 'whatwg-fetch';
 import { shortenUrl } from '../constants/resources';
-import { addGrades } from '../actions/grades';
-import { getInstructorLastName, calculateGPA } from '../components/CourseTable';
+import { addGrades, sortByGPA } from '../actions/grades';
 
-const genSchedules = (courseList, gap, sort, gradeMap) => {
+const genSchedules = (courseList, gap) => {
   let schedules = [];
   if (!courseList.find(list => list.length === 0)) {
-    const scheduleMaker = new ScheduleMaker(courseList, parseInt(gap, 10), sort);
+    const scheduleMaker = new ScheduleMaker(courseList, parseInt(gap, 10));
     try {
       schedules = scheduleMaker.makeSchedules();
-      if (sort === 'yes') {
-        /** My Implementation of Insertion sort */
-        for (let x = 1; x < schedules.length; x += 1) {
-          const key = schedules[x];
-          let j = x - 1;
-
-          while (j >= 0 && calculateGPA(schedules[j], gradeMap) < calculateGPA(key, gradeMap)) {
-            schedules[j + 1] = schedules[j];
-            j -= 1;
-          }
-          schedules[j + 1] = key;
-        }
-      }
     } catch (e) {
       schedules = e;
     }
@@ -65,45 +51,55 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
   const { courseList } = getState().courses;
   if (courseList.length !== 0) {
     dispatch(startGenerating());
+    dispatch(sortByGPA(values.sortByGPA));
+
 
     const shortCode = loadQuery || !values.genURL ? Promise.resolve(loadQuery.substring(2))
       : fetchShortUrl(courseList, values);
 
+    const gpasLoading = values.sortByGPA ? getGPAMap(courseList) : Promise.reject();
+
     const filteredResults = filterCourses(values, courseList);
     dispatch(filteredCourses(filteredResults));
-    let filteredCourseList = filteredResults.map(result => result.filtered);
-
-    const gpasLoading = values.sortByGPA === 'yes' ? addGPA(filteredCourseList) : Promise.reject();
+    const filteredCourseList = filteredResults.map(result => result.filtered);
 
     gpasLoading
-      .then((res) => {
-        dispatch(addGrades(res));
-        filteredCourseList = filteredCourseList.map(list => list.sort((course1, course2) => {
+      .then((gradeMap) => {
+        dispatch(addGrades(gradeMap));
+        filteredCourseList.forEach(list => list.sort((course1, course2) => {
           const name = `${course1.subject}${course1.courseNumber}`;
           const instructor1 = getInstructorLastName(course1.instructor); // Backend only holds instructors' last name
           const instructor2 = getInstructorLastName(course2.instructor);
 
           /** Can't sort if the backend doesn't hold data for the entire course */
-          if (!res[name]) return 0;
-
-          /** Assume when instructor === 'Staff', then the course has a gpa of 0.00 */
-          if (instructor1 === 'Staff' && instructor2 === 'Staff') return 0;
-          else if (instructor1 === 'Staff') return 1; // eslint-disable-line
-          else if (instructor2 === 'Staff') return -1;
+          if (!gradeMap[name]) return 0;
 
           /** Use mapping to determine sort order */
-          if (!res[name][instructor1]) return 1;
-          else if (!res[name][instructor2]) return -1; // eslint-disable-line
+          if (!gradeMap[name][instructor1] && !gradeMap[name][instructor2]) return 0;
+          else if (!gradeMap[name][instructor1]) return 1;
+          else if (!gradeMap[name][instructor2]) return -1;
           else {
-            const sum1 = res[name][instructor1].reduce((a, b) => a + b, 0);
-            const sum2 = res[name][instructor2].reduce((a, b) => a + b, 0);
-
-            return (sum2 / res[name][instructor2].length) - (sum1 / res[name][instructor1].length);
+            return gradeMap[name][instructor2] - gradeMap[name][instructor1];
           }
         }));
       })
       .finally(() => {
-        const schedules = genSchedules(filteredCourseList, values.gap, values.sortByGPA, getState().grades);
+        const schedules = genSchedules(filteredCourseList, values.gap);
+
+        if (values.sortByGPA) {
+          const gradeMap = getState().grades.map;
+          /** My Implementation of Insertion sort */
+          for (let x = 1; x < schedules.length; x += 1) {
+            const key = schedules[x];
+            let j = x - 1;
+
+            while (j >= 0 && schedules[j].calculateGPA(gradeMap) < key.calculateGPA(gradeMap)) {
+              schedules[j + 1] = schedules[j];
+              j -= 1;
+            }
+            schedules[j + 1] = key;
+          }
+        }
 
         shortCode
           .then(code => dispatch(redirectToGenerator(schedules, code ? `q=${code}` : '')))
