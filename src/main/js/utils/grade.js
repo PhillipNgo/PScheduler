@@ -12,36 +12,36 @@ export const getInstructorLastName = instructor => instructor.split(' ').pop();
 
 const getMapping = (gradeList) => {
   const map = {};
-  /** map array of grades to its respective course-instructor */
   gradeList.forEach((course) => {
     const name = `${course.subject}${course.courseNumber}`;
 
     if (!map[name]) {
       map[name] = {};
-      map[name][course.instructor] = [course.gpa];
-    } else if (!map[name][course.instructor]) {
-      map[name][course.instructor] = [course.gpa];
+    }
+
+    if (!map[name][course.instructor]) {
+      map[name][course.instructor] = { qualityCredits: course.gpa * course.credits, credits: course.credits }; // eslint-disable-line max-len
     } else {
-      map[name][course.instructor] = [...map[name][course.instructor], course.gpa];
+      map[name][course.instructor].qualityCredits += course.gpa * course.credits;
+      map[name][course.instructor].credits += course.credits;
     }
   });
 
   /** Transform array of grades into average */
   Object.keys(map).forEach((name) => {
     Object.keys(map[name]).forEach((instructor) => {
-      const sum = map[name][instructor].reduce((a, b) => a + b, 0);
-      map[name][instructor] = sum / map[name][instructor].length;
+      map[name][instructor] = map[name][instructor].qualityCredits / map[name][instructor].credits;
     });
   });
   return map;
 };
 
 /**
- * Adds a gpa field to each course inside the courselist
+ * Get a mapping of course-instructor to average GPA
  * @param courseList is a 2d array containing the list of courses
  */
 const getGPAMap = (courseList) => {
-  const set = new Set(courseList.map(list => `${list[0].subject}${list[0].courseNumber}`)); // removes duplicates
+  const set = new Set(courseList.map(list => `${list[0].subject}${list[0].courseNumber}`));
   const query = queryString.stringify({ query: [...set] });
   const site = `${gpaSearchUrl}?${query}`;
 

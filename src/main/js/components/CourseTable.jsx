@@ -4,7 +4,6 @@ import Schedule from '../utils/Schedule';
 import { getInstructorLastName } from '../utils/grade';
 
 class CourseTable extends React.Component {
-  /** Gets the gpa of a course */
   getCourseGPA(course) {
     const { gradeMap } = this.props;
 

@@ -5,6 +5,7 @@ import {
   FILTERED_COURSES,
   START_REDIRECT,
   END_REDIRECT,
+  SELECT_SORT,
 } from '../actions/types';
 
 const initialState = {
@@ -14,6 +15,7 @@ const initialState = {
   redirect: null,
   initialValues: null,
   error: null,
+  sort: false,
 };
 
 export default (state = initialState, action) => {
@@ -50,6 +52,11 @@ export default (state = initialState, action) => {
       return {
         ...state,
         redirect: null,
+      };
+    case SELECT_SORT:
+      return {
+        ...state,
+        sort: action.payload,
       };
     default:
       return state;

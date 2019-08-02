@@ -1,14 +1,11 @@
 import {
-  ADD_COURSEGPA,
-  SELECT_SORTBYGPA,
+  ADD_GRADES,
 } from './types';
 
 export const addGrades = gpa => ({
-  type: ADD_COURSEGPA,
-  gpa,
+  type: ADD_GRADES,
+  payload: gpa,
+  error: gpa instanceof Error,
 });
 
-export const sortByGPA = sort => ({
-  type: SELECT_SORTBYGPA,
-  sort,
-});
+export default addGrades;

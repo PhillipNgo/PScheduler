@@ -1,23 +1,18 @@
 import {
-  ADD_COURSEGPA, SELECT_SORTBYGPA,
+  ADD_GRADES,
 } from '../actions/types';
 
 const initialState = {
   map: {},
-  sort: false,
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case ADD_COURSEGPA:
+    case ADD_GRADES:
       return {
         ...state,
-        map: action.gpa,
-      };
-    case SELECT_SORTBYGPA:
-      return {
-        ...state,
-        sort: action.sort,
+        map: action.payload,
+        error: action.error,
       };
     default:
       return state;
