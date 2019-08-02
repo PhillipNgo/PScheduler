@@ -20,7 +20,10 @@ const getMapping = (gradeList) => {
     }
 
     if (!map[name][course.instructor]) {
-      map[name][course.instructor] = { qualityCredits: course.gpa * course.credits, credits: course.credits }; // eslint-disable-line max-len
+      map[name][course.instructor] = {
+        qualityCredits: course.gpa * course.credits,
+        credits: course.credits,
+      };
     } else {
       map[name][course.instructor].qualityCredits += course.gpa * course.credits;
       map[name][course.instructor].credits += course.credits;
