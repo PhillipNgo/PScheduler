@@ -22,7 +22,7 @@ class ScheduleMaker {
   _makeSchedules(courseListings, schedule, courseIndex) {
     courseListings[courseIndex].forEach((course) => {
       const lastCourse = courseIndex === courseListings.length - 1;
-      const currSchedule = lastCourse ? new Schedule(schedule, this.sort) : schedule;
+      const currSchedule = lastCourse ? new Schedule(schedule) : schedule;
       if (currSchedule.add(course)) {
         if (lastCourse) {
           this.schedules.push(currSchedule);

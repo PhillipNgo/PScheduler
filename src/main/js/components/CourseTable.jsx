@@ -90,9 +90,9 @@ CourseTable.courseRows = (course, index, color = '', sort, grade) => (
         {meetingNum === 0 && course.name}
       </td>
       {sort && (
-        <th>
+        <td>
           {grade}
-        </th>
+        </td>
       )}
       <td>
         {meetingNum === 0 && course.type}

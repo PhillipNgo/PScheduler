@@ -78,14 +78,15 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
           if (!gradeMap[name][instructor2]) return -1;
           return gradeMap[name][instructor2] - gradeMap[name][instructor1];
         }));
-      })
-      .catch(error => error)
+      },
+      () => Promise.resolve())
+      .catch(error => dispatch(addGrades(error)))
       .finally(() => {
         const schedules = genSchedules(filteredCourseList, values.gap);
 
-        if (values.sortByGPA) {
+        if (!(schedules instanceof Error) && values.sortByGPA) {
           const gradeMap = getState().grades.map;
-          schedules.sort((schedule1, schedule2) => schedule2.calculateGPA(gradeMap) - schedule1.calculateGPA(gradeMap)); // eslint-disable-line max-len
+          schedules.sort((schedule1, schedule2) => schedule2.calculateGPA(gradeMap) - schedule1.calculateGPA(gradeMap));
         }
 
         shortCode

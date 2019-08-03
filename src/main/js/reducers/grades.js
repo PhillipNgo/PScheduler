@@ -8,12 +8,14 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case ADD_GRADES:
+    case ADD_GRADES: {
+      const map = action.error ? {} : action.payload;
       return {
         ...state,
-        map: action.payload,
+        map,
         error: action.error,
       };
+    }
     default:
       return state;
   }

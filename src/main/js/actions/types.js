@@ -18,7 +18,7 @@ export const END_GENERATING = 'END_GENERATING';
 export const FILTERED_COURSES = 'FILTERED_COURSES';
 export const START_REDIRECT = 'START_REDIRECT';
 export const END_REDIRECT = 'END_REDIRECT';
-export const SELECT_SORT = 'SELECT_SORTBYGPA';
+export const SELECT_SORT = 'SELECT_SORT';
 
 // builder actions
 export const ADD_TO_BUILDER = 'ADD_TO_BUILDER';

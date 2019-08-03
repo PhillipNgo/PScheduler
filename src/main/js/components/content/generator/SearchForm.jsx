@@ -168,7 +168,7 @@ class SearchForm extends React.Component {
                   type="checkbox"
                   name="sortByGPA"
                 />
-                Sort by GPA
+                Sort by Estimated GPA
               </label>
             </div>
           </div>

@@ -20,14 +20,11 @@ const getMapping = (gradeList) => {
     }
 
     if (!map[name][course.instructor]) {
-      map[name][course.instructor] = {
-        qualityCredits: course.gpa * course.credits,
-        credits: course.credits,
-      };
-    } else {
-      map[name][course.instructor].qualityCredits += course.gpa * course.credits;
-      map[name][course.instructor].credits += course.credits;
+      map[name][course.instructor] = { qualityCredits: 0, credits: 0 };
     }
+
+    map[name][course.instructor].qualityCredits += course.gpa * course.credits;
+    map[name][course.instructor].credits += course.credits;
   });
 
   /** Transform array of grades into average */
@@ -50,8 +47,7 @@ const getGPAMap = (courseList) => {
 
   return fetch(site)
     .then(res => res.json())
-    .then(json => getMapping(json._embedded.gpa)) // eslint-disable-line
-    .catch(error => error);
+    .then(json => getMapping(json._embedded.gpa)); // eslint-disable-line
 };
 
 export default getGPAMap;

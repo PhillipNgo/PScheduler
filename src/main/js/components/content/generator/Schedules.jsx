@@ -1,6 +1,6 @@
 import React from 'react';
 import ScheduleVisualTable from '../../ScheduleVisualTable';
-import CourseTable from '../../CourseTable';
+import CourseTable from '../../../containers/content/generator/CourseTable';
 
 class Schedules extends React.Component {
   constructor(props) {
@@ -137,7 +137,7 @@ class Schedules extends React.Component {
         </div>
         <div className="carousel">
           <div className="carousel-inner">
-            { showTextTable && <CourseTable courses={schedule} gradeMap={gradeMap} sortByGPA={sortByGPA} colored header /> }
+            { showTextTable && <CourseTable courses={schedule} colored header /> }
             { showVisualTable && <ScheduleVisualTable schedule={schedule} /> }
           </div>
           { showCarousel && (
