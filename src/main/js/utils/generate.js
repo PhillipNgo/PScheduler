@@ -86,7 +86,8 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
 
         if (!(schedules instanceof Error) && values.sortByGPA) {
           const gradeMap = getState().grades.map;
-          schedules.sort((schedule1, schedule2) => schedule2.calculateGPA(gradeMap) - schedule1.calculateGPA(gradeMap));
+          schedules.sort((schedule1, schedule2) => schedule2.calculateGPA(gradeMap)
+            - schedule1.calculateGPA(gradeMap));
         }
 
         shortCode

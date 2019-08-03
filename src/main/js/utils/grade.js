@@ -47,7 +47,7 @@ const getGPAMap = (courseList) => {
 
   return fetch(site)
     .then(res => res.json())
-    .then(json => getMapping(json._embedded.gpa)); // eslint-disable-line
+    .then(json => getMapping(json._embedded.gpa)); // eslint-disable-line no-underscore-dangle
 };
 
 export default getGPAMap;
