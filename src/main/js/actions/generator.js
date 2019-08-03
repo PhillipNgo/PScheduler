@@ -5,6 +5,7 @@ import {
   FILTERED_COURSES,
   START_REDIRECT,
   END_REDIRECT,
+  SELECT_SORT,
 } from './types';
 
 export const startFirstRender = formValues => ({
@@ -34,4 +35,9 @@ export const startRedirect = location => ({
 
 export const endRedirect = () => ({
   type: END_REDIRECT,
+});
+
+export const selectSort = sort => ({
+  type: SELECT_SORT,
+  payload: sort,
 });

@@ -4,6 +4,7 @@ import courses from './courses';
 import generator from './generator';
 import timetable from './timetable';
 import builder from './builder';
+import grades from './grades';
 
 export default combineReducers({
   courses,
@@ -11,4 +12,5 @@ export default combineReducers({
   timetable,
   builder,
   form: formReducer,
+  grades,
 });

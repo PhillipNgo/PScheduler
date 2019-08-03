@@ -18,6 +18,7 @@ export const END_GENERATING = 'END_GENERATING';
 export const FILTERED_COURSES = 'FILTERED_COURSES';
 export const START_REDIRECT = 'START_REDIRECT';
 export const END_REDIRECT = 'END_REDIRECT';
+export const SELECT_SORT = 'SELECT_SORT';
 
 // builder actions
 export const ADD_TO_BUILDER = 'ADD_TO_BUILDER';
@@ -27,3 +28,6 @@ export const UNSELECT_CRN = 'UNSELECT_CRN';
 export const RESET_BUILDER = 'RESET_BUILDER';
 export const START_BUILDING = 'START_BUILDING';
 export const END_BUILDING = 'END_BUILDING';
+
+// grades actions
+export const ADD_GRADES = 'ADD_GRADES';

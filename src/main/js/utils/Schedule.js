@@ -1,4 +1,5 @@
 import TimeSlot from './Time';
+import { getInstructorLastName } from './grade';
 
 class Schedule extends Set {
   /**
@@ -16,6 +17,29 @@ class Schedule extends Set {
       this.gap = data;
       this.credits = 0;
     }
+  }
+
+  /**
+   * Obtains the estimated GPA of a schedule
+   * @param {*} gradeMap is the mapping of grades to course-instructor
+   * @returns Double.toFixed(2)
+   */
+  calculateGPA(gradeMap) {
+    let qualityCredits = 0.00;
+    let totalCredits = 0;
+
+    this.forEach((course) => {
+      const name = `${course.subject}${course.courseNumber}`;
+      const instructor = getInstructorLastName(course.instructor);
+
+      if (!gradeMap[name] || !gradeMap[name][instructor]) return;
+
+      qualityCredits += gradeMap[name][instructor] * course.credits;
+      totalCredits += course.credits;
+    });
+
+    const scheduleGPA = (totalCredits === 0) ? 0.00 : qualityCredits / totalCredits;
+    return scheduleGPA.toFixed(2);
   }
 
   /**

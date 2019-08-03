@@ -1,6 +1,6 @@
 import React from 'react';
 import ScheduleVisualTable from '../../ScheduleVisualTable';
-import CourseTable from '../../CourseTable';
+import CourseTable from '../../../containers/content/generator/CourseTable';
 
 class Schedules extends React.Component {
   constructor(props) {

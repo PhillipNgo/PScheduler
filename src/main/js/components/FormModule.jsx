@@ -59,6 +59,17 @@ const FormModule = ({
         </Field>
       );
       break;
+    case 'checkbox':
+      formModule = (
+        <Field
+          name={name}
+          className={`checkbox ${className}`}
+          component="input"
+          type="checkbox"
+          onChange={onChange}
+        />
+      );
+      break;
     default:
       formModule = <div />;
   }

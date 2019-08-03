@@ -1,27 +1,46 @@
 import React from 'react';
 import colors from '../constants/colors';
 import Schedule from '../utils/Schedule';
+import { getInstructorLastName } from '../utils/grade';
 
 class CourseTable extends React.Component {
+  getCourseGPA(course) {
+    const { gradeMap } = this.props;
+
+    const name = `${course.subject}${course.courseNumber}`;
+    const instructor = getInstructorLastName(course.instructor);
+
+    if (!gradeMap[name] || !gradeMap[name][instructor]) return 0.00;
+    return gradeMap[name][instructor].toFixed(2);
+  }
+
   /* eslint-disable react/no-array-index-key */
   createRows() {
-    const { courses, colored } = this.props;
+    const { courses, colored, sortByGPA } = this.props;
     let rows = [];
     [...courses].forEach((course, courseNum) => {
-      const courseRows = CourseTable.courseRows(course, courseNum, colored ? colors[courseNum] : '');
+      const courseRows = CourseTable.courseRows(course, courseNum, colored ? colors[courseNum] : '', sortByGPA, this.getCourseGPA(course));
       rows = rows.concat(courseRows);
     });
     return rows;
   }
 
   render() {
-    const { courses, header, children = this.createRows() } = this.props;
+    const {
+      sortByGPA, courses, header, children = this.createRows(), gradeMap,
+    } = this.props;
     return (
       <div className="table-responsive">
         <table className="table table-condensed text-table">
           <tbody>
-            { header && <CourseTable.HeaderRow schedule={courses instanceof Schedule ? courses : null} /> }
-            { children }
+            {header && (
+            <CourseTable.HeaderRow
+              schedule={courses instanceof Schedule ? courses : null}
+              gradeMap={gradeMap}
+              sortByGPA={sortByGPA}
+            />)
+            }
+            {children}
           </tbody>
         </table>
       </div>
@@ -29,7 +48,7 @@ class CourseTable extends React.Component {
   }
 }
 
-CourseTable.HeaderRow = ({ schedule }) => (
+CourseTable.HeaderRow = ({ schedule, gradeMap, sortByGPA }) => (
   <tr>
     <th>
       CRN
@@ -40,6 +59,11 @@ CourseTable.HeaderRow = ({ schedule }) => (
     <th>
       Title
     </th>
+    {sortByGPA && (
+      <th>
+        {`GPA${schedule ? ` (${schedule.calculateGPA(gradeMap)})` : ''}`}
+      </th>
+    )}
     <th>
       Type
     </th>
@@ -61,35 +85,40 @@ CourseTable.HeaderRow = ({ schedule }) => (
   </tr>
 );
 
-CourseTable.courseRows = (course, index, color = '') => (
+CourseTable.courseRows = (course, index, color = '', sort, grade) => (
   course.meetings.map((meeting, meetingNum) => (
     <tr style={{ backgroundColor: color }} key={`${course.crn}${meetingNum}${index}`}>
       <td>
-        { meetingNum === 0 && course.crn }
+        {meetingNum === 0 && course.crn}
       </td>
       <td>
-        { meetingNum === 0 && `${course.subject} ${course.courseNumber}`}
+        {meetingNum === 0 && `${course.subject} ${course.courseNumber}`}
       </td>
       <td>
-        { meetingNum === 0 && course.name }
+        {meetingNum === 0 && course.name}
+      </td>
+      {sort && (
+        <td>
+          {grade}
+        </td>
+      )}
+      <td>
+        {meetingNum === 0 && course.type}
       </td>
       <td>
-        { meetingNum === 0 && course.type }
+        {meetingNum === 0 && course.credits}
       </td>
       <td>
-        { meetingNum === 0 && course.credits }
+        {meetingNum === 0 && course.instructor}
       </td>
       <td>
-        { meetingNum === 0 && course.instructor }
+        {meeting.days instanceof Array ? meeting.days.join(' ') : meeting.days}
       </td>
       <td>
-        { meeting.days instanceof Array ? meeting.days.join(' ') : meeting.days }
+        {`${meeting.startTime} - ${meeting.endTime}`}
       </td>
       <td>
-        { `${meeting.startTime} - ${meeting.endTime}` }
-      </td>
-      <td>
-        { meeting.location }
+        {meeting.location}
       </td>
     </tr>
   ))

@@ -161,13 +161,37 @@ class SearchForm extends React.Component {
               />
             </div>
           </div>
+          <div className="flex-container">
+            <div className="pad-top margin-right">
+              <label className="checkbox-inline">
+                <FormModule
+                  type="checkbox"
+                  name="sortByGPA"
+                />
+                Sort by Estimated GPA
+              </label>
+            </div>
+          </div>
+          {process.env.NODE_ENV !== 'production' && (
+            <div className="flex-container">
+              <div className="pad-top margin-right">
+                <label className="checkbox-inline">
+                  <FormModule
+                    type="checkbox"
+                    name="genURL"
+                  />
+                  [dev-only] Generate URL
+                </label>
+              </div>
+            </div>
+          )}
         </div>
         <div className="no-pad">
           <div className="flex-container">
             <h3 className="pad-right">
               {`Current Schedule${schedule.length === 12 ? ' (Max)' : ''}`}
             </h3>
-            { isFetching && <ClipLoader size={25} color="darkorange" /> }
+            {isFetching && <ClipLoader size={25} color="darkorange" />}
           </div>
           <div className="pad-top">
             <SearchList />
@@ -196,7 +220,7 @@ class SearchForm extends React.Component {
                   </tr>
                 </thead>
                 <tbody>
-                  { schedule.map(courseList => (
+                  {schedule.map(courseList => (
                     <FormSection
                       key={`${courseList[0].subject}${courseList[0].courseNumber}${courseList.id}`}
                       name={`${courseList[0].subject}${courseList[0].courseNumber}${courseList.id}`}
