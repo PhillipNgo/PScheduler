@@ -6,6 +6,12 @@ import SearchList from '../../../containers/content/generator/SearchList';
 import formDefaults from '../../../constants/formDefaults';
 
 class SearchForm extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { sortByGPA: false };
+  }
+
   componentWillMount() {
     const { firstRender, initialize, formValues } = this.props;
     if (firstRender) {
@@ -30,6 +36,7 @@ class SearchForm extends React.Component {
       removeCourse,
       isFetching,
     } = this.props;
+    const { sortByGPA } = this.state;
     return (
       <form
         onSubmit={handleSubmit(submit)}
@@ -167,10 +174,22 @@ class SearchForm extends React.Component {
                 <FormModule
                   type="checkbox"
                   name="sortByGPA"
+                  onChange={event => this.setState({ sortByGPA: event.target.checked })}
                 />
                 Sort by Estimated GPA
               </label>
             </div>
+            {sortByGPA && (
+              <div className="pad-top margin-right">
+                <label className="checkbox-inline">
+                  <FormModule
+                    type="checkbox"
+                    name="useCourseAvg"
+                  />
+                  {'Use Course Average if Instructor Doesn\'t Exist'}
+                </label>
+              </div>
+            )}
           </div>
           {process.env.NODE_ENV !== 'production' && (
             <div className="flex-container">
