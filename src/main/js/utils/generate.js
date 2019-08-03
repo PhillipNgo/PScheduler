@@ -68,7 +68,9 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
         dispatch(addGrades(gradeMap));
         filteredCourseList.forEach(list => list.sort((course1, course2) => {
           const name = `${course1.subject}${course1.courseNumber}`;
-          const instructor1 = getInstructorLastName(course1.instructor); // Backend only holds instructors' last name
+
+          // Backend only holds instructors' last name
+          const instructor1 = getInstructorLastName(course1.instructor);
           const instructor2 = getInstructorLastName(course2.instructor);
 
           if (!gradeMap[name]) return 0;

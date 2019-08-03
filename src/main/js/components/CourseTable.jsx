@@ -26,12 +26,20 @@ class CourseTable extends React.Component {
   }
 
   render() {
-    const { sortByGPA, courses, header, children = this.createRows(), gradeMap } = this.props;
+    const {
+      sortByGPA, courses, header, children = this.createRows(), gradeMap,
+    } = this.props;
     return (
       <div className="table-responsive">
         <table className="table table-condensed text-table">
           <tbody>
-            {header && <CourseTable.HeaderRow schedule={courses instanceof Schedule ? courses : null} gradeMap={gradeMap} sortByGPA={sortByGPA} />}
+            {header && (
+            <CourseTable.HeaderRow
+              schedule={courses instanceof Schedule ? courses : null}
+              gradeMap={gradeMap}
+              sortByGPA={sortByGPA}
+            />)
+            }
             {children}
           </tbody>
         </table>
