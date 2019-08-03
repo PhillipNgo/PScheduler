@@ -72,7 +72,7 @@ class Schedules extends React.Component {
   }
 
   render() {
-    const { schedules, gradeMap, sortByGPA } = this.props;
+    const { schedules } = this.props;
     const {
       scheduleIndex,
       showTextTable,
