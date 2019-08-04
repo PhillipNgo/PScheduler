@@ -6,7 +6,6 @@ import {
   filteredCourses,
   startRedirect,
   selectSort,
-  selectCourseAvg,
 } from '../actions/generator';
 import getGPAMap, { getInstructorLastName } from './grade';
 import ScheduleMaker from './ScheduleMaker';
@@ -51,16 +50,21 @@ const redirectToGenerator = (schedules, search = '') => startRedirect({
 
 const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
   const { courseList } = getState().courses;
+  const {
+    sortByGPA,
+    useCourseAvg,
+    genURL,
+    gap,
+  } = values;
   if (courseList.length !== 0) {
     dispatch(startGenerating());
-    dispatch(selectSort(values.sortByGPA));
-    dispatch(selectCourseAvg(values.useCourseAvg));
+    dispatch(selectSort(sortByGPA));
 
-    const shortCode = loadQuery || !values.genURL ? Promise.resolve(loadQuery.substring(2))
+    const shortCode = loadQuery || !genURL ? Promise.resolve(loadQuery.substring(2))
       : fetchShortUrl(courseList, values);
 
-    const gpasLoading = values.sortByGPA
-      ? getGPAMap(courseList, values.useCourseAvg) : Promise.reject();
+    const gpasLoading = sortByGPA
+      ? getGPAMap(courseList, useCourseAvg) : Promise.reject();
 
     const filteredResults = filterCourses(values, courseList);
     dispatch(filteredCourses(filteredResults));
@@ -87,9 +91,9 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
       () => Promise.resolve())
       .catch(error => dispatch(addGrades(error)))
       .finally(() => {
-        const schedules = genSchedules(filteredCourseList, values.gap);
+        const schedules = genSchedules(filteredCourseList, gap);
 
-        if (!(schedules instanceof Error) && values.sortByGPA) {
+        if (!(schedules instanceof Error) && sortByGPA) {
           const gradeMap = getState().grades.map;
           schedules.sort((schedule1, schedule2) => schedule2.calculateGPA(gradeMap)
             - schedule1.calculateGPA(gradeMap));

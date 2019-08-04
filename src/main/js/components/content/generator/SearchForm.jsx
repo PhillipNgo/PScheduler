@@ -6,23 +6,11 @@ import SearchList from '../../../containers/content/generator/SearchList';
 import formDefaults from '../../../constants/formDefaults';
 
 class SearchForm extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      toggleSort: false,
-      toggleCourseAvg: false,
-    };
-  }
-
   componentWillMount() {
-    const {
-      firstRender, initialize, formValues, sort, useCourseAvg,
-    } = this.props;
+    const { firstRender, initialize, formValues } = this.props;
     if (firstRender) {
       initialize(formValues);
     }
-    this.setState({ toggleSort: sort, toggleCourseAvg: useCourseAvg });
   }
 
   componentDidMount() {
@@ -41,9 +29,8 @@ class SearchForm extends React.Component {
       resetForm,
       removeCourse,
       isFetching,
+      sortByGPAChecked,
     } = this.props;
-    const { toggleSort, toggleCourseAvg } = this.state;
-
     return (
       <form
         onSubmit={handleSubmit(submit)}
@@ -179,22 +166,19 @@ class SearchForm extends React.Component {
             <div className="pad-top margin-right">
               <label className="checkbox-inline">
                 <FormModule
+                  checked={sortByGPAChecked ? 'checked' : ''}
                   type="checkbox"
                   name="sortByGPA"
-                  checked={toggleSort}
-                  onChange={event => this.setState({ toggleSort: event.target.checked })}
                 />
                 Sort by Estimated GPA
               </label>
             </div>
-            {toggleSort && (
+            {sortByGPAChecked && (
               <div className="pad-top margin-right">
                 <label className="checkbox-inline">
                   <FormModule
                     type="checkbox"
                     name="useCourseAvg"
-                    checked={toggleCourseAvg}
-                    onChange={event => this.setState({ toggleCourseAvg: event.target.checked })}
                   />
                   {'Use Course Average if Instructor Doesn\'t Exist'}
                 </label>

@@ -53,7 +53,7 @@ public class DatabaseLoader implements ApplicationRunner {
 
         // Load GRADES_TERM Course GPAs
         GradeParser grader = new GradeParser();
-        List<CourseGPA> courseGrades = grader.parseTermFile(GRADES_TERM);
+        List<CourseGPA> courseGrades = grader.parseAllFiles();
         gpa.save(courseGrades);
     }
 }

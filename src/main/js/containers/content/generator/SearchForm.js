@@ -12,6 +12,8 @@ const mapStateToProps = state => ({
   formValues: state.generator.initialValues,
   sort: state.generator.sort,
   useCourseAvg: state.generator.courseAvg,
+  sortByGPAChecked: state.form.generator_form
+    && state.form.generator_form.values.sortByGPA,
 });
 
 const mapDispatchToProps = dispatch => ({
