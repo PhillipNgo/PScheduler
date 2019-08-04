@@ -9,14 +9,20 @@ class SearchForm extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { sortByGPA: false };
+    this.state = {
+      toggleSort: false,
+      toggleCourseAvg: false,
+    };
   }
 
   componentWillMount() {
-    const { firstRender, initialize, formValues } = this.props;
+    const {
+      firstRender, initialize, formValues, sort, useCourseAvg,
+    } = this.props;
     if (firstRender) {
       initialize(formValues);
     }
+    this.setState({ toggleSort: sort, toggleCourseAvg: useCourseAvg });
   }
 
   componentDidMount() {
@@ -36,7 +42,8 @@ class SearchForm extends React.Component {
       removeCourse,
       isFetching,
     } = this.props;
-    const { sortByGPA } = this.state;
+    const { toggleSort, toggleCourseAvg } = this.state;
+
     return (
       <form
         onSubmit={handleSubmit(submit)}
@@ -174,17 +181,20 @@ class SearchForm extends React.Component {
                 <FormModule
                   type="checkbox"
                   name="sortByGPA"
-                  onChange={event => this.setState({ sortByGPA: event.target.checked })}
+                  checked={toggleSort}
+                  onChange={event => this.setState({ toggleSort: event.target.checked })}
                 />
                 Sort by Estimated GPA
               </label>
             </div>
-            {sortByGPA && (
+            {toggleSort && (
               <div className="pad-top margin-right">
                 <label className="checkbox-inline">
                   <FormModule
                     type="checkbox"
                     name="useCourseAvg"
+                    checked={toggleCourseAvg}
+                    onChange={event => this.setState({ toggleCourseAvg: event.target.checked })}
                   />
                   {'Use Course Average if Instructor Doesn\'t Exist'}
                 </label>

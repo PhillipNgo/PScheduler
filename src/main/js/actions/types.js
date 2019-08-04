@@ -19,6 +19,7 @@ export const FILTERED_COURSES = 'FILTERED_COURSES';
 export const START_REDIRECT = 'START_REDIRECT';
 export const END_REDIRECT = 'END_REDIRECT';
 export const SELECT_SORT = 'SELECT_SORT';
+export const SELECT_COURSEAVG = 'SELECT_COURSEAVG';
 
 // builder actions
 export const ADD_TO_BUILDER = 'ADD_TO_BUILDER';

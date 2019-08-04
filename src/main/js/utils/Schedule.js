@@ -32,7 +32,16 @@ class Schedule extends Set {
       const name = `${course.subject}${course.courseNumber}`;
       const instructor = getInstructorLastName(course.instructor);
 
-      if (!gradeMap[name] || !gradeMap[name][instructor]) return;
+      if (!gradeMap[name]) {
+        return;
+      }
+
+      if (!gradeMap[name][instructor] && !gradeMap[name].Staff) return;
+      if (!gradeMap[name][instructor] && gradeMap[name].Staff) {
+        qualityCredits += gradeMap[name].Staff * course.credits;
+        totalCredits += course.credits;
+        return;
+      }
 
       qualityCredits += gradeMap[name][instructor] * course.credits;
       totalCredits += course.credits;

@@ -6,6 +6,7 @@ import {
   START_REDIRECT,
   END_REDIRECT,
   SELECT_SORT,
+  SELECT_COURSEAVG,
 } from '../actions/types';
 
 const initialState = {
@@ -16,6 +17,7 @@ const initialState = {
   initialValues: null,
   error: null,
   sort: false,
+  courseAvg: false,
 };
 
 export default (state = initialState, action) => {
@@ -57,6 +59,11 @@ export default (state = initialState, action) => {
       return {
         ...state,
         sort: action.payload,
+      };
+    case SELECT_COURSEAVG:
+      return {
+        ...state,
+        courseAvg: action.payload,
       };
     default:
       return state;

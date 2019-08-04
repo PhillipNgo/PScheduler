@@ -10,7 +10,11 @@ class CourseTable extends React.Component {
     const name = `${course.subject}${course.courseNumber}`;
     const instructor = getInstructorLastName(course.instructor);
 
-    if (!gradeMap[name] || !gradeMap[name][instructor]) return 0.00;
+    if (!gradeMap[name]) return 0.00;
+
+    if (!gradeMap[name][instructor] && !gradeMap[name].Staff) return 0.00;
+    if (!gradeMap[name][instructor] && gradeMap[name].Staff) return gradeMap[name].Staff.toFixed(2);
+
     return gradeMap[name][instructor].toFixed(2);
   }
 

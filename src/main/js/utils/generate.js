@@ -6,6 +6,7 @@ import {
   filteredCourses,
   startRedirect,
   selectSort,
+  selectCourseAvg,
 } from '../actions/generator';
 import getGPAMap, { getInstructorLastName } from './grade';
 import ScheduleMaker from './ScheduleMaker';
@@ -53,11 +54,13 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
   if (courseList.length !== 0) {
     dispatch(startGenerating());
     dispatch(selectSort(values.sortByGPA));
+    dispatch(selectCourseAvg(values.useCourseAvg));
 
     const shortCode = loadQuery || !values.genURL ? Promise.resolve(loadQuery.substring(2))
       : fetchShortUrl(courseList, values);
 
-    const gpasLoading = values.sortByGPA ? getGPAMap(courseList) : Promise.reject();
+    const gpasLoading = values.sortByGPA
+      ? getGPAMap(courseList, values.useCourseAvg) : Promise.reject();
 
     const filteredResults = filterCourses(values, courseList);
     dispatch(filteredCourses(filteredResults));
@@ -76,8 +79,8 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
           if (!gradeMap[name]) return 0;
 
           if (!gradeMap[name][instructor1] && !gradeMap[name][instructor2]) return 0;
-          if (!gradeMap[name][instructor1]) return 1;
-          if (!gradeMap[name][instructor2]) return -1;
+          if (!gradeMap[name][instructor1]) return gradeMap[name][instructor2] - gradeMap[name].Staff;
+          if (!gradeMap[name][instructor2]) return gradeMap[name].Staff - gradeMap[name].Staff;
           return gradeMap[name][instructor2] - gradeMap[name][instructor1];
         }));
       },

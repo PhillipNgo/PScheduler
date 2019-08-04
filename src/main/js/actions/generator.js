@@ -6,6 +6,7 @@ import {
   START_REDIRECT,
   END_REDIRECT,
   SELECT_SORT,
+  SELECT_COURSEAVG,
 } from './types';
 
 export const startFirstRender = formValues => ({
@@ -40,4 +41,9 @@ export const endRedirect = () => ({
 export const selectSort = sort => ({
   type: SELECT_SORT,
   payload: sort,
+});
+
+export const selectCourseAvg = avg => ({
+  type: SELECT_COURSEAVG,
+  payload: avg,
 });
