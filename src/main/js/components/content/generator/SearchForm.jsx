@@ -30,6 +30,7 @@ class SearchForm extends React.Component {
       removeCourse,
       isFetching,
       sortByGPAChecked,
+      useCourseAvgChecked,
     } = this.props;
     return (
       <form
@@ -177,6 +178,7 @@ class SearchForm extends React.Component {
               <div className="pad-top margin-right">
                 <label className="checkbox-inline">
                   <FormModule
+                    checked={useCourseAvgChecked ? 'checked' : ''}
                     type="checkbox"
                     name="useCourseAvg"
                   />
