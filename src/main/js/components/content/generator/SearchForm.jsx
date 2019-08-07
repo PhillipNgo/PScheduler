@@ -185,7 +185,7 @@ class SearchForm extends React.Component {
                   />
                   {'Impute Averages '}
                   <a
-                    className="badge margin-left"
+                    className="badge"
                     data-toggle="popover"
                     data-trigger="hover"
                     data-content="Use course average if there is no available instructor data"
