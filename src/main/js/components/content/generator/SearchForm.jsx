@@ -19,6 +19,7 @@ class SearchForm extends React.Component {
 
   componentDidUpdate() {
     $('.selectpicker').selectpicker('refresh');
+    $("[data-toggle='popover']").popover();
   }
 
   render() {
@@ -182,12 +183,15 @@ class SearchForm extends React.Component {
                     type="checkbox"
                     name="useCourseAvg"
                   />
-                  {'Impute Averages'}
-                  <button type="button" data-toggle="popover" title="Impute Average" data-content="Use course average if there is no available instructor data" data-trigger="focus">
-                    <span className="badge">
-                      ?
-                    </span>
-                  </button>
+                  {'Impute Averages '}
+                  <a
+                    className="badge margin-left"
+                    data-toggle="popover"
+                    data-trigger="hover"
+                    data-content="Use course average if there is no available instructor data"
+                  >
+                    ?
+                  </a>
                 </label>
               </div>
             )}
