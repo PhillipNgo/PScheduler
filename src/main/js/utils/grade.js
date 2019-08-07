@@ -10,7 +10,7 @@ import { gpaSearchUrl } from '../constants/resources';
 */
 export const getInstructorLastName = instructor => instructor.split(' ').pop();
 
-const getMapping = (gradeList, useCourseAvg) => {
+const getMapping = (gradeList) => {
   const map = {};
   gradeList.forEach((course) => {
     const name = `${course.subject}${course.courseNumber}`;
@@ -29,39 +29,31 @@ const getMapping = (gradeList, useCourseAvg) => {
 
   /** Transform array of grades into average */
   Object.keys(map).forEach((name) => {
+    let count = 0;
+    let sum = 0;
     Object.keys(map[name]).forEach((instructor) => {
-      map[name][instructor] = map[name][instructor].qualityCredits / map[name][instructor].credits;
+      const gpa = map[name][instructor].qualityCredits / map[name][instructor].credits;
+      map[name][instructor] = gpa;
+      sum += gpa;
+      count += 1;
     });
+    map[name].AVERAGE = sum / count;
   });
-
-  if (useCourseAvg) {
-    Object.keys(map).forEach((name) => {
-      let count = 0;
-      let sum = 0;
-      Object.keys(map[name]).forEach((instructor) => {
-        sum += map[name][instructor];
-        count += 1;
-      });
-      map[name].Staff = sum / count;
-    });
-  }
   return map;
 };
 
 /**
  * Get a mapping of course-instructor to average GPA
  * @param courseList is a 2d array containing the list of courses
- * @param useCourseAvg is a boolean denoting if we need to add a course average gpa
  */
-const getGPAMap = (courseList, useCourseAvg) => {
+const getGPAMap = (courseList) => {
   const set = new Set(courseList.map(list => `${list[0].subject}${list[0].courseNumber}`));
   const query = queryString.stringify({ query: [...set] });
   const site = `${gpaSearchUrl}?${query}`;
 
   return fetch(site)
     .then(res => res.json())
-    .then(json => getMapping(json._embedded.gpa, // eslint-disable-line no-underscore-dangle
-      useCourseAvg));
+    .then(json => getMapping(json._embedded.gpa)); // eslint-disable-line no-underscore-dangle
 };
 
 export default getGPAMap;

@@ -10,7 +10,6 @@ const mapStateToProps = state => ({
   firstRender: !state.form.generator_form,
   redirect: state.generator.redirect,
   formValues: state.generator.initialValues,
-  sort: state.generator.sort,
   sortByGPAChecked: state.form.generator_form
     && state.form.generator_form.values.sortByGPA,
   useCourseAvgChecked: state.form.generator_form

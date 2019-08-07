@@ -5,15 +5,15 @@ import { getInstructorLastName } from '../utils/grade';
 
 class CourseTable extends React.Component {
   getCourseGPA(course) {
-    const { gradeMap } = this.props;
+    const { gradeMap, useCourseAvg } = this.props;
 
     const name = `${course.subject}${course.courseNumber}`;
     const instructor = getInstructorLastName(course.instructor);
 
     if (!gradeMap[name]) return 0.00;
 
-    if (!gradeMap[name][instructor] && !gradeMap[name].Staff) return 0.00;
-    if (!gradeMap[name][instructor] && gradeMap[name].Staff) return gradeMap[name].Staff.toFixed(2);
+    if (!gradeMap[name][instructor] && !useCourseAvg) return 0.00;
+    if (!gradeMap[name][instructor] && useCourseAvg) return gradeMap[name].AVERAGE.toFixed(2);
 
     return gradeMap[name][instructor].toFixed(2);
   }
@@ -31,7 +31,7 @@ class CourseTable extends React.Component {
 
   render() {
     const {
-      sortByGPA, courses, header, children = this.createRows(), gradeMap,
+      sortByGPA, courses, header, children = this.createRows(), gradeMap, useCourseAvg,
     } = this.props;
     return (
       <div className="table-responsive">
@@ -42,6 +42,7 @@ class CourseTable extends React.Component {
               schedule={courses instanceof Schedule ? courses : null}
               gradeMap={gradeMap}
               sortByGPA={sortByGPA}
+              useCourseAvg={useCourseAvg}
             />)
             }
             {children}
@@ -52,7 +53,9 @@ class CourseTable extends React.Component {
   }
 }
 
-CourseTable.HeaderRow = ({ schedule, gradeMap, sortByGPA }) => (
+CourseTable.HeaderRow = ({
+  schedule, gradeMap, sortByGPA, useCourseAvg,
+}) => (
   <tr>
     <th>
       CRN
@@ -65,7 +68,7 @@ CourseTable.HeaderRow = ({ schedule, gradeMap, sortByGPA }) => (
     </th>
     {sortByGPA && (
       <th>
-        {`GPA${schedule ? ` (${schedule.calculateGPA(gradeMap)})` : ''}`}
+        {`GPA${schedule ? ` (${schedule.calculateGPA(gradeMap, useCourseAvg)})` : ''}`}
       </th>
     )}
     <th>

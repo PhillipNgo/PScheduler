@@ -37,7 +37,7 @@ export const endRedirect = () => ({
   type: END_REDIRECT,
 });
 
-export const selectSort = sort => ({
+export const selectSort = (sort, useCourseAvg) => ({
   type: SELECT_SORT,
-  payload: sort,
+  payload: { sort, useCourseAvg },
 });

@@ -58,13 +58,12 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
   } = values;
   if (courseList.length !== 0) {
     dispatch(startGenerating());
-    dispatch(selectSort(sortByGPA));
+    dispatch(selectSort(sortByGPA, useCourseAvg));
 
     const shortCode = loadQuery || !genURL ? Promise.resolve(loadQuery.substring(2))
       : fetchShortUrl(courseList, values);
 
-    const gpasLoading = sortByGPA
-      ? getGPAMap(courseList, useCourseAvg) : Promise.reject();
+    const gpasLoading = sortByGPA ? getGPAMap(courseList) : Promise.reject();
 
     const filteredResults = filterCourses(values, courseList);
     dispatch(filteredCourses(filteredResults));
@@ -87,16 +86,15 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
           if (!gradeMap[name][instructor2]) return gradeMap[name].Staff - gradeMap[name].Staff;
           return gradeMap[name][instructor2] - gradeMap[name][instructor1];
         }));
-      },
-      () => Promise.resolve())
+      }, () => Promise.resolve())
       .catch(error => dispatch(addGrades(error)))
       .finally(() => {
         const schedules = genSchedules(filteredCourseList, gap);
 
         if (!(schedules instanceof Error) && sortByGPA) {
           const gradeMap = getState().grades.map;
-          schedules.sort((schedule1, schedule2) => schedule2.calculateGPA(gradeMap)
-            - schedule1.calculateGPA(gradeMap));
+          schedules.sort((schedule1, schedule2) => schedule2.calculateGPA(gradeMap, useCourseAvg)
+            - schedule1.calculateGPA(gradeMap, useCourseAvg));
         }
 
         shortCode

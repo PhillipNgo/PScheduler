@@ -4,6 +4,7 @@ import CourseTable from '../../../components/CourseTable';
 const mapStateToProps = state => ({
   gradeMap: state.grades.map,
   sortByGPA: state.generator.sort,
+  useCourseAvg: state.generator.useCourseAvg,
 });
 
 const mapDispatchToProps = () => ({
