@@ -16,7 +16,7 @@ const getMapping = (gradeList) => {
     const name = `${course.subject}${course.courseNumber}`;
 
     if (!map[name]) {
-      map[name] = {};
+      map[name] = { AVERAGE: { qualityCredits: 0, credits: 0 } };
     }
 
     if (!map[name][course.instructor]) {
@@ -25,19 +25,16 @@ const getMapping = (gradeList) => {
 
     map[name][course.instructor].qualityCredits += course.gpa * course.credits;
     map[name][course.instructor].credits += course.credits;
+    map[name].AVERAGE.qualityCredits += course.gpa * course.credits;
+    map[name].AVERAGE.credits += course.credits;
   });
 
   /** Transform array of grades into average */
   Object.keys(map).forEach((name) => {
-    let count = 0;
-    let sum = 0;
     Object.keys(map[name]).forEach((instructor) => {
-      const gpa = map[name][instructor].qualityCredits / map[name][instructor].credits;
-      map[name][instructor] = gpa;
-      sum += gpa;
-      count += 1;
+      map[name][instructor] = map[name][instructor].qualityCredits
+        / map[name][instructor].credits;
     });
-    map[name].AVERAGE = sum / count;
   });
   return map;
 };
