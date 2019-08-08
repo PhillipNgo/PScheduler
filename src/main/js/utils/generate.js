@@ -79,12 +79,17 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
           const instructor1 = getInstructorLastName(course1.instructor);
           const instructor2 = getInstructorLastName(course2.instructor);
 
-          if (!gradeMap[name]) return 0;
+          if (gradeMap[name]) {
+            if (!gradeMap[name][instructor1] && !gradeMap[name][instructor2]) return 0;
+            if (!gradeMap[name][instructor1]) {
+              return useCourseAvg ? gradeMap[name][instructor2] - gradeMap[name].AVERAGE : 1;
+            }
+            if (!gradeMap[name][instructor2]) {
+              return useCourseAvg ? gradeMap[name].AVERAGE - gradeMap[name][instructor1] : -1;
+            }
+          }
 
-          if (!gradeMap[name][instructor1] && !gradeMap[name][instructor2]) return 0;
-          if (!gradeMap[name][instructor1]) return gradeMap[name][instructor2] - gradeMap[name].Staff;
-          if (!gradeMap[name][instructor2]) return gradeMap[name].Staff - gradeMap[name].Staff;
-          return gradeMap[name][instructor2] - gradeMap[name][instructor1];
+          return 0;
         }));
       }, () => Promise.resolve())
       .catch(error => dispatch(addGrades(error)))

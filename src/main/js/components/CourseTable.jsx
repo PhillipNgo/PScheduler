@@ -10,10 +10,13 @@ class CourseTable extends React.Component {
     const name = `${course.subject}${course.courseNumber}`;
     const instructor = getInstructorLastName(course.instructor);
 
-    if (!gradeMap[name]) return 0.00;
+    if (!gradeMap[name]) {
+      return 'DNE';
+    }
 
-    if (!gradeMap[name][instructor] && !useCourseAvg) return 0.00;
-    if (!gradeMap[name][instructor] && useCourseAvg) return gradeMap[name].AVERAGE.toFixed(2);
+    if (!gradeMap[name][instructor]) {
+      return useCourseAvg ? `${gradeMap[name].AVERAGE.toFixed(2)}*` : 'DNE';
+    }
 
     return gradeMap[name][instructor].toFixed(2);
   }

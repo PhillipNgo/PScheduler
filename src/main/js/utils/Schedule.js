@@ -33,16 +33,14 @@ class Schedule extends Set {
       const name = `${course.subject}${course.courseNumber}`;
       const instructor = getInstructorLastName(course.instructor);
 
-      if (!gradeMap[name]) {
-        return;
-      }
-
-      if (gradeMap[name][instructor]) {
-        qualityCredits += gradeMap[name][instructor] * course.credits;
-        totalCredits += course.credits;
-      } else if (useCourseAvg) {
-        qualityCredits += gradeMap[name].AVERAGE * course.credits;
-        totalCredits += course.credits;
+      if (gradeMap[name]) {
+        if (gradeMap[name][instructor]) {
+          qualityCredits += gradeMap[name][instructor] * course.credits;
+          totalCredits += course.credits;
+        } else if (useCourseAvg) {
+          qualityCredits += gradeMap[name].AVERAGE * course.credits;
+          totalCredits += course.credits;
+        }
       }
     });
 
