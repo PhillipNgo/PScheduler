@@ -18,7 +18,7 @@ class CourseTable extends React.Component {
       return useCourseAvg ? `${gradeMap[name].AVERAGE.toFixed(2)}*` : 'DNE';
     }
 
-    return gradeMap[name][instructor].toFixed(2);
+    return `${gradeMap[name][instructor].toFixed(2)}`;
   }
 
   /* eslint-disable react/no-array-index-key */
