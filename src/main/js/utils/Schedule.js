@@ -21,10 +21,11 @@ class Schedule extends Set {
 
   /**
    * Obtains the estimated GPA of a schedule
-   * @param {*} gradeMap is the mapping of grades to course-instructor
+   * @param {Object} gradeMap is the mapping of grades to course-instructor
+   * @param {boolean} useCourseAvg use course average gpa inplace of non-existant instructor GPA
    * @returns Double.toFixed(2)
    */
-  calculateGPA(gradeMap) {
+  calculateGPA(gradeMap, useCourseAvg) {
     let qualityCredits = 0.00;
     let totalCredits = 0;
 
@@ -32,10 +33,15 @@ class Schedule extends Set {
       const name = `${course.subject}${course.courseNumber}`;
       const instructor = getInstructorLastName(course.instructor);
 
-      if (!gradeMap[name] || !gradeMap[name][instructor]) return;
-
-      qualityCredits += gradeMap[name][instructor] * course.credits;
-      totalCredits += course.credits;
+      if (gradeMap[name]) {
+        if (gradeMap[name][instructor]) {
+          qualityCredits += gradeMap[name][instructor] * course.credits;
+          totalCredits += course.credits;
+        } else if (useCourseAvg) {
+          qualityCredits += gradeMap[name].AVERAGE * course.credits;
+          totalCredits += course.credits;
+        }
+      }
     });
 
     const scheduleGPA = (totalCredits === 0) ? 0.00 : qualityCredits / totalCredits;

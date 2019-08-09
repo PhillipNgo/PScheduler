@@ -16,6 +16,7 @@ const initialState = {
   initialValues: null,
   error: null,
   sort: false,
+  useCourseAvg: false,
 };
 
 export default (state = initialState, action) => {
@@ -56,7 +57,8 @@ export default (state = initialState, action) => {
     case SELECT_SORT:
       return {
         ...state,
-        sort: action.payload,
+        sort: action.payload.sort,
+        useCourseAvg: action.payload.useCourseAvg,
       };
     default:
       return state;

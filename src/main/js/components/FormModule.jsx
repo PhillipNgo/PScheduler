@@ -15,6 +15,7 @@ const FormModule = ({
   multiple,
   values,
   title,
+  checked,
 }) => {
   let formModule;
   switch (type) {
@@ -67,6 +68,7 @@ const FormModule = ({
           component="input"
           type="checkbox"
           onChange={onChange}
+          checked={checked}
         />
       );
       break;

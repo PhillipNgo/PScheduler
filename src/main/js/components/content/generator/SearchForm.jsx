@@ -19,6 +19,7 @@ class SearchForm extends React.Component {
 
   componentDidUpdate() {
     $('.selectpicker').selectpicker('refresh');
+    $("[data-toggle='popover']").popover();
   }
 
   render() {
@@ -29,6 +30,8 @@ class SearchForm extends React.Component {
       resetForm,
       removeCourse,
       isFetching,
+      sortByGPAChecked,
+      useCourseAvgChecked,
     } = this.props;
     return (
       <form
@@ -165,12 +168,33 @@ class SearchForm extends React.Component {
             <div className="pad-top margin-right">
               <label className="checkbox-inline">
                 <FormModule
+                  checked={sortByGPAChecked ? 'checked' : ''}
                   type="checkbox"
                   name="sortByGPA"
                 />
                 Sort by Estimated GPA
               </label>
             </div>
+            {sortByGPAChecked && (
+              <div className="pad-top margin-right">
+                <label className="checkbox-inline">
+                  <FormModule
+                    checked={useCourseAvgChecked ? 'checked' : ''}
+                    type="checkbox"
+                    name="useCourseAvg"
+                  />
+                  {'Impute Averages '}
+                  <a
+                    className="badge"
+                    data-toggle="popover"
+                    data-trigger="hover"
+                    data-content="Use course average if there is no available instructor data. An asterisk {*} will denote if a course average was used."
+                  >
+                    ?
+                  </a>
+                </label>
+              </div>
+            )}
           </div>
           {process.env.NODE_ENV !== 'production' && (
             <div className="flex-container">
