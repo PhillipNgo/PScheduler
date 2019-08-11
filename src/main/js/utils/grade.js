@@ -42,11 +42,12 @@ const getMapping = (gradeList) => {
 /**
  * Get a mapping of course-instructor to average GPA
  * @param courseList is a 2d array containing the list of courses
+ * @param gradeterm is the year from which grade data will be included
  */
-const getGPAMap = (courseList) => {
+const getGPAMap = (courseList, gradeTerm) => {
   const set = new Set(courseList.map(list => `${list[0].subject}${list[0].courseNumber}`));
   const query = queryString.stringify({ query: [...set] });
-  const site = `${gpaSearchUrl}?${query}`;
+  const site = `${gpaSearchUrl}?${query}&term=${gradeTerm * 100}`;
 
   return fetch(site)
     .then(res => res.json())

@@ -55,6 +55,7 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
     useCourseAvg,
     genURL,
     gap,
+    gradeTerm,
   } = values;
   if (courseList.length !== 0) {
     dispatch(startGenerating());
@@ -63,7 +64,7 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
     const shortCode = loadQuery || !genURL ? Promise.resolve(loadQuery.substring(2))
       : fetchShortUrl(courseList, values);
 
-    const gpasLoading = sortByGPA ? getGPAMap(courseList) : Promise.reject();
+    const gpasLoading = sortByGPA ? getGPAMap(courseList, gradeTerm) : Promise.reject();
 
     const filteredResults = filterCourses(values, courseList);
     dispatch(filteredCourses(filteredResults));

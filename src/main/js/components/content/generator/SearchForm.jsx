@@ -193,6 +193,15 @@ class SearchForm extends React.Component {
                     ?
                   </a>
                 </label>
+                <label className="checkbox-inline">
+                  {'Use Grade Data starting from: '}
+                  <FormModule
+                    type="select"
+                    name="gradeTerm"
+                    values={['2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010',
+                      '2009', '2008', '2007', '2006', '2005', '2004', '2003']}
+                  />
+                </label>
               </div>
             )}
           </div>
