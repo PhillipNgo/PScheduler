@@ -4,6 +4,11 @@ import Schedule from '../utils/Schedule';
 import { getInstructorLastName } from '../utils/grade';
 
 class CourseTable extends React.Component {
+  constructor(props) {
+    super(props);
+    this.HeaderRow = this.HeaderRow.bind(this);
+  }
+
   getCourseGPA(course) {
     const { gradeMap, useCourseAvg } = this.props;
 
@@ -21,33 +26,100 @@ class CourseTable extends React.Component {
     return `${gradeMap[name][instructor].toFixed(2)}`;
   }
 
-  /* eslint-disable react/no-array-index-key */
+  HeaderRow({ schedule }) {
+    const { sortByGPA, gradeMap, useCourseAvg } = this.props;
+    return (
+      <tr>
+        <th>
+          CRN
+        </th>
+        <th>
+          Course
+        </th>
+        <th>
+          Title
+        </th>
+        {sortByGPA && (
+          <th>
+            {`GPA${schedule ? ` (${schedule.calculateGPA(gradeMap, useCourseAvg)})` : ''}`}
+          </th>
+        )}
+        <th>
+          Type
+        </th>
+        <th>
+          {`Credits${schedule ? ` (${schedule.credits})` : ''}`}
+        </th>
+        <th>
+          Instructor
+        </th>
+        <th>
+          Days
+        </th>
+        <th>
+          Time
+        </th>
+        <th>
+          Location
+        </th>
+      </tr>
+    );
+  }
+
   createRows() {
-    const { courses, colored, sortByGPA } = this.props;
-    let rows = [];
+    const { courses, sortByGPA, colored } = this.props;
+    const rows = [];
     [...courses].forEach((course, courseNum) => {
-      const courseRows = CourseTable.courseRows(course, courseNum, colored ? colors[courseNum] : '', sortByGPA, this.getCourseGPA(course));
-      rows = rows.concat(courseRows);
+      course.meetings.forEach((meeting, meetingNum) => rows.push((
+        <tr
+          style={{ backgroundColor: colored ? colors[courseNum] : '' }}
+          key={`${course.crn}${meetingNum}${courseNum}`} // eslint-disable-line react/no-array-index-key
+        >
+          <td>
+            {meetingNum === 0 && course.crn}
+          </td>
+          <td>
+            {meetingNum === 0 && `${course.subject} ${course.courseNumber}`}
+          </td>
+          <td>
+            {meetingNum === 0 && course.name}
+          </td>
+          {sortByGPA && (
+            <td>
+              {this.getCourseGPA(course)}
+            </td>
+          )}
+          <td>
+            {meetingNum === 0 && course.type}
+          </td>
+          <td>
+            {meetingNum === 0 && course.credits}
+          </td>
+          <td>
+            {meetingNum === 0 && course.instructor}
+          </td>
+          <td>
+            {meeting.days instanceof Array ? meeting.days.join(' ') : meeting.days}
+          </td>
+          <td>
+            {`${meeting.startTime} - ${meeting.endTime}`}
+          </td>
+          <td>
+            {meeting.location}
+          </td>
+        </tr>
+      )));
     });
     return rows;
   }
 
   render() {
-    const {
-      sortByGPA, courses, header, children = this.createRows(), gradeMap, useCourseAvg,
-    } = this.props;
+    const { courses, header, children = this.createRows() } = this.props;
     return (
       <div className="table-responsive">
         <table className="table table-condensed text-table">
           <tbody>
-            {header && (
-            <CourseTable.HeaderRow
-              schedule={courses instanceof Schedule ? courses : null}
-              gradeMap={gradeMap}
-              sortByGPA={sortByGPA}
-              useCourseAvg={useCourseAvg}
-            />)
-            }
+            {header && (<this.HeaderRow schedule={courses instanceof Schedule ? courses : null} />)}
             {children}
           </tbody>
         </table>
@@ -55,83 +127,5 @@ class CourseTable extends React.Component {
     );
   }
 }
-
-CourseTable.HeaderRow = ({
-  schedule, gradeMap, sortByGPA, useCourseAvg,
-}) => (
-  <tr>
-    <th>
-      CRN
-    </th>
-    <th>
-      Course
-    </th>
-    <th>
-      Title
-    </th>
-    {sortByGPA && (
-      <th>
-        {`GPA${schedule ? ` (${schedule.calculateGPA(gradeMap, useCourseAvg)})` : ''}`}
-      </th>
-    )}
-    <th>
-      Type
-    </th>
-    <th>
-      {`Credits${schedule ? ` (${schedule.credits})` : ''}`}
-    </th>
-    <th>
-      Instructor
-    </th>
-    <th>
-      Days
-    </th>
-    <th>
-      Time
-    </th>
-    <th>
-      Location
-    </th>
-  </tr>
-);
-
-CourseTable.courseRows = (course, index, color = '', sort, grade) => (
-  course.meetings.map((meeting, meetingNum) => (
-    <tr style={{ backgroundColor: color }} key={`${course.crn}${meetingNum}${index}`}>
-      <td>
-        {meetingNum === 0 && course.crn}
-      </td>
-      <td>
-        {meetingNum === 0 && `${course.subject} ${course.courseNumber}`}
-      </td>
-      <td>
-        {meetingNum === 0 && course.name}
-      </td>
-      {sort && (
-        <td>
-          {grade}
-        </td>
-      )}
-      <td>
-        {meetingNum === 0 && course.type}
-      </td>
-      <td>
-        {meetingNum === 0 && course.credits}
-      </td>
-      <td>
-        {meetingNum === 0 && course.instructor}
-      </td>
-      <td>
-        {meeting.days instanceof Array ? meeting.days.join(' ') : meeting.days}
-      </td>
-      <td>
-        {`${meeting.startTime} - ${meeting.endTime}`}
-      </td>
-      <td>
-        {meeting.location}
-      </td>
-    </tr>
-  ))
-);
 
 export default CourseTable;
