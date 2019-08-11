@@ -14,7 +14,7 @@ public interface CourseGPARepository extends PagingAndSortingRepository<CourseGP
     @Query(
         "SELECT course FROM CourseGPA course"
         + " WHERE (:query IS NULL OR LOWER(CONCAT(course.subject, course.courseNumber, ' ', course.name)) LIKE CONCAT('%', :query, '%'))"
-        + " AND (:term IS NULL OR course.term = :term)"
+        + " AND (:term IS NULL OR course.term >= :term)"
         + " AND (:subject IS NULL OR LOWER(course.subject) = LOWER(:subject))"
         + " AND (:courseNumber IS NULL OR LOWER(course.courseNumber) = LOWER(:courseNumber))"
         + " AND (:instructor IS NULL OR LOWER(course.instructor) = LOWER(:instructor))"
