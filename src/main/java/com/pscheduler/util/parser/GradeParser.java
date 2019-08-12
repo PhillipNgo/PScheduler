@@ -1,7 +1,7 @@
 package com.pscheduler.util.parser;
 
 import com.pscheduler.server.model.CourseGPA;
-import com.pscheduler.util.GradeBuilder;
+import com.pscheduler.util.GradeBuilderFactory;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class GradeParser {
 
-    private GradeBuilder gradeBuilder;
+    private GradeBuilderFactory gradeBuilderFactory;
 
     // Delimeter for splitting the line of data in the GPA Files
     private final String SPLIT_DELIMETER = ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)";
@@ -25,7 +25,7 @@ public class GradeParser {
      * Default Constructor
      */
     public GradeParser() {
-        this.gradeBuilder = new GradeBuilder();
+        this.gradeBuilderFactory = new GradeBuilderFactory(CourseGPA.class);
     }
 
     /**
@@ -36,7 +36,7 @@ public class GradeParser {
      * @return the parsed course
      */
     private CourseGPA makeClass(String line, int term) {
-        gradeBuilder.reset();
+        gradeBuilderFactory.reset();
         String[] values = line.split(SPLIT_DELIMETER);
         for (int i = 0; i < values.length; i++) {
             values[i] = values[i].trim();
@@ -46,7 +46,7 @@ public class GradeParser {
             return null;
         }
 
-        gradeBuilder
+        gradeBuilderFactory
             .subject(values[0])
             .courseNumber(values[1])
             .name(values[2])
@@ -63,7 +63,7 @@ public class GradeParser {
             .withdraws(Integer.parseInt(values[13]))
             .term(term);
 
-        return gradeBuilder.build();
+        return (CourseGPA) gradeBuilderFactory.build();
     }
 
     /**
