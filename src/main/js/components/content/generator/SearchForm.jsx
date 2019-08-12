@@ -205,8 +205,9 @@ class SearchForm extends React.Component {
                 <FormModule
                   type="select"
                   name="gradeTerm"
-                  values={['2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010',
-                    '2009', '2008', '2007', '2006', '2005', '2004', '2003']}
+                  values={['Fall 2018', 'Spring 2018', 'Fall 2017', 'Spring 2017', 'Fall 2016', 'Spring 2016', 'Fall 2015', 'Spring 2015', 'Fall 2014', 'Spring 2014', 'Fall 2013',
+                    'Spring 2013', 'Fall 2012', 'Spring 2012', 'Fall 2011', 'Spring 2011', 'Fall 2010', 'Spring 2010', 'Fall 2009', 'Spring 2009', 'Fall 2008', 'Spring 2008',
+                    'Fall 2007', 'Spring 2007', 'Fall 2006', 'Spring 2006', 'Fall 2005', 'Spring 2005', 'Fall 2004', 'Spring 2004', 'Fall 2003']}
                 />
               </div>
             </div>
