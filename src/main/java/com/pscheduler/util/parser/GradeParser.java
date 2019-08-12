@@ -1,6 +1,6 @@
 package com.pscheduler.util.parser;
 
-import com.pscheduler.server.model.CourseGPA;
+import com.pscheduler.util.CourseGPA;
 import com.pscheduler.util.GradeBuilderFactory;
 
 import java.io.*;
@@ -24,8 +24,8 @@ public class GradeParser {
     /**
      * Default Constructor
      */
-    public GradeParser() {
-        this.gradeBuilderFactory = new GradeBuilderFactory(CourseGPA.class);
+    public GradeParser(Class<? extends CourseGPA> courseType) {
+        this.gradeBuilderFactory = new GradeBuilderFactory(courseType);
     }
 
     /**
@@ -63,7 +63,7 @@ public class GradeParser {
             .withdraws(Integer.parseInt(values[13]))
             .term(term);
 
-        return (CourseGPA) gradeBuilderFactory.build();
+        return gradeBuilderFactory.build();
     }
 
     /**
@@ -176,14 +176,14 @@ public class GradeParser {
      * @throws Exception
      */
     public void outputTermDataFile(String path) throws Exception {
-        GradeParser grader = new GradeParser();
-        List<CourseGPA> courseGrades = grader.parseOfficialTermFile(path);
+        List<CourseGPA> courseGrades = this.parseOfficialTermFile(path);
         String[] split = path.split("/");
         String fileName = split[split.length - 1];
         int term = getTerm(fileName.substring(0, fileName.length() - 4));
         try (Writer writer = new BufferedWriter(new OutputStreamWriter(
                 new FileOutputStream("src/main/resources/data/grades/" + term + ".csv"), "utf-8"))) {
-            for (CourseGPA gpa : courseGrades) {
+            for (CourseGPA courseGPA : courseGrades) {
+                com.pscheduler.server.model.CourseGPA gpa = (com.pscheduler.server.model.CourseGPA) courseGPA;
                 writer.write(gpa.getSubject() + "," + gpa.getCourseNumber() + "," + gpa.getName() + "," +
                              gpa.getInstructor() + "," + gpa.getCrn() + "," + gpa.getCredits() + "," +
                              gpa.getGpa() + "," + gpa.getStudents() + "," + gpa.getA() + "," + gpa.getB() +
@@ -194,7 +194,7 @@ public class GradeParser {
     }
 
     public static void main(String[] args) throws Exception {
-        GradeParser parser = new GradeParser();
+        GradeParser parser = new GradeParser(com.pscheduler.server.model.CourseGPA.class);
         parser.outputTermDataFile(args[0]);
     }
 
