@@ -52,8 +52,12 @@ public class DatabaseLoader implements ApplicationRunner {
         courses.save(courseList);
 
         // Load GRADES_TERM Course GPAs
-        GradeParser grader = new GradeParser();
-        List<CourseGPA> courseGrades = grader.parseAllFiles();
+        GradeParser grader = new GradeParser(CourseGPA.class);
+        List<com.pscheduler.util.CourseGPA> courseGradesGeneric = grader.parseAllFiles();
+        List<CourseGPA> courseGrades = new ArrayList<>();
+        for (com.pscheduler.util.CourseGPA course : courseGradesGeneric) {
+            courseGrades.add((CourseGPA) course);
+        }
         gpa.save(courseGrades);
     }
 }

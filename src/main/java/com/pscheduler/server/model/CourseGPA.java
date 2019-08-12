@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-public class CourseGPA {
+public class CourseGPA implements com.pscheduler.util.CourseGPA {
 
     @Id
     @Min(value = 10000)
