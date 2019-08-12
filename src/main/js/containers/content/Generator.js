@@ -35,6 +35,7 @@ const mapDispatchToProps = dispatch => ({
       free: [],
       sortByGPA: false,
       useCourseAvg: false,
+      gradeTerm: 'spring_2012',
       genURL: process.env.NODE_ENV === 'production',
     };
     if (query) {

@@ -40,15 +40,26 @@ const getMapping = (gradeList) => {
 };
 
 /**
+ * Gets numeric term value based on String
+ * @param {String} gradeTerm is the term
+ * @returns {String} representing term numerically
+ */
+const getTermValue = (gradeTerm) => {
+  const stringArr = gradeTerm.split('_');
+  const month = stringArr[0] === 'spring' ? '01' : '09';
+  return stringArr[1] + month;
+};
+
+/**
  * Get a mapping of course-instructor to average GPA
  * @param courseList is a 2d array containing the list of courses
+ * @param gradeterm is the year from which grade data will be included
  */
-const getGPAMap = (courseList) => {
-  const set = new Set(courseList.map(list => `${list[0].subject}${list[0].courseNumber}`));
-  const query = queryString.stringify({ query: [...set] });
-  const site = `${gpaSearchUrl}?${query}`;
+const getGPAMap = (courseList, gradeTerm) => {
+  const courses = new Set(courseList.map(list => `${list[0].subject}${list[0].courseNumber}`));
+  const query = queryString.stringify({ query: [...courses], term: getTermValue(gradeTerm) });
 
-  return fetch(site)
+  return fetch(`${gpaSearchUrl}?${query}`)
     .then(res => res.json())
     .then(json => getMapping(json._embedded.gpa)); // eslint-disable-line no-underscore-dangle
 };
