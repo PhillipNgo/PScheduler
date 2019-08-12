@@ -2,7 +2,7 @@ package com.pscheduler.serverless.pojo;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.*;
 
-@DynamoDBTable(tableName = "Courses")
+@DynamoDBTable(tableName = "CourseGPAs")
 public class CourseGPA implements com.pscheduler.util.CourseGPA {
 
     private int crn;
