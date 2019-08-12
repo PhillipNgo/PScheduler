@@ -50,7 +50,7 @@ const FormModule = ({
         >
           { values && values.map((val) => {
             const optionName = val.name || val;
-            const valLower = (val.value || val).toLowerCase();
+            const valLower = (val.value || val).toLowerCase().replace(/\s/g, '_');
             return (
               <option key={valLower} value={valLower}>
                 {optionName}

@@ -45,9 +45,9 @@ const getMapping = (gradeList) => {
  * @returns {String} representing term numerically
  */
 const getTermValue = (gradeTerm) => {
-  const stringArr = gradeTerm.split(' ');
-  const month = stringArr.shift() === 'spring' ? '01' : '09';
-  return stringArr + month;
+  const stringArr = gradeTerm.split('_');
+  const month = stringArr[0] === 'spring' ? '01' : '09';
+  return stringArr[1] + month;
 };
 
 /**
@@ -58,9 +58,8 @@ const getTermValue = (gradeTerm) => {
 const getGPAMap = (courseList, gradeTerm) => {
   const courses = new Set(courseList.map(list => `${list[0].subject}${list[0].courseNumber}`));
   const query = queryString.stringify({ query: [...courses], term: getTermValue(gradeTerm) });
-  const address = `${gpaSearchUrl}?${query}`;
 
-  return fetch(address)
+  return fetch(`${gpaSearchUrl}?${query}`)
     .then(res => res.json())
     .then(json => getMapping(json._embedded.gpa)); // eslint-disable-line no-underscore-dangle
 };
