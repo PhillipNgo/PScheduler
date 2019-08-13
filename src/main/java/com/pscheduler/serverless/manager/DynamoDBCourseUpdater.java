@@ -7,7 +7,7 @@ import com.pscheduler.serverless.dao.DynamoDBCourseDao;
 import com.pscheduler.serverless.pojo.Course;
 import com.pscheduler.util.parser.VTParser;
 
-public class DynamoDBUpdater {
+public class DynamoDBCourseUpdater {
 
     private static final DynamoDBCourseDao courseDao = DynamoDBCourseDao.instance();
 
