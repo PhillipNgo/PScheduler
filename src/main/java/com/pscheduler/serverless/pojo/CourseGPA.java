@@ -59,7 +59,7 @@ public class CourseGPA implements com.pscheduler.util.CourseGPA {
         this.searchName = (subject + courseNumber + " " + name.replaceAll("\\W", "")).toLowerCase();
     }
 
-    @DynamoDBHashKey(attributeName = "term")
+    @DynamoDBAttribute(attributeName = "term")
     public int getTerm() {
     	return this.term;
     }
@@ -77,7 +77,7 @@ public class CourseGPA implements com.pscheduler.util.CourseGPA {
         this.crn = crn;
     }
 
-    @DynamoDBAttribute(attributeName = "subject")
+    @DynamoDBHashKey(attributeName = "subject")
     public String getSubject() {
         return this.subject;
     }

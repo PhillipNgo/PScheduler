@@ -6,6 +6,7 @@ import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 import com.pscheduler.serverless.manager.DynamoDBManager;
 import com.pscheduler.serverless.pojo.CourseGPA;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -33,25 +34,20 @@ public class DynamoDBCourseGPADao implements CourseGPADao {
     @Override
     public List<CourseGPA> searchCourseGPAs(int term, String queryString) {
 
-        String search = queryString.replaceAll("\\W", "");
-        try {
-            CourseGPA searchCrn = mapper.load(CourseGPA.class, term, Integer.parseInt(queryString));
-            if (searchCrn != null) {
-                search = searchCrn.getSubject() + searchCrn.getCourseNumber();
-            }
-        } catch (NumberFormatException e) {
-            // queryString not a valid number. Ok to move on
+        String[] splitQuery = queryString.split("-");
+        if (splitQuery.length != 2) {
+            return new ArrayList<>();
         }
-        final String filter = search.toLowerCase();
 
         Map<String, AttributeValue> eav = new HashMap<>();
+        eav.put(":subject", new AttributeValue().withS(splitQuery[0].toUpperCase()));
+        eav.put(":courseNumber", new AttributeValue().withS(splitQuery[1]));
         eav.put(":term", new AttributeValue().withN("" + term));
-        eav.put(":filter", new AttributeValue().withS(filter));
 
         DynamoDBQueryExpression<CourseGPA> query = new DynamoDBQueryExpression<CourseGPA>()
             .withExpressionAttributeValues(eav)
-            .withKeyConditionExpression("term >= :term")
-            .withFilterExpression("contains(searchName, :filter)");
+            .withKeyConditionExpression("subject = :subject")
+            .withFilterExpression("courseNumber = :courseNumber and term >= :term");
 
         return mapper.query(CourseGPA.class, query);
     }
