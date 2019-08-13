@@ -28,7 +28,7 @@ public class CourseGPAController {
     @Autowired
     private PagedResourcesAssembler<CourseGPA> assembler;
 
-    @RequestMapping(value = "/gpa/search")
+    @RequestMapping(value = "/gpas/search")
     public @ResponseBody ResponseEntity<?> getSearch(
             @RequestParam(value="query", required = false) List<String> query,
             @RequestParam(value="term", required = false) Integer term,

@@ -2,7 +2,7 @@ const api = (process.env.NODE_ENV === 'production') ? 'https://fdnvrxrba7.execut
 
 export const courseSearchUrl = `${api}/courses/search`;
 
-export const gpaSearchUrl = `${api}/gpa/search`;
+export const gpaSearchUrl = `${api}/gpas/search`;
 
 export const shortenUrl = `${api}/shorten`;
 
