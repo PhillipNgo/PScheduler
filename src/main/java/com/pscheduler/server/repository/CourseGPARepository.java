@@ -9,7 +9,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.data.rest.core.annotation.RestResource;
 
-@RepositoryRestResource(collectionResourceRel="gpa", path="gpa")
+@RepositoryRestResource(collectionResourceRel="gpas", path="gpas")
 public interface CourseGPARepository extends PagingAndSortingRepository<CourseGPA, Integer> {
     @Query(
         "SELECT course FROM CourseGPA course"

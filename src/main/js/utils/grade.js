@@ -56,12 +56,21 @@ const getTermValue = (gradeTerm) => {
  * @param gradeterm is the year from which grade data will be included
  */
 const getGPAMap = (courseList, gradeTerm) => {
-  const courses = new Set(courseList.map(list => `${list[0].subject}${list[0].courseNumber}`));
-  const query = queryString.stringify({ query: [...courses], term: getTermValue(gradeTerm) });
+  const query = [...new Set(courseList.map(
+    list => `${list[0].subject}${
+      process.env.NODE_ENV === 'production'
+        ? '-'
+        : ''
+    }${list[0].courseNumber}`,
+  ))];
 
-  return fetch(`${gpaSearchUrl}?${query}`)
+  return fetch(`${gpaSearchUrl}?${
+    queryString.stringify({
+      query: process.env.NODE_ENV === 'production' ? JSON.stringify(query) : query,
+      term: getTermValue(gradeTerm),
+    })}`)
     .then(res => res.json())
-    .then(json => getMapping(json._embedded.gpa)); // eslint-disable-line no-underscore-dangle
+    .then(json => getMapping(process.env.NODE_ENV === 'production' ? json : json._embedded.gpas)); // eslint-disable-line no-underscore-dangle
 };
 
 export default getGPAMap;
