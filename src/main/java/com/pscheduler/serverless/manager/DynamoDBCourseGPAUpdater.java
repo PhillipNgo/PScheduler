@@ -20,7 +20,7 @@ public class DynamoDBCourseGPAUpdater {
     @SuppressWarnings("unchecked")
     private static void addTerm(int term) throws Exception {
         GradeParser parser = new GradeParser(CourseGPA.class);
-        List<CourseGPA> courseGPAList = (List<CourseGPA>) (List<?>) parser.parseAllFiles();
+        List<CourseGPA> courseGPAList = (List<CourseGPA>) (List<?>) parser.parseTermFile(term);
         courseGPADao.saveCourseGPAs(courseGPAList);
     }
 }
