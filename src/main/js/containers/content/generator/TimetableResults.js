@@ -3,6 +3,7 @@ import TimetableResults from '../../../components/content/generator/TimetableRes
 
 const mapStateToProps = state => ({
   filteredCourses: state.generator.filteredCourses,
+  schedules: state.generator.schedules,
 });
 
 const mapDispatchToProps = () => ({});

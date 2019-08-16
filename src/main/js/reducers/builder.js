@@ -131,7 +131,10 @@ export default (state = initialState, action) => {
       };
     }
     case RESET_BUILDER:
-      return initialState;
+      return {
+        ...initialState,
+        initialValues: state.initialValues,
+      };
     default:
       return state;
   }

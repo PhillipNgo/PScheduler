@@ -17,7 +17,8 @@ const mapStateToProps = state => ({
   isFetching: state.builder.isFetching,
   isBuilding: state.builder.isBuilding,
   courseList: state.builder.courseList,
-  term: state.form.builder_form && state.form.builder_form.values.term,
+  term: state.form.builder_form && state.form.builder_form.values
+    && state.form.builder_form.values.term,
   firstRender: !state.builder.initialValues,
 });
 
@@ -37,7 +38,7 @@ const mapDispatchToProps = dispatch => ({
       ...parse(query, { arrayFormat: 'bracket' }),
     };
     dispatch(startBuilding(formValues));
-    if (query) {
+    if (query && formValues.c) {
       const data = [];
       formValues.c.forEach((course) => {
         const split = course.split(' ');
@@ -73,5 +74,6 @@ const form = connect(
 
 export default reduxForm({
   form: 'builder_form',
+  destroyOnUnmount: false,
   enableReinitialize: true,
 })(form);
