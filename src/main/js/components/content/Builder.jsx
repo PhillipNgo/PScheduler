@@ -1,6 +1,6 @@
 import React from 'react';
 import { ClipLoader } from 'react-spinners';
-import { stringify } from 'query-string';
+import { parse, stringify } from 'query-string';
 import ScheduleVisualTable from '../ScheduleVisualTable';
 import CourseTable from '../../containers/content/builder/CourseTable';
 import SearchList from '../../containers/content/builder/SearchList';
@@ -12,14 +12,18 @@ class Schedules extends React.Component {
     super(props);
     this.toggleTextTable = this.toggleTextTable.bind(this);
     this.toggleVisualTable = this.toggleVisualTable.bind(this);
-    const { initialize } = props;
-    initialize({
-      term: formDefaults.termValue,
-    });
     this.state = {
       showTextTable: true,
       showVisualTable: true,
     };
+  }
+
+  componentWillMount() {
+    const { firstRender, initialize, location } = this.props;
+    const search = parse(location.search);
+    if (firstRender && search.term) {
+      initialize({ term: search.term });
+    }
   }
 
   componentDidMount() {
@@ -32,7 +36,7 @@ class Schedules extends React.Component {
 
   componentDidUpdate(prevProps) {
     const { courseList, term, history } = this.props;
-    if (prevProps.courseList !== courseList) {
+    if (prevProps.courseList !== courseList || prevProps.term !== term) {
       const queryArray = courseList.map((list) => {
         const { selected } = list;
         return `${selected.subject}${selected.courseNumber}${selected.crn === 'None' ? '' : `+${selected.crn}`}`;
