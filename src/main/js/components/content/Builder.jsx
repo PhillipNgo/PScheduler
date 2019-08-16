@@ -20,9 +20,8 @@ class Schedules extends React.Component {
 
   componentWillMount() {
     const { firstRender, initialize, location } = this.props;
-    const search = parse(location.search);
-    if (firstRender && search.term) {
-      initialize({ term: search.term });
+    if (firstRender) {
+      initialize({ term: parse(location.search).term || formDefaults.termValue });
     }
   }
 
