@@ -36,6 +36,7 @@ class SearchList extends React.Component {
   searchOnChange(query) {
     const { timer, interval } = this.state;
     const { fetchCourses } = this.props;
+
     clearTimeout(timer);
     if (query && query.length > 1) {
       this.setState({
@@ -48,6 +49,7 @@ class SearchList extends React.Component {
 
   inputPressEnter(e) {
     const { fetchCourses } = this.props;
+
     if (e.keyCode === 13) {
       const { timer } = this.state;
       clearTimeout(timer);
@@ -71,66 +73,70 @@ class SearchList extends React.Component {
   render() {
     const { courses } = this.props;
     const { showSearch } = this.state;
+
     return (
       <div id="generator-search" className="no-print">
         <FormModule
           name="class_search"
           type="input"
           onChange={(e, value) => this.searchOnChange(value)}
-          onKeyUp={(e) => this.inputPressEnter(e)}
+          onKeyUp={e => this.inputPressEnter(e)}
           onFocus={this.showSearch}
           placeholder="Search a Course (PHYS 2305, CS 1054), CRN (12345), or Course Name (Foundations of Physics, Intro to Programming)"
         />
-        { showSearch && (
+        {showSearch && (
           <ul className="list-group">
-            {(courses && Object.keys(courses).length > 0) ? Object.keys(courses).map(key => (
-              <li className="list-group-item" key={key}>
-                <div className="btn-group">
-                  <button
-                    type="button"
-                    className="btn btn-default btn-sm"
-                    onClick={() => {
-                      this.addClass(courses[key]);
-                      this.hideSearch();
-                    }}
-                  >
-                    {' '}
-                    Add
-                  </button>
-                  <button type="button" className="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
-                    <span className="caret" />
-                  </button>
-                  <ul className="dropdown-menu">
-                    { courses[key].map(course => (
-                      <li key={course.crn}>
-                        <a
-                          data-toggle="popover"
-                          data-trigger="hover"
-                          data-content={
-                            `${course.instructor}\n${
-                              course.type}\n${
-                              course.meetings.map(meeting => (
-                                `${meeting.days} / ${
-                                  meeting.startTime} - ${
-                                  meeting.endTime} / ${
-                                  meeting.location}`
-                              )).join('\n')}`
-                          }
-                          onClick={() => {
-                            this.addClass(courses[key], course);
-                            this.hideSearch();
-                          }}
-                        >
-                          {' '}
-                          {course.crn}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                {` ${courses[key][0].subject} ${courses[key][0].courseNumber} - ${courses[key][0].name}`}
-              </li>
-            )) : <div />}
+            {(courses && Object.keys(courses).length > 0)
+              ? Object.keys(courses).map(key => (
+                <li className="list-group-item" key={key}>
+                  <div className="btn-group">
+                    <button
+                      type="button"
+                      className="btn btn-default btn-sm"
+                      onClick={() => {
+                        this.addClass(courses[key]);
+                        this.hideSearch();
+                      }}
+                    >
+                      {' '}
+                      Add
+                    </button>
+                    <button type="button" className="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                      <span className="caret" />
+                    </button>
+                    <ul className="dropdown-menu">
+                      {courses[key].map(course => (
+                        <li key={course.crn}>
+                          <a
+                            data-toggle="popover"
+                            data-trigger="hover"
+                            data-content={
+                              `${course.instructor}\n${
+                                course.type}\n${
+                                course.meetings.map(meeting => (
+                                  `${meeting.days} / ${
+                                    meeting.startTime} - ${
+                                    meeting.endTime} / ${
+                                    meeting.location}`
+                                )).join('\n')}`
+                            }
+                            onClick={() => {
+                              this.addClass(courses[key], course);
+                              this.hideSearch();
+                            }}
+                          >
+                            {' '}
+                            {course.crn}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  {` ${courses[key][0].subject} ${courses[key][0].courseNumber} - ${courses[key][0].name}`}
+                </li>
+              ))
+              : <div />
+            }
           </ul>
         )}
       </div>
