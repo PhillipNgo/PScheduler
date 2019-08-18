@@ -13,19 +13,6 @@ import 'whatwg-fetch';
 import { shortenUrl } from '../constants/resources';
 import { addGrades } from '../actions/grades';
 
-const genSchedules = (courseList, gap) => {
-  let schedules = [];
-  if (!courseList.find(list => list.length === 0)) {
-    const scheduleMaker = new ScheduleMaker(courseList, parseInt(gap, 10));
-    try {
-      schedules = scheduleMaker.makeSchedules();
-    } catch (e) {
-      schedules = e;
-    }
-  }
-  return schedules;
-};
-
 const fetchShortUrl = (courseList, formValues) => {
   const queryObject = {
     ...formValues,
@@ -95,18 +82,27 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
       }, () => Promise.resolve())
       .catch(error => dispatch(addGrades(error)))
       .finally(() => {
-        const schedules = genSchedules(filteredCourseList, gap);
-
-        if (!(schedules instanceof Error) && sortByGPA) {
-          const gradeMap = getState().grades.map;
-          schedules.sort((schedule1, schedule2) => schedule2.calculateGPA(gradeMap, useCourseAvg)
-            - schedule1.calculateGPA(gradeMap, useCourseAvg));
+        let schedules = [];
+        let scheduleMaker;
+        if (!courseList.find(list => list.length === 0)) {
+          scheduleMaker = new ScheduleMaker(
+            filteredCourseList,
+            parseInt(gap, 10),
+            sortByGPA ? getState().grades.map : null,
+            useCourseAvg,
+          );
+          try {
+            schedules = scheduleMaker.makeSchedules();
+          } catch (e) {
+            schedules = e;
+          }
         }
-
         shortCode
-          .then(code => dispatch(redirectToGenerator(schedules, code ? `q=${code}` : '')))
+          .then(code => dispatch(
+            redirectToGenerator(schedules, typeof code === 'string' ? `q=${code}` : ''),
+          ))
           .catch(() => dispatch(redirectToGenerator(schedules)))
-          .then(() => dispatch(endGenerating(schedules)));
+          .then(() => dispatch(endGenerating(scheduleMaker, schedules)));
       });
   }
 };

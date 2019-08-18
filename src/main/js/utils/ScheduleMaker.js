@@ -2,40 +2,75 @@
 import Schedule from './Schedule';
 
 class ScheduleMaker {
-  constructor(courseListings, gap) {
+  /**
+   * Constructor
+   * @param {Object} courseListings list of courses to make schedules from
+   * @param {int} gap minimum gap time for a schedule
+   * @param {Object} gradeMap optional, used to sort outputted schedules by gpa
+   * @param {boolean} useCourseAvg optional, used to sort outputted schedules by gpa
+   */
+  constructor(courseListings, gap, gradeMap, useCourseAvg) {
     this.courseListings = courseListings;
-    this.gap = gap;
-    this.schedules = [];
+    this.schedule = new Schedule(gap);
+    this.stack = [];
+    this.complete = false;
+    this._stackAdd(0);
+    this.gradeMap = gradeMap;
+    this.useCourseAvg = useCourseAvg;
+  }
+
+  /*
+    Adding to stack in reverse order to preserve GPA ordering if there is one
+    Not using a queue with Array.shift because it is O(n)
+  */
+  _stackAdd(listIndex) {
+    for (let i = this.courseListings[listIndex].length; i > 0; i -= 1) {
+      this.stack.push([listIndex, i - 1]);
+    }
   }
 
   makeSchedules() {
-    try {
-      this._makeSchedules(this.courseListings, new Schedule(this.gap), 0);
-    } catch (e) {
-      if (this.schedules.length !== ScheduleMaker.MAX_SCHEDULES) {
-        return [];
-      }
-    }
-    return this.schedules;
-  }
+    const schedules = [];
+    const {
+      courseListings,
+      stack,
+      schedule,
+      gradeMap,
+      useCourseAvg,
+    } = this;
 
-  _makeSchedules(courseListings, schedule, courseIndex) {
-    courseListings[courseIndex].forEach((course) => {
-      const lastCourse = courseIndex === courseListings.length - 1;
-      const currSchedule = lastCourse ? new Schedule(schedule) : schedule;
-      if (currSchedule.add(course)) {
-        if (lastCourse) {
-          this.schedules.push(currSchedule);
-          // Reached MAX_SCHEDULES, forcibly quit recursion
-          if (this.schedules.length === ScheduleMaker.MAX_SCHEDULES) {
-            throw new Error();
-          }
-        } else {
-          this._makeSchedules(courseListings, currSchedule, courseIndex + 1);
-          schedule.delete(course);
+    while (stack.length !== 0 && schedules.length < ScheduleMaker.MAX_SCHEDULES) {
+      const [listIndex, courseIndex] = stack.pop();
+
+      if (schedule.size > listIndex) {
+        const scheduleArray = [...schedule];
+        while (schedule.size > listIndex) {
+          schedule.delete(scheduleArray.pop());
         }
       }
-    });
+
+      const course = courseListings[listIndex][courseIndex];
+      if (schedule.add(course)) {
+        if (listIndex === courseListings.length - 1) {
+          schedules.push(new Schedule(schedule));
+        } else {
+          this._stackAdd(listIndex + 1);
+        }
+      }
+    }
+
+    if (stack.length === 0) {
+      this.complete = true;
+    }
+
+    if (gradeMap) {
+      schedules.sort((schedule1, schedule2) => (
+        schedule2.calculateGPA(gradeMap, useCourseAvg)
+        - schedule1.calculateGPA(gradeMap, useCourseAvg)
+      ));
+    }
+
+    return schedules;
   }
 }
 

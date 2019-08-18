@@ -6,6 +6,7 @@ import {
   START_REDIRECT,
   END_REDIRECT,
   SELECT_SORT,
+  GENERATE_MORE,
 } from '../actions/types';
 
 const initialState = {
@@ -17,6 +18,7 @@ const initialState = {
   error: null,
   sort: false,
   useCourseAvg: false,
+  scheduleMaker: null,
 };
 
 export default (state = initialState, action) => {
@@ -37,8 +39,37 @@ export default (state = initialState, action) => {
         ...state,
         isGenerating: false,
         error: action.error,
-        schedules: action.error ? [] : action.payload,
+        schedules: action.error ? [] : action.payload.schedules,
+        scheduleMaker: action.error ? null : action.payload.scheduleMaker,
       };
+    case GENERATE_MORE: {
+      const { scheduleMaker } = state;
+
+      if (!scheduleMaker) {
+        return {
+          ...state,
+          isGenerating: false,
+        };
+      }
+
+      let schedules;
+      let error = null;
+      try {
+        schedules = [
+          ...state.schedules,
+          ...scheduleMaker.makeSchedules(),
+        ];
+      } catch (e) {
+        error = e;
+      }
+
+      return {
+        ...state,
+        isGenerating: false,
+        error,
+        schedules: error ? state.schedules : schedules,
+      };
+    }
     case FILTERED_COURSES:
       return {
         ...state,

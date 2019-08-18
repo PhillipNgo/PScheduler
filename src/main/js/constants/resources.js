@@ -4,6 +4,6 @@ export const courseSearchUrl = `${api}/courses/search`;
 
 export const gpaSearchUrl = `${api}/gpas/search`;
 
-export const shortenUrl = `${api}/shorten`;
+export const shortenUrl = 'https://fdnvrxrba7.execute-api.us-east-1.amazonaws.com/beta/shorten';
 
 export const retrieveShortUrl = 'https://s3.amazonaws.com/pscheduler-urlshortening';

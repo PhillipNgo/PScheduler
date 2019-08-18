@@ -2,6 +2,7 @@ import queryString from 'query-string';
 import { courseSearchUrl } from '../constants/resources';
 import 'whatwg-fetch';
 
+/* eslint-disable no-underscore-dangle */
 export const getCourseList = (values) => {
   const query = [...new Set(Array.isArray(values.query) ? values.query : [values.query])];
   return fetch(`${courseSearchUrl}?${
@@ -11,7 +12,12 @@ export const getCourseList = (values) => {
       size: 1000,
     })}`)
     .then(response => response.json())
-    .then(json => (process.env.NODE_ENV === 'production' ? json : json._embedded.courses)) // eslint-disable-line no-underscore-dangle
+    .then((json) => {
+      if (process.env.NODE_ENV === 'production') {
+        return json;
+      }
+      return json._embedded ? json._embedded.courses : [];
+    })
     .catch(error => error);
 };
 
