@@ -31,10 +31,12 @@ export default (state = initialState, action) => {
       if (state.courseList.length === 12) {
         return state;
       }
+
       const { courses, id } = action.payload;
       const courseToAdd = [...courses];
       courseToAdd.id = id;
       const courseList = [...state.courseList, courseToAdd];
+
       return {
         ...state,
         courseList,
@@ -49,6 +51,7 @@ export default (state = initialState, action) => {
     case REMOVE_COURSE: {
       const courseList = [...state.courseList];
       courseList.splice(courseList.indexOf(action.payload), 1);
+
       return {
         ...state,
         courseList,
