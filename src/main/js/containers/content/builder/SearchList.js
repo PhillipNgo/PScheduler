@@ -8,7 +8,11 @@ import {
   removeFromBuilder,
 } from '../../../actions/builder';
 
-const idExists = (courseList, courseName, id) => courseList.find(list => `${list.courses[0].subject}${list.courses[0].courseNumber}` === courseName && list.id === id);
+const idExists = (courseList, courseName, id) => (
+  courseList.find(list => (
+    `${list.courses[0].subject}${list.courses[0].courseNumber}` === courseName && list.id === id
+  ))
+);
 
 const mapStateToProps = state => ({
   courses: state.builder.searchList,
