@@ -41,6 +41,10 @@ class ScheduleMaker {
     } = this;
     let schedulesAdded = 0;
 
+    if (schedules.length >= ScheduleMaker.MAX_TOTAL_SCHEDULES) {
+      return schedules;
+    }
+
     while (stack.length !== 0 && schedulesAdded < ScheduleMaker.MAX_SCHEDULES) {
       const [listIndex, courseIndex] = stack.pop();
 
@@ -78,5 +82,6 @@ class ScheduleMaker {
 }
 
 ScheduleMaker.MAX_SCHEDULES = 1000;
+ScheduleMaker.MAX_TOTAL_SCHEDULES = 100000;
 
 export default ScheduleMaker;
