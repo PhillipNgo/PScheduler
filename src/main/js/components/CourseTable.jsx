@@ -86,7 +86,7 @@ class CourseTable extends React.Component {
           </td>
           {sortByGPA && (
             <td>
-              {this.getCourseGPA(course)}
+              {meetingNum === 0 && this.getCourseGPA(course)}
             </td>
           )}
           <td>

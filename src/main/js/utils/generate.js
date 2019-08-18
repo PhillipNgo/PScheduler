@@ -99,7 +99,7 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
         }
         shortCode
           .then(code => dispatch(
-            redirectToGenerator(schedules, typeof code === 'string' ? `q=${code}` : ''),
+            redirectToGenerator(schedules, code && typeof code === 'string' ? `q=${code}` : ''),
           ))
           .catch(() => dispatch(redirectToGenerator(schedules)))
           .then(() => dispatch(endGenerating(scheduleMaker, schedules)));
