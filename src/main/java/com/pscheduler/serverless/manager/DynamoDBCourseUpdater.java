@@ -24,7 +24,7 @@ public class DynamoDBCourseUpdater {
 
         // List of courses to update
         VTParser parser = new VTParser(Course.class, term);
-        List<Course> courseListGeneric = (List<Course>) (List<?>) parser.parseTermFile("./src/main/resources/data/" + term + ".txt");
+        List<Course> courseListGeneric = (List<Course>) (List<?>) parser.parseTermFile("./src/main/resources/data/courses" + term + ".txt");
 
         // List of courses currently in DB
         List<Course> current = courseDao.getCoursesForTerm(term);
