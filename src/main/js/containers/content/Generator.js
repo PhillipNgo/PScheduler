@@ -38,6 +38,7 @@ const mapDispatchToProps = dispatch => ({
       gradeTerm: 'spring_2012',
       genURL: process.env.NODE_ENV === 'production',
     };
+
     if (query) {
       fetch(`${retrieveShortUrl}/generator/${parse(query).q}`)
         .then(response => response.json())
@@ -47,6 +48,7 @@ const mapDispatchToProps = dispatch => ({
           delete data.c;
           data.courses = {};
           const q = courses.map(course => course.name);
+
           getCourseMap({ query: q, term: data.term })
             .then((courseMap) => {
               courses.forEach((course, index) => {
