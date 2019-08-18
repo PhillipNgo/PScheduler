@@ -75,6 +75,7 @@ const generateSchedules = (values, loadQuery = '') => (dispatch, getState) => {
             if (!gradeMap[name][instructor2]) {
               return useCourseAvg ? gradeMap[name].AVERAGE - gradeMap[name][instructor1] : -1;
             }
+            return gradeMap[name][instructor2] - gradeMap[name][instructor1];
           }
 
           return 0;

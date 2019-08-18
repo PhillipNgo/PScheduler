@@ -56,7 +56,6 @@ export default (state = initialState, action) => {
       let error = null;
       try {
         schedules = [
-          ...state.schedules,
           ...scheduleMaker.makeSchedules(),
         ];
       } catch (e) {

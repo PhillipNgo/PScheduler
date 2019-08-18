@@ -17,6 +17,7 @@ class ScheduleMaker {
     this._stackAdd(0);
     this.gradeMap = gradeMap;
     this.useCourseAvg = useCourseAvg;
+    this.schedules = [];
   }
 
   /*
@@ -30,16 +31,17 @@ class ScheduleMaker {
   }
 
   makeSchedules() {
-    const schedules = [];
     const {
       courseListings,
+      schedules,
       stack,
       schedule,
       gradeMap,
       useCourseAvg,
     } = this;
+    let schedulesAdded = 0;
 
-    while (stack.length !== 0 && schedules.length < ScheduleMaker.MAX_SCHEDULES) {
+    while (stack.length !== 0 && schedulesAdded < ScheduleMaker.MAX_SCHEDULES) {
       const [listIndex, courseIndex] = stack.pop();
 
       if (schedule.size > listIndex) {
@@ -53,6 +55,7 @@ class ScheduleMaker {
       if (schedule.add(course)) {
         if (listIndex === courseListings.length - 1) {
           schedules.push(new Schedule(schedule));
+          schedulesAdded += 1;
         } else {
           this._stackAdd(listIndex + 1);
         }
@@ -74,6 +77,6 @@ class ScheduleMaker {
   }
 }
 
-ScheduleMaker.MAX_SCHEDULES = 100;
+ScheduleMaker.MAX_SCHEDULES = 1000;
 
 export default ScheduleMaker;
