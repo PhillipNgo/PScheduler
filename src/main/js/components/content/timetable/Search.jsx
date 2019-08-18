@@ -46,6 +46,7 @@ class Search extends React.Component {
 
   render() {
     const { courses, isFetching, handleSubmit } = this.props;
+
     return (
       <form
         id="generator-search"
@@ -68,15 +69,16 @@ class Search extends React.Component {
           onFocus={this.showSearch}
           placeholder="Search a Course (PHYS 2305, CS 1054) or Course Name (Foundations of Physics, Intro to Programming)"
         />
-        {
-          isFetching ? (
+        {isFetching
+          ? (
             <div className="page-loader">
               <h1>
                 Loading Results
               </h1>
               <ClipLoader size={200} color="darkorange" />
             </div>
-          ) : (
+          )
+          : (
             <CourseTable courses={courses} header />
           )
         }
