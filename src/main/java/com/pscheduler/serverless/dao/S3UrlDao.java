@@ -22,7 +22,6 @@ public class S3UrlDao implements UrlDao {
     private S3UrlDao() {}
 
     public static S3UrlDao instance() {
-
         if (instance == null) {
             synchronized(S3UrlDao.class) {
                 if (instance == null) {
@@ -35,7 +34,6 @@ public class S3UrlDao implements UrlDao {
 
     @Override
     public String storeData(String data, String prefix) {
-
         String key = generateShortId();
         int attempts = 0;
         while (attempts < 5) {
@@ -59,7 +57,6 @@ public class S3UrlDao implements UrlDao {
     }
 
     private String generateShortId() {
-
         String SALT_CHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         char[] salt = new char[10];
         Random rnd = new Random();
@@ -69,4 +66,5 @@ public class S3UrlDao implements UrlDao {
         }
         return new String(salt);
     }
+
 }

@@ -24,4 +24,5 @@ public class CourseFunctions implements RequestHandler<CourseRequest, List<Cours
             .flatMap(Collection::stream)
             .collect(Collectors.toList());
     }
+
 }

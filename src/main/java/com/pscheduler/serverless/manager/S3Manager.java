@@ -11,7 +11,6 @@ public class S3Manager {
     private static volatile AmazonS3 client;
 
     private S3Manager() {
-
         client = AmazonS3ClientBuilder
             .standard()
             .withRegion(Regions.US_EAST_1)
@@ -19,7 +18,6 @@ public class S3Manager {
     }
 
     public static void init() {
-
         if (instance == null) {
             synchronized(S3Manager.class) {
                 if (instance == null)
@@ -29,8 +27,8 @@ public class S3Manager {
     }
 
     public static AmazonS3 client() {
-
         init();
         return S3Manager.client;
     }
+
 }

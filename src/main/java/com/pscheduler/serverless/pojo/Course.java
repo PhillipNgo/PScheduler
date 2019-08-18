@@ -213,5 +213,7 @@ public class Course implements com.pscheduler.util.Course {
         public void setDays(List<String> days) {
             this.days = days;
         }
+
     }
+
 }
