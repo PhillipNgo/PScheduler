@@ -37,14 +37,18 @@ const mapDispatchToProps = dispatch => ({
       term: formDefaults.termValue,
       ...parse(query, { arrayFormat: 'bracket' }),
     };
+
     dispatch(startBuilding(formValues));
+
     if (query && formValues.c) {
       const data = [];
+
       formValues.c.forEach((course) => {
         const split = course.split(' ');
         data.push({ name: split[0], crn: split.length === 2 ? split[1] : null });
       });
       const q = data.map(val => val.name);
+
       getCourseMap({ query: q, term: formValues.term })
         .then((courseMap) => {
           data.forEach((val, index) => {
