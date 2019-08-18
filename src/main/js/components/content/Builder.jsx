@@ -20,6 +20,7 @@ class Schedules extends React.Component {
 
   componentWillMount() {
     const { firstRender, initialize, location } = this.props;
+
     if (firstRender) {
       initialize({ term: parse(location.search).term || formDefaults.termValue });
     }
@@ -35,17 +36,21 @@ class Schedules extends React.Component {
 
   componentDidUpdate(prevProps) {
     const { courseList, term, history } = this.props;
+
     if (prevProps.courseList !== courseList || prevProps.term !== term) {
       const queryArray = courseList.map((list) => {
         const { selected } = list;
-        return `${selected.subject}${selected.courseNumber}${selected.crn === 'None' ? '' : `+${selected.crn}`}`;
+        return `${selected.subject}${selected.courseNumber}${
+          selected.crn === 'None' ? '' : `+${selected.crn}`}`;
       });
+
       history.push({
         pathname: '/builder',
         search: `?${stringify({ c: queryArray, term: term || formDefaults.termValue },
           { encode: false, arrayFormat: 'bracket' })}`,
       });
     }
+
     $('.selectpicker').selectpicker('refresh');
   }
 
@@ -69,6 +74,7 @@ class Schedules extends React.Component {
       showTextTable,
       showVisualTable,
     } = this.state;
+
     if (firstRender || isBuilding) {
       return (
         <div className="page-loader">
@@ -79,6 +85,7 @@ class Schedules extends React.Component {
         </div>
       );
     }
+
     return (
       <div>
         <div id="schedules-bar" className="flex-container-spaced no-print">
@@ -92,7 +99,7 @@ class Schedules extends React.Component {
                 values={formDefaults.terms}
               />
             </div>
-            { isFetching && <ClipLoader size={25} color="darkorange" /> }
+            {isFetching && <ClipLoader size={25} color="darkorange" />}
           </div>
           <h4>
             Schedule Builder
@@ -132,11 +139,12 @@ class Schedules extends React.Component {
         <div className="pad-top">
           <SearchList />
         </div>
-        { showTextTable && (
+        {showTextTable && (
           <CourseTable />
         )}
-        { showVisualTable
-            && <ScheduleVisualTable schedule={courseList.map(list => list.selected)} /> }
+        {showVisualTable && (
+          <ScheduleVisualTable schedule={courseList.map(list => list.selected)} />
+        )}
       </div>
     );
   }
