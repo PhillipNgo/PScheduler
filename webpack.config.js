@@ -21,9 +21,9 @@ var config = {
   module: {
     rules: [{
       test: /\.jsx?$/,
-        include: APP_DIR,
-        use: 'babel-loader',
-        resolve: {
+      include: APP_DIR,
+      use: 'babel-loader',
+      resolve: {
         extensions: ['.js', '.jsx'],
       },
     }]
