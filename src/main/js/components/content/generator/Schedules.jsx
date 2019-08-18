@@ -72,7 +72,11 @@ class Schedules extends React.Component {
   }
 
   render() {
-    const { schedules } = this.props;
+    const {
+      schedules,
+      doneGenerating,
+      generateMoreSchedules,
+    } = this.props;
     const {
       scheduleIndex,
       showTextTable,
@@ -100,39 +104,56 @@ class Schedules extends React.Component {
             {`Schedule ${schedules.length > 0 ? scheduleIndex + 1 : 0} of ${schedules.length}`}
           </h4>
           <div>
-            <button type="button" className="btn btn-default" onClick={this.toggleCarousel}>
-              Toggle Nav
-            </button>
-            <button type="button" className="btn btn-default" onClick={this.toggleTextTable}>
-              Toggle Text
-            </button>
-            <button type="button" className="btn btn-default" onClick={this.toggleVisualTable}>
-              Toggle Visual
-            </button>
-            <button
-              onClick={() => {
-                const text = document.createElement('textarea');
-                text.value = window.location.href;
-                text.style.left = '-9999px';
-                document.body.appendChild(text);
-                text.select();
-                document.execCommand('copy');
-                document.body.removeChild(text);
-              }}
-              type="button"
-              className="btn btn-default"
-              title="Copy Link"
-            >
-              <span className="glyphicon glyphicon-copy" />
-            </button>
-            <button
-              onClick={window.print}
-              type="button"
-              className="btn btn-default"
-              title="Print"
-            >
-              <span className="glyphicon glyphicon-print" />
-            </button>
+            { !doneGenerating && (
+              <button type="button" className="btn btn-default" onClick={generateMoreSchedules}>
+                Load More
+              </button>
+            )}
+            <div className="btn-group">
+              <button type="button" className="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <span className="glyphicon glyphicon-menu-hamburger" />
+              </button>
+              <ul className="dropdown-menu dropdown-menu-right">
+                <li>
+                  <a onClick={this.toggleCarousel}>
+                    Toggle Nav
+                  </a>
+                </li>
+                <li>
+                  <a onClick={this.toggleTextTable}>
+                    Toggle Text
+                  </a>
+                </li>
+                <li>
+                  <a onClick={this.toggleVisualTable}>
+                    Toggle Visual
+                  </a>
+                </li>
+                <li role="separator" className="divider" />
+                <li>
+                  <a
+                    onClick={() => {
+                      const text = document.createElement('textarea');
+                      text.value = window.location.href;
+                      text.style.left = '-9999px';
+                      document.body.appendChild(text);
+                      text.select();
+                      document.execCommand('copy');
+                      document.body.removeChild(text);
+                    }}
+                  >
+                    <span className="glyphicon glyphicon-copy" />
+                    {' Copy Link'}
+                  </a>
+                </li>
+                <li>
+                  <a onClick={window.print}>
+                    <span className="glyphicon glyphicon-print" />
+                    {' Print'}
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="carousel">

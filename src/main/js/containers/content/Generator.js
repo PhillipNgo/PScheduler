@@ -63,12 +63,12 @@ const mapDispatchToProps = dispatch => ({
             })
             .catch((e) => {
               dispatch(startFirstRender(formValues));
-              dispatch(endGenerating(e));
+              dispatch(endGenerating(null, e));
             });
         })
         .catch((e) => {
           dispatch(startFirstRender(formValues));
-          dispatch(endGenerating(e));
+          dispatch(endGenerating(null, e));
         });
     } else {
       dispatch(startFirstRender(formValues));

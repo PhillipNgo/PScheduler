@@ -1,6 +1,7 @@
 import {
   START_FIRST_RENDER,
   START_GENERATING,
+  GENERATE_MORE,
   END_GENERATING,
   FILTERED_COURSES,
   START_REDIRECT,
@@ -17,9 +18,13 @@ export const startGenerating = () => ({
   type: START_GENERATING,
 });
 
-export const endGenerating = schedules => ({
+export const generateMore = () => ({
+  type: GENERATE_MORE,
+});
+
+export const endGenerating = (scheduleMaker, schedules) => ({
   type: END_GENERATING,
-  payload: schedules,
+  payload: { scheduleMaker, schedules },
   error: schedules instanceof Error,
 });
 
