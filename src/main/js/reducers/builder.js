@@ -66,6 +66,7 @@ export default (state = initialState, action) => {
       }
       const { courses, id, course } = action.payload;
       const newSchedule = new Schedule(state.schedule);
+
       const selected = !course || newSchedule.conflictsWith(course)
         ? createEmptyCourse(courses[0].subject, courses[0].courseNumber) : course;
       newSchedule.add(selected);
@@ -74,6 +75,7 @@ export default (state = initialState, action) => {
         id,
         courses,
       }];
+
       return {
         ...state,
         courseList,
@@ -85,7 +87,9 @@ export default (state = initialState, action) => {
       const list = state.courseList.find(courses => courses === action.payload);
       const removed = newSchedule.delete(list.selected);
       const courseList = [...state.courseList];
+
       courseList.splice(courseList.indexOf(action.payload), 1);
+
       return {
         ...state,
         schedule: removed ? newSchedule : state.schedule,
@@ -94,17 +98,26 @@ export default (state = initialState, action) => {
     }
     case SELECT_CRN: {
       const { courseName, id, crn } = action.payload;
-      const list = state.courseList.find(course => `${course.courses[0].subject}${course.courses[0].courseNumber}` === courseName && course.id === id);
+
+      const list = state.courseList.find(
+        course => (
+          `${course.courses[0].subject}${course.courses[0].courseNumber}`
+            === courseName && course.id === id
+        ),
+      );
+
       const selected = list.courses.find(course => `${course.crn}` === crn);
       const newSchedule = new Schedule(state.schedule);
       const deleted = newSchedule.delete(list.selected);
       const added = newSchedule.add(selected);
       const courseList = [...state.courseList];
+
       courseList.splice(courseList.indexOf(list), 1, {
         selected,
         id: list.id,
         courses: list.courses,
       });
+
       return {
         ...state,
         schedule: added && deleted ? newSchedule : state.schedule,
@@ -113,17 +126,26 @@ export default (state = initialState, action) => {
     }
     case UNSELECT_CRN: {
       const { subject, courseNumber, id } = action.payload;
-      const list = state.courseList.find(course => `${course.courses[0].subject}${course.courses[0].courseNumber}` === `${subject}${courseNumber}` && course.id === id);
+
+      const list = state.courseList.find(
+        course => (
+          `${course.courses[0].subject}${course.courses[0].courseNumber}`
+            === `${subject}${courseNumber}` && course.id === id
+        ),
+      );
+
       const newSchedule = new Schedule(state.schedule);
       const emptyCourse = createEmptyCourse(subject, courseNumber);
       const removed = newSchedule.delete(list.selected);
       newSchedule.add(emptyCourse);
       const courseList = [...state.courseList];
+
       courseList.splice(courseList.indexOf(list), 1, {
         selected: emptyCourse,
         id: list.id,
         courses: list.courses,
       });
+
       return {
         ...state,
         schedule: removed ? newSchedule : state.schedule,
