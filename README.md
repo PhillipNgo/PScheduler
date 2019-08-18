@@ -76,5 +76,5 @@ To start the server
 .\gradlew.bat bootRun          // Windows CMD
 ```
 
-The API loads `src/main/resources/data/201809.txt` (which holds the data for Fall 2018 courses). To specify a different semester or load multiple semesters, edit `src/main/java/com/pscheduler/server/core/DatabaseLoader.java`.
+The API loads `src/main/resources/data/courses/201809.txt` (which holds the data for Fall 2018 courses). To specify a different semester or load multiple semesters, edit `src/main/java/com/pscheduler/server/core/DatabaseLoader.java`.
 `com.pscheduler.util.parser.CourseFileCreator` can be used to create new term files.

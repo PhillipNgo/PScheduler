@@ -25,7 +25,7 @@ public class CourseFileCreator {
         List<com.pscheduler.util.Course> list = parser.parseTerm();
 
         try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-                new FileOutputStream("src/main/resources/data/" + termYear + ".txt"), "utf-8"))) {
+                new FileOutputStream("src/main/resources/data/courses" + termYear + ".txt"), "utf-8"))) {
             for (com.pscheduler.util.Course genericCourse : list) {
                 Course course = (Course) genericCourse;
                 writer.write(course.getCrn() + "\t" + course.getSubject() + "-" + course.getCourseNumber() + "\t" +
