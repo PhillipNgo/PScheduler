@@ -10,6 +10,7 @@ import java.util.List;
 
 @Entity
 public class Course implements com.pscheduler.util.Course {
+
     @Id
     @Min(value = 10000)
     @Max(value = 99999)
@@ -142,4 +143,5 @@ public class Course implements com.pscheduler.util.Course {
     public void setTerm(int term) {
         this.term = term;
     }
+
 }

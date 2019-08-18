@@ -49,4 +49,5 @@ public class Meeting implements com.pscheduler.util.Meeting {
     public List<String> getDays() {
         return days;
     }
+
 }
