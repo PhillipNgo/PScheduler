@@ -202,4 +202,5 @@ public class CourseGPA implements com.pscheduler.util.CourseGPA {
     public void setSearchName(String searchName) {
         this.searchName = searchName;
     }
+
 }

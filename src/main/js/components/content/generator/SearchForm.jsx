@@ -33,6 +33,7 @@ class SearchForm extends React.Component {
       sortByGPAChecked,
       useCourseAvgChecked,
     } = this.props;
+
     return (
       <form
         onSubmit={handleSubmit(submit)}
@@ -71,7 +72,10 @@ class SearchForm extends React.Component {
                     type="select"
                     name="h1"
                     width="auto"
-                    values={['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12']}
+                    values={[
+                      '01', '02', '03', '04', '05', '06',
+                      '07', '08', '09', '10', '11', '12',
+                    ]}
                   />
                 </div>
                 <div className="no-pad">
@@ -79,7 +83,10 @@ class SearchForm extends React.Component {
                     type="select"
                     name="m1"
                     width="auto"
-                    values={['00', '05', '10', '15', '20', '25', '30', '35', '40', '45', '50', '55']}
+                    values={[
+                      '00', '05', '10', '15', '20', '25',
+                      '30', '35', '40', '45', '50', '55',
+                    ]}
                   />
                 </div>
                 <div className="no-pad">
@@ -102,7 +109,10 @@ class SearchForm extends React.Component {
                     type="select"
                     name="h2"
                     width="auto"
-                    values={['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12']}
+                    values={[
+                      '01', '02', '03', '04', '05', '06',
+                      '07', '08', '09', '10', '11', '12',
+                    ]}
                   />
                 </div>
                 <div className="no-pad">
@@ -110,7 +120,10 @@ class SearchForm extends React.Component {
                     type="select"
                     name="m2"
                     width="auto"
-                    values={['00', '05', '10', '15', '20', '25', '30', '35', '40', '45', '50', '55']}
+                    values={[
+                      '00', '05', '10', '15', '20', '25',
+                      '30', '35', '40', '45', '50', '55',
+                    ]}
                   />
                 </div>
                 <div className="no-pad">
@@ -133,7 +146,10 @@ class SearchForm extends React.Component {
                 type="select"
                 name="gap"
                 width="auto"
-                values={['0', '5', '10', '15', '20', '25', '30', '35', '40', '45', '50', '55', '60']}
+                values={[
+                  '0', '5', '10', '15', '20', '25', '30',
+                  '35', '40', '45', '50', '55', '60',
+                ]}
               />
             </div>
             <div className="pad-top margin-right">
@@ -143,7 +159,6 @@ class SearchForm extends React.Component {
               <FormModule
                 type="select"
                 name="free"
-                // className="form-control"
                 values={[{
                   name: 'Monday',
                   value: 'M',

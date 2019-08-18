@@ -12,7 +12,11 @@ const mapStateToProps = state => ({
   courses: state.courses.searchList,
 });
 
-const idExists = (courseList, courseName, id) => courseList.find(list => `${list[0].subject}${list[0].courseNumber}` === courseName && list.id === id);
+const idExists = (courseList, courseName, id) => (
+  courseList.find(list => (
+    `${list[0].subject}${list[0].courseNumber}` === courseName && list.id === id
+  ))
+);
 
 const mapDispatchToProps = dispatch => ({
   fetchCourses: query => dispatch((thunkDispatch, getState) => {

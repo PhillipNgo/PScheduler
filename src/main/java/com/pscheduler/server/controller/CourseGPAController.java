@@ -65,4 +65,5 @@ public class CourseGPAController {
             return ResponseEntity.badRequest().build();
         }
     }
+
 }

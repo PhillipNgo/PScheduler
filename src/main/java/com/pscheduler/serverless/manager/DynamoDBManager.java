@@ -12,7 +12,6 @@ public class DynamoDBManager {
     private static DynamoDBMapper mapper;
 
     private DynamoDBManager() {
-
         AmazonDynamoDB client = AmazonDynamoDBClientBuilder
                 .standard()
                 .withRegion(Regions.US_EAST_1)
@@ -21,7 +20,6 @@ public class DynamoDBManager {
     }
 
     public static void init() {
-
         if (instance == null) {
             synchronized(DynamoDBManager.class) {
                 if (instance == null)
@@ -31,7 +29,6 @@ public class DynamoDBManager {
     }
 
     public static DynamoDBMapper mapper() {
-
         init();
         return DynamoDBManager.mapper;
     }

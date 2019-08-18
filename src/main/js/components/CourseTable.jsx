@@ -28,6 +28,7 @@ class CourseTable extends React.Component {
 
   HeaderRow({ schedule }) {
     const { sortByGPA, gradeMap, useCourseAvg } = this.props;
+
     return (
       <tr>
         <th>
@@ -66,14 +67,16 @@ class CourseTable extends React.Component {
     );
   }
 
+  /* eslint-disable react/no-array-index-key */
   createRows() {
     const { courses, sortByGPA, colored } = this.props;
     const rows = [];
+
     [...courses].forEach((course, courseNum) => {
       course.meetings.forEach((meeting, meetingNum) => rows.push((
         <tr
           style={{ backgroundColor: colored ? colors[courseNum] : '' }}
-          key={`${course.crn}${meetingNum}${courseNum}`} // eslint-disable-line react/no-array-index-key
+          key={`${course.crn}${meetingNum}${courseNum}`}
         >
           <td>
             {meetingNum === 0 && course.crn}
@@ -110,11 +113,13 @@ class CourseTable extends React.Component {
         </tr>
       )));
     });
+
     return rows;
   }
 
   render() {
     const { courses, header, children = this.createRows() } = this.props;
+
     return (
       <div className="table-responsive">
         <table className="table table-condensed text-table">

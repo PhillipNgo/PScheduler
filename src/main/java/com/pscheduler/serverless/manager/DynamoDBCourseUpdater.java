@@ -43,4 +43,5 @@ public class DynamoDBCourseUpdater {
     private static void deleteTerm(int term) {
         courseDao.deleteCoursesForTerm(term);
     }
+
 }

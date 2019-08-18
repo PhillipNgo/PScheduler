@@ -15,6 +15,50 @@ class CourseTable extends React.Component {
     return newSchedule.conflictsWith(course);
   }
 
+  /* eslint-disable react/no-array-index-key */
+  createCourseRows() {
+    const { courses } = this.props;
+    const rows = [];
+
+    courses.forEach((course, courseNum) => {
+      const { selected } = course;
+      rows.push(...selected.meetings.map((meeting, meetingNum) => (
+        <tr
+          style={{ backgroundColor: colors[courseNum] }}
+          key={`${course.id}-${selected.crn}-${courseNum}-${meetingNum}`}
+        >
+          <td>
+            {meetingNum === 0 && this.createCrnSelect(course)}
+          </td>
+          <td>
+            {meetingNum === 0 && `${selected.subject} ${selected.courseNumber}`}
+          </td>
+          <td>
+            {meetingNum === 0 && selected.name}
+          </td>
+          <td>
+            {meetingNum === 0 && selected.type}
+          </td>
+          <td>
+            {meetingNum === 0 && selected.credits}
+          </td>
+          <td>
+            {meetingNum === 0 && selected.instructor}
+          </td>
+          <td>
+            {meeting.days instanceof Array ? meeting.days.join(' ') : meeting.days}
+          </td>
+          <td>
+            {`${meeting.startTime} - ${meeting.endTime}`}
+          </td>
+          <td>
+            {meeting.location}
+          </td>
+        </tr>
+      )));
+    });
+  }
+
   createCrnSelect(courses) {
     const {
       selectCourse,
@@ -23,7 +67,13 @@ class CourseTable extends React.Component {
     } = this.props;
     return (
       <div className="btn-group">
-        <button type="button" className="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button
+          type="button"
+          className="btn btn-default dropdown-toggle"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
           { courses.selected ? courses.selected.crn : 'None' }
           {' '}
           <span className="caret" />
@@ -43,7 +93,9 @@ class CourseTable extends React.Component {
               <li
                 className={this.switchWillConflict(courses.selected, course) ? 'disabled' : ''}
                 key={course.crn}
-                onClick={() => selectCourse(`${course.subject}${course.courseNumber}`, courses.id, `${course.crn}`)}
+                onClick={() => selectCourse(
+                  `${course.subject}${course.courseNumber}`, courses.id, `${course.crn}`,
+                )}
               >
                 <a
                   data-toggle="popover"
@@ -76,47 +128,10 @@ class CourseTable extends React.Component {
     );
   }
 
-  /* eslint-disable react/no-array-index-key */
   render() {
-    const { courses } = this.props;
-    const rows = [];
-    courses.forEach((course, courseNum) => {
-      const { selected } = course;
-      rows.push(...selected.meetings.map((meeting, meetingNum) => (
-        <tr style={{ backgroundColor: colors[courseNum] }} key={`${course.id}-${selected.crn}-${courseNum}-${meetingNum}`}>
-          <td>
-            { meetingNum === 0 && this.createCrnSelect(course) }
-          </td>
-          <td>
-            { meetingNum === 0 && `${selected.subject} ${selected.courseNumber}` }
-          </td>
-          <td>
-            { meetingNum === 0 && selected.name }
-          </td>
-          <td>
-            { meetingNum === 0 && selected.type }
-          </td>
-          <td>
-            { meetingNum === 0 && selected.credits }
-          </td>
-          <td>
-            { meetingNum === 0 && selected.instructor }
-          </td>
-          <td>
-            { meeting.days instanceof Array ? meeting.days.join(' ') : meeting.days }
-          </td>
-          <td>
-            { `${meeting.startTime} - ${meeting.endTime}` }
-          </td>
-          <td>
-            { meeting.location }
-          </td>
-        </tr>
-      )));
-    });
     return (
       <FormSection name="crns">
-        <div className="">
+        <div>
           <table className="table table-condensed text-table">
             <tbody>
               <tr>
@@ -148,7 +163,7 @@ class CourseTable extends React.Component {
                   Location
                 </th>
               </tr>
-              { rows }
+              {this.createCourseRows()}
             </tbody>
           </table>
         </div>

@@ -3,6 +3,7 @@ package com.pscheduler.serverless.functions;
 import java.util.List;
 
 public class CourseRequest {
+
     int term;
     List<String> query;
 
@@ -23,4 +24,5 @@ public class CourseRequest {
     public void setQuery(List<String> query) {
         this.query = query;
     }
+
 }

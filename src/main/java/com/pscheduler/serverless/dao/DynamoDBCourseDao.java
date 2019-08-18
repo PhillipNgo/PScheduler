@@ -19,7 +19,6 @@ public class DynamoDBCourseDao implements CourseDao {
     private DynamoDBCourseDao() {}
 
     public static DynamoDBCourseDao instance() {
-
         if (instance == null) {
             synchronized(DynamoDBCourseDao.class) {
                 if (instance == null) {
@@ -32,7 +31,6 @@ public class DynamoDBCourseDao implements CourseDao {
 
     @Override
     public List<Course> searchCourses(int term, String queryString) {
-
         String search = queryString.replaceAll("\\W", "");
         try {
             Course searchCrn = mapper.load(Course.class, term, Integer.parseInt(queryString));
@@ -87,4 +85,5 @@ public class DynamoDBCourseDao implements CourseDao {
             .withExpressionAttributeValues(eav);
         mapper.batchDelete(mapper.query(Course.class, query));
     }
+
 }

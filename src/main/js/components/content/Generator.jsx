@@ -9,6 +9,7 @@ import ErrorPage from './generator/ErrorPage';
 class Generator extends React.Component {
   componentDidMount() {
     const { loadSchedule, location, firstRender } = this.props;
+
     if (firstRender) {
       loadSchedule(location.search);
     }
@@ -16,6 +17,7 @@ class Generator extends React.Component {
 
   componentDidUpdate(prevProps) {
     const { redirect, redirected } = this.props;
+
     if (prevProps.redirect && prevProps.redirect === redirect) {
       redirected();
     }
@@ -29,9 +31,11 @@ class Generator extends React.Component {
       firstRender,
       error,
     } = this.props;
+
     if (redirect && location.hash !== redirect.hash) {
       return <Redirect to={redirect} />;
     }
+
     if (firstRender || isGenerating) {
       return (
         <div className="page-loader">
@@ -42,6 +46,7 @@ class Generator extends React.Component {
         </div>
       );
     }
+
     switch (location.hash) {
       case '#schedules': return error ? <ErrorPage /> : <Schedules />;
       case '#timetable': return error ? <ErrorPage /> : <TimetableResults />;

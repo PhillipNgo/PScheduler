@@ -23,4 +23,5 @@ public class DynamoDBCourseGPAUpdater {
         List<CourseGPA> courseGPAList = (List<CourseGPA>) (List<?>) parser.parseTermFile(term);
         courseGPADao.saveCourseGPAs(courseGPAList);
     }
+
 }

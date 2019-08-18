@@ -25,7 +25,6 @@ public class DatabaseLoader implements ApplicationRunner {
     private final CourseGPARepository gpa;
 
     private final int TIMETABLE_TERM = 201909;
-    private final int GRADES_TERM = 201901;
 
     @Autowired
     public DatabaseLoader (CourseRepository courses, MeetingRepository meetings, CourseGPARepository gpa) {
@@ -60,4 +59,5 @@ public class DatabaseLoader implements ApplicationRunner {
         }
         gpa.save(courseGrades);
     }
+
 }

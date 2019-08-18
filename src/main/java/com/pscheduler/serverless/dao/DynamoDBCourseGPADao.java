@@ -20,7 +20,6 @@ public class DynamoDBCourseGPADao implements CourseGPADao {
     private DynamoDBCourseGPADao() {}
 
     public static DynamoDBCourseGPADao instance() {
-
         if (instance == null) {
             synchronized(DynamoDBCourseGPADao.class) {
                 if (instance == null) {
@@ -33,7 +32,6 @@ public class DynamoDBCourseGPADao implements CourseGPADao {
 
     @Override
     public List<CourseGPA> searchCourseGPAs(int term, String queryString) {
-
         String[] splitQuery = queryString.split("-");
         if (splitQuery.length != 2) {
             return new ArrayList<>();
@@ -56,4 +54,5 @@ public class DynamoDBCourseGPADao implements CourseGPADao {
     public void saveCourseGPAs(List<CourseGPA> courses) {
         mapper.batchSave(courses);
     }
+
 }

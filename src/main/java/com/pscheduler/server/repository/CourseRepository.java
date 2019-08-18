@@ -12,7 +12,6 @@ import org.springframework.data.rest.core.annotation.RestResource;
 
 @RepositoryRestResource(excerptProjection = CourseInlineMeeting.class)
 public interface CourseRepository extends PagingAndSortingRepository<Course, Integer> {
-
     @Query(
         "SELECT course FROM Course course"
         + " WHERE (:query IS NULL OR LOWER(CONCAT(course.subject, course.courseNumber, ' ', course.name)) LIKE CONCAT('%', :query, '%'))"

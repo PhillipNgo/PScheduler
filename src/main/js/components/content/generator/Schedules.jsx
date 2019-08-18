@@ -84,6 +84,7 @@ class Schedules extends React.Component {
       showCarousel,
     } = this.state;
     const schedule = schedules[scheduleIndex] ? schedules[scheduleIndex] : {};
+
     return (
       <div>
         <div id="schedules-bar" className="flex-container-spaced no-print">
@@ -110,7 +111,11 @@ class Schedules extends React.Component {
               </button>
             )}
             <div className="btn-group">
-              <button type="button" className="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              <button
+                type="button"
+                className="btn btn-default dropdown-toggle"
+                data-toggle="dropdown"
+              >
                 <span className="glyphicon glyphicon-menu-hamburger" />
               </button>
               <ul className="dropdown-menu dropdown-menu-right">
@@ -158,10 +163,10 @@ class Schedules extends React.Component {
         </div>
         <div className="carousel">
           <div className="carousel-inner">
-            { showTextTable && <CourseTable courses={schedule} colored header /> }
-            { showVisualTable && <ScheduleVisualTable schedule={schedule} /> }
+            {showTextTable && <CourseTable courses={schedule} colored header />}
+            {showVisualTable && <ScheduleVisualTable schedule={schedule} />}
           </div>
-          { showCarousel && (
+          {showCarousel && (
             <div
               role="button"
               className="left carousel-control no-print"
@@ -172,7 +177,7 @@ class Schedules extends React.Component {
               <span className="glyphicon glyphicon-chevron-left" />
             </div>
           )}
-          { showCarousel && (
+          {showCarousel && (
             <div
               role="button"
               className="right carousel-control no-print"

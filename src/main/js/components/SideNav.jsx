@@ -24,6 +24,7 @@ class SideNav extends React.Component {
   render() {
     const { minimized, querystrings } = this.state;
     const { menu } = this.props;
+
     return (
       <div id="side-nav" className={`no-print ${minimized ? 'side-nav-min' : ''}`}>
         <a
@@ -35,10 +36,10 @@ class SideNav extends React.Component {
         </a>
         <nav>
           <Switch>
-            { menu.map(tab => (
+            {menu.map(tab => (
               <Route key={`${tab.title}.subMenu`} path={tab.path}>
                 <ul id="menu-secondary" className="menu">
-                  { tab.subMenu.map(subTab => (
+                  {tab.subMenu.map(subTab => (
                     <li key={`${tab.title}.${subTab.title}`}>
                       <NavLink
                         to={{
@@ -59,7 +60,7 @@ class SideNav extends React.Component {
         </nav>
         <nav className="bottom">
           <ul id="menu-primary" className="menu">
-            { menu.map(tab => (
+            {menu.map(tab => (
               <li key={tab.title}>
                 <NavLink
                   onClick={() => this.setState({

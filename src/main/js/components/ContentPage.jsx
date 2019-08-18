@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 const ContentPage = ({ menu }) => (
   <div id="content-page" className="container-fluid">
     <Switch>
-      { menu.map(tab => (
+      {menu.map(tab => (
         <Route
           key={tab.path}
           path={tab.path}

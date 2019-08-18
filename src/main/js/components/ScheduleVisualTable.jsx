@@ -88,6 +88,7 @@ class ScheduleVisualTable extends React.Component {
 
     while (!earliestTimes.every(time => time === highest)) {
       const nextRow = [];
+
       scheduleTable.forEach((daySchedule, index) => {
         const key = `${rows.length}${index}${scheduleIndex[index]}`;
         if (scheduleIndex[index] < scheduleTable[index].length) {
@@ -110,20 +111,25 @@ class ScheduleVisualTable extends React.Component {
           earliestTimes[index] = highest;
         }
       });
+
       rows.push((
         <tr key={rows.length}>
-          { nextRow }
+          {nextRow}
         </tr>
       ));
+
       const nextEarliestTime = earliestTimes.reduce((earliest, time) => (
         time < earliest ? time : earliest
       ));
       const padRows = ((nextEarliestTime - earliestTime) / 5) - 1;
+
       for (let i = 0; i < padRows; i += 1) {
         rows.push(<tr key={rows.length} />);
       }
+
       earliestTime = nextEarliestTime;
     }
+
     return rows;
   }
 
@@ -150,7 +156,7 @@ class ScheduleVisualTable extends React.Component {
                 Friday
               </th>
             </tr>
-            { this.createRows() }
+            {this.createRows()}
           </tbody>
         </table>
       </div>
@@ -164,19 +170,19 @@ ScheduleVisualTable.CourseCell = ({ meetingData }) => (
     rowSpan={(meetingData.timeSlot.endNum - meetingData.timeSlot.startNum) / 5}
     style={{ backgroundColor: meetingData.color }}
   >
-    { `${meetingData.subject} ${meetingData.courseNumber}` }
+    {`${meetingData.subject} ${meetingData.courseNumber}`}
     <br />
-    { `${meetingData.timeSlot.start} - ${meetingData.timeSlot.end} ` }
+    {`${meetingData.timeSlot.start} - ${meetingData.timeSlot.end} `}
     <br />
-    { meetingData.location }
+    {meetingData.location}
     <br />
-    { meetingData.instructor }
+    {meetingData.instructor}
   </td>
 );
 
 ScheduleVisualTable.TimeCell = ({ time }) => (
   <td className="bordered" rowSpan={12}>
-    { time }
+    {time}
   </td>
 );
 

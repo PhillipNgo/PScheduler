@@ -19,6 +19,7 @@ import org.springframework.web.filter.CorsFilter;
 @EnableScheduling
 @Configuration
 public class ApiApplication {
+
 	@Value("${frontend.port}")
 	private String frontEndPort;
 	
@@ -39,4 +40,5 @@ public class ApiApplication {
 		bean.setOrder(0);
 		return bean;
 	}
+
 }

@@ -8,7 +8,8 @@ import MaintenancePage from './MaintenancePage';
 
 const App = ({ maintenance }) => (
   maintenance
-    ? <Route path="/" component={MaintenancePage} /> : (
+    ? <Route path="/" component={MaintenancePage} />
+    : (
       <Switch>
         <Route path={`(${menu.map(tab => tab.path).join('|')})`}>
           <div id="content">
