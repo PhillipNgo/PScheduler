@@ -12,7 +12,7 @@ public class DynamoDBCourseUpdater {
     private static final DynamoDBCourseDao courseDao = DynamoDBCourseDao.instance();
 
     public static void main(String[] args) throws Exception {
-        int[] terms = new int[]{201909};
+        int[] terms = new int[]{202001};
         for (int term : terms) {
             updateTerm(term);
             // deleteTerm(term);
@@ -24,7 +24,7 @@ public class DynamoDBCourseUpdater {
 
         // List of courses to update
         VTParser parser = new VTParser(Course.class, term);
-        List<Course> courseListGeneric = (List<Course>) (List<?>) parser.parseTermFile("./src/main/resources/data/courses" + term + ".txt");
+        List<Course> courseListGeneric = (List<Course>) (List<?>) parser.parseTermFile("./src/main/resources/data/courses/" + term + ".txt");
 
         // List of courses currently in DB
         List<Course> current = courseDao.getCoursesForTerm(term);
