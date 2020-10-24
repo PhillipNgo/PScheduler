@@ -23,9 +23,12 @@ const ErrorPage = () => (
         Recent Changes
       </h2>
       <br />
+      <h4 className="pad-bottom">
+        [10/15/2019] Spring 2019 Courses have been removed
+      </h4>
       <h4>
-        - As of 2/6/2019, old generation links will no longer work (sorry!),
-        please generate your schedule again for a new link.
+        [2/6/2019] Generation links created before this date will no longer work,
+        please generate your schedule again for a new link
       </h4>
     </div>
   </div>

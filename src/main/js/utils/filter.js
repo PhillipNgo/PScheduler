@@ -10,7 +10,7 @@ const filterTypes = (types = [], course) => (
 
 const filterInstructors = (instructors = [], course) => (
   instructors.length === 0 || instructors.find(instructor => (
-    course.instructor.toLowerCase() === instructor.toLowerCase()
+    course.instructor.toLowerCase().replace(/\s/g, '_') === instructor.toLowerCase()
   ))
 );
 
