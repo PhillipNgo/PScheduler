@@ -19,17 +19,15 @@ import com.pscheduler.util.Course;
  */
 public class VTParser {
     
+    // regex for extracting the next course from the database/timetable
+    private final Pattern COURSE_PATTERN = Pattern.compile("\\d{5}[\\S\\s]*?(?=[ \\t\\r]*\\n[ \\t\\r]+\\d{5}|\\s*This )");
+    // regex for splitting a given COURSE_PATTERN's data
+    private final String SPLIT_PATTERN = "(?<=\\S)\\s*[\\t\\n]\\s*(?=\\S)";
     private CourseBuilderFactory courseBuilderFactory;
     private HtmlFormGet vtForm;
     private int term;
     private String[] terms;
     private String[] subjects;
-
-    // regex for extracting the next course from the database/timetable
-    private final Pattern COURSE_PATTERN = Pattern.compile("\\d{5}[\\S\\s]*?(?=[ \\t\\r]*\\n[ \\t\\r]+\\d{5}|\\s*This )");
-
-    // regex for splitting a given COURSE_PATTERN's data
-    private final String SPLIT_PATTERN = "(?<=\\S)\\s*[\\t\\n]\\s*(?=\\S)";
 
     /**
      * Default constructor instantiates the web form without filling any values
@@ -248,19 +246,18 @@ public class VTParser {
         this.courseBuilderFactory.reset();
         String[] values = listing.split(SPLIT_PATTERN); //split listings based on column
         String[] subNum = values[1].split("-");
-//        System.out.println("Parsing: " + Arrays.toString(values)); //Debugging
+//      System.out.println("Parsing: " + Arrays.toString(values)); //Debugging
         this.courseBuilderFactory
-            .term(this.term)
-            .crn(Integer.parseInt(values[0]))
-            .subject(subNum[0])
-            .courseNumber(subNum[1])
-            .name(values[2])
-            .type(values[3].substring(0, 1))
-            .credits(Integer.parseInt(values[4].substring(0, 1)))
-            .capacity(Integer.parseInt(values[5]))
-            .instructor(values[6]);
-
-        int ind = 6;
+                .term(this.term)
+                .crn(Integer.parseInt(values[0]))
+                .subject(subNum[0])
+                .courseNumber(subNum[1])
+                .name(values[2])
+                .type(values[3].substring(0, 1));
+        int ind = checkNotModality(values[4]) ? 5 : 4;
+        this.courseBuilderFactory.credits(ensureInt(values[ind++]))
+                .capacity(Integer.parseInt(values[ind++]))
+                .instructor(values[ind++]);
         if (values.length > 7) {
             while (ind < values.length) {
                 String days;
@@ -295,7 +292,7 @@ public class VTParser {
                 }
 
                 ind++;
-                if (ind <= 11) {
+                if (ind == values.length - 1) {
                     this.courseBuilderFactory.exam(values[ind]);
                     ind++;
                 }
@@ -303,6 +300,17 @@ public class VTParser {
         }
 
         return courseBuilderFactory.build();
+    }
+
+    /**
+     * Checks given string to see if it is not a modality.
+     * @param value
+     * @return true if value would be a modality, false otherwise
+     */
+    private boolean checkNotModality(String value) {
+        String pattern = "[0-9]+ [TOR]{2} [0-9]+";
+        return !(Pattern.matches(pattern, value) | Pattern.matches("\\d+",
+                value));
     }
 
     /**
@@ -339,5 +347,19 @@ public class VTParser {
         }
         scan.close();
         return courses;
+    }
+
+    /**
+     * Parses an integer safely. Returns  0 if not an integer.
+     *
+     * @param val string to input
+     * @return parsed integer value, 0 otherwise.
+     */
+    private int ensureInt(String val) {
+        try {
+            return Integer.parseInt(val);
+        } catch(NumberFormatException e) {
+            return 0;
+        }
     }
 }

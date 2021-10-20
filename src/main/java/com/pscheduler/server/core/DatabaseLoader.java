@@ -24,7 +24,7 @@ public class DatabaseLoader implements ApplicationRunner {
     private final MeetingRepository meetings;
     private final CourseGPARepository gpa;
 
-    private final int TIMETABLE_TERM = 202009;
+    private final int TIMETABLE_TERM = 202201;
 
     @Autowired
     public DatabaseLoader (CourseRepository courses, MeetingRepository meetings, CourseGPARepository gpa) {
