@@ -11,6 +11,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
 
 import com.pscheduler.util.CourseBuilderFactory;
 import com.pscheduler.util.Course;
+import com.pscheduler.util.Meeting;
 
 /**
  * The VTParser is the I/O handler for reading data from the timetable or parsing data from our database
@@ -18,7 +19,7 @@ import com.pscheduler.util.Course;
  * @author Phillip Ngo
  */
 public class VTParser {
-    
+
     // regex for extracting the next course from the database/timetable
     private final Pattern COURSE_PATTERN = Pattern.compile("\\d{5}[\\S\\s]*?(?=[ \\t\\r]*\\n[ \\t\\r]+\\d{5}|\\s*This )");
     // regex for splitting a given COURSE_PATTERN's data
@@ -246,7 +247,7 @@ public class VTParser {
         this.courseBuilderFactory.reset();
         String[] values = listing.split(SPLIT_PATTERN); //split listings based on column
         String[] subNum = values[1].split("-");
-//      System.out.println("Parsing: " + Arrays.toString(values)); //Debugging
+        System.out.println("Parsing: " + Arrays.toString(values)); //Debugging
         this.courseBuilderFactory
                 .term(this.term)
                 .crn(Integer.parseInt(values[0]))
@@ -257,16 +258,46 @@ public class VTParser {
         int ind = checkNotModality(values[4]) ? 5 : 4;
         this.courseBuilderFactory.credits(ensureInt(values[ind++]))
                 .capacity(Integer.parseInt(values[ind++]))
-                .instructor(values[ind++]);
-        if (values.length > 7) {
-            while (ind < values.length) {
-                String days;
-                String startTime;
-                String endTime;
-                String location;
+                .instructor(values[ind++]); //ind = 6 or 7
+        if (ind < values.length) {
+            // days and hours get a little weird
+            String days;
+            String startTime;
+            String endTime;
+            String location;
 
-                days = values[ind + 1];
-                ind += 2;
+            //ind = 7 or 8 here
+            days = values[ind++];
+
+            if (values[ind].contains("ARR") || days.contains("ARR")) {
+                startTime = "ARR";
+                endTime = "ARR";
+                do {
+                    ind++;
+                } while (values[ind].endsWith("AM") || values[ind].endsWith("PM"));
+            } else {
+                startTime = values[ind++];
+                endTime = values[ind++];
+            }
+            location = values[ind++]; //ind = 10 or 11
+            if (days != null) {
+                List<String> daysList = Arrays.asList(days.split(" "));
+                boolean valid = true;
+                for (String day : daysList) {
+                    if (day.length() != 1) {
+                        valid = false;
+                    }
+                }
+                this.courseBuilderFactory.meeting(location, startTime, endTime, valid ? daysList : new ArrayList<>());
+            }
+
+            // ind = 11 or 12
+            this.courseBuilderFactory.exam(values[ind++]);
+            // additional time loops
+            while (ind < values.length) {
+                ind = values[ind].equals("* Additional Times *") ? ind + 1 : ind;
+
+                days = values[ind++];
 
                 if (values[ind].contains("ARR") || days.contains("ARR")) {
                     startTime = "ARR";
@@ -275,11 +306,11 @@ public class VTParser {
                         ind++;
                     } while (values[ind].endsWith("AM") || values[ind].endsWith("PM"));
                 } else {
-                    startTime = values[ind];
-                    endTime = values[ind + 1];
-                    ind += 2;
+                    startTime = values[ind++];
+                    endTime = values[ind++];
                 }
-                location = values[ind];
+
+                location = values[ind++];
                 if (days != null) {
                     List<String> daysList = Arrays.asList(days.split(" "));
                     boolean valid = true;
@@ -290,20 +321,14 @@ public class VTParser {
                     }
                     this.courseBuilderFactory.meeting(location, startTime, endTime, valid ? daysList : new ArrayList<>());
                 }
-
-                ind++;
-                if (ind == values.length - 1) {
-                    this.courseBuilderFactory.exam(values[ind]);
-                    ind++;
-                }
             }
         }
-
         return courseBuilderFactory.build();
     }
 
     /**
      * Checks given string to see if it is not a modality.
+     *
      * @param value
      * @return true if value would be a modality, false otherwise
      */
@@ -358,7 +383,7 @@ public class VTParser {
     private int ensureInt(String val) {
         try {
             return Integer.parseInt(val);
-        } catch(NumberFormatException e) {
+        } catch (NumberFormatException e) {
             return 0;
         }
     }
