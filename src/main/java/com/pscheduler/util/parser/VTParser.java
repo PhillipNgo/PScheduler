@@ -247,7 +247,7 @@ public class VTParser {
         this.courseBuilderFactory.reset();
         String[] values = listing.split(SPLIT_PATTERN); //split listings based on column
         String[] subNum = values[1].split("-");
-        System.out.println("Parsing: " + Arrays.toString(values)); //Debugging
+ //       System.out.println("Parsing: " + Arrays.toString(values)); //Debugging
         this.courseBuilderFactory
                 .term(this.term)
                 .crn(Integer.parseInt(values[0]))
@@ -295,7 +295,10 @@ public class VTParser {
             this.courseBuilderFactory.exam(values[ind++]);
             // additional time loops
             while (ind < values.length) {
-                ind = values[ind].equals("* Additional Times *") ? ind + 1 : ind;
+                ind =
+                        Pattern.matches("(\\* Additional Times \\*|fill)",
+                                values[ind]) ?
+                        ind + 1 : ind;
 
                 days = values[ind++];
 
