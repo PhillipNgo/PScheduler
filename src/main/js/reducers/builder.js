@@ -75,7 +75,6 @@ export default (state = initialState, action) => {
         id,
         courses,
       }];
-
       return {
         ...state,
         courseList,

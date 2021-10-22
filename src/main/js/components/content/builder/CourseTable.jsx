@@ -57,6 +57,8 @@ class CourseTable extends React.Component {
         </tr>
       )));
     });
+
+    return rows;
   }
 
   createCrnSelect(courses) {

@@ -24,7 +24,7 @@ public class DatabaseLoader implements ApplicationRunner {
     private final MeetingRepository meetings;
     private final CourseGPARepository gpa;
 
-    private final int TIMETABLE_TERM = 201909;
+    private final int TIMETABLE_TERM = 202201;
 
     @Autowired
     public DatabaseLoader (CourseRepository courses, MeetingRepository meetings, CourseGPARepository gpa) {
@@ -37,7 +37,7 @@ public class DatabaseLoader implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         // Load TIMETABLE_TERM Courses
         VTParser parser = new VTParser(Course.class, TIMETABLE_TERM);
-        List<com.pscheduler.util.Course> courseListGeneric = parser.parseTermFile("./src/main/resources/data/courses" + TIMETABLE_TERM + ".txt");
+        List<com.pscheduler.util.Course> courseListGeneric = parser.parseTermFile("./src/main/resources/data/courses/" + TIMETABLE_TERM + ".txt");
         List<Course> courseList = new ArrayList<>();
         for (com.pscheduler.util.Course course : courseListGeneric) {
             courseList.add((Course) course);
