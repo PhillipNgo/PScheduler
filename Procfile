@@ -1,2 +1,2 @@
 worker: ./gradlew bootRun
-web: npm run dev
+web: npm run build
