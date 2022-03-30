@@ -12,7 +12,7 @@ public class DynamoDBCourseUpdater {
     private static final DynamoDBCourseDao courseDao = DynamoDBCourseDao.instance();
 
     public static void main(String[] args) throws Exception {
-        int[] terms = new int[]{202009};
+        int[] terms = new int[]{202201};
         for (int term : terms) {
             updateTerm(term);
             // deleteTerm(term);

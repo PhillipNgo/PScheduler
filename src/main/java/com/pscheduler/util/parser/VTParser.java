@@ -11,6 +11,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
 
 import com.pscheduler.util.CourseBuilderFactory;
 import com.pscheduler.util.Course;
+import com.pscheduler.util.Meeting;
 
 /**
  * The VTParser is the I/O handler for reading data from the timetable or parsing data from our database
@@ -18,18 +19,16 @@ import com.pscheduler.util.Course;
  * @author Phillip Ngo
  */
 public class VTParser {
-    
+
+    // regex for extracting the next course from the database/timetable
+    private final Pattern COURSE_PATTERN = Pattern.compile("\\d{5}[\\S\\s]*?(?=[ \\t\\r]*\\n[ \\t\\r]+\\d{5}|\\s*This )");
+    // regex for splitting a given COURSE_PATTERN's data
+    private final String SPLIT_PATTERN = "(?<=\\S)\\s*[\\t\\n]\\s*(?=\\S)";
     private CourseBuilderFactory courseBuilderFactory;
     private HtmlFormGet vtForm;
     private int term;
     private String[] terms;
     private String[] subjects;
-
-    // regex for extracting the next course from the database/timetable
-    private final Pattern COURSE_PATTERN = Pattern.compile("\\d{5}[\\S\\s]*?(?=[ \\t\\r]*\\n[ \\t\\r]+\\d{5}|\\s*This )");
-
-    // regex for splitting a given COURSE_PATTERN's data
-    private final String SPLIT_PATTERN = "(?<=\\S)\\s*[\\t\\n]\\s*(?=\\S)";
 
     /**
      * Default constructor instantiates the web form without filling any values
@@ -248,28 +247,60 @@ public class VTParser {
         this.courseBuilderFactory.reset();
         String[] values = listing.split(SPLIT_PATTERN); //split listings based on column
         String[] subNum = values[1].split("-");
-//        System.out.println("Parsing: " + Arrays.toString(values)); //Debugging
+ //       System.out.println("Parsing: " + Arrays.toString(values)); //Debugging
         this.courseBuilderFactory
-            .term(this.term)
-            .crn(Integer.parseInt(values[0]))
-            .subject(subNum[0])
-            .courseNumber(subNum[1])
-            .name(values[2])
-            .type(values[3].substring(0, 1))
-            .credits(Integer.parseInt(values[4].substring(0, 1)))
-            .capacity(Integer.parseInt(values[5]))
-            .instructor(values[6]);
+                .term(this.term)
+                .crn(Integer.parseInt(values[0]))
+                .subject(subNum[0])
+                .courseNumber(subNum[1])
+                .name(values[2])
+                .type(values[3].substring(0, 1));
+        int ind = checkNotModality(values[4]) ? 5 : 4;
+        this.courseBuilderFactory.credits(ensureInt(values[ind++]))
+                .capacity(Integer.parseInt(values[ind++]))
+                .instructor(values[ind++]); //ind = 6 or 7
+        if (ind < values.length) {
+            // days and hours get a little weird
+            String days;
+            String startTime;
+            String endTime;
+            String location;
 
-        int ind = 6;
-        if (values.length > 7) {
+            //ind = 7 or 8 here
+            days = values[ind++];
+
+            if (values[ind].contains("ARR") || days.contains("ARR")) {
+                startTime = "ARR";
+                endTime = "ARR";
+                do {
+                    ind++;
+                } while (values[ind].endsWith("AM") || values[ind].endsWith("PM"));
+            } else {
+                startTime = values[ind++];
+                endTime = values[ind++];
+            }
+            location = values[ind++]; //ind = 10 or 11
+            if (days != null) {
+                List<String> daysList = Arrays.asList(days.split(" "));
+                boolean valid = true;
+                for (String day : daysList) {
+                    if (day.length() != 1) {
+                        valid = false;
+                    }
+                }
+                this.courseBuilderFactory.meeting(location, startTime, endTime, valid ? daysList : new ArrayList<>());
+            }
+
+            // ind = 11 or 12
+            this.courseBuilderFactory.exam(values[ind++]);
+            // additional time loops
             while (ind < values.length) {
-                String days;
-                String startTime;
-                String endTime;
-                String location;
+                ind =
+                        Pattern.matches("(\\* Additional Times \\*|fill)",
+                                values[ind]) ?
+                        ind + 1 : ind;
 
-                days = values[ind + 1];
-                ind += 2;
+                days = values[ind++];
 
                 if (values[ind].contains("ARR") || days.contains("ARR")) {
                     startTime = "ARR";
@@ -278,11 +309,11 @@ public class VTParser {
                         ind++;
                     } while (values[ind].endsWith("AM") || values[ind].endsWith("PM"));
                 } else {
-                    startTime = values[ind];
-                    endTime = values[ind + 1];
-                    ind += 2;
+                    startTime = values[ind++];
+                    endTime = values[ind++];
                 }
-                location = values[ind];
+
+                location = values[ind++];
                 if (days != null) {
                     List<String> daysList = Arrays.asList(days.split(" "));
                     boolean valid = true;
@@ -293,16 +324,21 @@ public class VTParser {
                     }
                     this.courseBuilderFactory.meeting(location, startTime, endTime, valid ? daysList : new ArrayList<>());
                 }
-
-                ind++;
-                if (ind <= 11) {
-                    this.courseBuilderFactory.exam(values[ind]);
-                    ind++;
-                }
             }
         }
-
         return courseBuilderFactory.build();
+    }
+
+    /**
+     * Checks given string to see if it is not a modality.
+     *
+     * @param value
+     * @return true if value would be a modality, false otherwise
+     */
+    private boolean checkNotModality(String value) {
+        String pattern = "[0-9]+ [TOR]{2} [0-9]+";
+        return !(Pattern.matches(pattern, value) | Pattern.matches("\\d+",
+                value));
     }
 
     /**
@@ -339,5 +375,19 @@ public class VTParser {
         }
         scan.close();
         return courses;
+    }
+
+    /**
+     * Parses an integer safely. Returns  0 if not an integer.
+     *
+     * @param val string to input
+     * @return parsed integer value, 0 otherwise.
+     */
+    private int ensureInt(String val) {
+        try {
+            return Integer.parseInt(val);
+        } catch (NumberFormatException e) {
+            return 0;
+        }
     }
 }
